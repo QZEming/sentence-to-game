@@ -4,7 +4,7 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**5 / 100**。
+当前进度：**6 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
@@ -17,6 +17,7 @@
 | 003 | [风原纪 · Wildreach](games/003-wildreach/README.md) | [启程探索](https://qzemi.cn/sentence-to-game/games/003-wildreach/) | [源码](games/003-wildreach/src/) |
 | 004 | [裂隙前线 · Riftfront](games/004-riftfront/README.md) | [进入战场](https://qzemi.cn/sentence-to-game/games/004-riftfront/) | [源码](games/004-riftfront/src/) |
 | 005 | [逐光竞速 · APEX HORIZON](games/005-apex-horizon/README.md) | [驰骋赛道](https://qzemi.cn/sentence-to-game/games/005-apex-horizon/) | [源码](games/005-apex-horizon/src/) |
+| 006 | [星糖守卫 · Sugarlight Guardians](games/006-sugarlight-guardians/README.md) | [守护星灯](https://qzemi.cn/sentence-to-game/games/006-sugarlight-guardians/) | [源码](games/006-sugarlight-guardians/src/) |
 
 ## 目录结构
 
@@ -68,7 +69,7 @@ python3 scripts/build-site.py
 
 本项目新增或更新游戏时，默认发布到上述域名：保留原始提示词与源码，构建游戏与合集，验证游戏子路径，再将对应的 `docs/` 产物随源码提交到 `main`。发布后应检查线上页面；无法访问线上环境时，明确区分已提交的发布产物和尚未确认的线上状态。
 
-前五作的完整构建命令：
+前六作的完整构建命令：
 
 ```bash
 npm --prefix games/001-pelican-pedal ci
@@ -81,6 +82,8 @@ npm --prefix games/004-riftfront ci
 npm --prefix games/004-riftfront run build
 npm --prefix games/005-apex-horizon ci
 npm --prefix games/005-apex-horizon run build
+npm --prefix games/006-sugarlight-guardians ci
+npm --prefix games/006-sugarlight-guardians run build
 python3 scripts/build-site.py
 ```
 
