@@ -4,7 +4,7 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**2 / 100**。
+当前进度：**3 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
@@ -14,6 +14,7 @@
 | --- | --- | --- | --- |
 | 001 | [鹈鹕漫游记 · Pelican Pedal](games/001-pelican-pedal/README.md) | [开始骑行](https://qzemi.cn/sentence-to-game/games/001-pelican-pedal/) | [源码](games/001-pelican-pedal/src/) |
 | 002 | [羽境 · Shuttle Arena](games/002-shuttle-arena/README.md) | [开始比赛](https://qzemi.cn/sentence-to-game/games/002-shuttle-arena/) | [源码](games/002-shuttle-arena/src/) |
+| 003 | [风原纪 · Wildreach](games/003-wildreach/README.md) | [启程探索](https://qzemi.cn/sentence-to-game/games/003-wildreach/) | [源码](games/003-wildreach/src/) |
 
 ## 目录结构
 
@@ -65,13 +66,15 @@ python3 scripts/build-site.py
 
 本项目新增或更新游戏时，默认发布到上述域名：保留原始提示词与源码，构建游戏与合集，验证游戏子路径，再将对应的 `docs/` 产物随源码提交到 `main`。发布后应检查线上页面；无法访问线上环境时，明确区分已提交的发布产物和尚未确认的线上状态。
 
-前两作的完整构建命令：
+前三作的完整构建命令：
 
 ```bash
 npm --prefix games/001-pelican-pedal ci
 npm --prefix games/001-pelican-pedal run build
 npm --prefix games/002-shuttle-arena ci
 npm --prefix games/002-shuttle-arena run build
+npm --prefix games/003-wildreach ci
+npm --prefix games/003-wildreach run build
 python3 scripts/build-site.py
 ```
 

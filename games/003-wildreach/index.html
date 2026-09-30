@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#e9eee0" />
+    <meta
+      name="description"
+      content="风原纪：一场关于风、远方与勇气的原创 3D 开放世界冒险。探索六种地貌，攀登、滑翔、战斗、烹饪，唤醒古老的灯塔。"
+    />
+    <title>风原纪 · WILDREACH — 一句话，一个游戏 #003</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+  <body data-ui-mode="loading">
+    <canvas
+      id="game-canvas"
+      aria-label="风原纪 3D 开放世界"
+      tabindex="0"
+    ></canvas>
+    <div class="screen-vignette" aria-hidden="true"></div>
+    <main id="welcome-panel" hidden>
+      <header class="welcome-topbar">
+        <a class="collection-link" href="../../"
+          ><span aria-hidden="true">↖</span> 一句话，一个游戏
+          <span class="issue-number">003 / 100</span></a
+        >
+        <button
+          class="icon-button sound-button"
+          data-action="sound"
+          aria-label="关闭声音"
+          title="声音"
+        >
+          ♫
+        </button>
+      </header>
+      <div class="welcome-story">
+        <div class="adventure-seal" aria-hidden="true">
+          <svg viewBox="0 0 88 88">
+            <path d="M44 5 80 25v38L44 83 8 63V25Z" />
+            <path
+              d="m18 59 20-30 14 21 8-11 13 20M30 60h31M44 15v8M17 35l7 4M71 35l-7 4"
+            />
+            <circle cx="55" cy="26" r="4" />
+          </svg>
+        </div>
+        <p class="eyebrow">AN OPEN WORLD. YOUR OWN WAY.</p>
+        <h1>风原纪<span>WILDREACH</span></h1>
+        <p class="welcome-description">
+          循着风，去世界的尽头。<br />山川没有围墙，冒险没有唯一的答案。
+        </p>
+        <div class="journey-details">
+          <span><i></i> 六境探索</span><span>自由攀登 · 滑翔</span
+          ><span>战斗 · 生存 · 解谜</span>
+        </div>
+        <div class="start-actions">
+          <button
+            id="continue-button"
+            class="button primary adventure-start"
+            data-action="continue"
+            hidden
+          >
+            <span>继续旅程<small>CONTINUE YOUR ADVENTURE</small></span
+            ><b aria-hidden="true">↗</b>
+          </button>
+          <button
+            id="start-button"
+            class="button primary adventure-start"
+            data-action="new-game"
+          >
+            <span>向旷野出发<small>BEGIN YOUR ADVENTURE</small></span
+            ><b aria-hidden="true">↗</b>
+          </button>
+          <button
+            id="new-journey-button"
+            class="text-button"
+            data-action="new-game"
+            hidden
+          >
+            开启新旅程 · 覆盖已有存档
+          </button>
+        </div>
+        <p class="save-note">
+          <span aria-hidden="true">◈</span> 浏览器本地存档，随时回到旅途
+        </p>
+      </div>
+      <div class="welcome-world-label" aria-hidden="true">
+        <span>THE WHISPERING MEADOW</span><strong>风息原野</strong>
+        <div class="coordinate-line">
+          N 35° 17′ &nbsp; E 108° 42′ &nbsp; / &nbsp; YOUR STORY STARTS HERE
+        </div>
+      </div>
+      <footer class="welcome-footer">
+        <span>原创新世界 · 程序化 3D 冒险</span
+        ><button class="text-button" data-action="help">
+          旅人手册 <span aria-hidden="true">↗</span>
+        </button>
+      </footer>
+    </main>
+    <section id="game-hud" aria-label="冒险状态" hidden>
+      <div class="health-area">
+        <div class="health-topline">
+          <span class="tiny-label">旅人</span
+          ><span id="region-label">风息原野</span>
+        </div>
+        <div id="health-hearts" class="health-hearts" aria-label="生命值"></div>
+        <div class="stamina-line">
+          <span aria-hidden="true">↯</span>
+          <div class="stamina-track"><div id="stamina-fill"></div></div>
+          <span id="stamina-number">100</span>
+        </div>
+        <div id="survival-status" class="survival-status"></div>
+      </div>
+      <div class="hud-topcenter">
+        <span class="world-wordmark">风原纪</span
+        ><span id="world-clock">09:00 · 晴</span>
+      </div>
+      <nav class="hud-toolbar" aria-label="冒险菜单">
+        <button
+          class="icon-button"
+          data-open="inventory"
+          aria-label="打开行囊 I"
+          title="行囊 I"
+        >
+          <span aria-hidden="true">▣</span><small>行囊</small>
+        </button>
+        <button
+          class="icon-button"
+          data-open="map"
+          aria-label="打开地图 M"
+          title="地图 M"
+        >
+          <span aria-hidden="true">⌘</span><small>地图</small>
+        </button>
+        <button
+          class="icon-button"
+          data-action="pause"
+          aria-label="暂停 Esc"
+          title="暂停 Esc"
+        >
+          <span aria-hidden="true">Ⅱ</span><small>暂停</small>
+        </button>
+      </nav>
+      <div id="quest-card" class="quest-card">
+        <div class="quest-heading">
+          <span aria-hidden="true">◇</span
+          ><span id="quest-kicker">主线旅程</span
+          ><span id="quest-progress">0 / 3</span>
+        </div>
+        <h2 id="quest-title">唤醒三座古代信标</h2>
+        <p id="quest-description">探索原野，寻找风、火与霜的回响。</p>
+      </div>
+      <div class="minimap-wrap">
+        <button
+          class="minimap-button"
+          data-open="map"
+          aria-label="打开世界地图"
+        >
+          <canvas id="minimap" width="180" height="180"></canvas
+          ><span class="map-north">N</span
+          ><span class="map-open-label">世界地图 <kbd>M</kbd></span>
+        </button>
+        <div class="minimap-coordinates" id="minimap-coordinates">
+          000 · 044
+        </div>
+      </div>
+      <div class="equipment-strip">
+        <div class="equipped-weapon">
+          <span class="equipment-glyph" aria-hidden="true">⚔</span>
+          <div>
+            <span id="weapon-label">旅人短剑</span
+            ><small id="weapon-durability">耐久 50 / 50</small>
+          </div>
+        </div>
+        <button class="equipped-rune" data-input="cycleRune" title="切换符文 R">
+          <span id="rune-symbol" class="equipment-glyph" aria-hidden="true"
+            >◉</span
+          >
+          <div>
+            <span id="rune-label">遥控炸弹</span
+            ><small id="rune-cooldown">符文就绪 · R 切换</small>
+          </div>
+        </button>
+      </div>
+      <div id="interaction-prompt" class="interaction-prompt" hidden>
+        <button data-input="interact">
+          <kbd>E</kbd
+          ><span
+            ><strong id="interaction-label">交互</strong
+            ><small id="interaction-hint"></small></span
+          ><b aria-hidden="true">→</b>
+        </button>
+      </div>
+      <div id="desktop-controls" class="desktop-controls">
+        <span><kbd>W A S D</kbd> 移动</span><span><kbd>右键拖动</kbd> 视角</span
+        ><span><kbd>空格</kbd> 跳跃 / 滑翔 / 长按攀登</span
+        ><span><kbd>J</kbd> 攻击 <kbd>K</kbd> 举盾</span
+        ><span><kbd>F</kbd> 弓箭 <kbd>Q</kbd> 符文</span>
+      </div>
+      <div id="touch-controls" class="touch-controls" aria-label="触屏操作">
+        <div class="touch-movement">
+          <button
+            class="touch-button move-forward"
+            data-control="forward"
+            aria-label="前进"
+          >
+            ↑</button
+          ><button
+            class="touch-button move-left"
+            data-control="left"
+            aria-label="向左"
+          >
+            ←</button
+          ><button
+            class="touch-button move-right"
+            data-control="right"
+            aria-label="向右"
+          >
+            →</button
+          ><button
+            class="touch-button move-back"
+            data-control="back"
+            aria-label="后退"
+          >
+            ↓</button
+          ><button
+            class="touch-button sprint-button"
+            data-control="sprint"
+            aria-label="冲刺"
+          >
+            疾跑
+          </button>
+        </div>
+        <div class="touch-actions">
+          <button
+            class="touch-button action-rune"
+            data-input="rune"
+            aria-label="使用符文"
+          >
+            符文</button
+          ><button
+            class="touch-button action-bow"
+            data-input="bow"
+            aria-label="射箭"
+          >
+            弓箭</button
+          ><button
+            class="touch-button action-block"
+            data-control="block"
+            aria-label="举盾防御"
+          >
+            盾</button
+          ><button
+            class="touch-button action-jump"
+            data-input="jump"
+            data-control="climb"
+            aria-label="跳跃、滑翔，按住攀登"
+          >
+            跃 / 翔</button
+          ><button
+            class="touch-button action-attack"
+            data-input="attack"
+            aria-label="挥剑攻击"
+          >
+            ⚔<small>攻击</small></button
+          ><button
+            class="touch-button action-dodge"
+            data-input="dodge"
+            aria-label="闪避"
+          >
+            闪避
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="panel-overlay" class="modal-overlay" hidden>
+      <section
+        id="panel-dialog"
+        class="journal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="panel-title"
+        tabindex="-1"
+      >
+        <header class="panel-header">
+          <div>
+            <p id="panel-kicker" class="eyebrow">TRAVELER'S JOURNAL</p>
+            <h2 id="panel-title">旅人手册</h2>
+            <p id="panel-description"></p>
+          </div>
+          <button
+            id="panel-close"
+            class="icon-button close-button"
+            data-action="close"
+            aria-label="关闭面板"
+          >
+            ×
+          </button>
+        </header>
+        <div id="panel-content" class="panel-content"></div>
+      </section>
+    </div>
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="loading-mark" aria-hidden="true">◇</div>
+      <p class="eyebrow">WILDREACH</p>
+      <h2>风正在唤醒原野</h2>
+      <p>正在准备你的冒险…</p>
+    </div>
+    <div id="error-overlay" class="loading-overlay" hidden>
+      <div class="loading-mark" aria-hidden="true">△</div>
+      <h2>这次旅程暂时未能启程</h2>
+      <p id="error-message">请使用支持 WebGL 的现代浏览器。</p>
+      <button class="button primary" data-action="reload">重新加载</button
+      ><a class="text-button" href="../../">返回游戏合集</a>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+      <span id="toast-icon" aria-hidden="true">◇</span
+      ><span id="toast-message"></span>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
