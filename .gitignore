@@ -5,6 +5,7 @@ Thumbs.db
 # 本地依赖和日志
 node_modules/
 *.log
+__pycache__/
 
 # 本地环境配置
 .env

@@ -6,6 +6,8 @@
 
 当前进度：**0 / 100**。
 
+游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
+
 ## 游戏列表
 
 尚未收录游戏。
@@ -22,10 +24,13 @@ games/
 └── 001-game-name/
     ├── prompt.txt     # 原始的一句话提示词
     ├── README.md      # 游戏介绍、操作方式和体验地址
-    └── src/           # 游戏源码
+    └── src/           # 游戏源码，静态网页入口为 index.html
 
 templates/
 └── game/              # 可复制的游戏模板
+
+scripts/build-site.py  # 生成游戏合集和发布文件
+docs/                  # GitHub Pages 网站
 ```
 
 ## 添加一个游戏
@@ -37,5 +42,25 @@ cp -R templates/game games/001-game-name
 ```
 
 在 `prompt.txt` 中保存生成游戏时的一句话，将源码放进 `src/`，补充游戏的 `README.md`，再把游戏和体验地址添加到上方列表。
+
+## 游戏地址与发布
+
+每个游戏使用固定地址：
+
+```text
+https://qzemi.cn/sentence-to-game/games/001-game-name/
+```
+
+静态网页游戏从 `src/index.html` 启动，图片、脚本等资源使用相对路径。需要编译的项目保留 `src/` 源码，并先将网页产物生成到该游戏的 `dist/`；存在 `dist/index.html` 时优先发布 `dist/`。
+
+新增或更新游戏后，在仓库根目录生成网站：
+
+```bash
+python3 scripts/build-site.py
+```
+
+将游戏源码、说明和生成的 `docs/` 一起提交到 `main`，GitHub Pages 会自动发布网站。构建会生成游戏列表，并将各游戏的网页文件放到对应地址。
+
+网站沿用个人域名 `qzemi.cn`，合集位于 `/sentence-to-game/`。
 
 模板：[游戏说明](templates/game/README.md) · [提示词](templates/game/prompt.txt)
