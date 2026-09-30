@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#111b1e" />
+    <meta
+      name="description"
+      content="裂隙前线 RIFTFRONT：原创 3D 第一人称 AI 射击对战。双地图、五种武器、团队激斗、据点争夺与五波生存挑战。"
+    />
+    <title>裂隙前线 · RIFTFRONT</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+  <body data-ui-mode="loading">
+    <canvas id="game-canvas" aria-label="裂隙前线 3D 战场"></canvas>
+    <div class="screen-texture" aria-hidden="true"></div>
+    <div id="loading-screen" class="loading-screen">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <p>建立战场连接<span class="loading-dots">…</span></p>
+      <small>RIFTFRONT / LOCAL SIMULATION</small>
+    </div>
+
+    <section id="menu-screen" class="menu-screen" aria-label="游戏主菜单">
+      <header class="menu-header">
+        <a class="collection-link" href="../../"
+          ><span aria-hidden="true">↖</span> 一句话，一个游戏
+          <span class="entry-number">004 / 100</span></a
+        ><span class="build-tag"><i></i> AI 对战 · 即开即玩</span>
+      </header>
+      <div class="menu-content">
+        <div class="title-block">
+          <p class="eyebrow"><span></span> ORIGINAL TACTICAL ARENA</p>
+          <h1>
+            裂隙前线<span>RIFT<span class="outline-word">FRONT</span></span>
+          </h1>
+          <p class="menu-intro">
+            选好装备。进入战场。<br
+              class="mobile-break"
+            />让每一次出击，都有新战术。
+          </p>
+        </div>
+        <form id="match-options">
+          <fieldset class="mode-field">
+            <legend><span>01</span> 作战任务 <small>MODE</small></legend>
+            <div class="mode-options">
+              <label class="option-card mode-card"
+                ><input type="radio" name="mode" value="team" checked /><span
+                  class="option-symbol"
+                  >⌖</span
+                ><span
+                  ><strong>团队激斗</strong
+                  ><small>协同 AI · 25 次击败</small></span
+                ><i></i
+              ></label>
+              <label class="option-card mode-card"
+                ><input type="radio" name="mode" value="control" /><span
+                  class="option-symbol"
+                  >◇</span
+                ><span
+                  ><strong>据点争夺</strong><small>占领 A / B / C</small></span
+                ><i></i
+              ></label>
+              <label class="option-card mode-card"
+                ><input type="radio" name="mode" value="survival" /><span
+                  class="option-symbol"
+                  >≋</span
+                ><span
+                  ><strong>波次生存</strong
+                  ><small>五波来袭 · 战间强化</small></span
+                ><i></i
+              ></label>
+              <label class="option-card mode-card"
+                ><input type="radio" name="mode" value="training" /><span
+                  class="option-symbol"
+                  >◎</span
+                ><span
+                  ><strong>自由训练</strong
+                  ><small>熟悉枪械 · 无还击目标</small></span
+                ><i></i
+              ></label>
+            </div>
+          </fieldset>
+          <fieldset class="map-field">
+            <legend><span>02</span> 部署地点 <small>MAP</small></legend>
+            <div class="map-options">
+              <label class="option-card map-card harbor-card"
+                ><input type="radio" name="map" value="harbor" checked /><span
+                  class="map-schematic"
+                  aria-hidden="true"
+                ></span
+                ><span
+                  ><strong>港湾前哨</strong
+                  ><small>HARBOR / 三线交锋</small></span
+                ><i></i
+              ></label>
+              <label class="option-card map-card desert-card"
+                ><input type="radio" name="map" value="desert" /><span
+                  class="map-schematic"
+                  aria-hidden="true"
+                ></span
+                ><span
+                  ><strong>赤沙基地</strong
+                  ><small>OUTPOST / 高地争夺</small></span
+                ><i></i
+              ></label>
+            </div>
+          </fieldset>
+          <div class="compact-options">
+            <fieldset>
+              <legend><span>03</span> 战术职业 <small>CLASS</small></legend>
+              <div class="segmented class-options">
+                <label title="均衡攻防，突击步枪开局"
+                  ><input
+                    type="radio"
+                    name="class"
+                    value="assault"
+                    checked
+                  /><span>先锋</span></label
+                >
+                <label title="移动迅速，适合侧翼突袭"
+                  ><input type="radio" name="class" value="recon" /><span
+                    >游骑</span
+                  ></label
+                >
+                <label title="更强防护，适合正面压制"
+                  ><input type="radio" name="class" value="heavy" /><span
+                    >重装</span
+                  ></label
+                >
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>04</span> 对手难度 <small>AI</small></legend>
+              <div class="segmented">
+                <label
+                  ><input type="radio" name="difficulty" value="easy" /><span
+                    >新兵</span
+                  ></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="difficulty"
+                    value="normal"
+                    checked
+                  /><span>战术</span></label
+                ><label
+                  ><input type="radio" name="difficulty" value="hard" /><span
+                    >精英</span
+                  ></label
+                >
+              </div>
+            </fieldset>
+          </div>
+          <div class="sensitivity-row">
+            <label for="sensitivity">视角灵敏度</label
+            ><input
+              id="sensitivity"
+              name="sensitivity"
+              type="range"
+              min="0.6"
+              max="1.8"
+              step="0.1"
+              value="1"
+            /><output id="sensitivity-value" for="sensitivity">1.0×</output
+            ><button
+              type="button"
+              class="text-button menu-sound"
+              data-action="sound"
+              aria-pressed="true"
+            >
+              声音：开
+            </button>
+          </div>
+          <button class="deploy-button" type="submit">
+            <span><small>READY TO DEPLOY</small>进入战场</span
+            ><b aria-hidden="true">↗</b>
+          </button>
+          <p class="control-hint">
+            <span class="desktop-hint"
+              >WASD 移动 · 鼠标瞄准 · 左键开火 · 右键开镜</span
+            ><span class="touch-hint">左侧移动 · 滑动屏幕转向 · 右侧射击</span>
+          </p>
+        </form>
+      </div>
+      <aside class="battle-caption">
+        <span class="caption-cross">+</span>
+        <p>行动代号 / <span id="menu-map-label">HARBOR 07</span></p>
+        <h2>每一条路线，<br />都是破局的机会。</h2>
+        <div>
+          <i></i> 双战场 <span>/</span> 五种枪械 <span>/</span> 四种模式
+        </div>
+      </aside>
+      <footer class="menu-footer">
+        <span>TACTICS. MOVEMENT. PRECISION.</span
+        ><span id="menu-record">本地记录 / 尚未完成对局</span>
+      </footer>
+    </section>
+
+    <main id="game-hud" class="game-hud" aria-label="比赛信息">
+      <div class="hud-top">
+        <div class="operation-label">
+          <span class="mini-logo">RF<span> / </span></span
+          ><strong id="hud-map">港湾前哨</strong
+          ><small id="hud-mode">团队激斗 · AI 对战</small>
+        </div>
+        <div class="match-score">
+          <div class="team-score ally-score">
+            <small>我方</small><strong id="ally-score">00</strong>
+          </div>
+          <div class="clock-block">
+            <span id="match-clock">05:00</span
+            ><small id="match-target">目标 25</small>
+          </div>
+          <div class="team-score enemy-score">
+            <strong id="enemy-score">00</strong><small>敌方</small>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button
+            type="button"
+            class="hud-icon"
+            data-input="scoreboard"
+            aria-label="显示战绩"
+            title="战绩 Tab"
+          >
+            ▤</button
+          ><button
+            type="button"
+            class="hud-icon"
+            data-action="pause"
+            aria-label="暂停游戏"
+            title="暂停 Esc"
+          >
+            Ⅱ
+          </button>
+        </div>
+      </div>
+      <div class="radar-panel">
+        <canvas
+          id="minimap"
+          width="260"
+          height="260"
+          aria-label="战场小地图"
+        ></canvas>
+        <div>
+          <span id="radar-heading">N</span
+          ><small id="radar-status">战术地图</small>
+        </div>
+      </div>
+      <div id="objectives" class="objectives" aria-label="据点归属"></div>
+      <div id="survival-status" class="survival-status" hidden>
+        <span id="wave-label">WAVE 01 / 05</span
+        ><strong id="lives-label">◆ ◆ ◆</strong>
+      </div>
+      <div id="kill-feed" class="kill-feed" aria-label="击败记录"></div>
+      <div id="scope-overlay" class="scope-overlay" aria-hidden="true">
+        <div class="scope-lens">
+          <i></i><b></b><span>RANGE / PRECISION OPTICS</span>
+        </div>
+      </div>
+      <div id="crosshair" class="crosshair" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><b></b>
+      </div>
+      <div id="hit-marker" class="hit-marker" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <div
+        id="damage-vignette"
+        class="damage-vignette"
+        aria-hidden="true"
+      ></div>
+      <div id="damage-direction" class="damage-direction" aria-hidden="true">
+        <i></i>
+      </div>
+      <div id="center-notice" class="center-notice" aria-live="polite">
+        <small id="notice-label">准备部署</small
+        ><strong id="notice-value">3</strong
+        ><span id="notice-detail">移动到掩体，寻找进攻路线</span>
+      </div>
+      <div id="reload-notice" class="reload-notice" hidden>
+        正在装填<span></span>
+      </div>
+      <div class="player-panel">
+        <div class="player-heading">
+          <strong id="player-class">先锋</strong><span id="streak-count"></span>
+        </div>
+        <div class="vital-row">
+          <span class="vital-symbol">+</span>
+          <div class="vital-track health-track"><i id="health-fill"></i></div>
+          <strong id="health-value">100</strong>
+        </div>
+        <div class="vital-row armor-row">
+          <span class="vital-symbol">◇</span>
+          <div class="vital-track armor-track"><i id="armor-fill"></i></div>
+          <strong id="armor-value">50</strong>
+        </div>
+        <div class="stamina-row">
+          <span>体力</span>
+          <div class="vital-track stamina-track"><i id="stamina-fill"></i></div>
+        </div>
+      </div>
+      <div class="ammo-panel">
+        <div class="weapon-heading">
+          <span id="weapon-type">AR / 自动步枪</span
+          ><span id="grenade-count">◈ 2</span>
+        </div>
+        <strong id="weapon-name">先锋突击步枪</strong>
+        <div class="ammo-count">
+          <b id="ammo-mag">30</b
+          ><span>/ <span id="ammo-reserve">150</span></span
+          ><small id="reload-label">R 装填</small>
+        </div>
+      </div>
+      <div id="weapon-bar" class="weapon-bar" aria-label="切换武器"></div>
+      <div class="keyboard-guide">
+        <span><kbd>空格</kbd>跳跃</span><span><kbd>Shift</kbd>冲刺</span
+        ><span><kbd>V</kbd>滑铲</span><span><kbd>G</kbd>手雷</span
+        ><span><kbd>F</kbd>近战</span>
+      </div>
+      <button
+        class="training-end"
+        type="button"
+        data-action="endTraining"
+        hidden
+      >
+        结束训练 ↗
+      </button>
+      <div class="touch-controls" aria-label="触屏操作">
+        <div class="dpad">
+          <button type="button" data-control="forward" aria-label="向前移动">
+            ⌃</button
+          ><button type="button" data-control="left" aria-label="向左移动">
+            ‹</button
+          ><span aria-hidden="true">+</span
+          ><button type="button" data-control="right" aria-label="向右移动">
+            ›</button
+          ><button type="button" data-control="back" aria-label="向后移动">
+            ⌄
+          </button>
+        </div>
+        <div class="touch-movement">
+          <button type="button" data-control="sprint">冲刺</button
+          ><button type="button" data-control="crouch">蹲下</button>
+        </div>
+        <button
+          type="button"
+          class="touch-fire"
+          data-control="fire"
+          aria-label="开火"
+        >
+          <span>⌖</span><small>开火</small></button
+        ><button
+          type="button"
+          class="touch-aim"
+          data-input="aim"
+          aria-label="切换瞄准"
+          aria-pressed="false"
+        >
+          ◎<small>开镜</small>
+        </button>
+        <div class="touch-utility">
+          <button type="button" data-input="jump">跳跃</button
+          ><button type="button" data-input="reload">装填</button
+          ><button type="button" data-input="grenade">手雷</button
+          ><button type="button" data-input="slide">滑铲</button
+          ><button type="button" data-input="melee">近战</button
+          ><button type="button" data-input="cycleWeapon">切枪</button>
+        </div>
+      </div>
+    </main>
+
+    <section
+      id="pause-overlay"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pause-title"
+      hidden
+    >
+      <div class="modal-panel pause-panel">
+        <p class="eyebrow">TACTICAL PAUSE</p>
+        <h2 id="pause-title">战术暂停<span>喘口气，再出击。</span></h2>
+        <div class="pause-actions">
+          <button type="button" class="primary-button" data-action="resume">
+            继续战斗 <span>↗</span></button
+          ><button
+            type="button"
+            class="secondary-button"
+            data-action="sound"
+            aria-pressed="true"
+          >
+            声音：开</button
+          ><button type="button" class="secondary-button" data-action="restart">
+            重新部署</button
+          ><button type="button" class="secondary-button" data-action="menu">
+            返回主菜单</button
+          ><button
+            type="button"
+            class="secondary-button pause-training"
+            data-action="endTraining"
+            hidden
+          >
+            结束本次训练
+          </button>
+        </div>
+        <div class="controls-reference">
+          <p>操作手册 <span>FIELD MANUAL</span></p>
+          <div>
+            <span><kbd>W A S D</kbd>移动</span
+            ><span><kbd>鼠标右键</kbd>瞄准</span><span><kbd>空格</kbd>跳跃</span
+            ><span><kbd>Shift</kbd>冲刺</span
+            ><span><kbd>C / Ctrl</kbd>蹲下</span><span><kbd>V</kbd>滑铲</span
+            ><span><kbd>R</kbd>装填</span><span><kbd>G</kbd>手雷</span
+            ><span><kbd>F</kbd>近战</span><span><kbd>1—5 / 滚轮</kbd>切枪</span
+            ><span><kbd>Tab</kbd>战绩</span><span><kbd>Esc / P</kbd>暂停</span>
+          </div>
+          <small
+            >触屏：滑动空白区域转向，按住方向键与开火键；点按「开镜」切换瞄准。</small
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      id="upgrade-overlay"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="upgrade-title"
+      hidden
+    >
+      <div class="modal-panel upgrade-panel">
+        <p class="eyebrow">SURVIVAL / FIELD UPGRADE</p>
+        <h2 id="upgrade-title">
+          守住了。继续前进。<span id="upgrade-wave">选择强化，迎接下一波</span>
+        </h2>
+        <div class="upgrade-options">
+          <button type="button" data-action="upgrade" data-upgrade="health">
+            <span>+</span><strong>生命强化</strong
+            ><small>提高生命上限<br />更持久地坚守阵地</small
+            ><b>选择 ↗</b></button
+          ><button type="button" data-action="upgrade" data-upgrade="armor">
+            <span>◇</span><strong>装甲强化</strong
+            ><small>提高护甲上限<br />加强正面防护</small><b>选择 ↗</b></button
+          ><button type="button" data-action="upgrade" data-upgrade="supply">
+            <span>▰</span><strong>火力补给</strong
+            ><small>提高体力上限<br />携带更多手雷</small><b>选择 ↗</b>
+          </button>
+        </div>
+        <button type="button" class="text-button" data-action="menu">
+          结束行动，返回主菜单
+        </button>
+      </div>
+    </section>
+    <section
+      id="result-overlay"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="result-title"
+      hidden
+    >
+      <div class="modal-panel result-panel">
+        <p class="eyebrow" id="result-eyebrow">OPERATION COMPLETE</p>
+        <h2 id="result-title">任务完成</h2>
+        <p class="result-reason" id="result-reason"></p>
+        <div class="result-score">
+          <strong id="result-ally">25</strong><span>—</span
+          ><strong id="result-enemy">18</strong>
+        </div>
+        <div id="result-stats" class="result-stats"></div>
+        <p id="result-record" class="result-record"></p>
+        <div class="result-actions">
+          <button type="button" class="primary-button" data-action="restart">
+            再战一场 ↗</button
+          ><button type="button" class="secondary-button" data-action="menu">
+            返回主菜单
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      id="scoreboard-overlay"
+      class="scoreboard-overlay"
+      aria-labelledby="scoreboard-title"
+      hidden
+    >
+      <div class="scoreboard-panel">
+        <div class="scoreboard-heading">
+          <div>
+            <p class="eyebrow">LIVE MATCH STATS</p>
+            <h2 id="scoreboard-title">战场战绩 <small>AI 对战</small></h2>
+          </div>
+          <button
+            type="button"
+            class="hud-icon"
+            data-input="scoreboard"
+            aria-label="关闭战绩"
+          >
+            ×
+          </button>
+        </div>
+        <div class="scoreboard-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>干员</th>
+                <th>击败</th>
+                <th>倒下</th>
+                <th>助攻</th>
+                <th>占领</th>
+              </tr>
+            </thead>
+            <tbody id="scoreboard-body"></tbody>
+          </table>
+        </div>
+        <p>
+          我方青色 / 敌方珊瑚色 <span>按住 Tab 查看 · 触屏再次点击关闭</span>
+        </p>
+      </div>
+    </section>
+    <section id="error-overlay" class="modal-overlay" role="alert" hidden>
+      <div class="modal-panel">
+        <p class="eyebrow">SYSTEM NOTICE</p>
+        <h2>战场暂时无法启动</h2>
+        <p id="error-message"></p>
+        <p>请使用支持 WebGL 的浏览器，并开启硬件加速。</p>
+        <a class="primary-button" href="./">重新载入 ↗</a
+        ><a class="text-button" href="../../">返回游戏合集</a>
+      </div>
+    </section>
+    <div
+      id="toast-stack"
+      class="toast-stack"
+      role="status"
+      aria-live="polite"
+    ></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
