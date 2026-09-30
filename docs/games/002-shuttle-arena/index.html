@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#101e28" />
+    <meta
+      name="description"
+      content="羽境 SHUTTLE ARENA：一句话生成的 3D 羽毛球游戏。走进球场，在高远、吊球与杀球之间找到自己的节奏。"
+    />
+    <title>羽境 · SHUTTLE ARENA — 一句话，一个游戏 #002</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script type="module" crossorigin src="./assets/index-CgQcLqHU.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-BFFM1NmA.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Wz8HAutX.css">
+  </head>
+  <body data-ui-mode="loading">
+    <canvas id="game-canvas" aria-label="3D 羽毛球球场" tabindex="-1"></canvas>
+    <div class="scene-vignette" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="../../" aria-label="返回一句话游戏合集">
+        <span class="brand-symbol" aria-hidden="true"
+          ><i></i><i></i><i></i><b></b
+        ></span>
+        <span class="brand-type"
+          ><strong
+            >羽境<span class="brand-divider">/</span
+            ><span class="brand-english">SHUTTLE ARENA</span></strong
+          ><small>ONE SENTENCE. INFINITE PLAY.</small></span
+        >
+      </a>
+      <div class="topbar-right">
+        <span class="edition">EXPERIMENT <strong>002</strong></span>
+        <div class="utility-buttons">
+          <button
+            type="button"
+            class="icon-button"
+            data-action="camera"
+            title="切换镜头（C）"
+            aria-label="切换镜头"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="14" rx="3" />
+              <path d="m8 6 1-3h6l1 3" />
+              <circle cx="12" cy="13" r="3" /></svg
+            ><span class="utility-label" id="camera-label">跟随</span>
+          </button>
+          <button
+            type="button"
+            class="icon-button"
+            data-action="sound"
+            title="声音（M）"
+            aria-label="关闭声音"
+            aria-pressed="true"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11 4 6 8H3v8h3l5 4Z" />
+              <path
+                class="sound-waves"
+                d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+              />
+              <path class="sound-muted" d="m16 9 6 6m0-6-6 6" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="icon-button play-only"
+            data-action="pause"
+            title="暂停（P）"
+            aria-label="暂停比赛"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14M16 5v14" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="welcome-panel" class="welcome-panel" hidden>
+      <div class="eyebrow">
+        <span class="live-dot"></span> STEP ONTO THE COURT
+        <span class="tiny-line"></span>
+      </div>
+      <h1>一拍，<br /><span>定胜负。</span></h1>
+      <p class="intro">
+        轻挑、重扣，把每一拍打成高光。<br />你的球场，现在开赛。
+      </p>
+      <form id="match-options" class="match-options">
+        <fieldset>
+          <legend>选择赛制 <span>01 / FORMAT</span></legend>
+          <div class="format-options">
+            <label class="format-option"
+              ><input type="radio" name="mode" value="quick" checked /><span
+                ><strong>快速对决</strong><small>7 分 · 一局定胜负</small></span
+              ><b aria-hidden="true">↗</b></label
+            >
+            <label class="format-option"
+              ><input type="radio" name="mode" value="match" /><span
+                ><strong>标准比赛</strong><small>21 分 · 三局两胜</small></span
+              ><b aria-hidden="true">↗</b></label
+            >
+            <label class="format-option"
+              ><input type="radio" name="mode" value="training" /><span
+                ><strong>自由训练</strong><small>不限时 · 找到手感</small></span
+              ><b aria-hidden="true">↗</b></label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="difficulty-field">
+          <legend>对手难度 <span>02 / RIVAL</span></legend>
+          <div class="segmented">
+            <label
+              ><input type="radio" name="difficulty" value="easy" /><span
+                >轻松</span
+              ></label
+            ><label
+              ><input
+                type="radio"
+                name="difficulty"
+                value="normal"
+                checked
+              /><span>标准</span></label
+            ><label
+              ><input type="radio" name="difficulty" value="hard" /><span
+                >高手</span
+              ></label
+            >
+          </div>
+        </fieldset>
+        <label class="assist-option"
+          ><span
+            ><strong>自动步伐</strong
+            ><small>专注击球，让跑位交给直觉</small></span
+          ><input type="checkbox" name="assist" checked /><span
+            class="switch"
+            aria-hidden="true"
+          ></span
+        ></label>
+        <button type="submit" class="primary-button start-button">
+          开始比赛 <span>LET’S PLAY <b aria-hidden="true">↗</b></span>
+        </button>
+      </form>
+      <details class="how-to">
+        <summary>
+          第一次上场？<span>操作指南 <b aria-hidden="true">＋</b></span>
+        </summary>
+        <div class="how-to-content">
+          <p>
+            开启自动步伐后，球员会主动追球；等球靠近、出现「击球时机」时出拍。先用高远球找到节奏，再尝试轻吊与杀球。
+          </p>
+          <dl>
+            <div>
+              <dt><kbd>Space</kbd></dt>
+              <dd>发球 / 高远球</dd>
+            </div>
+            <div>
+              <dt><kbd>J</kbd> / <kbd>K</kbd></dt>
+              <dd>网前吊球 / 强力杀球</dd>
+            </div>
+            <div>
+              <dt><kbd>Q</kbd> / <kbd>E</kbd></dt>
+              <dd>瞄准左侧 / 右侧</dd>
+            </div>
+            <div>
+              <dt><kbd>WASD</kbd> / <kbd>↑↓←→</kbd></dt>
+              <dd>手动跑位</dd>
+            </div>
+            <div>
+              <dt><kbd>Shift</kbd></dt>
+              <dd>冲刺，注意体力</dd>
+            </div>
+            <div>
+              <dt><kbd>P</kbd> <kbd>C</kbd> <kbd>M</kbd> <kbd>H</kbd></dt>
+              <dd>暂停 / 镜头 / 声音 / 步伐辅助</dd>
+            </div>
+          </dl>
+          <p class="touch-note">
+            触屏：左侧方向键跑位，右侧按钮击球。球落在对方场内，或对手回球出界 /
+            下网，即可得分。
+          </p>
+        </div>
+      </details>
+      <div class="menu-record">
+        <span>你的主场纪录</span
+        ><strong id="menu-record">0 胜 <i>·</i> 最长 0 拍</strong>
+      </div>
+    </main>
+
+    <aside class="court-caption menu-only" aria-hidden="true">
+      <span class="caption-rule"></span
+      ><span>COURT 002 <strong>THE MOMENT IS YOURS.</strong></span
+      ><span class="caption-coordinate">13.40 × 6.10 M</span>
+    </aside>
+    <footer class="menu-footer menu-only">
+      <span>一句话，一个游戏。</span
+      ><span>「实现一个羽毛球比赛的 3D 游戏，尽你所能增加功能」</span
+      ><a href="../../">探索所有游戏 <span aria-hidden="true">↗</span></a>
+    </footer>
+
+    <section id="game-hud" class="game-hud" aria-label="比赛信息" hidden>
+      <div class="scoreboard">
+        <div class="score-player you">
+          <div class="score-name">
+            <span class="server-dot" id="you-server" title="你的发球权"></span
+            ><span>YOU</span><small>你</small>
+          </div>
+          <strong class="score-digit" id="you-score">00</strong>
+        </div>
+        <div class="score-center">
+          <span id="format-label">QUICK MATCH</span
+          ><strong id="game-label">第 1 局</strong>
+          <div class="game-tally">
+            <b id="you-games">0</b><span>局</span><b id="ai-games">0</b>
+          </div>
+        </div>
+        <div class="score-player ai">
+          <div class="score-name">
+            <span>RIVAL</span><small>对手</small
+            ><span
+              class="server-dot"
+              id="ai-server"
+              title="对手的发球权"
+            ></span>
+          </div>
+          <strong class="score-digit" id="ai-score">00</strong>
+        </div>
+      </div>
+      <div class="match-meta">
+        <span class="live-dot"></span><span id="match-status">等待发球</span
+        ><span class="meta-divider">/</span><span id="match-time">00:00</span>
+      </div>
+      <div class="player-panel">
+        <div class="stamina-label">
+          <span>体力 <small>ENERGY</small></span
+          ><strong id="energy-value">100%</strong>
+        </div>
+        <div class="stamina-track"><div id="energy-bar"></div></div>
+        <div class="rally-stats">
+          <span
+            >本回合 <strong id="rally-count">0</strong><small>拍</small></span
+          ><span
+            >最长 <strong id="longest-count">0</strong><small>拍</small></span
+          >
+        </div>
+        <button
+          type="button"
+          id="assist-toggle"
+          class="assist-toggle"
+          data-action="assist"
+          aria-pressed="true"
+        >
+          <span class="live-dot"></span>自动步伐
+          <strong id="assist-status">开启</strong><kbd>H</kbd>
+        </button>
+      </div>
+      <div class="shot-status" id="shot-status">
+        <span class="timing-dot"></span><span id="shot-prompt">准备接球</span>
+      </div>
+      <div class="serve-panel" id="serve-panel">
+        <span id="serve-copy">准备好，打出第一拍。</span
+        ><button type="button" class="primary-button" data-action="serve">
+          发球 <kbd>SPACE</kbd><b aria-hidden="true">↗</b>
+        </button>
+      </div>
+      <div class="shot-controls">
+        <div class="controls-heading">
+          <span>选择你的下一拍</span><span>AIM <kbd>Q</kbd> <kbd>E</kbd></span>
+        </div>
+        <div class="shot-buttons">
+          <button
+            type="button"
+            class="shot-button"
+            data-action="shot"
+            data-shot="clear"
+          >
+            <kbd>SPACE</kbd
+            ><svg viewBox="0 0 40 22" aria-hidden="true">
+              <path d="M3 18C10-3 26-3 36 16m-6-1 6 1 0-6" /></svg
+            ><strong>高远</strong><small>稳住节奏</small></button
+          ><button
+            type="button"
+            class="shot-button"
+            data-action="shot"
+            data-shot="drop"
+          >
+            <kbd>J</kbd
+            ><svg viewBox="0 0 40 22" aria-hidden="true">
+              <path d="M3 18C11-1 20 2 22 17m-5-3 5 3 3-5" /></svg
+            ><strong>吊球</strong><small>轻落网前</small></button
+          ><button
+            type="button"
+            class="shot-button smash-button"
+            data-action="shot"
+            data-shot="smash"
+          >
+            <kbd>K</kbd
+            ><svg viewBox="0 0 40 22" aria-hidden="true">
+              <path d="m7 3 27 15m-7 1 7-1-2-6M4 10l10 5M13 3l8 4" /></svg
+            ><strong>杀球</strong><small>一击制胜</small>
+          </button>
+        </div>
+        <div class="desktop-controls">
+          <span><kbd>WASD</kbd> 移动</span><span><kbd>SHIFT</kbd> 冲刺</span>
+        </div>
+      </div>
+      <div id="touch-controls" class="touch-controls" aria-label="触屏控制">
+        <div class="direction-pad">
+          <button
+            type="button"
+            data-control="forward"
+            class="dir-up"
+            aria-label="向前移动"
+          >
+            ↑</button
+          ><button
+            type="button"
+            data-control="left"
+            class="dir-left"
+            aria-label="向左移动"
+          >
+            ←</button
+          ><button
+            type="button"
+            data-control="back"
+            class="dir-down"
+            aria-label="向后移动"
+          >
+            ↓</button
+          ><button
+            type="button"
+            data-control="right"
+            class="dir-right"
+            aria-label="向右移动"
+          >
+            →
+          </button>
+        </div>
+        <button type="button" class="sprint-button" data-control="sprint">
+          冲刺
+        </button>
+        <div class="touch-aim">
+          <button type="button" data-action="aimleft" aria-label="瞄准左侧">
+            ↖ <span>左落点</span></button
+          ><button type="button" data-action="aimright" aria-label="瞄准右侧">
+            <span>右落点</span> ↗
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+      <span id="toast-text"></span>
+    </div>
+
+    <section
+      id="pause-overlay"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pause-title"
+      hidden
+    >
+      <div class="modal-card pause-card">
+        <span class="eyebrow">TAKE A BREATH</span>
+        <h2 id="pause-title">休息一拍。</h2>
+        <p>球场会等你。准备好了，就继续。</p>
+        <button type="button" class="primary-button" data-action="resume">
+          继续比赛 <span>RESUME ↗</span>
+        </button>
+        <div class="secondary-actions">
+          <button type="button" class="secondary-button" data-action="restart">
+            重新开始</button
+          ><button type="button" class="secondary-button" data-action="menu">
+            返回主场
+          </button>
+        </div>
+        <div class="pause-tips">
+          <span><kbd>Space</kbd> 高远</span><span><kbd>J</kbd> 吊球</span
+          ><span><kbd>K</kbd> 杀球</span
+          ><span><kbd>Q</kbd><kbd>E</kbd> 落点</span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="result-overlay"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="result-title"
+      hidden
+    >
+      <div class="modal-card result-card">
+        <div class="result-topline">
+          <span class="eyebrow" id="result-kicker">MATCH COMPLETE</span
+          ><span class="result-badge" id="result-badge">GOOD GAME</span>
+        </div>
+        <h2 id="result-title">胜利，属于你。</h2>
+        <p id="result-copy">每一拍都算数。下一场，继续闪耀。</p>
+        <div class="result-score">
+          <div><small>YOU</small><strong id="result-you-score">7</strong></div>
+          <span>:</span>
+          <div><small>RIVAL</small><strong id="result-ai-score">4</strong></div>
+        </div>
+        <div class="result-stats">
+          <div><strong id="result-rallies">0</strong><span>总回合</span></div>
+          <div><strong id="result-rally">0</strong><span>最长对拉</span></div>
+          <div><strong id="result-smashes">0</strong><span>你的杀球</span></div>
+          <div>
+            <strong id="result-time">00:00</strong><span>比赛用时</span>
+          </div>
+        </div>
+        <p class="result-record" id="result-record">主场纪录 · 0 胜</p>
+        <button
+          type="button"
+          id="continue-button"
+          class="primary-button"
+          data-action="continue"
+          hidden
+        >
+          下一局 <span>KEEP GOING ↗</span></button
+        ><button
+          type="button"
+          id="rematch-button"
+          class="primary-button"
+          data-action="restart"
+        >
+          再来一场 <span>PLAY AGAIN ↗</span></button
+        ><button type="button" class="text-button" data-action="menu">
+          返回主场
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="loading-overlay"
+      class="modal-backdrop loading-overlay"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="loading-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <strong>球场准备中</strong><span>YOUR NEXT GREAT SHOT AWAITS.</span>
+    </section>
+    <section
+      id="error-overlay"
+      class="modal-backdrop"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="error-title"
+      hidden
+    >
+      <div class="modal-card">
+        <span class="eyebrow">A QUICK TIMEOUT</span>
+        <h2 id="error-title">球场暂未就绪</h2>
+        <p id="error-message">请刷新页面后重试。</p>
+        <button type="button" class="primary-button" data-action="reload">
+          重新加载 <span>TRY AGAIN ↗</span></button
+        ><a class="text-button" href="../../">返回游戏合集</a>
+      </div>
+    </section>
+  </body>
+</html>
