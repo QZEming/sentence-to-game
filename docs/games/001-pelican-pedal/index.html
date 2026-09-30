@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#b9ded7" />
+    <meta
+      name="description"
+      content="骑上一辆小单车，和鹈鹕一起在阳光海岛收集鲜鱼。一个可以直接在浏览器玩的原创 3D 游戏。"
+    />
+    <title>鹈鹕漫游记 · PELICAN PEDAL</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script type="module" crossorigin src="./assets/index-ZJmqV08G.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three-Ck2YYMaM.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-D3ilGD6V.css">
+  </head>
+  <body data-mode="loading">
+    <canvas
+      id="game-canvas"
+      aria-label="鹈鹕骑自行车的三维海岛游戏场景"
+    ></canvas>
+    <div class="scene-vignette" aria-hidden="true"></div>
+
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="鹈鹕漫游记首页">
+        <span class="brand-mark" aria-hidden="true"
+          ><svg viewBox="0 0 36 36" fill="none">
+            <path
+              d="M11 26c-5-2-6-8-2-11 3-3 7-1 9 0l2-8c1-3 5-4 7-1 2 3 0 6-3 7l-1 8c-1 7-6 8-12 5Z"
+              fill="currentColor"
+            />
+            <path d="m26 8 7 3-10 2" fill="#f2b95e" />
+            <circle cx="24.5" cy="7.7" r="1" fill="#173d39" />
+            <path
+              d="m14 27-2 4m7-4 1 4"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            /></svg
+        ></span>
+        <span class="brand-type"
+          >PELICAN <strong>PEDAL</strong><span>一句话，一个小世界。</span></span
+        >
+      </a>
+      <div class="top-actions">
+        <button
+          class="icon-button sound-button"
+          data-action="sound"
+          type="button"
+          aria-label="开启声音"
+          aria-pressed="false"
+          title="声音 · M"
+        >
+          <svg class="sound-on-icon" viewBox="0 0 24 24" fill="none">
+            <path
+              d="m11 5-5 4H3v6h3l5 4V5Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            /></svg
+          ><svg class="sound-off-icon" viewBox="0 0 24 24" fill="none">
+            <path
+              d="m11 5-5 4H3v6h3l5 4V5Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m16 9 5 6m0-6-5 6"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button
+          class="icon-button play-only"
+          data-action="camera"
+          type="button"
+          aria-label="切换镜头"
+          title="切换镜头 · C"
+        >
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M3 8h4l2-3h6l2 3h4v12H3V8Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linejoin="round"
+            />
+            <circle
+              cx="12"
+              cy="13"
+              r="3.4"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+          </svg>
+        </button>
+        <button
+          class="icon-button play-only"
+          data-action="pause"
+          type="button"
+          aria-label="暂停游戏"
+          title="暂停 · P"
+        >
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M8 5v14m8-14v14"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <span class="edition menu-only">VOL. 001 <span>／</span> 小岛特刊</span>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="welcome-panel"
+        class="welcome-panel"
+        aria-labelledby="welcome-title"
+        hidden
+      >
+        <div class="welcome-eyebrow">
+          <span class="sun-dot"></span> 一句话游戏
+          <span class="eyebrow-divider">/</span> No.001
+        </div>
+        <h1 id="welcome-title">
+          鹈鹕<br /><span
+            >漫游记<span class="title-spark" aria-hidden="true"
+              ><svg viewBox="0 0 36 36" width="1em" height="1em" fill="none">
+                <path
+                  d="M18 2v32M2 18h32M6.7 6.7l22.6 22.6M6.7 29.3 29.3 6.7"
+                  stroke="currentColor"
+                  stroke-width="2.7"
+                  stroke-linecap="round"
+                /></svg></span
+          ></span>
+        </h1>
+        <p class="welcome-english">PELICAN PEDAL</p>
+        <p class="welcome-tagline">海风、脚踏板，和一兜鲜鱼。</p>
+        <p class="welcome-copy">
+          今天的计划很简单：骑上单车，<br />沿着海岸追追风，顺路捎点鱼回家。
+        </p>
+        <div class="feature-chips" aria-label="游戏特色">
+          <span
+            ><svg viewBox="0 0 20 20" fill="none">
+              <path
+                d="m3 6 4-2 6 2 4-2v12l-4 2-6-2-4 2V6Zm4-2v12m6-10v12"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+              /></svg
+            >3D 环岛</span
+          >
+          <span
+            ><svg viewBox="0 0 20 20" fill="none">
+              <path
+                d="M15 10c-2-6-8-6-11 0 3 6 9 6 11 0Zm0 0 3-3v6l-3-3Z"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+              />
+              <circle cx="7" cy="9" r="1" fill="currentColor" /></svg
+            >收集鲜鱼</span
+          >
+          <span
+            ><svg viewBox="0 0 20 20" fill="none">
+              <path
+                d="M3 15h14M4 12l12-8v8H4Z"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            >坡道飞跃</span
+          >
+        </div>
+        <button
+          class="primary-button start-button"
+          data-action="start"
+          type="button"
+        >
+          <span>开始兜风 <small>LET’S RIDE</small></span
+          ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M4 12h15m-6-6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <p class="mission-note">
+          <span class="mini-fish" aria-hidden="true">◈</span> 90 秒 · 收集 12
+          条鲜鱼 · 完成环岛 1 圈
+        </p>
+        <button class="menu-free-ride" data-action="freeRide" type="button">
+          想慢慢骑？自由漫游 <span aria-hidden="true">↗</span>
+        </button>
+        <details class="controls-guide">
+          <summary>
+            出发前，认识一下脚踏板 <span aria-hidden="true">＋</span>
+          </summary>
+          <div class="key-grid">
+            <span><kbd>W</kbd><kbd>↑</kbd> 向前骑</span
+            ><span><kbd>A</kbd><kbd>D</kbd> 转向</span
+            ><span><kbd>S</kbd><kbd>↓</kbd> 刹车</span
+            ><span><kbd>Space</kbd> 跳跃</span><span><kbd>Shift</kbd> 冲刺</span
+            ><span><kbd>P</kbd> 暂停</span><span><kbd>R</kbd> 重来</span
+            ><span><kbd>C</kbd> 镜头</span><span><kbd>M</kbd> 声音</span>
+          </div>
+          <p>手机和平板也能玩，屏幕下方就是你的车把。</p>
+        </details>
+      </section>
+
+      <div class="island-caption menu-only" aria-hidden="true">
+        <span class="caption-line"></span>
+        <div>
+          下一站，没什么大事。<small>SUNSHINE ISLAND · 26°C · 海风轻轻</small>
+        </div>
+      </div>
+      <div class="postcard-stamp menu-only" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle
+            cx="16"
+            cy="16"
+            r="6"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M16 2v4m0 20v4M2 16h4m20 0h4M6 6l3 3m14 14 3 3M6 26l3-3M23 9l3-3"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          /></svg
+        ><span>GOOD DAY<br />TO RIDE</span>
+      </div>
+
+      <section id="game-hud" class="game-hud" aria-label="游戏状态" hidden>
+        <div class="race-stats">
+          <div class="time-stat">
+            <span class="stat-label" id="time-label">海风倒计时</span
+            ><span class="stat-value" id="hud-time">01:30</span>
+          </div>
+          <span class="stat-separator"></span>
+          <div class="fish-stat">
+            <svg viewBox="0 0 30 24" fill="none" aria-hidden="true">
+              <path
+                d="M22 12c-5-10-15-10-20 0 5 10 15 10 20 0Zm0 0 7-7v14l-7-7Z"
+                fill="currentColor"
+              />
+              <circle cx="8" cy="10" r="1.4" fill="#fff9e9" />
+            </svg>
+            <div>
+              <span class="stat-label">今日收获</span
+              ><span class="stat-value"
+                ><span id="hud-fish">0</span
+                ><small> / <span id="hud-target">12</span></small></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="trip-progress">
+          <span>环岛旅程</span>
+          <div class="progress-track"><div id="hud-progress"></div></div>
+          <span id="hud-progress-label">0%</span>
+        </div>
+        <div class="speed-card">
+          <div class="speed-heading">
+            <span class="live-dot"></span><span id="ride-status">海风正好</span
+            ><span id="camera-label">追随镜头</span>
+          </div>
+          <div class="speed-value">
+            <span id="hud-speed">0</span
+            ><span>km/h<small>踩出一点快乐</small></span>
+          </div>
+          <div class="boost-label">
+            <span
+              ><svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="m9 1-6 8h4l-1 6 7-9H9l1-5Z" fill="currentColor" /></svg
+              >风力冲刺</span
+            ><kbd>SHIFT</kbd>
+          </div>
+          <div class="boost-track"><div id="hud-boost"></div></div>
+          <div class="score-row">
+            <span>旅途积分 <b id="hud-score">0</b></span
+            ><span id="hud-combo"></span>
+          </div>
+        </div>
+        <div class="minimap-card">
+          <div class="map-heading">
+            <span>小岛漫游指南</span><span>N ↑</span>
+          </div>
+          <canvas
+            id="minimap"
+            width="320"
+            height="216"
+            aria-label="环岛路线与当前位置"
+          ></canvas>
+          <div class="map-legend">
+            <span><i></i>你在这里</span><span><i></i>海岸公路</span>
+          </div>
+        </div>
+        <div class="driving-hint">
+          <kbd>WASD</kbd> 骑行 <span>·</span> <kbd>空格</kbd> 跳跃
+          <span>·</span> <kbd>Shift</kbd> 冲刺
+        </div>
+      </section>
+
+      <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></div>
+
+      <section
+        id="pause-overlay"
+        class="modal-backdrop"
+        aria-labelledby="pause-title"
+        hidden
+      >
+        <div
+          class="dialog-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="pause-title"
+        >
+          <span class="dialog-kicker">TAKE A LITTLE BREAK</span>
+          <div class="dialog-symbol" aria-hidden="true">Ⅱ</div>
+          <h2 id="pause-title">歇一脚，看看海。</h2>
+          <p>鲜鱼和海风都在等你。<br />准备好了，就继续出发吧。</p>
+          <button class="primary-button" data-action="resume" type="button">
+            继续兜风 <span aria-hidden="true">→</span></button
+          ><button class="text-button" data-action="restart" type="button">
+            重新开始这趟旅程
+          </button>
+          <div class="pause-keys">
+            <kbd>P</kbd> 继续 <span>·</span> <kbd>C</kbd> 切换镜头
+            <span>·</span> <kbd>M</kbd> 声音
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="result-overlay"
+        class="modal-backdrop"
+        aria-labelledby="result-title"
+        hidden
+      >
+        <div
+          class="dialog-card result-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="result-title"
+        >
+          <span class="dialog-kicker" id="result-kicker"
+            >A VERY GOOD LITTLE TRIP</span
+          >
+          <div class="result-medal" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none">
+              <path
+                d="M38 26c-8-16-24-16-32 0 8 16 24 16 32 0Zm0 0 11-11v22L38 26Z"
+                fill="currentColor"
+              />
+              <circle cx="17" cy="22" r="2.6" fill="#fff8e6" /></svg
+            ><span>✦</span>
+          </div>
+          <h2 id="result-title">满载快乐而归。</h2>
+          <p id="result-copy">鱼兜装满了，心情也是。</p>
+          <div class="result-stats">
+            <div>
+              <span>新鲜收获</span
+              ><strong
+                ><span id="result-fish">12</span><small> 条</small></strong
+              >
+            </div>
+            <div><span>旅途积分</span><strong id="result-score">0</strong></div>
+            <div><span>最佳纪录</span><strong id="result-best">0</strong></div>
+          </div>
+          <p class="result-note" id="result-note"></p>
+          <button class="primary-button" data-action="restart" type="button">
+            再兜一圈 <span aria-hidden="true">↗</span></button
+          ><button
+            class="secondary-button"
+            data-action="freeRide"
+            type="button"
+          >
+            不赶时间，自由漫游
+          </button>
+        </div>
+      </section>
+
+      <div id="loading-overlay" class="loading-overlay" role="status">
+        <div class="loading-ring" aria-hidden="true"></div>
+        <span>给单车打个气<span class="loading-dots">...</span></span
+        ><small>海风马上就来</small>
+      </div>
+      <section
+        id="error-overlay"
+        class="modal-backdrop"
+        aria-labelledby="error-title"
+        hidden
+      >
+        <div class="dialog-card error-card" role="alert">
+          <span class="dialog-kicker">A LITTLE BUMP IN THE ROAD</span>
+          <h2 id="error-title">单车需要调整一下。</h2>
+          <p id="error-message"></p>
+          <p class="error-help">
+            请使用支持 WebGL 的现代浏览器，并开启硬件加速后重新打开。
+          </p>
+          <button class="primary-button" data-action="reload" type="button">
+            重新加载 <span aria-hidden="true">↻</span>
+          </button>
+        </div>
+      </section>
+
+      <div
+        id="touch-controls"
+        class="touch-controls"
+        aria-label="触屏骑行控制"
+        hidden
+      >
+        <div class="touch-steering">
+          <button data-control="left" type="button" aria-label="向左转">
+            ←</button
+          ><button data-control="right" type="button" aria-label="向右转">
+            →
+          </button>
+        </div>
+        <div class="touch-actions">
+          <button
+            data-control="brake"
+            class="touch-small"
+            type="button"
+            aria-label="刹车"
+          >
+            刹车</button
+          ><button
+            data-control="boost"
+            class="touch-small touch-boost"
+            type="button"
+            aria-label="冲刺"
+          >
+            冲刺</button
+          ><button
+            data-control="jump"
+            class="touch-jump"
+            type="button"
+            aria-label="跳跃"
+          >
+            跳跃 <span>↗</span></button
+          ><button
+            data-control="forward"
+            class="touch-pedal"
+            type="button"
+            aria-label="向前骑行"
+          >
+            踩踏 <span>↑</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer menu-only">
+      <span>MADE FROM ONE SENTENCE.</span
+      ><span>慢一点，快乐多一点。 <span aria-hidden="true">↗</span></span>
+    </footer>
+  </body>
+</html>

@@ -4,16 +4,15 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**0 / 100**。
+当前进度：**1 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
 ## 游戏列表
 
-尚未收录游戏。
-
 | 编号 | 游戏 | 体验地址 | 源码 |
 | --- | --- | --- | --- |
+| 001 | [鹈鹕漫游记 · Pelican Pedal](games/001-pelican-pedal/README.md) | [开始骑行](https://qzemi.cn/sentence-to-game/games/001-pelican-pedal/) | [源码](games/001-pelican-pedal/src/) |
 
 ## 目录结构
 
@@ -62,5 +61,15 @@ python3 scripts/build-site.py
 将游戏源码、说明和生成的 `docs/` 一起提交到 `main`，GitHub Pages 会自动发布网站。构建会生成游戏列表，并将各游戏的网页文件放到对应地址。
 
 网站沿用个人域名 `qzemi.cn`，合集位于 `/sentence-to-game/`。
+
+本项目新增或更新游戏时，默认发布到上述域名：保留原始提示词与源码，构建游戏与合集，验证游戏子路径，再将对应的 `docs/` 产物随源码提交到 `main`。发布后应检查线上页面；无法访问线上环境时，明确区分已提交的发布产物和尚未确认的线上状态。
+
+第一作的完整构建命令：
+
+```bash
+npm --prefix games/001-pelican-pedal ci
+npm --prefix games/001-pelican-pedal run build
+python3 scripts/build-site.py
+```
 
 模板：[游戏说明](templates/game/README.md) · [提示词](templates/game/prompt.txt)
