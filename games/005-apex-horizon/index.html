@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#16252d" />
+    <meta
+      name="description"
+      content="逐光竞速 APEX HORIZON：驾驶三款原创跑车，挑战海岸、雪山与霓虹都市。单人 3D 街机赛车，支持 AI 竞速、计时、漂移与巡回锦标赛。"
+    />
+    <title>逐光竞速 · APEX HORIZON | 一句话，一个游戏 #005</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body data-ui-mode="loading">
+    <canvas id="game-canvas" aria-label="逐光竞速 3D 赛车画面"></canvas>
+    <div class="loading-screen" id="loading-screen" role="status">
+      <span class="apex-symbol">A</span><strong>APEX HORIZON</strong
+      ><span>引擎正在预热<span class="loading-dots">...</span></span
+      ><i></i>
+    </div>
+
+    <section class="menu-screen" id="menu-screen" aria-label="赛事设置" hidden>
+      <header class="menu-header">
+        <a class="brand" href="../../" aria-label="返回一句话，一个游戏合集"
+          ><span class="apex-symbol">A</span
+          ><span>APEX<span class="brand-light">HORIZON</span></span></a
+        >
+        <div class="header-meta">
+          <span class="edition">一句话，一个游戏 <b>005 / 100</b></span
+          ><button
+            class="icon-button sound-button"
+            type="button"
+            data-action="sound"
+            aria-label="关闭声音"
+            aria-pressed="true"
+          >
+            <span class="sound-state">声音开</span></button
+          ><a class="collection-link" href="../../">游戏合集 <span>↗</span></a>
+        </div>
+      </header>
+      <div class="menu-layout">
+        <div class="setup-panel">
+          <div class="menu-title">
+            <span class="eyebrow"><i></i> THE HORIZON IS YOURS</span>
+            <h1>逐光竞速<span>APEX HORIZON</span></h1>
+            <p>追逐弯道、落日，以及你的下一个纪录。</p>
+          </div>
+          <form id="race-options">
+            <fieldset class="option-section">
+              <legend><span>01</span> 选择挑战 <small>RACE MODE</small></legend>
+              <div class="mode-grid" id="mode-options"></div>
+              <p id="mode-description" class="option-caption"></p>
+            </fieldset>
+            <fieldset class="option-section">
+              <legend><span>02</span> 目的地 <small>DESTINATION</small></legend>
+              <div class="track-grid" id="track-options"></div>
+              <p id="track-description" class="option-caption"></p>
+            </fieldset>
+            <fieldset class="option-section vehicle-section">
+              <legend>
+                <span>03</span> 你的座驾 <small>YOUR MACHINE</small>
+              </legend>
+              <div class="car-grid" id="car-options"></div>
+              <div class="car-details">
+                <div class="car-metrics">
+                  <span
+                    >极速 <i><b id="car-speed"></b></i></span
+                  ><span
+                    >加速 <i><b id="car-accel"></b></i></span
+                  ><span
+                    >操控 <i><b id="car-handling"></b></i
+                  ></span>
+                </div>
+                <span class="paint-label" id="paint-name">车身配色</span>
+                <div
+                  class="paint-options"
+                  id="color-options"
+                  aria-label="车身配色"
+                ></div>
+              </div>
+            </fieldset>
+            <div class="race-settings">
+              <label
+                >AI 难度<select
+                  name="difficulty"
+                  id="difficulty"
+                ></select></label
+              ><label
+                >路面天气<select name="weather" id="weather"></select></label
+              ><label class="auto-option"
+                ><input
+                  type="checkbox"
+                  name="autoThrottle"
+                  id="auto-throttle"
+                /><span class="toggle-switch"></span
+                ><span>自动油门<small>转向与刹车由你掌握</small></span></label
+              >
+            </div>
+            <div class="launch-area">
+              <button
+                class="primary-button start-button"
+                id="start-race"
+                type="submit"
+              >
+                <span>驶向地平线 <small>START YOUR ENGINE</small></span
+                ><span class="button-arrow">↗</span>
+              </button>
+              <p>本地单人 · AI 车手对战 · 键鼠 / 触屏</p>
+            </div>
+          </form>
+        </div>
+        <aside class="showcase-caption" aria-label="赛道与车辆预览">
+          <span class="showcase-overline">OPEN ROAD. FULL THROTTLE.</span>
+          <div class="destination-label">
+            <span id="preview-track-code">01 / COAST</span
+            ><strong id="preview-track-name">落日海岸</strong>
+            <p id="preview-track-subtitle">沿着海岸，追逐最后一束光。</p>
+          </div>
+          <div class="preview-car-label">
+            <i></i><span id="preview-car-name">COMET</span
+            ><span>LIVE 3D PREVIEW</span>
+          </div>
+        </aside>
+        <div class="menu-bottom">
+          <span>三条赛道 / 三款座驾 / 无需下载</span
+          ><span id="record-summary">每一圈，都可以更快一点。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-hud" id="game-hud" aria-label="比赛信息" hidden>
+      <div class="hud-top">
+        <div class="race-counter">
+          <span id="position-label">POSITION</span
+          ><strong
+            ><b id="position-value">1</b
+            ><small id="position-total">/ 7</small></strong
+          >
+        </div>
+        <div class="race-counter lap-counter">
+          <span id="lap-label">LAP</span
+          ><strong
+            ><b id="lap-value">1</b><small id="lap-total">/ 3</small></strong
+          >
+        </div>
+        <div class="race-clock">
+          <span id="hud-track">落日海岸</span
+          ><strong id="race-time">00:00.000</strong
+          ><small
+            >最佳圈速 <b id="best-lap">—</b> <em id="ghost-delta" hidden></em
+          ></small>
+        </div>
+        <div class="hud-actions">
+          <button
+            type="button"
+            class="icon-button"
+            data-action="camera"
+            aria-label="切换摄像机"
+          >
+            <span class="desktop-label">视角 </span
+            ><span id="camera-name">追逐</span><small>C</small></button
+          ><button
+            type="button"
+            class="icon-button sound-button"
+            data-action="sound"
+            aria-label="关闭声音"
+            aria-pressed="true"
+          >
+            <span class="sound-state">声音开</span></button
+          ><button
+            type="button"
+            class="pause-button"
+            data-action="pause"
+            aria-label="暂停比赛"
+          >
+            Ⅱ
+          </button>
+        </div>
+      </div>
+      <div class="leaderboard" id="leaderboard">
+        <div class="leaderboard-title">LIVE STANDINGS <span>●</span></div>
+        <ol id="leaderboard-list"></ol>
+      </div>
+      <div class="center-notice">
+        <div id="countdown" class="countdown" hidden>3</div>
+        <div id="road-warning" class="road-warning" hidden>逆向行驶</div>
+        <div id="drift-display" class="drift-display" hidden>
+          <span>DRIFT COMBO</span
+          ><strong
+            ><b id="drift-pending">0</b
+            ><em id="drift-multiplier">×1</em></strong
+          ><small>稳住车身，收下分数</small>
+        </div>
+      </div>
+      <div class="map-panel">
+        <div>
+          <span id="minimap-title">COAST CIRCUIT</span
+          ><span class="map-you">你 ●</span>
+        </div>
+        <canvas
+          id="minimap"
+          width="230"
+          height="180"
+          aria-label="赛道地图及赛车位置"
+        ></canvas
+        ><span class="map-distance" id="track-distance"></span>
+      </div>
+      <div class="drift-total" id="drift-total" hidden>
+        <span>DRIFT SCORE</span><strong id="drift-score">0</strong
+        ><small id="drift-target">铜牌 2,500 分</small>
+      </div>
+      <div class="speedometer">
+        <svg class="speed-arc" viewBox="0 0 240 200" aria-hidden="true">
+          <path class="gauge-track" d="M 30 163 A 103 103 0 1 1 210 163" />
+          <path
+            class="gauge-fill"
+            id="speed-gauge"
+            d="M 30 163 A 103 103 0 1 1 210 163"
+            pathLength="100"
+          />
+          <path class="gauge-limit" d="M 198 30 A 103 103 0 0 1 221 117" /></svg
+        ><span class="gear" id="gear-value">N</span
+        ><strong id="speed-value">0</strong><span class="speed-unit">KM/H</span>
+        <div class="tachometer" id="tachometer" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="vehicle-bars">
+          <div class="nitro-meter">
+            <span>NITRO <small>SHIFT</small></span>
+            <div class="meter-track"><i id="nitro-fill"></i></div>
+            <b id="nitro-value">65</b>
+          </div>
+          <div class="condition-meter">
+            <span>车况</span>
+            <div class="meter-track"><i id="condition-fill"></i></div>
+            <b id="condition-value">100</b>
+          </div>
+        </div>
+      </div>
+      <div class="keyboard-hints">
+        <span><kbd>WASD</kbd> 驾驶</span><span><kbd>SPACE</kbd> 漂移</span
+        ><span><kbd>SHIFT</kbd> 氮气</span><span><kbd>Q</kbd> 后视</span
+        ><span><kbd>R</kbd> 回到赛道 +3s</span>
+      </div>
+      <div class="touch-controls" id="touch-controls" aria-label="触屏驾驶操作">
+        <div class="touch-steer">
+          <button
+            type="button"
+            class="touch-button steer-button"
+            data-control="left"
+            aria-label="向左转向"
+          >
+            ◀</button
+          ><button
+            type="button"
+            class="touch-button steer-button"
+            data-control="right"
+            aria-label="向右转向"
+          >
+            ▶
+          </button>
+        </div>
+        <div class="touch-utilities">
+          <button
+            type="button"
+            class="touch-button small-touch"
+            data-control="rear"
+            aria-label="按住后视"
+          >
+            后视</button
+          ><button
+            type="button"
+            class="touch-button small-touch"
+            data-action="reset"
+            aria-label="回到赛道，增加三秒罚时"
+          >
+            复位
+          </button>
+        </div>
+        <div class="touch-pedals">
+          <button
+            type="button"
+            class="touch-button boost-touch"
+            data-control="boost"
+            aria-label="按住使用氮气加速"
+          >
+            氮气 <span>↑↑</span></button
+          ><button
+            type="button"
+            class="touch-button drift-touch"
+            data-control="handbrake"
+            aria-label="按住手刹漂移"
+          >
+            漂移</button
+          ><button
+            type="button"
+            class="touch-button brake-touch"
+            data-control="brake"
+            aria-label="按住刹车或倒车"
+          >
+            刹车</button
+          ><button
+            type="button"
+            class="touch-button throttle-touch"
+            data-control="throttle"
+            aria-label="按住油门加速"
+          >
+            油门 <span>↑</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="modal-overlay"
+      id="pause-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pause-title"
+      hidden
+    >
+      <div class="modal-card pause-card">
+        <span class="eyebrow">TAKE A BREATHER</span>
+        <h2 id="pause-title">停靠片刻。</h2>
+        <p>引擎静候，下一段弯道依旧属于你。</p>
+        <button class="primary-button" data-action="resume" type="button">
+          继续驾驶 <span>→</span>
+        </button>
+        <div class="pause-actions">
+          <button class="secondary-button" data-action="restart" type="button">
+            重新比赛</button
+          ><button class="secondary-button" data-action="menu" type="button">
+            返回车库</button
+          ><button class="secondary-button" data-action="camera" type="button">
+            切换视角</button
+          ><button class="secondary-button" data-action="reset" type="button">
+            回到赛道 <small>+3s</small>
+          </button>
+        </div>
+        <details class="control-guide" open>
+          <summary>驾驶指南</summary>
+          <p><kbd>W / ↑</kbd> 油门 <kbd>S / ↓</kbd> 刹车 / 倒车</p>
+          <p><kbd>A D / ← →</kbd> 转向 <kbd>SPACE</kbd> 手刹漂移</p>
+          <p><kbd>SHIFT</kbd> 氮气 <kbd>C</kbd> 视角 <kbd>Q</kbd> 后视</p>
+          <p><kbd>R</kbd> 回到赛道（+3 秒） <kbd>P / ESC</kbd> 暂停</p>
+          <p>
+            弯前减速，弯后加速；干净地结束漂移可补充氮气。碰撞会损伤车况，金色维修补给能让你重回状态。
+          </p>
+        </details>
+      </div>
+    </section>
+    <section
+      class="modal-overlay"
+      id="result-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="result-title"
+      hidden
+    >
+      <div class="modal-card result-card">
+        <span class="eyebrow" id="result-kicker">FINISH LINE</span>
+        <div class="result-heading">
+          <div>
+            <h2 id="result-title">冲线时刻。</h2>
+            <p id="result-subtitle">每一段旅程，都值得全力以赴。</p>
+          </div>
+          <div class="result-rank">
+            <strong id="result-rank">01</strong
+            ><span id="result-rank-label">POSITION</span>
+          </div>
+        </div>
+        <div class="result-metrics" id="result-metrics"></div>
+        <div class="result-details">
+          <section>
+            <h3 id="result-laps-label">LAP TIMES <span>圈速记录</span></h3>
+            <ol id="result-laps"></ol>
+          </section>
+          <section id="result-standings-section">
+            <h3 id="result-standings-label">
+              FINAL STANDINGS <span>最终排名</span>
+            </h3>
+            <ol id="result-standings"></ol>
+          </section>
+        </div>
+        <div class="result-actions">
+          <button
+            class="primary-button"
+            id="next-round-button"
+            data-action="nextRound"
+            type="button"
+            hidden
+          >
+            下一站 <span>→</span></button
+          ><button
+            class="primary-button"
+            id="replay-button"
+            data-action="restart"
+            type="button"
+          >
+            再跑一次 <span>↗</span></button
+          ><button class="secondary-button" data-action="menu" type="button">
+            返回车库
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="modal-overlay"
+      id="error-overlay"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="error-title"
+      hidden
+    >
+      <div class="modal-card">
+        <span class="eyebrow">ENGINE CHECK</span>
+        <h2 id="error-title">引擎暂未启动</h2>
+        <p id="error-message">请使用支持 WebGL 的现代浏览器。</p>
+        <button type="button" class="primary-button" data-action="reload">
+          重新加载 <span>↻</span></button
+        ><a href="../../" class="error-back">返回游戏合集 ↗</a>
+      </div>
+    </section>
+    <div
+      class="toast-stack"
+      id="toast-stack"
+      role="status"
+      aria-live="polite"
+      aria-atomic="false"
+    ></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
