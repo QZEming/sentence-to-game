@@ -1,0 +1,28 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "cache_file_exclusions": [
+    ".DS_Store",
+    ".eslintcache"
+  ],
+  "candidate": 5,
+  "game_dir": "011-mole-underground-maze",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "9497a83e68bbaa73742dc2b886b109284279ba087eb02d73f35e071d14791889",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-6",
+  "thread_id": "01a0f852-2273-7693-af3a-b1039621202d",
+  "zip_supplied": false
+}

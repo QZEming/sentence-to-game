@@ -4,7 +4,7 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**6 / 100**。
+当前进度：**12 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
@@ -18,6 +18,12 @@
 | 004 | [裂隙前线 · Riftfront](games/004-riftfront/README.md) | [进入战场](https://qzemi.cn/sentence-to-game/games/004-riftfront/) | [源码](games/004-riftfront/src/) |
 | 005 | [逐光竞速 · APEX HORIZON](games/005-apex-horizon/README.md) | [驰骋赛道](https://qzemi.cn/sentence-to-game/games/005-apex-horizon/) | [源码](games/005-apex-horizon/src/) |
 | 006 | [星糖守卫 · Sugarlight Guardians](games/006-sugarlight-guardians/README.md) | [守护星灯](https://qzemi.cn/sentence-to-game/games/006-sugarlight-guardians/) | [源码](games/006-sugarlight-guardians/src/) |
+| 007 | [冰川疾行 · Penguin Alpine](games/007-penguin-iceberg-ski/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/007-penguin-iceberg-ski/) | [源码](games/007-penguin-iceberg-ski/src/) |
+| 008 | [raccoon nightmarket skate](games/008-raccoon-nightmarket-skate/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/008-raccoon-nightmarket-skate/) | [源码](games/008-raccoon-nightmarket-skate/src/) |
+| 009 | [ORBIT ZERO — 最后一束信号](games/009-robot-space-parkour/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/009-robot-space-parkour/) | [源码](games/009-robot-space-parkour/src/) |
+| 010 | [荷间 · LILYBOUND](games/010-frog-lily-jump/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/010-frog-lily-jump/) | [源码](games/010-frog-lily-jump/src/) |
+| 011 | [深土之下 · Underburrow](games/011-mole-underground-maze/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/011-mole-underground-maze/) | [源码](games/011-mole-underground-maze/src/) |
+| 012 | [午夜钟楼 · 小幽灵逃脱](games/012-ghost-clocktower-escape/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/012-ghost-clocktower-escape/) | [源码](games/012-ghost-clocktower-escape/src/) |
 
 ## 目录结构
 
@@ -88,3 +94,7 @@ python3 scripts/build-site.py
 ```
 
 模板：[游戏说明](templates/game/README.md) · [提示词](templates/game/prompt.txt)
+
+## 最新批次
+
+新增游戏来自彼此独立的 Codex 单需求任务，任务内允许工具开发。每条完整原句见各游戏 prompt.txt；原始源码、构建和任务记录另有不可变本机档案，发布文件哈希见 experiments/page-857ec841-top50-gpt6astra/。已完成的游戏分批发布，编号保留，不因尚未完成的候选重排。

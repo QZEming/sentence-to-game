@@ -1,0 +1,28 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "cache_file_exclusions": [
+    ".DS_Store",
+    ".eslintcache"
+  ],
+  "candidate": 6,
+  "game_dir": "012-ghost-clocktower-escape",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "1a8bb20965d0cf0b96cab4c0679f4cfa3cedd33fc45b3237267f772ddedd9f71",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-7/clocktower",
+  "thread_id": "01a0f852-7992-735a-a138-337e4681402c",
+  "zip_supplied": true
+}

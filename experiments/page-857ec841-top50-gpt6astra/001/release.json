@@ -1,0 +1,45 @@
+{
+  "candidate": 1,
+  "game_dir": "007-penguin-iceberg-ski",
+  "title": "冰川疾行 · Penguin Alpine",
+  "url": "https://qzemi.cn/sentence-to-game/games/007-penguin-iceberg-ski/",
+  "thread_id": "01a0f84f-e419-7168-9522-4ab99625e01d",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个企鹅在冰山间滑雪的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "5c13a0c1aa8ef76fd92a5d0a6eff80888223db54f3f582120796087205beb29a",
+  "source_tree_sha256": "daa3d8239fdebbe449eb21f3cee4a5365d34bec4eda470f09613f838ec6182de",
+  "task_record_sha256": "192e9e752b7f187763e1fa9403811dc55c4848d4b5bb0003f41e03bb26fb3dce",
+  "raw_zip_sha256": "8c4d4f809b37f4df14f5d148b5b394b5a139b7d631b4c13dd6e8548b73acd7b2",
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "0c080700d13381ef6bee2e6c859e27345fec03e8c72a346ea7928756eb6082a9",
+      "bytes": 21969
+    },
+    {
+      "path": "index.html",
+      "sha256": "b6c0fc84648a2adb9cefab00d7060e5847b3ff49658337a4057c93639ff48930",
+      "bytes": 4477
+    },
+    {
+      "path": "style.css",
+      "sha256": "a0707e0656429495f8408962495e80ccfa60dc1a166911de81fac17e7d5a0764",
+      "bytes": 8947
+    },
+    {
+      "path": "vendor/LICENSE.three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "b6c0fc84648a2adb9cefab00d7060e5847b3ff49658337a4057c93639ff48930"
+}

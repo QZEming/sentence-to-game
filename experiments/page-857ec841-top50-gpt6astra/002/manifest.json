@@ -1,0 +1,51 @@
+{
+  "binding_sha256": "eb72d65da716bb36bbbba482eef88d493a0c3afc1dc765351592e93d76dc7de6",
+  "candidate": 2,
+  "files": [
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "cd4842ae5ee696bb82f660e8860a2f96792c6543eab041388df22b2836ba59a9"
+    },
+    {
+      "bytes": 763,
+      "path": "provenance.json",
+      "sha256": "c684f41e2ff6170bba6e43d7d2c55005d4b8473c58f69face14bbc960392161c"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "74a9b5bf8e9a4f595af6c07adf276b0266338ae51ed4cab0a81c0d8bac9b51bd"
+    },
+    {
+      "bytes": 19847,
+      "path": "source-tree/dist/game.js",
+      "sha256": "a175aca725d1ea697f3fba2d11141d0d0ece936b8b791158909cc19c5bb3d616"
+    },
+    {
+      "bytes": 3954,
+      "path": "source-tree/dist/index.html",
+      "sha256": "df674dd525e759a6a2dd07874d827da0aeaaf69ad587783a8005eced7bedd43b"
+    },
+    {
+      "bytes": 6814,
+      "path": "source-tree/dist/style.css",
+      "sha256": "49e8e786838f02847193e62755eb53a9768527c63a04f01fd4c2051d6200d472"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 89732,
+      "path": "task-record.json",
+      "sha256": "ac867216ed02d5009bd1683db65c817e3e1b93909543ae4148b6d35277e15613"
+    }
+  ],
+  "game_dir": "008-raccoon-nightmarket-skate",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f850-6751-76d2-894f-d6584f914033"
+}

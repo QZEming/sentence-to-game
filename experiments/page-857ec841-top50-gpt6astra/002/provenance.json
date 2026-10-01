@@ -1,0 +1,28 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "cache_file_exclusions": [
+    ".DS_Store",
+    ".eslintcache"
+  ],
+  "candidate": 2,
+  "game_dir": "008-raccoon-nightmarket-skate",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "cd4842ae5ee696bb82f660e8860a2f96792c6543eab041388df22b2836ba59a9",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-3/rooftop",
+  "thread_id": "01a0f850-6751-76d2-894f-d6584f914033",
+  "zip_supplied": false
+}

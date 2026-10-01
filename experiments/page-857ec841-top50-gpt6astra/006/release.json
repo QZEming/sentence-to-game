@@ -1,0 +1,40 @@
+{
+  "candidate": 6,
+  "game_dir": "012-ghost-clocktower-escape",
+  "title": "午夜钟楼 · 小幽灵逃脱",
+  "url": "https://qzemi.cn/sentence-to-game/games/012-ghost-clocktower-escape/",
+  "thread_id": "01a0f852-7992-735a-a138-337e4681402c",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小幽灵逃出钟楼密室的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "1a8bb20965d0cf0b96cab4c0679f4cfa3cedd33fc45b3237267f772ddedd9f71",
+  "source_tree_sha256": "45b1ee9482227c5129bd7a1855aa33d5e4483e1b95edfcc7dfefb5fc51cbf613",
+  "task_record_sha256": "b244c81e597c989d600612aadf52174868665f6807468e6abad58f11f2bbf702",
+  "raw_zip_sha256": "b6ce5ab64201d65b3ec7ea023c1b38759ff8d60a4c947c002c28b9315b8ca1e0",
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "39ce791c5144343667699a20e69ccfeab1f3badef1ae6b45910e8f7aa8928748",
+      "bytes": 23898
+    },
+    {
+      "path": "index.html",
+      "sha256": "bae4b760c2cd3af801fcb2efac878724cb2e1e9bd3e40b6d9347037ec79f1530",
+      "bytes": 2958
+    },
+    {
+      "path": "style.css",
+      "sha256": "a660acf2bf607ec65e4c6907d7b98414ac69735d57064671b8159bda789084e0",
+      "bytes": 7121
+    },
+    {
+      "path": "three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "bytes": 1304820
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "bae4b760c2cd3af801fcb2efac878724cb2e1e9bd3e40b6d9347037ec79f1530"
+}

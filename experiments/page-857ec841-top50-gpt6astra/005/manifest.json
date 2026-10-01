@@ -1,0 +1,91 @@
+{
+  "binding_sha256": "0bc4d8875a387930d14b86da0f7d136eb5e1ab06ce624f1ac0892dbe0b53f16d",
+  "candidate": 5,
+  "files": [
+    {
+      "bytes": 85,
+      "path": "prompt.txt",
+      "sha256": "9497a83e68bbaa73742dc2b886b109284279ba087eb02d73f35e071d14791889"
+    },
+    {
+      "bytes": 751,
+      "path": "provenance.json",
+      "sha256": "6a009b8f40c468512711e525d68b7b1fc994938b414ca78c39c507215c810c83"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1649,
+      "path": "source-tree/README.md",
+      "sha256": "6fbc48ab2b26ae3602f958dafaffaddfa88a450026036d30757e6099508ed9da"
+    },
+    {
+      "bytes": 556793,
+      "path": "source-tree/dist/assets/index-Bh_buy7N.js",
+      "sha256": "d29049e52149bc3b9f8143a0f2cc0bf3e9169051f87e6eef604590472c253c59"
+    },
+    {
+      "bytes": 11572,
+      "path": "source-tree/dist/assets/index-BjHmP4pX.css",
+      "sha256": "6e7cccc256ab80fbc9c7de82874b93abdd9a6e92c1770ef656c3f2746e3dc2dd"
+    },
+    {
+      "bytes": 5209,
+      "path": "source-tree/dist/index.html",
+      "sha256": "b29255f4794ed27b31a175bb2add8be1f07f34e88d97226e285361e2fd88508d"
+    },
+    {
+      "bytes": 5109,
+      "path": "source-tree/index.html",
+      "sha256": "d847cb2107617e9f1de7f4d46c4a87658aaf4871edcc209b804f7ee26953d61e"
+    },
+    {
+      "bytes": 97830,
+      "path": "source-tree/output/playwright/game.jpg",
+      "sha256": "6f8480f1c5f7c3a6ee834d6a48890382f630f629e5025be3f3117f6a18845665"
+    },
+    {
+      "bytes": 24536,
+      "path": "source-tree/package-lock.json",
+      "sha256": "0ed32a9daf2b51cb9ff2f1eb4bfbdfeac21a5de61f3f82a663259b5a1cfbf885"
+    },
+    {
+      "bytes": 390,
+      "path": "source-tree/package.json",
+      "sha256": "c7f7c14398113639f9b2dde6b5feab893514506be55c593e3bc8a47654983b57"
+    },
+    {
+      "bytes": 22498,
+      "path": "source-tree/src/main.js",
+      "sha256": "c7dd3f75e24d7bbb53e5df77ac3aec021d2de68b6fa559028412782fe1c32575"
+    },
+    {
+      "bytes": 774,
+      "path": "source-tree/src/maze.js",
+      "sha256": "f73373c484e3e84402d178668aee5cea84ee984ebedddc4635ad4c56d302833d"
+    },
+    {
+      "bytes": 11541,
+      "path": "source-tree/src/style.css",
+      "sha256": "7027f43a46bab46ef1e4a178e9e27e399e74cf5d09a8c7946cbe1b0aa050565e"
+    },
+    {
+      "bytes": 1167,
+      "path": "source-tree/tests/maze.test.js",
+      "sha256": "047628f10fe257a30793e288b5b36414440ab80c5576431185bb95a73cd8590a"
+    },
+    {
+      "bytes": 82212,
+      "path": "task-record.json",
+      "sha256": "c8d072e4ea8fa5c484da74dd3c3a7540d007eda9834dc8f12c6fb8a1a65f8475"
+    }
+  ],
+  "game_dir": "011-mole-underground-maze",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f852-2273-7693-af3a-b1039621202d"
+}

@@ -1,0 +1,91 @@
+{
+  "binding_sha256": "22092f9df901e2d10f5595d28cbd799d156cb90b2ddef97015aaaf9fed5dbcc9",
+  "candidate": 3,
+  "files": [
+    {
+      "bytes": 97,
+      "path": "prompt.txt",
+      "sha256": "b06839a95983cc11a9f75bed1f56920bb04f214b912f547b5134092fb7109bab"
+    },
+    {
+      "bytes": 749,
+      "path": "provenance.json",
+      "sha256": "c25d90364884ba0d3e059fda8665ce467891c4df93bb90cbde85fca26dd2464f"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1372,
+      "path": "source-tree/README.md",
+      "sha256": "ca922587226c416fdc315abaec1fa7c201666504a5c17327e9f5d878d995ae20"
+    },
+    {
+      "bytes": 9558,
+      "path": "source-tree/dist/assets/index-Bgk10mOK.css",
+      "sha256": "92d641995f35cc7f8979e20bdd722d2bc12e47cfa390642a631e23290b7aba52"
+    },
+    {
+      "bytes": 17651,
+      "path": "source-tree/dist/assets/index-D0_DdxD1.js",
+      "sha256": "706a75748c5f65ba56ae44b4dc4c5893c7084a987f7a5b5ef8b97262bed9a87c"
+    },
+    {
+      "bytes": 484007,
+      "path": "source-tree/dist/assets/three-CA5ctLEx.js",
+      "sha256": "77d8abcc517a6571784de6ef9db313d6f59dd4d32e7cfaf282c9736223b67a45"
+    },
+    {
+      "bytes": 4477,
+      "path": "source-tree/dist/index.html",
+      "sha256": "50fde4898d09c29de15c48f593f274c0af3689fdd5c3ca745e780d4b959a43a9"
+    },
+    {
+      "bytes": 4301,
+      "path": "source-tree/index.html",
+      "sha256": "fe6f585c93c0011826c467d35adc4c8967ce9e97a57903f29e3d317f16cbdf14"
+    },
+    {
+      "bytes": 99702,
+      "path": "source-tree/output/playwright/orbit-zero.jpg",
+      "sha256": "22aa75b83f0b979d62d5f5429f06ba90ed210b35d63bcd60f6f6ff7705c358fc"
+    },
+    {
+      "bytes": 33862,
+      "path": "source-tree/package-lock.json",
+      "sha256": "1c12dc0c9ff2307554138c7fd7e07b632bfb2b4a5e19565f131f054d7d69684f"
+    },
+    {
+      "bytes": 224,
+      "path": "source-tree/package.json",
+      "sha256": "b316656ee47e082122dbe8870d4d6fb45057358c8d6e3ca902efb81055102cdd"
+    },
+    {
+      "bytes": 21811,
+      "path": "source-tree/src/main.js",
+      "sha256": "8cc277815c8e265bc3c25f35be596ddf7f74f420e7d931cc0459760214a2983c"
+    },
+    {
+      "bytes": 9577,
+      "path": "source-tree/src/style.css",
+      "sha256": "f9ee2848623d00b3215f97f4966aec8b6742dfa5256911a56f978a2e81edf2c0"
+    },
+    {
+      "bytes": 165,
+      "path": "source-tree/vite.config.js",
+      "sha256": "6cbb09f4863061c4d2beda9c57f12e0ec104b65efe7155385b8cf1f8ab952181"
+    },
+    {
+      "bytes": 74903,
+      "path": "task-record.json",
+      "sha256": "ee1e48dccf2d52362af6c430edf6b4b386a392b64f6f0137252fbd76dd5c15bc"
+    }
+  ],
+  "game_dir": "009-robot-space-parkour",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f850-b8ef-740b-a44b-2616fe5b8017"
+}

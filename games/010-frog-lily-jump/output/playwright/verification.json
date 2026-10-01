@@ -1,0 +1,37 @@
+{
+  "build": "npm run build passed",
+  "desktopViewport": [
+    1440,
+    1000
+  ],
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "chapter1": {
+    "input": "8 keyboard Space holds, 1100 ms each",
+    "finalIndex": 8,
+    "score": 8,
+    "jumps": 8,
+    "lives": 3,
+    "finished": true
+  },
+  "sinkingLeaf": {
+    "input": "reach leaf 4 and wait 4200 ms",
+    "respawnIndex": 0,
+    "lives": 2,
+    "retainedScore": 3
+  },
+  "pause": {
+    "timerFrozen": true
+  },
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "mobileJump": {
+    "landedIndex": 1,
+    "score": 1,
+    "lives": 3
+  }
+}

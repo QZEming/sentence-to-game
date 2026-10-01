@@ -1,0 +1,28 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "cache_file_exclusions": [
+    ".DS_Store",
+    ".eslintcache"
+  ],
+  "candidate": 4,
+  "game_dir": "010-frog-lily-jump",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "aebd3fd08f3a3138400310a4f467e4eef2318ec99407ae3b0be6c1b41f8abeb2",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-5",
+  "thread_id": "01a0f851-cfe0-72be-ab65-25565fb68013",
+  "zip_supplied": false
+}

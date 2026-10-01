@@ -1,0 +1,35 @@
+{
+  "candidate": 4,
+  "game_dir": "010-frog-lily-jump",
+  "title": "荷间 · LILYBOUND",
+  "url": "https://qzemi.cn/sentence-to-game/games/010-frog-lily-jump/",
+  "thread_id": "01a0f851-cfe0-72be-ab65-25565fb68013",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个青蛙在巨型荷叶间跳跃闯关的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "aebd3fd08f3a3138400310a4f467e4eef2318ec99407ae3b0be6c1b41f8abeb2",
+  "source_tree_sha256": "35f5247edd227799f10dc75b95353a3f219fd4cf9a706af7db558fef630c8bc3",
+  "task_record_sha256": "17b4b8501236c1303a04bd0ff24e838d3c1f4f05516293b11f8b0fcfce288261",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BEoK1iR1.js",
+      "sha256": "987d08108aa3192d222729abf979b22c792c672d674c98ee16d735eebb39b34f",
+      "bytes": 534184
+    },
+    {
+      "path": "assets/index-Dzp5nC4Z.css",
+      "sha256": "db838e9072361aa6722cdc6063d05150fcee9a41233519dd595db735ade64d1b",
+      "bytes": 6807
+    },
+    {
+      "path": "index.html",
+      "sha256": "48da0b44c548c1ab11cfad1efd969ab9a9310248e721a0de587f84568c3137c5",
+      "bytes": 3351
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "48da0b44c548c1ab11cfad1efd969ab9a9310248e721a0de587f84568c3137c5"
+}

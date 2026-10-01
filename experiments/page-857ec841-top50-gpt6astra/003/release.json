@@ -1,0 +1,40 @@
+{
+  "candidate": 3,
+  "game_dir": "009-robot-space-parkour",
+  "title": "ORBIT ZERO — 最后一束信号",
+  "url": "https://qzemi.cn/sentence-to-game/games/009-robot-space-parkour/",
+  "thread_id": "01a0f850-b8ef-740b-a44b-2616fe5b8017",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小机器人在废弃太空站跑酷的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "b06839a95983cc11a9f75bed1f56920bb04f214b912f547b5134092fb7109bab",
+  "source_tree_sha256": "40f53b6a47a03ab96a7dcee7e4a20b7deb7bbaa3dc66183cf13acc2c5268d4f1",
+  "task_record_sha256": "ee1e48dccf2d52362af6c430edf6b4b386a392b64f6f0137252fbd76dd5c15bc",
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "assets/index-Bgk10mOK.css",
+      "sha256": "92d641995f35cc7f8979e20bdd722d2bc12e47cfa390642a631e23290b7aba52",
+      "bytes": 9558
+    },
+    {
+      "path": "assets/index-D0_DdxD1.js",
+      "sha256": "706a75748c5f65ba56ae44b4dc4c5893c7084a987f7a5b5ef8b97262bed9a87c",
+      "bytes": 17651
+    },
+    {
+      "path": "assets/three-CA5ctLEx.js",
+      "sha256": "77d8abcc517a6571784de6ef9db313d6f59dd4d32e7cfaf282c9736223b67a45",
+      "bytes": 484007
+    },
+    {
+      "path": "index.html",
+      "sha256": "50fde4898d09c29de15c48f593f274c0af3689fdd5c3ca745e780d4b959a43a9",
+      "bytes": 4477
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "50fde4898d09c29de15c48f593f274c0af3689fdd5c3ca745e780d4b959a43a9"
+}

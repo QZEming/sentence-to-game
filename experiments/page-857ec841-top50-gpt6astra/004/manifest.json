@@ -1,0 +1,116 @@
+{
+  "binding_sha256": "ab2de64bb2002cc93ed01dad6f6a8cecda4c361451ca74176c3de8bf58bc3347",
+  "candidate": 4,
+  "files": [
+    {
+      "bytes": 97,
+      "path": "prompt.txt",
+      "sha256": "aebd3fd08f3a3138400310a4f467e4eef2318ec99407ae3b0be6c1b41f8abeb2"
+    },
+    {
+      "bytes": 744,
+      "path": "provenance.json",
+      "sha256": "99dff910938e3041063c65a427df3de25c8d57f44b8a25cc8ebfc3cfdbf5ab77"
+    },
+    {
+      "bytes": 47,
+      "path": "source-tree/.gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 276,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T16-43-42-220Z.log",
+      "sha256": "360853e97b701bd024e685a0281fe5955a4b7febddbbd36635773b6aa14bd1c5"
+    },
+    {
+      "bytes": 6189,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T16-42-53-198Z.yml",
+      "sha256": "978d100dcad63ac7dde095afb211855893b45c68ceefaf8004ffc201ac0c9dfd"
+    },
+    {
+      "bytes": 6189,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T16-43-10-686Z.yml",
+      "sha256": "978d100dcad63ac7dde095afb211855893b45c68ceefaf8004ffc201ac0c9dfd"
+    },
+    {
+      "bytes": 2761,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T16-43-48-768Z.yml",
+      "sha256": "0fb926296feccd5724a99e08ca03ab1fa86c98ebff94122f42e93e69d404a8b9"
+    },
+    {
+      "bytes": 2761,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T16-44-19-781Z.yml",
+      "sha256": "0fb926296feccd5724a99e08ca03ab1fa86c98ebff94122f42e93e69d404a8b9"
+    },
+    {
+      "bytes": 1771,
+      "path": "source-tree/README.md",
+      "sha256": "e599203cefde42a8407d98e9e50ec0ab8d1cd14c2c88c43921116b0a8947751c"
+    },
+    {
+      "bytes": 534184,
+      "path": "source-tree/dist/assets/index-BEoK1iR1.js",
+      "sha256": "987d08108aa3192d222729abf979b22c792c672d674c98ee16d735eebb39b34f"
+    },
+    {
+      "bytes": 6807,
+      "path": "source-tree/dist/assets/index-Dzp5nC4Z.css",
+      "sha256": "db838e9072361aa6722cdc6063d05150fcee9a41233519dd595db735ade64d1b"
+    },
+    {
+      "bytes": 3349,
+      "path": "source-tree/dist/index.html",
+      "sha256": "361ec0ed6f60a693d5f72c40ea048a240315f57c0860e56f8b678c062c654b30"
+    },
+    {
+      "bytes": 3250,
+      "path": "source-tree/index.html",
+      "sha256": "9919e5e67821e32c55f94a96296d1f1cddec8b5d594dafc464f045e83fe7f11e"
+    },
+    {
+      "bytes": 642441,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "085655e70edfe2e708dbdc5324301bcb575101293660b351f031f22c93cb073e"
+    },
+    {
+      "bytes": 213321,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "ddc905c44c5584464499c4cd18accf218818a6e583422adeacfd687d11e28852"
+    },
+    {
+      "bytes": 602,
+      "path": "source-tree/output/playwright/verification.json",
+      "sha256": "778d785eb595e7361f887d59cca623ce17cf136d00800207277d30212a03552c"
+    },
+    {
+      "bytes": 33860,
+      "path": "source-tree/package-lock.json",
+      "sha256": "e4c546fb370e1a6e5653038474a020746f238eefcfecad0a163e20af151db940"
+    },
+    {
+      "bytes": 208,
+      "path": "source-tree/package.json",
+      "sha256": "807fff7c9614040e5879957c85efbeb74aeb8433680429032a6ddbcaa98a70bb"
+    },
+    {
+      "bytes": 20531,
+      "path": "source-tree/src/main.js",
+      "sha256": "aabc6703c653068d466d3b45fe85dcff68cb406de5063c6392f83daad492526e"
+    },
+    {
+      "bytes": 6782,
+      "path": "source-tree/src/style.css",
+      "sha256": "7fabf0dffd7ad73ef63683c56585dd125f5823666efb319f4c90038c4dbc5901"
+    },
+    {
+      "bytes": 110911,
+      "path": "task-record.json",
+      "sha256": "17b4b8501236c1303a04bd0ff24e838d3c1f4f05516293b11f8b0fcfce288261"
+    }
+  ],
+  "game_dir": "010-frog-lily-jump",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f851-cfe0-72be-ab65-25565fb68013"
+}
