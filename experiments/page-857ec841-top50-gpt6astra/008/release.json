@@ -1,0 +1,35 @@
+{
+  "candidate": 8,
+  "game_dir": "014-fox-forest-light",
+  "title": "Foxlight · 森林里的光",
+  "url": "https://qzemi.cn/sentence-to-game/games/014-fox-forest-light/",
+  "thread_id": "01a0f85e-5433-745c-8e62-d8bf07215034",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小狐狸用镜子解开森林光线谜题的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d3d403a8b286ea170e2b4d204396dc5a3aa8f0e0fc0bd8f924ccf09e988a0ecd",
+  "source_tree_sha256": "5564ba84dc2e5f450c280ea55e7c6b91e74b926ae11f116c6f58df49664301db",
+  "task_record_sha256": "e13a95d1dfeeec355ed322c8b3049b45577a105bcabe388b6678793a618a0c7e",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BGraDWjt.js",
+      "sha256": "c2ceb10d4f3cc45f601148766776da126761cbaf7a90c47890bb01c47c2d1e92",
+      "bytes": 503664
+    },
+    {
+      "path": "assets/index-vR6z1d76.css",
+      "sha256": "89124f8754f7d4605cb7aad0c6ed5f3cd2dd1ef4acb587c1288784a9f388cd3d",
+      "bytes": 9045
+    },
+    {
+      "path": "index.html",
+      "sha256": "1c4f130eb63a8ad845aa83cc4aa204eb670280307387b902647961fcb9a3b6c2",
+      "bytes": 3419
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "1c4f130eb63a8ad845aa83cc4aa204eb670280307387b902647961fcb9a3b6c2"
+}

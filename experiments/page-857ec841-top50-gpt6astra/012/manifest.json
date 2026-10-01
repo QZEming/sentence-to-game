@@ -1,0 +1,101 @@
+{
+  "binding_sha256": "771acb59fc763cd83e36a2ce031531edb00751d7148cf1db902ae40669ac1a18",
+  "candidate": 12,
+  "files": [
+    {
+      "bytes": 106,
+      "path": "prompt.txt",
+      "sha256": "e9204b8a1e97211464addc72ad29f94cb744cb04121886a2776222ca7e450f98"
+    },
+    {
+      "bytes": 750,
+      "path": "provenance.json",
+      "sha256": "9ea4f48ffbade95a4d29d11dd279274ec799bd3e3c702e98561daa62296e506a"
+    },
+    {
+      "bytes": 425,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T17-00-53-848Z.log",
+      "sha256": "d88316cd6cf008cbcaf7bbe2ff36eb33d0fc9551df801f08b23b38caf38d1763"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-00-35-738Z.yml",
+      "sha256": "bbbb314315ffef568e72cdf66e22700f72e48e18148b5252c282854ac716ea8c"
+    },
+    {
+      "bytes": 5077,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-00-59-769Z.yml",
+      "sha256": "70c203d8b9d4a2914e9042ec9214579ab6830be6ad2046a3aad3f9ce7ee375e6"
+    },
+    {
+      "bytes": 5074,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-01-33-907Z.yml",
+      "sha256": "3a66bcf3b8ae552cce9452f1136490504833e2f663cc93463e7dc84c0189a571"
+    },
+    {
+      "bytes": 1387,
+      "path": "source-tree/README.md",
+      "sha256": "bfe1b7e10a1224f088af70491423b1bf7d8d28bc6659700ce07c103cffd92458"
+    },
+    {
+      "bytes": 562732,
+      "path": "source-tree/dist/assets/index-BSWiSEvw.js",
+      "sha256": "c2465161195992ac1f97c1167f16f8c01bba33e9635c892486b84da53b3d2ef2"
+    },
+    {
+      "bytes": 10242,
+      "path": "source-tree/dist/assets/index-BcyM6ng3.css",
+      "sha256": "b00795ee53890ad5978fcee399bb4ea9c06413ae9c290e02c9070a0d604d92dc"
+    },
+    {
+      "bytes": 5782,
+      "path": "source-tree/dist/index.html",
+      "sha256": "3350ac136ec06c8b94077552880b3823e0fd13b9de69c768507e2c13b52676a0"
+    },
+    {
+      "bytes": 5682,
+      "path": "source-tree/index.html",
+      "sha256": "6233c7938a5afc3d59422e574670924385fb0b19a29640695bbb81a019216800"
+    },
+    {
+      "bytes": 211853,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "79e48e27a009536e81fded94bb00bf945f0050bddd9280f90a1ebb322521ed6b"
+    },
+    {
+      "bytes": 98908,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "86ac909b6ed1f6229769429243d6c43ea9362e50d753229efbea889c1be01178"
+    },
+    {
+      "bytes": 24528,
+      "path": "source-tree/package-lock.json",
+      "sha256": "1e15fd1188699674829b797e7268218bc3c8575be493f4f9e616656dcb3b030a"
+    },
+    {
+      "bytes": 360,
+      "path": "source-tree/package.json",
+      "sha256": "904614ba8bfe061abaa73c6621dbdd3540f58720cd4502c125f20a5993fe7200"
+    },
+    {
+      "bytes": 16943,
+      "path": "source-tree/src/main.js",
+      "sha256": "4d3c15dab3836115387b7d545462ce6ac17f19a22f2613ecda2845753df0e813"
+    },
+    {
+      "bytes": 10220,
+      "path": "source-tree/src/style.css",
+      "sha256": "dc0c5f97510dc6af0261fd6feb8b042acb6d99f10a9f7cfdfddb4bc2cdf0fd43"
+    },
+    {
+      "bytes": 76013,
+      "path": "task-record.json",
+      "sha256": "7d1f94d081638270cde931827c974ad4162469ffeede80066423bce10ff8678a"
+    }
+  ],
+  "game_dir": "018-kitten-block-tower",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f861-dda2-76e3-b08b-1ebab3d1101f"
+}

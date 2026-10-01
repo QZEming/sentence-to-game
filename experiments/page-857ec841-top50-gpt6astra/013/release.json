@@ -1,0 +1,35 @@
+{
+  "candidate": 13,
+  "game_dir": "019-marble-toy-house",
+  "title": "Marble House",
+  "url": "https://qzemi.cn/sentence-to-game/games/019-marble-toy-house/",
+  "thread_id": "01a0f86c-832b-70fb-8236-21c45165802b",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个弹珠穿过巨大的玩具屋的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d30cf4ae4716e4e6425cf33d30ee682ff60f6232ee35e91520f15450978ea95d",
+  "source_tree_sha256": "3fcbc8efca515f4fe91216dd9f96ae55530345cba6c620a8746065037d0fb657",
+  "task_record_sha256": "d7b35cf7d00480322ac145e0035d060390d774958c966fcc1f1fec7365892d59",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-LlXOBeZj.css",
+      "sha256": "1c34b52f62fd28c404fcc93675c66fdc0074824fd7ec41da0af40ac512999824",
+      "bytes": 11364
+    },
+    {
+      "path": "assets/index-rYjQv2gO.js",
+      "sha256": "80d7a6637d8942ce5b4431a1482d82bed3cdd81403706a29ede5c8d20d858978",
+      "bytes": 524280
+    },
+    {
+      "path": "index.html",
+      "sha256": "32b0460d47b5deed09b1617751f5916d6ffff97c1540168a3d455352316c6078",
+      "bytes": 6148
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "32b0460d47b5deed09b1617751f5916d6ffff97c1540168a3d455352316c6078"
+}

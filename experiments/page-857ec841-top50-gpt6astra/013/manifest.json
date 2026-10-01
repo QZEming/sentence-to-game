@@ -1,0 +1,76 @@
+{
+  "binding_sha256": "aa4eab598677e0d0c3c81ddd873e68722cdd7338a1b78d59f4b3a5b8d3e3ad02",
+  "candidate": 13,
+  "files": [
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "d30cf4ae4716e4e6425cf33d30ee682ff60f6232ee35e91520f15450978ea95d"
+    },
+    {
+      "bytes": 748,
+      "path": "provenance.json",
+      "sha256": "e8fe8c072ce7e52a824a2beb0bfbbcb586e9b6f95184d57b7d07a86a8719da02"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1215,
+      "path": "source-tree/README.md",
+      "sha256": "f89386b8f8e92a24ec871c39a16226a71009214e8dcafebb1f611b4ef7b9b6e2"
+    },
+    {
+      "bytes": 11364,
+      "path": "source-tree/dist/assets/index-LlXOBeZj.css",
+      "sha256": "1c34b52f62fd28c404fcc93675c66fdc0074824fd7ec41da0af40ac512999824"
+    },
+    {
+      "bytes": 524280,
+      "path": "source-tree/dist/assets/index-rYjQv2gO.js",
+      "sha256": "80d7a6637d8942ce5b4431a1482d82bed3cdd81403706a29ede5c8d20d858978"
+    },
+    {
+      "bytes": 6146,
+      "path": "source-tree/dist/index.html",
+      "sha256": "6747e7cc07f851eb2cf0ced5e56e28c5aaf7d48f8a1a238d1fbbfcdcc23d0bff"
+    },
+    {
+      "bytes": 6087,
+      "path": "source-tree/index.html",
+      "sha256": "e3e52a8b135b7b7cf7ff73bd6d7ba40224e99c627f8a6821bb78541ca19edec5"
+    },
+    {
+      "bytes": 33895,
+      "path": "source-tree/package-lock.json",
+      "sha256": "bddcae7c079b1d1ab14486ce5120ebff3f4439b2793d95a889ae1cb9c9028a9a"
+    },
+    {
+      "bytes": 232,
+      "path": "source-tree/package.json",
+      "sha256": "2eb076440a5efa436fe82df105134b3ad33539d71812040fb83f7949e14171a4"
+    },
+    {
+      "bytes": 21056,
+      "path": "source-tree/src/main.js",
+      "sha256": "8fc24c597140c1e7091f1a41ac1c69c02034a5d52bc32ba6a5e4781f33404929"
+    },
+    {
+      "bytes": 11306,
+      "path": "source-tree/style.css",
+      "sha256": "a72708cc48c23cb9809b2fcad7dd4ac85006e7b0f2e1e48f38bdbd048aefcf1f"
+    },
+    {
+      "bytes": 65386,
+      "path": "task-record.json",
+      "sha256": "d7b35cf7d00480322ac145e0035d060390d774958c966fcc1f1fec7365892d59"
+    }
+  ],
+  "game_dir": "019-marble-toy-house",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f86c-832b-70fb-8236-21c45165802b"
+}

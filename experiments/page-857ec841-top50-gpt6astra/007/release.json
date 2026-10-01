@@ -1,0 +1,40 @@
+{
+  "candidate": 7,
+  "game_dir": "013-astronaut-gravity-escape",
+  "title": "失重协议 · Gravity Protocol",
+  "url": "https://qzemi.cn/sentence-to-game/games/013-astronaut-gravity-escape/",
+  "thread_id": "01a0f85d-53d3-778e-88c5-65b0b11d002f",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个宇航员用重力变化逃离破损飞船的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d169231fc00778f2b18a2cf14416df96441f01fac863a4ae87bdb132be1915b0",
+  "source_tree_sha256": "0f2302ec03f8fcb9cd8d7878cf43d886b2e81cff07a4f91cd7b061893c4394be",
+  "task_record_sha256": "fcaebaa2d02d4af2f6e8737d562b437143eeac0821bbc76ae212f812e0600012",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-B6X6C6o3.js",
+      "sha256": "44e7d366f6fcbcb91665dd4d9ebe762edc36c098c9eb393db4dcbed23ac3b4c3",
+      "bytes": 18311
+    },
+    {
+      "path": "assets/index-Do93KyEi.css",
+      "sha256": "46ea26e9bb6a7ae1cfcd6b62d76ab80395e891e0ac05908cb5e0f1b5241ed05d",
+      "bytes": 10950
+    },
+    {
+      "path": "assets/three-lQAghCnz.js",
+      "sha256": "d29b7c74ae19e8dfc398a5deb2eb211fb21aaebbd74dea8da5fb320282da8e01",
+      "bytes": 485046
+    },
+    {
+      "path": "index.html",
+      "sha256": "4213551dec0552dd93d610d6d30d119392e15f88186c231ae137b1a6fa6c9367",
+      "bytes": 5289
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "4213551dec0552dd93d610d6d30d119392e15f88186c231ae137b1a6fa6c9367"
+}

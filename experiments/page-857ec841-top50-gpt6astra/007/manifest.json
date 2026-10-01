@@ -1,0 +1,131 @@
+{
+  "binding_sha256": "e7c0c0d50ab99815c1aa556a3faf294ad5cb33cc7bd85c76c4678bea2ba56e4d",
+  "candidate": 7,
+  "files": [
+    {
+      "bytes": 103,
+      "path": "prompt.txt",
+      "sha256": "d169231fc00778f2b18a2cf14416df96441f01fac863a4ae87bdb132be1915b0"
+    },
+    {
+      "bytes": 754,
+      "path": "provenance.json",
+      "sha256": "0fbf348963f2f73065ec69e927263fb24bea9e08346692cf7c713933251b12b5"
+    },
+    {
+      "bytes": 47,
+      "path": "source-tree/.gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 355,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T16-57-39-155Z.log",
+      "sha256": "4a5e5035e24cbf845207541387de73b8bf473780de271c6ee029bb738cd1eaae"
+    },
+    {
+      "bytes": 5892,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T16-57-32-760Z.yml",
+      "sha256": "7dc44f2604d0c0573ec901f0558d7c69e5f5d4fc3f593b0b2a5f04d78ad0f2e9"
+    },
+    {
+      "bytes": 1409,
+      "path": "source-tree/README.md",
+      "sha256": "ffc995bd36fa7077c463503969d59102a0a070f94683f00ac2b77871db08ee5f"
+    },
+    {
+      "bytes": 18311,
+      "path": "source-tree/dist/assets/index-B6X6C6o3.js",
+      "sha256": "44e7d366f6fcbcb91665dd4d9ebe762edc36c098c9eb393db4dcbed23ac3b4c3"
+    },
+    {
+      "bytes": 10950,
+      "path": "source-tree/dist/assets/index-Do93KyEi.css",
+      "sha256": "46ea26e9bb6a7ae1cfcd6b62d76ab80395e891e0ac05908cb5e0f1b5241ed05d"
+    },
+    {
+      "bytes": 485046,
+      "path": "source-tree/dist/assets/three-lQAghCnz.js",
+      "sha256": "d29b7c74ae19e8dfc398a5deb2eb211fb21aaebbd74dea8da5fb320282da8e01"
+    },
+    {
+      "bytes": 5286,
+      "path": "source-tree/dist/index.html",
+      "sha256": "da5a4828800e7a47b2fce840ccb53a9618e8cdc459c651e24359b0d1bcf1a648"
+    },
+    {
+      "bytes": 5157,
+      "path": "source-tree/index.html",
+      "sha256": "97cf45d04458a43144df153c1b5492a20ec214feccb4f4e566c2cd82bfba3405"
+    },
+    {
+      "bytes": 979,
+      "path": "source-tree/output/playwright/check.cjs",
+      "sha256": "5de183f6147b4b5d0063ad2c1d8856836d4def140ef66df87033e389087e3656"
+    },
+    {
+      "bytes": 1572,
+      "path": "source-tree/output/playwright/full-check.cjs",
+      "sha256": "2cc4c95d916d41f71403a0bfc118cc0d4f6865ad5f50946e56e374dfbcf6ed49"
+    },
+    {
+      "bytes": 620808,
+      "path": "source-tree/output/playwright/game.png",
+      "sha256": "18763f0c8461160b1a42eac952b553748c591b68e00dd6242261ddd4b56fb92a"
+    },
+    {
+      "bytes": 1051,
+      "path": "source-tree/output/playwright/pause-check.cjs",
+      "sha256": "a6616f2279f5bb02e5b9f82f7ca198ea68f19db9ade67c9473333c16cc6e9cd9"
+    },
+    {
+      "bytes": 818359,
+      "path": "source-tree/output/playwright/start.png",
+      "sha256": "9e1776a2fe94344014023d5bc81b8b25ce3479b1098916362c7a5cd7e0941203"
+    },
+    {
+      "bytes": 635,
+      "path": "source-tree/output/playwright/verification.json",
+      "sha256": "920b46fff722c461d558d0b78a385935710ca60f274521d27e069211e3ead781"
+    },
+    {
+      "bytes": 371975,
+      "path": "source-tree/output/playwright/victory.png",
+      "sha256": "b82c559e8b5c3b3d15fecbdd4d755c3b8f70469813e8b610dffb531ac3467e66"
+    },
+    {
+      "bytes": 33874,
+      "path": "source-tree/package-lock.json",
+      "sha256": "52caa57ea04d994a2a5a930cc1021624723912591639bafd0b11779cc17a8ea5"
+    },
+    {
+      "bytes": 230,
+      "path": "source-tree/package.json",
+      "sha256": "8d032a7e3853dcbcd9634ff56e34f00e318e1ba60a4ddeb988cc7f31e8d5e5cf"
+    },
+    {
+      "bytes": 22176,
+      "path": "source-tree/src/main.js",
+      "sha256": "6d8461a41e026a19ae3953193aba6bc6c975212804e4733d043222c855f9d878"
+    },
+    {
+      "bytes": 10870,
+      "path": "source-tree/src/style.css",
+      "sha256": "354c1b0818c7fe8b2dc9c68980bc299dac619a307a8760081f18e2d16a28225b"
+    },
+    {
+      "bytes": 133,
+      "path": "source-tree/vite.config.js",
+      "sha256": "ce64dc6d64954b7da4277ee0111c8b2f468cd0c2dcf046d147523ec5369b6087"
+    },
+    {
+      "bytes": 87625,
+      "path": "task-record.json",
+      "sha256": "fcaebaa2d02d4af2f6e8737d562b437143eeac0821bbc76ae212f812e0600012"
+    }
+  ],
+  "game_dir": "013-astronaut-gravity-escape",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f85d-53d3-778e-88c5-65b0b11d002f"
+}

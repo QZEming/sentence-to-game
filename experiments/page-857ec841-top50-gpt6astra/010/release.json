@@ -1,0 +1,35 @@
+{
+  "candidate": 10,
+  "game_dir": "016-octopus-shipwreck-puzzle",
+  "title": "ABYSSAL · 深海回响",
+  "url": "https://qzemi.cn/sentence-to-game/games/016-octopus-shipwreck-puzzle/",
+  "thread_id": "01a0f860-3049-74cf-8f70-cf3581fdb029",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个章鱼解开沉船里的机关的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "df58dd99f2376b716a48337561e0f980fdafd1a63487d8e332f743c3f555eeb4",
+  "source_tree_sha256": "4cb4be8fa5f50f9cc9919b066b8df145036605750e6f89fd4b05e31838fe9b2c",
+  "task_record_sha256": "4d5c235d5bf8695b46f67a9e3cfd6b2b22482c5399b47603546b0866294298e7",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-CZ-xIN6T.js",
+      "sha256": "cced3992b40d9bb8d85f8e8889242540bbac3bcc1f22858ec0dfeca7297b1a76",
+      "bytes": 581801
+    },
+    {
+      "path": "assets/index-fDMtaHPO.css",
+      "sha256": "98f883b9c7f7b93936f02001e88e018033ded22a01b8267e37ef2b4be0d17689",
+      "bytes": 7579
+    },
+    {
+      "path": "index.html",
+      "sha256": "b6ce19274ce9ecd98533c92f719de267f3e9852d4020e9d981a1469cafb44439",
+      "bytes": 2714
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "b6ce19274ce9ecd98533c92f719de267f3e9852d4020e9d981a1469cafb44439"
+}

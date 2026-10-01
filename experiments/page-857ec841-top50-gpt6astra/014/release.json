@@ -1,0 +1,45 @@
+{
+  "candidate": 14,
+  "game_dir": "020-puppy-alien-minigolf",
+  "title": "Cosmic Pup · 星际小狗高尔夫",
+  "url": "https://qzemi.cn/sentence-to-game/games/020-puppy-alien-minigolf/",
+  "thread_id": "01a0f86e-3a39-76a1-b522-a65e5355300d",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小狗在外星球打迷你高尔夫的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "c54ebe9cff8bc0471ba20eb78edb481c71b91cf937ea553c4bdec942e494cef8",
+  "source_tree_sha256": "d5cfeddd0823b34f3540a3fa61fe1bed7062d591d73d5c38674ae0a1a3c121de",
+  "task_record_sha256": "d0864f3bd6ed707262b53c97b48bf486741382c4c40af69d7bf428d7da1c3c79",
+  "raw_zip_sha256": "602a07cabd8d3b3158eaa0c8f24975aafa517f677eeceaaccfe54e1edbd3c6b8",
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "756918e7e722f0ea0a8c9e6f0635923c8b23b914b64be3500400f08a0aa12e85",
+      "bytes": 22389
+    },
+    {
+      "path": "index.html",
+      "sha256": "18666b8e734deb87f1fea837519cd9868c024663662c3b267c0b0572956ab4b9",
+      "bytes": 3649
+    },
+    {
+      "path": "style.css",
+      "sha256": "e29be97dc6925e4280939c96cfae9258423fbc66c3fefce01b61dd1dfe16516a",
+      "bytes": 8340
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "18666b8e734deb87f1fea837519cd9868c024663662c3b267c0b0572956ab4b9"
+}

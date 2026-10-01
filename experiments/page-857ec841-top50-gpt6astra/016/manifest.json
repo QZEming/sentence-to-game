@@ -1,0 +1,71 @@
+{
+  "binding_sha256": "370fd91ab228198966e2ebb79e2180d9d14f682e6eebcfcb9921d3a4ca7fc0bb",
+  "candidate": 16,
+  "files": [
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "ecf8d2c9e840229f3570e072cd9c05855ad4b59fedbd92e4a07fcbb700cb8f46"
+    },
+    {
+      "bytes": 752,
+      "path": "provenance.json",
+      "sha256": "0c4162cacfc917ab3eb62a18593bb905af33cb328089aa242d3b906c67c59d31"
+    },
+    {
+      "bytes": 959,
+      "path": "source-tree/README.md",
+      "sha256": "4032ca9b0b8af211844e7fed93f438420957274ecdb7e9c8501cd8d9efb4ca0c"
+    },
+    {
+      "bytes": 10629,
+      "path": "source-tree/dist/assets/index-BBTF8oZp.css",
+      "sha256": "a92a64fef7f892f2619c7b93bfb119ebfdb4162dae5bf0d6a2045eedbb10dfb9"
+    },
+    {
+      "bytes": 568354,
+      "path": "source-tree/dist/assets/index-DJ9foJLQ.js",
+      "sha256": "912e5397ca09a94793371083c8663a7f92fba13a4ec7eefd76bdaf3804673b46"
+    },
+    {
+      "bytes": 424,
+      "path": "source-tree/dist/index.html",
+      "sha256": "47ee880a8ef746f23ad9e5995cd9e7b5c02177da010b0b501b9b202e4322e7ce"
+    },
+    {
+      "bytes": 324,
+      "path": "source-tree/index.html",
+      "sha256": "df07fc15f8a1562327e4f6c2158490056580431a48895b11941c0d6586780e17"
+    },
+    {
+      "bytes": 24528,
+      "path": "source-tree/package-lock.json",
+      "sha256": "4bcb90f7633debba890726572cac1b1f15a365142ade1525ce99b33673a5890d"
+    },
+    {
+      "bytes": 360,
+      "path": "source-tree/package.json",
+      "sha256": "04413a27b306fedf5c6a01bbb2eb7fb2184a7b58552068c7df2a2fd3c7be844d"
+    },
+    {
+      "bytes": 30138,
+      "path": "source-tree/src/main.js",
+      "sha256": "e14b8025fd45f3e6cd40ccd8b88bfbe97ac756e543d8408af8170b658da57d21"
+    },
+    {
+      "bytes": 10570,
+      "path": "source-tree/src/style.css",
+      "sha256": "40b4210ecb6154f236ffee3f2d1f6454c44d65c2e054f378d7a440e80599d9f8"
+    },
+    {
+      "bytes": 64833,
+      "path": "task-record.json",
+      "sha256": "0008606c63ba2a440b8bded39ca32bc558c03b62be3ece706daebac66cafc1b5"
+    }
+  ],
+  "game_dir": "022-bear-strange-fishing",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f870-99ef-755f-8215-4bd64add7039"
+}

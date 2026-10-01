@@ -1,0 +1,40 @@
+{
+  "candidate": 11,
+  "game_dir": "017-beaver-river-bridges",
+  "title": "Beaver Brook · 海狸造桥记",
+  "url": "https://qzemi.cn/sentence-to-game/games/017-beaver-river-bridges/",
+  "thread_id": "01a0f861-155b-7105-90ae-bda4b2271021",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个海狸搭桥帮助动物渡河的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "2a63d9bae91acee131e2a12864900331a4b4d32a1cb1e257b86d47b5d3de5e78",
+  "source_tree_sha256": "aef5917a14aff149c3622d8b7a83944430716d41a625afa2af506f4d1b785ad9",
+  "task_record_sha256": "cfdab452082ad11244edd9a5fccfa61e087d3e3239b5e1a85072dd8a7d587a10",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BgZ216-f.css",
+      "sha256": "cc96a1644e7a5724147f25a43e0580326127b3019c2c5c394d8a97ca47dd7f09",
+      "bytes": 8484
+    },
+    {
+      "path": "assets/index-DAiM3TIp.js",
+      "sha256": "92897f5aa5211f4da07590c15a86fb995c9ca6899f66ae5c1e4c23b405dc3af0",
+      "bytes": 19172
+    },
+    {
+      "path": "assets/three-CTRZatew.js",
+      "sha256": "c39bda172d59317061e809fc8fcaae2ab28d90777e303bf4d6a5dcdac7589d45",
+      "bytes": 480377
+    },
+    {
+      "path": "index.html",
+      "sha256": "4c5f98651e3584ca86deb6224b830c0996dea8bdd0a3cf1f3205f4d2d8202843",
+      "bytes": 4403
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "4c5f98651e3584ca86deb6224b830c0996dea8bdd0a3cf1f3205f4d2d8202843"
+}

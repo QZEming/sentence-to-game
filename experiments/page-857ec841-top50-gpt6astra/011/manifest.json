@@ -1,0 +1,116 @@
+{
+  "binding_sha256": "059ba615511c3a682ce1d73efd4ab1b17efd7b66c4bcc09ab95f0a8bf9f6a1bf",
+  "candidate": 11,
+  "files": [
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "2a63d9bae91acee131e2a12864900331a4b4d32a1cb1e257b86d47b5d3de5e78"
+    },
+    {
+      "bytes": 752,
+      "path": "provenance.json",
+      "sha256": "8d65694e62286741c85fe17b56ad1968fefbd1cce7650c005652bf842cd8d8f4"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1543,
+      "path": "source-tree/README.md",
+      "sha256": "190bebfe1c21fa7616b6569b495f7889bbe63387aecfaf4f1e68ae6a7eb30fda"
+    },
+    {
+      "bytes": 8484,
+      "path": "source-tree/dist/assets/index-BgZ216-f.css",
+      "sha256": "cc96a1644e7a5724147f25a43e0580326127b3019c2c5c394d8a97ca47dd7f09"
+    },
+    {
+      "bytes": 19172,
+      "path": "source-tree/dist/assets/index-DAiM3TIp.js",
+      "sha256": "92897f5aa5211f4da07590c15a86fb995c9ca6899f66ae5c1e4c23b405dc3af0"
+    },
+    {
+      "bytes": 480377,
+      "path": "source-tree/dist/assets/three-CTRZatew.js",
+      "sha256": "c39bda172d59317061e809fc8fcaae2ab28d90777e303bf4d6a5dcdac7589d45"
+    },
+    {
+      "bytes": 4400,
+      "path": "source-tree/dist/index.html",
+      "sha256": "5723161e33ac8179937dc5dbde883ef1fb8bd24337a4b772b79ae76a78da1892"
+    },
+    {
+      "bytes": 4226,
+      "path": "source-tree/index.html",
+      "sha256": "4d0bf44a1a23dd92a47e338d9c7ef20170d0e158cd54d9611fd6c8fd778b1094"
+    },
+    {
+      "bytes": 343307,
+      "path": "source-tree/output/playwright/chapter-2.png",
+      "sha256": "b3be880bb9210c22f66d427b919c1a3b6e1107bc03e4eda0d9526668d40874f7"
+    },
+    {
+      "bytes": 219308,
+      "path": "source-tree/output/playwright/completion.png",
+      "sha256": "e1235f40e60243644657fa0fdc10867c5c9895defeac216440274b24f6ce8149"
+    },
+    {
+      "bytes": 1725,
+      "path": "source-tree/output/playwright/hazards.mjs",
+      "sha256": "b7725a7c60190cc6a95c6f88a6647f47772deb558f5dfc946bd325f9551ff71c"
+    },
+    {
+      "bytes": 341956,
+      "path": "source-tree/output/playwright/initial.png",
+      "sha256": "387d2758e5243b6fc27514d161acaee1ded226ba402594dcc0a261c2ebd640a5"
+    },
+    {
+      "bytes": 152197,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "806dba7465260665e5beadfad62326bda7ca8458aa0a59a71565d2d34b34ecc1"
+    },
+    {
+      "bytes": 1569,
+      "path": "source-tree/output/playwright/smoke.mjs",
+      "sha256": "7a0cf2132f4e9e9f8e49f9681b929b85958381c523c1f4cf8a61358e6fe10c5d"
+    },
+    {
+      "bytes": 35368,
+      "path": "source-tree/package-lock.json",
+      "sha256": "fc2e1ee785b217c88d9e4fcc69b97ba4080eb882ef9e6aea4af9f35095d958a0"
+    },
+    {
+      "bytes": 260,
+      "path": "source-tree/package.json",
+      "sha256": "cbc6bd5bd0f135d1c99dd298c74b1d98fb17f77ffc286045b26762ab40364c82"
+    },
+    {
+      "bytes": 22223,
+      "path": "source-tree/src/main.js",
+      "sha256": "cb49293f75de608f4ebfb2a1e9634cad24f4e75a3437bb8d2b40f263e6aa02f2"
+    },
+    {
+      "bytes": 8438,
+      "path": "source-tree/src/style.css",
+      "sha256": "f1ba198970f70000d55fd252ec2b2ee1d77c4fce9a6a50465a0dc31b627cf8ff"
+    },
+    {
+      "bytes": 150,
+      "path": "source-tree/vite.config.js",
+      "sha256": "40a21672947502325592f009fbc8f81c5f1115328265538d7c8bfcf4c1beb11e"
+    },
+    {
+      "bytes": 100513,
+      "path": "task-record.json",
+      "sha256": "cfdab452082ad11244edd9a5fccfa61e087d3e3239b5e1a85072dd8a7d587a10"
+    }
+  ],
+  "game_dir": "017-beaver-river-bridges",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f861-155b-7105-90ae-bda4b2271021"
+}

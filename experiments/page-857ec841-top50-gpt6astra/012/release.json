@@ -1,0 +1,35 @@
+{
+  "candidate": 12,
+  "game_dir": "018-kitten-block-tower",
+  "title": "喵叠叠 · 小猫的天空工坊",
+  "url": "https://qzemi.cn/sentence-to-game/games/018-kitten-block-tower/",
+  "thread_id": "01a0f861-dda2-76e3-b08b-1ebab3d1101f",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小猫用积木搭一座摇摇欲坠的高塔的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "e9204b8a1e97211464addc72ad29f94cb744cb04121886a2776222ca7e450f98",
+  "source_tree_sha256": "8b069f9cb6170a71761f2d868dc77a72c963fc88e4be5ce3a08f3ab60b0f6104",
+  "task_record_sha256": "7d1f94d081638270cde931827c974ad4162469ffeede80066423bce10ff8678a",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BSWiSEvw.js",
+      "sha256": "c2465161195992ac1f97c1167f16f8c01bba33e9635c892486b84da53b3d2ef2",
+      "bytes": 562732
+    },
+    {
+      "path": "assets/index-BcyM6ng3.css",
+      "sha256": "b00795ee53890ad5978fcee399bb4ea9c06413ae9c290e02c9070a0d604d92dc",
+      "bytes": 10242
+    },
+    {
+      "path": "index.html",
+      "sha256": "345610ecfaa5f034e2d38b02bfd34155f0f45af81f33b8570311f50890f7949c",
+      "bytes": 5784
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "345610ecfaa5f034e2d38b02bfd34155f0f45af81f33b8570311f50890f7949c"
+}

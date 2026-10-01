@@ -1,0 +1,96 @@
+{
+  "binding_sha256": "9e607a30f0ceb952eaac41149fb39f6bbfe1d0deec84b3fa57384e0bf574225d",
+  "candidate": 10,
+  "files": [
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "df58dd99f2376b716a48337561e0f980fdafd1a63487d8e332f743c3f555eeb4"
+    },
+    {
+      "bytes": 756,
+      "path": "provenance.json",
+      "sha256": "8b2d78dd1c3b3bbd345f5709132cfab581b217de6d220ab43da044339c313b54"
+    },
+    {
+      "bytes": 1255,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T17-20-46-239Z.log",
+      "sha256": "c6078eaacf15f3b3d7e64dd8bc2fdadd3a8c52e912abe28c4cab7794550d5eb1"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-19-28-322Z.yml",
+      "sha256": "873501cb3c09470f80e063b1daa8069c80899acca15b98e4f71375bbaef49dd3"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-20-02-746Z.yml",
+      "sha256": "873501cb3c09470f80e063b1daa8069c80899acca15b98e4f71375bbaef49dd3"
+    },
+    {
+      "bytes": 3018,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-20-57-475Z.yml",
+      "sha256": "471930e7887bbb4fb4bb4b256f0307a1bf0e160584d8bb81ef32438d07962475"
+    },
+    {
+      "bytes": 1318,
+      "path": "source-tree/README.md",
+      "sha256": "99b065310f97c53c53be70030e66643e8e36b3382c2f4be1bf62f3b9f4a3c14e"
+    },
+    {
+      "bytes": 581801,
+      "path": "source-tree/dist/assets/index-CZ-xIN6T.js",
+      "sha256": "cced3992b40d9bb8d85f8e8889242540bbac3bcc1f22858ec0dfeca7297b1a76"
+    },
+    {
+      "bytes": 7579,
+      "path": "source-tree/dist/assets/index-fDMtaHPO.css",
+      "sha256": "98f883b9c7f7b93936f02001e88e018033ded22a01b8267e37ef2b4be0d17689"
+    },
+    {
+      "bytes": 2712,
+      "path": "source-tree/dist/index.html",
+      "sha256": "227f8fd149543d3b3287ff102de869ca793f382b05b68caee5ab3121be755d6c"
+    },
+    {
+      "bytes": 2612,
+      "path": "source-tree/index.html",
+      "sha256": "663fc5ab1832e5828effdca9b0be9969fbc2161b43190375dfac39a708dcd527"
+    },
+    {
+      "bytes": 675949,
+      "path": "source-tree/output/playwright/game.png",
+      "sha256": "3730e392846272c85d0ce107b7b55d8dafce20e8bafe26845689e7584fad9a40"
+    },
+    {
+      "bytes": 24528,
+      "path": "source-tree/package-lock.json",
+      "sha256": "f874d4af3c5b1e87e8266d5f6b59e4b7a8bbce9c389280cfb05335397671118a"
+    },
+    {
+      "bytes": 360,
+      "path": "source-tree/package.json",
+      "sha256": "78a59bbb45c232052323d6213093305f2a7b6125a8f7f8ee9d2f14b1e562e105"
+    },
+    {
+      "bytes": 23963,
+      "path": "source-tree/src/main.js",
+      "sha256": "6c76d19b04d52493713b03450c43a1c9f0729227f8c323abb825c3f0cc1fbc21"
+    },
+    {
+      "bytes": 7599,
+      "path": "source-tree/src/style.css",
+      "sha256": "4b9e1921c56294f1274651f003ef3e8a3577264bc60e2bdf01518ed209d6c831"
+    },
+    {
+      "bytes": 87305,
+      "path": "task-record.json",
+      "sha256": "4d5c235d5bf8695b46f67a9e3cfd6b2b22482c5399b47603546b0866294298e7"
+    }
+  ],
+  "game_dir": "016-octopus-shipwreck-puzzle",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f860-3049-74cf-8f70-cf3581fdb029"
+}

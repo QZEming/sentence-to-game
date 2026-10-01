@@ -1,0 +1,45 @@
+{
+  "candidate": 9,
+  "game_dir": "015-hamster-kitchen-boxes",
+  "title": "小小仓鼠，大大厨房 · Hamster Kitchen",
+  "url": "https://qzemi.cn/sentence-to-game/games/015-hamster-kitchen-boxes/",
+  "thread_id": "01a0f85f-5368-74fa-9b2f-af2237b76026",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个仓鼠在巨型厨房里推箱子的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "e632c24bf457d6abdf5a188edf825a1ec6bcfb6b9812a570eea45a5ebe03f3f6",
+  "source_tree_sha256": "f1253a3571e120d99dbd274b2a0fcf04c283bcab9316732569f9b983a8bcca2b",
+  "task_record_sha256": "08a86685ff349a08d65bea8935c56814687ce9cd8a09733ea398a2c4e27e6f5c",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-CZnunARC.css",
+      "sha256": "e84fd79dc0e500bb1d2e1e05eaba18635835b567f667f3b7875cad4142c5029b",
+      "bytes": 12248
+    },
+    {
+      "path": "assets/index-lLOpmMW_.js",
+      "sha256": "52133fddd3f929fa6ed3647f7e6e3b26f2c4e4f74fdf7fe85c47429dcf2d40fd",
+      "bytes": 507172
+    },
+    {
+      "path": "assets/solver-worker-B0MFmhIB.js",
+      "sha256": "f065ef7fa9a276f55dc594c57791340c3950221da32d5f0f22e34ed4360d1387",
+      "bytes": 1503
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "0a8cd5f60c13da593acd0939d74304d3b06cb19cdbfe129edb178bd70390f5ad",
+      "bytes": 187
+    },
+    {
+      "path": "index.html",
+      "sha256": "9108186fbce93fe5e143372499c9cf14c3ea8c0cf9ba935c87ba74efba7c75c2",
+      "bytes": 4239
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "9108186fbce93fe5e143372499c9cf14c3ea8c0cf9ba935c87ba74efba7c75c2"
+}

@@ -1,0 +1,35 @@
+{
+  "candidate": 15,
+  "game_dir": "021-snowman-snowball-bowling",
+  "title": "Snowball Social · 雪球保龄球",
+  "url": "https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/",
+  "thread_id": "01a0f86e-e3f4-707e-a6dc-1b0fadc05038",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个雪人用雪球打保龄球的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "0b049364a3663dd077d3959392ee22882753c8f626a9953187e47d3604100132",
+  "source_tree_sha256": "d7900efd69e57611c19199e10c3cadaeab943277f248bef6b654086a6e132bf6",
+  "task_record_sha256": "c7476ef71a290f9d7f16aa7e987fdca13db13fcf06a2fc16c7e17416a6104253",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BXuLpJpY.js",
+      "sha256": "89e7da92a5cb82394b8fb0950b0e1fe96a204eb196319ca3a27190ea90b70acc",
+      "bytes": 511251
+    },
+    {
+      "path": "assets/index-CIHJdR7I.css",
+      "sha256": "caa58b99e2012ea1221c2759232b160e07bd37816b5056c60aaa1d52c8234997",
+      "bytes": 15197
+    },
+    {
+      "path": "index.html",
+      "sha256": "22cc15f78584066b3b4de61d0c481210cc7d2fdcd9e95013e0d99c2cb1c4d243",
+      "bytes": 6709
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "22cc15f78584066b3b4de61d0c481210cc7d2fdcd9e95013e0d99c2cb1c4d243"
+}

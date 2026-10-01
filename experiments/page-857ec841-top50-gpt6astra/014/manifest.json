@@ -1,0 +1,81 @@
+{
+  "binding_sha256": "2565a01c921ba0cfb3890b5615fe282df4d791b15e34e02bcb9fdd2aa17cc351",
+  "candidate": 14,
+  "files": [
+    {
+      "bytes": 97,
+      "path": "prompt.txt",
+      "sha256": "c54ebe9cff8bc0471ba20eb78edb481c71b91cf937ea553c4bdec942e494cef8"
+    },
+    {
+      "bytes": 762,
+      "path": "provenance.json",
+      "sha256": "c6cf154527ab84871947a98db42d787a80eed6885fa1debb7cbc439480db7af5"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "a09db03dc08d805982f02af895eacbcea825ffca2bc32f77aea325ecb8a80ff7"
+    },
+    {
+      "bytes": 1652,
+      "path": "source-tree/README.md",
+      "sha256": "1d6f3ff1e7bd4310cae087605533c15e93aadf0b28df9686860e4f164f6032c1"
+    },
+    {
+      "bytes": 22389,
+      "path": "source-tree/dist/game.js",
+      "sha256": "756918e7e722f0ea0a8c9e6f0635923c8b23b914b64be3500400f08a0aa12e85"
+    },
+    {
+      "bytes": 3649,
+      "path": "source-tree/dist/index.html",
+      "sha256": "18666b8e734deb87f1fea837519cd9868c024663662c3b267c0b0572956ab4b9"
+    },
+    {
+      "bytes": 8340,
+      "path": "source-tree/dist/style.css",
+      "sha256": "e29be97dc6925e4280939c96cfae9258423fbc66c3fefce01b61dd1dfe16516a"
+    },
+    {
+      "bytes": 1081,
+      "path": "source-tree/dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 139,
+      "path": "source-tree/package.json",
+      "sha256": "614fa1a4b72c9701dc9f3b819f7079ac7bbe062ea4e0901d5c252c6653ac1b5c"
+    },
+    {
+      "bytes": 983,
+      "path": "source-tree/server.mjs",
+      "sha256": "b1765bf06d72d46cc7b04d7f47ec7545cc02522350547c894c1758d68f1d1512"
+    },
+    {
+      "bytes": 2259,
+      "path": "source-tree/verify.mjs",
+      "sha256": "1c90c28c42e2997fffe79c9d0d64f0d4f49f1d6033416abc3b5d891bdb624096"
+    },
+    {
+      "bytes": 285685,
+      "path": "source.zip",
+      "sha256": "602a07cabd8d3b3158eaa0c8f24975aafa517f677eeceaaccfe54e1edbd3c6b8"
+    },
+    {
+      "bytes": 66088,
+      "path": "task-record.json",
+      "sha256": "d0864f3bd6ed707262b53c97b48bf486741382c4c40af69d7bf428d7da1c3c79"
+    }
+  ],
+  "game_dir": "020-puppy-alien-minigolf",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f86e-3a39-76a1-b522-a65e5355300d"
+}

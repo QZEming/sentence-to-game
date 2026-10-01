@@ -1,0 +1,35 @@
+{
+  "candidate": 16,
+  "game_dir": "022-bear-strange-fishing",
+  "title": "熊与奇鱼",
+  "url": "https://qzemi.cn/sentence-to-game/games/022-bear-strange-fishing/",
+  "thread_id": "01a0f870-99ef-755f-8215-4bd64add7039",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小熊在湖边钓奇异的鱼的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "ecf8d2c9e840229f3570e072cd9c05855ad4b59fedbd92e4a07fcbb700cb8f46",
+  "source_tree_sha256": "c0a4328c870c5964bd6a376cc8ad634ae351e7f01578bd7aaa4815ab6e16086c",
+  "task_record_sha256": "0008606c63ba2a440b8bded39ca32bc558c03b62be3ece706daebac66cafc1b5",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BBTF8oZp.css",
+      "sha256": "a92a64fef7f892f2619c7b93bfb119ebfdb4162dae5bf0d6a2045eedbb10dfb9",
+      "bytes": 10629
+    },
+    {
+      "path": "assets/index-DJ9foJLQ.js",
+      "sha256": "912e5397ca09a94793371083c8663a7f92fba13a4ec7eefd76bdaf3804673b46",
+      "bytes": 568354
+    },
+    {
+      "path": "index.html",
+      "sha256": "0be3f33f3275249b98d296c614e0eb4278118edeb807647da3fb10821d351d96",
+      "bytes": 426
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "0be3f33f3275249b98d296c614e0eb4278118edeb807647da3fb10821d351d96"
+}

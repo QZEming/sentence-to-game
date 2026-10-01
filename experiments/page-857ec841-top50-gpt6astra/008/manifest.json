@@ -1,0 +1,81 @@
+{
+  "binding_sha256": "908136a7c73ef74d3eb47faeca74d9abccb6ea763c202ec74d8932a98a82ca38",
+  "candidate": 8,
+  "files": [
+    {
+      "bytes": 103,
+      "path": "prompt.txt",
+      "sha256": "d3d403a8b286ea170e2b4d204396dc5a3aa8f0e0fc0bd8f924ccf09e988a0ecd"
+    },
+    {
+      "bytes": 746,
+      "path": "provenance.json",
+      "sha256": "0c0287ac546fd38fd68476ac1857435724314c31329d33aa1fabbe4cc778dfe9"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1149,
+      "path": "source-tree/README.md",
+      "sha256": "859ed732327ace2ca2c7fe74971956fed87a4ebdc9136d50898ec789cf876b26"
+    },
+    {
+      "bytes": 503664,
+      "path": "source-tree/dist/assets/index-BGraDWjt.js",
+      "sha256": "c2ceb10d4f3cc45f601148766776da126761cbaf7a90c47890bb01c47c2d1e92"
+    },
+    {
+      "bytes": 9045,
+      "path": "source-tree/dist/assets/index-vR6z1d76.css",
+      "sha256": "89124f8754f7d4605cb7aad0c6ed5f3cd2dd1ef4acb587c1288784a9f388cd3d"
+    },
+    {
+      "bytes": 3417,
+      "path": "source-tree/dist/index.html",
+      "sha256": "397ba25e727d93054ef38c3001158fc79e060a0a1e033c6b3ca9ee72ed888d42"
+    },
+    {
+      "bytes": 3362,
+      "path": "source-tree/index.html",
+      "sha256": "5629f6f9eb58a7760d303060263b73ce96192056af0da16b6a179fdbe498fdf8"
+    },
+    {
+      "bytes": 33872,
+      "path": "source-tree/package-lock.json",
+      "sha256": "ea341394fff5c357fe857a427cd1afd6125204017e69d97d73699e6b22362567"
+    },
+    {
+      "bytes": 214,
+      "path": "source-tree/package.json",
+      "sha256": "bc07b3827eeb17d4131b42e6c520b63eba8036323a4e1d50f3c4f5225c99ab17"
+    },
+    {
+      "bytes": 1537,
+      "path": "source-tree/scripts/check-puzzles.mjs",
+      "sha256": "79d48609b40d449109f112137c38c57b7980fcccd843fa62c7f9ee143b5e663f"
+    },
+    {
+      "bytes": 22479,
+      "path": "source-tree/src/main.js",
+      "sha256": "4f3e198a3c4d88426518d443a4c6254087ae424b98d3a8d2b2092d9ad0fe3d46"
+    },
+    {
+      "bytes": 8966,
+      "path": "source-tree/src/style.css",
+      "sha256": "a819bcedc46731d48c741d2137ad4be7116827f57e0579aae0a0677c33bb7498"
+    },
+    {
+      "bytes": 63677,
+      "path": "task-record.json",
+      "sha256": "e13a95d1dfeeec355ed322c8b3049b45577a105bcabe388b6678793a618a0c7e"
+    }
+  ],
+  "game_dir": "014-fox-forest-light",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f85e-5433-745c-8e62-d8bf07215034"
+}

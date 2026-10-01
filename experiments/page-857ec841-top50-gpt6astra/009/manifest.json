@@ -1,0 +1,141 @@
+{
+  "binding_sha256": "01a96829de33d3e5aafe047e182874daf8de3288748d586c92887f8fe856985e",
+  "candidate": 9,
+  "files": [
+    {
+      "bytes": 94,
+      "path": "prompt.txt",
+      "sha256": "e632c24bf457d6abdf5a188edf825a1ec6bcfb6b9812a570eea45a5ebe03f3f6"
+    },
+    {
+      "bytes": 752,
+      "path": "provenance.json",
+      "sha256": "2fd4d057ea93b2a04399885c60f60e93b42f37493145a6153aa388c7c06415c7"
+    },
+    {
+      "bytes": 47,
+      "path": "source-tree/.gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 491,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T17-01-29-774Z.log",
+      "sha256": "724b3865ef00eca6fe85f8bd316bb09b18639515c1ba7f8d254b1265bde0b406"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-01-08-530Z.yml",
+      "sha256": "bbbb314315ffef568e72cdf66e22700f72e48e18148b5252c282854ac716ea8c"
+    },
+    {
+      "bytes": 3795,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-04-34-489Z.yml",
+      "sha256": "93a34f6274c877446a341cfd1c6e407135ad4b48ef5cafeadc2f79ea0a1f7615"
+    },
+    {
+      "bytes": 658802,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-05-11-076Z.png",
+      "sha256": "6985b927ec65ecd326a5ba5cfb1a4fe72ed790cedb4efc0d9ddedfa2a400ce49"
+    },
+    {
+      "bytes": 1549,
+      "path": "source-tree/README.md",
+      "sha256": "a9923ecf9ef8946d5e26b2f467278785b22704d33f6a09372edb9a9f04e8a4f3"
+    },
+    {
+      "bytes": 507147,
+      "path": "source-tree/dist/assets/index-Bvaq3st4.js",
+      "sha256": "3104b070720fe5b0cc1d05b85d0464b29fff14a829c015c5c49c847f10a60e7f"
+    },
+    {
+      "bytes": 12248,
+      "path": "source-tree/dist/assets/index-CZnunARC.css",
+      "sha256": "e84fd79dc0e500bb1d2e1e05eaba18635835b567f667f3b7875cad4142c5029b"
+    },
+    {
+      "bytes": 1503,
+      "path": "source-tree/dist/assets/solver-worker-B0MFmhIB.js",
+      "sha256": "f065ef7fa9a276f55dc594c57791340c3950221da32d5f0f22e34ed4360d1387"
+    },
+    {
+      "bytes": 187,
+      "path": "source-tree/dist/favicon.svg",
+      "sha256": "0a8cd5f60c13da593acd0939d74304d3b06cb19cdbfe129edb178bd70390f5ad"
+    },
+    {
+      "bytes": 4236,
+      "path": "source-tree/dist/index.html",
+      "sha256": "07eec562b999a8541d00412749bffd90a70239b501e88a263de41a0850fd7b60"
+    },
+    {
+      "bytes": 4181,
+      "path": "source-tree/index.html",
+      "sha256": "e5a3f176ba4be9cf39ec9b84c88dcecf6c1ced6856dd4eabeb81fbd60a4aea56"
+    },
+    {
+      "bytes": 658961,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "f03089eff06e01f67fb7f1ac92454f35699dafcdf301b196459ba98edde71d67"
+    },
+    {
+      "bytes": 152499,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "127088a350de075be5f7d1c19621260bcf9699c1615a202306d1f6b7eff163f9"
+    },
+    {
+      "bytes": 33872,
+      "path": "source-tree/package-lock.json",
+      "sha256": "2d41d7894ecb511b9e7e9b28532b7bbb7d06bd9ecb717b5f54a04b75a2104f14"
+    },
+    {
+      "bytes": 266,
+      "path": "source-tree/package.json",
+      "sha256": "1afa83119ad5bdbf910c91c76e56fd8032aee79b0bf4b99152692c4e6dc7234a"
+    },
+    {
+      "bytes": 187,
+      "path": "source-tree/public/favicon.svg",
+      "sha256": "0a8cd5f60c13da593acd0939d74304d3b06cb19cdbfe129edb178bd70390f5ad"
+    },
+    {
+      "bytes": 4171,
+      "path": "source-tree/src/engine.js",
+      "sha256": "99643a01b96ad1dbd03a0b88005cd327e274d9abbdb9ae1ffefb8ebd9bc517d1"
+    },
+    {
+      "bytes": 9594,
+      "path": "source-tree/src/main.js",
+      "sha256": "b136151278e4eec4009c8c89ca6a3b0ca837f7a0476521e766ea28fdb4fbd944"
+    },
+    {
+      "bytes": 14846,
+      "path": "source-tree/src/scene.js",
+      "sha256": "d774bc242163a0049ba846ac5c8c7d8620c641f2d238adac73f869f894689b79"
+    },
+    {
+      "bytes": 115,
+      "path": "source-tree/src/solver-worker.js",
+      "sha256": "7aa8af150956ecf09af69b3887fae0dd5e6bfc7f709af736d6a938bb527e14ac"
+    },
+    {
+      "bytes": 12194,
+      "path": "source-tree/src/style.css",
+      "sha256": "239cd0845c44eab363eb32105af560f3b37eb3a63ab51d116b9e9d7e1102c467"
+    },
+    {
+      "bytes": 1479,
+      "path": "source-tree/tests/engine.test.js",
+      "sha256": "b65955d08da5d9b6aac61a2dd835d789687c5d20e2482248d22b2753041b9fc2"
+    },
+    {
+      "bytes": 107953,
+      "path": "task-record.json",
+      "sha256": "08a86685ff349a08d65bea8935c56814687ce9cd8a09733ea398a2c4e27e6f5c"
+    }
+  ],
+  "game_dir": "015-hamster-kitchen-boxes",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f85f-5368-74fa-9b2f-af2237b76026"
+}

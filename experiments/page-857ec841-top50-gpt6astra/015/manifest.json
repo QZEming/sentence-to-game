@@ -1,0 +1,96 @@
+{
+  "binding_sha256": "638985cb239892495b7ef136174ecbb7e58a560b5321ff5f9e77d941beca0113",
+  "candidate": 15,
+  "files": [
+    {
+      "bytes": 88,
+      "path": "prompt.txt",
+      "sha256": "0b049364a3663dd077d3959392ee22882753c8f626a9953187e47d3604100132"
+    },
+    {
+      "bytes": 756,
+      "path": "provenance.json",
+      "sha256": "4957087be506defcb06430e7d6afeec9115be43344f9e28eb940b6c42b2379ef"
+    },
+    {
+      "bytes": 37,
+      "path": "source-tree/.gitignore",
+      "sha256": "4321f9c9bc47a0459867db8bf2a0fd87eec74cc11472cb9bd815a12030e33ce5"
+    },
+    {
+      "bytes": 457,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T17-19-30-831Z.log",
+      "sha256": "15b1e19743d6ba9cca5520b1a7c92f50d747540a4751fe2ce3b5f2eb0ced5921"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-19-30-935Z.yml",
+      "sha256": "bbbb314315ffef568e72cdf66e22700f72e48e18148b5252c282854ac716ea8c"
+    },
+    {
+      "bytes": 1226,
+      "path": "source-tree/README.md",
+      "sha256": "765568452de0a6dfbb4c941ea6b0b91cc5da349736e0b0bf687b3832e294917b"
+    },
+    {
+      "bytes": 511251,
+      "path": "source-tree/dist/assets/index-BXuLpJpY.js",
+      "sha256": "89e7da92a5cb82394b8fb0950b0e1fe96a204eb196319ca3a27190ea90b70acc"
+    },
+    {
+      "bytes": 15197,
+      "path": "source-tree/dist/assets/index-CIHJdR7I.css",
+      "sha256": "caa58b99e2012ea1221c2759232b160e07bd37816b5056c60aaa1d52c8234997"
+    },
+    {
+      "bytes": 6707,
+      "path": "source-tree/dist/index.html",
+      "sha256": "02d6747f8b034c0dedebe80b98a72b81815bb9527f4719109a26d7c025bed13e"
+    },
+    {
+      "bytes": 6653,
+      "path": "source-tree/index.html",
+      "sha256": "b50ee2d0ae1658ae67196aca3f814ec0061b87dfbd5f90a705096ea0faae4ddf"
+    },
+    {
+      "bytes": 325717,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "1b3ed5b26b38e8f36c342617373ff060b1023f6d92110503e397d01079934913"
+    },
+    {
+      "bytes": 138047,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "c50d0b72435553ea77f94e20a98533695ae6ee1b39ec32dfa761ea7d764b685e"
+    },
+    {
+      "bytes": 234,
+      "path": "source-tree/package.json",
+      "sha256": "0dfc1b068f2fb489c7e64f7d0d1d026c6eb198bd0bb709c022f5e90686599c72"
+    },
+    {
+      "bytes": 24794,
+      "path": "source-tree/src/main.js",
+      "sha256": "ee0d731fdabcf324607d8c0605e2b41090d3398fccc4416f70a33985e0682814"
+    },
+    {
+      "bytes": 1056,
+      "path": "source-tree/src/scoring.js",
+      "sha256": "9194fda1ac5d5bb12c3fb07411e4338263026aa6f2a0827fa731081a1b26783d"
+    },
+    {
+      "bytes": 15005,
+      "path": "source-tree/src/style.css",
+      "sha256": "5ed1fa1b14f83a15fa332151c29e0272265e1299b941e52f8779978518f9ce92"
+    },
+    {
+      "bytes": 110145,
+      "path": "task-record.json",
+      "sha256": "c7476ef71a290f9d7f16aa7e987fdca13db13fcf06a2fc16c7e17416a6104253"
+    }
+  ],
+  "game_dir": "021-snowman-snowball-bowling",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f86e-e3f4-707e-a6dc-1b0fadc05038"
+}
