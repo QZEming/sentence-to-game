@@ -1,0 +1,76 @@
+{
+  "binding_sha256": "84d14ce3eb68304a28c23b239b459d946d5b106727fb2479f49e5a4c050cabb0",
+  "candidate": 26,
+  "files": [
+    {
+      "bytes": 859,
+      "path": "parent-handoff.json",
+      "sha256": "c01826f2390b7352a57a0a4038c08abbf4c22d36bdf99c83faa88f8a7df9b6e1"
+    },
+    {
+      "bytes": 103,
+      "path": "prompt.txt",
+      "sha256": "7ea458b3c1e1fae63bb4514e7501c740319fc9898c387f8d6719c164aa7e2b54"
+    },
+    {
+      "bytes": 956,
+      "path": "provenance.json",
+      "sha256": "2b92e58fbd48353aa7dd5038a71a4e1f809f5ae981a0dbacd85a179964603140"
+    },
+    {
+      "bytes": 6109,
+      "path": "source-manifest.json",
+      "sha256": "b5359f31505c3d316bd3a1e81f406c54ebad45547c225e7c29d998dc115df611"
+    },
+    {
+      "bytes": 528786,
+      "path": "source-tree/dist/assets/index-Dvhz2eDT.js",
+      "sha256": "c4c0320a1a32326914b3160a774f88fdfe02193937a9354a68b028793024dd6b"
+    },
+    {
+      "bytes": 14054,
+      "path": "source-tree/dist/assets/index-cuyN4_0x.css",
+      "sha256": "0d7f89c6eca908fa5f1578d3cacd586d1a832feb9be784f3cadc7b94336739ca"
+    },
+    {
+      "bytes": 6792,
+      "path": "source-tree/dist/index.html",
+      "sha256": "8050917bbdf839360c6dab7bb11150cedc6fa29da38d25600d9bfdb5dc1da826"
+    },
+    {
+      "bytes": 6692,
+      "path": "source-tree/index.html",
+      "sha256": "938c398e89132e4da787c646545c818d2e2f79d1bf65375dd3773b4281ed7eb4"
+    },
+    {
+      "bytes": 264,
+      "path": "source-tree/package.json",
+      "sha256": "b6d90ce9ffaea963452579493d4e49b7276f91716a9ff8ae79843d1008886305"
+    },
+    {
+      "bytes": 36381,
+      "path": "source-tree/src/main.js",
+      "sha256": "806ca3728153fd97c0fe877cb52cd8113b3f547506f5593eade2d39f4a53a7f9"
+    },
+    {
+      "bytes": 1780,
+      "path": "source-tree/src/physics.js",
+      "sha256": "e1f84c3a014c61fcfbf55f935f6f8424ade1d40164a18bd1e240cdf13f1cb05d"
+    },
+    {
+      "bytes": 1244,
+      "path": "source-tree/src/physics.test.js",
+      "sha256": "677921adc6c11924d645b2ba3483e5bfca458cca0aed583c8258c92031569771"
+    },
+    {
+      "bytes": 14015,
+      "path": "source-tree/src/style.css",
+      "sha256": "4dffc3ce165a9dab6518684e69e2933709e267b4ffb1d97a386298c4ba009b51"
+    }
+  ],
+  "game_dir": "032-spider-web-hunt",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f910-302e-76fd-8e75-2c3fb967f005"
+}

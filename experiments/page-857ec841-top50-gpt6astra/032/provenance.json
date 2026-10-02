@@ -1,0 +1,19 @@
+{
+  "candidate": 32,
+  "game_dir": "038-robot-space-repair",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "26914f3a665cc3b2b6461e122eec9a2fe274c7006c65a170910a8f1b41011ad0",
+  "prompt_sha256": "ceeace74732b2d4b33c54bfd999174ae0c7e9129a96ac9dc62fa94b2fba422ad",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-39",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f96e-99c0-76d6-9ab0-e81f41a90012",
+  "turn_id": "01a0f96e-a767-70e1-a871-b630cd28be77"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate": 37,
+  "game_dir": "043-beaver-river-town",
+  "title": "柳溪镇 · Willowbrook",
+  "url": "https://qzemi.cn/sentence-to-game/games/043-beaver-river-town/",
+  "thread_id": "01a0f9c2-e5f6-77d7-8598-57bda304a023",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个海狸规划河流小镇水道和街区的 3D 城市建设游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "227372f551021acba725a97156a9f231b7224599491b3613eb61ebeb4c163fb3",
+  "source_tree_sha256": "064eebe98a9bdc018dcbbc1a9a97632449c6a2401cc24282c36614a07ebbea07",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-CBc9Vw9N.css",
+      "sha256": "d32733340e0b55b406201f900817f8566dd6e38308068681d5a097530f414a4b",
+      "bytes": 13638
+    },
+    {
+      "path": "assets/index-CkrjFFE5.js",
+      "sha256": "574e8d830709dcb3976d044637ce0f664c4750c7e482f4aa17904ec4a0eb1328",
+      "bytes": 506523
+    },
+    {
+      "path": "index.html",
+      "sha256": "81cd624bafd00bdacc9b133f0e111cbe65934076dd32671a67a896a1a094545c",
+      "bytes": 5490
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "81cd624bafd00bdacc9b133f0e111cbe65934076dd32671a67a896a1a094545c",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "4685c3529de1d6681aee26b64e66c303faab660bd187c8ab6ca6e7ab8f02a3d3",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

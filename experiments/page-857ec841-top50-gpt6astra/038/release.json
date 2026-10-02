@@ -1,0 +1,48 @@
+{
+  "candidate": 38,
+  "game_dir": "044-rabbit-moon-farm",
+  "title": "月芽 Moonbloom",
+  "url": "https://qzemi.cn/sentence-to-game/games/044-rabbit-moon-farm/",
+  "thread_id": "01a0f9d4-67e9-73bb-8611-0a117e512013",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小兔在月球培育外星作物的 3D 农场种植模拟游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "00c521e4bbcb4ae7ed35f442d1009f53cb13c06c19305f4b8e7fb451f81b6f52",
+  "source_tree_sha256": "f5abb311e2e8d947fb40bd87528f6de33f4bd98abbec31f3dce4e72ca78f439f",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "fb099ca97eb83f83dfcf4cc40fcf40480af02bed781e29dbeb50343594af8f76",
+      "bytes": 33689
+    },
+    {
+      "path": "index.html",
+      "sha256": "c5e28b550cb673de394aa0f689565c262ebdc4669c622edba651a50e176c3144",
+      "bytes": 4890
+    },
+    {
+      "path": "style.css",
+      "sha256": "45ab2df4fa2425f7e3bc37e394504fe3300c5320c238d14121194780091029c8",
+      "bytes": 11997
+    },
+    {
+      "path": "vendor/three.js",
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "bytes": 687458
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "c5e28b550cb673de394aa0f689565c262ebdc4669c622edba651a50e176c3144",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "3fc9229f2355c25fcc463ead07732a3885dee9e35f1933c11b03c99bf8978dff",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "interrupted_capacity_snapshot_with_later_verification",
+  "later_messages": "capacity interruption followed by verification only; no source edits",
+  "known_defects": [
+    "1280x720 gentle note overlaps farmer identity/XP"
+  ]
+}

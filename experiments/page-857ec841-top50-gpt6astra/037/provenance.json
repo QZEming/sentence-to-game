@@ -1,0 +1,19 @@
+{
+  "candidate": 37,
+  "game_dir": "043-beaver-river-town",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "b8b731e7ab65d030559065ec0455e61edba809c46f0521028800727087742966",
+  "prompt_sha256": "227372f551021acba725a97156a9f231b7224599491b3613eb61ebeb4c163fb3",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-44",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f9c2-e5f6-77d7-8598-57bda304a023",
+  "turn_id": "01a0f9c2-f27f-7378-8bdf-7a3891bf0066"
+}

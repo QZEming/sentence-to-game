@@ -1,0 +1,19 @@
+{
+  "candidate": 26,
+  "game_dir": "032-spider-web-hunt",
+  "known_defects": [],
+  "later_messages": "read-only status query; no added implementation",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "b5359f31505c3d316bd3a1e81f406c54ebad45547c225e7c29d998dc115df611",
+  "prompt_sha256": "7ea458b3c1e1fae63bb4514e7501c740319fc9898c387f8d6719c164aa7e2b54",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-33",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f910-302e-76fd-8e75-2c3fb967f005",
+  "turn_id": "01a0f910-3def-7170-8614-e26780313d73"
+}

@@ -1,0 +1,121 @@
+{
+  "binding_sha256": "4941292c010dc5dc0f7d96e6e53ee1ce439ea9006bd4d965d7782bfcae24d3fc",
+  "candidate": 32,
+  "files": [
+    {
+      "bytes": 848,
+      "path": "parent-handoff.json",
+      "sha256": "e26899643ff48632b1e7aa3f39cc8bbe4940304ee593ff8b711eb31ae9dcd2df"
+    },
+    {
+      "bytes": 109,
+      "path": "prompt.txt",
+      "sha256": "ceeace74732b2d4b33c54bfd999174ae0c7e9129a96ac9dc62fa94b2fba422ad"
+    },
+    {
+      "bytes": 942,
+      "path": "provenance.json",
+      "sha256": "3cced031fc3ace2f81c8ad525f3591f0839c6973b0c47868b85d5fa83a93479c"
+    },
+    {
+      "bytes": 11838,
+      "path": "source-manifest.json",
+      "sha256": "26914f3a665cc3b2b6461e122eec9a2fe274c7006c65a170910a8f1b41011ad0"
+    },
+    {
+      "bytes": 47,
+      "path": "source-tree/.gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 1676,
+      "path": "source-tree/README.md",
+      "sha256": "e8628dfae28096c4da4bd1c5e5b3e12ce61817aa508f679d2b8f75f2ad03d89d"
+    },
+    {
+      "bytes": 19509,
+      "path": "source-tree/dist/assets/index-CglN3jhf.css",
+      "sha256": "fced12316e33ef51f5d21a5f69bac52f02fe36fe732082dcdf094396a7b50c00"
+    },
+    {
+      "bytes": 564605,
+      "path": "source-tree/dist/assets/index-DH-cocV_.js",
+      "sha256": "d09bcdf65c44f0dbf78f29c3385ca96bcdd00bcd9aa31cea5315999a7cb9de6d"
+    },
+    {
+      "bytes": 244,
+      "path": "source-tree/dist/favicon.svg",
+      "sha256": "7100d1aeb3b4cd52291d61858ddb1fb148ec3cd7e74d766851cfcad4bbb5fc52"
+    },
+    {
+      "bytes": 476,
+      "path": "source-tree/dist/index.html",
+      "sha256": "36735b72e0d7afe3a37577f3e2a4a7c54f7d1590c17ffa6ff289f958c859a935"
+    },
+    {
+      "bytes": 376,
+      "path": "source-tree/index.html",
+      "sha256": "0e7c95887729844ddb0f35256eebb1fbd678b3d9988259bfe00f9f0cb125cb04"
+    },
+    {
+      "bytes": 2108,
+      "path": "source-tree/output/playwright/check-flow.js",
+      "sha256": "c292952c9c6f452cc385e84c48138ff9b24e110122c1fbd0484b62f4acc9a04b"
+    },
+    {
+      "bytes": 1811,
+      "path": "source-tree/output/playwright/check-support.js",
+      "sha256": "a5d57e0b82eacb381aefbd45b3914a669f9a1f5e3765a4eb06974a2682acb8e3"
+    },
+    {
+      "bytes": 282350,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "e0a4b74ddcf714f18fd395fc23c14e01dc5346eabff0e0525e9f42dafe6fc781"
+    },
+    {
+      "bytes": 142411,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "0834f20d307ccde77f53e0780f95633a29ac25209ffb7aada342ce3f019f0f7d"
+    },
+    {
+      "bytes": 449,
+      "path": "source-tree/output/playwright/verification.json",
+      "sha256": "f9a12b18362dd1123f683348954c12841005bd994499e44f332cf8ce3131d790"
+    },
+    {
+      "bytes": 167640,
+      "path": "source-tree/output/playwright/victory.png",
+      "sha256": "ff3c7e95603d5d07577f4d98c1c849318fcc1c1d42e82e1136e38d4453411295"
+    },
+    {
+      "bytes": 26052,
+      "path": "source-tree/package-lock.json",
+      "sha256": "f5a6f68f69508631ec6b5d08efc20e8185ddf365c7218cfd885b03e68704ce9e"
+    },
+    {
+      "bytes": 433,
+      "path": "source-tree/package.json",
+      "sha256": "cb37bdd9ce372e1665cd904c75e8f4ca82c03d89aebdffd9710d0d77e7f3d56c"
+    },
+    {
+      "bytes": 244,
+      "path": "source-tree/public/favicon.svg",
+      "sha256": "7100d1aeb3b4cd52291d61858ddb1fb148ec3cd7e74d766851cfcad4bbb5fc52"
+    },
+    {
+      "bytes": 30989,
+      "path": "source-tree/src/main.js",
+      "sha256": "6f4c1d6babb375737111ef9ab4cd13bedb69721033eed8127162b14aea08f92e"
+    },
+    {
+      "bytes": 19525,
+      "path": "source-tree/src/style.css",
+      "sha256": "4de3000014f5c15c5719601839f95b4fe5fde7953578ca1ff5ad3d5158b9cca4"
+    }
+  ],
+  "game_dir": "038-robot-space-repair",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f96e-99c0-76d6-9ab0-e81f41a90012"
+}

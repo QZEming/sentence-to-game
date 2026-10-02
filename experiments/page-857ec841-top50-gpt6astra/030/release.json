@@ -1,0 +1,51 @@
+{
+  "candidate": 30,
+  "game_dir": "036-cat-museum-heist",
+  "title": "午夜爪印 · Midnight Paws",
+  "url": "https://qzemi.cn/sentence-to-game/games/036-cat-museum-heist/",
+  "thread_id": "01a0f954-d65c-726f-8b60-7126172b4028",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小猫策划博物馆宝石盗窃的 3D 潜入行动规划游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "6b42a92cf078e4209c36479fb04bd18dfd363fa28019a0e659b64a3666824c5c",
+  "source_tree_sha256": "6a370523d764afc77870de2ca8d5a29f0be92ff2d5f3a458fb536d32462bd5b7",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "68bbee8f9639084a332a79b28468ed261b4a1265d27c38dfb736ab0c76f634ff",
+      "bytes": 23312
+    },
+    {
+      "path": "index.html",
+      "sha256": "f15df111893b8ad057e71b0030f09e591eb641bb3959ac7a2b10e91bef0e00c4",
+      "bytes": 4787
+    },
+    {
+      "path": "style.css",
+      "sha256": "9e63f7c857efe13212b50c3575f79c86f515c856593dbef806414dafc629610f",
+      "bytes": 9758
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "f15df111893b8ad057e71b0030f09e591eb641bb3959ac7a2b10e91bef0e00c4",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "6ae006b43d274a09741e11553f111cff84c055ef7b5c79f34e840bbffdf6973d",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

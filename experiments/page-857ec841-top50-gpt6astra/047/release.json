@@ -1,0 +1,41 @@
+{
+  "candidate": 47,
+  "game_dir": "053-mushroom-forest-territory",
+  "title": "MYCELIUM · 林间共生",
+  "url": "https://qzemi.cn/sentence-to-game/games/053-mushroom-forest-territory/",
+  "thread_id": "01a0fa73-f31c-72c3-8143-99a36f73d094",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个蘑菇精灵扩张菌丝争夺森林领地的 3D 区域控制策略游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d582211942d91e7eb1711bfe8df4a5fd018ff0a1501d2074967ad89f565aa4fb",
+  "source_tree_sha256": "1ccbdd512256678babd217836d83029d6685ee5461fb68f1a1f351e6ce0610b8",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-C5x86UcM.js",
+      "sha256": "4de69610c7ad8595b480924e35534f0b644219866d44e4551446f928b09fe76b",
+      "bytes": 538840
+    },
+    {
+      "path": "assets/index-DF6_qfn5.css",
+      "sha256": "d292723e88d1559d4fdbed9e1c269eb49081c8f39c016000dec2bc13b3c1f9e8",
+      "bytes": 12057
+    },
+    {
+      "path": "index.html",
+      "sha256": "aae41b169fe62bb2702249811550afa17491d1127659f9b765cded9a0243bde9",
+      "bytes": 6840
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "aae41b169fe62bb2702249811550afa17491d1127659f9b765cded9a0243bde9",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "c63642e311f1e7d37060db5d251e9c73a891f487b775765ea3190e307a9a43d7",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

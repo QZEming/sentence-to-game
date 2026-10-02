@@ -4,7 +4,7 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**31 / 100**。
+当前进度：**53 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
@@ -43,6 +43,28 @@
 | 029 | [寻壳记 · Shellbound](games/029-hermit-crab-homes/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/029-hermit-crab-homes/) | [源码](games/029-hermit-crab-homes/src/) |
 | 030 | [蜜野 · Honey Meadow](games/030-bee-garden-nectar/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/030-bee-garden-nectar/) | [源码](games/030-bee-garden-nectar/src/) |
 | 031 | [蚁境 FORMICA · 地下王国](games/031-ant-underground-colony/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/031-ant-underground-colony/) | [源码](games/031-ant-underground-colony/src/) |
+| 032 | [SILKBOUND · 织境](games/032-spider-web-hunt/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/032-spider-web-hunt/) | [源码](games/032-spider-web-hunt/src/) |
+| 033 | [隐鳞 CHROMA](games/033-chameleon-jungle-stealth/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/033-chameleon-jungle-stealth/) | [源码](games/033-chameleon-jungle-stealth/src/) |
+| 034 | [萤途 · LUMEN](games/034-firefly-traveler-guide/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/034-firefly-traveler-guide/) | [源码](games/034-firefly-traveler-guide/src/) |
+| 035 | [午夜恶作剧 · Midnight Mischief](games/035-ghost-castle-pranks/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/035-ghost-castle-pranks/) | [源码](games/035-ghost-castle-pranks/src/) |
+| 036 | [午夜爪印 · Midnight Paws](games/036-cat-museum-heist/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/036-cat-museum-heist/) | [源码](games/036-cat-museum-heist/src/) |
+| 037 | [鸦林疑案 · Ravenwood](games/037-crow-forest-detective/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/037-crow-forest-detective/) | [源码](games/037-crow-forest-detective/src/) |
+| 038 | [ORBITAL · 空间站维修模拟](games/038-robot-space-repair/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/038-robot-space-repair/) | [源码](games/038-robot-space-repair/src/) |
+| 039 | [冰山寿司 · Penguin Sushi](games/039-penguin-sushi-shop/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/039-penguin-sushi-shop/) | [源码](games/039-penguin-sushi-shop/src/) |
+| 040 | [熊汤物语 · 森林温泉旅馆](games/040-bear-hot-spring-inn/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/040-bear-hot-spring-inn/) | [源码](games/040-bear-hot-spring-inn/src/) |
+| 041 | [狐尾炼金铺 / Foxglove Alchemy](games/041-fox-potion-shop/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/041-fox-potion-shop/) | [源码](games/041-fox-potion-shop/src/) |
+| 042 | [RE:FACTORY · 再造工厂](games/042-robot-recycling-factory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/042-robot-recycling-factory/) | [源码](games/042-robot-recycling-factory/src/) |
+| 043 | [柳溪镇 · Willowbrook](games/043-beaver-river-town/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/043-beaver-river-town/) | [源码](games/043-beaver-river-town/src/) |
+| 044 | [月芽 Moonbloom](games/044-rabbit-moon-farm/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/044-rabbit-moon-farm/) | [源码](games/044-rabbit-moon-farm/src/) |
+| 045 | [Wyldkeep · 云野生灵](games/045-dragon-creature-nursery/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/045-dragon-creature-nursery/) | [源码](games/045-dragon-creature-nursery/src/) |
+| 046 | [OUTPOST · 异星余生](games/046-astronaut-planet-survival/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/046-astronaut-planet-survival/) | [源码](games/046-astronaut-planet-survival/src/) |
+| 047 | [迷雾群岛 · The Lost Archipelago](games/047-pirate-island-treasure/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/047-pirate-island-treasure/) | [源码](games/047-pirate-island-treasure/src/) |
+| 048 | [风暴小船长 · Storm Captain](games/048-captain-storm-sailing/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/048-captain-storm-sailing/) | [源码](games/048-captain-storm-sailing/src/) |
+| 049 | [烈焰指挥 · FIRE COMMAND](games/049-firefighter-building-rescue/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/049-firefighter-building-rescue/) | [源码](games/049-firefighter-building-rescue/src/) |
+| 050 | [雪迹 ALPINE](games/050-rescue-dog-snow-mountain/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/050-rescue-dog-snow-mountain/) | [源码](games/050-rescue-dog-snow-mountain/src/) |
+| 051 | [MAGNET WORKS · 磁力工坊](games/051-robot-magnetic-factory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/051-robot-magnetic-factory/) | [源码](games/051-robot-magnetic-factory/src/) |
+| 053 | [MYCELIUM · 林间共生](games/053-mushroom-forest-territory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/053-mushroom-forest-territory/) | [源码](games/053-mushroom-forest-territory/src/) |
+| 054 | [爪爪奇旅 · TOYBOUND](games/054-cat-card-toy-adventure/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/054-cat-card-toy-adventure/) | [源码](games/054-cat-card-toy-adventure/src/) |
 
 ## 目录结构
 

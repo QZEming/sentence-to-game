@@ -1,0 +1,19 @@
+{
+  "candidate": 47,
+  "game_dir": "053-mushroom-forest-territory",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "f1670be0e90b2608337468e8f99600ce26720573617a36850c691d66cb1ddc22",
+  "prompt_sha256": "d582211942d91e7eb1711bfe8df4a5fd018ff0a1501d2074967ad89f565aa4fb",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-53",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0fa73-f31c-72c3-8143-99a36f73d094",
+  "turn_id": "01a0fa74-13d8-7301-ba0f-3f7ad63de922"
+}

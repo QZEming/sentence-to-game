@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#eeeae2"><title>MAGNET WORKS · 磁力工坊</title>  <script type="module" crossorigin src="./assets/index-DXdY0Sf6.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CFsDFqim.css">
+</head><body>
+<div id="app">
+<header><a class="brand" href="./" aria-label="磁力工坊"><span class="logo">∩<i>+</i></span><span>MAGNET<span class="brand-thin">WORKS</span><small>磁 力 工 坊</small></span></a><nav><span class="nav-active">工厂作业</span><button id="levels">关卡图册 <span>↗</span></button><button id="guide">操作指南 <span>?</span></button></nav><div class="header-right"><span class="online"></span> 系统在线 <button class="sound" id="sound" aria-label="切换声音">♫</button></div></header>
+<main><div class="workspace-head"><div><span class="eyebrow">THE LITTLE ROBOT. THE BIG SHIFT.</span><h1>一点磁力，无限可能<span>。</span></h1><p>接通磁力，把每一件货物送到它的归处。</p></div><div class="serial"><span>FACTORY / 07</span><b>精密搬运部</b><small>PHYSICS-BASED PUZZLE LAB</small></div></div>
+<section class="game-shell"><div id="scene"></div><div class="scene-grain"></div><div class="topline"><span><i></i> 实时物理模拟</span><span id="stage-label">SECTOR 01 / 05</span></div>
+<aside class="mission"><div class="mission-kicker"><span id="level-number">01</span><span>当前作业 <b id="difficulty">入门训练</b></span></div><h2 id="level-title">初次吸引</h2><p id="level-desc">让磁力成为你的新手臂。将两件货物送入对应的装卸区。</p><div class="mission-rule"></div><div class="objective"><span>货物归位</span><strong><span id="delivered">0</span><em> / </em><span id="total">2</span></strong></div><div id="cargo-list"></div><div class="hint"><span>✦</span><p id="hint">靠近货箱，按 E 开启磁力。到达装卸区后，再按 E 释放。</p></div></aside>
+<div class="scene-label"><span class="tiny-square"></span> M-01 <small>磁力搬运机器人</small></div><div class="scene-controls"><button id="rotate" title="旋转视角">⟳</button><button id="reset" title="重置关卡 R">↺</button><button id="pause" title="暂停 Esc">Ⅱ</button><button id="pulse" title="磁力脉冲 Space" aria-label="磁力脉冲">✦</button></div>
+<div id="toast" role="status">欢迎来到磁力工坊。你的第一班，即刻开始。</div>
+<div class="statusbar"><div class="magnet-indicator"><span class="magnet-icon">∩</span><span>磁力模块<small id="magnet-status">待机 · 按 E 启动</small></span><span class="status-dot" id="magnet-dot"></span></div><div class="power"><div><span>能量储备</span><b id="energy-value">100%</b></div><div class="power-track"><i id="energy-bar"></i></div></div><div class="stat"><small>作业用时</small><b id="timer">00:00</b></div><div class="stat"><small>磁力操作</small><b id="moves">00</b></div><button class="polarity" id="polarity">＋ 吸引模式 <span>Q</span></button></div>
+<div id="overlay" class="overlay hidden"></div>
+</section>
+<section class="bottom"><div class="keys"><span><kbd>W</kbd><span class="wasd"><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><label>移动机器人</label><i></i><kbd>E</kbd><label>开启 / 释放磁力</label><i></i><kbd>Q</kbd><label>切换极性</label><i></i><kbd>SPACE</kbd><label>磁力脉冲</label></div><button id="next-hint">需要一点灵感？ <span>↗</span></button></section>
+<footer><span><i></i> 小小机器人，也能完成大工程。</span><span>拖运 · 思考 · 再试一次 <b>MADE FOR CURIOUS MINDS</b></span></footer>
+</main></div></body></html>

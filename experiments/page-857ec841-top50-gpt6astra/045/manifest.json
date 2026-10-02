@@ -1,0 +1,126 @@
+{
+  "binding_sha256": "33504683e7d37e02cad23e55eedca51518c1feb5189b8ac609a8552f7c754974",
+  "candidate": 45,
+  "files": [
+    {
+      "bytes": 851,
+      "path": "parent-handoff.json",
+      "sha256": "43d9ba6812b098a182bb15513b852146cb86668e7c9ac8a7a1b25c5e84d972ea"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "0214de2c6768e796eb5e5065b42445f08d0e1c457b05867e52dabaee70f7559a"
+    },
+    {
+      "bytes": 946,
+      "path": "provenance.json",
+      "sha256": "3eb6cbd1a8a179402c11438ddec72b11d114169afedb993d1329a3c28ec75335"
+    },
+    {
+      "bytes": 12945,
+      "path": "source-manifest.json",
+      "sha256": "b86c544b495c3e9c9e45fa081df4e798d505dc74ff9d4d73c24073cb97139432"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1846,
+      "path": "source-tree/README.md",
+      "sha256": "ce673da524ef50ce5fa82e767de45b6c2e54753d27ae26217fdcaa650651c7c9"
+    },
+    {
+      "bytes": 10951,
+      "path": "source-tree/dist/assets/index-CFsDFqim.css",
+      "sha256": "0b115abcd84540416b885e81056081f6e841f278994b2090b3ac56f60edcb922"
+    },
+    {
+      "bytes": 584666,
+      "path": "source-tree/dist/assets/index-DXdY0Sf6.js",
+      "sha256": "91b7c2e9565dd3a3016b2f6b36aadf365294a1f2b9e7dadbe2e38c7941b50469"
+    },
+    {
+      "bytes": 3780,
+      "path": "source-tree/dist/index.html",
+      "sha256": "69177ca6d3a34b1933e6b9d754adc1dc2384d267a25cf81c2288dd0613e9808a"
+    },
+    {
+      "bytes": 3725,
+      "path": "source-tree/index.html",
+      "sha256": "474a619cf4c010b29a9ff398e992078526ab587760df15db6e9d4440397d820d"
+    },
+    {
+      "bytes": 2156,
+      "path": "source-tree/output/playwright/check.mjs",
+      "sha256": "163212b395170faf808fe40c5da3c7fef485e31fbdc5d3546ba82350e0d452b0"
+    },
+    {
+      "bytes": 154789,
+      "path": "source-tree/output/playwright/complete.png",
+      "sha256": "d55d3b682fd96ce6ef66bb7a7d0557255daa22376561d90748995c54d382c4a2"
+    },
+    {
+      "bytes": 1670,
+      "path": "source-tree/output/playwright/delivery.mjs",
+      "sha256": "c70ac9bc8fb87a94a41a1d56b479b886bf8532f5099d5c843fc3867de5965e48"
+    },
+    {
+      "bytes": 400835,
+      "path": "source-tree/output/playwright/delivery.png",
+      "sha256": "87881d8f542d2542374132fa6c8fdaab5d69f1013904d2fb0babc3ccdc5ebbdd"
+    },
+    {
+      "bytes": 404208,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "d12e2f7cd21b10f0931ed157cc5f0e6cc2af987837276c223489f1e90c025573"
+    },
+    {
+      "bytes": 416366,
+      "path": "source-tree/output/playwright/level5.png",
+      "sha256": "22e252c850ba60f98f91f56ff9cb396a3c5c58f8e3132430ed36f11641e6b4d0"
+    },
+    {
+      "bytes": 404233,
+      "path": "source-tree/output/playwright/loaded.png",
+      "sha256": "472198324b0c6a4e5d862d23b9f7d3ca8d96fd3198ea2b10a4c4a0a6c27dc5f6"
+    },
+    {
+      "bytes": 168900,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "562430254a6454a819fe193d5709797ebf143e8a680f514c1a90a1dac27aaff3"
+    },
+    {
+      "bytes": 512,
+      "path": "source-tree/output/playwright/movement.mjs",
+      "sha256": "b571059627c02d0272af8b58b1de9ca1cc365f7528d4092ed56a988922d0fe12"
+    },
+    {
+      "bytes": 35688,
+      "path": "source-tree/package-lock.json",
+      "sha256": "a1542d59fd0300462e67a580428f0cd6df9504cb41b2744717b910401ac26896"
+    },
+    {
+      "bytes": 281,
+      "path": "source-tree/package.json",
+      "sha256": "84098cd70976c2b1ab26b7b360febd167bb2c5d229805cac7cdde61b1dfae807"
+    },
+    {
+      "bytes": 25792,
+      "path": "source-tree/src/main.js",
+      "sha256": "aa0743c7fd4b149d657df41323dd45e73bf188028dfcae9e6ecaa7d3aea26568"
+    },
+    {
+      "bytes": 10881,
+      "path": "source-tree/src/style.css",
+      "sha256": "35911c1c796cf9c67a95eba03ca6233fe1ef229566c4e9b74f987e717f59e8b4"
+    }
+  ],
+  "game_dir": "051-robot-magnetic-factory",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa5a-6dd3-71a6-b986-ac45fbf3208e"
+}

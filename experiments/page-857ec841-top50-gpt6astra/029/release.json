@@ -1,0 +1,46 @@
+{
+  "candidate": 29,
+  "game_dir": "035-ghost-castle-pranks",
+  "title": "午夜恶作剧 · Midnight Mischief",
+  "url": "https://qzemi.cn/sentence-to-game/games/035-ghost-castle-pranks/",
+  "thread_id": "01a0f948-62d3-7583-96d6-299db5714007",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小幽灵操纵古堡家具捉弄住客的 3D 机关连锁解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "9449aaa66cbcf2ef3d9577b1803362859bf33d583448910da083f715597b6bed",
+  "source_tree_sha256": "de1033f656efa1b647b98c80c3b1aa99f21039bbbb0d7268bba95fb6b8b88647",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "assets/index-DIvPTGxR.js",
+      "sha256": "8bab90e2d2cdce9d640688c05a91ca5c1ad294b0251192b89a23a18cfd5b1b78",
+      "bytes": 43418
+    },
+    {
+      "path": "assets/index-DaGtrZB-.css",
+      "sha256": "064bac1832be7b31e033c9f80db0f7063c2896db20a57997e0ebc5446f6e84ed",
+      "bytes": 12280
+    },
+    {
+      "path": "assets/three-1m4liJas.js",
+      "sha256": "bf418619188e000fd97991a9774d7aaf2b720ca3fe620e954a127eb53410ad68",
+      "bytes": 485059
+    },
+    {
+      "path": "index.html",
+      "sha256": "4c75045d1942366d4d39524912b9850d9cdccedd48d00ae3094cede346a4a766",
+      "bytes": 4472
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "4c75045d1942366d4d39524912b9850d9cdccedd48d00ae3094cede346a4a766",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "7f76e32227af782d0aedb5aabbfb36458fc0b7cd7b72fe0b75e900efc055d640",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

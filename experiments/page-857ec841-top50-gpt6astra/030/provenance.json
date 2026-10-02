@@ -1,0 +1,19 @@
+{
+  "candidate": 30,
+  "game_dir": "036-cat-museum-heist",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "807e136431ae423b4436280e4e2365846944753f1db2a8d9dd3fd27c805af73b",
+  "prompt_sha256": "6b42a92cf078e4209c36479fb04bd18dfd363fa28019a0e659b64a3666824c5c",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-37/midnight-paws",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f954-d65c-726f-8b60-7126172b4028",
+  "turn_id": "01a0f954-e445-7193-b2c6-e1f3ab35cae3"
+}

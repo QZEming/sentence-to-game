@@ -1,0 +1,66 @@
+{
+  "binding_sha256": "96fd07e193c66a59fcc69a57be56357c0cdedef11d38742ac2a0a4ef1a43f712",
+  "candidate": 42,
+  "files": [
+    {
+      "bytes": 284425,
+      "path": "original-delivery/root-artifacts/storm-captain-source.zip",
+      "sha256": "70b5d7efc2c5b1148e44f61b2e93193bf5a16c5efefd2c69c2680d6678d3f1be"
+    },
+    {
+      "bytes": 851,
+      "path": "parent-handoff.json",
+      "sha256": "05939d03a2b0606862632da9d44a6278462035ccdfce9866a31d7cd531766312"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "978a52a0027cdf0f901c53e19e24c56ff148479caf01d1e643a52c1288028fc9"
+    },
+    {
+      "bytes": 959,
+      "path": "provenance.json",
+      "sha256": "94793d5caa026f078b43678c5ecfa5e6246e65d6b74148fc126025da5b56aa65"
+    },
+    {
+      "bytes": 7161,
+      "path": "source-manifest.json",
+      "sha256": "4fda35d7cf8f1ee524373bd8afc5662db18e408788891d2a2a42e5e169e0979b"
+    },
+    {
+      "bytes": 105,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "3bf13b18336eaf6724cbdff5326c1c75921ed81944ec59f9652960d396a28f59"
+    },
+    {
+      "bytes": 1434,
+      "path": "source-tree/README.md",
+      "sha256": "6d817c491c20d1eb1677441d2a4b10db3045e1394478ea6d215f43e3f6da2861"
+    },
+    {
+      "bytes": 27517,
+      "path": "source-tree/dist/game.js",
+      "sha256": "b1df170c46ed3ca5a75e19df7aa2770acf4df72dea40122ce1cafb9f666d7765"
+    },
+    {
+      "bytes": 4355,
+      "path": "source-tree/dist/index.html",
+      "sha256": "8c3bae41cb3fd350cb50a877093d45defda037788d863a8c384271fbf9f29736"
+    },
+    {
+      "bytes": 9925,
+      "path": "source-tree/dist/style.css",
+      "sha256": "d940331581c7de6773dd0e8f3e8d6ff4534768ebe11b33a8f2306d40753fb535"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "game_dir": "048-captain-storm-sailing",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa25-238c-74db-9149-114082a120bd"
+}

@@ -1,0 +1,86 @@
+{
+  "binding_sha256": "b1c2b521b5aa3614cd0dd8add723178ba7dfbc30931cb0711689d414353d0989",
+  "candidate": 31,
+  "files": [
+    {
+      "bytes": 845,
+      "path": "parent-handoff.json",
+      "sha256": "09568a437c034cb35835401a45141788a55b8df20cb9bb9867b4385577faa751"
+    },
+    {
+      "bytes": 106,
+      "path": "prompt.txt",
+      "sha256": "38f4b6de8f86832c1c442e116fd73d26af7db4dfcb1568219384a15c65f8a1a7"
+    },
+    {
+      "bytes": 945,
+      "path": "provenance.json",
+      "sha256": "ce935f3c256e5c06b5d5b0f35b16fde703baf735f62aba52c6b40b923b23b09a"
+    },
+    {
+      "bytes": 7776,
+      "path": "source-manifest.json",
+      "sha256": "fd67914ebd0d4254643c23f5bae754f9bac6f81fbb8175501f56a18a737ffbf5"
+    },
+    {
+      "bytes": 1456,
+      "path": "source-tree/README.md",
+      "sha256": "7dddca4a7fdc7a5585bc8087e58e6e919a71320aa950d5a25ecb35ec734415b4"
+    },
+    {
+      "bytes": 10281,
+      "path": "source-tree/dist/assets/index-BYdLb3PR.css",
+      "sha256": "4594d5224672df671a9edb9f1e8d91278e8bd9d7a491411d42e8758dc54e7ffe"
+    },
+    {
+      "bytes": 26580,
+      "path": "source-tree/dist/assets/index-BdN9SvHB.js",
+      "sha256": "a848f6f2dd9665d054ce6f6fc45c988ebcc9d8843d408a5ec54729bc93a1e216"
+    },
+    {
+      "bytes": 506441,
+      "path": "source-tree/dist/assets/three-D_MwKvm3.js",
+      "sha256": "3e499f27a07b57e0c555f347f856ea39def7471d96d42f2b0c70e1c43afe92c3"
+    },
+    {
+      "bytes": 3406,
+      "path": "source-tree/dist/index.html",
+      "sha256": "1cb82d0756b42c7745c5d1f75444b5bab90fbf5749246651de744d86b790c758"
+    },
+    {
+      "bytes": 3232,
+      "path": "source-tree/index.html",
+      "sha256": "6f949564f8aa4383692ec87572b1666436ca205e601403e11c5e686aaaebca70"
+    },
+    {
+      "bytes": 33880,
+      "path": "source-tree/package-lock.json",
+      "sha256": "37d97bf9187ac747a7b876e6d293d4c5e88053621e837f8369f28daacdcf9e4f"
+    },
+    {
+      "bytes": 218,
+      "path": "source-tree/package.json",
+      "sha256": "ce5776afe988850547f792842133e9844e2f4d0920a239c2045718f89088a246"
+    },
+    {
+      "bytes": 30944,
+      "path": "source-tree/src/main.js",
+      "sha256": "65db4808640b1807a77d4d1a17224ab41d31bb6fc2f1bfd9a2a1e1e9060f16d0"
+    },
+    {
+      "bytes": 10176,
+      "path": "source-tree/src/style.css",
+      "sha256": "4afc1bb6ecb42e9fb6530d0bf6d832539f869dc08782adb27a98f2fc14870d5a"
+    },
+    {
+      "bytes": 133,
+      "path": "source-tree/vite.config.js",
+      "sha256": "ce64dc6d64954b7da4277ee0111c8b2f468cd0c2dcf046d147523ec5369b6087"
+    }
+  ],
+  "game_dir": "037-crow-forest-detective",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f962-3313-704e-a5bb-f16c9f917029"
+}

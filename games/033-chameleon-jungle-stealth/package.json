@@ -1,0 +1,1 @@
+{"name":"chroma-jungle","private":true,"type":"module","scripts":{"start":"python3 -m http.server 4391 --bind 127.0.0.1 --directory dist","check":"node --check dist/game.js"}}

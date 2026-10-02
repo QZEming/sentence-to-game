@@ -1,0 +1,111 @@
+{
+  "binding_sha256": "5d9546e1b6413c099de9603a5acd4100dba681d011f9a85cf155b150bb9bd64e",
+  "candidate": 29,
+  "files": [
+    {
+      "bytes": 857,
+      "path": "parent-handoff.json",
+      "sha256": "7f76e32227af782d0aedb5aabbfb36458fc0b7cd7b72fe0b75e900efc055d640"
+    },
+    {
+      "bytes": 118,
+      "path": "prompt.txt",
+      "sha256": "9449aaa66cbcf2ef3d9577b1803362859bf33d583448910da083f715597b6bed"
+    },
+    {
+      "bytes": 943,
+      "path": "provenance.json",
+      "sha256": "2978e55a7811793bebe9af6e85350584ff145352feb13e124631f74635354dce"
+    },
+    {
+      "bytes": 10631,
+      "path": "source-manifest.json",
+      "sha256": "210c8dd0254956dbff8935d51114380f688b75e801d221729a289d6bdd33ead9"
+    },
+    {
+      "bytes": 24,
+      "path": "source-tree/.gitignore",
+      "sha256": "6c7d15d2ab1a0b51ebcae7e88b9ad01f0713d0833bc2dbe8f3bcc7a81b66b344"
+    },
+    {
+      "bytes": 1698,
+      "path": "source-tree/README.md",
+      "sha256": "e3863460e3f8d2482b5ecd11413783f5e92b7151461a12678ded47363e60490a"
+    },
+    {
+      "bytes": 43418,
+      "path": "source-tree/dist/assets/index-DIvPTGxR.js",
+      "sha256": "8bab90e2d2cdce9d640688c05a91ca5c1ad294b0251192b89a23a18cfd5b1b78"
+    },
+    {
+      "bytes": 12280,
+      "path": "source-tree/dist/assets/index-DaGtrZB-.css",
+      "sha256": "064bac1832be7b31e033c9f80db0f7063c2896db20a57997e0ebc5446f6e84ed"
+    },
+    {
+      "bytes": 485059,
+      "path": "source-tree/dist/assets/three-1m4liJas.js",
+      "sha256": "bf418619188e000fd97991a9774d7aaf2b720ca3fe620e954a127eb53410ad68"
+    },
+    {
+      "bytes": 4472,
+      "path": "source-tree/dist/index.html",
+      "sha256": "4c75045d1942366d4d39524912b9850d9cdccedd48d00ae3094cede346a4a766"
+    },
+    {
+      "bytes": 4295,
+      "path": "source-tree/index.html",
+      "sha256": "582396dc693c0efdc8de71bd681d8c76f23389e4127e4bfc866f38b480ccec12"
+    },
+    {
+      "bytes": 1369,
+      "path": "source-tree/output/playwright/check.mjs",
+      "sha256": "658762bb944ba56b44b2f32110eda2472b488fc7a70e219ab2a1110829d82419"
+    },
+    {
+      "bytes": 470879,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "af76b6c5e3f4e8579447f76c9293d9c559b4901f4fd04c7fa03ec6dbdcae8bfb"
+    },
+    {
+      "bytes": 1405,
+      "path": "source-tree/output/playwright/extras.mjs",
+      "sha256": "63c5e5b705f366c4761eb3b0ff926f42eb445f593869cd183c79508b744acca5"
+    },
+    {
+      "bytes": 190740,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "77a774cde7d39ce2747bdbef0f44e724342373af7b31e4bfd737eb7958c16679"
+    },
+    {
+      "bytes": 248965,
+      "path": "source-tree/output/playwright/win.png",
+      "sha256": "b201f65efd70d3aaa45f7677603c7b9af515335dd3ff30e43c8d669fa59c8496"
+    },
+    {
+      "bytes": 237,
+      "path": "source-tree/package.json",
+      "sha256": "5364a67c611efefc2c5ac803cfe403156969d48c2355bd03ac988b7ead2eeae4"
+    },
+    {
+      "bytes": 28206,
+      "path": "source-tree/src/main.js",
+      "sha256": "4faeaa931486dee7c42d0d3476422d982ef6f7d9668ad89225e2ea779331bc4d"
+    },
+    {
+      "bytes": 12224,
+      "path": "source-tree/src/style.css",
+      "sha256": "40feb143d01675393bec5d14bb532a537320063173d5882871c64ea36bdc5404"
+    },
+    {
+      "bytes": 143,
+      "path": "source-tree/vite.config.js",
+      "sha256": "97b392cd86c45c55301e9d824bab8931849525ffd76febca96f42e4cd25e3285"
+    }
+  ],
+  "game_dir": "035-ghost-castle-pranks",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f948-62d3-7583-96d6-299db5714007"
+}

@@ -1,0 +1,51 @@
+{
+  "candidate": 43,
+  "game_dir": "049-firefighter-building-rescue",
+  "title": "烈焰指挥 · FIRE COMMAND",
+  "url": "https://qzemi.cn/sentence-to-game/games/049-firefighter-building-rescue/",
+  "thread_id": "01a0fa33-2695-73ba-877f-9092609160a2",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个消防指挥员调配队员救援着火大楼的 3D 实时救援策略游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "5edac99f96a554ba24f67a7dfef3b99826da96971d617d24efa49d35623b348f",
+  "source_tree_sha256": "7928cd0f2d29d120aee3ac72683955431ea93181f1b2a5ed5a0a938ab0bea420",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "app.mjs",
+      "sha256": "05ad39d236cad6a38b677cc057a40728cb9c44d4df7bded36471540b399e9d95",
+      "bytes": 27734
+    },
+    {
+      "path": "engine.mjs",
+      "sha256": "b591d09f4eeb1a790388421d83a264f9d6a57afc99e14cb379fddc7e72c5998a",
+      "bytes": 7212
+    },
+    {
+      "path": "index.html",
+      "sha256": "d842f93ada51054f4ad67bad95918bcc19aa4b5dd4a5d6edb08efdde9da075d2",
+      "bytes": 5715
+    },
+    {
+      "path": "style.css",
+      "sha256": "b929751de862378c9df7d7a81337444b101bfe59fdc4e82490369fbe07c5cd64",
+      "bytes": 17066
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "d842f93ada51054f4ad67bad95918bcc19aa4b5dd4a5d6edb08efdde9da075d2",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "f3c19e9a613a5cca8456af372854252efb46fe49c80927876d4cbc1851656b84",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "read-only status query; no added implementation",
+  "known_defects": []
+}

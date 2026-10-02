@@ -1,0 +1,81 @@
+{
+  "binding_sha256": "94e3347fec99f654b6e362457dd69edad4cd9183f3d6db3453bc38e33221e61e",
+  "candidate": 47,
+  "files": [
+    {
+      "bytes": 860,
+      "path": "parent-handoff.json",
+      "sha256": "c63642e311f1e7d37060db5d251e9c73a891f487b775765ea3190e307a9a43d7"
+    },
+    {
+      "bytes": 121,
+      "path": "prompt.txt",
+      "sha256": "d582211942d91e7eb1711bfe8df4a5fd018ff0a1501d2074967ad89f565aa4fb"
+    },
+    {
+      "bytes": 949,
+      "path": "provenance.json",
+      "sha256": "40c6ada726e61d6dcab8943cc3aa5f145340bc2bb04ed061181b3313724a2ddd"
+    },
+    {
+      "bytes": 7895,
+      "path": "source-manifest.json",
+      "sha256": "f1670be0e90b2608337468e8f99600ce26720573617a36850c691d66cb1ddc22"
+    },
+    {
+      "bytes": 37,
+      "path": "source-tree/.gitignore",
+      "sha256": "4321f9c9bc47a0459867db8bf2a0fd87eec74cc11472cb9bd815a12030e33ce5"
+    },
+    {
+      "bytes": 1204,
+      "path": "source-tree/README.md",
+      "sha256": "40d34a236b79db95a322807e3da5a6aeb020025427fa6aa5b316b29e2c79c2e4"
+    },
+    {
+      "bytes": 538840,
+      "path": "source-tree/dist/assets/index-C5x86UcM.js",
+      "sha256": "4de69610c7ad8595b480924e35534f0b644219866d44e4551446f928b09fe76b"
+    },
+    {
+      "bytes": 12057,
+      "path": "source-tree/dist/assets/index-DF6_qfn5.css",
+      "sha256": "d292723e88d1559d4fdbed9e1c269eb49081c8f39c016000dec2bc13b3c1f9e8"
+    },
+    {
+      "bytes": 6837,
+      "path": "source-tree/dist/index.html",
+      "sha256": "2d21934ba25fd8f4a0ec7ab78076ce01ac7e1650744c4440e2e5269fd1646da9"
+    },
+    {
+      "bytes": 6783,
+      "path": "source-tree/index.html",
+      "sha256": "378e1538491abc90fb485635d0252ce435bcc1e2554bb8beab7af45135997669"
+    },
+    {
+      "bytes": 847142,
+      "path": "source-tree/output/playwright/forest-desktop.png",
+      "sha256": "32ca4b51c79808d19ea111443ccc3610f06f4888849035ddcf2610faedf92dc6"
+    },
+    {
+      "bytes": 294,
+      "path": "source-tree/package.json",
+      "sha256": "fea15bef05e5177bf4d93a82688558f8e6db3ccdc6e4f6e2f11ea15ac715cb75"
+    },
+    {
+      "bytes": 22610,
+      "path": "source-tree/src/main.js",
+      "sha256": "90d748ec20dee4ec144199df8c70cfe90c2f2351175ac54b6ea0318488ba314b"
+    },
+    {
+      "bytes": 12043,
+      "path": "source-tree/src/style.css",
+      "sha256": "edb169982dec76840bc7fafd5dbca6d33aa62fbeb91440746e68b6b070019dd9"
+    }
+  ],
+  "game_dir": "053-mushroom-forest-territory",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa73-f31c-72c3-8143-99a36f73d094"
+}

@@ -1,0 +1,46 @@
+{
+  "candidate": 35,
+  "game_dir": "041-fox-potion-shop",
+  "title": "狐尾炼金铺 / Foxglove Alchemy",
+  "url": "https://qzemi.cn/sentence-to-game/games/041-fox-potion-shop/",
+  "thread_id": "01a0f99f-ade0-77df-9bc0-328b33109016",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小狐狸试验配方经营魔法药剂店的 3D 炼金合成游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "50c2a731165dc8be5c993b249dce343ebe7f160dbccd213548fb3af11d2c11e3",
+  "source_tree_sha256": "c4d80ba0c00d74b0ceff3a2b9319f0146ac624283371f889de49008260daf2cc",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "eef95289abd52c8b1f396a23b2ed27bde29aed9735414272633c42cb8a9c8ba9",
+      "bytes": 28765
+    },
+    {
+      "path": "index.html",
+      "sha256": "7045144c0c0b6920cab534fbafa0367101e803bd7cbe73af55be2b6e2d4aa9e1",
+      "bytes": 3811
+    },
+    {
+      "path": "style.css",
+      "sha256": "e087543367264064357afb80ff940d69a000a713b121309a0bc7d3e87153e3ad",
+      "bytes": 12404
+    },
+    {
+      "path": "three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "7045144c0c0b6920cab534fbafa0367101e803bd7cbe73af55be2b6e2d4aa9e1",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "fe000ae92a9a794b0ef1245387c07c79371960bee861d04040f61f857e7400f3",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

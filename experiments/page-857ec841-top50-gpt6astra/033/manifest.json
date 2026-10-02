@@ -1,0 +1,91 @@
+{
+  "binding_sha256": "f3430237d65e064afd0a5a6e02e2f042d52567c30559defa634594533c644664",
+  "candidate": 33,
+  "files": [
+    {
+      "bytes": 857,
+      "path": "parent-handoff.json",
+      "sha256": "f9d83654b4cc86c6d1b02ff23b50996205cce3b86b89073da236371022597180"
+    },
+    {
+      "bytes": 118,
+      "path": "prompt.txt",
+      "sha256": "8e842fd6a0cebee36cabb9b14557b1b311ce61a7e9a60a8ad6fb8709ebf7332a"
+    },
+    {
+      "bytes": 942,
+      "path": "provenance.json",
+      "sha256": "01d20a39ea986d5f3507264fef92ac49d2ae1096e30e253750b93d6cf6f9b4f4"
+    },
+    {
+      "bytes": 8504,
+      "path": "source-manifest.json",
+      "sha256": "ae3ee595f19c85f47319f0294a8ea0c259f8854f68aade67241283c38de07328"
+    },
+    {
+      "bytes": 1134,
+      "path": "source-tree/README.md",
+      "sha256": "2c2314a5558dfa12c4487454371f153cacd6977d805c9bef6c0a6c9cae23f9c3"
+    },
+    {
+      "bytes": 518150,
+      "path": "source-tree/dist/assets/index-Bf9fdOhL.js",
+      "sha256": "414628a6f906be8c7049e2445a35d61d4c33f5d05bdeac4d8b0fd0b8f8001865"
+    },
+    {
+      "bytes": 12848,
+      "path": "source-tree/dist/assets/index-DT0DkwK3.css",
+      "sha256": "42a2702526096b22703e7fa03f9f933b7ee9ddf258241f59adfb0ed4e126bea5"
+    },
+    {
+      "bytes": 5084,
+      "path": "source-tree/dist/index.html",
+      "sha256": "3f877f951ab958df91d310e22392f1cae9a394653e400149dda5548b4a1d2a0a"
+    },
+    {
+      "bytes": 4984,
+      "path": "source-tree/index.html",
+      "sha256": "7d5fb3be3092e9c71bc2f16d772991fe10aa83af8a6440403cdefa1c825d05b6"
+    },
+    {
+      "bytes": 241045,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "6561f4ee188063df1c1071e2c0f5bb5ab611c5c3d7ac0f34a412fbb43abe0502"
+    },
+    {
+      "bytes": 124555,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "d08daed001ddb12b122eeffc6a2724afa7fb9d0a2b53ece12fea610997e8871c"
+    },
+    {
+      "bytes": 33868,
+      "path": "source-tree/package-lock.json",
+      "sha256": "a3e6b63ecb69d1c0023c85e41def659a5a1c118178dfc97a9ceafd1a2416adcc"
+    },
+    {
+      "bytes": 212,
+      "path": "source-tree/package.json",
+      "sha256": "05120c906f06d31aa5e377e53d3492c2ab526e42bcafb01ee7dc984d69be3a57"
+    },
+    {
+      "bytes": 13936,
+      "path": "source-tree/src/main.js",
+      "sha256": "ea9dd44333ffd8274200f93b120e330264fecae50185529e105b7b62f48b3af9"
+    },
+    {
+      "bytes": 8991,
+      "path": "source-tree/src/scene.js",
+      "sha256": "0a94492fe600e5b6481461b52c491b1f61b1f07e86c59eda712663f56f52d9a0"
+    },
+    {
+      "bytes": 12844,
+      "path": "source-tree/src/style.css",
+      "sha256": "56fb4efa9a2f7046377429470671b4bc1e2d8e43d07ec21713653e37971edb1b"
+    }
+  ],
+  "game_dir": "039-penguin-sushi-shop",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f97d-96f9-759f-8baa-91722831e03a"
+}

@@ -1,0 +1,46 @@
+{
+  "candidate": 42,
+  "game_dir": "048-captain-storm-sailing",
+  "title": "风暴小船长 · Storm Captain",
+  "url": "https://qzemi.cn/sentence-to-game/games/048-captain-storm-sailing/",
+  "thread_id": "01a0fa25-238c-74db-9149-114082a120bd",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小船长驾驶帆船穿越风暴的 3D 航海物理模拟游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "978a52a0027cdf0f901c53e19e24c56ff148479caf01d1e643a52c1288028fc9",
+  "source_tree_sha256": "9d888d4e9245a2e43611d80b3251f15ab9a531fc1c1a13bf824f7de47fb4b2b8",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "b1df170c46ed3ca5a75e19df7aa2770acf4df72dea40122ce1cafb9f666d7765",
+      "bytes": 27517
+    },
+    {
+      "path": "index.html",
+      "sha256": "8c3bae41cb3fd350cb50a877093d45defda037788d863a8c384271fbf9f29736",
+      "bytes": 4355
+    },
+    {
+      "path": "style.css",
+      "sha256": "d940331581c7de6773dd0e8f3e8d6ff4534768ebe11b33a8f2306d40753fb535",
+      "bytes": 9925
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "8c3bae41cb3fd350cb50a877093d45defda037788d863a8c384271fbf9f29736",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "05939d03a2b0606862632da9d44a6278462035ccdfce9866a31d7cd531766312",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

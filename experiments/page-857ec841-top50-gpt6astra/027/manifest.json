@@ -1,0 +1,76 @@
+{
+  "binding_sha256": "fec862e90679c5665648fa71508273b0784f98fdc0d5d6df635aa72702aba8e3",
+  "candidate": 27,
+  "files": [
+    {
+      "bytes": 1351,
+      "path": "original-delivery/VERIFICATION.md",
+      "sha256": "300fce86c7c1791419673beee374afa24832fd8ab617935f29a76bfc2236a9d5"
+    },
+    {
+      "bytes": 857,
+      "path": "parent-handoff.json",
+      "sha256": "d917034720edd7a718c11a6c1e75196a8461a34c65f765cbc18bca5efe4ff149"
+    },
+    {
+      "bytes": 118,
+      "path": "prompt.txt",
+      "sha256": "16caf762527b8e3ba2c88814768c03c7a1c55c9a96eb777939808b3c11f3c309"
+    },
+    {
+      "bytes": 955,
+      "path": "provenance.json",
+      "sha256": "dd56cdd65b14ca2acc6c5895117de9d6fc00015bd76a342d616d1b4306ef81c7"
+    },
+    {
+      "bytes": 6888,
+      "path": "source-manifest.json",
+      "sha256": "3b9c864274f80bb077056031092b359dcd0e4a378ccddfbc7e0ec103c97af7dd"
+    },
+    {
+      "bytes": 106,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "50f37b80177ca89232b44c5d927e6608a7a2d1b459e69b76aae4920332493bec"
+    },
+    {
+      "bytes": 1013,
+      "path": "source-tree/README.md",
+      "sha256": "c01b6442ca979c4d142cd7b760cd2fc640683711961f738de4bc4f8996a0ef32"
+    },
+    {
+      "bytes": 22371,
+      "path": "source-tree/dist/game.js",
+      "sha256": "d6ef4af84e84190ecaeaaa9136d6f9a80315b25f28e6431db89de4e2b6d9427c"
+    },
+    {
+      "bytes": 4416,
+      "path": "source-tree/dist/index.html",
+      "sha256": "568a0d5e61cc4ccd5cc8abec059e963be3e465fbdcda4316dd11d4dc43ad5265"
+    },
+    {
+      "bytes": 10067,
+      "path": "source-tree/dist/style.css",
+      "sha256": "f9d2e269c3ddcc6bb415434d300f6abca81c84b1a00a8df40888a0ebfb52b66d"
+    },
+    {
+      "bytes": 1081,
+      "path": "source-tree/dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 176,
+      "path": "source-tree/package.json",
+      "sha256": "f4fed532f5bc6fb6f4c99cbc3f737305969fe83121edb75216c921e402b5808a"
+    }
+  ],
+  "game_dir": "033-chameleon-jungle-stealth",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f92b-6d99-7540-9f9f-448bb5c40011"
+}

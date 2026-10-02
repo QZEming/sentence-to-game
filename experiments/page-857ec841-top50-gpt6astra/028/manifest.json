@@ -1,0 +1,101 @@
+{
+  "binding_sha256": "20c4da9cc30cdc54ff7a45deeab75ea893fb828b7c1d9577763e5ea3776fa3ba",
+  "candidate": 28,
+  "files": [
+    {
+      "bytes": 854,
+      "path": "parent-handoff.json",
+      "sha256": "455c05a746d3c8bcd1e96bfe21200e79f06c000751d7319904cb398bc808fc7e"
+    },
+    {
+      "bytes": 115,
+      "path": "prompt.txt",
+      "sha256": "ad93d340bc99e2214af5d417f70ff5239691872dabb6ab2244c90784185215fc"
+    },
+    {
+      "bytes": 946,
+      "path": "provenance.json",
+      "sha256": "e85fdee971be217860e07d09f83c3c5ca5983f1c20d061a3b74148fe6a4499a3"
+    },
+    {
+      "bytes": 9393,
+      "path": "source-manifest.json",
+      "sha256": "e1cbcac3070f9318f6725cf0bbed5e27a4bb29a2fec1635c1ec8fa7588027736"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1805,
+      "path": "source-tree/README.md",
+      "sha256": "8a9fb9b0ba5eab926bcc5ba40cbd542b899c6af53b5bcd417c4de00571974c51"
+    },
+    {
+      "bytes": 12856,
+      "path": "source-tree/dist/assets/index-D8GOxbpF.css",
+      "sha256": "7ea778daea63868acefa4e2e5b00bfd91db1e6f929338c6d1b0c28e8738101eb"
+    },
+    {
+      "bytes": 539120,
+      "path": "source-tree/dist/assets/index-DvP2i9KV.js",
+      "sha256": "11281f4c53776b9a44fe320843eff0e80d681bf986996355af592211678f5185"
+    },
+    {
+      "bytes": 429,
+      "path": "source-tree/dist/index.html",
+      "sha256": "ab9396e67e05fa476b3c843ba2f4e8a7e4279c577ef34ab5995f1fead742bd46"
+    },
+    {
+      "bytes": 329,
+      "path": "source-tree/index.html",
+      "sha256": "b4db2729b0ad2d6da47261d01b541951f6d756189faac1fb7ab79c999699610a"
+    },
+    {
+      "bytes": 1200,
+      "path": "source-tree/output/playwright/check.cjs",
+      "sha256": "23d80271d0f0c23306af2011760ee26c2ff5d93de3bc31aab4b5206a9d9cba9a"
+    },
+    {
+      "bytes": 355570,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "01856748876e4f634cbac00cb27a1583522f6bf5753e15936b15dd4edb99c334"
+    },
+    {
+      "bytes": 1014,
+      "path": "source-tree/output/playwright/journey.cjs",
+      "sha256": "c000632665ff7dbc2ffa4bb5f1cfcbe5abf741d98303742b0d2fc8b25ad65fd0"
+    },
+    {
+      "bytes": 149471,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "673d63993bb48561e419dc2dcba68e569a41c8c4a9e4f681cffecd0b4de39b7c"
+    },
+    {
+      "bytes": 359614,
+      "path": "source-tree/output/playwright/planned.png",
+      "sha256": "5fe5205f8bd719daa6cfeee498fc5b8dd976bd8eba69933fe01dd63c2bb3773e"
+    },
+    {
+      "bytes": 210,
+      "path": "source-tree/package.json",
+      "sha256": "262de6ca4ca3d7ddfe6b6d73117c3ea6ee52e4cf3ec635929a9938c51abce0fd"
+    },
+    {
+      "bytes": 25104,
+      "path": "source-tree/src/main.js",
+      "sha256": "a9b06a4d31e37915c5da9a870e2fad9e9fc941b12b2191bdf29047bcd61b4666"
+    },
+    {
+      "bytes": 12811,
+      "path": "source-tree/src/style.css",
+      "sha256": "2d38da9d6dd6b0792db2e43a85b90423c5957f862d7bfecfc72f5191041bbe2c"
+    }
+  ],
+  "game_dir": "034-firefly-traveler-guide",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f93d-a0fe-74e4-b5f7-c94f568fa02c"
+}

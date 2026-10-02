@@ -1,0 +1,41 @@
+{
+  "candidate": 31,
+  "game_dir": "037-crow-forest-detective",
+  "title": "鸦林疑案 · Ravenwood",
+  "url": "https://qzemi.cn/sentence-to-game/games/037-crow-forest-detective/",
+  "thread_id": "01a0f962-3313-704e-a5bb-f16c9f917029",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个侦探乌鸦调查森林失踪案的 3D 线索推理游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "38f4b6de8f86832c1c442e116fd73d26af7db4dfcb1568219384a15c65f8a1a7",
+  "source_tree_sha256": "6466acdc8fa8c44998e496fedb1c3df0aa0595f7e037098c567cbae3ba17f00a",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BYdLb3PR.css",
+      "sha256": "4594d5224672df671a9edb9f1e8d91278e8bd9d7a491411d42e8758dc54e7ffe",
+      "bytes": 10281
+    },
+    {
+      "path": "assets/index-CxNgSs9Q.js",
+      "sha256": "64a172fa7eb4f03d8c638ca76fa4558b025b4cd1824f0892b49c759ba264adf1",
+      "bytes": 533598
+    },
+    {
+      "path": "index.html",
+      "sha256": "9ddb93efc0aefbb11a13feaa764b2ff4023cf9346cc878352e1be18ad18eba7a",
+      "bytes": 3334
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "9ddb93efc0aefbb11a13feaa764b2ff4023cf9346cc878352e1be18ad18eba7a",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "09568a437c034cb35835401a45141788a55b8df20cb9bb9867b4385577faa751",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

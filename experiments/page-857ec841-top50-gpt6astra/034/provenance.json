@@ -1,0 +1,23 @@
+{
+  "candidate": 34,
+  "game_dir": "040-bear-hot-spring-inn",
+  "known_defects": [
+    "1280x720 toolbar/room panel overlap and possible vertical overflow",
+    "missing cloud-check lucide icon with repeat warnings",
+    "expanded room label overlap"
+  ],
+  "later_messages": "capacity interruption followed by verification only; no source edits",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "interrupted_capacity_snapshot_with_later_verification",
+  "original_source_manifest_sha256": "6445c1b2e27e2a69475322ab3ec7bcb1ceaac02b4f2423d683fcd7dc43bdd642",
+  "prompt_sha256": "045723e6da93640b0579d9f97adcb28f6b443145fa3f27d8dbc1fcf9be221b5e",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-41",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f989-723c-76d4-abed-03b00f16f03a",
+  "turn_id": "01a0f989-7f9d-71c6-abc9-df4d4048a8e5"
+}

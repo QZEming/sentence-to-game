@@ -1,0 +1,41 @@
+{
+  "candidate": 33,
+  "game_dir": "039-penguin-sushi-shop",
+  "title": "冰山寿司 · Penguin Sushi",
+  "url": "https://qzemi.cn/sentence-to-game/games/039-penguin-sushi-shop/",
+  "thread_id": "01a0f97d-96f9-759f-8baa-91722831e03a",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小企鹅在冰山寿司店制作订单的 3D 烹饪时间管理游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "8e842fd6a0cebee36cabb9b14557b1b311ce61a7e9a60a8ad6fb8709ebf7332a",
+  "source_tree_sha256": "60b382f619814621cc294b1a23aa523ce8d2c9b9ec3832969edf5735dedf3573",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-Bf9fdOhL.js",
+      "sha256": "414628a6f906be8c7049e2445a35d61d4c33f5d05bdeac4d8b0fd0b8f8001865",
+      "bytes": 518150
+    },
+    {
+      "path": "assets/index-DT0DkwK3.css",
+      "sha256": "42a2702526096b22703e7fa03f9f933b7ee9ddf258241f59adfb0ed4e126bea5",
+      "bytes": 12848
+    },
+    {
+      "path": "index.html",
+      "sha256": "1e49f69151a50d8daaafd78ca8297743b025ac834434b17556f3e4eb0bedc632",
+      "bytes": 5087
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "1e49f69151a50d8daaafd78ca8297743b025ac834434b17556f3e4eb0bedc632",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "f9d83654b4cc86c6d1b02ff23b50996205cce3b86b89073da236371022597180",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

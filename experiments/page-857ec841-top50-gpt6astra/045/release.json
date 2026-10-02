@@ -1,0 +1,41 @@
+{
+  "candidate": 45,
+  "game_dir": "051-robot-magnetic-factory",
+  "title": "MAGNET WORKS · 磁力工坊",
+  "url": "https://qzemi.cn/sentence-to-game/games/051-robot-magnetic-factory/",
+  "thread_id": "01a0fa5a-6dd3-71a6-b986-ac45fbf3208e",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小机器人用磁力搬运工厂货物的 3D 物理解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "0214de2c6768e796eb5e5065b42445f08d0e1c457b05867e52dabaee70f7559a",
+  "source_tree_sha256": "23e93f52588fb8029b4ae6ff680c8d3e569846213c89ea9145ee2a2cfc0b3932",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-CFsDFqim.css",
+      "sha256": "0b115abcd84540416b885e81056081f6e841f278994b2090b3ac56f60edcb922",
+      "bytes": 10951
+    },
+    {
+      "path": "assets/index-DXdY0Sf6.js",
+      "sha256": "91b7c2e9565dd3a3016b2f6b36aadf365294a1f2b9e7dadbe2e38c7941b50469",
+      "bytes": 584666
+    },
+    {
+      "path": "index.html",
+      "sha256": "b9318cda47801e5001f2125d602e135134bb2b1daa63108918588f31e83694c0",
+      "bytes": 3783
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "b9318cda47801e5001f2125d602e135134bb2b1daa63108918588f31e83694c0",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "43d9ba6812b098a182bb15513b852146cb86668e7c9ac8a7a1b25c5e84d972ea",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

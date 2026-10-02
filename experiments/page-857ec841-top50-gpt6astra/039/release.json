@@ -1,0 +1,46 @@
+{
+  "candidate": 39,
+  "game_dir": "045-dragon-creature-nursery",
+  "title": "Wyldkeep · 云野生灵",
+  "url": "https://qzemi.cn/sentence-to-game/games/045-dragon-creature-nursery/",
+  "thread_id": "01a0f9eb-ea65-7330-8dab-1c8f710e40a5",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小龙孵化并培育奇幻生物的 3D 生物养成游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "29b79077bb5fbb6fa2466fc30a48b4af719cb74ee8a6417dc05a43b96d7fca17",
+  "source_tree_sha256": "067c7ba711813d3e9a35450fc5a9f5cdafa0632418e34aad655c4b481acaa57d",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BWHFixFZ.js",
+      "sha256": "1b53ce07d9fa26d5c892837a1f8e057b701b8195f83d29d637bd9d87f203bee8",
+      "bytes": 614109
+    },
+    {
+      "path": "assets/index-C1X7YnQt.css",
+      "sha256": "426aab108f64404d501194078eb238c3bbf81185e9b5d3675bf99412ad03b871",
+      "bytes": 13169
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "3c584e66504a8362baa424576f8c794a0e3eabdbca85488fa83da89f5f23a22a",
+      "bytes": 223
+    },
+    {
+      "path": "index.html",
+      "sha256": "030b6288e6fb2fd8d1e9ad99bb1849b9486a6e10db1f33effebbd77763ce57be",
+      "bytes": 473
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "030b6288e6fb2fd8d1e9ad99bb1849b9486a6e10db1f33effebbd77763ce57be",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "7d1c810a0edebe2dd7e68b566091af5b504173cf130005e07a77be38c534a2d5",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

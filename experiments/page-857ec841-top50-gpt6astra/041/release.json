@@ -1,0 +1,56 @@
+{
+  "candidate": 41,
+  "game_dir": "047-pirate-island-treasure",
+  "title": "迷雾群岛 · The Lost Archipelago",
+  "url": "https://qzemi.cn/sentence-to-game/games/047-pirate-island-treasure/",
+  "thread_id": "01a0fa11-9e41-70fd-a521-cf8c8e7d60a3",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个海盗解读藏宝图寻找群岛宝藏的 3D 地图推理解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "23c52a81491c022c46575f7a97343b8feee9b57b90548d40f29d5f30cb2276e0",
+  "source_tree_sha256": "7e1d25d87015104bca0c6351a12ef14ee635683bbe727c16e0c249f57febbda4",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "fcbc170193a50a0e5383f1bb4516a6d3cbc384569c64e67d41fdcb4b9c92e418",
+      "bytes": 28592
+    },
+    {
+      "path": "index.html",
+      "sha256": "74f8dd0c92f6cdf89f59be8a9edc87fb99bbc07dae5172c21c621227fb691e96",
+      "bytes": 3843
+    },
+    {
+      "path": "style.css",
+      "sha256": "c875b9b3ff73e9a047e4cdf390808b9f5b9ff6ac3ad1090a5c99241ce9382460",
+      "bytes": 11695
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "bytes": 381124
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "bytes": 338908
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "74f8dd0c92f6cdf89f59be8a9edc87fb99bbc07dae5172c21c621227fb691e96",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "82d9276d3b2cc0860fce72c4def907b004348ff18cc45ab1532b859ad10873ee",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

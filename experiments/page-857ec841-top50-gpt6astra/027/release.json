@@ -1,0 +1,51 @@
+{
+  "candidate": 27,
+  "game_dir": "033-chameleon-jungle-stealth",
+  "title": "隐鳞 CHROMA",
+  "url": "https://qzemi.cn/sentence-to-game/games/033-chameleon-jungle-stealth/",
+  "thread_id": "01a0f92b-6d99-7540-9f9f-448bb5c40011",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个变色龙利用环境伪装潜入丛林营地的 3D 潜行战术游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "16caf762527b8e3ba2c88814768c03c7a1c55c9a96eb777939808b3c11f3c309",
+  "source_tree_sha256": "5d5c4dd9a67655577c6df157b986bf71ad4d3cc8569ee1fa0432e883ca950c10",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "d6ef4af84e84190ecaeaaa9136d6f9a80315b25f28e6431db89de4e2b6d9427c",
+      "bytes": 22371
+    },
+    {
+      "path": "index.html",
+      "sha256": "568a0d5e61cc4ccd5cc8abec059e963be3e465fbdcda4316dd11d4dc43ad5265",
+      "bytes": 4416
+    },
+    {
+      "path": "style.css",
+      "sha256": "f9d2e269c3ddcc6bb415434d300f6abca81c84b1a00a8df40888a0ebfb52b66d",
+      "bytes": 10067
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "568a0d5e61cc4ccd5cc8abec059e963be3e465fbdcda4316dd11d4dc43ad5265",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "d917034720edd7a718c11a6c1e75196a8461a34c65f765cbc18bca5efe4ff149",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

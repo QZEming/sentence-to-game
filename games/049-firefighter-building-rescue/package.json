@@ -1,0 +1,1 @@
+{"name":"fire-command","version":"1.0.0","private":true,"type":"module","description":"3D real-time fire rescue strategy game","scripts":{"start":"node server.mjs","check":"node --check dist/app.mjs && node --check dist/engine.mjs"}}

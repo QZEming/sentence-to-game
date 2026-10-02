@@ -1,0 +1,101 @@
+{
+  "binding_sha256": "1b4809a07a4256ad08b99bf38d74de9d58e961b2b72761449b31389905d225d9",
+  "candidate": 43,
+  "files": [
+    {
+      "bytes": 288750,
+      "path": "original-delivery/root-artifacts/fire-command-deploy.tar.gz",
+      "sha256": "d4707a75b93b562cf7da3f446d186376f13e87a3dce4a5599bd41bfbab090999"
+    },
+    {
+      "bytes": 880,
+      "path": "parent-handoff.json",
+      "sha256": "f3c19e9a613a5cca8456af372854252efb46fe49c80927876d4cbc1851656b84"
+    },
+    {
+      "bytes": 124,
+      "path": "prompt.txt",
+      "sha256": "5edac99f96a554ba24f67a7dfef3b99826da96971d617d24efa49d35623b348f"
+    },
+    {
+      "bytes": 981,
+      "path": "provenance.json",
+      "sha256": "92edaf58bec9998b6bae79876d1710ef08cc04598a46f94085d1987fe9031c47"
+    },
+    {
+      "bytes": 13948,
+      "path": "source-manifest.json",
+      "sha256": "b4477bc25952cc3a570cde5e1ac3a7b004292847d9040d981c68e21815e8b9a9"
+    },
+    {
+      "bytes": 32,
+      "path": "source-tree/.gitignore",
+      "sha256": "d085026529c8f6df54f1de8c43799c8525a4d3f889d67b7fe4d8dbcc1e982038"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "14bfe409405bd9673700f9b69e0453e1a4ba1827939f57379421a92e5f14cd39"
+    },
+    {
+      "bytes": 1753,
+      "path": "source-tree/README.md",
+      "sha256": "151c91fdcbc2ea31887ef044bcd3b81ff4437c0bbea80e597ebb73d7ef1055ce"
+    },
+    {
+      "bytes": 27734,
+      "path": "source-tree/dist/app.mjs",
+      "sha256": "05ad39d236cad6a38b677cc057a40728cb9c44d4df7bded36471540b399e9d95"
+    },
+    {
+      "bytes": 7212,
+      "path": "source-tree/dist/engine.mjs",
+      "sha256": "b591d09f4eeb1a790388421d83a264f9d6a57afc99e14cb379fddc7e72c5998a"
+    },
+    {
+      "bytes": 5715,
+      "path": "source-tree/dist/index.html",
+      "sha256": "d842f93ada51054f4ad67bad95918bcc19aa4b5dd4a5d6edb08efdde9da075d2"
+    },
+    {
+      "bytes": 17066,
+      "path": "source-tree/dist/style.css",
+      "sha256": "b929751de862378c9df7d7a81337444b101bfe59fdc4e82490369fbe07c5cd64"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 706404,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "82ba2da273e89ca6b8f4b3247e70e9b50b3033f8f0b9c112f196289ea7795d61"
+    },
+    {
+      "bytes": 102667,
+      "path": "source-tree/output/playwright/mobile-support.png",
+      "sha256": "94038b79f412314c61af17c7563fecc978ef34f9553110ca8e13076ca14f1651"
+    },
+    {
+      "bytes": 930,
+      "path": "source-tree/output/verification.json",
+      "sha256": "d1e04308d77a279f2d0a5d849cf4d60fe9a42b19b8beed66b7e9baa4184aa495"
+    },
+    {
+      "bytes": 234,
+      "path": "source-tree/package.json",
+      "sha256": "1ad2352d6155c23ff157d94f2600856590b4bd57ca713c00e69394fe1f9cb7b8"
+    },
+    {
+      "bytes": 948,
+      "path": "source-tree/server.mjs",
+      "sha256": "a9a6b65b6f1d177657d03760732d196160012d63fdbb823c999d9a7b7cabddab"
+    }
+  ],
+  "game_dir": "049-firefighter-building-rescue",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa33-2695-73ba-877f-9092609160a2"
+}

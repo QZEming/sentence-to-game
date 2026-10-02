@@ -1,0 +1,41 @@
+{
+  "candidate": 36,
+  "game_dir": "042-robot-recycling-factory",
+  "title": "RE:FACTORY · 再造工厂",
+  "url": "https://qzemi.cn/sentence-to-game/games/042-robot-recycling-factory/",
+  "thread_id": "01a0f9ae-26f3-7461-8b1f-1b3882183001",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小机器人设计废品回收流水线的 3D 工厂自动化游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "f18e3169b495e8e94186755a90b244ee512d60e4c7d33fa013a4cd8f947a7431",
+  "source_tree_sha256": "61ebfe2371afae2dad1bed7e1660d67565fb74a9650df0c7caa9564a24b340ca",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BFNDBTtL.css",
+      "sha256": "ada9b8321e9d0a231b0920a53e4d39df3003dcffd269fe22cc4f93b3ab4f841b",
+      "bytes": 20969
+    },
+    {
+      "path": "assets/index-yRETHrS-.js",
+      "sha256": "fe4b2ced3628a48f9c4519ea8b5f1cd138a5117b2589d7a54dde87b018776c77",
+      "bytes": 568004
+    },
+    {
+      "path": "index.html",
+      "sha256": "ffe80d7f67e56cca013e677c57d89b35a457828ea2b5fe11223b01f50329cbc5",
+      "bytes": 6068
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "ffe80d7f67e56cca013e677c57d89b35a457828ea2b5fe11223b01f50329cbc5",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "cb2883649aa854d151c3397f88df7b72290f27476184e833a5c4e3d103c5f3df",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

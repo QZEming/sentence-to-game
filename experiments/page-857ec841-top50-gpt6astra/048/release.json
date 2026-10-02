@@ -1,0 +1,56 @@
+{
+  "candidate": 48,
+  "game_dir": "054-cat-card-toy-adventure",
+  "title": "爪爪奇旅 · TOYBOUND",
+  "url": "https://qzemi.cn/sentence-to-game/games/054-cat-card-toy-adventure/",
+  "thread_id": "01a0fa81-378d-736d-8e05-75561ae6d09c",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小猫用纸牌召唤玩具伙伴闯关的 3D 卡组构筑游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d1b5eefdfc1e23e3166d405fe8924c67f074439decfb44997f682445ab0ab063",
+  "source_tree_sha256": "80418f56db0f52ec8dd9abc11dc0d1f308e6fd8939eebc7da9353755b2defd9d",
+  "task_record_sha256": null,
+  "raw_zip_sha256": "66ad331d52d51287c4434c6bd29c8d28b097794e4f3d010e680a6199d8dc37f3",
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "app.mjs",
+      "sha256": "e09a7ab1a8a7c39e71c17efddec3c150398d2d86ba46da0826597b10aca74865",
+      "bytes": 16143
+    },
+    {
+      "path": "engine.mjs",
+      "sha256": "d733a2e7d242b922028fa2566edfecaa5b161d4fc7d6df1d299bb7c3c0cf1ae6",
+      "bytes": 7083
+    },
+    {
+      "path": "index.html",
+      "sha256": "3896b0385ca88b64eaa1eec06f6b4f24847ce7d2af9f861d8a007d02b9b33a73",
+      "bytes": 2727
+    },
+    {
+      "path": "scene.mjs",
+      "sha256": "46ca1f0eca60378b170f9374065bd40d4118a87c3c170251c6860a06c0b2288c",
+      "bytes": 9986
+    },
+    {
+      "path": "style.css",
+      "sha256": "b04c0e40a3050fe3e321a644d6598d86e80254880ec97013bf2ed2b5bbca4680",
+      "bytes": 11097
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "3896b0385ca88b64eaa1eec06f6b4f24847ce7d2af9f861d8a007d02b9b33a73",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "1afff86615536ec153c7747db5cb3c8a1b221c7ac7797daf956546a2d03f2410",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

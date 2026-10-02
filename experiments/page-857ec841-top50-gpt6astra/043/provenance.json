@@ -1,0 +1,19 @@
+{
+  "candidate": 43,
+  "game_dir": "049-firefighter-building-rescue",
+  "known_defects": [],
+  "later_messages": "read-only status query; no added implementation",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "b4477bc25952cc3a570cde5e1ac3a7b004292847d9040d981c68e21815e8b9a9",
+  "prompt_sha256": "5edac99f96a554ba24f67a7dfef3b99826da96971d617d24efa49d35623b348f",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-50/fire-command",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0fa33-2695-73ba-877f-9092609160a2",
+  "turn_id": "01a0fa33-44a0-718e-9245-7f361c3a631d"
+}

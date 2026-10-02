@@ -1,0 +1,81 @@
+{
+  "binding_sha256": "2e1610a440f440cb5d25a54c49ee3c67ecbe3ea484b3f7745293a7c3547438ea",
+  "candidate": 34,
+  "files": [
+    {
+      "bytes": 2126,
+      "path": "later-verification/report.txt",
+      "sha256": "555e60ad5d81f5fb857060b3781aef73bd32c25d6ad96693b0a478d81295fd58"
+    },
+    {
+      "bytes": 917,
+      "path": "parent-handoff.json",
+      "sha256": "5c7ba5ef616a1a173ea3096ed8cf6a1cef98e463a847c2793c31b6fe9bbb4989"
+    },
+    {
+      "bytes": 121,
+      "path": "prompt.txt",
+      "sha256": "045723e6da93640b0579d9f97adcb28f6b443145fa3f27d8dbc1fcf9be221b5e"
+    },
+    {
+      "bytes": 1171,
+      "path": "provenance.json",
+      "sha256": "c42eab3dd190b97a191f4c538814120aacd38254ed005ccea1dabf81dbf154d3"
+    },
+    {
+      "bytes": 7557,
+      "path": "source-manifest.json",
+      "sha256": "6445c1b2e27e2a69475322ab3ec7bcb1ceaac02b4f2423d683fcd7dc43bdd642"
+    },
+    {
+      "bytes": 880083,
+      "path": "source-tree/dist/assets/index-Bjfm2HgX.js",
+      "sha256": "947516b41fc462b259fd88cef8396470494a0cbc6dd7c2b2205692196dd6dcc9"
+    },
+    {
+      "bytes": 16075,
+      "path": "source-tree/dist/assets/index-C8BBJaWC.css",
+      "sha256": "7e818f67fc2f7aceaff1c147630a06a3984685fb5c975da58085ddebc72bc2b3"
+    },
+    {
+      "bytes": 5469,
+      "path": "source-tree/dist/index.html",
+      "sha256": "67685674841f327a65961beb3ef21392d5c89662ca0f2db6dc44c8d8cea3dda6"
+    },
+    {
+      "bytes": 5369,
+      "path": "source-tree/index.html",
+      "sha256": "6f7293ab994fc055dbf51ac5c917aab0ae3b90259ec70050b73535d7a9b815ca"
+    },
+    {
+      "bytes": 34177,
+      "path": "source-tree/package-lock.json",
+      "sha256": "8ce114feb24c765ad0f3c710b1bce3f879cff0718df89a6bd8ea10e369ed9e21"
+    },
+    {
+      "bytes": 245,
+      "path": "source-tree/package.json",
+      "sha256": "3ffcb4abf9beeaaa2f0f21909b8186e194881d34dadf130b2ced95220bad2474"
+    },
+    {
+      "bytes": 28041,
+      "path": "source-tree/src/main.js",
+      "sha256": "1ed20b438f57b7f2372e28cc5955ee5f535b2eeb4bfa6fc1bb48fa86ae13fe9c"
+    },
+    {
+      "bytes": 13638,
+      "path": "source-tree/src/scene.js",
+      "sha256": "725cf7e27fe385de1c0269d47fb3c120192463059e5ad1d4f1256bc8bc17028d"
+    },
+    {
+      "bytes": 16098,
+      "path": "source-tree/src/style.css",
+      "sha256": "304402ccaa2d810b431a16b39f2036e93cd44de083696fd6b4613376f0b7b266"
+    }
+  ],
+  "game_dir": "040-bear-hot-spring-inn",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f989-723c-76d4-abed-03b00f16f03a"
+}

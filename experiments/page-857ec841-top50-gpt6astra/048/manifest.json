@@ -1,0 +1,91 @@
+{
+  "binding_sha256": "b0ebfe50089575c7c9129b563a39d5548b8632ffa9b6a034ead0fd048d9ef79c",
+  "candidate": 48,
+  "files": [
+    {
+      "bytes": 288320,
+      "path": "original-delivery/toybound-game.zip",
+      "sha256": "66ad331d52d51287c4434c6bd29c8d28b097794e4f3d010e680a6199d8dc37f3"
+    },
+    {
+      "bytes": 71413,
+      "path": "original-delivery/toybound-preview.png",
+      "sha256": "99d54e2087417c43243ad3b78231455aebe248ffaf3a65fa468118cae3510a89"
+    },
+    {
+      "bytes": 851,
+      "path": "parent-handoff.json",
+      "sha256": "1afff86615536ec153c7747db5cb3c8a1b221c7ac7797daf956546a2d03f2410"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "d1b5eefdfc1e23e3166d405fe8924c67f074439decfb44997f682445ab0ab063"
+    },
+    {
+      "bytes": 951,
+      "path": "provenance.json",
+      "sha256": "5ce614e493fe4a5276e7b8fbe5ecf5441c199c88172a754afaa02e81542e1a33"
+    },
+    {
+      "bytes": 10410,
+      "path": "source-manifest.json",
+      "sha256": "11912de28da758e23103cc3e9d5363934f0c55e263c027d785c2956319caa5bb"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "9e43a7fe7beaa3e8b111331ae017c70a10d05b3e4a63fb242fef36a0ddfbfd9e"
+    },
+    {
+      "bytes": 16143,
+      "path": "source-tree/dist/app.mjs",
+      "sha256": "e09a7ab1a8a7c39e71c17efddec3c150398d2d86ba46da0826597b10aca74865"
+    },
+    {
+      "bytes": 7083,
+      "path": "source-tree/dist/engine.mjs",
+      "sha256": "d733a2e7d242b922028fa2566edfecaa5b161d4fc7d6df1d299bb7c3c0cf1ae6"
+    },
+    {
+      "bytes": 2727,
+      "path": "source-tree/dist/index.html",
+      "sha256": "3896b0385ca88b64eaa1eec06f6b4f24847ce7d2af9f861d8a007d02b9b33a73"
+    },
+    {
+      "bytes": 9986,
+      "path": "source-tree/dist/scene.mjs",
+      "sha256": "46ca1f0eca60378b170f9374065bd40d4118a87c3c170251c6860a06c0b2288c"
+    },
+    {
+      "bytes": 11097,
+      "path": "source-tree/dist/style.css",
+      "sha256": "b04c0e40a3050fe3e321a644d6598d86e80254880ec97013bf2ed2b5bbca4680"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 112,
+      "path": "source-tree/run.sh",
+      "sha256": "c59abb1f58a0e6f74d7ceae7dda053ab9b2ab25165ea01d7729b817c77321d5a"
+    },
+    {
+      "bytes": 1643,
+      "path": "source-tree/test.mjs",
+      "sha256": "1e1b692c00805c0ed7842fd775e7a7541feed2c1220d015627d76f2c3716b0ac"
+    },
+    {
+      "bytes": 288320,
+      "path": "source.zip",
+      "sha256": "66ad331d52d51287c4434c6bd29c8d28b097794e4f3d010e680a6199d8dc37f3"
+    }
+  ],
+  "game_dir": "054-cat-card-toy-adventure",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa81-378d-736d-8e05-75561ae6d09c"
+}

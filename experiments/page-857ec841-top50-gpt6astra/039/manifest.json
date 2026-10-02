@@ -1,0 +1,96 @@
+{
+  "binding_sha256": "e1c572f58c6b846a1500d4841705058410793d0985d9202fda13ea2238c126d3",
+  "candidate": 39,
+  "files": [
+    {
+      "bytes": 845,
+      "path": "parent-handoff.json",
+      "sha256": "7d1c810a0edebe2dd7e68b566091af5b504173cf130005e07a77be38c534a2d5"
+    },
+    {
+      "bytes": 106,
+      "path": "prompt.txt",
+      "sha256": "29b79077bb5fbb6fa2466fc30a48b4af719cb74ee8a6417dc05a43b96d7fca17"
+    },
+    {
+      "bytes": 947,
+      "path": "provenance.json",
+      "sha256": "a3562c91e2d587bfb1e5b3ca8f4f470c888842232be64ac559c7309aa72bed50"
+    },
+    {
+      "bytes": 9338,
+      "path": "source-manifest.json",
+      "sha256": "23981286caae8d2d8479adbbf6916c06be0ba6410e7315e14aa1f67458d93309"
+    },
+    {
+      "bytes": 1730,
+      "path": "source-tree/README.md",
+      "sha256": "ab79cdd3af7cdb7784d6bc1d9d7eed3885e503dbf5b3e12d0de4cbce24f633af"
+    },
+    {
+      "bytes": 614109,
+      "path": "source-tree/dist/assets/index-BWHFixFZ.js",
+      "sha256": "1b53ce07d9fa26d5c892837a1f8e057b701b8195f83d29d637bd9d87f203bee8"
+    },
+    {
+      "bytes": 13169,
+      "path": "source-tree/dist/assets/index-C1X7YnQt.css",
+      "sha256": "426aab108f64404d501194078eb238c3bbf81185e9b5d3675bf99412ad03b871"
+    },
+    {
+      "bytes": 223,
+      "path": "source-tree/dist/favicon.svg",
+      "sha256": "3c584e66504a8362baa424576f8c794a0e3eabdbca85488fa83da89f5f23a22a"
+    },
+    {
+      "bytes": 470,
+      "path": "source-tree/dist/index.html",
+      "sha256": "52490b9bbd1744c1a8f97309c23360f0b15d24b55de54c02c1363487e0142221"
+    },
+    {
+      "bytes": 370,
+      "path": "source-tree/index.html",
+      "sha256": "9e8bef298831a0240afea4ecb86929f3247a5c6be3af93fd126120c15a842f25"
+    },
+    {
+      "bytes": 197803,
+      "path": "source-tree/output/playwright/home.png",
+      "sha256": "612e0bd440935efa365fe8e27cae558b75a9195edc8ed2137ee7934964a100a1"
+    },
+    {
+      "bytes": 114203,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "e082e2a2756ae5279ac69478898219382892fc4996916cd97b376f3137eb18d5"
+    },
+    {
+      "bytes": 262,
+      "path": "source-tree/package.json",
+      "sha256": "86839b13f0db9fea0da7e65d3bdecbfc41c67049480f1702be4ad93af8141bf7"
+    },
+    {
+      "bytes": 223,
+      "path": "source-tree/public/favicon.svg",
+      "sha256": "3c584e66504a8362baa424576f8c794a0e3eabdbca85488fa83da89f5f23a22a"
+    },
+    {
+      "bytes": 23074,
+      "path": "source-tree/src/main.js",
+      "sha256": "508f1c631ddfb42c12f2388f9b8870775672b6616633a02e710f01ba82fdb029"
+    },
+    {
+      "bytes": 13217,
+      "path": "source-tree/src/style.css",
+      "sha256": "659d925d4d033f3dbafd5f65a2edd6a08a8bb42616dc93a1eb929eda3e4621a3"
+    },
+    {
+      "bytes": 11082,
+      "path": "source-tree/src/world.js",
+      "sha256": "9c0f7c2bae5ec07089c3a0fbb4cdd39c37887941528b2de5e4cda2078a8ed7c8"
+    }
+  ],
+  "game_dir": "045-dragon-creature-nursery",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f9eb-ea65-7330-8dab-1c8f710e40a5"
+}

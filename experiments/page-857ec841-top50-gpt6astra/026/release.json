@@ -1,0 +1,41 @@
+{
+  "candidate": 26,
+  "game_dir": "032-spider-web-hunt",
+  "title": "SILKBOUND · 织境",
+  "url": "https://qzemi.cn/sentence-to-game/games/032-spider-web-hunt/",
+  "thread_id": "01a0f910-302e-76fd-8e75-2c3fb967f005",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个蜘蛛编织蛛网捕捉飞虫的 3D 物理建造游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "7ea458b3c1e1fae63bb4514e7501c740319fc9898c387f8d6719c164aa7e2b54",
+  "source_tree_sha256": "e395040e8f5fb39a1f1759f90d52b539c9c2389b412c3c5bf34c54388316bffe",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-Dvhz2eDT.js",
+      "sha256": "c4c0320a1a32326914b3160a774f88fdfe02193937a9354a68b028793024dd6b",
+      "bytes": 528786
+    },
+    {
+      "path": "assets/index-cuyN4_0x.css",
+      "sha256": "0d7f89c6eca908fa5f1578d3cacd586d1a832feb9be784f3cadc7b94336739ca",
+      "bytes": 14054
+    },
+    {
+      "path": "index.html",
+      "sha256": "2b097b1120ff1d559f64e8e0b7db22c02ccb014abaeb0e9fdd46bb94b55b70b3",
+      "bytes": 6794
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "2b097b1120ff1d559f64e8e0b7db22c02ccb014abaeb0e9fdd46bb94b55b70b3",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "c01826f2390b7352a57a0a4038c08abbf4c22d36bdf99c83faa88f8a7df9b6e1",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "read-only status query; no added implementation",
+  "known_defects": []
+}

@@ -1,0 +1,41 @@
+{
+  "candidate": 28,
+  "game_dir": "034-firefly-traveler-guide",
+  "title": "萤途 · LUMEN",
+  "url": "https://qzemi.cn/sentence-to-game/games/034-firefly-traveler-guide/",
+  "thread_id": "01a0f93d-a0fe-74e4-b5f7-c94f568fa02c",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个萤火虫为迷路旅人规划光路的 3D 路径规划解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "ad93d340bc99e2214af5d417f70ff5239691872dabb6ab2244c90784185215fc",
+  "source_tree_sha256": "0c560391b6c2eb8ae6c62512b90f29c5a389eda7c13ffceb2937fb8b0db968d6",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-D8GOxbpF.css",
+      "sha256": "7ea778daea63868acefa4e2e5b00bfd91db1e6f929338c6d1b0c28e8738101eb",
+      "bytes": 12856
+    },
+    {
+      "path": "assets/index-DvP2i9KV.js",
+      "sha256": "11281f4c53776b9a44fe320843eff0e80d681bf986996355af592211678f5185",
+      "bytes": 539120
+    },
+    {
+      "path": "index.html",
+      "sha256": "be96172bfaf81bbcfa8c9cd50e71d77bafb6c2bcb8d28d47e2d63ed88c63dcbc",
+      "bytes": 431
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "be96172bfaf81bbcfa8c9cd50e71d77bafb6c2bcb8d28d47e2d63ed88c63dcbc",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "455c05a746d3c8bcd1e96bfe21200e79f06c000751d7319904cb398bc808fc7e",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

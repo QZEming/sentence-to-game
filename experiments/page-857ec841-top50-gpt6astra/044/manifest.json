@@ -1,0 +1,81 @@
+{
+  "binding_sha256": "7c54b9082eb56352d12f5b3f1eb2d467a76e33d134186a83e7e6629198b4a64e",
+  "candidate": 44,
+  "files": [
+    {
+      "bytes": 282088,
+      "path": "original-delivery/root-artifacts/alpine-deploy.tar.gz",
+      "sha256": "8a369c58d9842e0cc7a650938303c9da078b7eb66c5a8095ebb386bb322d5053"
+    },
+    {
+      "bytes": 860,
+      "path": "parent-handoff.json",
+      "sha256": "1fd18c6bf16600af0ca101f52ced14dda215d15cd38b1ba118977ae09900800c"
+    },
+    {
+      "bytes": 121,
+      "path": "prompt.txt",
+      "sha256": "37a47adcc9fc127a07fda4af698eafe842d4ac0e23d5e38fe263c1328a344bab"
+    },
+    {
+      "bytes": 960,
+      "path": "provenance.json",
+      "sha256": "65b4aa07294211b5bd99ccb817d12cdfd50f6d9bddc0d679c408f862f41686de"
+    },
+    {
+      "bytes": 8899,
+      "path": "source-manifest.json",
+      "sha256": "b18079ad3bdd7be690701549c15f0ad039d293b4740c56bd01c1677ee094bf1c"
+    },
+    {
+      "bytes": 33,
+      "path": "source-tree/.gitignore",
+      "sha256": "1729fae778655d713ac69a1e4c65d9a996eab98634bfa25012893db83229a528"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "8c3f85a736e3caf0e35ab975f9931b68f023bb05b92b85d4e91f6e1d3edd0359"
+    },
+    {
+      "bytes": 683,
+      "path": "source-tree/README.md",
+      "sha256": "f341f47fdea2e98e18755404ee6b639376444feea4d1bd4fe22e63466dd8c5a7"
+    },
+    {
+      "bytes": 23143,
+      "path": "source-tree/dist/game.js",
+      "sha256": "5aaf45666c17f41d329ae72f7b6703de0b73f9a73d32c4a09370e3572403a816"
+    },
+    {
+      "bytes": 4855,
+      "path": "source-tree/dist/index.html",
+      "sha256": "ef01a4c53616c004baa0883fa2e22190cfd66f4d783026f2406e8659e70a1e87"
+    },
+    {
+      "bytes": 10667,
+      "path": "source-tree/dist/style.css",
+      "sha256": "8e7721d5cec76a800c72a4710f31d68e135c3a76c6d35b897520233bdb7cfcc8"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 154,
+      "path": "source-tree/package.json",
+      "sha256": "7ac6a47836ec27863ac71662009216efcc3e11c9bb6eb0789189ccb1e306b0d2"
+    },
+    {
+      "bytes": 716,
+      "path": "source-tree/server.mjs",
+      "sha256": "cc21c09d1be23a8e6ee9d0309db958fb2ca74a42737fe94d05c1453308ef7d83"
+    }
+  ],
+  "game_dir": "050-rescue-dog-snow-mountain",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fa4b-6a60-7373-ae9f-431b889670a8"
+}

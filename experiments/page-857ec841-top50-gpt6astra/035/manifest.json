@@ -1,0 +1,66 @@
+{
+  "binding_sha256": "7314096a90689650af10ad296cdad92064540492950eedc5635182c3990084f1",
+  "candidate": 35,
+  "files": [
+    {
+      "bytes": 283103,
+      "path": "original-delivery/root-artifacts/foxglove-site.tar.gz",
+      "sha256": "530267b9a064623db2aa92e3df806052e7a35f91a925d313c538043785061ffe"
+    },
+    {
+      "bytes": 854,
+      "path": "parent-handoff.json",
+      "sha256": "fe000ae92a9a794b0ef1245387c07c79371960bee861d04040f61f857e7400f3"
+    },
+    {
+      "bytes": 115,
+      "path": "prompt.txt",
+      "sha256": "50c2a731165dc8be5c993b249dce343ebe7f160dbccd213548fb3af11d2c11e3"
+    },
+    {
+      "bytes": 948,
+      "path": "provenance.json",
+      "sha256": "992fd815c85620c3a3fc16fa6ec6a1b191fca04fd221a415b70bfe0950f9c2f4"
+    },
+    {
+      "bytes": 7210,
+      "path": "source-manifest.json",
+      "sha256": "eb691df82a293e05e0ade69eda710d6acf5b2aceac896db3f0279c0b57c91add"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "ae48e6d1ec4f9840e7dcf8f65b9307075ea7609a639952ae8a9c07c38936d2e6"
+    },
+    {
+      "bytes": 1159,
+      "path": "source-tree/README.md",
+      "sha256": "f1b50f8c2f336cbed930dbf7c148b83d8e38e8c1ab4e177d4d17742d6f369b67"
+    },
+    {
+      "bytes": 28765,
+      "path": "source-tree/dist/game.js",
+      "sha256": "eef95289abd52c8b1f396a23b2ed27bde29aed9735414272633c42cb8a9c8ba9"
+    },
+    {
+      "bytes": 3811,
+      "path": "source-tree/dist/index.html",
+      "sha256": "7045144c0c0b6920cab534fbafa0367101e803bd7cbe73af55be2b6e2d4aa9e1"
+    },
+    {
+      "bytes": 12404,
+      "path": "source-tree/dist/style.css",
+      "sha256": "e087543367264064357afb80ff940d69a000a713b121309a0bc7d3e87153e3ad"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "game_dir": "041-fox-potion-shop",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f99f-ade0-77df-9bc0-328b33109016"
+}

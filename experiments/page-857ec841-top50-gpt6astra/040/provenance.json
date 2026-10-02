@@ -1,0 +1,19 @@
+{
+  "candidate": 40,
+  "game_dir": "046-astronaut-planet-survival",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "7ff82aa582fba7a1472c1ad1fc582a3faa3eca6ef3261c1579f3029732262b80",
+  "prompt_sha256": "1563119a51f6a2c7477b5ffbb7293c68c02f2a4408a09be0607a5203fa2195af",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-47",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f9fe-ddd3-77ec-979e-d620ff05c08a",
+  "turn_id": "01a0f9fe-fa45-7088-9195-ab93187c4e46"
+}

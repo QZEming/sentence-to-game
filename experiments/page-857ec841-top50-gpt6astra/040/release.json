@@ -1,0 +1,41 @@
+{
+  "candidate": 40,
+  "game_dir": "046-astronaut-planet-survival",
+  "title": "OUTPOST · 异星余生",
+  "url": "https://qzemi.cn/sentence-to-game/games/046-astronaut-planet-survival/",
+  "thread_id": "01a0f9fe-ddd3-77ec-979e-d620ff05c08a",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个宇航员在陌生星球建造避难所的 3D 生存制作游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "1563119a51f6a2c7477b5ffbb7293c68c02f2a4408a09be0607a5203fa2195af",
+  "source_tree_sha256": "f43dc7e6ab903c457dd81c358cfce241cedad55a6539421454a9cc3706a6ff1a",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BXCQt--o.js",
+      "sha256": "8101612a15aa9a30d3c1f632b43db8ed1cc7f35b25a4234954aaa3733c5826be",
+      "bytes": 512527
+    },
+    {
+      "path": "assets/index-CGMfbICZ.css",
+      "sha256": "bfa52bc7a45ceccf543c3a78d75716e5ff1e420b22cfb114ad8ab680ebd339f2",
+      "bytes": 11662
+    },
+    {
+      "path": "index.html",
+      "sha256": "925f72cee9f962239933384c0569099ecd6b64fa1a8b58a6f11b7be4f92475dc",
+      "bytes": 4186
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "925f72cee9f962239933384c0569099ecd6b64fa1a8b58a6f11b7be4f92475dc",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "56836ff5fc2cc4815779aa1415458a4bce1b5fd0d6db8d57d5ad2395bf8b5e86",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

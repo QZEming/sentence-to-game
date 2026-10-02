@@ -1,0 +1,71 @@
+{
+  "binding_sha256": "3689eb080d9fad8627740016d407c57f66f9dff8cee7ad8b03a5541c2b0cd2e3",
+  "candidate": 30,
+  "files": [
+    {
+      "bytes": 285837,
+      "path": "original-delivery/midnight-paws.zip",
+      "sha256": "786a5e4e0e99b4b46d3bf8f467c14ba3329f222554829eb6b796aefaa03f0af5"
+    },
+    {
+      "bytes": 851,
+      "path": "parent-handoff.json",
+      "sha256": "6ae006b43d274a09741e11553f111cff84c055ef7b5c79f34e840bbffdf6973d"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "6b42a92cf078e4209c36479fb04bd18dfd363fa28019a0e659b64a3666824c5c"
+    },
+    {
+      "bytes": 954,
+      "path": "provenance.json",
+      "sha256": "a77f0f5547a4acf557f9a5b98a9ead516b7f23b1f31f17cd0909218aae59ac75"
+    },
+    {
+      "bytes": 7151,
+      "path": "source-manifest.json",
+      "sha256": "807e136431ae423b4436280e4e2365846944753f1db2a8d9dd3fd27c805af73b"
+    },
+    {
+      "bytes": 2036,
+      "path": "source-tree/README.md",
+      "sha256": "4c7dc42dc166ad1c250e391036d3a18ec9825a7852a16a3481673b76dbf8e2c2"
+    },
+    {
+      "bytes": 23312,
+      "path": "source-tree/dist/game.js",
+      "sha256": "68bbee8f9639084a332a79b28468ed261b4a1265d27c38dfb736ab0c76f634ff"
+    },
+    {
+      "bytes": 4787,
+      "path": "source-tree/dist/index.html",
+      "sha256": "f15df111893b8ad057e71b0030f09e591eb641bb3959ac7a2b10e91bef0e00c4"
+    },
+    {
+      "bytes": 9758,
+      "path": "source-tree/dist/style.css",
+      "sha256": "9e63f7c857efe13212b50c3575f79c86f515c856593dbef806414dafc629610f"
+    },
+    {
+      "bytes": 1081,
+      "path": "source-tree/dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 194,
+      "path": "source-tree/package.json",
+      "sha256": "cb4bd1d1c2e977fe2130a6ab653744497fef99d5843e3fa293b7a39273d441fa"
+    }
+  ],
+  "game_dir": "036-cat-museum-heist",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f954-d65c-726f-8b60-7126172b4028"
+}

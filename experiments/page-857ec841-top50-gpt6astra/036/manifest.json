@@ -1,0 +1,111 @@
+{
+  "binding_sha256": "df44f1c25add9d89c1920432fbe1e9d220761590c5f96be74798524e35b9db9f",
+  "candidate": 36,
+  "files": [
+    {
+      "bytes": 854,
+      "path": "parent-handoff.json",
+      "sha256": "cb2883649aa854d151c3397f88df7b72290f27476184e833a5c4e3d103c5f3df"
+    },
+    {
+      "bytes": 115,
+      "path": "prompt.txt",
+      "sha256": "f18e3169b495e8e94186755a90b244ee512d60e4c7d33fa013a4cd8f947a7431"
+    },
+    {
+      "bytes": 947,
+      "path": "provenance.json",
+      "sha256": "97726a90ece99d2dbc77e4c6a3705d9e1273c0bb53ca92ac4101bc74da12faef"
+    },
+    {
+      "bytes": 10691,
+      "path": "source-manifest.json",
+      "sha256": "3b664014572a5fc7ebee8c18497bc071238273538c6f116c4381fa77a0ecff9e"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 2687,
+      "path": "source-tree/README.md",
+      "sha256": "d841868f7487010d687e6552ba4edd9bee8a17291bceaf38d0b3c787058e1036"
+    },
+    {
+      "bytes": 20969,
+      "path": "source-tree/dist/assets/index-BFNDBTtL.css",
+      "sha256": "ada9b8321e9d0a231b0920a53e4d39df3003dcffd269fe22cc4f93b3ab4f841b"
+    },
+    {
+      "bytes": 60872,
+      "path": "source-tree/dist/assets/index-C1fP0NX7.js",
+      "sha256": "f25d7fdd502c9b2dad8fba37d608687746cf31846462d9f34f46e2a6853b480f"
+    },
+    {
+      "bytes": 507153,
+      "path": "source-tree/dist/assets/three-Bn3CY9Hw.js",
+      "sha256": "41b0df28a6c6b3f4f8a63d8e8d5eaf387ad0b88fbb94155cb22e648b5b0ccf94"
+    },
+    {
+      "bytes": 6140,
+      "path": "source-tree/dist/index.html",
+      "sha256": "32999f8f9062cb7cd60a1ffb4f0825444bdc2ea58ef3a2553ca19d6d0c478114"
+    },
+    {
+      "bytes": 5966,
+      "path": "source-tree/index.html",
+      "sha256": "65df879c6b7334e48e28383cae76237d6f0813db54c03316c8d7d31b8ef7e14e"
+    },
+    {
+      "bytes": 33862,
+      "path": "source-tree/package-lock.json",
+      "sha256": "8f81dfe91a178a1d51ee6cd82c8598911fba0a2fb7dfa5192589050856c44bdf"
+    },
+    {
+      "bytes": 261,
+      "path": "source-tree/package.json",
+      "sha256": "b5afd70353937e298fbb4221b2c325396d0faf8bf5d774a2547edb22caef7635"
+    },
+    {
+      "bytes": 79024,
+      "path": "source-tree/screenshots/factory-preview.jpg",
+      "sha256": "a9f22c7c31a0744ef0a13106e7101ad8776b9aa2373beb97ae0d8fd1062e23e9"
+    },
+    {
+      "bytes": 8965,
+      "path": "source-tree/src/game.js",
+      "sha256": "9d0044be07e9046fd57d04b6497e3768b23f89cc77f5f639955250ed4077304e"
+    },
+    {
+      "bytes": 20189,
+      "path": "source-tree/src/main.js",
+      "sha256": "b2f14f71b7aaf1bec5218ab117fc42e034378b9a11fb771e9741bf95b3ebcb97"
+    },
+    {
+      "bytes": 20970,
+      "path": "source-tree/src/style.css",
+      "sha256": "c7c2189c3e1a503daef4f94eabb6de7314fca765339a360b655ed42af1de1a35"
+    },
+    {
+      "bytes": 18189,
+      "path": "source-tree/src/world.js",
+      "sha256": "49497eaf3720330211f15739e93ded6b9992335d3c37f0ebdc09c05de6c27167"
+    },
+    {
+      "bytes": 2470,
+      "path": "source-tree/tests/game.test.js",
+      "sha256": "0671360b6cec3bd61f49484b769746404aedeb41b0bb10983036a3c9d9dd6eb9"
+    },
+    {
+      "bytes": 166,
+      "path": "source-tree/vite.config.js",
+      "sha256": "20b2b4d8f52888e7e033409ce5ef7bb723d3185208db7ba6e514938704308c7c"
+    }
+  ],
+  "game_dir": "042-robot-recycling-factory",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f9ae-26f3-7461-8b1f-1b3882183001"
+}

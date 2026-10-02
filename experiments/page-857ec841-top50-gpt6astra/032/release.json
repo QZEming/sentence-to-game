@@ -1,0 +1,46 @@
+{
+  "candidate": 32,
+  "game_dir": "038-robot-space-repair",
+  "title": "ORBITAL · 空间站维修模拟",
+  "url": "https://qzemi.cn/sentence-to-game/games/038-robot-space-repair/",
+  "thread_id": "01a0f96e-99c0-76d6-9ab0-e81f41a90012",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个机器人排查失控太空站故障的 3D 维修模拟游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "ceeace74732b2d4b33c54bfd999174ae0c7e9129a96ac9dc62fa94b2fba422ad",
+  "source_tree_sha256": "1b6877d382434fc1f2b6da4dfc753a6b541174be6b6659c9639b639a0ec6e5e0",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-CglN3jhf.css",
+      "sha256": "fced12316e33ef51f5d21a5f69bac52f02fe36fe732082dcdf094396a7b50c00",
+      "bytes": 19509
+    },
+    {
+      "path": "assets/index-DH-cocV_.js",
+      "sha256": "d09bcdf65c44f0dbf78f29c3385ca96bcdd00bcd9aa31cea5315999a7cb9de6d",
+      "bytes": 564605
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "7100d1aeb3b4cd52291d61858ddb1fb148ec3cd7e74d766851cfcad4bbb5fc52",
+      "bytes": 244
+    },
+    {
+      "path": "index.html",
+      "sha256": "dd12abb5725ec4ae8c77126acbfc6d27a0d28534930903d8730557c80f614bb2",
+      "bytes": 479
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "dd12abb5725ec4ae8c77126acbfc6d27a0d28534930903d8730557c80f614bb2",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "e26899643ff48632b1e7aa3f39cc8bbe4940304ee593ff8b711eb31ae9dcd2df",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "parent_reported_completed_original",
+  "later_messages": "no creative follow-up reported",
+  "known_defects": []
+}

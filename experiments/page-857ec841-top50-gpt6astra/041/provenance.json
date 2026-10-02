@@ -1,0 +1,19 @@
+{
+  "candidate": 41,
+  "game_dir": "047-pirate-island-treasure",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "c58d3b9d207ebf3837f3d61f0a498a3084cf41f39230e13af7c39f4ebbcd5be5",
+  "prompt_sha256": "23c52a81491c022c46575f7a97343b8feee9b57b90548d40f29d5f30cb2276e0",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-48/archipelago",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0fa11-9e41-70fd-a521-cf8c8e7d60a3",
+  "turn_id": "01a0fa11-bb67-77d4-ad1c-2e3301ac54e7"
+}

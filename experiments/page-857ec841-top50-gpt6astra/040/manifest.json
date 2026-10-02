@@ -1,0 +1,111 @@
+{
+  "binding_sha256": "75414f99ce63906b2d99d9665bbf557d7a6e98f1701ccbfe9a0c362853a68bb6",
+  "candidate": 40,
+  "files": [
+    {
+      "bytes": 851,
+      "path": "parent-handoff.json",
+      "sha256": "56836ff5fc2cc4815779aa1415458a4bce1b5fd0d6db8d57d5ad2395bf8b5e86"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "1563119a51f6a2c7477b5ffbb7293c68c02f2a4408a09be0607a5203fa2195af"
+    },
+    {
+      "bytes": 949,
+      "path": "provenance.json",
+      "sha256": "73b0e6addb37d28b33b8ae188fd108a2b2d5f974e5e70271c04c435af1ba97b1"
+    },
+    {
+      "bytes": 11156,
+      "path": "source-manifest.json",
+      "sha256": "7ff82aa582fba7a1472c1ad1fc582a3faa3eca6ef3261c1579f3029732262b80"
+    },
+    {
+      "bytes": 47,
+      "path": "source-tree/.gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 2415,
+      "path": "source-tree/README.md",
+      "sha256": "f0fb0486ca0229901d6da6ef5fa0a697d21cbf19b5bb194d45d56b8ce80e6aa2"
+    },
+    {
+      "bytes": 11662,
+      "path": "source-tree/dist/assets/index-CGMfbICZ.css",
+      "sha256": "bfa52bc7a45ceccf543c3a78d75716e5ff1e420b22cfb114ad8ab680ebd339f2"
+    },
+    {
+      "bytes": 26992,
+      "path": "source-tree/dist/assets/index-loY66f19.js",
+      "sha256": "6ab2a7dbff2324e570620ebe7812b8f07cca60ad683e562fc9fc0d825c8a3cc0"
+    },
+    {
+      "bytes": 484915,
+      "path": "source-tree/dist/assets/three-CRY1kcIg.js",
+      "sha256": "aa67310e68998fd281b009f382b821aab97ea9ac1bf33d71b580168d61780afb"
+    },
+    {
+      "bytes": 4258,
+      "path": "source-tree/dist/index.html",
+      "sha256": "348a705d327f7de29437b7f35ca3f6d161b2f86f896d8eb36d765d10c06da79a"
+    },
+    {
+      "bytes": 4084,
+      "path": "source-tree/index.html",
+      "sha256": "056a31d0c46f7ec2a2c3fbf69e730879a035e6a5e8f7d98ce087933981044f16"
+    },
+    {
+      "bytes": 621388,
+      "path": "source-tree/output/playwright/base-built.png",
+      "sha256": "aec21f8ae4a5f60bd2f8035683e9136896f41702a9106c8827e2546e545cd5f1"
+    },
+    {
+      "bytes": 610168,
+      "path": "source-tree/output/playwright/final-game.png",
+      "sha256": "67f3a066671b6746acb4c80dcd7d03a300318b9cf2799f480e9af1e677207f41"
+    },
+    {
+      "bytes": 623129,
+      "path": "source-tree/output/playwright/first-look.png",
+      "sha256": "ad42f2fb8e20ad2502c2537c8d190bcb07bf9e7129a48597d5fce082e541c8f7"
+    },
+    {
+      "bytes": 243971,
+      "path": "source-tree/output/playwright/signal-success.png",
+      "sha256": "ee6f53fd8dafc82d697b0e603b92a308c98f2e8d8b849513079e0919003b5b58"
+    },
+    {
+      "bytes": 33866,
+      "path": "source-tree/package-lock.json",
+      "sha256": "8e46dd472bc334c3b852d9e879e7bce383bcba6cff3a7be1880f2424d1f7b188"
+    },
+    {
+      "bytes": 226,
+      "path": "source-tree/package.json",
+      "sha256": "5bc557877fbbb61a5535172c09ee838ac43963fcf5dec877887acf08dda55c2e"
+    },
+    {
+      "bytes": 32512,
+      "path": "source-tree/src/main.js",
+      "sha256": "faccf654f00bfb1b81edf94de3da9c9b14641477c91ada54907d3ee4b78644bd"
+    },
+    {
+      "bytes": 11618,
+      "path": "source-tree/src/style.css",
+      "sha256": "b52cc65fe34ea585c15d251c977558561a2e32a2cd65e33fa8f9adf580773419"
+    },
+    {
+      "bytes": 194,
+      "path": "source-tree/vite.config.js",
+      "sha256": "687b75436536071948b77d8eb43ac3c620bf2b384b797fa41f2e582b2c40de18"
+    }
+  ],
+  "game_dir": "046-astronaut-planet-survival",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f9fe-ddd3-77ec-979e-d620ff05c08a"
+}

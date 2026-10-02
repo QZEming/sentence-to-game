@@ -1,0 +1,21 @@
+{
+  "candidate": 38,
+  "game_dir": "044-rabbit-moon-farm",
+  "known_defects": [
+    "1280x720 gentle note overlaps farmer identity/XP"
+  ],
+  "later_messages": "capacity interruption followed by verification only; no source edits",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "interrupted_capacity_snapshot_with_later_verification",
+  "original_source_manifest_sha256": "4c8fda9abb7b5a253823b6e8f955975144924875d4b71d2c623aa32891cd49d7",
+  "prompt_sha256": "00c521e4bbcb4ae7ed35f442d1009f53cb13c06c19305f4b8e7fb451f81b6f52",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-45/moonbloom",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f9d4-67e9-73bb-8611-0a117e512013",
+  "turn_id": "01a0f9d4-7438-7454-ae07-00f4e265c078"
+}

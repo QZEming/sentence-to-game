@@ -1,0 +1,19 @@
+{
+  "candidate": 28,
+  "game_dir": "034-firefly-traveler-guide",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "e1cbcac3070f9318f6725cf0bbed5e27a4bb29a2fec1635c1ec8fa7588027736",
+  "prompt_sha256": "ad93d340bc99e2214af5d417f70ff5239691872dabb6ab2244c90784185215fc",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-35",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f93d-a0fe-74e4-b5f7-c94f568fa02c",
+  "turn_id": "01a0f93d-ae4b-76ed-884a-112fb7de4574"
+}

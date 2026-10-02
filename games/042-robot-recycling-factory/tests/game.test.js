@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {Game,key} from '../src/game.js';
+function run(g,seconds){for(let t=0;t<seconds;t+=.1)g.tick(.1)}
+test('示范产线能够持续回收并获得收入和再生库存',()=>{const g=new Game();run(g,180);assert.ok(g.stats.produced>25);assert.ok(g.money>2400);assert.ok(Object.values(g.inventory).reduce((a,b)=>a+b,0)>25);assert.equal(g.stats.recycled,g.stats.produced*6)});
+test('建造检查边界、占用与资金；拆除只返还一次',()=>{const g=new Game();assert.equal(typeof g.build('belt',-5,-2),'string');assert.equal(typeof g.build('belt',20,20),'string');const before=g.money;assert.equal(g.build('belt',0,0).type,'belt');assert.equal(g.money,before-40);assert.ok(g.remove(0,0));assert.equal(g.money,before-16);assert.equal(g.remove(0,0),false);g.money=0;assert.equal(typeof g.build('furnace',0,0),'string')});
+test('断开方向会阻断物流，修复后自动恢复',()=>{const g=new Game();g.cells.clear();g.items=[];g.money=3000;g.build('source',0,0,0);g.build('belt',1,0,3);g.build('bin',2,0,0);run(g,30);assert.equal(g.stats.produced,0);g.cells.get(key(1,0)).dir=0;run(g,15);assert.ok(g.stats.produced>0)});
+test('停电降低效率，太阳能扩建恢复供电',()=>{const g=new Game();g.money=20000;for(let x=-6;x<6;x++)g.build('furnace',x,4);assert.ok(g.efficiency<1);for(let x=-6;x<6;x++)g.build('solar',x,3);assert.equal(g.efficiency,1)});
+test('订单扣库存并产生收益及研究点，不允许重复空交付',()=>{const g=new Game();assert.equal(g.fulfill(0),false);g.inventory={metal:5,plastic:3,glass:0};const money=g.money;assert.ok(g.fulfill(0));assert.equal(g.inventory.metal,0);assert.equal(g.inventory.plastic,0);assert.equal(g.money,money+620);assert.equal(g.research,2);assert.equal(g.fulfill(0),false)});
+test('升级和研究受限，里程碑只能领取一次',()=>{const g=new Game();assert.equal(g.claim(),false);g.stats.produced=10;g.stats.built=3;g.upgrade(-4,-2);assert.ok(g.claim());assert.equal(g.milestone,1);assert.equal(g.claim(),false);assert.ok(g.researchTech('speed'));assert.equal(g.tech.speed,1);g.research=0;assert.equal(g.researchTech('speed'),false)});
+test('保存恢复资金、设备、在途物料和生产能力',()=>{const g=new Game();run(g,35);const copy=new Game(JSON.parse(JSON.stringify(g.serialize())));assert.deepEqual(copy.serialize(),g.serialize());run(copy,30);assert.ok(copy.stats.produced>g.stats.produced)});

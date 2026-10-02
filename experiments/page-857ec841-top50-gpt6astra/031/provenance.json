@@ -1,0 +1,19 @@
+{
+  "candidate": 31,
+  "game_dir": "037-crow-forest-detective",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "fd67914ebd0d4254643c23f5bae754f9bac6f81fbb8175501f56a18a737ffbf5",
+  "prompt_sha256": "38f4b6de8f86832c1c442e116fd73d26af7db4dfcb1568219384a15c65f8a1a7",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-38",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f962-3313-704e-a5bb-f16c9f917029",
+  "turn_id": "01a0f962-451f-749e-8c19-e18a59a930f2"
+}

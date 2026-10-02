@@ -1,0 +1,66 @@
+{
+  "binding_sha256": "94ea5d1850a4c854944dff0f051bb7244996fab1229f3d64f850ec2f28c2713f",
+  "candidate": 38,
+  "files": [
+    {
+      "bytes": 3792,
+      "path": "later-verification/verification-report.json",
+      "sha256": "f794779cd1d36f34c7507045a8317155acbe0998d2d5fc6a98158cb58b279016"
+    },
+    {
+      "bytes": 908,
+      "path": "parent-handoff.json",
+      "sha256": "3fc9229f2355c25fcc463ead07732a3885dee9e35f1933c11b03c99bf8978dff"
+    },
+    {
+      "bytes": 112,
+      "path": "prompt.txt",
+      "sha256": "00c521e4bbcb4ae7ed35f442d1009f53cb13c06c19305f4b8e7fb451f81b6f52"
+    },
+    {
+      "bytes": 1065,
+      "path": "provenance.json",
+      "sha256": "81a3387b6e1a3c1950a14b55a799a0baea51e939b5e886ef9bd45eed3896f1f9"
+    },
+    {
+      "bytes": 6334,
+      "path": "source-manifest.json",
+      "sha256": "4c8fda9abb7b5a253823b6e8f955975144924875d4b71d2c623aa32891cd49d7"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "d1a1ba9935ba569c8447da30b0aa4dce328c379ceccfd9d98ec6f4cc7b1ad247"
+    },
+    {
+      "bytes": 876,
+      "path": "source-tree/README.md",
+      "sha256": "3a39b9d2ee36cf9430f514c76f8b9ad21e29864d4103b8fb7c51dc7c940f1c86"
+    },
+    {
+      "bytes": 33689,
+      "path": "source-tree/dist/game.js",
+      "sha256": "fb099ca97eb83f83dfcf4cc40fcf40480af02bed781e29dbeb50343594af8f76"
+    },
+    {
+      "bytes": 4890,
+      "path": "source-tree/dist/index.html",
+      "sha256": "c5e28b550cb673de394aa0f689565c262ebdc4669c622edba651a50e176c3144"
+    },
+    {
+      "bytes": 11997,
+      "path": "source-tree/dist/style.css",
+      "sha256": "45ab2df4fa2425f7e3bc37e394504fe3300c5320c238d14121194780091029c8"
+    },
+    {
+      "bytes": 687458,
+      "path": "source-tree/dist/vendor/three.js",
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee"
+    }
+  ],
+  "game_dir": "044-rabbit-moon-farm",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f9d4-67e9-73bb-8611-0a117e512013"
+}

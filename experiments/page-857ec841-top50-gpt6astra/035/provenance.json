@@ -1,0 +1,19 @@
+{
+  "candidate": 35,
+  "game_dir": "041-fox-potion-shop",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "eb691df82a293e05e0ade69eda710d6acf5b2aceac896db3f0279c0b57c91add",
+  "prompt_sha256": "50c2a731165dc8be5c993b249dce343ebe7f160dbccd213548fb3af11d2c11e3",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-42/foxglove",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f99f-ade0-77df-9bc0-328b33109016",
+  "turn_id": "01a0f99f-bb0d-757a-959d-bacc301c1bda"
+}

@@ -1,0 +1,45 @@
+{
+  "candidate": 34,
+  "game_dir": "040-bear-hot-spring-inn",
+  "title": "熊汤物语 · 森林温泉旅馆",
+  "url": "https://qzemi.cn/sentence-to-game/games/040-bear-hot-spring-inn/",
+  "thread_id": "01a0f989-723c-76d4-abed-03b00f16f03a",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小熊为森林温泉旅馆安排客房与服务的 3D 经营调度游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "045723e6da93640b0579d9f97adcb28f6b443145fa3f27d8dbc1fcf9be221b5e",
+  "source_tree_sha256": "b905605eba1e53228fb54e4c85a2a2ac84be9541e9448113a2ac1d2f4f0cbd86",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-Bjfm2HgX.js",
+      "sha256": "947516b41fc462b259fd88cef8396470494a0cbc6dd7c2b2205692196dd6dcc9",
+      "bytes": 880083
+    },
+    {
+      "path": "assets/index-C8BBJaWC.css",
+      "sha256": "7e818f67fc2f7aceaff1c147630a06a3984685fb5c975da58085ddebc72bc2b3",
+      "bytes": 16075
+    },
+    {
+      "path": "index.html",
+      "sha256": "122c5f6da2ad0d3a6e76bc94716b48b1dd14e2e709fd7e2aaf02bd31b5769b1c",
+      "bytes": 5471
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "122c5f6da2ad0d3a6e76bc94716b48b1dd14e2e709fd7e2aaf02bd31b5769b1c",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "5c7ba5ef616a1a173ea3096ed8cf6a1cef98e463a847c2793c31b6fe9bbb4989",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "original_generation_state": "interrupted_capacity_snapshot_with_later_verification",
+  "later_messages": "capacity interruption followed by verification only; no source edits",
+  "known_defects": [
+    "1280x720 toolbar/room panel overlap and possible vertical overflow",
+    "missing cloud-check lucide icon with repeat warnings",
+    "expanded room label overlap"
+  ]
+}

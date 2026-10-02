@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "candidate": 26,
+  "game_dir": "032-spider-web-hunt",
+  "finding": "confirmed_nonfatal_background_foliage_render_defect",
+  "summary": "静态林地合批失败后没有单网格回退。四个叶片材质组被跳过，树冠与蕨叶装饰缺失；核心蛛网/捕食交互和其余场景继续运行。",
+  "cause": {
+    "console_geometry_ordinals": [
+      36,
+      36,
+      36,
+      33
+    ],
+    "ordinal_meaning": "zero-based geometry position within each material batch; not triangle index or frame number",
+    "mixed_geometries": "non-indexed IcosahedronGeometry tree crowns share leaf materials with indexed custom fern blades and ConeGeometry leaflets",
+    "three_behavior": "BufferGeometryUtils.mergeGeometries logs console.error and returns null when index presence differs; it does not throw",
+    "local_three_version": "0.180.0",
+    "source_evidence": [
+      {
+        "path": "/Users/bytedance/Documents/Codex/2026-10-02/task-33/src/main.js",
+        "lines": [
+          22,
+          27,
+          35,
+          36,
+          47,
+          48,
+          49
+        ]
+      },
+      {
+        "path": "/Users/bytedance/Documents/Codex/2026-10-02/task-33/node_modules/three/examples/jsm/utils/BufferGeometryUtils.js",
+        "lines": [
+          133,
+          135,
+          154,
+          156,
+          158,
+          159
+        ]
+      }
+    ]
+  },
+  "fallback_rendering": {
+    "implemented": false,
+    "control_flow": "All original static meshes are removed at main.js:48. At line 49 only a non-null merged geometry is added. Failed group clones are disposed; originals are never restored.",
+    "runtime_continues": true,
+    "not_equivalent_to": "a harmless optimization fallback retaining all original foliage"
+  },
+  "impact": {
+    "basis": "source-derived scope corroborated by existing four console messages; no new rendering run",
+    "failed_material_groups": [
+      {
+        "material": "leafMats[0]",
+        "color": "#42694a",
+        "initial_nonindexed_crowns": 36,
+        "first_incompatible_geometry_ordinal": 36
+      },
+      {
+        "material": "leafMats[1]",
+        "color": "#2e5741",
+        "initial_nonindexed_crowns": 36,
+        "first_incompatible_geometry_ordinal": 36
+      },
+      {
+        "material": "leafMats[2]",
+        "color": "#658552",
+        "initial_nonindexed_crowns": 36,
+        "first_incompatible_geometry_ordinal": 36
+      },
+      {
+        "material": "leafMats[3]",
+        "color": "#253f33",
+        "initial_nonindexed_crowns": 33,
+        "first_incompatible_geometry_ordinal": 33
+      }
+    ],
+    "missing_decoration": [
+      "141 canopy meshes across 47 background trees",
+      "leaf blades and cone leaflets of all 66 fern constructions, including foreground ferns"
+    ],
+    "remaining_rendering": [
+      "tree trunks and branches, including web-framing/anchor branches",
+      "ground, rocks, mushrooms and light shafts",
+      "Points dust and Sprite fireflies (not included in isMesh batching)",
+      "web lines/nodes, spider and insects created after static batching"
+    ],
+    "whole_scene_failure": false,
+    "required_collision_or_interaction_targets_affected": false,
+    "gameplay_scope_basis": [
+      "leafMats is only used by canopy and fern construction",
+      "Web physics nodes/edges and fixed anchor coordinates are constructed independently after the static merge block",
+      "Pointer rays intersect the z=0 plane, then nearestNode/nearestEdge or trapped-insect distance tests choose interaction targets",
+      "Insect trapping uses segmentDistance against physics.edges, rather than background foliage meshes"
+    ],
+    "gameplay_source_lines": [
+      51,
+      54,
+      55,
+      56,
+      71,
+      77,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      118
+    ]
+  },
+  "existing_browser_evidence": {
+    "path": "/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/reports/after25-local-browser.json",
+    "sha256": "559dd2dd58fd187048ad5a5f530483ed5b3e0606c557df40ac9c575a2065dde5",
+    "candidate_status": "passed",
+    "console_error_count": 4,
+    "console_errors": [
+      "THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index 36. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them.",
+      "THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index 36. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them.",
+      "THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index 36. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them.",
+      "THREE.BufferGeometryUtils: .mergeGeometries() failed with geometry at index 33. All geometries must have compatible attributes; make sure index attribute exists among all geometries, or in none of them."
+    ],
+    "page_errors": [],
+    "failed_game_resources": [],
+    "webgl": [
+      {
+        "id": "scene",
+        "width": 1110,
+        "height": 832,
+        "active": true,
+        "lost": false
+      }
+    ],
+    "screenshot": "/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/reports/browser-after25-local/032-spider-web-hunt.png",
+    "snapshots": {
+      "before": {
+        "phase": "build",
+        "paused": false,
+        "silk": 120.18700000000003,
+        "nodes": 68,
+        "edges": 111,
+        "bugs": 4,
+        "phase_time": "等待狩猎",
+        "render_calls": 275,
+        "render_triangles": 21691
+      },
+      "hunting": {
+        "phase": "hunt",
+        "paused": false,
+        "silk": 121.07950000000011,
+        "nodes": 68,
+        "edges": 111,
+        "bugs": 5,
+        "phase_time": "59s",
+        "render_calls": 281,
+        "render_triangles": 22583
+      },
+      "paused": {
+        "phase": "hunt",
+        "paused": true,
+        "silk": 121.12191500000012,
+        "nodes": 68,
+        "edges": 111,
+        "bugs": 5,
+        "phase_time": "59s",
+        "render_calls": 281,
+        "render_triangles": 22583
+      },
+      "paused_later": {
+        "phase": "hunt",
+        "paused": true,
+        "silk": 121.12191500000012,
+        "nodes": 68,
+        "edges": 111,
+        "bugs": 5,
+        "phase_time": "59s",
+        "render_calls": 281,
+        "render_triangles": 22583
+      },
+      "resumed": {
+        "phase": "hunt",
+        "paused": false,
+        "silk": 121.37691500000014,
+        "nodes": 68,
+        "edges": 111,
+        "bugs": 5,
+        "phase_time": "59s",
+        "render_calls": 281,
+        "render_triangles": 22583
+      }
+    },
+    "scope": "initial 3D render and brief real UI core action; no full playthrough",
+    "interpretation": "Existing evidence proves active WebGL and real hunt start/pause/resume, including frozen silk/timer during pause. It does not prove complete decorative rendering or full playthrough."
+  },
+  "release_assessment": {
+    "category": "known_visual_background_defect; short core interaction remains passed",
+    "can_retain_under_parent_policy": true,
+    "condition": "Preserve and disclose the console/foliage defect; do not label this a clean-console or complete-foliage pass.",
+    "source_repair_performed": false
+  },
+  "integrity": {
+    "source_sha256": "806ca3728153fd97c0fe877cb52cd8113b3f547506f5593eade2d39f4a53a7f9",
+    "source_archive_exact": true,
+    "buffer_geometry_utils_sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+  },
+  "inspection_execution": {
+    "file_reads_and_hashes_only": true,
+    "source_changes": false,
+    "builds": false,
+    "tests": false,
+    "browser": false,
+    "server": false
+  }
+}

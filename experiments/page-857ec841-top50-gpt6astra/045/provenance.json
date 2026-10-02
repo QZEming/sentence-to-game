@@ -1,0 +1,19 @@
+{
+  "candidate": 45,
+  "game_dir": "051-robot-magnetic-factory",
+  "known_defects": [],
+  "later_messages": "no creative follow-up reported",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "original_generation_state": "parent_reported_completed_original",
+  "original_source_manifest_sha256": "b86c544b495c3e9c9e45fa081df4e798d505dc74ff9d4d73c24073cb97139432",
+  "prompt_sha256": "0214de2c6768e796eb5e5065b42445f08d0e1c457b05867e52dabaee70f7559a",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-52",
+  "task_input_evidence": "parent supplied exact initial sentence; full transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0fa5a-6dd3-71a6-b986-ac45fbf3208e",
+  "turn_id": "01a0fa5a-8ace-778d-a419-6951afc6d171"
+}
