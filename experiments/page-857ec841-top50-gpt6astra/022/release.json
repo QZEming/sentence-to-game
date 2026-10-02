@@ -1,0 +1,43 @@
+{
+  "candidate": 22,
+  "game_dir": "028-jellyfish-survival",
+  "title": "幽蓝 · 水母远行",
+  "url": "https://qzemi.cn/sentence-to-game/games/028-jellyfish-survival/",
+  "thread_id": "01a0f890-96e0-71f5-9a82-dbb672e43016",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小水母在海底躲避捕食者的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "c46818ce950a570df02ce379b73303552a3eec125bc63b391a4ed6d33c3f2d36",
+  "source_tree_sha256": "fd1669488286aabf3831268142f627a672e4f2cd69a22247e820e808ba28932f",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "ab6dac78dce1aa6b8c10164d8a6ae4ef5e64e99bcbe7d7a46d88398ee53a2bc3",
+      "bytes": 23214
+    },
+    {
+      "path": "index.html",
+      "sha256": "54e8552eb51790f8ad9b10684cf9de1175fddac2e8658d91267421aaace3a5ec",
+      "bytes": 4460
+    },
+    {
+      "path": "style.css",
+      "sha256": "6b93c7085e7da3e10d84662762d0e1938eed773dd652cb3469609a97dc74a68d",
+      "bytes": 8884
+    },
+    {
+      "path": "three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "54e8552eb51790f8ad9b10684cf9de1175fddac2e8658d91267421aaace3a5ec",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "8ceead976d2c45d1934f9d26ffc945e34cfde85520d7d20c4cbf0fcd7be43851",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

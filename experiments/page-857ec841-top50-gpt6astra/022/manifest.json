@@ -1,0 +1,67 @@
+{
+  "binding_sha256": "11e095fb7f0d37f3a208916a9599591dc0a8260310fb65f6261a901bc495b034",
+  "candidate": 22,
+  "files": [
+    {
+      "bytes": 864,
+      "path": "parent-handoff.json",
+      "sha256": "8ceead976d2c45d1934f9d26ffc945e34cfde85520d7d20c4cbf0fcd7be43851"
+    },
+    {
+      "bytes": 94,
+      "path": "prompt.txt",
+      "sha256": "c46818ce950a570df02ce379b73303552a3eec125bc63b391a4ed6d33c3f2d36"
+    },
+    {
+      "bytes": 897,
+      "path": "provenance.json",
+      "sha256": "29516e6a4218fef9ed60a487b61900cf92b763c0a0a2bdce5a159a6258eebca4"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "24333248bf4419e926cc5ea54d3235471daca905da056612611ea879a2653791"
+    },
+    {
+      "bytes": 1357,
+      "path": "source-tree/README.md",
+      "sha256": "c59c32bed5cd6c1ce27dac1624f660affbf16e36cdaa11f767b5df27da7503cc"
+    },
+    {
+      "bytes": 23214,
+      "path": "source-tree/dist/game.js",
+      "sha256": "ab6dac78dce1aa6b8c10164d8a6ae4ef5e64e99bcbe7d7a46d88398ee53a2bc3"
+    },
+    {
+      "bytes": 4460,
+      "path": "source-tree/dist/index.html",
+      "sha256": "54e8552eb51790f8ad9b10684cf9de1175fddac2e8658d91267421aaace3a5ec"
+    },
+    {
+      "bytes": 8884,
+      "path": "source-tree/dist/style.css",
+      "sha256": "6b93c7085e7da3e10d84662762d0e1938eed773dd652cb3469609a97dc74a68d"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 179,
+      "path": "source-tree/package.json",
+      "sha256": "5541549a969e744a3b9d4342291996b04f9e1b659dd58f6055a1765f06d7c8ed"
+    },
+    {
+      "bytes": 962,
+      "path": "source-tree/server.mjs",
+      "sha256": "669f79d0537a9c299a189ea7c8d4ef38ac92f8d13c644dd8b7c2d8b5f52815df"
+    }
+  ],
+  "game_dir": "028-jellyfish-survival",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-96e0-71f5-9a82-dbb672e43016"
+}

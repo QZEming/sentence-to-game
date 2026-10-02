@@ -1,0 +1,57 @@
+{
+  "binding_sha256": "c00cd3d80f9f80add8dc772336be118a87e38795b94a4ce3821138d038c3e29e",
+  "candidate": 17,
+  "files": [
+    {
+      "bytes": 190,
+      "path": "failed-read-response.json",
+      "sha256": "756c2420141b88362ae14e50ade01e8fb4282c960bfa5c2831d9b3469f90f91b"
+    },
+    {
+      "bytes": 94,
+      "path": "prompt.txt",
+      "sha256": "4e9b409c4162988fd7bea2211815f378197390f8573325c5973cc1b9ebaa73b2"
+    },
+    {
+      "bytes": 880,
+      "path": "provenance.json",
+      "sha256": "78f159db91aa2d41a48f4cf2dc63159e420f371ced45e7a6d7ef9a1144c8e58d"
+    },
+    {
+      "bytes": 850,
+      "path": "source-tree/README.md",
+      "sha256": "a168ee1eb42dc64633ba3e35a5ec7567d2d6b683e23aa8be3c3c80d69b7349f5"
+    },
+    {
+      "bytes": 6255,
+      "path": "source-tree/index.html",
+      "sha256": "37931d520e520a78c5aeea1cad8526bc3fd92823c60eea1acc9cf4c09096c531"
+    },
+    {
+      "bytes": 18167,
+      "path": "source-tree/main.js",
+      "sha256": "edff11a372e89d174cdbaa8d9f5e9b2ca3398da849849a53fd110f56a52787b7"
+    },
+    {
+      "bytes": 289,
+      "path": "source-tree/package.json",
+      "sha256": "9fad56a027d5ecd0d803c69f03872620930ba624b3dc82dfc60bcc357e58e2d4"
+    },
+    {
+      "bytes": 12793,
+      "path": "source-tree/style.css",
+      "sha256": "48b11a9f583e8c111cf02c90fb44b69615a6b0502210cbcf04f953d685ea9a4a"
+    },
+    {
+      "bytes": 29723,
+      "path": "task-record.json",
+      "sha256": "54aa57d4a0cd9238b335ff11adfc0b0d927641dbe4be8bfa49721e8cd4928907"
+    }
+  ],
+  "game_dir": "023-robot-band-rhythm",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f871-b94e-7432-b3c6-d412c85b8038",
+  "turn_id": "01a0f871-c7a5-72a8-a56b-8849f1195437"
+}

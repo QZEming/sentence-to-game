@@ -1,0 +1,42 @@
+{
+  "candidate": 17,
+  "game_dir": "023-robot-band-rhythm",
+  "title": "BOT//BEAT",
+  "url": "https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/",
+  "thread_id": "01a0f871-b94e-7432-b3c6-d412c85b8038",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个机器人乐队进行节奏演奏的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "4e9b409c4162988fd7bea2211815f378197390f8573325c5973cc1b9ebaa73b2",
+  "source_tree_sha256": "bc73bd3efdaaeb2b2398be973da03e9fd365c103c1bf120caa8dfeb471a82ca1",
+  "task_record_sha256": "54aa57d4a0cd9238b335ff11adfc0b0d927641dbe4be8bfa49721e8cd4928907",
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BkMAZDOz.css",
+      "sha256": "86baf7d5fce57cf58e5cb7174a7faeb7864fbdc35c068ce1b8ed62d2f9c53dfe",
+      "bytes": 12712
+    },
+    {
+      "path": "assets/index-D05X0r5a.js",
+      "sha256": "9dd1ebac0441a8c87616d8cd40ae75caa25a08d9dba9b63bcd33e39c3e1f1c87",
+      "bytes": 494491
+    },
+    {
+      "path": "index.html",
+      "sha256": "05b9c5fd6f924dfccb76d20d3540042e9063034d032f31af90376c9aa8df57ab",
+      "bytes": 6318
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "05b9c5fd6f924dfccb76d20d3540042e9063034d032f31af90376c9aa8df57ab",
+  "dependency_completion": {
+    "kind": "publisher_cached_dependency_build",
+    "original_package_has_no_dependencies": true,
+    "source_unchanged": true,
+    "three": "0.180.0",
+    "vite": "7.3.6"
+  }
+}

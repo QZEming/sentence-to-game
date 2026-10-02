@@ -1,0 +1,27 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "candidate": 23,
+  "completion_evidence": "parent_terminal_completion_attestation",
+  "game_dir": "029-hermit-crab-homes",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "46af99d4b31e3a44dc3b96c8f920937ddc14b1bee61f89ac91d7e1070648d10a",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-26/shellbound",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-eee6-7770-af78-7871fc760023",
+  "zip_supplied": false
+}

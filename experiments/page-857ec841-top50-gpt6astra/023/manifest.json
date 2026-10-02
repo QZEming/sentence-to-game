@@ -1,0 +1,57 @@
+{
+  "binding_sha256": "3dee03ad1e8b53a3bd72ac11e0cc9df45c907587b5c3441c5d4fbc5c2bab493a",
+  "candidate": 23,
+  "files": [
+    {
+      "bytes": 869,
+      "path": "parent-handoff.json",
+      "sha256": "93b5217ecf7adcf688175e5114202ac8f1c6424f269707149899e9624c1e5e87"
+    },
+    {
+      "bytes": 97,
+      "path": "prompt.txt",
+      "sha256": "46af99d4b31e3a44dc3b96c8f920937ddc14b1bee61f89ac91d7e1070648d10a"
+    },
+    {
+      "bytes": 901,
+      "path": "provenance.json",
+      "sha256": "2d2283f99d92ea3b839d7406fb33840b04a7eff6f81886a4222e607c6ea7da29"
+    },
+    {
+      "bytes": 88,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "b6b6573f35a9af9c04433780f68d1f92dbf31d176eb01c0c85b7192c4b8e8b7f"
+    },
+    {
+      "bytes": 1056,
+      "path": "source-tree/README.md",
+      "sha256": "7a3a39178bd3853b5e825f82a39c99a29cd9e5a6a8e631f49d9732cb1dd6aa37"
+    },
+    {
+      "bytes": 23221,
+      "path": "source-tree/dist/game.js",
+      "sha256": "1c4b174335a1bb18da6afd417f91476ee9eccdb347e98897b77eec1e6ecac55d"
+    },
+    {
+      "bytes": 3975,
+      "path": "source-tree/dist/index.html",
+      "sha256": "2f9362bf96a0064d578208badc40aa465c1656d437d23265e2d134823e738a90"
+    },
+    {
+      "bytes": 8019,
+      "path": "source-tree/dist/style.css",
+      "sha256": "63b4fe09d2f20e0fcbb590befdca1b5b468f39b8baa95dc93ea6d4689f481c99"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "game_dir": "029-hermit-crab-homes",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-eee6-7770-af78-7871fc760023"
+}

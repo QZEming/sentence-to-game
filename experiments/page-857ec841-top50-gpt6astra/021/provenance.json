@@ -1,0 +1,27 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "candidate": 21,
+  "completion_evidence": "parent_terminal_completion_attestation",
+  "game_dir": "027-whale-deepsea-ruins",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "4cd2f79bdf579263e5dcdeb788cfb9c6c019e06484af63001110d26576628bed",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-24",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-33eb-747c-995c-9367efbad037",
+  "zip_supplied": false
+}

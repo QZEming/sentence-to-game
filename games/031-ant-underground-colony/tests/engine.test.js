@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {Colony,initialState,loadState} from '../dist/engine.js';
+const g=new Colony();assert.equal(g.idle,4);for(let i=0;i<4;i++)assert.ok(g.assign('forage',1).ok);assert.equal(g.idle,0);assert.equal(g.assign('forage',1).ok,false);assert.equal(g.assign('missing',1).ok,false);assert.equal(g.assign('forage',-10).ok,false);assert.equal(g.s.population,32);
+assert.ok(g.construct('nursery').ok);assert.equal(g.construct('storage').ok,false);for(let i=0;i<100;i++)g.tick(1);assert.equal(g.s.rooms.length,4);assert.equal(g.housing,60);assert.equal(g.s.build,null);assert.equal(g.s.built,1);assert.ok(g.claim('build').ok);assert.equal(g.claim('build').ok,false);
+const hatch=new Colony();assert.ok(hatch.hatch().ok);assert.equal(hatch.hatch().ok,false);for(let i=0;i<70;i++)hatch.tick(1);assert.equal(hatch.s.population,37);assert.equal(hatch.idle,9);assert.equal(hatch.hatch().ok,false);
+const exp=new Colony();assert.ok(exp.explore('meadow').ok);assert.equal(exp.idle,0);assert.equal(exp.explore('log').ok,false);for(let i=0;i<46;i++)exp.tick(1);assert.equal(exp.s.expedition,null);assert.equal(exp.s.explored,1);assert.equal(exp.idle,4);
+const r=new Colony();assert.equal(r.research('trail').ok,false);r.s.rooms.push({id:3,type:'lab',level:1});r.s.spores=100;assert.ok(r.research('trail').ok);assert.equal(r.research('trail').ok,false);assert.ok(r.rates.food>new Colony().rates.food);
+const p=new Colony();p.s.paused=true;p.tick(1);assert.equal(p.s.time,0);p.s.paused=false;p.s.speed=4;p.tick(1);assert.equal(p.s.time,4);
+assert.ok(loadState(JSON.stringify(g.s)));assert.equal(loadState('{bad'),null);const broken=initialState();broken.jobs.dig=500;assert.equal(loadState(JSON.stringify(broken)),null);const bounded=new Colony();bounded.s.food=0;bounded.s.water=0;bounded.s.jobs={forage:0,dig:0,nurse:0,guard:0};bounded.s.health=.01;bounded.tick(1);assert.equal(bounded.s.health,0);assert.equal(bounded.s.ended,true);assert.equal(bounded.hatch().ok,false);
+const event=new Colony();event.s.event={type:'beetle',deadline:10};event.s.jobs.guard=6;event.resolveEvent('brave');assert.equal(event.s.health,100);assert.equal(event.s.event,null);
+console.log('Passed: worker conservation, building completion, population caps, hatching, expeditions, research, pause/speed, save validation, starvation, events and one-time rewards.');

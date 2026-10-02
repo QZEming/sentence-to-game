@@ -1,0 +1,38 @@
+{
+  "candidate": 24,
+  "game_dir": "030-bee-garden-nectar",
+  "title": "蜜野 · Honey Meadow",
+  "url": "https://qzemi.cn/sentence-to-game/games/030-bee-garden-nectar/",
+  "thread_id": "01a0f89c-bf80-7271-9829-f8214b9b7029",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个蜜蜂在花园里采蜜的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "7384a5aac0a1222032bf8a816d40fa26cfbb4817c2ceec9c0951d684e69b7054",
+  "source_tree_sha256": "7bfbf338c5a2afb7d2e51a5fba83e4d07e5e7b4928e03f14fde5f486bf785939",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-BNILl3jP.css",
+      "sha256": "c85f1e93e0a22d4c79fe8da20c52271a401c041f2cd8c87ef2087a0885fdde20",
+      "bytes": 8477
+    },
+    {
+      "path": "assets/index-Vi7by08l.js",
+      "sha256": "c468e6d7ed573ad204cdefe5a940717fdeb83cc6f1f04b2211275ffca3dd3f91",
+      "bytes": 506454
+    },
+    {
+      "path": "index.html",
+      "sha256": "e6a66315a3201743cb2bc6f93862fac5fb9eae29155a66579c6d1d6a43735474",
+      "bytes": 3314
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "e6a66315a3201743cb2bc6f93862fac5fb9eae29155a66579c6d1d6a43735474",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "cf0d6a2169a760b7e51d6e5142798dd7c5039c304f7ead8110fe9253666d78d6",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

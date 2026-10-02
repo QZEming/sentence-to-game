@@ -1,0 +1,87 @@
+{
+  "binding_sha256": "b53ab347aecf70de022461411469256d2b66607fd67707e1d0a2dcd331f1c5b3",
+  "candidate": 21,
+  "files": [
+    {
+      "bytes": 858,
+      "path": "parent-handoff.json",
+      "sha256": "56303da230d6fb5ce945161ce041c6084c4a27b6d46336aa3109547fa42b1d83"
+    },
+    {
+      "bytes": 85,
+      "path": "prompt.txt",
+      "sha256": "4cd2f79bdf579263e5dcdeb788cfb9c6c019e06484af63001110d26576628bed"
+    },
+    {
+      "bytes": 892,
+      "path": "provenance.json",
+      "sha256": "2d7531ab8c28cff585d5447ade05d462abe534a9c80a003b2e576491ef5d7947"
+    },
+    {
+      "bytes": 37,
+      "path": "source-tree/.gitignore",
+      "sha256": "4321f9c9bc47a0459867db8bf2a0fd87eec74cc11472cb9bd815a12030e33ce5"
+    },
+    {
+      "bytes": 0,
+      "path": "source-tree/.npmrc",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2012,
+      "path": "source-tree/README.md",
+      "sha256": "463928c80aa61d04359e875cf3376cf55c2ed736264f8bf2d3637f8357710cd3"
+    },
+    {
+      "bytes": 12574,
+      "path": "source-tree/dist/assets/index-DBN_pqJz.css",
+      "sha256": "d01d6800b0d407082cfed5db3ccfd7c01f54a8fa9ba968fff80a00844d9a46ec"
+    },
+    {
+      "bytes": 782827,
+      "path": "source-tree/dist/assets/index-DPEM8HKQ.js",
+      "sha256": "70d600d1f1f684d1f6480bd89a0cdc5e45ec73ac3ed837eacbb446bf3a7730e5"
+    },
+    {
+      "bytes": 4842,
+      "path": "source-tree/dist/index.html",
+      "sha256": "ca067efa4ac972c78fcb4c0b5d018130b19c6bfdf2333baa3a8fc70643acf951"
+    },
+    {
+      "bytes": 4789,
+      "path": "source-tree/index.html",
+      "sha256": "9a4c587dc06244468d95fc110a2fc366ed42c74bdd93f8c8e9a35e39b69ee232"
+    },
+    {
+      "bytes": 25315,
+      "path": "source-tree/package-lock.json",
+      "sha256": "6770711d57c3af61d0ed4cd018def74df6c598ae3f97ae7f176bb929873c46ca"
+    },
+    {
+      "bytes": 316,
+      "path": "source-tree/package.json",
+      "sha256": "29da83f27bc94d72ae4b42a5807ff06d6ed122926300a8768614203c39f0d2c5"
+    },
+    {
+      "bytes": 23552,
+      "path": "source-tree/src/main.js",
+      "sha256": "9b2083d3e0b71ea2dcfba406bfb44099474f4696e1cf95875d9388669d8a46c8"
+    },
+    {
+      "bytes": 12556,
+      "path": "source-tree/src/style.css",
+      "sha256": "441619fc107d5037fb8e5539fbba6cfbfad51eabb53787e0eb098c5b48b33abe"
+    },
+    {
+      "bytes": 13867,
+      "path": "source-tree/src/world.js",
+      "sha256": "15b5283c00656431bbe90d6d3f427dadcf0c30b2ed5aadb1494f163d431c3bc1"
+    }
+  ],
+  "game_dir": "027-whale-deepsea-ruins",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-33eb-747c-995c-9367efbad037"
+}

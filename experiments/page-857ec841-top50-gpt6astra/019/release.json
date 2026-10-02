@@ -1,0 +1,43 @@
+{
+  "candidate": 19,
+  "game_dir": "025-squirrel-pinecone-beat",
+  "title": "松果节拍 · Pinebeat",
+  "url": "https://qzemi.cn/sentence-to-game/games/025-squirrel-pinecone-beat/",
+  "thread_id": "01a0f88f-7789-76a5-a982-67020f3f0013",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小松鼠踩着节拍采集松果的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "6804e1e088cf0bb9541a80ba2a9a6b7fac1464060a2259c865bb979601dc2c43",
+  "source_tree_sha256": "95601b9ce1c8d895de9ee321d59f210805c0c444b5bc0a4a873c74c13ed16aaf",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "game.js",
+      "sha256": "4aa06c4aed28840b2187832b3fe95a745fc3ac8b7ac0068e8106e25ff6db4147",
+      "bytes": 17843
+    },
+    {
+      "path": "index.html",
+      "sha256": "827c7a91aac9e56ead85640fe2aa0db94b1ff2d3bb82a1ebd89b1ee287583275",
+      "bytes": 3866
+    },
+    {
+      "path": "style.css",
+      "sha256": "45913dea35d38628cb5544303992aa433ee9f7deeed8140b523728c0834fffc1",
+      "bytes": 8491
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "827c7a91aac9e56ead85640fe2aa0db94b1ff2d3bb82a1ebd89b1ee287583275",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "4213df885e664743937b15e557627d73e6c0aa59afdc696fe167419983d50cd7",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

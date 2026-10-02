@@ -4,7 +4,7 @@
 
 记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
 
-当前进度：**22 / 100**。
+当前进度：**31 / 100**。
 
 游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
 
@@ -34,6 +34,15 @@
 | 020 | [Cosmic Pup · 星际小狗高尔夫](games/020-puppy-alien-minigolf/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/020-puppy-alien-minigolf/) | [源码](games/020-puppy-alien-minigolf/src/) |
 | 021 | [Snowball Social · 雪球保龄球](games/021-snowman-snowball-bowling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/) | [源码](games/021-snowman-snowball-bowling/src/) |
 | 022 | [熊与奇鱼](games/022-bear-strange-fishing/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/022-bear-strange-fishing/) | [源码](games/022-bear-strange-fishing/src/) |
+| 023 | [BOT//BEAT](games/023-robot-band-rhythm/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/) | [源码](games/023-robot-band-rhythm/src/) |
+| 024 | [云朵蹦蹦 · Cloud Bunny](games/024-rabbit-cloud-dance/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/) | [源码](games/024-rabbit-cloud-dance/src/) |
+| 025 | [松果节拍 · Pinebeat](games/025-squirrel-pinecone-beat/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/025-squirrel-pinecone-beat/) | [源码](games/025-squirrel-pinecone-beat/src/) |
+| 026 | [Dragonflight · 小龙飞行学院](games/026-dragon-canyon-flight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/) | [源码](games/026-dragon-canyon-flight/src/) |
+| 027 | [鲸落秘境 · WHALEFALL](games/027-whale-deepsea-ruins/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/027-whale-deepsea-ruins/) | [源码](games/027-whale-deepsea-ruins/src/) |
+| 028 | [幽蓝 · 水母远行](games/028-jellyfish-survival/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/028-jellyfish-survival/) | [源码](games/028-jellyfish-survival/src/) |
+| 029 | [寻壳记 · Shellbound](games/029-hermit-crab-homes/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/029-hermit-crab-homes/) | [源码](games/029-hermit-crab-homes/src/) |
+| 030 | [蜜野 · Honey Meadow](games/030-bee-garden-nectar/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/030-bee-garden-nectar/) | [源码](games/030-bee-garden-nectar/src/) |
+| 031 | [蚁境 FORMICA · 地下王国](games/031-ant-underground-colony/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/031-ant-underground-colony/) | [源码](games/031-ant-underground-colony/src/) |
 
 ## 目录结构
 

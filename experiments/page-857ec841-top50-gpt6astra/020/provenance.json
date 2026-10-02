@@ -1,0 +1,27 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "candidate": 20,
+  "completion_evidence": "parent_terminal_completion_attestation",
+  "game_dir": "026-dragon-canyon-flight",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "5c23d957ab162e5c482d6367545610cc097eff65353f4e59cb21c04f8d87bb92",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-23",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f88f-d430-7118-9797-1e771d4de025",
+  "zip_supplied": false
+}

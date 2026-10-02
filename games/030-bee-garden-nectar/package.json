@@ -1,0 +1,19 @@
+{
+  "name": "honeymeadow",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5198",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "vite": "^7.1.7"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  },
+  "description": "蜜野：温暖低多边形风格的 3D 蜜蜂花园采蜜游戏"
+}

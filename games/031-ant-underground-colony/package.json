@@ -1,0 +1,1 @@
+{"name":"formica-colony","version":"1.0.0","private":true,"type":"module","scripts":{"start":"python3 -m http.server 4173 --directory dist","test":"node tests/engine.test.js","check":"node --check dist/app.js && node --check dist/scene.js && node --check dist/engine.js"}}

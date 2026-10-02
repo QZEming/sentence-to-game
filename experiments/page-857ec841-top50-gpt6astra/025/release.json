@@ -1,0 +1,53 @@
+{
+  "candidate": 25,
+  "game_dir": "031-ant-underground-colony",
+  "title": "蚁境 FORMICA · 地下王国",
+  "url": "https://qzemi.cn/sentence-to-game/games/031-ant-underground-colony/",
+  "thread_id": "01a0f8c7-2b0c-7313-a781-7f9238eae02b",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个蚂蚁分配工蚁并扩建地下巢穴的 3D 群落资源管理游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "d6f00d1b8b01e44eb9621555a3109c92e1469551cb910b968225c3f30ad6a0a9",
+  "source_tree_sha256": "acac9017b01bd0701120d02648fdd0b99563935b3d455795346823f4d42540f1",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "app.js",
+      "sha256": "3eaf166b2b0f61bd9f78a9f4eb05d1e3edd9838aff03d227430a74350be74a86",
+      "bytes": 21046
+    },
+    {
+      "path": "engine.js",
+      "sha256": "9031cc3a805c183c56978d835b49d142aec66701b1041e3f707444f3854806b2",
+      "bytes": 12264
+    },
+    {
+      "path": "index.html",
+      "sha256": "ecfe44ec174e3bad2f629dd2f46284902e42c0d6c6a2660b52c90079572678a9",
+      "bytes": 4518
+    },
+    {
+      "path": "scene.js",
+      "sha256": "acf724f1caf15e533990f676609c6c74c03b1be027a2f85c57f8777b4ee13b7b",
+      "bytes": 14398
+    },
+    {
+      "path": "style.css",
+      "sha256": "7f217568d8c8e3c4f857b3ba07f9376bfb8d77d690b6432c2f2eb9ee8565cef5",
+      "bytes": 17578
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "ecfe44ec174e3bad2f629dd2f46284902e42c0d6c6a2660b52c90079572678a9",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "35768e8055c91a19afcba3d6dc3ccb7dbcb405bf036c3784c72f5c14a3c6c62c",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

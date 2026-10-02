@@ -1,0 +1,28 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "cache_file_exclusions": [
+    ".DS_Store",
+    ".eslintcache"
+  ],
+  "candidate": 18,
+  "game_dir": "024-rabbit-cloud-dance",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "295e2a06b4acb1c45b7e33f5cee976a80cb1ffba128351e79cb1a7b7a4bfd89c",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-21/cloud-bunny",
+  "thread_id": "01a0f88e-3c3e-7164-8d88-0e8d8d1d2017",
+  "zip_supplied": false
+}

@@ -1,0 +1,92 @@
+{
+  "binding_sha256": "a1c121326f3773a96f65056ddc361bf747bfce5c4a66ce1a559c4e9d120fdc22",
+  "candidate": 20,
+  "files": [
+    {
+      "bytes": 858,
+      "path": "parent-handoff.json",
+      "sha256": "61b0fcbd4ac9cd45db998ff52790229efe304f4ff5e421ce10f88742dbeb1f6d"
+    },
+    {
+      "bytes": 91,
+      "path": "prompt.txt",
+      "sha256": "5c23d957ab162e5c482d6367545610cc097eff65353f4e59cb21c04f8d87bb92"
+    },
+    {
+      "bytes": 893,
+      "path": "provenance.json",
+      "sha256": "a2d54d8b3adf23036c1ab5b1c5b858a505c22aa82b55e57bf1f692487dc01e42"
+    },
+    {
+      "bytes": 37,
+      "path": "source-tree/.gitignore",
+      "sha256": "4321f9c9bc47a0459867db8bf2a0fd87eec74cc11472cb9bd815a12030e33ce5"
+    },
+    {
+      "bytes": 353,
+      "path": "source-tree/.playwright-cli/console-2026-10-01T17-57-04-783Z.log",
+      "sha256": "a501f2425a1e8aa9224f4c5d17df73c6519a7dc8cc3abad9028b1ac9362b5ce1"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-54-58-984Z.yml",
+      "sha256": "873501cb3c09470f80e063b1daa8069c80899acca15b98e4f71375bbaef49dd3"
+    },
+    {
+      "bytes": 67536,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-56-00-394Z.yml",
+      "sha256": "873501cb3c09470f80e063b1daa8069c80899acca15b98e4f71375bbaef49dd3"
+    },
+    {
+      "bytes": 3702,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T17-57-17-739Z.yml",
+      "sha256": "187aed3e22c495d74c8294151cc54825d4ce7c9bddaa936695351327735e2003"
+    },
+    {
+      "bytes": 1411,
+      "path": "source-tree/README.md",
+      "sha256": "87413641b1b622ee9aaf86e27f6a5db23c08731612f1f01cfcc96c5219d5e80b"
+    },
+    {
+      "bytes": 9489,
+      "path": "source-tree/dist/assets/index-QwNNVE8L.css",
+      "sha256": "60fe8209f41bc137612c97e2193dc70abf5091d4e04b0851adba1d5279fb34d4"
+    },
+    {
+      "bytes": 497783,
+      "path": "source-tree/dist/assets/index-i-oMkrZ3.js",
+      "sha256": "e62d208dc353ce64ff6388c22dd64661875b8071fde9238d16f36e9e0870d5d4"
+    },
+    {
+      "bytes": 4219,
+      "path": "source-tree/dist/index.html",
+      "sha256": "1d35e5c0aa0625f33c1fbf9199f2403562c3bf5674c24f58d42f3d00da2780d5"
+    },
+    {
+      "bytes": 4119,
+      "path": "source-tree/index.html",
+      "sha256": "d5bf5e8968770114d94791c2054ee3d433b4a68f73610036b92865ebf207b5b9"
+    },
+    {
+      "bytes": 241,
+      "path": "source-tree/package.json",
+      "sha256": "d191d163b82e28384150605142d378847d18c6847c5d954c3350412c8973a61d"
+    },
+    {
+      "bytes": 19650,
+      "path": "source-tree/src/main.js",
+      "sha256": "4d84918ef489e4ab92b2c61dee473849ceb77c3845ace26ffe7739b76ef7bae7"
+    },
+    {
+      "bytes": 9298,
+      "path": "source-tree/src/style.css",
+      "sha256": "c20291c4607534370daaf2f1a6e91696b8ff7565ddd7483d3ec426e307b0f947"
+    }
+  ],
+  "game_dir": "026-dragon-canyon-flight",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f88f-d430-7118-9797-1e771d4de025"
+}

@@ -1,0 +1,27 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "candidate": 19,
+  "completion_evidence": "parent_terminal_completion_attestation",
+  "game_dir": "025-squirrel-pinecone-beat",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "6804e1e088cf0bb9541a80ba2a9a6b7fac1464060a2259c865bb979601dc2c43",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-22/pinebeat",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f88f-7789-76a5-a982-67020f3f0013",
+  "zip_supplied": false
+}

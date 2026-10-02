@@ -1,0 +1,102 @@
+{
+  "binding_sha256": "9b38a8506e31a3fab5118e21cdd9efdb01d430538206e47bb337d3f1efa17f97",
+  "candidate": 24,
+  "files": [
+    {
+      "bytes": 858,
+      "path": "parent-handoff.json",
+      "sha256": "cf0d6a2169a760b7e51d6e5142798dd7c5039c304f7ead8110fe9253666d78d6"
+    },
+    {
+      "bytes": 85,
+      "path": "prompt.txt",
+      "sha256": "7384a5aac0a1222032bf8a816d40fa26cfbb4817c2ceec9c0951d684e69b7054"
+    },
+    {
+      "bytes": 890,
+      "path": "provenance.json",
+      "sha256": "829b5a334d51d7c0ce00343a6aeb3f2a61f0fd05561da7dafb4c25fe8e0a045e"
+    },
+    {
+      "bytes": 30,
+      "path": "source-tree/.gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae"
+    },
+    {
+      "bytes": 1663,
+      "path": "source-tree/README.md",
+      "sha256": "a5c7f275c7ab7f85284ae9cd1b331c27e768a06b86caebc3e5a96fc53cb1c39c"
+    },
+    {
+      "bytes": 8477,
+      "path": "source-tree/dist/assets/index-BNILl3jP.css",
+      "sha256": "c85f1e93e0a22d4c79fe8da20c52271a401c041f2cd8c87ef2087a0885fdde20"
+    },
+    {
+      "bytes": 18294,
+      "path": "source-tree/dist/assets/index-Cz6_hmY6.js",
+      "sha256": "91e2ad92bb7a1d19ae1f2c6c632ed459ebae12ea80ecbb4f69c1560db8f7de68"
+    },
+    {
+      "bytes": 487693,
+      "path": "source-tree/dist/assets/three-Cv2WH-of.js",
+      "sha256": "1293366f995dde4a35fd5539217960698e5c70efed7b4fc8cd1ccd4928d91aed"
+    },
+    {
+      "bytes": 3386,
+      "path": "source-tree/dist/index.html",
+      "sha256": "29925982a8dd4052590ffb238ad1ead781429c0fa35369a3f89c0e77a56f1ce5"
+    },
+    {
+      "bytes": 3212,
+      "path": "source-tree/index.html",
+      "sha256": "c76a82e551b57e2d6de7ec8dbb61cc44e2bfa2a092b1cf2af19a50f667c2df35"
+    },
+    {
+      "bytes": 609584,
+      "path": "source-tree/output/playwright/desktop.png",
+      "sha256": "8d011e3eedab5a4234dd0fbf80717a1d92aebd159d7c0762eda712aab89c5c22"
+    },
+    {
+      "bytes": 189076,
+      "path": "source-tree/output/playwright/mobile.png",
+      "sha256": "edbb45e61785e15179162a440cc6adfc734dc651b241747fdf5d4a6a15f710ac"
+    },
+    {
+      "bytes": 34867,
+      "path": "source-tree/package-lock.json",
+      "sha256": "995feed68d0fa27f4f247cf5451fbc55f492930504d4f069a40f6fd05dbcb4a4"
+    },
+    {
+      "bytes": 460,
+      "path": "source-tree/package.json",
+      "sha256": "6749086ddb1d9c38335796502ba43f2424fe82ab718f14c73be5e3533beeaa10"
+    },
+    {
+      "bytes": 2975,
+      "path": "source-tree/scripts/smoke.mjs",
+      "sha256": "e2364e610b9e12630a3949c12c5aba84a7b5ba06c101bb236d1567d289a200f2"
+    },
+    {
+      "bytes": 21540,
+      "path": "source-tree/src/main.js",
+      "sha256": "8f4c84c8db8d33a0e35d33b46fee38b471b7b80eda9675108b0436947b338925"
+    },
+    {
+      "bytes": 8413,
+      "path": "source-tree/src/style.css",
+      "sha256": "a55bea9c33541f4bccab104211d5d57416d031f4c4ccacdf9c6569212da4f7cd"
+    },
+    {
+      "bytes": 185,
+      "path": "source-tree/vite.config.js",
+      "sha256": "b8bdbf8bd98c39c9e8791100629922bb2eb4a85818d028426a87527503c443dc"
+    }
+  ],
+  "game_dir": "030-bee-garden-nectar",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f89c-bf80-7271-9829-f8214b9b7029"
+}

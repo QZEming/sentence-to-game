@@ -1,0 +1,62 @@
+{
+  "binding_sha256": "6911dad5b48c358b8b761368d3a0a70afe085e0f41e00084c11d7f6f265198e4",
+  "candidate": 19,
+  "files": [
+    {
+      "bytes": 867,
+      "path": "parent-handoff.json",
+      "sha256": "4213df885e664743937b15e557627d73e6c0aa59afdc696fe167419983d50cd7"
+    },
+    {
+      "bytes": 94,
+      "path": "prompt.txt",
+      "sha256": "6804e1e088cf0bb9541a80ba2a9a6b7fac1464060a2259c865bb979601dc2c43"
+    },
+    {
+      "bytes": 904,
+      "path": "provenance.json",
+      "sha256": "b64b4a362627b4788e865022f9293ac03fa0e125bad8671c2864289ad933d938"
+    },
+    {
+      "bytes": 105,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "bbe782db523eaeafee9607924eb390ecedd90c4caea5185984deebd643a9c428"
+    },
+    {
+      "bytes": 727,
+      "path": "source-tree/README.md",
+      "sha256": "d3eed99d6bfbb8131139aa8228eeee9320403f0b6a310524e50e874e057163c3"
+    },
+    {
+      "bytes": 17843,
+      "path": "source-tree/dist/game.js",
+      "sha256": "4aa06c4aed28840b2187832b3fe95a745fc3ac8b7ac0068e8106e25ff6db4147"
+    },
+    {
+      "bytes": 3866,
+      "path": "source-tree/dist/index.html",
+      "sha256": "827c7a91aac9e56ead85640fe2aa0db94b1ff2d3bb82a1ebd89b1ee287583275"
+    },
+    {
+      "bytes": 8491,
+      "path": "source-tree/dist/style.css",
+      "sha256": "45913dea35d38628cb5544303992aa433ee9f7deeed8140b523728c0834fffc1"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 279238,
+      "path": "source.tar.gz",
+      "sha256": "c23ecbdac0833d757fd337f3433a52676d3cf6d47da877d04382e9e3e2cab7f1"
+    }
+  ],
+  "game_dir": "025-squirrel-pinecone-beat",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f88f-7789-76a5-a982-67020f3f0013"
+}

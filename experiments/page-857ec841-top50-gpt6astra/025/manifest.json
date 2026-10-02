@@ -1,0 +1,87 @@
+{
+  "binding_sha256": "13522c02f8ccfc86e3dd2b4378db40b472c471f0b5f688d1b5e7b85317ed3821",
+  "candidate": 25,
+  "files": [
+    {
+      "bytes": 1139,
+      "path": "parent-handoff.json",
+      "sha256": "35768e8055c91a19afcba3d6dc3ccb7dbcb405bf036c3784c72f5c14a3c6c62c"
+    },
+    {
+      "bytes": 118,
+      "path": "prompt.txt",
+      "sha256": "d6f00d1b8b01e44eb9621555a3109c92e1469551cb910b968225c3f30ad6a0a9"
+    },
+    {
+      "bytes": 906,
+      "path": "provenance.json",
+      "sha256": "5ebc12a1669ec8edd932193fc3195d178f4d2b4d4aa382ee694f71564b4b135c"
+    },
+    {
+      "bytes": 74,
+      "path": "source-tree/.gitignore",
+      "sha256": "b4f07cc717df89e55dcf4bc57d243bc88e361b392d93a99a14922d2312e6385f"
+    },
+    {
+      "bytes": 106,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "4d246af453ddbfeb37ce81af5c4d1d07dc93e2aaba870a35d2027ff559ad86c6"
+    },
+    {
+      "bytes": 8660,
+      "path": "source-tree/.playwright-cli/page-2026-10-01T19-00-19-511Z.yml",
+      "sha256": "b5d1f8e24aecd0d1e09fa1a4cbf35cd4d17e848df01d15d41c9a2915f766e9a1"
+    },
+    {
+      "bytes": 1617,
+      "path": "source-tree/README.md",
+      "sha256": "c63188e8f2d9323907cbc3ac05ee935924f3d9f173e6d1e7bb4a228e85de3a91"
+    },
+    {
+      "bytes": 21046,
+      "path": "source-tree/dist/app.js",
+      "sha256": "3eaf166b2b0f61bd9f78a9f4eb05d1e3edd9838aff03d227430a74350be74a86"
+    },
+    {
+      "bytes": 12264,
+      "path": "source-tree/dist/engine.js",
+      "sha256": "9031cc3a805c183c56978d835b49d142aec66701b1041e3f707444f3854806b2"
+    },
+    {
+      "bytes": 4518,
+      "path": "source-tree/dist/index.html",
+      "sha256": "ecfe44ec174e3bad2f629dd2f46284902e42c0d6c6a2660b52c90079572678a9"
+    },
+    {
+      "bytes": 14398,
+      "path": "source-tree/dist/scene.js",
+      "sha256": "acf724f1caf15e533990f676609c6c74c03b1be027a2f85c57f8777b4ee13b7b"
+    },
+    {
+      "bytes": 17578,
+      "path": "source-tree/dist/style.css",
+      "sha256": "7f217568d8c8e3c4f857b3ba07f9376bfb8d77d690b6432c2f2eb9ee8565cef5"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 273,
+      "path": "source-tree/package.json",
+      "sha256": "fddf7950c0bfab908fba4ff791c7538b038148f89e34eccc9882bfab183cfc65"
+    },
+    {
+      "bytes": 2365,
+      "path": "source-tree/tests/engine.test.js",
+      "sha256": "c14b00a71d3974fbdf0323dec385f5de020032d55096ab112b4e4c4634ff3fa6"
+    }
+  ],
+  "game_dir": "031-ant-underground-colony",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f8c7-2b0c-7313-a781-7f9238eae02b"
+}

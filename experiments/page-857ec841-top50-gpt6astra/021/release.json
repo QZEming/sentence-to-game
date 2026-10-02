@@ -1,0 +1,38 @@
+{
+  "candidate": 21,
+  "game_dir": "027-whale-deepsea-ruins",
+  "title": "鲸落秘境 · WHALEFALL",
+  "url": "https://qzemi.cn/sentence-to-game/games/027-whale-deepsea-ruins/",
+  "thread_id": "01a0f890-33eb-747c-995c-9367efbad037",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个鲸鱼探索深海遗迹的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "4cd2f79bdf579263e5dcdeb788cfb9c6c019e06484af63001110d26576628bed",
+  "source_tree_sha256": "daec7f04d4b180dd808c9be8e92bd1f7a2aab2119b0083d4b1cb84d6f4bca6f9",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-DBN_pqJz.css",
+      "sha256": "d01d6800b0d407082cfed5db3ccfd7c01f54a8fa9ba968fff80a00844d9a46ec",
+      "bytes": 12574
+    },
+    {
+      "path": "assets/index-DPEM8HKQ.js",
+      "sha256": "70d600d1f1f684d1f6480bd89a0cdc5e45ec73ac3ed837eacbb446bf3a7730e5",
+      "bytes": 782827
+    },
+    {
+      "path": "index.html",
+      "sha256": "4eac05935d8cd024db8187fcebc02cc9904d7895005470ebb95ce5ab951f8506",
+      "bytes": 4844
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "4eac05935d8cd024db8187fcebc02cc9904d7895005470ebb95ce5ab951f8506",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "56303da230d6fb5ce945161ce041c6084c4a27b6d46336aa3109547fa42b1d83",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

@@ -1,0 +1,38 @@
+{
+  "candidate": 20,
+  "game_dir": "026-dragon-canyon-flight",
+  "title": "Dragonflight · 小龙飞行学院",
+  "url": "https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/",
+  "thread_id": "01a0f88f-d430-7118-9797-1e771d4de025",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小龙在峡谷中练习飞行的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "5c23d957ab162e5c482d6367545610cc097eff65353f4e59cb21c04f8d87bb92",
+  "source_tree_sha256": "eee2be4d667294784d0cfd8c7471294e5c51350d47721056097744e8b34d99a8",
+  "task_record_sha256": null,
+  "raw_zip_sha256": null,
+  "deployment_build": "relative_base_derivative",
+  "published_files": [
+    {
+      "path": "assets/index-B8348Xlg.js",
+      "sha256": "a6c1b33d28f43e4a2f6ef32ba9b977e21a5acb332e6c7a76848060b58a5b8ee8",
+      "bytes": 498044
+    },
+    {
+      "path": "assets/index-D-64FOab.css",
+      "sha256": "a8761a284c63b54a5a3929986b101d267fbfa107d14c2627144bd743378e75b9",
+      "bytes": 9345
+    },
+    {
+      "path": "index.html",
+      "sha256": "332751d49897b24e5ae5c28bbb99ac1ea19bfef8e236de72b407c0fa3a01e2fa",
+      "bytes": 4221
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "332751d49897b24e5ae5c28bbb99ac1ea19bfef8e236de72b407c0fa3a01e2fa",
+  "task_record_status": "pending_supported_parent_export",
+  "parent_handoff_sha256": "61b0fcbd4ac9cd45db998ff52790229efe304f4ff5e421ce10f88742dbeb1f6d",
+  "task_input_evidence": "parent_attestation; transcript not independently checked"
+}

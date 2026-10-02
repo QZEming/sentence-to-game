@@ -1,0 +1,27 @@
+{
+  "cache_exclusions": [
+    ".cache",
+    ".git",
+    ".mypy_cache",
+    ".parcel-cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".vite",
+    "__pycache__",
+    "node_modules"
+  ],
+  "candidate": 22,
+  "completion_evidence": "parent_terminal_completion_attestation",
+  "game_dir": "028-jellyfish-survival",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "prompt_sha256": "c46818ce950a570df02ce379b73303552a3eec125bc63b391a4ed6d33c3f2d36",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-25/abyss",
+  "task_input_evidence": "parent_attestation; transcript not independently checked",
+  "task_record_status": "pending_supported_parent_export",
+  "thread_id": "01a0f890-96e0-71f5-9a82-dbb672e43016",
+  "zip_supplied": false
+}

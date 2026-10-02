@@ -1,0 +1,71 @@
+{
+  "binding_sha256": "478b184ebbfd423bee352e403feed3a684d20d4b8331bb3ac5423d8030d9eaa6",
+  "candidate": 18,
+  "files": [
+    {
+      "bytes": 97,
+      "path": "prompt.txt",
+      "sha256": "295e2a06b4acb1c45b7e33f5cee976a80cb1ffba128351e79cb1a7b7a4bfd89c"
+    },
+    {
+      "bytes": 762,
+      "path": "provenance.json",
+      "sha256": "2256ed2e7ccbc21dfab1c621183bf8f9a72b7b2f43d2d89b213974dfd87df223"
+    },
+    {
+      "bytes": 105,
+      "path": "source-tree/.openai/hosting.json",
+      "sha256": "37723c173a877d0035bddc4290fea0cd34bf60ae983e0ce7b8ac5914de7d235c"
+    },
+    {
+      "bytes": 1035,
+      "path": "source-tree/README.md",
+      "sha256": "8e6dabae5088e6f5d131e2da9936f35a159e501bf03c36bc6bf9b261d11c3ae5"
+    },
+    {
+      "bytes": 2960,
+      "path": "source-tree/check-game.mjs",
+      "sha256": "eaa84c64fc7b3bb8612f724861a0c2c09ab551d93aedb25a85b60e68b19aba1c"
+    },
+    {
+      "bytes": 1081,
+      "path": "source-tree/dist/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 17696,
+      "path": "source-tree/dist/game.js",
+      "sha256": "ed6f2a90fc8da73a9941258bb8132ea8fb66b715930e5d20a548b195fc0a4893"
+    },
+    {
+      "bytes": 3684,
+      "path": "source-tree/dist/index.html",
+      "sha256": "08b5a9824fcd3a13c79517b4e24d99d958946b596dd18e1a8d70ea1863657e9c"
+    },
+    {
+      "bytes": 7513,
+      "path": "source-tree/dist/style.css",
+      "sha256": "dad13ca515e1c729cd22467a2870fa279a154df6e0f2ce31195a1f56c56c3199"
+    },
+    {
+      "bytes": 1314681,
+      "path": "source-tree/dist/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 168,
+      "path": "source-tree/package.json",
+      "sha256": "0b85c9d40ee19871182b4deaa207ae58da9da7b9c8b243ce53297a4b8300dcbf"
+    },
+    {
+      "bytes": 85178,
+      "path": "task-record.json",
+      "sha256": "2c9a6f52359cdc67954f61d6bf474063ef6774a925ee89cb7f1d5338e3c2d581"
+    }
+  ],
+  "game_dir": "024-rabbit-cloud-dance",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0f88e-3c3e-7164-8d88-0e8d8d1d2017"
+}

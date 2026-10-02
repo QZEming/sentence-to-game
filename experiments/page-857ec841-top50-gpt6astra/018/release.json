@@ -1,0 +1,45 @@
+{
+  "candidate": 18,
+  "game_dir": "024-rabbit-cloud-dance",
+  "title": "云朵蹦蹦 · Cloud Bunny",
+  "url": "https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/",
+  "thread_id": "01a0f88e-3c3e-7164-8d88-0e8d8d1d2017",
+  "model": "gpt-6-astra",
+  "model_evidence": "parent_launch_attestation",
+  "mode": "codex_single_requirement_task",
+  "prompt": "实现一个小兔跟着音乐在云朵间跳舞的 3D 游戏，尽你所能丰富游戏玩法。",
+  "prompt_sha256": "295e2a06b4acb1c45b7e33f5cee976a80cb1ffba128351e79cb1a7b7a4bfd89c",
+  "source_tree_sha256": "3088159df4b3e32e3eff82ee17f83910c0b61b53cbaff5e1d057406ab1818389",
+  "task_record_sha256": "2c9a6f52359cdc67954f61d6bf474063ef6774a925ee89cb7f1d5338e3c2d581",
+  "raw_zip_sha256": null,
+  "deployment_build": "original_artifact",
+  "published_files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "bytes": 1081
+    },
+    {
+      "path": "game.js",
+      "sha256": "ed6f2a90fc8da73a9941258bb8132ea8fb66b715930e5d20a548b195fc0a4893",
+      "bytes": 17696
+    },
+    {
+      "path": "index.html",
+      "sha256": "08b5a9824fcd3a13c79517b4e24d99d958946b596dd18e1a8d70ea1863657e9c",
+      "bytes": 3684
+    },
+    {
+      "path": "style.css",
+      "sha256": "dad13ca515e1c729cd22467a2870fa279a154df6e0f2ce31195a1f56c56c3199",
+      "bytes": 7513
+    },
+    {
+      "path": "three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "bytes": 1314681
+    }
+  ],
+  "browser_verification": "pending",
+  "index_sha256": "08b5a9824fcd3a13c79517b4e24d99d958946b596dd18e1a8d70ea1863657e9c"
+}

@@ -1,0 +1,17 @@
+{
+  "candidate": 17,
+  "failed_read_response_origin": "parent_supplied_inbox/017/task-record.json; exact_bytes_preserved",
+  "game_dir": "023-robot-band-rhythm",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "model_authenticated_by_read_thread": false,
+  "model_evidence": "parent_launch_attestation",
+  "no_build_or_dependency_install": true,
+  "prompt_sha256": "4e9b409c4162988fd7bea2211815f378197390f8573325c5973cc1b9ebaa73b2",
+  "reason_for_separate_archive": "original archive/017 records Transport closed read failure and remains immutable",
+  "record_origin": "exact_original_json_text_from_prior_successful_read_thread; cached_by_child",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-18",
+  "thread_id": "01a0f871-b94e-7432-b3c6-d412c85b8038",
+  "turn_id": "01a0f871-c7a5-72a8-a56b-8849f1195437"
+}
