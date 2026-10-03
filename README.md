@@ -2,7 +2,9 @@
 
 **一句话，100 个游戏。**
 
-记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
+记录用一句话做出 100 个游戏的过程。每个游戏由 **GPT6 Astra** 在独立的一次性任务中完成。
+
+仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
 当前进度：**53 / 100**。
 
@@ -68,7 +70,7 @@
 
 ## 生成记录
 
-新增游戏来自彼此独立的 Codex 单需求任务，任务内允许使用工具开发。已完成的游戏分批发布，并保留原始编号，不因尚未完成的候选重排。
+游戏由 GPT6 Astra 在彼此独立的一次性任务中完成，任务内允许使用工具开发。已完成的游戏分批发布，并保留原始编号，不因尚未完成的候选重排。
 
 - 完整提示词保存在各游戏的 `prompt.txt` 中。
 - 原始源码、构建结果和任务记录另存于不可变的本机档案。
@@ -121,27 +123,6 @@ python3 scripts/build-site.py
 ```
 
 脚本会生成游戏列表，并将各游戏的网页文件汇总到 `docs/`。
-
-<details>
-<summary>前六作的完整构建命令</summary>
-
-```bash
-npm --prefix games/001-pelican-pedal ci
-npm --prefix games/001-pelican-pedal run build
-npm --prefix games/002-shuttle-arena ci
-npm --prefix games/002-shuttle-arena run build
-npm --prefix games/003-wildreach ci
-npm --prefix games/003-wildreach run build
-npm --prefix games/004-riftfront ci
-npm --prefix games/004-riftfront run build
-npm --prefix games/005-apex-horizon ci
-npm --prefix games/005-apex-horizon run build
-npm --prefix games/006-sugarlight-guardians ci
-npm --prefix games/006-sugarlight-guardians run build
-python3 scripts/build-site.py
-```
-
-</details>
 
 ### 提交与验证
 
