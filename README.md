@@ -2,11 +2,11 @@
 
 **一句话，100 个游戏。**
 
-记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，让想法可以被试玩、阅读和继续改造。
+记录用一句话做出 100 个游戏的过程。每个游戏都保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
 当前进度：**53 / 100**。
 
-游戏合集：[qzemi.cn/sentence-to-game](https://qzemi.cn/sentence-to-game/)。
+**[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
 ## 游戏列表
 
@@ -66,6 +66,14 @@
 | 053 | [MYCELIUM · 林间共生](games/053-mushroom-forest-territory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/053-mushroom-forest-territory/) | [源码](games/053-mushroom-forest-territory/src/) |
 | 054 | [爪爪奇旅 · TOYBOUND](games/054-cat-card-toy-adventure/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/054-cat-card-toy-adventure/) | [源码](games/054-cat-card-toy-adventure/src/) |
 
+## 生成记录
+
+新增游戏来自彼此独立的 Codex 单需求任务，任务内允许使用工具开发。已完成的游戏分批发布，并保留原始编号，不因尚未完成的候选重排。
+
+- 完整提示词保存在各游戏的 `prompt.txt` 中。
+- 原始源码、构建结果和任务记录另存于不可变的本机档案。
+- 发布文件的哈希记录见[实验档案](experiments/page-857ec841-top50-gpt6astra/)。
+
 ## 目录结构
 
 每个游戏放在 `games/` 下，按三位编号和英文短名命名，例如 `001-game-name`：
@@ -84,7 +92,9 @@ scripts/build-site.py  # 生成游戏合集和发布文件
 docs/                  # GitHub Pages 网站
 ```
 
-## 添加一个游戏
+## 添加与发布
+
+### 创建游戏目录
 
 复制模板并使用下一个编号：
 
@@ -94,29 +104,26 @@ cp -R templates/game games/001-game-name
 
 在 `prompt.txt` 中保存生成游戏时的一句话，将源码放进 `src/`，补充游戏的 `README.md`，再把游戏和体验地址添加到上方列表。
 
-## 游戏地址与发布
+模板：[游戏说明](templates/game/README.md) · [提示词](templates/game/prompt.txt)
 
-每个游戏使用固定地址：
+### 准备网页文件
 
-```text
-https://qzemi.cn/sentence-to-game/games/001-game-name/
-```
+静态网页游戏从 `src/index.html` 启动，图片、脚本等资源使用相对路径。
 
-静态网页游戏从 `src/index.html` 启动，图片、脚本等资源使用相对路径。需要编译的项目保留 `src/` 源码，并先将网页产物生成到该游戏的 `dist/`；存在 `dist/index.html` 时优先发布 `dist/`。
+需要编译的项目保留 `src/` 源码，先将网页产物生成到该游戏的 `dist/`。存在 `dist/index.html` 时，优先发布 `dist/`。
 
-新增或更新游戏后，在仓库根目录生成网站：
+### 构建游戏合集
+
+完成游戏构建后，在仓库根目录生成网站：
 
 ```bash
 python3 scripts/build-site.py
 ```
 
-将游戏源码、说明和生成的 `docs/` 一起提交到 `main`，GitHub Pages 会自动发布网站。构建会生成游戏列表，并将各游戏的网页文件放到对应地址。
+脚本会生成游戏列表，并将各游戏的网页文件汇总到 `docs/`。
 
-网站沿用个人域名 `qzemi.cn`，合集位于 `/sentence-to-game/`。
-
-本项目新增或更新游戏时，默认发布到上述域名：保留原始提示词与源码，构建游戏与合集，验证游戏子路径，再将对应的 `docs/` 产物随源码提交到 `main`。发布后应检查线上页面；无法访问线上环境时，明确区分已提交的发布产物和尚未确认的线上状态。
-
-前六作的完整构建命令：
+<details>
+<summary>前六作的完整构建命令</summary>
 
 ```bash
 npm --prefix games/001-pelican-pedal ci
@@ -134,8 +141,16 @@ npm --prefix games/006-sugarlight-guardians run build
 python3 scripts/build-site.py
 ```
 
-模板：[游戏说明](templates/game/README.md) · [提示词](templates/game/prompt.txt)
+</details>
 
-## 最新批次
+### 提交与验证
 
-新增游戏来自彼此独立的 Codex 单需求任务，任务内允许工具开发。每条完整原句见各游戏 prompt.txt；原始源码、构建和任务记录另有不可变本机档案，发布文件哈希见 experiments/page-857ec841-top50-gpt6astra/。已完成的游戏分批发布，编号保留，不因尚未完成的候选重排。
+验证各游戏子路径后，将源码、说明和生成的 `docs/` 一起提交到 `main`，由 GitHub Pages 自动发布。
+
+游戏合集位于 `https://qzemi.cn/sentence-to-game/`，每个游戏使用固定地址：
+
+```text
+https://qzemi.cn/sentence-to-game/games/001-game-name/
+```
+
+发布后检查线上页面。若暂时无法访问线上环境，分别说明发布文件的提交状态和线上状态是否已确认。
