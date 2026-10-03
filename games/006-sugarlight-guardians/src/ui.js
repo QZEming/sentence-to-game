@@ -1,1041 +1,201 @@
-import {
-  LEVELS,
-  TOWERS,
-  HEROES,
-  SPELLS,
-  DIFFICULTIES,
-  ENDING,
-} from "./data.js";
-import { getTowerStats } from "./game.js";
+import { TOWERS, SKILLS, CHAPTERS } from './content.js';
 
-const TOWER_ORDER = ["carrot", "berry", "frost", "spark", "honey", "bloom"];
-const TOWER_ICONS = {
-  carrot: "🥕",
-  berry: "🍓",
-  frost: "🔔",
-  spark: "✦",
-  honey: "🍯",
-  bloom: "🌸",
+const icons = {
+  heart: '<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',
+  star: '<path d="m12 2 2.8 6.5L22 11l-7.2 2.5L12 21l-2.8-7.5L2 11l7.2-2.5L12 2Z"/>',
+  wave: '<path d="M3 9c3-6 6 6 9 0s6 6 9 0M3 16c3-6 6 6 9 0s6 6 9 0"/>',
+  play: '<path d="m9 5 11 7-11 7V5Z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  fast: '<path d="m4 6 7 6-7 6V6Zm10 0 7 6-7 6V6Z"/>',
+  sound: '<path d="M4 9h4l5-4v14l-5-4H4V9Zm12-1c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/>',
+  mute: '<path d="M4 9h4l5-4v14l-5-4H4V9Zm12 0 5 6m0-6-5 6"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.5 8.5a2.5 2.5 0 0 1 5 .5c0 2-2.5 2-2.5 4m0 3h.01"/>',
+  close: '<path d="m6 6 12 12M18 6 6 18"/>',
+  leaf: '<path d="M20 3C8 1 1 8 5 16c8 4 15-1 15-13ZM4 20 15 9"/>',
+  shield: '<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/>',
+  arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
+  snow: '<path d="M12 2v20M3.5 7l17 10m-17 0 17-10M9 4l3 3 3-3M9 20l3-3 3 3M3 10l4-1-1-4m12 14-1-4 4-1M3 14l4 1-1 4M18 5l-1 4 4 1"/>',
+  moon: '<path d="M20.5 13.5A9 9 0 0 1 10.5 3a9 9 0 1 0 10 10.5Z"/>',
 };
-const HERO_ICONS = { momo: "🐰", pip: "🦊", bao: "🐼" };
-const HERO_ROLES = {
-  momo: "单体 · 对空",
-  pip: "范围 · 对空",
-  bao: "近战 · 减速",
+const svg = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] || icons.star}</svg>`;
+const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+const avatar = (type, extra = '') => {
+  const common = '<ellipse cx="39" cy="50" rx="2.4" ry="3.2" fill="#344b42"/><ellipse cx="58" cy="50" rx="2.4" ry="3.2" fill="#344b42"/><ellipse cx="33" cy="56" rx="5" ry="2.4" fill="#ec9990" opacity=".5"/><ellipse cx="64" cy="56" rx="5" ry="2.4" fill="#ec9990" opacity=".5"/><path d="M45 58q3.5 4 7 0" fill="none" stroke="#866d58" stroke-width="1.5" stroke-linecap="round"/>';
+  const shapes = {
+    bunny: '<path d="M32 35C21 5 36 1 43 32M52 32C58 0 74 7 63 37" fill="#fff7e6" stroke="#dcc8a9" stroke-width="1.6"/><path d="M34 29q-6-22 3-11M58 29q4-21 7-10" fill="none" stroke="#edb8ad" stroke-width="5" stroke-linecap="round"/><ellipse cx="48" cy="51" rx="27" ry="24" fill="#fff7e6" stroke="#dcc8a9" stroke-width="1.6"/>' + common + '<path d="m65 68 4 5-6 3-4-6Z" fill="#da8b55"/><path d="M38 74q11-5 22 0l5 13H31Z" fill="#dfaa67"/><path d="m48 70 3 4-3 4-3-4Z" fill="#f9e596"/>',
+    cat: '<path d="m24 43 0-23 22 13 21-13 4 28" fill="#a3cbb3" stroke="#729c82" stroke-width="1.6"/><path d="m29 28 11 9-11 2m32-1 5-10 1 12" fill="#e3bcb2"/><ellipse cx="48" cy="51" rx="27" ry="24" fill="#b2d5bd" stroke="#729c82" stroke-width="1.6"/>' + common + '<path d="m42 35 5 7 5-7" fill="#75a58c"/><path d="M34 74q14-5 28 0l3 13H31Z" fill="#6b9d88"/><path d="M35 69q15 9 27 0" fill="none" stroke="#e9da95" stroke-width="7"/><path d="m27 50-12-2m12 8-12 2m53-10 12-2m-12 11 12 2" stroke="#729c82" stroke-width="1.3"/>',
+    bear: '<circle cx="25" cy="30" r="13" fill="#bf8a64" stroke="#a57555" stroke-width="1.6"/><circle cx="69" cy="30" r="13" fill="#bf8a64" stroke="#a57555" stroke-width="1.6"/><circle cx="25" cy="30" r="7" fill="#efcaa2"/><circle cx="69" cy="30" r="7" fill="#efcaa2"/><ellipse cx="48" cy="50" rx="29" ry="27" fill="#d4a174" stroke="#a57555" stroke-width="1.6"/><ellipse cx="48" cy="59" rx="12" ry="9" fill="#f8dfb4"/>' + common + '<path d="m44 53 4 4 4-4Z" fill="#735848"/><path d="M34 74h28l5 13H29Z" fill="#a87956"/><path d="m34 69 14 6 14-6-6 13H40Z" fill="#e5c470"/>',
+    owl: '<path d="m22 21 17 8q10-5 18 0l17-8-4 20q13 30-22 38-34-8-23-39Z" fill="#b9a6cc" stroke="#8f7b9f" stroke-width="1.6"/><path d="M48 45C26 17 11 51 29 63q9 8 19 0 10 8 19 0C85 50 69 17 48 45Z" fill="#f6e9d4"/><ellipse cx="36" cy="49" rx="3" ry="4" fill="#494956"/><ellipse cx="59" cy="49" rx="3" ry="4" fill="#494956"/><path d="m43 56 5 7 5-7Z" fill="#d1a360"/><path d="M26 66q8 10 10 16m33-16q-8 10-10 16" stroke="#8f7b9f" stroke-width="2" fill="none"/><path d="m43 74 5 4 5-4-2 13h-7Z" fill="#e5c470"/>',
+  };
+  return `<svg class="portrait ${extra}" viewBox="0 0 96 92" aria-hidden="true"><ellipse cx="48" cy="86" rx="29" ry="4" fill="#49634a" opacity=".1"/>${shapes[type] || shapes.bunny}</svg>`;
 };
-const SPELL_ORDER = ["meteor", "frost", "bell"];
-const SPELL_ICONS = { meteor: "☄", frost: "❄", bell: "🔔" };
-const SPELL_KEYS = { meteor: "Q", frost: "W", bell: "E" };
-const PRIORITIES = [
-  ["first", "最接近星灯"],
-  ["strong", "生命最多"],
-  ["near", "距离最近"],
-];
-const esc = (value) =>
-  String(value ?? "").replace(
-    /[&<>"']/g,
-    (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
-        c
-      ],
-  );
-const finite = (value, fallback = 0) =>
-  Number.isFinite(Number(value)) ? Number(value) : fallback;
-const num = (value, fallback = 0) =>
-  Math.max(0, Math.floor(finite(value, fallback)));
-const fmt = (value) => num(value).toLocaleString("zh-CN");
-const round = (value) => String(Math.round(finite(value) * 10) / 10);
-const heroName = (hero) =>
-  String(hero?.name || "星灯伙伴")
-    .split(/[·・]/)
-    .at(-1)
-    .trim();
-const getLevel = (id) => LEVELS.find((level) => level.id === id) || LEVELS[0];
-const starCount = (records, id) => Math.min(3, num(records?.stars?.[id]));
-const starsHTML = (count) =>
-  [1, 2, 3]
-    .map((n) => "<span" + (n > count ? ' class="unearned"' : "") + ">✦</span>")
-    .join("");
-const normalizeRecords = (records) => ({
-  stars: records?.stars || {},
-  bestWaves: records?.bestWaves || {},
-  runs: num(records?.runs),
-  wins: num(records?.wins),
-});
 
-export function createUI({ onAction } = {}) {
-  const root = document.getElementById("app");
-  const $ = (id) => document.getElementById(id);
-  const cache = new Map(),
-    timers = new Set(),
-    listeners = [];
-  let records = normalizeRecords();
-  let options = {
-    levelId: LEVELS[0].id,
-    mode: "story",
-    difficulty: "normal",
-    hero: "momo",
+export function createUI(root, actions) {
+  root.innerHTML = `<main class="game-shell">
+    <div class="canvas-container" data-testid="game-scene"></div>
+    <div class="top-shade"></div>
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">${svg('moon')}<i>✦</i></div><div><div class="brand-title">星绒守夜队<span class="brand-dot">✦</span></div><div class="brand-subtitle">THE LITTLE NIGHT WATCH</div></div></div>
+      <div class="top-right"><div class="resources">
+        <div class="resource life">${svg('heart')}<div><span class="resource-label">梦种生命</span><strong data-value="hp">20<span> / 20</span></strong></div></div>
+        <div class="resource currency">${svg('star')}<div><span class="resource-label">星露</span><strong data-value="gold">300</strong></div></div>
+        <div class="resource waves">${svg('wave')}<div><span class="resource-label">守夜波次</span><strong data-value="wave">00<span> / 12</span></strong></div></div>
+      </div><div class="utility"><button class="icon-button" data-action="sound" title="开关声音" aria-label="开关声音">${svg('sound')}</button><button class="icon-button" data-action="help" title="守夜手册" aria-label="守夜手册">${svg('help')}</button></div></div>
+    </header>
+    <aside class="story-panel"><div class="chapter-kicker"><span class="tiny-star">✦</span><span data-value="chapter-kicker">序章 · 落星之夜</span></div><h1 data-value="chapter-title">今晚，换我们守护梦。</h1><p data-value="chapter-text">${CHAPTERS[0].text}</p><div class="story-rule"></div><div class="objective">${svg('leaf')}<span>守住月芽树，等一场天亮。</span></div><div class="chapter-progress"><span>一场小小的冒险</span><span data-value="chapter-progress">01 — 04</span></div></aside>
+    <aside class="wave-panel"><div class="section-eyebrow"><span class="pulse-dot"></span><span data-value="wave-caption">下一波 · 01</span></div><p data-value="next-hint">一小群迷路的绒团正在靠近。</p><div class="wave-progress"><i data-value="wave-progress"></i></div><div class="wave-detail"><span data-value="wave-detail">准备好，就出发吧</span><span data-value="kill-count">已驱散 0</span></div></aside>
+    <aside class="selection-panel" aria-live="polite"></aside>
+    <div class="map-note"><span class="map-note-icon">✧</span><span data-value="map-note">点选下方伙伴，再点亮一块空地</span></div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <footer class="command-dock"><div class="roster-area"><div class="dock-heading"><h2>今晚的守夜伙伴 <span>GUARDIANS</span></h2><small>${svg('star')}<span>一起，把好梦留下。</span></small></div><div class="tower-roster">${Object.entries(TOWERS).map(([type,t],i) => `<button class="tower-card ${type}" data-action="selectTower" data-type="${type}" title="${t.name} · ${t.desc}"><span class="card-key">${i+1}</span><span class="tower-price">${svg('star')} ${t.cost}</span><div class="portrait-backdrop"></div>${avatar(type)}<span class="tower-name">${t.name}</span><span class="tower-role">${t.role}</span><span class="card-selected">已选</span></button>`).join('')}</div></div>
+      <div class="skills-area"><div class="dock-heading"><h2>一点星星魔法</h2><small>SKILLS</small></div><div class="skill-roster">${Object.entries(SKILLS).map(([id,s]) => `<button class="skill-button ${id}" data-action="skill" data-skill="${id}" title="${s.name} · ${s.desc}"><span class="skill-art">${svg(id === 'freeze' ? 'snow' : id === 'heal' ? 'heart' : 'star')}<span class="skill-cooldown" data-cooldown="${id}"></span></span><span class="skill-name">${s.name}</span><kbd>${s.key}</kbd></button>`).join('')}</div></div>
+      <div class="wave-controls"><div class="start-caption" data-value="start-caption">花园已就绪，队长。</div><button class="start-button" data-action="startWave"><span><strong data-value="start-label">开始守夜</strong><small data-value="start-subtitle">第 01 波 / 共 12 波</small></span>${svg('arrow')}</button><div class="playback-controls"><button data-action="pause" title="暂停 / 继续" aria-label="暂停">${svg('pause')}<span data-value="pause-label">暂停</span></button><button data-action="speed" title="切换游戏速度">${svg('fast')}<span data-value="speed">1×</span></button><button data-action="restart" title="重新开始" aria-label="重新开始">↻</button></div></div>
+    </footer><div class="bottom-credit">MADE OF STARLIGHT & LITTLE COURAGE <span>✦</span></div>
+    <div class="modal-overlay" hidden></div>
+  </main>`;
+  const shell = root.querySelector('.game-shell');
+  const container = root.querySelector('.canvas-container');
+  const selection = root.querySelector('.selection-panel');
+  const modal = root.querySelector('.modal-overlay');
+  const toastEl = root.querySelector('.toast');
+  const refs = Object.fromEntries([...root.querySelectorAll('[data-value]')].map(el => [el.dataset.value, el]));
+  let panelSignature = '', toastTimeout, previous = {}, latestState, modalSelect, helpClose;
+  const set = (name, value, html = false) => {
+    if (previous[name] === value) return;
+    previous[name] = value;
+    if (refs[name]) refs[name][html ? 'innerHTML' : 'textContent'] = value;
   };
-  let screen = "menu",
-    detailSignature = "",
-    storyLevel = LEVELS[0],
-    storyLines = [],
-    storyPage = 0;
-  let helpOpen = false,
-    helpResume = false,
-    helpOrigin = null,
-    destroyed = false;
-  const emit = (action) => {
-    if (!destroyed && typeof onAction === "function") onAction(action);
-  };
-  const listen = (target, type, handler, config) => {
-    target.addEventListener(type, handler, config);
-    listeners.push(() => target.removeEventListener(type, handler, config));
-  };
-  function text(id, value) {
-    const next = String(value);
-    if (cache.get(id) !== next) {
-      $(id).textContent = next;
-      cache.set(id, next);
-    }
-  }
-  function html(id, value) {
-    const key = "html:" + id;
-    if (cache.get(key) !== value) {
-      $(id).innerHTML = value;
-      cache.set(key, value);
-    }
-  }
-  function unlocked(level) {
-    const index = LEVELS.findIndex((entry) => entry.id === level.id);
-    return (
-      options.mode === "endless" ||
-      index <= 0 ||
-      starCount(records, LEVELS[index - 1].id) > 0
-    );
-  }
-  function sanitize(candidate = {}) {
-    options = { ...options, ...candidate };
-    if (!LEVELS.some((level) => level.id === options.levelId))
-      options.levelId = LEVELS[0].id;
-    if (!["story", "endless"].includes(options.mode)) options.mode = "story";
-    if (!DIFFICULTIES[options.difficulty]) options.difficulty = "normal";
-    if (!HEROES[options.hero]) options.hero = "momo";
-    if (!unlocked(getLevel(options.levelId)))
-      options.levelId = LEVELS.find(unlocked)?.id || LEVELS[0].id;
-  }
-  const getOptions = () => ({ ...options });
-  function renderMenu() {
-    const level = getLevel(options.levelId),
-      index = LEVELS.indexOf(level);
-    text(
-      "story-progress",
-      LEVELS.reduce((sum, l) => sum + starCount(records, l.id), 0) +
-        " / " +
-        LEVELS.length * 3 +
-        " ✦",
-    );
-    root
-      .querySelectorAll("[data-mode]")
-      .forEach((button) =>
-        button.setAttribute(
-          "aria-pressed",
-          String(button.dataset.mode === options.mode),
-        ),
-      );
-    text(
-      "mode-note",
-      options.mode === "story"
-        ? "完成一章即可开启下一座浮岛。守住更多生命，收集更多星光。"
-        : "全部浮岛均可挑战。小团子一波接一波，守护没有终点。",
-    );
-    text(
-      "level-count",
-      options.mode === "story"
-        ? "CHAPTER " +
-            String(index + 1).padStart(2, "0") +
-            " / " +
-            String(LEVELS.length).padStart(2, "0")
-        : "ENDLESS ADVENTURE",
-    );
-    html(
-      "level-picker",
-      LEVELS.map((entry, i) => {
-        const open = unlocked(entry),
-          count = starCount(records, entry.id),
-          best = num(records.bestWaves[entry.id + "|" + options.difficulty]);
-        const footer = !open
-          ? '<span class="level-locked">待点亮</span>'
-          : options.mode === "endless"
-            ? '<span class="level-stars">' +
-              (best ? "最佳 " + best + " 波" : "无限星光") +
-              "</span>"
-            : '<span class="level-stars" aria-label="' +
-              count +
-              ' 星">' +
-              starsHTML(count) +
-              "</span>";
-        return (
-          '<button type="button" class="level-card" data-level="' +
-          esc(entry.id) +
-          '" aria-pressed="' +
-          (entry.id === options.levelId) +
-          '" aria-label="' +
-          esc(entry.name + (open ? "" : "，先完成上一章")) +
-          '"' +
-          (open ? "" : " disabled") +
-          '><span class="level-number">' +
-          String(i + 1).padStart(2, "0") +
-          '</span><span class="level-name">' +
-          esc(entry.name) +
-          "</span>" +
-          footer +
-          "</button>"
-        );
-      }).join(""),
-    );
-    text("level-description", level.description || level.subtitle || "");
-    text("preview-label", level.name);
-    html(
-      "hero-picker",
-      Object.entries(HEROES)
-        .map(
-          ([id, hero]) =>
-            '<button type="button" class="hero-card" data-hero="' +
-            esc(id) +
-            '" aria-pressed="' +
-            (id === options.hero) +
-            '" aria-label="' +
-            esc(hero.name + "，" + hero.description) +
-            '"><span class="hero-card-icon" aria-hidden="true">' +
-            HERO_ICONS[id] +
-            "</span><span><strong>" +
-            esc(heroName(hero)) +
-            "</strong><small>" +
-            HERO_ROLES[id] +
-            "</small></span></button>",
-        )
-        .join(""),
-    );
-    text("hero-description", HEROES[options.hero].description || "");
-    $("difficulty").value = options.difficulty;
-    html(
-      "start-game",
-      "<span>" +
-        (options.mode === "story" ? "出发，点亮星灯" : "开始无尽守护") +
-        '</span><span aria-hidden="true">↗</span>',
-    );
-  }
-  function preview() {
-    renderMenu();
-    emit({ type: "preview", options: getOptions() });
-  }
-  function updateInert() {
-    for (const [id, mode] of [
-      ["menu-overlay", "menu"],
-      ["site-header", "menu"],
-      ["game-hud", "playing"],
-      ["story-overlay", "story"],
-      ["pause-overlay", "paused"],
-      ["result-overlay", "result"],
-    ])
-      $(id).inert = screen !== mode || helpOpen;
-  }
-  function closeHelp(resume = true) {
-    if (!helpOpen) return;
-    const shouldResume = resume && helpResume && screen === "paused";
-    helpOpen = false;
-    helpResume = false;
-    $("help-overlay").hidden = true;
-    root.dataset.helpOpen = "false";
-    updateInert();
-    if (shouldResume) emit({ type: "resume" });
-    if (helpOrigin?.isConnected && !helpOrigin.closest("[hidden],[inert]"))
-      helpOrigin.focus({ preventScroll: true });
-    helpOrigin = null;
-  }
-  function openHelp(origin) {
-    if (helpOpen) return;
-    helpOrigin = origin || document.activeElement;
-    helpResume = screen === "playing";
-    helpOpen = true;
-    if (helpResume) emit({ type: "pause" });
-    $("help-overlay").hidden = false;
-    root.dataset.helpOpen = "true";
-    updateInert();
-    $("help-overlay")
-      .querySelector('[data-action="closeHelp"]')
-      .focus({ preventScroll: true });
-  }
-  function setScreen(mode) {
-    if (!["menu", "story", "playing", "paused", "result"].includes(mode))
+  const closeModal = () => { const callback = helpClose; helpClose = null; modal.hidden = true; modal.innerHTML = ''; modalSelect = null; callback?.(); };
+  root.addEventListener('click', e => {
+    const btn = e.target.closest('button[data-action]');
+    if (!btn || btn.disabled) return;
+    const action = btn.dataset.action;
+    if (action === 'modalClose') { closeModal(); return; }
+    if (action === 'chooseRelic') {
+      const callback = modalSelect;
+      closeModal();
+      callback?.(btn.dataset.relic);
       return;
-    if (helpOpen && ["menu", "story", "result"].includes(mode))
-      closeHelp(false);
-    const previous = screen;
-    screen = mode;
-    document.body.dataset.screen = mode;
-    for (const [id, target] of [
-      ["menu-overlay", "menu"],
-      ["site-header", "menu"],
-      ["story-overlay", "story"],
-      ["pause-overlay", "paused"],
-      ["result-overlay", "result"],
-    ])
-      $(id).hidden = target !== mode;
-    $("game-hud").hidden = !["playing", "paused", "result"].includes(mode);
-    updateInert();
-    if (previous !== mode && !helpOpen) {
-      const modal = {
-        story: "story-overlay",
-        paused: "pause-overlay",
-        result: "result-overlay",
-      }[mode];
-      if (modal)
-        $(modal)
-          .querySelector("button:not([hidden]):not(:disabled)")
-          ?.focus({ preventScroll: true });
-      else if (mode === "playing")
-        $("game-canvas").focus({ preventScroll: true });
     }
-  }
-  function showMenu(nextRecords = records, lastOptions = options) {
-    records = normalizeRecords(nextRecords);
-    sanitize(lastOptions);
-    renderMenu();
-    detailSignature = "";
-    $("selection-panel").hidden = true;
-    $("selection-hint").hidden = true;
-    setScreen("menu");
-  }
-  function renderStory() {
-    text(
-      "story-chapter",
-      "CHAPTER " +
-        String(LEVELS.indexOf(storyLevel) + 1).padStart(2, "0") +
-        " · " +
-        (storyLevel.subtitle || "星灯的邀请"),
-    );
-    text("story-title", storyLevel.name);
-    text("story-text", storyLines[storyPage]);
-    text(
-      "story-page",
-      String(storyPage + 1).padStart(2, "0") +
-        " / " +
-        String(storyLines.length).padStart(2, "0"),
-    );
-    text(
-      "story-next",
-      (storyPage >= storyLines.length - 1 ? "开始守护" : "继续") + " →",
-    );
-    $("story-overlay").querySelector(".story-portrait>span").textContent =
-      HERO_ICONS[options.hero];
-  }
-  function showStory(level) {
-    storyLevel =
-      typeof level === "string"
-        ? getLevel(level)
-        : level || getLevel(options.levelId);
-    storyLines =
-      Array.isArray(storyLevel.intro) && storyLevel.intro.length
-        ? storyLevel.intro.map(String)
-        : ["星灯的光正在变淡。让我们一起守住它，唤醒迷路的小团子。"];
-    storyPage = 0;
-    renderStory();
-    setScreen("story");
-  }
-  function showResult(state, nextRecords = records) {
-    if (!state) return;
-    records = normalizeRecords(nextRecords);
-    const result = state.result || {},
-      level = getLevel(state.levelId),
-      index = LEVELS.indexOf(level),
-      endless = state.options?.mode === "endless",
-      won = result.won ?? state.phase === "won",
-      stars = Math.min(3, num(result.stars)),
-      last = !endless && won && index === LEVELS.length - 1;
-    $("result-overlay").querySelector(".result-card").dataset.won = String(won);
-    text("result-emblem", endless ? "∞" : won ? "✦" : "☁");
-    text(
-      "result-eyebrow",
-      endless
-        ? "EVERY WAVE, A LITTLE BRAVER"
-        : won
-          ? "A LIGHT WORTH KEEPING"
-          : "THE LIGHT IS STILL WAITING",
-    );
-    text(
-      "result-title",
-      endless
-        ? "这束光，已经很耀眼"
-        : last
-          ? "整片星夜，都亮起来了"
-          : won
-            ? "星灯，亮起来了！"
-            : "再一起试一次吧",
-    );
-    $("result-stars").hidden = endless;
-    $("result-stars").setAttribute("aria-label", "获得 " + stars + " 星");
-    html("result-stars", starsHTML(stars));
-    text(
-      "result-story",
-      endless
-        ? "每一次守护都让小伙伴更勇敢。带着这次的经验，再点亮更远的星光。"
-        : won
-          ? level.outro || "梦雾渐渐散去，小团子们找到了回家的路。"
-          : "小团子没有走远。试试调整塔的位置与进阶路线，让伙伴和技能一起帮忙。",
-    );
-    const waves = num(result.waves, state.wave),
-      metrics = [
-        [endless ? waves : num(state.lives), endless ? "守护波数" : "剩余生命"],
-        [num(result.kills, state.kills ?? state.stats?.kills), "温柔唤醒"],
-        [num(state.stats?.upgrades), "防线升级"],
-      ];
-    html(
-      "result-stats",
-      metrics
-        .map(
-          ([value, label]) =>
-            "<div><strong>" +
-            fmt(value) +
-            "</strong><small>" +
-            label +
-            "</small></div>",
-        )
-        .join(""),
-    );
-    if (endless) {
-      const best = Math.max(
-        waves,
-        num(records.bestWaves[level.id + "|" + state.options.difficulty]),
-      );
-      text("result-record", level.name + " · 最佳守护 " + best + " 波");
+    if (action === 'selectTower') actions.selectTower?.(btn.dataset.type);
+    else if (action === 'skill') actions.skill?.(btn.dataset.skill);
+    else if (action === 'endRestart') { closeModal(); actions.restart?.(); }
+    else actions[action]?.();
+  });
+  function renderSelection(state) {
+    const tower = state.towers?.find(t => t.plotIndex === state.selectedPlot);
+    const selectedType = tower?.type || state.selectedTowerType;
+    const data = TOWERS[selectedType];
+    const hasPlot = state.selectedPlot !== null && state.selectedPlot !== undefined;
+    const signature = JSON.stringify([state.selectedPlot, state.selectedTowerType, tower?.level, tower?.upgradeCost, tower?.damage, tower?.range, tower?.rate, tower?.totalSpent, Math.floor(state.gold), state.phase]);
+    if (panelSignature === signature) return;
+    panelSignature = signature;
+    selection.classList.toggle('is-active', hasPlot || !!data);
+    if (!hasPlot && !data) {
+      selection.innerHTML = `<div class="garden-tag">${svg('shield')}<span>月芽花园<span>MOONSPROUT GARDEN</span></span><b>01</b></div><div class="mini-instruction"><span class="instruction-number">01</span><p>选择一位守夜伙伴</p><span class="instruction-number">02</span><p>点击花园里的圆形空地</p><span class="instruction-number">03</span><p>准备好，开始第一波守夜</p></div><div class="selection-footnote">每 3 波，可收获一份星光礼物 ${svg('star')}</div>`;
+      return;
+    }
+    const heading = tower ? '守卫档案' : hasPlot ? `第 ${String(state.selectedPlot + 1).padStart(2,'0')} 号守夜位` : '等待加入花园';
+    let body;
+    if (data) {
+      const level = tower?.level || 1;
+      const upgradeCost = tower?.upgradeCost ?? Math.floor(data.cost * (level === 1 ? .75 : 1.1));
+      body = `<div class="selected-character ${selectedType}">${avatar(selectedType)}<div><h2>${data.name}</h2><span>${data.role}</span><div class="level-stars">${'✦'.repeat(level)}<span>${'✦'.repeat(3-level)}</span></div></div></div><p class="selected-description">${data.desc}</p><div class="tower-stats"><div><span>伤害</span><strong>${Math.round(tower?.damage || data.damage)}</strong></div><div><span>射程</span><strong>${Number(tower?.range || data.range).toFixed(1)}</strong></div><div><span>攻速</span><strong>${Number(tower?.rate || data.rate).toFixed(2)}<small>s</small></strong></div></div>`;
+      if (tower) {
+        body += `<button class="panel-primary" data-action="upgrade" ${level >= 3 || state.gold < upgradeCost ? 'disabled' : ''}><span>${level >= 3 ? '已达最高等级' : `升级 · ${esc(data.upgrade[level-1])}`}</span><b>${level >= 3 ? '✦' : `✦ ${upgradeCost}`}</b></button><button class="sell-button" data-action="sell">送伙伴休息 <span>返还 ${Math.floor((tower.totalSpent || data.cost) * .72)} 星露</span></button>`;
+      } else if (hasPlot) {
+        body += `<button class="panel-primary" data-action="selectTower" data-type="${selectedType}" ${state.gold < data.cost ? 'disabled' : ''}><span>邀请 ${data.name}</span><b>✦ ${data.cost}</b></button>`;
+      } else {
+        body += `<div class="build-prompt">${svg('leaf')}现在，点一块圆形空地吧。</div>`;
+      }
     } else {
-      const best = Math.max(stars, starCount(records, level.id)),
-        total = LEVELS.reduce(
-          (sum, l) =>
-            sum + (l.id === level.id ? best : starCount(records, l.id)),
-          0,
-        );
-      text(
-        "result-record",
-        "本章最佳 " +
-          best +
-          " 星 · 旅途星光 " +
-          total +
-          " / " +
-          LEVELS.length * 3,
-      );
+      body = `<div class="empty-plot-symbol">${svg('leaf')}<span>✧</span></div><h2 class="empty-plot-title">这里，缺一个小伙伴。</h2><p class="selected-description">选择守卫，点亮这一处守夜位。</p><div class="quick-builds">${Object.entries(TOWERS).map(([type,t]) => `<button data-action="selectTower" data-type="${type}" ${state.gold < t.cost ? 'disabled' : ''}>${avatar(type)}<span>${t.name}<small>${t.role}</small></span><b>✦ ${t.cost}</b></button>`).join('')}</div>`;
     }
-    $("ending-note").hidden = !last;
-    if (last)
-      text(
-        "ending-note",
-        Array.isArray(ENDING) ? ENDING.join("\n") : String(ENDING || ""),
-      );
-    $("next-level").hidden = endless || !won || index >= LEVELS.length - 1;
-    text(
-      "next-level",
-      "前往" + (LEVELS[index + 1]?.name || "下一座浮岛") + " →",
-    );
-    text(
-      "result-retry",
-      endless ? "再挑战一次" : won ? "再守护一次" : "重新点亮星灯",
-    );
-    setScreen("result");
+    selection.innerHTML = `<div class="selection-heading"><span>${heading}</span><button class="icon-button" data-action="closeSelection" aria-label="取消选择">${svg('close')}</button></div>${body}`;
   }
-  function selectedTower(state, view) {
-    return (
-      (state.towers || []).find((t) => t.id === view.selectedTowerId) ||
-      (view.selectedPadId
-        ? (state.towers || []).find((t) => t.padId === view.selectedPadId)
-        : null) ||
-      null
-    );
+  function update(state) {
+    latestState = state;
+    const wave = state.wave || 0;
+    const running = state.phase === 'wave';
+    set('hp', `${Math.max(0, Math.ceil(state.hp))}<span> / ${state.maxHp}</span>`, true);
+    set('gold', Math.floor(state.gold));
+    set('wave', `${String(wave).padStart(2,'0')}<span> / 12</span>`, true);
+    root.querySelector('.life').classList.toggle('danger', state.hp <= state.maxHp * .3);
+    const chapter = state.chapter || CHAPTERS[0];
+    set('chapter-kicker', chapter.kicker);
+    set('chapter-title', chapter.title);
+    set('chapter-text', chapter.text);
+    const chapterIndex = CHAPTERS.findIndex(c => c.kicker === chapter.kicker);
+    set('chapter-progress', `${String(Math.max(chapterIndex + 1,1)).padStart(2,'0')} — 04`);
+    set('next-hint', state.nextWaveHint || '一小群迷路的绒团正在靠近。');
+    set('wave-caption', running ? `正在守护 · 第 ${String(wave).padStart(2,'0')} 波` : `下一波 · ${String(Math.min(12,wave+1)).padStart(2,'0')}`);
+    const count = Array.isArray(state.enemies) ? state.enemies.length : Number(state.enemies || 0);
+    set('wave-detail', running ? `还有 ${count} 只梦魇在花园里` : state.phase === 'victory' ? '花园迎来了天亮' : '准备好，就出发吧');
+    set('kill-count', `已驱散 ${state.kills || 0}`);
+    const progress = running && state.totalToSpawn ? Math.min(100, (state.spawned / state.totalToSpawn) * 100) : 0;
+    refs['wave-progress'].style.width = `${progress}%`;
+    set('start-caption', state.paused ? '时间暂停了，星光还在。' : running ? '每一束星光，都在守护。' : wave > 0 ? '稍作休整，再一起出发。' : '花园已就绪，队长。');
+    set('start-label', state.paused ? '守夜已暂停' : running ? '正在守夜' : state.phase === 'relic' ? '领取星光礼物' : state.phase === 'victory' ? '天亮啦！' : state.phase === 'defeat' ? '梦种睡着了' : wave ? '迎接下一波' : '开始守夜');
+    set('start-subtitle', running ? `第 ${String(wave).padStart(2,'0')} 波 · ${state.spawned || 0} / ${state.totalToSpawn || 0}` : `第 ${String(Math.min(12,wave+1)).padStart(2,'0')} 波 / 共 12 波`);
+    root.querySelector('[data-action="startWave"]').disabled = state.phase !== 'prepare';
+    const pauseButton = root.querySelector('[data-action="pause"]');
+    pauseButton.disabled = !running;
+    pauseButton.setAttribute('aria-label', state.paused ? '继续' : '暂停');
+    set('pause-label', state.paused ? '继续' : '暂停');
+    set('speed', `${state.speed || 1}×`);
+    if (previous.muted !== state.muted) {
+      previous.muted = state.muted;
+      root.querySelector('[data-action="sound"]').innerHTML = svg(state.muted ? 'mute' : 'sound');
+      root.querySelector('[data-action="sound"]').setAttribute('aria-pressed', !!state.muted);
+    }
+    shell.classList.toggle('is-paused', !!state.paused);
+    for (const [type,t] of Object.entries(TOWERS)) {
+      const card = root.querySelector(`.tower-card[data-type="${type}"]`);
+      card.classList.toggle('selected', state.selectedTowerType === type);
+      card.classList.toggle('unaffordable', state.gold < t.cost);
+      card.setAttribute('aria-pressed', state.selectedTowerType === type);
+    }
+    for (const [id,skill] of Object.entries(SKILLS)) {
+      const btn = root.querySelector(`[data-skill="${id}"]`);
+      const seconds = Math.ceil(state.cooldowns?.[id] || 0);
+      const cooldown = btn.querySelector('.skill-cooldown');
+      const txt = seconds > 0 ? `${seconds}s` : '';
+      if (cooldown.textContent !== txt) cooldown.textContent = txt;
+      btn.disabled = seconds > 0 || !running || !!state.paused;
+      btn.style.setProperty('--cooldown', `${Math.min(100,seconds/skill.cooldown*100)}%`);
+    }
+    set('map-note', state.paused ? '守夜暂停中 · 点击继续，让星光再次流动' : state.selectedTowerType && state.selectedPlot === null ? `选择一块圆形空地，邀请${TOWERS[state.selectedTowerType]?.name || '伙伴'}` : state.selectedPlot !== null && state.selectedPlot !== undefined ? '每一个小小的守夜位，都藏着勇气' : wave === 0 ? '点选下方伙伴，再点亮一块空地' : '点击伙伴可升级 · 每 3 波收获一份星光礼物');
+    renderSelection(state);
   }
-  function renderDetail(state, view) {
-    const tower = selectedTower(state, view),
-      chosen =
-        view.pendingAction?.type === "build" ? view.pendingAction.id : null,
-      level = getLevel(state.levelId),
-      pad = level.pads.find((p) => p.id === view.selectedPadId),
-      panel = $("selection-panel");
-    panel.hidden = !tower && !chosen && !pad;
-    if (panel.hidden) {
-      detailSignature = "";
-      return;
-    }
-    const stats = tower
-      ? getTowerStats(tower)
-      : chosen && TOWERS[chosen]
-        ? getTowerStats({ type: chosen, level: 1, branch: null })
-        : null;
-    const signature = JSON.stringify([
-      tower?.id,
-      tower?.type,
-      tower?.level,
-      tower?.branch,
-      tower?.priority,
-      tower?.spent,
-      chosen,
-      pad?.id,
-      state.candy >= finite(stats?.upgradeCost, Infinity),
-      state.candy >= finite(stats?.branchCosts?.a, Infinity),
-      state.candy >= finite(stats?.branchCosts?.b, Infinity),
-    ]);
-    if (signature === detailSignature) return;
-    detailSignature = signature;
-    const close =
-      '<button type="button" class="detail-close" data-action="cancelSelection" aria-label="关闭详情">×</button>';
-    const heading = (icon, title, subtitle) =>
-      '<div class="detail-heading"><span class="detail-icon" aria-hidden="true">' +
-      icon +
-      "</span><div><h3>" +
-      esc(title) +
-      "</h3><small>" +
-      esc(subtitle) +
-      "</small></div>" +
-      close +
-      "</div>";
-    const metricsHTML = (metrics) =>
-      '<div class="tower-metrics">' +
-      metrics
-        .map(
-          ([value, label]) =>
-            "<div><strong>" +
-            esc(value) +
-            "</strong><small>" +
-            label +
-            "</small></div>",
-        )
-        .join("") +
-      "</div>";
-    if (tower) {
-      const data = TOWERS[tower.type],
-        branch = tower.branch && data.branches?.[tower.branch];
-      let content =
-        heading(
-          TOWER_ICONS[tower.type],
-          data.name,
-          (branch ? branch.name + " · " : "") + "Lv. " + tower.level,
-        ) +
-        '<p class="detail-description">' +
-        esc(branch?.description || data.description) +
-        "</p>";
-      content += metricsHTML(
-        stats.income
-          ? [
-              [stats.income, "每波产糖"],
-              [round(stats.range), "光环范围"],
-              [tower.level, "守护等级"],
-            ]
-          : [
-              [round(stats.damage), "唤醒力量"],
-              [round(stats.range), "守护范围"],
-              [round(stats.interval) + "s", "行动间隔"],
-            ],
-      );
-      if (tower.level === 1 && stats.upgradeCost != null) {
-        const cost = num(stats.upgradeCost);
-        content +=
-          '<button type="button" class="button button-primary upgrade-button" data-action="upgrade" data-tower-id="' +
-          esc(tower.id) +
-          '"' +
-          (state.candy >= cost ? "" : " disabled") +
-          "><span>升级至 Lv. 2</span><small>◆ " +
-          cost +
-          "</small></button>";
-      } else if (tower.level === 2) {
-        content +=
-          '<div class="detail-section-title">选择最终进阶 · Lv. 3</div><div class="branch-buttons">';
-        for (const id of ["a", "b"]) {
-          const upgrade = data.branches[id],
-            cost = num(stats.branchCosts?.[id]);
-          content +=
-            '<button type="button" class="branch-button" data-action="upgrade" data-tower-id="' +
-            esc(tower.id) +
-            '" data-branch="' +
-            id +
-            '"' +
-            (state.candy >= cost ? "" : " disabled") +
-            "><strong>" +
-            esc(upgrade.name) +
-            "</strong><small>" +
-            esc(upgrade.description) +
-            '</small><span class="branch-cost">◆ ' +
-            cost +
-            "</span></button>";
-        }
-        content += "</div>";
-      } else content += '<div class="tower-max-level">✦ 已完成最终进阶</div>';
-      if (stats.damage > 0)
-        content +=
-          '<label class="priority-field"><span>瞄准优先级</span><select data-priority-for="' +
-          esc(tower.id) +
-          '" aria-label="防御塔瞄准优先级">' +
-          PRIORITIES.map(
-            ([id, name]) =>
-              '<option value="' +
-              id +
-              '"' +
-              ((tower.priority || "first") === id ? " selected" : "") +
-              ">" +
-              name +
-              "</option>",
-          ).join("") +
-          "</select></label>";
-      const refund = Math.floor((finite(tower.spent, data.cost) * 7) / 10);
-      content +=
-        '<button type="button" class="sell-button" data-action="sell" data-tower-id="' +
-        esc(tower.id) +
-        '" aria-label="出售' +
-        esc(data.name) +
-        "，返还" +
-        refund +
-        '糖果"><span>收起这座塔</span><span>返还 ◆ ' +
-        refund +
-        "</span></button>";
-      panel.innerHTML = content;
-    } else if (chosen && TOWERS[chosen]) {
-      const data = TOWERS[chosen];
-      panel.innerHTML =
-        heading(TOWER_ICONS[chosen], data.name, "准备加入小小防线") +
-        '<p class="detail-description">' +
-        esc(data.description) +
-        "</p>" +
-        metricsHTML(
-          stats.income
-            ? [
-                [stats.income, "每波产糖"],
-                [round(stats.range), "光环范围"],
-                [data.cost, "建造糖果"],
-              ]
-            : [
-                [round(stats.damage), "唤醒力量"],
-                [round(stats.range), "守护范围"],
-                [data.cost, "建造糖果"],
-              ],
-        ) +
-        '<p class="pad-empty-note">点一块空着的圆形塔位，把这位新伙伴安置在那里。</p>';
-    } else
-      panel.innerHTML =
-        heading(
-          "✿",
-          "这里正等一位伙伴",
-          "星光塔位 " + String(level.pads.indexOf(pad) + 1).padStart(2, "0"),
-        ) +
-        '<p class="pad-empty-note">从下方挑选一座防御塔，就能把这里变成温暖的小小防线。</p><div class="pad-empty-icon" aria-hidden="true">✧</div>';
+  function toast(message) {
+    toastEl.textContent = message;
+    toastEl.classList.add('visible');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => toastEl.classList.remove('visible'), 3000);
   }
-  function renderHint(state, view) {
-    const pending = view.pendingAction;
-    let message = "";
-    if (pending?.type === "build" && TOWERS[pending.id]) {
-      const tower = TOWERS[pending.id];
-      message =
-        state.candy < tower.cost
-          ? "还差 " +
-            Math.ceil(tower.cost - state.candy) +
-            " 颗糖果，就能安置" +
-            tower.name
-          : "安置" + tower.name + " · 点选空塔位";
-    } else if (pending?.type === "spell" && SPELLS[pending.id])
-      message = SPELLS[pending.id].name + " · 点选想要照亮的地方";
-    else if (pending?.type === "rally")
-      message = "点一下地面，让守卫到这里集合";
-    else if (view.selectedPadId && !selectedTower(state, view))
-      message = "塔位已选好 · 从下方挑选一位伙伴";
-    $("selection-hint").hidden = !message;
-    if (message) text("selection-hint-text", message);
-    text(
-      "build-instruction",
-      view.selectedPadId && !selectedTower(state, view)
-        ? "塔位已选好，点塔即可建造"
-        : "选塔，再点亮圆形塔位",
-    );
+  function showRelic(options, onSelect) {
+    modalSelect = onSelect;
+    modal.hidden = false;
+    modal.innerHTML = `<section class="modal-card relic-modal" role="dialog" aria-modal="true" aria-labelledby="relic-title"><div class="modal-kicker">✦ 来自月芽树的小小心意 ✦</div><h2 id="relic-title">勇气，值得一份星光礼物。</h2><p class="modal-intro">你守住了又一个安静的夜晚。挑选一份礼物，让旅途更明亮。</p><div class="relic-options">${options.map((r,i) => `<button class="relic-option" data-action="chooseRelic" data-relic="${esc(r.id)}"><span class="relic-number">0${i+1}</span><div class="relic-art">${esc(r.icon)}</div><h3>${esc(r.name)}</h3><p>${esc(r.desc)}</p><span class="relic-pick">收下这份心意 ${svg('arrow')}</span></button>`).join('')}</div><div class="modal-note">选择后，继续你的守夜旅程</div></section>`;
   }
-  function update(state, view = {}) {
-    if (!state) return;
-    if (view.records) records = normalizeRecords(view.records);
-    const level = getLevel(state.levelId),
-      endless = state.options?.mode === "endless",
-      phase = state.phase,
-      active = phase === "wave",
-      terminal = ["won", "lost"].includes(phase),
-      wave = num(state.wave),
-      total = num(state.totalWaves),
-      lives = num(state.lives),
-      maxLives = Math.max(1, num(state.maxLives, 20));
-    text("level-title", level.name);
-    text("battle-mode", endless ? "无尽守护" : "故事冒险");
-    text("lives-value", lives + " / " + maxLives);
-    $("lives-value")
-      .closest(".resource")
-      .classList.toggle("low", lives / maxLives <= 0.3);
-    text("candy-value", fmt(state.candy));
-    text("mana-value", fmt(state.mana));
-    text("wake-value", fmt(state.kills ?? state.stats?.kills));
-    const displayed = Math.max(1, active || terminal ? wave : wave + 1);
-    text(
-      "wave-value",
-      endless
-        ? "第 " + displayed + " 波 · ∞"
-        : "第 " +
-            Math.min(total || Infinity, displayed) +
-            " / " +
-            total +
-            " 波",
-    );
-    text(
-      "wave-status",
-      terminal
-        ? phase === "won"
-          ? "星灯已点亮"
-          : "守护暂告一段落"
-        : active
-          ? "还有 " +
-            num(state.waveRemaining, state.enemies?.length || 0) +
-            " 位小团子"
-          : state.autoWave
-            ? Math.ceil(Math.max(0, finite(state.buildCountdown))) + " 秒后出发"
-            : "准备建造",
-    );
-    $("game-hud").querySelector(".wave-bar").dataset.phase = phase;
-    $("start-wave").disabled = active || terminal;
-    text(
-      "start-wave",
-      terminal
-        ? "守护已结束"
-        : active
-          ? "正在守护"
-          : (state.autoWave ? "立即迎接" : "迎接第 " + (wave + 1) + " 波") +
-            " ▶",
-    );
-    $("auto-wave").checked = !!state.autoWave;
-    $("auto-wave").disabled = terminal;
-    const speed = [1, 2, 3].includes(view.speed) ? view.speed : 1;
-    text("speed-button", speed + "×");
-    $("speed-button").setAttribute(
-      "aria-label",
-      "切换速度，当前 " + speed + " 倍",
-    );
-    const sound = view.sound !== false;
-    text("sound-button", sound ? "♫" : "♪");
-    $("sound-button").setAttribute(
-      "aria-label",
-      sound ? "关闭声音" : "开启声音",
-    );
-    $("sound-button").setAttribute("aria-pressed", String(!sound));
-    text("pause-sound", sound ? "声音开启" : "声音关闭");
-    const heroId = state.hero?.type || state.options?.hero || options.hero;
-    text("hero-icon", HERO_ICONS[heroId] || "✦");
-    text("hero-name", heroName(HEROES[heroId]));
-    text(
-      "hero-level",
-      "Lv. " + Math.max(1, num(state.hero?.level, 1)) + " · 点地集结",
-    );
-    $("hero-button").setAttribute(
-      "aria-pressed",
-      String(view.pendingAction?.type === "rally"),
-    );
-    $("hero-button").disabled = terminal;
-    for (const id of TOWER_ORDER) {
-      const button = $("build-buttons").querySelector(
-          '[data-build="' + id + '"]',
-        ),
-        poor = state.candy < TOWERS[id].cost;
-      button.disabled = terminal;
-      button.classList.toggle("is-poor", poor);
-      button.setAttribute(
-        "aria-pressed",
-        String(
-          view.pendingAction?.type === "build" && view.pendingAction.id === id,
-        ),
-      );
-      button.setAttribute(
-        "aria-label",
-        TOWERS[id].name +
-          "，" +
-          TOWERS[id].cost +
-          " 糖果" +
-          (poor ? "，糖果不足" : ""),
-      );
+  function showEnd(result, onRestart) {
+    modal.hidden = false;
+    const victory = result.victory ?? result.won ?? result.phase === 'victory';
+    const state = { ...latestState, ...result };
+    const stars = Math.max(0, Math.min(3, Number(state.stars || 0)));
+    const elapsed = Math.max(0, Math.floor(state.elapsed || 0));
+    const timeLabel = `${Math.floor(elapsed / 60)} 分 ${String(elapsed % 60).padStart(2, '0')} 秒`;
+    const rating = victory ? `<div class="end-rating" aria-label="获得 ${stars} 星评价，最高 3 星">${Array.from({ length: 3 }, (_, i) => `<svg class="end-star ${i < stars ? 'earned' : ''}" viewBox="0 0 48 48" aria-hidden="true"><path d="m24 4 6 12.2 13.5 2-9.8 9.5 2.3 13.5L24 34.8l-12 6.4 2.3-13.5-9.8-9.5 13.5-2Z"/></svg>`).join('')}</div>` : '';
+    modal.innerHTML = `<section class="modal-card end-modal" role="dialog" aria-modal="true" aria-labelledby="end-title"><div class="end-art">${svg(victory ? 'moon' : 'heart')}<span>✦</span><i>✧</i></div><div class="modal-kicker">${victory ? '十二声晚安之后 · 黎明如约而至' : '今晚的故事，暂时画上一个小小的逗号'}</div><h2 id="end-title">${victory ? '天亮了。好梦，留下了。' : '别怕，我们再守一次。'}</h2><p class="modal-intro">${victory ? '原来最厉害的魔法，是每个小伙伴都没有放弃。<br>月芽树记住了你的名字，守夜队长。' : '梦种只是暂时睡着了，伙伴们还在等你。<br>重新安排守夜位，让下一次的星光更明亮。'}</p>${rating}<div class="end-stats"><div><strong>${state.wave || 0}<small> / 12</small></strong><span>守护波次</span></div><div><strong>${state.kills || 0}</strong><span>驱散梦魇</span></div><div><strong>${Math.max(0,Math.ceil(state.hp || 0))}</strong><span>剩余生命</span></div></div><div class="end-achievements"><span>无伤守护 <strong>${state.perfectWaves || 0}</strong> 波</span><i>✦</i><span>守夜时长 <strong>${timeLabel}</strong></span></div><button class="end-restart" data-action="endRestart">再开始一场小小的冒险 ${svg('arrow')}</button></section>`;
+    if (onRestart) {
+      const btn = modal.querySelector('[data-action="endRestart"]');
+      btn.addEventListener('click', event => { event.stopPropagation(); closeModal(); onRestart(); });
     }
-    for (const id of SPELL_ORDER) {
-      const button = $("spell-bar").querySelector('[data-spell="' + id + '"]'),
-        spell = SPELLS[id],
-        cooldown = Math.max(0, finite(state.spellCooldowns?.[id]));
-      button.disabled = terminal || cooldown > 0.01 || state.mana < spell.cost;
-      button.setAttribute(
-        "aria-pressed",
-        String(
-          view.pendingAction?.type === "spell" && view.pendingAction.id === id,
-        ),
-      );
-      const label =
-          cooldown > 0.01
-            ? Math.ceil(cooldown) + " 秒后就绪"
-            : spell.cost + " 星能",
-        cost = button.querySelector(".spell-cost");
-      if (cost.textContent !== label) cost.textContent = label;
-      const height =
-        Math.round(Math.min(1, cooldown / Math.max(1, spell.cooldown)) * 100) +
-        "%";
-      if (button.style.getPropertyValue("--cooldown-height") !== height)
-        button.style.setProperty("--cooldown-height", height);
-      button.setAttribute(
-        "aria-label",
-        spell.name +
-          "，" +
-          label +
-          (state.mana < spell.cost ? "，星能不足" : "") +
-          "。" +
-          spell.description,
-      );
-    }
-    renderDetail(state, view);
-    renderHint(state, view);
   }
-  function toast(message, kind = "info") {
-    if (!message || destroyed) return;
-    const stack = $("toast-stack");
-    while (stack.children.length >= 3) stack.firstElementChild.remove();
-    const node = document.createElement("div");
-    node.className = "toast";
-    node.dataset.kind = ["error", "warning"].includes(kind)
-      ? "error"
-      : kind === "success"
-        ? "success"
-        : "info";
-    node.textContent = String(message);
-    stack.append(node);
-    const timer = setTimeout(
-      () => {
-        timers.delete(timer);
-        if (destroyed) return;
-        node.classList.add("leaving");
-        const remove = setTimeout(() => {
-          timers.delete(remove);
-          node.remove();
-        }, 220);
-        timers.add(remove);
-      },
-      kind === "error" || kind === "warning" ? 3700 : 2900,
-    );
-    timers.add(timer);
+  function showHelp(onClose) {
+    helpClose = onClose;
+    modal.hidden = false;
+    modal.innerHTML = `<section class="modal-card help-modal" role="dialog" aria-modal="true" aria-labelledby="help-title"><button class="modal-close icon-button" data-action="modalClose" aria-label="关闭守夜手册">${svg('close')}</button><div class="modal-kicker">A LITTLE GUIDE TO THE NIGHT</div><h2 id="help-title">队长的守夜手册</h2><p class="modal-intro">留住好梦，只需要一点点勇气。</p><div class="help-steps"><div><b>01</b><p><strong>邀请你的伙伴</strong>选择下方守卫，再点击圆形空地建造。也可以先选空地，再挑选守卫。</p></div><div><b>02</b><p><strong>让星光更明亮</strong>点击已建造的守卫可以升级至 3 级；合理搭配单体、减速、群伤和产星守卫。</p></div><div><b>03</b><p><strong>一点魔法，大有帮助</strong>流星雨清扫梦魇，晚安泡泡暂停敌人，月芽祝福恢复生命。魔法使用后需要冷却。</p></div><div><b>04</b><p><strong>守到天亮</strong>守住全部 12 波就能迎来黎明。每 3 波选择一份星光礼物，为队伍获得永久加成。</p></div></div><div class="keyboard-guide"><span><kbd>1</kbd>–<kbd>4</kbd> 选择伙伴</span><span><kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd> 使用魔法</span><span><kbd>Space</kbd> 开始 / 暂停</span><span><kbd>F</kbd> 倍速 · <kbd>P</kbd> 暂停</span><span><kbd>Esc</kbd> 取消选择</span></div><button class="panel-primary" data-action="modalClose">明白了，去守护好梦 ${svg('arrow')}</button></section>`;
   }
-  function handleAction(button) {
-    const action = button.dataset.action;
-    if (action === "help") {
-      openHelp(button);
-      return;
-    }
-    if (action === "closeHelp") {
-      closeHelp();
-      return;
-    }
-    if (action === "storyNext") {
-      if (storyPage < storyLines.length - 1) {
-        storyPage++;
-        renderStory();
-      } else emit({ type: "storyContinue" });
-      return;
-    }
-    if (action === "upgrade") {
-      const payload = { type: "upgrade", towerId: button.dataset.towerId };
-      if (button.dataset.branch) payload.branch = button.dataset.branch;
-      emit(payload);
-      return;
-    }
-    if (action === "sell") {
-      emit({ type: "sell", towerId: button.dataset.towerId });
-      return;
-    }
-    if (action === "rotate" || action === "zoom") {
-      emit({ type: action, delta: finite(button.dataset.delta) });
-      return;
-    }
-    if (
-      [
-        "storyContinue",
-        "menu",
-        "retry",
-        "nextLevel",
-        "pause",
-        "resume",
-        "sound",
-        "speed",
-        "selectHero",
-        "cancelSelection",
-        "startWave",
-      ].includes(action)
-    )
-      emit({ type: action });
-  }
-  listen(root, "click", (event) => {
-    const button =
-      event.target instanceof Element ? event.target.closest("button") : null;
-    if (!button || button.disabled || button.closest("[inert]")) return;
-    if (button.id === "start-game") {
-      sanitize();
-      emit({ type: "start", options: getOptions() });
-      return;
-    }
-    if (button.dataset.mode) {
-      sanitize({ mode: button.dataset.mode });
-      preview();
-      return;
-    }
-    if (button.dataset.level) {
-      const level = getLevel(button.dataset.level);
-      if (unlocked(level)) {
-        options.levelId = level.id;
-        preview();
-      }
-      return;
-    }
-    if (button.dataset.hero) {
-      sanitize({ hero: button.dataset.hero });
-      preview();
-      return;
-    }
-    if (button.dataset.build) {
-      emit({ type: "selectBuild", towerType: button.dataset.build });
-      return;
-    }
-    if (button.dataset.spell) {
-      emit({ type: "selectSpell", spell: button.dataset.spell });
-      return;
-    }
-    if (button.dataset.action) handleAction(button);
-  });
-  listen(root, "change", (event) => {
-    const target = event.target;
-    if (!(target instanceof Element)) return;
-    if (target.id === "difficulty") {
-      sanitize({ difficulty: target.value });
-      preview();
-    } else if (target.id === "auto-wave")
-      emit({ type: "autoWave", enabled: target.checked });
-    else if (target.matches("[data-priority-for]"))
-      emit({
-        type: "priority",
-        towerId: target.dataset.priorityFor,
-        priority: target.value,
-      });
-  });
-  listen(
-    document,
-    "keydown",
-    (event) => {
-      if (helpOpen && event.key === "Escape") {
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        closeHelp();
-        return;
-      }
-      const modal = helpOpen
-        ? $("help-overlay")
-        : screen === "story"
-          ? $("story-overlay")
-          : screen === "paused"
-            ? $("pause-overlay")
-            : screen === "result"
-              ? $("result-overlay")
-              : null;
-      if (!modal) return;
-      if (helpOpen) event.stopImmediatePropagation();
-      if (event.key !== "Tab") return;
-      const focusable = Array.from(
-        modal.querySelectorAll(
-          'button:not(:disabled),a[href],select:not(:disabled),input:not(:disabled),[tabindex="0"]',
-        ),
-      ).filter(
-        (element) =>
-          !element.closest("[hidden]") && element.getClientRects().length,
-      );
-      if (!focusable.length) return;
-      const first = focusable[0],
-        last = focusable.at(-1);
-      if (
-        event.shiftKey &&
-        (document.activeElement === first ||
-          !modal.contains(document.activeElement))
-      ) {
-        event.preventDefault();
-        last.focus();
-      } else if (
-        !event.shiftKey &&
-        (document.activeElement === last ||
-          !modal.contains(document.activeElement))
-      ) {
-        event.preventDefault();
-        first.focus();
-      }
-    },
-    true,
-  );
-  html(
-    "difficulty",
-    Object.entries(DIFFICULTIES)
-      .map(
-        ([id, d]) =>
-          '<option value="' + esc(id) + '">' + esc(d.name || id) + "</option>",
-      )
-      .join(""),
-  );
-  html(
-    "build-buttons",
-    TOWER_ORDER.map(
-      (id, index) =>
-        '<button type="button" class="build-button" data-build="' +
-        id +
-        '" aria-pressed="false" title="' +
-        esc(TOWERS[id].description) +
-        '"><span class="build-key" aria-hidden="true">' +
-        (index + 1) +
-        '</span><span class="build-icon" aria-hidden="true">' +
-        TOWER_ICONS[id] +
-        '</span><span class="build-name">' +
-        esc(TOWERS[id].name) +
-        '</span><span class="build-cost">◆ ' +
-        TOWERS[id].cost +
-        "</span></button>",
-    ).join(""),
-  );
-  html(
-    "spell-bar",
-    SPELL_ORDER.map(
-      (id) =>
-        '<button type="button" class="spell-button" data-spell="' +
-        id +
-        '" aria-pressed="false" title="' +
-        esc(SPELLS[id].description) +
-        '"><span class="spell-key" aria-hidden="true">' +
-        SPELL_KEYS[id] +
-        '</span><span class="spell-icon" aria-hidden="true">' +
-        SPELL_ICONS[id] +
-        '</span><span class="spell-name">' +
-        esc(SPELLS[id].name) +
-        '</span><span class="spell-cost">' +
-        SPELLS[id].cost +
-        " 星能</span></button>",
-    ).join(""),
-  );
-  showMenu(records, options);
-  return {
-    getOptions,
-    showMenu,
-    setScreen,
-    showStory,
-    showResult,
-    update,
-    toast,
-    destroy() {
-      destroyed = true;
-      listeners.forEach((remove) => remove());
-      timers.forEach(clearTimeout);
-      timers.clear();
-      $("toast-stack").replaceChildren();
-    },
-  };
+  return { canvasContainer: container, update, toast, showRelic, showEnd, hideModal: closeModal, showHelp };
 }
