@@ -109,5 +109,8 @@
   "source_tree_sha256": "2951a906e26ffb197a9eb137f7204a1097395371367d6f888906dc050dda35d7",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-066-original-20261004T062225Z",
   "thread_id": "01a10573-2c8e-70c0-be1a-d0902a4dd09a",
-  "turn_id": "01a10573-4e14-729c-8596-dec7f2275b5d"
+  "turn_id": "01a10573-4e14-729c-8596-dec7f2275b5d",
+  "original_request": "实现一个燕子飞行员驾驶小飞机与空中海盗交战的 3D 空战游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }

@@ -1,7 +1,7 @@
 {
   "browser_verification": "pending_separate_publisher_report",
   "deployment": "original_static_dist_byte_exact",
-  "exact_original_prompt_missing": true,
+  "exact_original_prompt_missing": false,
   "fork_turns_requested": "none",
   "full_task_export_status": "pending_supported_parent_export",
   "game_dir": "066-swallow-skies",
@@ -63,5 +63,7 @@
   "thinking_requested": "ultra",
   "thread_id": "01a10573-2c8e-70c0-be1a-d0902a4dd09a",
   "title": "燕尾中队 · SWALLOW SKIES",
-  "url": "https://qzemi.cn/sentence-to-game/games/066-swallow-skies/"
+  "url": "https://qzemi.cn/sentence-to-game/games/066-swallow-skies/",
+  "original_request": "实现一个燕子飞行员驾驶小飞机与空中海盗交战的 3D 空战游戏，尽你所能丰富游戏玩法。",
+  "exact_original_prompt_evidence": "parent-prompt-completion.json"
 }

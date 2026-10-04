@@ -144,5 +144,8 @@
   "source_tree_sha256": "e75ea2a713545eb6553af3b1259c105c1bf97fdba5e1b506555bce51b4e17853",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-068-original-20261004T064155Z",
   "thread_id": "01a10577-a524-7616-a2e5-c976131ee09c",
-  "turn_id": "01a10577-c557-702f-84bf-4b2201880ee4"
+  "turn_id": "01a10577-c557-702f-84bf-4b2201880ee4",
+  "original_request": "实现一个考古学家挖掘化石并拼合史前动物骨架的 3D 考古拼装游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }

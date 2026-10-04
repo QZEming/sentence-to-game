@@ -1,15 +1,17 @@
 {
-  "exact_prompt_status": "missing/null in original supplied manifest; not reconstructed from summary",
+  "exact_prompt_status": "completed by explicit parent actual creation input attestation; original supplied null retained",
   "fork_turns_requested": "none",
   "full_task_export_status": "pending_supported_parent_export",
   "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
   "generation_turn_id": "01a10574-b2df-7070-bd8b-a080a244e622",
-  "input_scope": "parent attests isolated one-sentence author task; exact sentence unavailable in supplied evidence",
+  "input_scope": "parent attests one complete sentence only; no repository, templates, other games or repair context",
   "kind": "parent_actual_create_request_parameter_attestation",
   "model_requested": "gpt-6-astra",
   "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
-  "prompt": null,
+  "prompt": "实现一个攻城工程师操纵投石机摧毁敌方堡垒的 3D 弹道攻城游戏，尽你所能丰富游戏玩法。",
   "server_execution_parameters_independently_authenticated": false,
   "thinking_requested": "ultra",
-  "thread_id": "01a10574-8d13-767b-a66a-cceb2a9e8094"
+  "thread_id": "01a10574-8d13-767b-a66a-cceb2a9e8094",
+  "original_request": "实现一个攻城工程师操纵投石机摧毁敌方堡垒的 3D 弹道攻城游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_evidence": "parent-prompt-completion.json"
 }

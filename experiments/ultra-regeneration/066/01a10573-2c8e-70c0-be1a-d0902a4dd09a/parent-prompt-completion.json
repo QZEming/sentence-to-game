@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个燕子飞行员驾驶小飞机与空中海盗交战的 3D 空战游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个燕子飞行员驾驶小飞机与空中海盗交战的 3D 空战游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a10573-2c8e-70c0-be1a-d0902a4dd09a",
+  "author_turn_id": "01a10573-4e14-729c-8596-dec7f2275b5d",
+  "evidence": "explicit parent message providing actual initial creation input, not reconstructed from summary and not a full task export",
+  "received_at": "2026-10-04T07:38:52.914070+00:00",
+  "original_supplied_manifest_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

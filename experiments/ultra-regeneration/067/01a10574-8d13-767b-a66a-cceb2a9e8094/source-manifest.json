@@ -114,5 +114,8 @@
   "source_tree_sha256": "ff1751a537fc551718f53303e468a4c225ef4eb655c0f265c3ab6cde7ec2c818",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-067-original-20261004T062453Z",
   "thread_id": "01a10574-8d13-767b-a66a-cceb2a9e8094",
-  "turn_id": "01a10574-b2df-7070-bd8b-a080a244e622"
+  "turn_id": "01a10574-b2df-7070-bd8b-a080a244e622",
+  "original_request": "实现一个攻城工程师操纵投石机摧毁敌方堡垒的 3D 弹道攻城游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }
