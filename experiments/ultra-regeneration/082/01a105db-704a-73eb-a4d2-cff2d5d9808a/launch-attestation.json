@@ -1,0 +1,15 @@
+{
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a105db-90f7-760c-bcf9-791fe1fd2829",
+  "input_scope": "one complete sentence only; no repository, templates, other games or repair context",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": "实现一个史莱姆改变身体形状穿过狭缝并包裹搬动物体的 3D 形态变化解谜游戏，尽你所能丰富游戏玩法。",
+  "server_execution_parameters_independently_authenticated": false,
+  "supplied_parent_launch_record": "supplied-parent-launch-record.json; parent attestation only, not full task export",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105db-704a-73eb-a4d2-cff2d5d9808a"
+}

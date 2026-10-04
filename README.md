@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**80 / 100**。
+当前进度：**83 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -94,6 +94,9 @@
 | 078 | [山岚邮航 · Skybound Courier](games/078-sky-courier/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/078-sky-courier/) | [源码](games/078-sky-courier/src/) |
 | 079 | [异想裁缝铺 · Oddly Tailored](games/079-oddly-tailored/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/079-oddly-tailored/) | [源码](games/079-oddly-tailored/src/) |
 | 080 | [免疫指挥官 · MICROFRONT](games/080-immune-command/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/080-immune-command/) | [源码](games/080-immune-command/src/) |
+| 081 | [沙海行商 · Sands & Silk](games/081-sahara-caravan/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/081-sahara-caravan/) | [源码](games/081-sahara-caravan/src/) |
+| 082 | [MORPH · 史莱姆实验室](games/082-morph/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/082-morph/) | [源码](games/082-morph/src/) |
+| 083 | [纸境 Foldlight — 折一方天地，赴一场微光](games/083-paper-world/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/083-paper-world/) | [源码](games/083-paper-world/src/) |
 
 ## 生成记录
 

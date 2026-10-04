@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-082",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105db-704a-73eb-a4d2-cff2d5d9808a",
+  "generation_turn_id": "01a105db-90f7-760c-bcf9-791fe1fd2829",
+  "exact_prompt": "实现一个史莱姆改变身体形状穿过狭缝并包裹搬动物体的 3D 形态变化解谜游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_verbatim_by_parent",
+  "raw_model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_supplied_explicit_launch_attestation",
+  "scope": "Parent launch parameters, not independently authenticated historical runtime model or effort metadata.",
+  "recorded_at": "2026-10-04T08:05:41.547578Z"
+}

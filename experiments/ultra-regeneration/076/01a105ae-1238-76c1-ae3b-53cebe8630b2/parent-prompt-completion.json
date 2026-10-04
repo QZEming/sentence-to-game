@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个清洁师洗去废弃游乐园的污垢并恢复设施原貌的 3D 清洁修复模拟游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个清洁师洗去废弃游乐园的污垢并恢复设施原貌的 3D 清洁修复模拟游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a105ae-1238-76c1-ae3b-53cebe8630b2",
+  "author_turn_id": "01a105ae-3614-719a-a433-876f018a9dfa",
+  "evidence": "explicit parent actual initial creation input attestation; raw missing/null records retained, not a full task export",
+  "received_at": "2026-10-04T08:28:18.962354+00:00",
+  "original_supplied_manifest_prompt_retained_missing": true,
+  "original_supplied_parent_launch_exact_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

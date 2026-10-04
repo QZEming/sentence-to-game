@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "083-paper-world",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "083",
+  "generation_turn_id": "01a105dc-feea-74cf-a329-36a4b76993e1",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "full_old_history_preserved": true,
+    "game_number": "083",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 14896,
+      "path": "game.js",
+      "sha256": "6f3f2a5713f69b496c42b71783a79c8363d4bc0bd08f2a60e2fe8025fe36d232"
+    },
+    {
+      "bytes": 4212,
+      "path": "index.html",
+      "sha256": "cc6ef157d9f983bf60cb277a91ddd66d51c57a1cc67404a944d824d3c1cdd18c"
+    },
+    {
+      "bytes": 7012,
+      "path": "levels.js",
+      "sha256": "2a404b7f781478f63a78698043c8b61e33715cd3199d15e31c4362bc39f497e4"
+    },
+    {
+      "bytes": 17419,
+      "path": "scene.js",
+      "sha256": "47998f1946981094c8edc8920df821e7132bd3f2c0f273f81f5d30267e81cdde"
+    },
+    {
+      "bytes": 13932,
+      "path": "style.css",
+      "sha256": "8e5df0eb89bcfa6da842bc6792233988d9f89df86b24604d81adbfbdc3b84813"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "7021c555e83c505aa4a4d93a99785f914ba277acf38a24940c79a9c0f0fdf575",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105dc-ccbb-7588-a2b7-b8d2526a809f",
+  "title": "纸境 Foldlight — 折一方天地，赴一场微光",
+  "url": "https://qzemi.cn/sentence-to-game/games/083-paper-world/"
+}

@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "bytes": 57,
+      "path": ".gitignore",
+      "sha256": "1c4fb8691d5d39d99cbeb6b8257aec57f8fc7fc78030264cc98267749ec7808e"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "87fc13e04c946af388d13ebc41dfe9cdafecc6131f464e6814e531fedfb76c81"
+    },
+    {
+      "bytes": 1825,
+      "path": "README.md",
+      "sha256": "050b3fe6efc272b5e4230dd040e63287f009aeb8a12d23303849b5121136705b"
+    },
+    {
+      "bytes": 26020,
+      "path": "dist/app.js",
+      "sha256": "3e675ea7edfbe54c3c7b338106c90c8cfc62d3d3c9292c6b265b17b344cb27c7"
+    },
+    {
+      "bytes": 13016,
+      "path": "dist/engine.js",
+      "sha256": "a29989fa765f2b5292a2e33b3816386a19743d21b65579a2f86d738a95a94bdf"
+    },
+    {
+      "bytes": 7013,
+      "path": "dist/index.html",
+      "sha256": "f3d27790ac155c05e6c75d6b6116fd0874181f3c552faaf09a858424f630f6d8"
+    },
+    {
+      "bytes": 13904,
+      "path": "dist/scene.js",
+      "sha256": "2bd2972d9cc3a23deeef761be57ceaf0169350cb1c1855c3e47128cac905fe3f"
+    },
+    {
+      "bytes": 29585,
+      "path": "dist/style.css",
+      "sha256": "72c6cf5c0706b4535981adb469bbb71df3051715bedf99b0b09646cd6b6d894b"
+    },
+    {
+      "bytes": 38703,
+      "path": "dist/vendor/OrbitControls.js",
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 88269,
+      "path": "output/playwright/game-desktop.jpg",
+      "sha256": "8aad09d46d805f5ff30384cfc659c341597d3442cee98f7211cf174e5cf26b9c"
+    },
+    {
+      "bytes": 273,
+      "path": "package.json",
+      "sha256": "9d4cdc0dcb9519da268e3934873f5fa29a41d6cce08c007604f969522002369a"
+    },
+    {
+      "bytes": 3981,
+      "path": "tests/engine.test.js",
+      "sha256": "4c0d5a8aaddc74cce8a06566187bbebdb18bd1c9e9637a17d191ec3d056a910d"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan",
+  "source_tree_sha256": "80bf76fd3ca2d7ba5db69462b7137b00b8e84fe977c3a29714b1bf32286e4270",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-081-original-20261004T081147Z",
+  "thread_id": "01a105cd-39f1-76b2-bd0f-044711d960a2",
+  "turn_id": "01a105cd-5b4c-774c-897f-0db131472a01"
+}

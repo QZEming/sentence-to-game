@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "game_number": "081",
+  "title": "沙海行商 · Sands & Silk",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a105cd-39f1-76b2-bd0f-044711d960a2",
+  "turn_id": "01a105cd-5b4c-774c-897f-0db131472a01",
+  "model": "Astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "fork": "none",
+  "exact_prompt": "实现一个沙漠商队领队根据各地供需买卖货物并规划贸易行程的 3D 商旅经营游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_by_parent",
+  "provenance": "parent_launch_attestation",
+  "scope": "Parent explicit prompt and launch parameters; no independent historical runtime or generation-turn metadata authentication.",
+  "model_authenticated_by_read_thread": false,
+  "effort_independently_authenticated": false,
+  "created_at_utc": "2026-10-04T08:11:47.826458Z"
+}

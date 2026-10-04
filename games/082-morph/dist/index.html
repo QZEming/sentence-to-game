@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><meta name="theme-color" content="#101919"><meta name="description" content="改变形态、穿过狭缝、包裹搬运物体。MORPH 是一款可以在浏览器中游玩的 3D 史莱姆解谜游戏。"><title>MORPH · 史莱姆实验室</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23121e1b'/%3E%3Cpath d='M12 43C10 18 22 12 32 12s22 6 20 31c-1 13-39 13-40 0' fill='%23b4f679'/%3E%3Ccircle cx='25' cy='32' r='3' fill='%23121e1b'/%3E%3Ccircle cx='40' cy='32' r='3' fill='%23121e1b'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./" aria-label="MORPH 首页"><svg viewBox="0 0 38 38" aria-hidden="true"><path d="M4 26C3 9 12 5 19 5s16 4 15 21c-1 10-29 10-30 0" fill="currentColor"/><circle cx="14" cy="20" r="2" fill="#16211d"/><circle cx="25" cy="20" r="2" fill="#16211d"/></svg><span>MORPH<small>形态之外，别有洞天</small></span></a><div class="lab-label"><span class="pulse-dot"></span> SLIME RESEARCH LAB <span class="version">/ 01</span></div><nav><button id="help-btn" class="quiet" aria-label="查看操作指南">操作指南 <span>?</span></button><button id="sound-btn" class="icon-button" aria-label="开启音效" title="开启音效"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4zM16 9l5 6m0-6-5 6"/></svg></button><button id="pause-btn" class="icon-button" aria-label="暂停游戏" title="暂停游戏"><svg viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg></button></nav></header>
+<main>
+<section class="game-shell" aria-label="3D 游戏区域">
+<div id="scene"></div><div class="vignette"></div>
+<div class="level-heading"><div class="eyebrow"><span id="chapter-no">实验 01</span><i></i><span id="chapter-theme">形态启蒙</span></div><h1 id="level-title">柔软，是一种超能力。</h1><p id="level-description">小小的身体，也有无限种可能。</p></div>
+<div class="top-stats"><div class="crystal-stat"><span class="crystal-icon">◇</span><strong id="crystal-count">0 <em>/ 3</em></strong></div><div class="timer"><svg viewBox="0 0 20 20"><circle cx="10" cy="11" r="6.5"/><path d="M7 1h6M10 7v5l3 1"/></svg><span id="timer">00:00</span></div></div>
+<aside class="mission-card"><div class="section-label">本次实验 <span>OBJECTIVES</span></div><ul id="objectives"></ul><div class="hint-box"><span>✧</span><p id="hint-text"></p></div><button id="hint-btn" class="hint-button">需要一点灵感 <span>H</span></button></aside>
+<aside class="levels-panel"><div class="section-label">实验进度</div><div id="level-buttons"></div><div class="levels-footer"><span id="total-completed">0</span> / 5 完成</div></aside>
+<div class="world-caption"><span class="tiny-dot"></span> <span id="world-caption">苔光遗迹</span><span class="caption-line"></span><span>ISLAND <b id="island-no">01</b></span></div>
+<div id="interaction" class="interaction hidden"><kbd>E</kbd><span>包裹能量方块</span></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="camera-help"><svg viewBox="0 0 20 20"><path d="M4 5h12v10H4zM1 8h3m12 0h3M8 1v4m0 10v4"/></svg> 拖动旋转 · 滚轮缩放<button id="camera-btn" aria-label="重置镜头">复位</button></div>
+<div id="loading"><span class="loader"></span><p>唤醒一只小史莱姆…</p></div>
+</section>
+<section class="control-deck"><div class="form-intro"><span class="section-label">身体形态</span><h2 id="current-form-name">原生形态</h2><p id="current-form-desc">平衡灵活 · 可以包裹物体</p></div><div class="form-buttons" role="group" aria-label="切换史莱姆形态"><button class="form-card active" data-form="0"><kbd>1</kbd><svg viewBox="0 0 56 40"><path d="M12 29C10 9 21 6 28 6s18 3 16 23c-1 9-31 9-32 0Z"/><circle cx="23" cy="22" r="2"/><circle cx="34" cy="22" r="2"/></svg><div><strong>原生</strong><small>包裹 · 搬运</small></div><span class="selected-dot"></span></button><button class="form-card" data-form="1"><kbd>2</kbd><svg viewBox="0 0 56 40"><path d="M5 29c0-10 14-12 23-12s23 2 23 12c0 7-46 7-46 0Z"/><circle cx="23" cy="26" r="1.7"/><circle cx="34" cy="26" r="1.7"/></svg><div><strong>扁平</strong><small>钻缝 · 漂浮</small></div><span class="selected-dot"></span></button><button class="form-card" data-form="2"><kbd>3</kbd><svg viewBox="0 0 56 40"><path d="M20 32V13C20-1 37-1 37 13v19c0 7-17 7-17 0Z"/><circle cx="25" cy="15" r="1.7"/><circle cx="32" cy="15" r="1.7"/></svg><div><strong>细长</strong><small>侧身 · 触高</small></div><span class="selected-dot"></span></button></div><div class="ability-control"><button id="interact-btn"><kbd>E</kbd><span id="carry-label">包裹 / 放下</span><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8z"/></svg></button><div class="mass"><span>凝胶稳定度</span><div><i id="stability-fill"></i></div><b id="stability">100%</b></div></div></section>
+<footer><div class="key-guide"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移动</span><span><kbd>SPACE</kbd> 弹跃</span><span><kbd>R</kbd> 重新实验</span></div><p>保持柔软，换个形状想问题。</p><div class="footer-right"><span class="tiny-dot"></span>本机自动保存</div></footer>
+</main>
+<div id="mobile-controls"><div class="dpad"><button data-key="KeyW" aria-label="向前">↑</button><button data-key="KeyA" aria-label="向左">←</button><button data-key="KeyS" aria-label="向后">↓</button><button data-key="KeyD" aria-label="向右">→</button></div><button id="mobile-jump" data-key="Space">弹跃</button></div>
+<dialog id="modal"><button id="modal-close" class="modal-close" aria-label="关闭弹窗">×</button><div id="modal-content"></div></dialog>
+<script type="module" src="./game.js"></script>
+</body></html>

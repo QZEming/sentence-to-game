@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "d133bdf80cb87bcabd05aa26844abc3ebc97a09831708f1421673fe08bcce34d"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "1489f74bf10d635a3f9e7681e73d78c89763d8574ba0872420754860241425d5"
+    },
+    {
+      "bytes": 1851,
+      "path": "README.md",
+      "sha256": "9ec56328af527e00480b5c1b5bce736d805bc8decc554ab1afc9ee6c349bb27e"
+    },
+    {
+      "bytes": 33214,
+      "path": "dist/game.js",
+      "sha256": "a523ee78ea578352e273224105474734b6de91d25e1afc14a82b7e2be710f9bb"
+    },
+    {
+      "bytes": 6044,
+      "path": "dist/index.html",
+      "sha256": "cc0b08d30fd03c39eac022d007831a9c43641d987542182ff99399a6a0ed2251"
+    },
+    {
+      "bytes": 3731,
+      "path": "dist/levels.js",
+      "sha256": "48ea83c97f62a82497441c02b46759cc3a478ec54baf45471b05b573d70fd71a"
+    },
+    {
+      "bytes": 16482,
+      "path": "dist/style.css",
+      "sha256": "f68a25fbeb806e078fcaa2d37515782faac18edb08014802b06d9642bd86344e"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 68444,
+      "path": "original-delivery/morph-desktop.jpg",
+      "sha256": "7d84b2fc88527e48c8b13f3fc70d8fa243c5a5feb05b6fedd152dbe9f3c82836"
+    },
+    {
+      "bytes": 285,
+      "path": "package.json",
+      "sha256": "d8db2e905f957b7bf9a0481539e0bc7343c553f4a1a0e31d05b0d003e1bee31c"
+    },
+    {
+      "bytes": 5489,
+      "path": "scripts/verify.mjs",
+      "sha256": "e744c9a8e0741afdc3a0f9e714c4db9de42eaf1f06abe4201543b7714d7b3e21"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-51/morph",
+  "source_tree_sha256": "963bfeb562d8f6c861dde6598d4fc070c003b731dbf28b9e00e2a2b2782499a9",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-082-original-20261004T080136Z",
+  "thread_id": "01a105db-704a-73eb-a4d2-cff2d5d9808a",
+  "turn_id": "01a105db-90f7-760c-bcf9-791fe1fd2829"
+}

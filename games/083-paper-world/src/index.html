@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#161a29"><title>纸境 Foldlight — 折一方天地，赴一场微光</title><meta name="description" content="与纸片精灵一起折叠悬浮的纸世界，连接断路、收集星光，探索六个空间解谜章节。"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161a29'/%3E%3Cpath d='M5 12 27 5 20 27 14 18Z' fill='%23e7b898'/%3E%3Cpath d='m5 12 9 6L27 5' fill='none' stroke='%23fff4de'/%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<main id="app">
+ <div id="world" aria-label="3D 折纸世界，点击岛屿移动精灵"></div>
+ <div class="grain" aria-hidden="true"></div>
+ <header class="header">
+  <a class="brand" href="./" aria-label="纸境首页"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 15 35 5 25 35 17 24Z" fill="currentColor"/><path d="m4 15 13 9L35 5" fill="none" stroke="#34303a" stroke-width="1.2"/></svg><div>纸境 <span>FOLDLIGHT</span></div></a>
+  <div class="header-rule"></div><span class="edition">一场关于折叠与重逢的旅行</span>
+  <nav><button id="chapters-btn" class="text-button"><span class="icon">▦</span> 章节</button><button id="sound-btn" class="icon-button" aria-label="开启声音" title="声音">♫</button><button id="help-btn" class="icon-button" aria-label="游玩指南" title="游玩指南">?</button></nav>
+ </header>
+ <section class="chapter-info" aria-label="当前章节">
+  <div class="eyebrow"><span class="line"></span> CHAPTER <span id="chapter-number">01</span> / 06</div>
+  <h1 id="chapter-title">初见 · 纸之彼岸</h1><p id="chapter-subtitle">有些距离，只需要轻轻一折。</p>
+  <div class="objective"><div class="objective-icon">✧</div><div><span class="small-label">本章目标</span><p id="objective-text">唤醒星光，让精灵抵达光之门。</p></div></div>
+  <div class="chapter-items"><span id="star-count">✦ 0 / 2</span><span id="key-count" hidden>⚿ 未找到钥匙</span><span id="switch-count" hidden>◇ 机关待唤醒</span></div>
+ </section>
+ <div class="scene-tag"><span>THE PAPER REALM</span><div id="realm-name">晨光群岛</div></div>
+ <aside class="fold-panel" aria-label="折叠控制"><div class="panel-heading"><span>折叠世界</span><span class="mini">FOLD & UNFOLD</span></div><div id="fold-controls"></div><p class="fold-note" id="fold-note">每一道折痕，都藏着一条新的路。</p></aside>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <div id="node-labels" aria-hidden="true"></div>
+ <div class="view-tools"><button id="rotate-left" aria-label="向左旋转视角" title="向左旋转 Q">↶</button><button id="camera-reset" aria-label="重置视角" title="重置视角">⌖</button><button id="rotate-right" aria-label="向右旋转视角" title="向右旋转 E">↷</button></div>
+ <footer class="bottom-bar"><div class="guide"><div class="mouse-symbol"></div><div><strong>点击道路，带精灵前行</strong><span>点击折痕切换道路 · 拖动空白处旋转视角</span></div></div><div class="play-actions"><span class="steps"><b id="moves">00</b><span>步行</span><i></i><b id="folds">00</b><span>折叠</span></span><button id="undo-btn" title="撤销 Z" aria-label="撤销上一步">↶ <span>撤销</span></button><button id="restart-btn" title="重来 R" aria-label="重新开始当前章节">↻ <span>重来</span></button><button id="hint-btn" class="hint-button">✧ <span>一点灵感</span></button></div></footer>
+ <div class="chapter-dots" id="chapter-dots"></div>
+ <div class="world-caption">把世界折小一点，让我们靠近一点。</div>
+ <dialog id="modal"><button class="modal-close" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+ <div id="loading"><div class="loading-mark">◇</div><h2>正在展开纸世界</h2><p>让每一道折痕，都通向新的风景。</p></div>
+</main>
+<script type="module" src="./game.js"></script>
+</body></html>

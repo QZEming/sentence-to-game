@@ -99,5 +99,8 @@
   "source_tree_sha256": "3e9d5ccc214707dac0ed9dc7786b9426f5ebb9bd6f122b60f43f8e5b8b5953df",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-076-original-20261004T074301Z",
   "thread_id": "01a105ae-1238-76c1-ae3b-53cebe8630b2",
-  "turn_id": "01a105ae-3614-719a-a433-876f018a9dfa"
+  "turn_id": "01a105ae-3614-719a-a433-876f018a9dfa",
+  "original_request": "实现一个清洁师洗去废弃游乐园的污垢并恢复设施原貌的 3D 清洁修复模拟游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_parent_launch_exact_prompt": null
 }

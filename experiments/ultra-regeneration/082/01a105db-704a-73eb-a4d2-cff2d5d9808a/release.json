@@ -1,0 +1,62 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "082-morph",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "082",
+  "generation_turn_id": "01a105db-90f7-760c-bcf9-791fe1fd2829",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "full_old_history_preserved": true,
+    "game_number": "082",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 33214,
+      "path": "game.js",
+      "sha256": "a523ee78ea578352e273224105474734b6de91d25e1afc14a82b7e2be710f9bb"
+    },
+    {
+      "bytes": 6044,
+      "path": "index.html",
+      "sha256": "cc0b08d30fd03c39eac022d007831a9c43641d987542182ff99399a6a0ed2251"
+    },
+    {
+      "bytes": 3731,
+      "path": "levels.js",
+      "sha256": "48ea83c97f62a82497441c02b46759cc3a478ec54baf45471b05b573d70fd71a"
+    },
+    {
+      "bytes": 16482,
+      "path": "style.css",
+      "sha256": "f68a25fbeb806e078fcaa2d37515782faac18edb08014802b06d9642bd86344e"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "963bfeb562d8f6c861dde6598d4fc070c003b731dbf28b9e00e2a2b2782499a9",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105db-704a-73eb-a4d2-cff2d5d9808a",
+  "title": "MORPH · 史莱姆实验室",
+  "url": "https://qzemi.cn/sentence-to-game/games/082-morph/"
+}

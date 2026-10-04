@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-083",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105dc-ccbb-7588-a2b7-b8d2526a809f",
+  "generation_turn_id": "01a105dc-feea-74cf-a329-36a4b76993e1",
+  "exact_prompt": "实现一个纸片精灵折叠和展开纸世界来连接原本分离的道路的 3D 折纸空间解谜游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_provided_verbatim",
+  "raw_model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_explicit_launch_attestation",
+  "scope": "Parent launch parameters, not independent historical runtime model/effort verification.",
+  "recorded_at": "2026-10-04T08:16:41.858046Z"
+}

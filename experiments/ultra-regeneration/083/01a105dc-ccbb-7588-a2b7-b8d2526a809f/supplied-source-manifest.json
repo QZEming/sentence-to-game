@@ -1,0 +1,460 @@
+{
+  "all_hashes_match": true,
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-083-original-20261004T081430Z",
+  "archive_status": "complete",
+  "candidate": "ultra-083",
+  "completion_status": "parent_reported_completed",
+  "copied_file_count": 10,
+  "exact_prompt": "实现一个纸片精灵折叠和展开纸世界来连接原本分离的道路的 3D 折纸空间解谜游戏，尽你所能丰富游戏玩法。",
+  "excluded_directory_names": [
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".mypy_cache",
+    ".npm",
+    ".parcel-cache",
+    ".playwright-cli",
+    ".pnpm-store",
+    ".pytest_cache",
+    ".rollup.cache",
+    ".rpt2_cache",
+    ".ruff_cache",
+    ".runtime",
+    ".session",
+    ".sessions",
+    ".sites-runtime",
+    ".turbo",
+    ".vite",
+    ".webpack",
+    ".yarn",
+    "__pycache__",
+    "archive",
+    "archives",
+    "cache",
+    "caches",
+    "node_modules",
+    "runtime",
+    "session",
+    "sessions"
+  ],
+  "excluded_directory_substrings": [
+    "runtime",
+    "session",
+    "cache"
+  ],
+  "file_count": 10,
+  "files": [
+    {
+      "archive_relative_path": "paper-world/.openai/hosting.json",
+      "copied_metadata": {
+        "ctime_ns": "1791101802890404898",
+        "ctime_utc": "2026-10-04T08:16:42.890404898Z",
+        "dev": "16777229",
+        "ino": "545918294",
+        "mode": "33188",
+        "mtime_ns": "1791099875674907692",
+        "mtime_utc": "2026-10-04T07:44:35.674907692Z",
+        "size_bytes": 106
+      },
+      "copied_sha256": "fb09405a06fddbf642066186e187d4afa0bfea15410837de19ce5564f1c38552",
+      "ctime_ns": "1791099875675121442",
+      "ctime_utc": "2026-10-04T07:44:35.675121442Z",
+      "dev": "16777229",
+      "ino": "545904267",
+      "mode": "33188",
+      "mtime_ns": "1791099875674907692",
+      "mtime_utc": "2026-10-04T07:44:35.674907692Z",
+      "sha256_match": true,
+      "size_bytes": 106,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/.openai/hosting.json",
+      "source_sha256": "fb09405a06fddbf642066186e187d4afa0bfea15410837de19ce5564f1c38552"
+    },
+    {
+      "archive_relative_path": "paper-world/README.md",
+      "copied_metadata": {
+        "ctime_ns": "1791101802893521321",
+        "ctime_utc": "2026-10-04T08:16:42.893521321Z",
+        "dev": "16777229",
+        "ino": "545918295",
+        "mode": "33188",
+        "mtime_ns": "1791101114302881125",
+        "mtime_utc": "2026-10-04T08:05:14.302881125Z",
+        "size_bytes": 1961
+      },
+      "copied_sha256": "a7b5228cee7c4965861738f98387d38d26b8d6d14ac4ce56db951c5d8fc79095",
+      "ctime_ns": "1791101114302881125",
+      "ctime_utc": "2026-10-04T08:05:14.302881125Z",
+      "dev": "16777229",
+      "ino": "545912040",
+      "mode": "33188",
+      "mtime_ns": "1791101114302881125",
+      "mtime_utc": "2026-10-04T08:05:14.302881125Z",
+      "sha256_match": true,
+      "size_bytes": 1961,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/README.md",
+      "source_sha256": "a7b5228cee7c4965861738f98387d38d26b8d6d14ac4ce56db951c5d8fc79095"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/game.js",
+      "copied_metadata": {
+        "ctime_ns": "1791101802898507124",
+        "ctime_utc": "2026-10-04T08:16:42.898507124Z",
+        "dev": "16777229",
+        "ino": "545918297",
+        "mode": "33188",
+        "mtime_ns": "1791101114215985940",
+        "mtime_utc": "2026-10-04T08:05:14.215985940Z",
+        "size_bytes": 14896
+      },
+      "copied_sha256": "6f3f2a5713f69b496c42b71783a79c8363d4bc0bd08f2a60e2fe8025fe36d232",
+      "ctime_ns": "1791101114215985940",
+      "ctime_utc": "2026-10-04T08:05:14.215985940Z",
+      "dev": "16777229",
+      "ino": "545909543",
+      "mode": "33188",
+      "mtime_ns": "1791101114215985940",
+      "mtime_utc": "2026-10-04T08:05:14.215985940Z",
+      "sha256_match": true,
+      "size_bytes": 14896,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/game.js",
+      "source_sha256": "6f3f2a5713f69b496c42b71783a79c8363d4bc0bd08f2a60e2fe8025fe36d232"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/index.html",
+      "copied_metadata": {
+        "ctime_ns": "1791101802916439453",
+        "ctime_utc": "2026-10-04T08:16:42.916439453Z",
+        "dev": "16777229",
+        "ino": "545918298",
+        "mode": "33188",
+        "mtime_ns": "1791100112567977389",
+        "mtime_utc": "2026-10-04T07:48:32.567977389Z",
+        "size_bytes": 4212
+      },
+      "copied_sha256": "cc6ef157d9f983bf60cb277a91ddd66d51c57a1cc67404a944d824d3c1cdd18c",
+      "ctime_ns": "1791100112567977389",
+      "ctime_utc": "2026-10-04T07:48:32.567977389Z",
+      "dev": "16777229",
+      "ino": "545904912",
+      "mode": "33188",
+      "mtime_ns": "1791100112567977389",
+      "mtime_utc": "2026-10-04T07:48:32.567977389Z",
+      "sha256_match": true,
+      "size_bytes": 4212,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/index.html",
+      "source_sha256": "cc6ef157d9f983bf60cb277a91ddd66d51c57a1cc67404a944d824d3c1cdd18c"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/levels.js",
+      "copied_metadata": {
+        "ctime_ns": "1791101802920305003",
+        "ctime_utc": "2026-10-04T08:16:42.920305003Z",
+        "dev": "16777229",
+        "ino": "545918299",
+        "mode": "33188",
+        "mtime_ns": "1791100506335162750",
+        "mtime_utc": "2026-10-04T07:55:06.335162750Z",
+        "size_bytes": 7012
+      },
+      "copied_sha256": "2a404b7f781478f63a78698043c8b61e33715cd3199d15e31c4362bc39f497e4",
+      "ctime_ns": "1791100506335162750",
+      "ctime_utc": "2026-10-04T07:55:06.335162750Z",
+      "dev": "16777229",
+      "ino": "545907543",
+      "mode": "33188",
+      "mtime_ns": "1791100506335162750",
+      "mtime_utc": "2026-10-04T07:55:06.335162750Z",
+      "sha256_match": true,
+      "size_bytes": 7012,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/levels.js",
+      "source_sha256": "2a404b7f781478f63a78698043c8b61e33715cd3199d15e31c4362bc39f497e4"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/scene.js",
+      "copied_metadata": {
+        "ctime_ns": "1791101802923741719",
+        "ctime_utc": "2026-10-04T08:16:42.923741719Z",
+        "dev": "16777229",
+        "ino": "545918300",
+        "mode": "33188",
+        "mtime_ns": "1791101114216319982",
+        "mtime_utc": "2026-10-04T08:05:14.216319982Z",
+        "size_bytes": 17419
+      },
+      "copied_sha256": "47998f1946981094c8edc8920df821e7132bd3f2c0f273f81f5d30267e81cdde",
+      "ctime_ns": "1791101114216319982",
+      "ctime_utc": "2026-10-04T08:05:14.216319982Z",
+      "dev": "16777229",
+      "ino": "545905535",
+      "mode": "33188",
+      "mtime_ns": "1791101114216319982",
+      "mtime_utc": "2026-10-04T08:05:14.216319982Z",
+      "sha256_match": true,
+      "size_bytes": 17419,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/scene.js",
+      "source_sha256": "47998f1946981094c8edc8920df821e7132bd3f2c0f273f81f5d30267e81cdde"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/style.css",
+      "copied_metadata": {
+        "ctime_ns": "1791101802937987666",
+        "ctime_utc": "2026-10-04T08:16:42.937987666Z",
+        "dev": "16777229",
+        "ino": "545918301",
+        "mode": "33188",
+        "mtime_ns": "1791101183257083043",
+        "mtime_utc": "2026-10-04T08:06:23.257083043Z",
+        "size_bytes": 13932
+      },
+      "copied_sha256": "8e5df0eb89bcfa6da842bc6792233988d9f89df86b24604d81adbfbdc3b84813",
+      "ctime_ns": "1791101183257083043",
+      "ctime_utc": "2026-10-04T08:06:23.257083043Z",
+      "dev": "16777229",
+      "ino": "545904914",
+      "mode": "33188",
+      "mtime_ns": "1791101183257083043",
+      "mtime_utc": "2026-10-04T08:06:23.257083043Z",
+      "sha256_match": true,
+      "size_bytes": 13932,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/style.css",
+      "source_sha256": "8e5df0eb89bcfa6da842bc6792233988d9f89df86b24604d81adbfbdc3b84813"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/vendor/LICENSE-three.txt",
+      "copied_metadata": {
+        "ctime_ns": "1791101802945014889",
+        "ctime_utc": "2026-10-04T08:16:42.945014889Z",
+        "dev": "16777229",
+        "ino": "545918303",
+        "mode": "33188",
+        "mtime_ns": "1791101183270181363",
+        "mtime_utc": "2026-10-04T08:06:23.270181363Z",
+        "size_bytes": 1081
+      },
+      "copied_sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3",
+      "ctime_ns": "1791101183270181363",
+      "ctime_utc": "2026-10-04T08:06:23.270181363Z",
+      "dev": "16777229",
+      "ino": "545912180",
+      "mode": "33188",
+      "mtime_ns": "1791101183270181363",
+      "mtime_utc": "2026-10-04T08:06:23.270181363Z",
+      "sha256_match": true,
+      "size_bytes": 1081,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/vendor/LICENSE-three.txt",
+      "source_sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3"
+    },
+    {
+      "archive_relative_path": "paper-world/dist/vendor/three.module.js",
+      "copied_metadata": {
+        "ctime_ns": "1791101802948561647",
+        "ctime_utc": "2026-10-04T08:16:42.948561647Z",
+        "dev": "16777229",
+        "ino": "545918304",
+        "mode": "33188",
+        "mtime_ns": "1791099897970002820",
+        "mtime_utc": "2026-10-04T07:44:57.970002820Z",
+        "size_bytes": 1314681
+      },
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "ctime_ns": "1791099897970002820",
+      "ctime_utc": "2026-10-04T07:44:57.970002820Z",
+      "dev": "16777229",
+      "ino": "545904276",
+      "mode": "33188",
+      "mtime_ns": "1791099897970002820",
+      "mtime_utc": "2026-10-04T07:44:57.970002820Z",
+      "sha256_match": true,
+      "size_bytes": 1314681,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world/dist/vendor/three.module.js",
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "archive_relative_path": "root-artifacts/foldlight.tar.gz",
+      "copied_metadata": {
+        "ctime_ns": "1791101803116891964",
+        "ctime_utc": "2026-10-04T08:16:43.116891964Z",
+        "dev": "16777229",
+        "ino": "545918306",
+        "mode": "33188",
+        "mtime_ns": "1791101289147169951",
+        "mtime_utc": "2026-10-04T08:08:09.147169951Z",
+        "size_bytes": 288970
+      },
+      "copied_sha256": "fb5264ff14b4e1a265af48fe14b7dcbc46d00b43626e585596ce78f523d33e17",
+      "ctime_ns": "1791101289147169951",
+      "ctime_utc": "2026-10-04T08:08:09.147169951Z",
+      "dev": "16777229",
+      "ino": "545912472",
+      "mode": "33188",
+      "mtime_ns": "1791101289147169951",
+      "mtime_utc": "2026-10-04T08:08:09.147169951Z",
+      "sha256_match": true,
+      "size_bytes": 288970,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/foldlight.tar.gz",
+      "source_sha256": "fb5264ff14b4e1a265af48fe14b7dcbc46d00b43626e585596ce78f523d33e17"
+    }
+  ],
+  "final_verified_at": "2026-10-04T08:16:43.123832Z",
+  "fixed_inventory_at": "2026-10-04T08:16:41.858046Z",
+  "generated_documents_excluded_from_original_count": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "generation_thread_id": "01a105dc-ccbb-7588-a2b7-b8d2526a809f",
+  "generation_turn_id": "01a105dc-feea-74cf-a329-36a4b76993e1",
+  "independent_historical_model_effort_verified": false,
+  "integer_precision": "mtime_ns/ctime_ns/dev/ino/mode encoded as exact decimal strings; all verification in one Python process",
+  "original_package_sha256": "fb5264ff14b4e1a265af48fe14b7dcbc46d00b43626e585596ce78f523d33e17",
+  "parent_launch_record": "parent-launch-record.json",
+  "parent_source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "process_observation": {
+    "archivist_process_actions": "none",
+    "checks_succeeded": true,
+    "dedicated_preview_browser_present": false,
+    "idle_framework_contexts": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 12249,
+        "preserved": true,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12250,
+        "preserved": true,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12251,
+        "preserved": true,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12252,
+        "preserved": true,
+        "state": "S"
+      }
+    ],
+    "observed_at": "2026-10-04T08:15:49.540529Z",
+    "port_4317_listeners": [],
+    "port_lsof_result": {
+      "exit_code": 1,
+      "interpretation": "No LISTEN match",
+      "stderr": "",
+      "stdout": ""
+    },
+    "protected_processes": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 1036,
+        "preserved": true,
+        "role": "user Chrome",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2547,
+        "preserved": true,
+        "role": "original 5173 service",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2554,
+        "preserved": true,
+        "role": "original 4827 service",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2560,
+        "preserved": true,
+        "role": "original 4173 service",
+        "state": "S"
+      }
+    ],
+    "provenance": "root read-only ps/lsof metadata, not archivist process inspection or author game acceptance",
+    "signals": []
+  },
+  "remote_actions": "none",
+  "schema_version": 2,
+  "site_url": null,
+  "site_url_status": "not supplied; no query",
+  "source_invariance_scope": "fixed current selected source and original package baseline through final checks",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-52/paper-world",
+  "source_selected_file_set_unchanged": true,
+  "source_size_mtime_hash_unchanged": true,
+  "source_skipped_relative_paths": [
+    ".git"
+  ],
+  "source_stat_metadata_unchanged": true,
+  "stability_check": {
+    "first_at": "2026-10-04T08:16:41.873064Z",
+    "interval_seconds": 1.0104671660083113,
+    "metadata_equal": true,
+    "second_at": "2026-10-04T08:16:42.883545Z"
+  },
+  "stage": "original",
+  "symlinks_and_ancestors_excluded": true,
+  "title": "纸境 · Foldlight",
+  "total_bytes": 1664270,
+  "verification_evidence": {
+    "README_author_record": {
+      "chapter_counts": [
+        24,
+        22,
+        48,
+        21,
+        59,
+        127
+      ],
+      "file": "paper-world/README.md",
+      "lines": [
+        31,
+        33,
+        34
+      ],
+      "reachable_state_count": 301,
+      "shortest_action_counts": [
+        6,
+        7,
+        11,
+        7,
+        15,
+        17
+      ],
+      "statement": "All reachable states reportedly enumerated with completion paths; browser checks reportedly real pointer movement, station restrictions, collection, folding, undo restoration, chapter selection and victory feedback."
+    },
+    "audio_error_console_warning_network_capture_scope": "unknown",
+    "browser_input_state_hooks_or_acceleration": "unknown; no retained input sequence or driver",
+    "browser_six_chapter_complete_play": "Not claimed by README; only bounded pointer, station, collection, folding, undo, chapter selection and victory feedback checks recorded. No retained full browser driver or result.",
+    "execution_by_archivist": "stat/hash/file-set copy verification only; no game testing",
+    "mobile_viewport_input_physical_device_scope": "unknown",
+    "native_webmcp_verification": "unknown; visible-action/API backing statement is not native execution proof",
+    "retained_tests_or_browser_driver_or_QA_or_results_or_output": false,
+    "state_enumeration_execution_method": "author claim; no retained enumeration driver or result log",
+    "static_api_observation": {
+      "file": "paper-world/dist/game.js",
+      "lines": [
+        32,
+        34
+      ],
+      "method": "window.foldlight exposes read/project/busy; conditional WebMCP move/fold share production visible actions. This does not establish actual browser driving method or native WebMCP execution."
+    },
+    "static_rules_observation": {
+      "file": "paper-world/dist/levels.js",
+      "lines": [
+        12,
+        21
+      ],
+      "method": "Pure initial/collect/adjacency/moveState/foldState/BFS solve state transitions; rules, not browser input.",
+      "provenance": "moonbloom_state bounded read-only static inspection; not test execution"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "081-sahara-caravan",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "081",
+  "generation_turn_id": "01a105cd-5b4c-774c-897f-0db131472a01",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "full_old_history_preserved": true,
+    "game_number": "081",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/7b612176378786a5ab44d13a701f2ca54dcdbc68",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 26020,
+      "path": "app.js",
+      "sha256": "3e675ea7edfbe54c3c7b338106c90c8cfc62d3d3c9292c6b265b17b344cb27c7"
+    },
+    {
+      "bytes": 13016,
+      "path": "engine.js",
+      "sha256": "a29989fa765f2b5292a2e33b3816386a19743d21b65579a2f86d738a95a94bdf"
+    },
+    {
+      "bytes": 7013,
+      "path": "index.html",
+      "sha256": "f3d27790ac155c05e6c75d6b6116fd0874181f3c552faaf09a858424f630f6d8"
+    },
+    {
+      "bytes": 13904,
+      "path": "scene.js",
+      "sha256": "2bd2972d9cc3a23deeef761be57ceaf0169350cb1c1855c3e47128cac905fe3f"
+    },
+    {
+      "bytes": 29585,
+      "path": "style.css",
+      "sha256": "72c6cf5c0706b4535981adb469bbb71df3051715bedf99b0b09646cd6b6d894b"
+    },
+    {
+      "bytes": 38703,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "80bf76fd3ca2d7ba5db69462b7137b00b8e84fe977c3a29714b1bf32286e4270",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105cd-39f1-76b2-bd0f-044711d960a2",
+  "title": "沙海行商 · Sands & Silk",
+  "url": "https://qzemi.cn/sentence-to-game/games/081-sahara-caravan/"
+}

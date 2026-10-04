@@ -1,0 +1,753 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-081-original-20261004T081147Z",
+  "archive_kind": "original_byte_copy",
+  "bytes": {
+    "evidence": 88269,
+    "original_parent_tar": 0,
+    "original_total": 943865,
+    "source": 855596
+  },
+  "counts": {
+    "evidence_files": 1,
+    "original_files": 15,
+    "original_parent_tar_files": 0,
+    "source_files": 14
+  },
+  "created_at_utc": "2026-10-04T08:11:47.656722Z",
+  "files": [
+    {
+      "archive_path": "source/.gitignore",
+      "bytes": 57,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 57,
+        "ctime_ns": "1791101507697948984",
+        "ctime_utc": "2026-10-04T08:11:47.697948984Z",
+        "dev": "16777229",
+        "ino": "545916136",
+        "mtime_ns": "1791100621290401681",
+        "mtime_utc": "2026-10-04T07:57:01.290401681Z"
+      },
+      "copy_sha256": "1c4fb8691d5d39d99cbeb6b8257aec57f8fc7fc78030264cc98267749ec7808e",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 57,
+        "ctime_ns": "1791100621290401681",
+        "ctime_utc": "2026-10-04T07:57:01.290401681Z",
+        "dev": "16777229",
+        "ino": "545907853",
+        "mtime_ns": "1791100621290401681",
+        "mtime_utc": "2026-10-04T07:57:01.290401681Z"
+      },
+      "source_metadata": {
+        "bytes": 57,
+        "ctime_ns": "1791100621290401681",
+        "ctime_utc": "2026-10-04T07:57:01.290401681Z",
+        "dev": "16777229",
+        "ino": "545907853",
+        "mtime_ns": "1791100621290401681",
+        "mtime_utc": "2026-10-04T07:57:01.290401681Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/.gitignore",
+      "source_sha256": "1c4fb8691d5d39d99cbeb6b8257aec57f8fc7fc78030264cc98267749ec7808e"
+    },
+    {
+      "archive_path": "source/.openai/hosting.json",
+      "bytes": 106,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791101507707392837",
+        "ctime_utc": "2026-10-04T08:11:47.707392837Z",
+        "dev": "16777229",
+        "ino": "545916138",
+        "mtime_ns": "1791098842338450292",
+        "mtime_utc": "2026-10-04T07:27:22.338450292Z"
+      },
+      "copy_sha256": "87fc13e04c946af388d13ebc41dfe9cdafecc6131f464e6814e531fedfb76c81",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791098842338620292",
+        "ctime_utc": "2026-10-04T07:27:22.338620292Z",
+        "dev": "16777229",
+        "ino": "545897227",
+        "mtime_ns": "1791098842338450292",
+        "mtime_utc": "2026-10-04T07:27:22.338450292Z"
+      },
+      "source_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791098842338620292",
+        "ctime_utc": "2026-10-04T07:27:22.338620292Z",
+        "dev": "16777229",
+        "ino": "545897227",
+        "mtime_ns": "1791098842338450292",
+        "mtime_utc": "2026-10-04T07:27:22.338450292Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/.openai/hosting.json",
+      "source_sha256": "87fc13e04c946af388d13ebc41dfe9cdafecc6131f464e6814e531fedfb76c81"
+    },
+    {
+      "archive_path": "source/README.md",
+      "bytes": 1825,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 1825,
+        "ctime_ns": "1791101507708792673",
+        "ctime_utc": "2026-10-04T08:11:47.708792673Z",
+        "dev": "16777229",
+        "ino": "545916139",
+        "mtime_ns": "1791100621280324451",
+        "mtime_utc": "2026-10-04T07:57:01.280324451Z"
+      },
+      "copy_sha256": "050b3fe6efc272b5e4230dd040e63287f009aeb8a12d23303849b5121136705b",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 1825,
+        "ctime_ns": "1791100621280324451",
+        "ctime_utc": "2026-10-04T07:57:01.280324451Z",
+        "dev": "16777229",
+        "ino": "545907851",
+        "mtime_ns": "1791100621280324451",
+        "mtime_utc": "2026-10-04T07:57:01.280324451Z"
+      },
+      "source_metadata": {
+        "bytes": 1825,
+        "ctime_ns": "1791100621280324451",
+        "ctime_utc": "2026-10-04T07:57:01.280324451Z",
+        "dev": "16777229",
+        "ino": "545907851",
+        "mtime_ns": "1791100621280324451",
+        "mtime_utc": "2026-10-04T07:57:01.280324451Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/README.md",
+      "source_sha256": "050b3fe6efc272b5e4230dd040e63287f009aeb8a12d23303849b5121136705b"
+    },
+    {
+      "archive_path": "source/dist/app.js",
+      "bytes": 26020,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 26020,
+        "ctime_ns": "1791101507710244885",
+        "ctime_utc": "2026-10-04T08:11:47.710244885Z",
+        "dev": "16777229",
+        "ino": "545916141",
+        "mtime_ns": "1791100099618054881",
+        "mtime_utc": "2026-10-04T07:48:19.618054881Z"
+      },
+      "copy_sha256": "3e675ea7edfbe54c3c7b338106c90c8cfc62d3d3c9292c6b265b17b344cb27c7",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 26020,
+        "ctime_ns": "1791100099618054881",
+        "ctime_utc": "2026-10-04T07:48:19.618054881Z",
+        "dev": "16777229",
+        "ino": "545904888",
+        "mtime_ns": "1791100099618054881",
+        "mtime_utc": "2026-10-04T07:48:19.618054881Z"
+      },
+      "source_metadata": {
+        "bytes": 26020,
+        "ctime_ns": "1791100099618054881",
+        "ctime_utc": "2026-10-04T07:48:19.618054881Z",
+        "dev": "16777229",
+        "ino": "545904888",
+        "mtime_ns": "1791100099618054881",
+        "mtime_utc": "2026-10-04T07:48:19.618054881Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/app.js",
+      "source_sha256": "3e675ea7edfbe54c3c7b338106c90c8cfc62d3d3c9292c6b265b17b344cb27c7"
+    },
+    {
+      "archive_path": "source/dist/engine.js",
+      "bytes": 13016,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 13016,
+        "ctime_ns": "1791101507722416786",
+        "ctime_utc": "2026-10-04T08:11:47.722416786Z",
+        "dev": "16777229",
+        "ino": "545916142",
+        "mtime_ns": "1791100621266823006",
+        "mtime_utc": "2026-10-04T07:57:01.266823006Z"
+      },
+      "copy_sha256": "a29989fa765f2b5292a2e33b3816386a19743d21b65579a2f86d738a95a94bdf",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 13016,
+        "ctime_ns": "1791100621266823006",
+        "ctime_utc": "2026-10-04T07:57:01.266823006Z",
+        "dev": "16777229",
+        "ino": "545899025",
+        "mtime_ns": "1791100621266823006",
+        "mtime_utc": "2026-10-04T07:57:01.266823006Z"
+      },
+      "source_metadata": {
+        "bytes": 13016,
+        "ctime_ns": "1791100621266823006",
+        "ctime_utc": "2026-10-04T07:57:01.266823006Z",
+        "dev": "16777229",
+        "ino": "545899025",
+        "mtime_ns": "1791100621266823006",
+        "mtime_utc": "2026-10-04T07:57:01.266823006Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/engine.js",
+      "source_sha256": "a29989fa765f2b5292a2e33b3816386a19743d21b65579a2f86d738a95a94bdf"
+    },
+    {
+      "archive_path": "source/dist/index.html",
+      "bytes": 7013,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 7013,
+        "ctime_ns": "1791101507731078013",
+        "ctime_utc": "2026-10-04T08:11:47.731078013Z",
+        "dev": "16777229",
+        "ino": "545916143",
+        "mtime_ns": "1791099484761989663",
+        "mtime_utc": "2026-10-04T07:38:04.761989663Z"
+      },
+      "copy_sha256": "f3d27790ac155c05e6c75d6b6116fd0874181f3c552faaf09a858424f630f6d8",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 7013,
+        "ctime_ns": "1791099484761989663",
+        "ctime_utc": "2026-10-04T07:38:04.761989663Z",
+        "dev": "16777229",
+        "ino": "545903357",
+        "mtime_ns": "1791099484761989663",
+        "mtime_utc": "2026-10-04T07:38:04.761989663Z"
+      },
+      "source_metadata": {
+        "bytes": 7013,
+        "ctime_ns": "1791099484761989663",
+        "ctime_utc": "2026-10-04T07:38:04.761989663Z",
+        "dev": "16777229",
+        "ino": "545903357",
+        "mtime_ns": "1791099484761989663",
+        "mtime_utc": "2026-10-04T07:38:04.761989663Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/index.html",
+      "source_sha256": "f3d27790ac155c05e6c75d6b6116fd0874181f3c552faaf09a858424f630f6d8"
+    },
+    {
+      "archive_path": "source/dist/scene.js",
+      "bytes": 13904,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 13904,
+        "ctime_ns": "1791101507733132642",
+        "ctime_utc": "2026-10-04T08:11:47.733132642Z",
+        "dev": "16777229",
+        "ino": "545916144",
+        "mtime_ns": "1791100354879772216",
+        "mtime_utc": "2026-10-04T07:52:34.879772216Z"
+      },
+      "copy_sha256": "2bd2972d9cc3a23deeef761be57ceaf0169350cb1c1855c3e47128cac905fe3f",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 13904,
+        "ctime_ns": "1791100354879772216",
+        "ctime_utc": "2026-10-04T07:52:34.879772216Z",
+        "dev": "16777229",
+        "ino": "545903973",
+        "mtime_ns": "1791100354879772216",
+        "mtime_utc": "2026-10-04T07:52:34.879772216Z"
+      },
+      "source_metadata": {
+        "bytes": 13904,
+        "ctime_ns": "1791100354879772216",
+        "ctime_utc": "2026-10-04T07:52:34.879772216Z",
+        "dev": "16777229",
+        "ino": "545903973",
+        "mtime_ns": "1791100354879772216",
+        "mtime_utc": "2026-10-04T07:52:34.879772216Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/scene.js",
+      "source_sha256": "2bd2972d9cc3a23deeef761be57ceaf0169350cb1c1855c3e47128cac905fe3f"
+    },
+    {
+      "archive_path": "source/dist/style.css",
+      "bytes": 29585,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 29585,
+        "ctime_ns": "1791101507742155411",
+        "ctime_utc": "2026-10-04T08:11:47.742155411Z",
+        "dev": "16777229",
+        "ino": "545916145",
+        "mtime_ns": "1791100621234695854",
+        "mtime_utc": "2026-10-04T07:57:01.234695854Z"
+      },
+      "copy_sha256": "72c6cf5c0706b4535981adb469bbb71df3051715bedf99b0b09646cd6b6d894b",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 29585,
+        "ctime_ns": "1791100621234695854",
+        "ctime_utc": "2026-10-04T07:57:01.234695854Z",
+        "dev": "16777229",
+        "ino": "545903359",
+        "mtime_ns": "1791100621234695854",
+        "mtime_utc": "2026-10-04T07:57:01.234695854Z"
+      },
+      "source_metadata": {
+        "bytes": 29585,
+        "ctime_ns": "1791100621234695854",
+        "ctime_utc": "2026-10-04T07:57:01.234695854Z",
+        "dev": "16777229",
+        "ino": "545903359",
+        "mtime_ns": "1791100621234695854",
+        "mtime_utc": "2026-10-04T07:57:01.234695854Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/style.css",
+      "source_sha256": "72c6cf5c0706b4535981adb469bbb71df3051715bedf99b0b09646cd6b6d894b"
+    },
+    {
+      "archive_path": "source/dist/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 38703,
+        "ctime_ns": "1791101507746458129",
+        "ctime_utc": "2026-10-04T08:11:47.746458129Z",
+        "dev": "16777229",
+        "ino": "545916147",
+        "mtime_ns": "1791098806507351697",
+        "mtime_utc": "2026-10-04T07:26:46.507351697Z"
+      },
+      "copy_sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 38703,
+        "ctime_ns": "1791098806507504781",
+        "ctime_utc": "2026-10-04T07:26:46.507504781Z",
+        "dev": "16777229",
+        "ino": "545897151",
+        "mtime_ns": "1791098806507351697",
+        "mtime_utc": "2026-10-04T07:26:46.507351697Z"
+      },
+      "source_metadata": {
+        "bytes": 38703,
+        "ctime_ns": "1791098806507504781",
+        "ctime_utc": "2026-10-04T07:26:46.507504781Z",
+        "dev": "16777229",
+        "ino": "545897151",
+        "mtime_ns": "1791098806507351697",
+        "mtime_utc": "2026-10-04T07:26:46.507351697Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/vendor/OrbitControls.js",
+      "source_sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "archive_path": "source/dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791101507755777440",
+        "ctime_utc": "2026-10-04T08:11:47.755777440Z",
+        "dev": "16777229",
+        "ino": "545916148",
+        "mtime_ns": "1791098806512236540",
+        "mtime_utc": "2026-10-04T07:26:46.512236540Z"
+      },
+      "copy_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791098806512357041",
+        "ctime_utc": "2026-10-04T07:26:46.512357041Z",
+        "dev": "16777229",
+        "ino": "545897152",
+        "mtime_ns": "1791098806512236540",
+        "mtime_utc": "2026-10-04T07:26:46.512236540Z"
+      },
+      "source_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791098806512357041",
+        "ctime_utc": "2026-10-04T07:26:46.512357041Z",
+        "dev": "16777229",
+        "ino": "545897152",
+        "mtime_ns": "1791098806512236540",
+        "mtime_utc": "2026-10-04T07:26:46.512236540Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/vendor/THREE-LICENSE.txt",
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.core.min.js",
+      "bytes": 381124,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 381124,
+        "ctime_ns": "1791101507756832734",
+        "ctime_utc": "2026-10-04T08:11:47.756832734Z",
+        "dev": "16777229",
+        "ino": "545916149",
+        "mtime_ns": "1791098806501929352",
+        "mtime_utc": "2026-10-04T07:26:46.501929352Z"
+      },
+      "copy_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 381124,
+        "ctime_ns": "1791098806502083269",
+        "ctime_utc": "2026-10-04T07:26:46.502083269Z",
+        "dev": "16777229",
+        "ino": "545897150",
+        "mtime_ns": "1791098806501929352",
+        "mtime_utc": "2026-10-04T07:26:46.501929352Z"
+      },
+      "source_metadata": {
+        "bytes": 381124,
+        "ctime_ns": "1791098806502083269",
+        "ctime_utc": "2026-10-04T07:26:46.502083269Z",
+        "dev": "16777229",
+        "ino": "545897150",
+        "mtime_ns": "1791098806501929352",
+        "mtime_utc": "2026-10-04T07:26:46.501929352Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/vendor/three.core.min.js",
+      "source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.module.js",
+      "bytes": 338908,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 338908,
+        "ctime_ns": "1791101507772617976",
+        "ctime_utc": "2026-10-04T08:11:47.772617976Z",
+        "dev": "16777229",
+        "ino": "545916152",
+        "mtime_ns": "1791098806495102546",
+        "mtime_utc": "2026-10-04T07:26:46.495102546Z"
+      },
+      "copy_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 338908,
+        "ctime_ns": "1791098806495249254",
+        "ctime_utc": "2026-10-04T07:26:46.495249254Z",
+        "dev": "16777229",
+        "ino": "545897149",
+        "mtime_ns": "1791098806495102546",
+        "mtime_utc": "2026-10-04T07:26:46.495102546Z"
+      },
+      "source_metadata": {
+        "bytes": 338908,
+        "ctime_ns": "1791098806495249254",
+        "ctime_utc": "2026-10-04T07:26:46.495249254Z",
+        "dev": "16777229",
+        "ino": "545897149",
+        "mtime_ns": "1791098806495102546",
+        "mtime_utc": "2026-10-04T07:26:46.495102546Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/dist/vendor/three.module.js",
+      "source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "archive_path": "source/output/playwright/game-desktop.jpg",
+      "bytes": 88269,
+      "category": "evidence",
+      "copy_metadata": {
+        "bytes": 88269,
+        "ctime_ns": "1791101507805160212",
+        "ctime_utc": "2026-10-04T08:11:47.805160212Z",
+        "dev": "16777229",
+        "ino": "545916155",
+        "mtime_ns": "1791100861615602816",
+        "mtime_utc": "2026-10-04T08:01:01.615602816Z"
+      },
+      "copy_sha256": "8aad09d46d805f5ff30384cfc659c341597d3442cee98f7211cf174e5cf26b9c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 88269,
+        "ctime_ns": "1791100861615602816",
+        "ctime_utc": "2026-10-04T08:01:01.615602816Z",
+        "dev": "16777229",
+        "ino": "545911696",
+        "mtime_ns": "1791100861615602816",
+        "mtime_utc": "2026-10-04T08:01:01.615602816Z"
+      },
+      "source_metadata": {
+        "bytes": 88269,
+        "ctime_ns": "1791100861615602816",
+        "ctime_utc": "2026-10-04T08:01:01.615602816Z",
+        "dev": "16777229",
+        "ino": "545911696",
+        "mtime_ns": "1791100861615602816",
+        "mtime_utc": "2026-10-04T08:01:01.615602816Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/output/playwright/game-desktop.jpg",
+      "source_sha256": "8aad09d46d805f5ff30384cfc659c341597d3442cee98f7211cf174e5cf26b9c"
+    },
+    {
+      "archive_path": "source/package.json",
+      "bytes": 273,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 273,
+        "ctime_ns": "1791101507808510636",
+        "ctime_utc": "2026-10-04T08:11:47.808510636Z",
+        "dev": "16777229",
+        "ino": "545916156",
+        "mtime_ns": "1791099005416453048",
+        "mtime_utc": "2026-10-04T07:30:05.416453048Z"
+      },
+      "copy_sha256": "9d4cdc0dcb9519da268e3934873f5fa29a41d6cce08c007604f969522002369a",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 273,
+        "ctime_ns": "1791099005416453048",
+        "ctime_utc": "2026-10-04T07:30:05.416453048Z",
+        "dev": "16777229",
+        "ino": "545899027",
+        "mtime_ns": "1791099005416453048",
+        "mtime_utc": "2026-10-04T07:30:05.416453048Z"
+      },
+      "source_metadata": {
+        "bytes": 273,
+        "ctime_ns": "1791099005416453048",
+        "ctime_utc": "2026-10-04T07:30:05.416453048Z",
+        "dev": "16777229",
+        "ino": "545899027",
+        "mtime_ns": "1791099005416453048",
+        "mtime_utc": "2026-10-04T07:30:05.416453048Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/package.json",
+      "source_sha256": "9d4cdc0dcb9519da268e3934873f5fa29a41d6cce08c007604f969522002369a"
+    },
+    {
+      "archive_path": "source/tests/engine.test.js",
+      "bytes": 3981,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 3981,
+        "ctime_ns": "1791101507810559474",
+        "ctime_utc": "2026-10-04T08:11:47.810559474Z",
+        "dev": "16777229",
+        "ino": "545916158",
+        "mtime_ns": "1791100400733826499",
+        "mtime_utc": "2026-10-04T07:53:20.733826499Z"
+      },
+      "copy_sha256": "4c0d5a8aaddc74cce8a06566187bbebdb18bd1c9e9637a17d191ec3d056a910d",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 3981,
+        "ctime_ns": "1791100400733826499",
+        "ctime_utc": "2026-10-04T07:53:20.733826499Z",
+        "dev": "16777229",
+        "ino": "545905517",
+        "mtime_ns": "1791100400733826499",
+        "mtime_utc": "2026-10-04T07:53:20.733826499Z"
+      },
+      "source_metadata": {
+        "bytes": 3981,
+        "ctime_ns": "1791100400733826499",
+        "ctime_utc": "2026-10-04T07:53:20.733826499Z",
+        "dev": "16777229",
+        "ino": "545905517",
+        "mtime_ns": "1791100400733826499",
+        "mtime_utc": "2026-10-04T07:53:20.733826499Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan/tests/engine.test.js",
+      "source_sha256": "4c0d5a8aaddc74cce8a06566187bbebdb18bd1c9e9637a17d191ec3d056a910d"
+    }
+  ],
+  "game_number": "081",
+  "generation_provenance": {
+    "canonical_model_name": "gpt-6-astra",
+    "created_at_utc": "2026-10-04T08:11:47.826458Z",
+    "effort": "ultra",
+    "effort_independently_authenticated": false,
+    "exact_prompt": "实现一个沙漠商队领队根据各地供需买卖货物并规划贸易行程的 3D 商旅经营游戏，尽你所能丰富游戏玩法。",
+    "exact_prompt_status": "provided_by_parent",
+    "fork": "none",
+    "game_number": "081",
+    "model": "Astra",
+    "model_authenticated_by_read_thread": false,
+    "provenance": "parent_launch_attestation",
+    "schema_version": 1,
+    "scope": "Parent explicit prompt and launch parameters; no independent historical runtime or generation-turn metadata authentication.",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "thread_id": "01a105cd-39f1-76b2-bd0f-044711d960a2",
+    "title": "沙海行商 · Sands & Silk",
+    "turn_id": "01a105cd-5b4c-774c-897f-0db131472a01"
+  },
+  "integrity": {
+    "all_original_bytes_mtime_hash_unchanged": true,
+    "all_original_ctime_dev_ino_unchanged": true,
+    "all_source_copy_sha256_match": true,
+    "baseline_first_at_utc": "2026-10-04T08:11:47.656729Z",
+    "baseline_observation_seconds": 0.03818887499801349,
+    "baseline_second_at_utc": "2026-10-04T08:11:47.694907Z",
+    "final_verified_at_utc": "2026-10-04T08:11:47.842579Z",
+    "fixed_source_file_set_unchanged": true,
+    "metadata_integer_encoding": "mtime_ns, ctime_ns, dev and ino are decimal strings; comparisons stayed exact Python integers",
+    "screenshot_not_double_counted": true,
+    "two_baselines_stable_within_3_seconds": true
+  },
+  "parent_launch_record": "parent-launch-record.json",
+  "parent_process_observation": {
+    "archivist_process_actions": false,
+    "archivist_resource_sampling": false,
+    "dedicated_preview_or_browser_found": false,
+    "observed_at_utc": "2026-10-04T08:05:41.755201Z",
+    "port_4173_listener": {
+      "ownership": "original user node; not game081",
+      "pid": 2560
+    },
+    "port_4186_has_listener": false,
+    "preserved_idle_framework_contexts": [
+      {
+        "cpu_percent": 0,
+        "pid": 86877,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 86878,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 86879,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 86880,
+        "state": "S"
+      }
+    ],
+    "protected_services": {
+      "chrome_pid": 1036,
+      "listeners": [
+        {
+          "pid": 2547,
+          "port": 5173
+        },
+        {
+          "pid": 2554,
+          "port": 4827
+        },
+        {
+          "pid": 2560,
+          "port": 4173
+        }
+      ]
+    },
+    "scope_note": "Process observation only, not browser/game validation.",
+    "signals_sent": false,
+    "source": "parent_read_only_ps_lsof; not independently repeated"
+  },
+  "schema_version": 1,
+  "selection": {
+    "excluded_names": [
+      ".DS_Store",
+      ".agents",
+      ".aws",
+      ".cache",
+      ".codex",
+      ".git",
+      ".npm",
+      ".openai-runtime",
+      ".playwright-cli",
+      ".pytest_cache",
+      ".sites-runtime",
+      ".vite",
+      "__pycache__",
+      "archive",
+      "archives",
+      "cache",
+      "caches",
+      "node_modules",
+      "playwright-report",
+      "runtime",
+      "session",
+      "sessions",
+      "test-results"
+    ],
+    "fixed_eligible_source_paths": [
+      ".gitignore",
+      ".openai/hosting.json",
+      "README.md",
+      "dist/app.js",
+      "dist/engine.js",
+      "dist/index.html",
+      "dist/scene.js",
+      "dist/style.css",
+      "dist/vendor/OrbitControls.js",
+      "dist/vendor/THREE-LICENSE.txt",
+      "dist/vendor/three.core.min.js",
+      "dist/vendor/three.module.js",
+      "output/playwright/game-desktop.jpg",
+      "package.json",
+      "tests/engine.test.js"
+    ],
+    "original_parent_tar": null,
+    "original_parent_tar_status": "none_found_in_authorized_parent_shallow_inventory; no package fabricated",
+    "screenshot_copied_once": "source/output/playwright/game-desktop.jpg",
+    "symlinks_and_symlink_ancestors_excluded": true
+  },
+  "sites": {
+    "accessed_for_archive": false,
+    "status": "URL not provided for this archive task",
+    "url": null
+  },
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-50/sahara-caravan",
+  "title": "沙海行商 · Sands & Silk",
+  "validation_evidence": {
+    "browser_claims": {
+      "claim": "Trading, travel, contracts and save verification",
+      "evidence": "parent_attestation_only",
+      "saved_driver_or_stdout_found": false
+    },
+    "eight_rule_suites": {
+      "details": "Rule API; direct fixtures include location, coins, cargo, market, event, day and trip progress. Travel loops synchronously call tick(1). A normal freshState buy/depart/tick/sell loop verifies the trade journey, not browser inputs.",
+      "evidence": "tests/engine.test.js:4-11"
+    },
+    "limits": [
+      "No saved browser input driver, original stdout pass report or QA result found.",
+      "Eight API/fixture suites and accelerated simulation cannot establish complete actual keyboard/pointer gameplay.",
+      "Mobile viewport or physical-device method, audio verification, console/error capture and WebMCP supported-context validation scope are unknown.",
+      "One original screenshot copied without opening; an image does not establish an action sequence."
+    ],
+    "method": "static only; no test/build/browser/game execution",
+    "preview": {
+      "actual_port": "unknown",
+      "alternative_command": "python3 -m http.server 4186 --directory dist",
+      "alternative_port": 4186,
+      "default_command": "npm start -> python3 -m http.server 4173 --directory dist",
+      "default_port": 4173,
+      "evidence": "README.md:19; package.json:1"
+    },
+    "screenshot": {
+      "bytes": 88269,
+      "opened": false,
+      "path": "source/output/playwright/game-desktop.jpg"
+    },
+    "source_hook": {
+      "details": "window.caravanSnapshot is a read-only JSON clone accessor; no saved driver establishes browser invocation methods.",
+      "evidence": "dist/app.js:38"
+    },
+    "test_script": "source/tests/engine.test.js"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "browser_verification": "pending_separate_publisher_report",
   "deployment": "original_static_dist_byte_exact",
-  "exact_original_prompt_missing": true,
+  "exact_original_prompt_missing": false,
   "fork_turns_requested": "none",
   "full_task_export_status": "pending_supported_parent_export",
   "game_dir": "076-park-revive",
@@ -63,5 +63,7 @@
   "thinking_requested": "ultra",
   "thread_id": "01a105ae-1238-76c1-ae3b-53cebe8630b2",
   "title": "重启乐园 · Park Revival",
-  "url": "https://qzemi.cn/sentence-to-game/games/076-park-revive/"
+  "url": "https://qzemi.cn/sentence-to-game/games/076-park-revive/",
+  "original_request": "实现一个清洁师洗去废弃游乐园的污垢并恢复设施原貌的 3D 清洁修复模拟游戏，尽你所能丰富游戏玩法。",
+  "exact_original_prompt_evidence": "parent-prompt-completion.json"
 }
