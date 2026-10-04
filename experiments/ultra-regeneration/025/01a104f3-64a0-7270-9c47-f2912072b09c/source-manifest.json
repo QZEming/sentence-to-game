@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "d133bdf80cb87bcabd05aa26844abc3ebc97a09831708f1421673fe08bcce34d"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "840be021f082e1685a6b998333dbf90bed74f0854359eb3a49b3513d7d78bb60"
+    },
+    {
+      "bytes": 2040,
+      "path": "README.md",
+      "sha256": "ee6fb257f58533bcf14215e4c94202ccb7b817430326834f888d5b73c830fb11"
+    },
+    {
+      "bytes": 3862,
+      "path": "dist/engine.js",
+      "sha256": "f758d7e8a266e5dd2d50f1f6ad3175672a60e5a83b331074ee9cdbe0acc59ff2"
+    },
+    {
+      "bytes": 226,
+      "path": "dist/favicon.svg",
+      "sha256": "c834c3b24cbb8900cc0681fd3a5066f36c06383124556607147d0b24377d9d27"
+    },
+    {
+      "bytes": 31337,
+      "path": "dist/game.js",
+      "sha256": "232166e0b48e5d8318430dd676c454bcc823b71642d2dfb1241767dc4e3390c4"
+    },
+    {
+      "bytes": 5423,
+      "path": "dist/index.html",
+      "sha256": "6117e9d15a774c3ab6386df33cb052694f6f260fa81d1622c0f586040b9596bc"
+    },
+    {
+      "bytes": 3714,
+      "path": "dist/music.js",
+      "sha256": "fcba36adc4fdfbc6dd0ed96f0c942afffc42cf5782b817cb75c004fe5424c081"
+    },
+    {
+      "bytes": 17491,
+      "path": "dist/style.css",
+      "sha256": "3d7bf0d9d3f9565a8659d035a4bb70c73c4448007077fe1ecc1c1c994fa4003d"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 691648,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 264768,
+      "path": "original-delivery/biome-0.png",
+      "sha256": "b1c001beedf47c51adafb38a19bb087ab562994b1049c263545d63ce7a851b3b"
+    },
+    {
+      "bytes": 279542,
+      "path": "original-delivery/biome-2.png",
+      "sha256": "2a10c453900336054d65e794aebb241008ceac07f5aa24edda4110a7b8e89da9"
+    },
+    {
+      "bytes": 686493,
+      "path": "original-delivery/desktop-intro.png",
+      "sha256": "879066e56c57e71472cadf58b066bb4de8c3787f185400372a9be751fa91eb12"
+    },
+    {
+      "bytes": 245509,
+      "path": "original-delivery/desktop-playing.png",
+      "sha256": "2720dfe344dd4c2423f883e823e854d884a379ca574df829b3350ab4af883290"
+    },
+    {
+      "bytes": 2674,
+      "path": "original-delivery/fullrun.cjs",
+      "sha256": "08821d23d419facfc425ead7b75e870d2e95818d6ad6f6dace59794205ec1917"
+    },
+    {
+      "bytes": 114220,
+      "path": "original-delivery/mobile-intro.png",
+      "sha256": "b99f88dc197d90fc3b23b4f1ce8712ed4104ad7e9f9c0000ed74465a66c02cef"
+    },
+    {
+      "bytes": 88813,
+      "path": "original-delivery/mobile-playing.png",
+      "sha256": "641c70a6cdc53810b5ebf59488ef71d3137855ac54056e3cb8d40d5d6fa885d2"
+    },
+    {
+      "bytes": 195487,
+      "path": "original-delivery/pinebeat-deploy.tar.gz",
+      "sha256": "0f2671dc125fe549f90951311fe69c104e7ec19b3fc93f7367e919849c65d6ba"
+    },
+    {
+      "bytes": 246048,
+      "path": "original-delivery/result.png",
+      "sha256": "d63bd4f43789af67c8d071d9339363e64a9f234384cd1f9f80ed28ae6f5c83d9"
+    },
+    {
+      "bytes": 2860,
+      "path": "original-delivery/smoke.cjs",
+      "sha256": "096a98da93cab382a9572090bb3eba8fad23f36ce42d9d30be976408d966bd70"
+    },
+    {
+      "bytes": 233,
+      "path": "package.json",
+      "sha256": "c786623dca97a258abb384d27460d898df37b379f0cd249e3feff3e13ad9e384"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-19/pinebeat",
+  "source_tree_sha256": "137b12e43b48bf629d3b33b8dd6c176a8dceb3a6c4f909fde674663145cb4073",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-025-original-20261004T035736Z",
+  "thread_id": "01a104f3-64a0-7270-9c47-f2912072b09c",
+  "turn_id": "01a104f3-85d6-77e0-a2ad-e50d6b7948dd"
+}

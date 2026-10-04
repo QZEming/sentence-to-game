@@ -1,0 +1,29 @@
+{
+  "base_commit": "cfafd200996b91a723ab7b42bce43407fdc30f7d",
+  "full_old_history_preserved": true,
+  "game_number": "025",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/019/manifest.json": "f4a2e34c4ff33136d311e79e57798f6b0dd0b363",
+    "experiments/page-857ec841-top50-gpt6astra/019/prompt.txt": "37da69c8d0688348de6cf8d9cb9e4517fa1f859c",
+    "experiments/page-857ec841-top50-gpt6astra/019/provenance.json": "8920faee9941ca448f9b0ca1080a6a6a973326a1",
+    "experiments/page-857ec841-top50-gpt6astra/019/release.json": "ab59cc44d23800e96dfffc73d2e46fb3209dceef"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/cfafd200996b91a723ab7b42bce43407fdc30f7d",
+  "source_and_published_blobs": {
+    "docs/games/025-squirrel-pinecone-beat/game.js": "7a5ea9e4756b135722219571e22f83a1e8c2cb06",
+    "docs/games/025-squirrel-pinecone-beat/index.html": "35cad693795b005f2d2e7044598951cee0f7917d",
+    "docs/games/025-squirrel-pinecone-beat/style.css": "77f1723a6bcf323c959eb27f223121bad3218230",
+    "docs/games/025-squirrel-pinecone-beat/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/025-squirrel-pinecone-beat/README.md": "2cf263c0f43b726d0393bd6ac597b80d339440b0",
+    "games/025-squirrel-pinecone-beat/RELEASE.md": "73d125929960270d445c224a8edc4200575d0a34",
+    "games/025-squirrel-pinecone-beat/dist/game.js": "7a5ea9e4756b135722219571e22f83a1e8c2cb06",
+    "games/025-squirrel-pinecone-beat/dist/index.html": "35cad693795b005f2d2e7044598951cee0f7917d",
+    "games/025-squirrel-pinecone-beat/dist/style.css": "77f1723a6bcf323c959eb27f223121bad3218230",
+    "games/025-squirrel-pinecone-beat/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/025-squirrel-pinecone-beat/prompt.txt": "37da69c8d0688348de6cf8d9cb9e4517fa1f859c",
+    "games/025-squirrel-pinecone-beat/src/game.js": "7a5ea9e4756b135722219571e22f83a1e8c2cb06",
+    "games/025-squirrel-pinecone-beat/src/index.html": "35cad693795b005f2d2e7044598951cee0f7917d",
+    "games/025-squirrel-pinecone-beat/src/style.css": "77f1723a6bcf323c959eb27f223121bad3218230",
+    "games/025-squirrel-pinecone-beat/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}
