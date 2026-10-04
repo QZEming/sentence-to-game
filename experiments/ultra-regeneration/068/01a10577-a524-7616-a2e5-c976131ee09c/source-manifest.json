@@ -1,0 +1,148 @@
+{
+  "files": [
+    {
+      "bytes": 48,
+      "path": ".gitignore",
+      "sha256": "41defb96b9f4f68f29455224e831d99d1737f378c806a1119daf53c5286c9b17"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "f987e51c818c3290a7d8ad0dec4f6c4b5265b9fafdc4ee545733ae278fe72531"
+    },
+    {
+      "bytes": 2989,
+      "path": "README.md",
+      "sha256": "2f0084ae8263c53cded27768898031f476f524e8ace2d0e5051007a9c410b305"
+    },
+    {
+      "bytes": 30837,
+      "path": "dist/app.js",
+      "sha256": "21d2bdd0e98c63a7ae32ab77a3346059afb5149c6d9b648320ebd53e56f1db6d"
+    },
+    {
+      "bytes": 7249,
+      "path": "dist/game.js",
+      "sha256": "df48264b20e5546ff4db642e3ecb8e65a5648972949dc18366da556368c96b42"
+    },
+    {
+      "bytes": 7863,
+      "path": "dist/index.html",
+      "sha256": "84fb2f5ce8c3d3025a2d492fbcfe25d34c576b96c150a56bc793dbde250ffd71"
+    },
+    {
+      "bytes": 24572,
+      "path": "dist/scene.js",
+      "sha256": "8294f496f96e87c1ba5734f60233d80a7914f5943568f8d41e607335276a5abf"
+    },
+    {
+      "bytes": 27001,
+      "path": "dist/style.css",
+      "sha256": "5a8d22d005e0755e597ff50adf85d672485a33a2601a08216f93e6995baadbe3"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE-three.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 38703,
+      "path": "dist/vendor/OrbitControls.js",
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 223444,
+      "path": "original-delivery/fossil-expedition.tar.gz",
+      "sha256": "27ba4cccb6d7b118a4b8a6798460f7a0caf1a97f6d324bb9f2dbb8f90554c0c3"
+    },
+    {
+      "bytes": 182404,
+      "path": "output/playwright/completion.png",
+      "sha256": "f628e9fee4528e69b337c396ae45566feca1ea6c613fbaa4162d29c71c2e803c"
+    },
+    {
+      "bytes": 279670,
+      "path": "output/playwright/desktop-initial.png",
+      "sha256": "f89894c5866e3c5ce1cab62b6522a90c2ebc59f1195fc4d170aa75bd5e608498"
+    },
+    {
+      "bytes": 2100,
+      "path": "output/playwright/final-scene.mjs",
+      "sha256": "0bb9136984f3fd30b836b9e84911e45ce1e80d755a378312a4728d5741d2f268"
+    },
+    {
+      "bytes": 4007,
+      "path": "output/playwright/flow.mjs",
+      "sha256": "3418e9ab7ae0592c1147bd49bc33d1718761aa3be2ae89a67eaae421512237c2"
+    },
+    {
+      "bytes": 1273,
+      "path": "output/playwright/inspect.mjs",
+      "sha256": "91317e782f461b130d6e478e269343ab1cd45bb89d9150981024118f90ffbc19"
+    },
+    {
+      "bytes": 218117,
+      "path": "output/playwright/laboratory.png",
+      "sha256": "09684bb9c1adee3be10615ff3c75bfd3c5ec27c4ccad562d762971b61e333ae0"
+    },
+    {
+      "bytes": 163589,
+      "path": "output/playwright/mobile-final.png",
+      "sha256": "d83876ed0ea1f810593105e133daf2ce2d8576421bec2a31fbab3eafd5e82573"
+    },
+    {
+      "bytes": 166345,
+      "path": "output/playwright/mobile-initial.png",
+      "sha256": "f19ac1222e1d49669891613a84190adf393af9ef08cecbac052fdb1326834c40"
+    },
+    {
+      "bytes": 316773,
+      "path": "output/playwright/museum.png",
+      "sha256": "163051882a3f82bb1fafdf9a0360fae781d62943b5452c79b4722b2204372fae"
+    },
+    {
+      "bytes": 217889,
+      "path": "output/playwright/restoration-final.png",
+      "sha256": "b087142e11cd1d0219027e73af76281fcaf41c21599c2c28ecfeb8dfc0540076"
+    },
+    {
+      "bytes": 325376,
+      "path": "output/playwright/species-1.png",
+      "sha256": "04150100fded9ad398c9ba3b00ad700e6962107bd8da5595d6e93f3d276681ca"
+    },
+    {
+      "bytes": 318201,
+      "path": "output/playwright/species-2.png",
+      "sha256": "13e733b589c421cbf5a7b5e33256c5eca30215341856dd8e1f6164f036208289"
+    },
+    {
+      "bytes": 190,
+      "path": "package.json",
+      "sha256": "eeab59c488ad4f24dc4ca0086cea062445dce479749bdd9d64da0fc797f75562"
+    },
+    {
+      "bytes": 2498,
+      "path": "test-game.mjs",
+      "sha256": "0942853578f70859db9d2288640d6f3feff7658cabac8c86a971863b4d8450bf"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-37/fossil-expedition",
+  "source_tree_sha256": "e75ea2a713545eb6553af3b1259c105c1bf97fdba5e1b506555bce51b4e17853",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-068-original-20261004T064155Z",
+  "thread_id": "01a10577-a524-7616-a2e5-c976131ee09c",
+  "turn_id": "01a10577-c557-702f-84bf-4b2201880ee4"
+}

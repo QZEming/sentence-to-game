@@ -1,0 +1,1 @@
+{"name":"swallow-skies","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/game.js && node --check dist/ui.js"},"dependencies":{"three":"0.180.0"},"devDependencies":{"@playwright/test":"1.55.1"}}

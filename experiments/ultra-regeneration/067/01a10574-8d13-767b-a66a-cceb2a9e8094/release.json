@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "067-iron-siege",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "067",
+  "generation_turn_id": "01a10574-b2df-7070-bd8b-a080a244e622",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "full_old_history_preserved": true,
+    "game_number": "067",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 212,
+      "path": "favicon.svg",
+      "sha256": "445429bf845f35258299c9e55f171dfcb34dedbe1509db759e0f114b24dc3e50"
+    },
+    {
+      "bytes": 41832,
+      "path": "game.js",
+      "sha256": "66955bf4cea91b16d17d562d773340b157f4d2785766c488a9251d59b62e99fa"
+    },
+    {
+      "bytes": 4704,
+      "path": "index.html",
+      "sha256": "0e8921f9ed436f6ea94ad46a91ca5072b74873fbc67533321a3323d1aa1a6514"
+    },
+    {
+      "bytes": 2426,
+      "path": "physics.js",
+      "sha256": "ecacad073b3716afea77371a7bb73fdde796071de75427f5568306c923ec6a1c"
+    },
+    {
+      "bytes": 17197,
+      "path": "style.css",
+      "sha256": "ca9045002e949906bb02a95f42cedaa4761d43e8004d88509a420e244f1206c0"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 687458,
+      "path": "vendor/three.module.min.js",
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "ff1751a537fc551718f53303e468a4c225ef4eb655c0f265c3ab6cde7ec2c818",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10574-8d13-767b-a66a-cceb2a9e8094",
+  "title": "铁火围城 · IRON SIEGE",
+  "url": "https://qzemi.cn/sentence-to-game/games/067-iron-siege/"
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#153b46"><meta name="description" content="加入燕尾中队，驾驶小飞机穿梭海岛云海，与空中海盗展开 3D 空战。"><title>燕尾中队 · SWALLOW SKIES</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23153b46'/%3E%3Cpath d='M8 18L31 30L56 12L41 39L34 36L33 55L25 41L17 45L24 33Z' fill='%23ffbe62'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="world" aria-label="三维空战游戏画面"></canvas><div id="vignette"></div><div id="damage-flash"></div>
+<header id="topbar"><a class="brand" href="#" aria-label="燕尾中队主菜单"><span class="brand-mark">✦</span><span>燕尾中队<small>SWALLOW SKIES</small></span></a><div class="top-actions"><span class="edition">FLIGHT CLUB · 001</span><button id="sound-btn" class="icon-button" title="声音 M" aria-label="切换声音">♪</button><button id="help-btn" class="icon-button" title="飞行手册" aria-label="打开飞行手册">?</button><button id="fullscreen-btn" class="icon-button" title="全屏 F" aria-label="全屏">⛶</button></div></header>
+<main id="menu" class="screen">
+ <div class="menu-copy"><div class="eyebrow"><span></span>THE SKY IS OURS</div><h1>小小翅膀，<br>大大冒险。</h1><p class="intro">燕子飞行员，准备好了吗？<br>穿过云海，守护群岛，把海盗赶出我们的天空。</p><div class="mission-tag"><span class="tag-icon">⌖</span><div><small>今日航线 / OPERATION 01</small><strong>碧蓝群岛 · 海盗追击</strong></div><span class="tag-number">05<span>波次</span></span></div><div class="launch-row"><button id="start-btn" class="primary">起飞，燕尾中队 <span>✦</span></button><button id="hangar-btn" class="secondary">机库 <span>03</span></button></div><div class="menu-options"><button id="difficulty-btn">难度：冒险家 ⌄</button><button id="control-btn">操纵：键盘 ⌄</button></div><div class="record"><span>个人最佳 <b id="best-score">000000</b></span><span>飞行徽章 <b id="medal-count">0 / 6</b></span></div></div>
+ <div class="plane-label"><span class="label-line"></span><small>YOUR WINGMAN</small><strong id="menu-plane-name">雨燕号</strong><span>轻型双翼机 / MK. I</span><div class="pilot-sign">飞行员 · 小燕 <span>准备就绪</span></div></div>
+ <div class="menu-footer"><span>北纬 24° · 顺风 · 能见度极佳</span><button id="guide-btn">首次飞行？查看飞行手册 <span>↗</span></button><span class="footer-right">一片天空，无限可能。</span></div>
+</main>
+<div id="hud" hidden>
+ <div class="hud-left"><div class="mission-hud"><div class="eyebrow">OPERATION <span id="wave-num">01 / 05</span></div><strong id="wave-title">清空海盗巡逻队</strong><p id="wave-objective">击落敌机 0 / 4</p><div class="wave-track"><i id="wave-progress"></i></div></div><div class="pilot-radio"><span>✦</span><p id="radio-text">燕尾中队，祝你好运！</p></div></div>
+ <div class="hud-right"><span class="score-label">SCORE</span><strong id="score">000000</strong><div id="combo" class="combo"></div><div class="radar"><canvas id="radar" width="160" height="160"></canvas><span>N</span></div><div class="ring-count">◎ 航线挑战 <b id="ring-count">0 / 3</b></div></div>
+ <div id="boss-hud" hidden><span>黑帆舰长 · “风暴掠夺者”</span><div><i id="boss-health"></i></div></div>
+ <div class="crosshair" id="crosshair"><span></span><i></i></div><div id="target-marker" hidden><span>LOCK</span><i></i></div><div id="edge-arrow" hidden>▲<span>海盗</span></div>
+ <div id="wave-banner"><small>SWALLOW SQUADRON</small><strong>第 1 波</strong><span>守护这片天空</span></div>
+ <div id="toast" role="status"></div>
+ <div class="flight-data"><span id="speed">148<small>KM/H</small></span><div class="flight-line"></div><span id="altitude">120<small>ALT M</small></span></div>
+ <div class="bottom-hud"><div class="health-panel"><span class="pilot-icon">✦</span><div><div class="health-title"><strong>小燕 / <span id="aircraft-name">雨燕号</span></strong><span id="hp-text">100 / 100</span></div><div class="hp-track"><i id="hp-bar"></i></div><div class="shield-track"><i id="shield-bar"></i></div></div></div><div class="abilities"><button id="roll-btn" class="ability"><kbd>Q</kbd><span>翻滚闪避<small id="roll-status">READY</small></span></button><button id="missile-btn" class="ability"><kbd>E</kbd><span>追踪导弹<small id="missile-count">4 枚</small></span></button><button id="boost-btn" class="ability"><kbd>⇧</kbd><span>引擎加速<small><i id="boost-bar"></i></small></span></button></div><button id="pause-btn" class="pause-button" aria-label="暂停">Ⅱ</button></div>
+ <div class="play-hints"><span id="control-hint">W S 俯仰 · A D 转向 · 空格射击</span><button id="auto-btn">自动开火 OFF [X]</button><span>ESC 暂停</span></div>
+ <div id="touch-controls"><div id="joystick"><div></div></div><button id="touch-fire">开火</button></div>
+</div>
+<div id="dialog-layer" hidden><section id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"></section></div>
+<div id="loading"><span class="brand-mark">✦</span><strong>正在准备你的飞机</strong><span>天空很大，冒险即将开始。</span></div>
+<script type="module" src="ui.js"></script>
+</body></html>

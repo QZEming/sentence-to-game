@@ -1,0 +1,5 @@
+node_modules/
+.sites-runtime/
+test-results/
+output/
+.playwright-cli/

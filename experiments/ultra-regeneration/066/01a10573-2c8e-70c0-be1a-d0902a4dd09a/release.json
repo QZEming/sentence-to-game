@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "066-swallow-skies",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "066",
+  "generation_turn_id": "01a10573-4e14-729c-8596-dec7f2275b5d",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "full_old_history_preserved": true,
+    "game_number": "066",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 33685,
+      "path": "game.js",
+      "sha256": "fe92673d02d3aac36e2ed811d457be3f0747560871eb4264d99f03ee4abe59ba"
+    },
+    {
+      "bytes": 5614,
+      "path": "index.html",
+      "sha256": "faa3592efce03a1eaaa85cf045d2b0f078abd7ed7f05d91b41bf448b5b618897"
+    },
+    {
+      "bytes": 19989,
+      "path": "style.css",
+      "sha256": "7586945c40d67606e79ed13f7cf942589c54c919fc70f1d21c2e1de387d82ef3"
+    },
+    {
+      "bytes": 21180,
+      "path": "ui.js",
+      "sha256": "ca39889d84f51edf3fa7cc13d15db9666e7808e28f4490d68cf435f3fa2a4cd9"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "2951a906e26ffb197a9eb137f7204a1097395371367d6f888906dc050dda35d7",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10573-2c8e-70c0-be1a-d0902a4dd09a",
+  "title": "燕尾中队 · SWALLOW SKIES",
+  "url": "https://qzemi.cn/sentence-to-game/games/066-swallow-skies/"
+}

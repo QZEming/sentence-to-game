@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151c21"><title>铁火围城 · IRON SIEGE</title>
+<meta name="description" content="操纵投石机，掌控风与弹道，用四种弹药击碎五座堡垒。一个可破坏场景的 3D 攻城游戏。">
+<link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="game">
+<div id="world" aria-label="三维攻城战场"></div><div class="vignette"></div>
+<header class="topbar">
+<a class="brand" href="./" aria-label="铁火围城首页"><span class="brand-emblem">♜</span><span><b>IRON SIEGE</b><small>铁 火 围 城</small></span></a>
+<div class="campaign"><span class="live-dot"></span><span>北境战役</span><i></i><span id="chapter">第一章 · 灰石前哨</span></div>
+<div class="top-actions"><span class="gold"><span>◈</span> <b id="gold">0</b></span><button id="sound" class="icon-btn" aria-label="开启音效" title="音效">♪</button><button id="help" class="icon-btn" aria-label="玩法说明" title="玩法说明">?</button><button id="pause" class="icon-btn" aria-label="暂停游戏" title="暂停 / Esc">Ⅱ</button></div>
+</header>
+<section class="mission glass">
+<div class="eyebrow"><span>作战指令</span><span id="level-count">01 / 05</span></div>
+<h1 id="level-name">灰石前哨</h1><p id="level-desc">击穿城墙，摧毁堡垒核心。</p>
+<div class="objective"><span class="diamond"></span><span>摧毁堡垒核心</span><b id="core-percent">100%</b></div><div class="meter"><i id="core-bar"></i></div>
+<div class="mission-stats"><span>城防破坏 <b id="destruction">0%</b></span><span>剩余弹药 <b id="shots">12</b></span></div>
+<div class="chapter-dots" id="chapter-dots"></div>
+</section>
+<section class="conditions glass"><div class="eyebrow">战场情报 <span>LIVE</span></div><div class="wind-line"><span id="wind-arrow">↗</span><div><b id="wind">1.2</b> <small>m/s</small><p id="wind-desc">轻微侧风 · 向右</p></div><span class="compass">N<br>┼</span></div><div class="health-row"><span>投石机耐久</span><b id="health-text">100 / 100</b></div><div class="meter health"><i id="health-bar"></i></div><p class="counter-label" id="counter-label">敌方将在 3 次发射后反击</p></section>
+<div id="target-label" class="target-label"><span>堡垒核心</span><b>◆</b></div>
+<div class="scene-bottom"><div class="view-controls glass"><button class="active" id="view-siege" title="攻城视角 (C)">攻城视角</button><button id="view-tactical" title="战术俯视 (C)">战术俯视</button><button id="follow" aria-pressed="false" title="跟随飞弹">跟随弹丸 <span>○</span></button></div><div class="camera-hint">拖动环视 <span>·</span> 滚轮缩放</div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="damage-numbers" aria-hidden="true"></div>
+<section class="command-deck glass">
+<div class="ammo-section"><div class="eyebrow">装填弹药 <span id="ammo-hint">标准攻城弹</span></div><div id="ammo-picker" class="ammo-picker"></div></div>
+<div class="aim-section"><div class="slider-label"><label for="yaw">方向角</label><b id="yaw-value">0°</b><small>A / D</small></div><input id="yaw" type="range" min="-25" max="25" value="0" step="0.5"><div class="slider-label"><label for="elevation">抛射角</label><b id="elevation-value">36°</b><small>W / S</small></div><input id="elevation" type="range" min="20" max="70" value="36" step="1"></div>
+<div class="power-section"><div class="slider-label"><label for="power">发射力度</label><b><span id="power-value">56</span><small>%</small></b><small>↑ / ↓</small></div><input id="power" type="range" min="15" max="100" value="56" step="1"><div class="range-info"><span>预计射程 <b id="range">64 m</b></span><button id="reset-aim">重置瞄准</button></div></div>
+<div class="fire-section"><button id="fire"><span class="crosshair">⌖</span><span id="fire-text">发 射</span><kbd>SPACE</kbd></button><div class="fire-sub"><span class="ready-dot"></span><span id="status">投石机已就绪</span></div></div>
+</section>
+<footer><span>ENGINEER’S FIELD MANUAL <i>—</i> 先破城墙，再击核心</span><span id="score-text">战场得分 <b>0000</b></span></footer>
+<div id="modal" class="modal" hidden><div class="modal-card" id="modal-card" role="dialog" aria-modal="true" aria-label="战役操作"></div></div>
+<div id="loading"><span class="brand-emblem">♜</span><h2>铁火围城</h2><p>正在准备战场…</p></div>
+</main>
+<script type="module" src="game.js"></script>
+</body></html>

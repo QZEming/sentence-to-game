@@ -1,0 +1,77 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "068-fossil-expedition",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "068",
+  "generation_turn_id": "01a10577-c557-702f-84bf-4b2201880ee4",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "full_old_history_preserved": true,
+    "game_number": "068",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/32b2373be2ab9d8e1926a8dd857b732abc11371b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 30837,
+      "path": "app.js",
+      "sha256": "21d2bdd0e98c63a7ae32ab77a3346059afb5149c6d9b648320ebd53e56f1db6d"
+    },
+    {
+      "bytes": 7249,
+      "path": "game.js",
+      "sha256": "df48264b20e5546ff4db642e3ecb8e65a5648972949dc18366da556368c96b42"
+    },
+    {
+      "bytes": 7863,
+      "path": "index.html",
+      "sha256": "84fb2f5ce8c3d3025a2d492fbcfe25d34c576b96c150a56bc793dbde250ffd71"
+    },
+    {
+      "bytes": 24572,
+      "path": "scene.js",
+      "sha256": "8294f496f96e87c1ba5734f60233d80a7914f5943568f8d41e607335276a5abf"
+    },
+    {
+      "bytes": 27001,
+      "path": "style.css",
+      "sha256": "5a8d22d005e0755e597ff50adf85d672485a33a2601a08216f93e6995baadbe3"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 38703,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "e75ea2a713545eb6553af3b1259c105c1bf97fdba5e1b506555bce51b4e17853",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10577-a524-7616-a2e5-c976131ee09c",
+  "title": "深时档案 · Fossil Expedition",
+  "url": "https://qzemi.cn/sentence-to-game/games/068-fossil-expedition/"
+}

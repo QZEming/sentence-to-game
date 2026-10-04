@@ -1,0 +1,113 @@
+{
+  "files": [
+    {
+      "bytes": 69,
+      "path": ".gitignore",
+      "sha256": "ceb9d80e8e362b69cd43a790fe032bd902dffe7293fa5d6a9c89db458771de14"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "0c5115b2f47789df229a78b3d6f324f3829836c45b74aea5fcc29e1819cd76c3"
+    },
+    {
+      "bytes": 2508,
+      "path": "README.md",
+      "sha256": "f04ec4f74847ed34bfa8b8ec370d932632772d5501328bc1cb993be8ec09af57"
+    },
+    {
+      "bytes": 33685,
+      "path": "dist/game.js",
+      "sha256": "fe92673d02d3aac36e2ed811d457be3f0747560871eb4264d99f03ee4abe59ba"
+    },
+    {
+      "bytes": 5614,
+      "path": "dist/index.html",
+      "sha256": "faa3592efce03a1eaaa85cf045d2b0f078abd7ed7f05d91b41bf448b5b618897"
+    },
+    {
+      "bytes": 19989,
+      "path": "dist/style.css",
+      "sha256": "7586945c40d67606e79ed13f7cf942589c54c919fc70f1d21c2e1de387d82ef3"
+    },
+    {
+      "bytes": 21180,
+      "path": "dist/ui.js",
+      "sha256": "ca39889d84f51edf3fa7cc13d15db9666e7808e28f4490d68cf435f3fa2a4cd9"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 208978,
+      "path": "original-delivery/swallow-skies.tar.gz",
+      "sha256": "fea4d0ed786b1dc0b270f5856e8d2436bd63cd0e667ed49ebe31cde3b8ce2caf"
+    },
+    {
+      "bytes": 487186,
+      "path": "output/playwright/flight.png",
+      "sha256": "32fae8cb2b0dc68907b5572df83d12f333706cbde2028c12126bd1d7d0c76ec3"
+    },
+    {
+      "bytes": 470872,
+      "path": "output/playwright/menu-final.png",
+      "sha256": "3de11634743e7d147833a7b473f2bd5882a82ceee27a056bc8d134de53830749"
+    },
+    {
+      "bytes": 458201,
+      "path": "output/playwright/menu.png",
+      "sha256": "7465155cc3031214a2038d657929a15d4bcebb80875283649845ba0e0a83cf87"
+    },
+    {
+      "bytes": 99838,
+      "path": "output/playwright/mobile-flight-paused.png",
+      "sha256": "22761fe336c4d8fb8ffba7cff4abbe74781c17e014646b69dc8894851b25744d"
+    },
+    {
+      "bytes": 197967,
+      "path": "output/playwright/mobile-flight.png",
+      "sha256": "5bba99f98c5eb1308761cbe4969a657a10b8a04698157b8b94f5f8a3375da2b0"
+    },
+    {
+      "bytes": 114400,
+      "path": "output/playwright/mobile-menu.png",
+      "sha256": "6bce991ac5a9a7086f203eac8e62af565daf690e75d2f80d9cd43717559ce13c"
+    },
+    {
+      "bytes": 2572,
+      "path": "package-lock.json",
+      "sha256": "3dfbfed017ccbe758717657c5530b39f6417c42efd73ff5b8736bad88feda56b"
+    },
+    {
+      "bytes": 258,
+      "path": "package.json",
+      "sha256": "41583b5471f4055327941fb4722369e43a689b6e01cbd227a8a03911c8c2a0dc"
+    },
+    {
+      "bytes": 840,
+      "path": "server.mjs",
+      "sha256": "e2887be12eb74a78b209019b0b3ea10f0135eb123d0790bb8dbfc1f7a20794af"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-35/swallow-skies",
+  "source_tree_sha256": "2951a906e26ffb197a9eb137f7204a1097395371367d6f888906dc050dda35d7",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-066-original-20261004T062225Z",
+  "thread_id": "01a10573-2c8e-70c0-be1a-d0902a4dd09a",
+  "turn_id": "01a10573-4e14-729c-8596-dec7f2275b5d"
+}
