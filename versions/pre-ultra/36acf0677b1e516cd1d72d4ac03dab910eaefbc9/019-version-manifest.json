@@ -1,0 +1,29 @@
+{
+  "base_commit": "36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "full_old_history_preserved": true,
+  "game_number": "019",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/013/manifest.json": "c17d995049f67f593f3ff8b3af4cc0d9a76209db",
+    "experiments/page-857ec841-top50-gpt6astra/013/prompt.txt": "1222c1f842df2fb107ce5b49653596924efd3ecd",
+    "experiments/page-857ec841-top50-gpt6astra/013/provenance.json": "cf4c7dbef0922906171dd4cd3475340ac83f59f4",
+    "experiments/page-857ec841-top50-gpt6astra/013/release.json": "cc04a5138dc9dcea47d152631e2bcab648820806"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "source_and_published_blobs": {
+    "docs/games/019-marble-toy-house/assets/index-LlXOBeZj.css": "f2b339de8086d81a3ae66a96d9db97bb20170d38",
+    "docs/games/019-marble-toy-house/assets/index-rYjQv2gO.js": "5615b7ceb1ccae1b662ec177ba7add5c13245816",
+    "docs/games/019-marble-toy-house/index.html": "1ffe8df365e95841d8f939b4026536ece243e42c",
+    "games/019-marble-toy-house/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+    "games/019-marble-toy-house/README.md": "eecc926baf6a5075f6ef1865637bb89c86737f38",
+    "games/019-marble-toy-house/RELEASE.md": "22add95335546bbc8c233b47fd36e3d796cca534",
+    "games/019-marble-toy-house/dist/assets/index-LlXOBeZj.css": "f2b339de8086d81a3ae66a96d9db97bb20170d38",
+    "games/019-marble-toy-house/dist/assets/index-rYjQv2gO.js": "5615b7ceb1ccae1b662ec177ba7add5c13245816",
+    "games/019-marble-toy-house/dist/index.html": "9ac491f80847178765058e9051352c300d50d948",
+    "games/019-marble-toy-house/index.html": "f3f634ab6031b5d67b3ce93a92bc443f9ace49d0",
+    "games/019-marble-toy-house/package-lock.json": "ee1918e51c8303e103e78c6f245da388e12e8d9d",
+    "games/019-marble-toy-house/package.json": "146236bb9711e2e543fe57a568f6de1500aecbc0",
+    "games/019-marble-toy-house/prompt.txt": "1222c1f842df2fb107ce5b49653596924efd3ecd",
+    "games/019-marble-toy-house/src/main.js": "cff9c370f850dbdf8ac03d4cb1fc9a5ccd46b2d8",
+    "games/019-marble-toy-house/style.css": "955005ff5479fa55228869438b0fc9f01c0e8389"
+  }
+}

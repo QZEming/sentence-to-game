@@ -1,0 +1,325 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-019-original-20261004T020546Z",
+  "candidate": "ultra-019",
+  "completed_at": "2026-10-04T02:07:26.157159Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "explicit_external_artifacts": [
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house.tar.gz"
+  ],
+  "file_count": 15,
+  "files": [
+    {
+      "archive_relative_path": "marble-house/.gitignore",
+      "copied_sha256": "6b3b390ff3c28496a3565ce9587bab603a73a69ebc773f5549a92cc6666c56b6",
+      "final_source_sha256": "6b3b390ff3c28496a3565ce9587bab603a73a69ebc773f5549a92cc6666c56b6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079146879262727,
+      "mtime_utc": "2026-10-04T01:59:06.879263Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/.gitignore",
+      "size_bytes": 41,
+      "source_sha256": "6b3b390ff3c28496a3565ce9587bab603a73a69ebc773f5549a92cc6666c56b6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/.openai/hosting.json",
+      "copied_sha256": "aa8c0303c9eca11b0190b4604b8697861ece7af9adc24d1e845a65aac07bada9",
+      "final_source_sha256": "aa8c0303c9eca11b0190b4604b8697861ece7af9adc24d1e845a65aac07bada9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077739450623303,
+      "mtime_utc": "2026-10-04T01:35:39.450623Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "aa8c0303c9eca11b0190b4604b8697861ece7af9adc24d1e845a65aac07bada9",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/README.md",
+      "copied_sha256": "2e2b37977e639a624083f1c9c8d13f7e702e56d14640ad26d56de74086724ece",
+      "final_source_sha256": "2e2b37977e639a624083f1c9c8d13f7e702e56d14640ad26d56de74086724ece",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079146891906296,
+      "mtime_utc": "2026-10-04T01:59:06.891906Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/README.md",
+      "size_bytes": 2027,
+      "source_sha256": "2e2b37977e639a624083f1c9c8d13f7e702e56d14640ad26d56de74086724ece",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/index.html",
+      "copied_sha256": "f376d212c35f8a7694031811e9a35a4950b427fe19033dca50c46760153be2d0",
+      "final_source_sha256": "f376d212c35f8a7694031811e9a35a4950b427fe19033dca50c46760153be2d0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791078209760424667,
+      "mtime_utc": "2026-10-04T01:43:29.760425Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/index.html",
+      "size_bytes": 5636,
+      "source_sha256": "f376d212c35f8a7694031811e9a35a4950b427fe19033dca50c46760153be2d0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/main.js",
+      "copied_sha256": "5f0c473c6a9caf1345309c6bfd3a94e1405be052a7530e8fbbcfdff3e6ceac31",
+      "final_source_sha256": "5f0c473c6a9caf1345309c6bfd3a94e1405be052a7530e8fbbcfdff3e6ceac31",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079075977237784,
+      "mtime_utc": "2026-10-04T01:57:55.977238Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/main.js",
+      "size_bytes": 16621,
+      "source_sha256": "5f0c473c6a9caf1345309c6bfd3a94e1405be052a7530e8fbbcfdff3e6ceac31",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/simulation.js",
+      "copied_sha256": "fdc0dc11bf29dea2bf17829d8024d6dfe3296f5904091e2704160b203a36e182",
+      "final_source_sha256": "fdc0dc11bf29dea2bf17829d8024d6dfe3296f5904091e2704160b203a36e182",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079075962934170,
+      "mtime_utc": "2026-10-04T01:57:55.962934Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/simulation.js",
+      "size_bytes": 8107,
+      "source_sha256": "fdc0dc11bf29dea2bf17829d8024d6dfe3296f5904091e2704160b203a36e182",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/style.css",
+      "copied_sha256": "2dadd3280fe768f72484554cb7ec31bebe0f185ce1e2cda3efef298168ef4cae",
+      "final_source_sha256": "2dadd3280fe768f72484554cb7ec31bebe0f185ce1e2cda3efef298168ef4cae",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791078209771652733,
+      "mtime_utc": "2026-10-04T01:43:29.771653Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/style.css",
+      "size_bytes": 12486,
+      "source_sha256": "2dadd3280fe768f72484554cb7ec31bebe0f185ce1e2cda3efef298168ef4cae",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/vendor/three.core.js",
+      "copied_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "final_source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077747663952928,
+      "mtime_utc": "2026-10-04T01:35:47.663953Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/vendor/three.core.js",
+      "size_bytes": 1403455,
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/vendor/three.module.js",
+      "copied_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "final_source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077742380636422,
+      "mtime_utc": "2026-10-04T01:35:42.380636Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/vendor/three.module.js",
+      "size_bytes": 603113,
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/dist/world.js",
+      "copied_sha256": "f316dbbd04996bf627d08ce3044fa17dba044bf7c4bb58d39bac11d2f464ac72",
+      "final_source_sha256": "f316dbbd04996bf627d08ce3044fa17dba044bf7c4bb58d39bac11d2f464ac72",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079075962770170,
+      "mtime_utc": "2026-10-04T01:57:55.962770Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/dist/world.js",
+      "size_bytes": 21102,
+      "source_sha256": "f316dbbd04996bf627d08ce3044fa17dba044bf7c4bb58d39bac11d2f464ac72",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/output/playwright/gameplay.png",
+      "copied_sha256": "e7532c6ade3e8c53ce05ad8265da15dc517b50f3e619eb96fe8f9e592f2501e0",
+      "final_source_sha256": "e7532c6ade3e8c53ce05ad8265da15dc517b50f3e619eb96fe8f9e592f2501e0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079182206903916,
+      "mtime_utc": "2026-10-04T01:59:42.206904Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/output/playwright/gameplay.png",
+      "size_bytes": 327359,
+      "source_sha256": "e7532c6ade3e8c53ce05ad8265da15dc517b50f3e619eb96fe8f9e592f2501e0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/output/playwright/menu.png",
+      "copied_sha256": "a3f574aafce796588a03fa01659cc5867f5b7713edf04f9bbcee17f76ad56e1c",
+      "final_source_sha256": "a3f574aafce796588a03fa01659cc5867f5b7713edf04f9bbcee17f76ad56e1c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079098045019053,
+      "mtime_utc": "2026-10-04T01:58:18.045019Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/output/playwright/menu.png",
+      "size_bytes": 651596,
+      "source_sha256": "a3f574aafce796588a03fa01659cc5867f5b7713edf04f9bbcee17f76ad56e1c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/output/playwright/mobile.png",
+      "copied_sha256": "8ef48273a3ad3d1dbb506c6944870bb3a0978b77d7a628ef0260f363014d0c6c",
+      "final_source_sha256": "8ef48273a3ad3d1dbb506c6944870bb3a0978b77d7a628ef0260f363014d0c6c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079249519740086,
+      "mtime_utc": "2026-10-04T02:00:49.519740Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/output/playwright/mobile.png",
+      "size_bytes": 138191,
+      "source_sha256": "8ef48273a3ad3d1dbb506c6944870bb3a0978b77d7a628ef0260f363014d0c6c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "marble-house/validate.mjs",
+      "copied_sha256": "dda939de4cef56bfc995ec11672a78fab43f43f79c0f87c56d426abf6ce53183",
+      "final_source_sha256": "dda939de4cef56bfc995ec11672a78fab43f43f79c0f87c56d426abf6ce53183",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791078980259118425,
+      "mtime_utc": "2026-10-04T01:56:20.259118Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house/validate.mjs",
+      "size_bytes": 2134,
+      "source_sha256": "dda939de4cef56bfc995ec11672a78fab43f43f79c0f87c56d426abf6ce53183",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/marble-house.tar.gz",
+      "copied_sha256": "e6aae44577dbec0ea5ce645ac75be7adfc9f81f062a3f937a77185200c191a94",
+      "final_source_sha256": "e6aae44577dbec0ea5ce645ac75be7adfc9f81f062a3f937a77185200c191a94",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791079371637406986,
+      "mtime_utc": "2026-10-04T02:02:51.637407Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house.tar.gz",
+      "size_bytes": 421475,
+      "source_sha256": "e6aae44577dbec0ea5ce645ac75be7adfc9f81f062a3f937a77185200c191a94",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "inventory_fixed_at": "2026-10-04T02:07:25.942438Z",
+  "limitations": [
+    "No builds, tests, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Original delivery archive copied as bytes without unpacking or rebuilding.",
+    "Existing reports, validation scripts and screenshots preserved as original evidence only; no independent gameplay verification.",
+    "Documented full three-room route validation uses Node fixed-step physics simulation, not browser actual-keyboard or touch complete playthrough.",
+    "Thirty-six-star availability is asserted, but collecting all stars is not asserted.",
+    "No small successful-execution result report was found; screenshot filenames do not establish complete playthrough or touch interaction verification."
+  ],
+  "original_request": "实现一个弹珠穿过巨大的玩具屋的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_reported_author_results": {
+    "existing_validation_record": {
+      "provenance": "Read-only helper summarized existing README and static validation script; no validation executed by archival agent",
+      "readme_line_22_and_script_lines_2_to_6": {
+        "browser_actual_keyboard_or_touch_full_playthrough": "not established",
+        "method": "Node fixed-step physics simulation directly importing Game and calling g.update with directional inputs",
+        "script_assertions": [
+          "won",
+          "all badges",
+          "zero deaths",
+          "three piano keys"
+        ]
+      },
+      "screenshots": "menu.png, gameplay.png and mobile.png filenames alone do not establish full playthrough or actual touch interaction",
+      "script_lines_7_to_11": {
+        "36_stars": "available count asserted; collection of every star not asserted",
+        "static_check_coverage": [
+          "checkpoint and progress retention after directly setting fall state",
+          "pause freezing",
+          "dash cooldown",
+          "timer plus five seconds",
+          "door gating",
+          "restart"
+        ]
+      },
+      "source_relative_paths": [
+        "marble-house/README.md",
+        "marble-house/validate.mjs"
+      ],
+      "successful_execution_result_artifact": "not found"
+    },
+    "provenance": "Author report relayed by parent only; no checks rerun or independently verified; validation scope not expanded",
+    "reported_passed": [
+      "complete playthrough",
+      "pause",
+      "revival",
+      "desktop rendering",
+      "touchscreen jumping"
+    ],
+    "validation_method": "not independently established by archival agent"
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Parent/author report only; site not accessed; not GitHub deployment evidence",
+    "url": "https://marble-toyhouse-quest.zemingqiu045.chatgpt.site",
+    "visibility": "private per parent report"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Explicit creation parameters supplied by parent only; actual historical generation metadata not independently verified",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house",
+  "stage": "original",
+  "thread_id": "01a1048b-3f1a-7050-8c65-9258c311409c",
+  "title": "Marble House",
+  "total_bytes": 3613449,
+  "turn_id": "01a1048b-6011-7795-ab0a-5969b0be829c"
+}

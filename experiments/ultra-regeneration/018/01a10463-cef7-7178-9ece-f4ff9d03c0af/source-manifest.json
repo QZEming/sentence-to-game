@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "bytes": 1647,
+      "path": "README.md",
+      "sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72"
+    },
+    {
+      "bytes": 363636,
+      "path": "cat-stack-deploy.tar.gz",
+      "sha256": "b3da69ed1b766f7509b5f870944a87eaff10bf18ee636d544e8dd789528b0d4b"
+    },
+    {
+      "bytes": 26,
+      "path": "cat-stack/.gitignore",
+      "sha256": "28a6271dff543b1d658c943d4010a7e4c5b0dee253cc47937db63ca374d8ad2c"
+    },
+    {
+      "bytes": 106,
+      "path": "cat-stack/.openai/hosting.json",
+      "sha256": "e1a295d96bd93a89ea825e46616617720f47e511669f6a308612b849d6f3ca57"
+    },
+    {
+      "bytes": 1647,
+      "path": "cat-stack/README.md",
+      "sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72"
+    },
+    {
+      "bytes": 34569,
+      "path": "cat-stack/dist/game.js",
+      "sha256": "860635d4a3d6208ca4b5937e70451938ad3bb0cca3148b440b9752286f2ef0d6"
+    },
+    {
+      "bytes": 7733,
+      "path": "cat-stack/dist/index.html",
+      "sha256": "0ba8778fa43d319df94512b3b5ea71f089879ee17fc739024bfbd3151d361cc3"
+    },
+    {
+      "bytes": 18235,
+      "path": "cat-stack/dist/style.css",
+      "sha256": "df365652b2ff3c8b1a7e80ebe3758cd36bd882b03cb1184bea1b4a693fdd23b8"
+    },
+    {
+      "bytes": 1125,
+      "path": "cat-stack/dist/vendor/CANNON-LICENSE.txt",
+      "sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2"
+    },
+    {
+      "bytes": 1081,
+      "path": "cat-stack/dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 346256,
+      "path": "cat-stack/dist/vendor/cannon-es.js",
+      "sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c"
+    },
+    {
+      "bytes": 1304820,
+      "path": "cat-stack/dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 3619,
+      "path": "cat-stack/tests/physics-smoke.mjs",
+      "sha256": "3a3e9b94523992ed9cd8f67eb29315c50f5b626de90c05aa9abfbec7922aac46"
+    },
+    {
+      "bytes": 65012,
+      "path": "evidence/cat-stack-desktop.jpg",
+      "sha256": "4446181f487c71a3b9046cf5cd0b0c7a54e20f9e4afdc7da71545b1dc278aa16"
+    },
+    {
+      "bytes": 777,
+      "path": "evidence/verification.json",
+      "sha256": "4290de30e9ed63c8d5153a54468f805cc06cb2e0bfe64564d931152f6f8385d4"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-12",
+  "source_tree_sha256": "10df36caa808e461c37b498d9677301efb38ce2f7f786578f53ac8cda890407f",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-018-original-20261004T012906Z",
+  "thread_id": "01a10463-cef7-7178-9ece-f4ff9d03c0af",
+  "turn_id": "01a10463-ee36-733d-ac2e-490a33f5e6a6"
+}

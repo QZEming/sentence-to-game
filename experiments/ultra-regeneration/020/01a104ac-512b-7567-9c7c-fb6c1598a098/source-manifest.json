@@ -1,0 +1,113 @@
+{
+  "files": [
+    {
+      "bytes": 65,
+      "path": ".gitignore",
+      "sha256": "bfb5f3301a6ed659af824efe9e53c3c565afd688fe80572a156834e2646f4093"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "f257e9385bd8c034aad6f444dbec60fb3ee438c474aa99bfd630ff6a1e49e6d9"
+    },
+    {
+      "bytes": 1857,
+      "path": "README.md",
+      "sha256": "2ff9ac0adc406e7939004382a1f15a4f6a40123269b8b54fea57dc83be101729"
+    },
+    {
+      "bytes": 3083,
+      "path": "dist/courses.js",
+      "sha256": "47c141147ff61765ff9a0b91024d5ccd379d748ec95201bbd10b718a91831481"
+    },
+    {
+      "bytes": 18787,
+      "path": "dist/game.js",
+      "sha256": "85471d0a3886223c25b078f00cd27da02736b89cb08cac402a97ffefb3dbc1bf"
+    },
+    {
+      "bytes": 5065,
+      "path": "dist/index.html",
+      "sha256": "e12b2947d6f0cbb03b9513b0c9481cf8a37a055f0608129392137ba8c541abb4"
+    },
+    {
+      "bytes": 3831,
+      "path": "dist/physics.js",
+      "sha256": "5b08535fdba6f38fa081b9b05543dfe97e7fcd5ff09a4fb0b50c415bde1bf70b"
+    },
+    {
+      "bytes": 14887,
+      "path": "dist/scene.js",
+      "sha256": "f7b9bc272c0d11c0fcbd13712d6d146df3e0211b2cf0be8f207b85df4f420014"
+    },
+    {
+      "bytes": 16268,
+      "path": "dist/style.css",
+      "sha256": "3e6560004802b2989e63078fdbb3e94f2829c9cc392a8e260d26db316832beec"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 288978,
+      "path": "original-delivery/cosmic-pup-deploy.tar.gz",
+      "sha256": "d95f98ae8e38b035edc08b16a8857c2cac30ed2c2e412a2fb4acecc5422e1961"
+    },
+    {
+      "bytes": 188628,
+      "path": "output/playwright/after-shot.png",
+      "sha256": "8acc0233bb2a73b91fcba1ace46e0a6dd280fb61454b15ff47b4d153a2b2aedd"
+    },
+    {
+      "bytes": 577255,
+      "path": "output/playwright/desktop-final.png",
+      "sha256": "acebcc7f6a821d93b3a93629d3f07b6f79a1a8e5d40855d1f0cc17ebb37a2af2"
+    },
+    {
+      "bytes": 532700,
+      "path": "output/playwright/desktop.png",
+      "sha256": "4ce6bf7186ddde835679576ac957f4c5c3e2ea7c022d855c65932da7be94f287"
+    },
+    {
+      "bytes": 130130,
+      "path": "output/playwright/first-hole-complete.png",
+      "sha256": "9b71191b909a45d846be8adb225310fb15bdabcebb1ae68eace2259316aa51fc"
+    },
+    {
+      "bytes": 187789,
+      "path": "output/playwright/mobile.png",
+      "sha256": "25622e8fdceb6e971cff1ef47cc45d3ef1442b3401ff2c223a46bc850cfb50b4"
+    },
+    {
+      "bytes": 280,
+      "path": "package.json",
+      "sha256": "4432a770ad38b15aee76ed367fc29b3fe8b5ae97f9f607fd84daf94e5da8ed11"
+    },
+    {
+      "bytes": 854,
+      "path": "serve.mjs",
+      "sha256": "7bfeea96b8c55ed34363853e58f607ecf76771ddf7d2550decda4e19708a1209"
+    },
+    {
+      "bytes": 2334,
+      "path": "tests/physics.test.mjs",
+      "sha256": "24564e4d1ca333218c5107b0389f4bd0b28b6cc4a93e43a18dceb7f199929f59"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-14/cosmic-pup",
+  "source_tree_sha256": "e6039f21a029b36bdb5c05177c928e9cbb7a2b7362ed6ac735c22f4dd64e129c",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-020-original-20261004T024348Z",
+  "thread_id": "01a104ac-512b-7567-9c7c-fb6c1598a098",
+  "turn_id": "01a104ac-727e-736d-9e5e-cd1f0aaf9264"
+}

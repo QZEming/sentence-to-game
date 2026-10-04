@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "bytes": 41,
+      "path": ".gitignore",
+      "sha256": "6b3b390ff3c28496a3565ce9587bab603a73a69ebc773f5549a92cc6666c56b6"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "aa8c0303c9eca11b0190b4604b8697861ece7af9adc24d1e845a65aac07bada9"
+    },
+    {
+      "bytes": 2027,
+      "path": "README.md",
+      "sha256": "2e2b37977e639a624083f1c9c8d13f7e702e56d14640ad26d56de74086724ece"
+    },
+    {
+      "bytes": 5636,
+      "path": "dist/index.html",
+      "sha256": "f376d212c35f8a7694031811e9a35a4950b427fe19033dca50c46760153be2d0"
+    },
+    {
+      "bytes": 16621,
+      "path": "dist/main.js",
+      "sha256": "5f0c473c6a9caf1345309c6bfd3a94e1405be052a7530e8fbbcfdff3e6ceac31"
+    },
+    {
+      "bytes": 8107,
+      "path": "dist/simulation.js",
+      "sha256": "fdc0dc11bf29dea2bf17829d8024d6dfe3296f5904091e2704160b203a36e182"
+    },
+    {
+      "bytes": 12486,
+      "path": "dist/style.css",
+      "sha256": "2dadd3280fe768f72484554cb7ec31bebe0f185ce1e2cda3efef298168ef4cae"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 21102,
+      "path": "dist/world.js",
+      "sha256": "f316dbbd04996bf627d08ce3044fa17dba044bf7c4bb58d39bac11d2f464ac72"
+    },
+    {
+      "bytes": 421475,
+      "path": "original-delivery/marble-house.tar.gz",
+      "sha256": "e6aae44577dbec0ea5ce645ac75be7adfc9f81f062a3f937a77185200c191a94"
+    },
+    {
+      "bytes": 327359,
+      "path": "output/playwright/gameplay.png",
+      "sha256": "e7532c6ade3e8c53ce05ad8265da15dc517b50f3e619eb96fe8f9e592f2501e0"
+    },
+    {
+      "bytes": 651596,
+      "path": "output/playwright/menu.png",
+      "sha256": "a3f574aafce796588a03fa01659cc5867f5b7713edf04f9bbcee17f76ad56e1c"
+    },
+    {
+      "bytes": 138191,
+      "path": "output/playwright/mobile.png",
+      "sha256": "8ef48273a3ad3d1dbb506c6944870bb3a0978b77d7a628ef0260f363014d0c6c"
+    },
+    {
+      "bytes": 2134,
+      "path": "validate.mjs",
+      "sha256": "dda939de4cef56bfc995ec11672a78fab43f43f79c0f87c56d426abf6ce53183"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-13/marble-house",
+  "source_tree_sha256": "dee79e79fd79c13fa37f83e3e71f0eb587e835ba76cae60dd86dec2f7dc380d0",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-019-original-20261004T020546Z",
+  "thread_id": "01a1048b-3f1a-7050-8c65-9258c311409c",
+  "turn_id": "01a1048b-6011-7795-ab0a-5969b0be829c"
+}

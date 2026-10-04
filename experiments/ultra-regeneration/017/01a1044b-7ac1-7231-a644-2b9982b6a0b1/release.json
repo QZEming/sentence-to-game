@@ -1,0 +1,84 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "017-beaver-river-bridges",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "017",
+  "generation_turn_id": "01a1044b-9b5d-7675-a8cd-f2f831afd7a9",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+    "full_old_history_preserved": true,
+    "game_number": "017",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/011/manifest.json": "00ecee02a3740124edaac62fe459689755b4d601",
+      "experiments/page-857ec841-top50-gpt6astra/011/prompt.txt": "80b0a1c428e66379ff27bb2151391e79651b0d38",
+      "experiments/page-857ec841-top50-gpt6astra/011/provenance.json": "3ac7a4e9950ad76381bcc7af3b20c466b9f71cb1",
+      "experiments/page-857ec841-top50-gpt6astra/011/release.json": "879952961952967b9ae839542c0c343821bbc46f"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+    "source_and_published_blobs": {
+      "docs/games/017-beaver-river-bridges/assets/index-BgZ216-f.css": "a40caeb02f0262cb09e96fe754b5442be571d756",
+      "docs/games/017-beaver-river-bridges/assets/index-DAiM3TIp.js": "470c43529279d89684b7be3db6128ee86d02f079",
+      "docs/games/017-beaver-river-bridges/assets/three-CTRZatew.js": "7191090160a4e5b608da2e2ed414d25433f5e574",
+      "docs/games/017-beaver-river-bridges/index.html": "89bc0ad19c1c39906ea66979360635e16bc48aa7",
+      "games/017-beaver-river-bridges/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+      "games/017-beaver-river-bridges/README.md": "95130a9b0c45864ccf96bd116503c3a4750d2151",
+      "games/017-beaver-river-bridges/RELEASE.md": "9dd48ab4f81eedf6ee1e389a2e2f0093689b3973",
+      "games/017-beaver-river-bridges/dist/assets/index-BgZ216-f.css": "a40caeb02f0262cb09e96fe754b5442be571d756",
+      "games/017-beaver-river-bridges/dist/assets/index-DAiM3TIp.js": "470c43529279d89684b7be3db6128ee86d02f079",
+      "games/017-beaver-river-bridges/dist/assets/three-CTRZatew.js": "7191090160a4e5b608da2e2ed414d25433f5e574",
+      "games/017-beaver-river-bridges/dist/index.html": "5df68f6b78ea00d904853005a1d0ca90d54fa9b0",
+      "games/017-beaver-river-bridges/index.html": "c56db38d246ff3e19df227cbc7532fff989877bb",
+      "games/017-beaver-river-bridges/package-lock.json": "199b3e80b58c0cb7b5ab6920d156db3b635b68fa",
+      "games/017-beaver-river-bridges/package.json": "78f105b3f2021ccea98a52f8652add9e0a5d14e0",
+      "games/017-beaver-river-bridges/prompt.txt": "80b0a1c428e66379ff27bb2151391e79651b0d38",
+      "games/017-beaver-river-bridges/src/main.js": "f934c2ac91757c80871879b592010d771d43dd45",
+      "games/017-beaver-river-bridges/src/style.css": "b6475f8c4a48c0638ec87461aaa5b8cccd47ff91",
+      "games/017-beaver-river-bridges/vite.config.js": "8621f989bd3c85f28f7126b9bf4076d3bd0a17e2"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 51268,
+      "path": "game.js",
+      "sha256": "023ee83afce62f25059129fb13d93bb9ce49fc38162adf4479f9a603e2f02072"
+    },
+    {
+      "bytes": 5623,
+      "path": "index.html",
+      "sha256": "146e2a260d2afc732716e9fba4b8d46b6c4ac2f330604da3ea7224fb71073b7c"
+    },
+    {
+      "bytes": 15818,
+      "path": "style.css",
+      "sha256": "25f99e1fbf1879e932c83c90683697adb897345cf04b49c4faef4b179f743781"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "e3129f22246c87f5a21e1fdb747f84c32f833845338672adc0d87ead8cc4e72b",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1044b-7ac1-7231-a644-2b9982b6a0b1",
+  "title": "溪谷建筑师 · Beaver Creek",
+  "url": "https://qzemi.cn/sentence-to-game/games/017-beaver-river-bridges/"
+}

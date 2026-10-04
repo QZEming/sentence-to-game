@@ -1,0 +1,327 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-018-original-20261004T012906Z",
+  "authorized_source_scope": "Entire isolated task-12 root authorized by parent; cat-stack project, README, evidence and original package",
+  "candidate": "ultra-018",
+  "completed_at": "2026-10-04T01:31:11.799091Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "file_count": 15,
+  "files": [
+    {
+      "archive_relative_path": "README.md",
+      "copied_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "final_source_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076997255847520,
+      "mtime_utc": "2026-10-04T01:23:17.255847Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/README.md",
+      "size_bytes": 1647,
+      "source_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack-deploy.tar.gz",
+      "copied_sha256": "b3da69ed1b766f7509b5f870944a87eaff10bf18ee636d544e8dd789528b0d4b",
+      "final_source_sha256": "b3da69ed1b766f7509b5f870944a87eaff10bf18ee636d544e8dd789528b0d4b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077146912137470,
+      "mtime_utc": "2026-10-04T01:25:46.912138Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack-deploy.tar.gz",
+      "size_bytes": 363636,
+      "source_sha256": "b3da69ed1b766f7509b5f870944a87eaff10bf18ee636d544e8dd789528b0d4b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/.gitignore",
+      "copied_sha256": "28a6271dff543b1d658c943d4010a7e4c5b0dee253cc47937db63ca374d8ad2c",
+      "final_source_sha256": "28a6271dff543b1d658c943d4010a7e4c5b0dee253cc47937db63ca374d8ad2c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076997265637541,
+      "mtime_utc": "2026-10-04T01:23:17.265638Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/.gitignore",
+      "size_bytes": 26,
+      "source_sha256": "28a6271dff543b1d658c943d4010a7e4c5b0dee253cc47937db63ca374d8ad2c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/.openai/hosting.json",
+      "copied_sha256": "e1a295d96bd93a89ea825e46616617720f47e511669f6a308612b849d6f3ca57",
+      "final_source_sha256": "e1a295d96bd93a89ea825e46616617720f47e511669f6a308612b849d6f3ca57",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791075189584843481,
+      "mtime_utc": "2026-10-04T00:53:09.584844Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "e1a295d96bd93a89ea825e46616617720f47e511669f6a308612b849d6f3ca57",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/README.md",
+      "copied_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "final_source_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077047248060495,
+      "mtime_utc": "2026-10-04T01:24:07.248060Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/README.md",
+      "size_bytes": 1647,
+      "source_sha256": "f04f55883ca18d1bbf0be9f63f79df6b73eb27b8127bf20d8ccc55a6b6429d72",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/game.js",
+      "copied_sha256": "860635d4a3d6208ca4b5937e70451938ad3bb0cca3148b440b9752286f2ef0d6",
+      "final_source_sha256": "860635d4a3d6208ca4b5937e70451938ad3bb0cca3148b440b9752286f2ef0d6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076891800583913,
+      "mtime_utc": "2026-10-04T01:21:31.800584Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/game.js",
+      "size_bytes": 34569,
+      "source_sha256": "860635d4a3d6208ca4b5937e70451938ad3bb0cca3148b440b9752286f2ef0d6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/index.html",
+      "copied_sha256": "0ba8778fa43d319df94512b3b5ea71f089879ee17fc739024bfbd3151d361cc3",
+      "final_source_sha256": "0ba8778fa43d319df94512b3b5ea71f089879ee17fc739024bfbd3151d361cc3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791075526235972188,
+      "mtime_utc": "2026-10-04T00:58:46.235972Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/index.html",
+      "size_bytes": 7733,
+      "source_sha256": "0ba8778fa43d319df94512b3b5ea71f089879ee17fc739024bfbd3151d361cc3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/style.css",
+      "copied_sha256": "df365652b2ff3c8b1a7e80ebe3758cd36bd882b03cb1184bea1b4a693fdd23b8",
+      "final_source_sha256": "df365652b2ff3c8b1a7e80ebe3758cd36bd882b03cb1184bea1b4a693fdd23b8",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076826601970205,
+      "mtime_utc": "2026-10-04T01:20:26.601970Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/style.css",
+      "size_bytes": 18235,
+      "source_sha256": "df365652b2ff3c8b1a7e80ebe3758cd36bd882b03cb1184bea1b4a693fdd23b8",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/vendor/CANNON-LICENSE.txt",
+      "copied_sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2",
+      "final_source_sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076903324518426,
+      "mtime_utc": "2026-10-04T01:21:43.324518Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/vendor/CANNON-LICENSE.txt",
+      "size_bytes": 1125,
+      "source_sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076903943648828,
+      "mtime_utc": "2026-10-04T01:21:43.943649Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/vendor/cannon-es.js",
+      "copied_sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c",
+      "final_source_sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791075184363038564,
+      "mtime_utc": "2026-10-04T00:53:04.363039Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/vendor/cannon-es.js",
+      "size_bytes": 346256,
+      "source_sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/dist/vendor/three.module.js",
+      "copied_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "final_source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791075182059993615,
+      "mtime_utc": "2026-10-04T00:53:02.059994Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/dist/vendor/three.module.js",
+      "size_bytes": 1304820,
+      "source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cat-stack/tests/physics-smoke.mjs",
+      "copied_sha256": "3a3e9b94523992ed9cd8f67eb29315c50f5b626de90c05aa9abfbec7922aac46",
+      "final_source_sha256": "3a3e9b94523992ed9cd8f67eb29315c50f5b626de90c05aa9abfbec7922aac46",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791076891864877176,
+      "mtime_utc": "2026-10-04T01:21:31.864877Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/cat-stack/tests/physics-smoke.mjs",
+      "size_bytes": 3619,
+      "source_sha256": "3a3e9b94523992ed9cd8f67eb29315c50f5b626de90c05aa9abfbec7922aac46",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "evidence/cat-stack-desktop.jpg",
+      "copied_sha256": "4446181f487c71a3b9046cf5cd0b0c7a54e20f9e4afdc7da71545b1dc278aa16",
+      "final_source_sha256": "4446181f487c71a3b9046cf5cd0b0c7a54e20f9e4afdc7da71545b1dc278aa16",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077022559027641,
+      "mtime_utc": "2026-10-04T01:23:42.559028Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/evidence/cat-stack-desktop.jpg",
+      "size_bytes": 65012,
+      "source_sha256": "4446181f487c71a3b9046cf5cd0b0c7a54e20f9e4afdc7da71545b1dc278aa16",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "evidence/verification.json",
+      "copied_sha256": "4290de30e9ed63c8d5153a54468f805cc06cb2e0bfe64564d931152f6f8385d4",
+      "final_source_sha256": "4290de30e9ed63c8d5153a54468f805cc06cb2e0bfe64564d931152f6f8385d4",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791077211690700033,
+      "mtime_utc": "2026-10-04T01:26:51.690700Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-12/evidence/verification.json",
+      "size_bytes": 777,
+      "source_sha256": "4290de30e9ed63c8d5153a54468f805cc06cb2e0bfe64564d931152f6f8385d4",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "inventory_fixed_at": "2026-10-04T01:31:11.593672Z",
+  "limitations": [
+    "No builds, tests, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Original delivery archive copied as bytes without unpacking or rebuilding.",
+    "Existing reports, tests and screenshots preserved as original evidence only; no independent gameplay verification.",
+    "Reported twenty-layer physics-test completion and desktop/mobile visual checks do not establish an actual browser twenty-layer complete playthrough.",
+    "Twenty-layer physics completion was recorded for classic only; cozy and storm were recorded at four layers in aiming state, not complete playthroughs.",
+    "Original WebMCP state-read and invalid-input rejection checks are reported, but native WebMCP registration environment was not documented."
+  ],
+  "original_request": "实现一个小猫用积木搭一座摇摇欲坠的高塔的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_reported_author_results": {
+    "actual_browser_twenty_layer_complete_playthrough": "not established",
+    "desktop_and_mobile_visual_checks_reported": true,
+    "existing_verification_record": {
+      "lines_15_to_21_browser_report": {
+        "browser_twenty_layer_complete_playthrough": "not recorded",
+        "desktop_size": [
+          1280,
+          720
+        ],
+        "mobile_size": [
+          390,
+          844
+        ],
+        "native_webmcp_registration_environment": "not documented",
+        "reported_passed": [
+          "start button",
+          "dropping blocks until failure",
+          "slow motion",
+          "WebMCP state read",
+          "invalid-input rejection"
+        ]
+      },
+      "lines_6_to_8_physics_results": {
+        "classic": {
+          "layers": 20,
+          "score": 6500,
+          "state": "ended"
+        },
+        "cozy": {
+          "layers": 4,
+          "score": 900,
+          "state": "aiming"
+        },
+        "storm": {
+          "layers": 4,
+          "score": 900,
+          "state": "aiming"
+        }
+      },
+      "provenance": "Read-only helper summarized original record; no game checks rerun by archival agent",
+      "source_relative_path": "evidence/verification.json"
+    },
+    "provenance": "Author report relayed by parent only; no checks rerun or independently verified; physics-test coverage and browser visual checks kept distinct",
+    "twenty_layer_completion_physics_test_reported": true
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Author report only; site not accessed; not GitHub deployment evidence",
+    "url": "https://cat-stack-playground.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "gpt-6-astra",
+    "provenance": "Explicit creation parameters supplied by parent only; actual historical generation metadata not independently verified",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-12",
+  "stage": "original",
+  "thread_id": "01a10463-cef7-7178-9ece-f4ff9d03c0af",
+  "title": "猫猫叠叠乐 Cat Stack",
+  "total_bytes": 2150289,
+  "turn_id": "01a10463-ee36-733d-ac2e-490a33f5e6a6"
+}

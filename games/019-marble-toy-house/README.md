@@ -1,32 +1,33 @@
-# Marble House
+# 小小弹珠 · 玩具屋大冒险
 
-A playable Three.js marble adventure inside a handcrafted 3D toy house.
+一个可直接运行的 Three.js 3D 弹珠游戏，界面和教程为中文。
 
-## Run
+## 玩法
 
-```sh
-npm install
-npm run dev -- --port 5184
-```
+- 在积木客厅踩按钮开门；在音乐厨房依次踩亮三个琴键；在云朵卧室寻找月亮钥匙，最后进入金色星门。
+- 三个连续房间，36 颗可选星星、书本坡道、家具顶层探索、弹簧垫、弹性撞柱、旋转棒、玩具火车、风扇、冰面和加速带。
+- 自由冒险和计时挑战；5 颗心、两个自动检查点、跌落恢复、暂停、胜利结算、本机最佳用时与四款弹珠外观。
+- 主线仅靠方向移动即可完成。计时模式跌落增加 5 秒；机关进度在重生时保留。
 
-Production: `npm run build`, then `npm run preview`.
+## 操作
 
-## Play
+WASD / 方向键移动，Space 跳跃，Shift 冲刺，R 回到检查点，F 切换俯瞰，Esc 暂停。
+拖动画面旋转视角，滚轮调整远近。触屏设备提供虚拟摇杆和跳跃、冲刺按钮。右上角音符开启音效。
 
-Click **Let's roll**. Collect all 12 golden stars, then enter the golden garden portal.
+## 本地运行
 
-- WASD / arrows: camera-relative movement with inertia
-- Space: jump
-- Shift: brake
-- C: return to last checkpoint
-- R: restart
-- Esc: pause / resume
-- Touch arrows and Hop button on mobile
+在本目录执行 `python3 -m http.server 4178 --directory dist`，然后打开 `http://localhost:4178`。
+`dist/` 包含完整可发布的静态游戏和固定版本 Three.js 0.180.0。无需构建或后端。字体使用 Google Fonts，无法访问时自动使用系统中文字体。
 
-Features: four furnished room/garden zones, rotating obstacles, boost strip, checkpoint flags, collectible stars with particles, victory and timeout screens, free roam / 90-second time trial, three color themes with different obstacle speeds, camera rotation, fullscreen, optional synthesized sound and per-world/mode local best times.
+运行 `node validate.mjs` 执行物理和关卡回归验证。验证包含无需跳跃的完整通关路线、跌落与检查点、暂停、冲刺冷却、计时惩罚、门禁与重开。
 
-All scene geometry is generated locally. No model/image downloads or external font services are required. Browser WebGL support is required.
+游戏进度仅在当前页面存在；外观选择和最佳用时仅保存于本机浏览器。需要支持 WebGL 的现代浏览器。
 
-## Verification
+## 文件
 
-Production build passed. Browser checks confirmed canvas rendering, start and initial star collection, timer progression, pause and world selector. Full route completion and mobile touch hardware have not been manually verified.
+- `dist/main.js`：界面、键鼠与触控输入、音效、相机、动画循环。
+- `dist/world.js`：全部程序化 3D 玩具屋、角色、机关视觉、灯光和粒子。
+- `dist/simulation.js`：固定步长物理、碰撞、关卡状态与计分逻辑。
+- `validate.mjs`：可重复的玩法回归验证。
+
+浏览器提供可选 WebMCP 状态读取与开始游戏工具；不支持 WebMCP 的浏览器不影响游戏。

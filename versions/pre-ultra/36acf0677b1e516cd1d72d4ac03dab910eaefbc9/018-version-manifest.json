@@ -1,0 +1,28 @@
+{
+  "base_commit": "36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "full_old_history_preserved": true,
+  "game_number": "018",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/012/manifest.json": "5447b34d249d4cadfae7f0fd996e28b32d9fa096",
+    "experiments/page-857ec841-top50-gpt6astra/012/prompt.txt": "a5dffff43723416d615e51d78fbf55ace4e9e365",
+    "experiments/page-857ec841-top50-gpt6astra/012/provenance.json": "af7c7316ecedb79d85a738ebee858dd633c36d94",
+    "experiments/page-857ec841-top50-gpt6astra/012/release.json": "da80772f0d8996d96c234e8e2d63cd82c9274966"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "source_and_published_blobs": {
+    "docs/games/018-kitten-block-tower/assets/index-BSWiSEvw.js": "b83a50f9f475e94cb1510bed5cf9e0cd991e306a",
+    "docs/games/018-kitten-block-tower/assets/index-BcyM6ng3.css": "aa05a21a632f24c8e30ab7b7fc073d13f00a9670",
+    "docs/games/018-kitten-block-tower/index.html": "2ad5980be2e2a9f73312903186b1c86f2fc539e0",
+    "games/018-kitten-block-tower/README.md": "496e4756c1bb0f8681d3cb4a8d7ea373ae2f86a2",
+    "games/018-kitten-block-tower/RELEASE.md": "232e37c8f90fb4834819ccb6c5b03a5491108bf3",
+    "games/018-kitten-block-tower/dist/assets/index-BSWiSEvw.js": "b83a50f9f475e94cb1510bed5cf9e0cd991e306a",
+    "games/018-kitten-block-tower/dist/assets/index-BcyM6ng3.css": "aa05a21a632f24c8e30ab7b7fc073d13f00a9670",
+    "games/018-kitten-block-tower/dist/index.html": "196bb0631ff3739cce6463bf2ba5bad3246a69a8",
+    "games/018-kitten-block-tower/index.html": "c2975919019deccf71fd2327d55f08f16873dbd6",
+    "games/018-kitten-block-tower/package-lock.json": "693228cb02974db639ae46e2670718ad1f72878d",
+    "games/018-kitten-block-tower/package.json": "b8a2829c52d5f249414f4084c07fc357915b1436",
+    "games/018-kitten-block-tower/prompt.txt": "a5dffff43723416d615e51d78fbf55ace4e9e365",
+    "games/018-kitten-block-tower/src/main.js": "38ab1d6c5ab6cdf2cf6e898b20eb6918359a4464",
+    "games/018-kitten-block-tower/src/style.css": "758ae7906e04825e393553dfba5616b4f8eecc03"
+  }
+}

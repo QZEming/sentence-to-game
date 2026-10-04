@@ -1,0 +1,85 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "018-kitten-block-tower",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "018",
+  "generation_turn_id": "01a10463-ee36-733d-ac2e-490a33f5e6a6",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+    "full_old_history_preserved": true,
+    "game_number": "018",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/012/manifest.json": "5447b34d249d4cadfae7f0fd996e28b32d9fa096",
+      "experiments/page-857ec841-top50-gpt6astra/012/prompt.txt": "a5dffff43723416d615e51d78fbf55ace4e9e365",
+      "experiments/page-857ec841-top50-gpt6astra/012/provenance.json": "af7c7316ecedb79d85a738ebee858dd633c36d94",
+      "experiments/page-857ec841-top50-gpt6astra/012/release.json": "da80772f0d8996d96c234e8e2d63cd82c9274966"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+    "source_and_published_blobs": {
+      "docs/games/018-kitten-block-tower/assets/index-BSWiSEvw.js": "b83a50f9f475e94cb1510bed5cf9e0cd991e306a",
+      "docs/games/018-kitten-block-tower/assets/index-BcyM6ng3.css": "aa05a21a632f24c8e30ab7b7fc073d13f00a9670",
+      "docs/games/018-kitten-block-tower/index.html": "2ad5980be2e2a9f73312903186b1c86f2fc539e0",
+      "games/018-kitten-block-tower/README.md": "496e4756c1bb0f8681d3cb4a8d7ea373ae2f86a2",
+      "games/018-kitten-block-tower/RELEASE.md": "232e37c8f90fb4834819ccb6c5b03a5491108bf3",
+      "games/018-kitten-block-tower/dist/assets/index-BSWiSEvw.js": "b83a50f9f475e94cb1510bed5cf9e0cd991e306a",
+      "games/018-kitten-block-tower/dist/assets/index-BcyM6ng3.css": "aa05a21a632f24c8e30ab7b7fc073d13f00a9670",
+      "games/018-kitten-block-tower/dist/index.html": "196bb0631ff3739cce6463bf2ba5bad3246a69a8",
+      "games/018-kitten-block-tower/index.html": "c2975919019deccf71fd2327d55f08f16873dbd6",
+      "games/018-kitten-block-tower/package-lock.json": "693228cb02974db639ae46e2670718ad1f72878d",
+      "games/018-kitten-block-tower/package.json": "b8a2829c52d5f249414f4084c07fc357915b1436",
+      "games/018-kitten-block-tower/prompt.txt": "a5dffff43723416d615e51d78fbf55ace4e9e365",
+      "games/018-kitten-block-tower/src/main.js": "38ab1d6c5ab6cdf2cf6e898b20eb6918359a4464",
+      "games/018-kitten-block-tower/src/style.css": "758ae7906e04825e393553dfba5616b4f8eecc03"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 34569,
+      "path": "game.js",
+      "sha256": "860635d4a3d6208ca4b5937e70451938ad3bb0cca3148b440b9752286f2ef0d6"
+    },
+    {
+      "bytes": 7733,
+      "path": "index.html",
+      "sha256": "0ba8778fa43d319df94512b3b5ea71f089879ee17fc739024bfbd3151d361cc3"
+    },
+    {
+      "bytes": 18235,
+      "path": "style.css",
+      "sha256": "df365652b2ff3c8b1a7e80ebe3758cd36bd882b03cb1184bea1b4a693fdd23b8"
+    },
+    {
+      "bytes": 1125,
+      "path": "vendor/CANNON-LICENSE.txt",
+      "sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 346256,
+      "path": "vendor/cannon-es.js",
+      "sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "10df36caa808e461c37b498d9677301efb38ce2f7f786578f53ac8cda890407f",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10463-cef7-7178-9ece-f4ff9d03c0af",
+  "title": "猫猫叠叠乐 · Cat Stack",
+  "url": "https://qzemi.cn/sentence-to-game/games/018-kitten-block-tower/"
+}

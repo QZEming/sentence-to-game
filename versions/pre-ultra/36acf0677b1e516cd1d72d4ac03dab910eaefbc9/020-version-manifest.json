@@ -1,0 +1,35 @@
+{
+  "base_commit": "36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "full_old_history_preserved": true,
+  "game_number": "020",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/014/manifest.json": "6475a1c7c1bd4ddeb99bf82cc720286681e34214",
+    "experiments/page-857ec841-top50-gpt6astra/014/prompt.txt": "2faa214e182d93e82e4223f4c06bb8cd4c4c1cfe",
+    "experiments/page-857ec841-top50-gpt6astra/014/provenance.json": "60d6ee0d7a3d798982135d22a611da24f1c667c1",
+    "experiments/page-857ec841-top50-gpt6astra/014/release.json": "b47f2165d2ec9887e635ef3a1ee425551d25140b"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/36acf0677b1e516cd1d72d4ac03dab910eaefbc9",
+  "source_and_published_blobs": {
+    "docs/games/020-puppy-alien-minigolf/game.js": "8ec1fa67ffa7fc6dc57c79b758808438ea360e4d",
+    "docs/games/020-puppy-alien-minigolf/index.html": "4c8dfeb8353c499f7077f82def4c6d50c6b467a8",
+    "docs/games/020-puppy-alien-minigolf/style.css": "b571898e7f725180527cb17b4a7ae9c0c5b96ed0",
+    "docs/games/020-puppy-alien-minigolf/vendor/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "docs/games/020-puppy-alien-minigolf/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/020-puppy-alien-minigolf/README.md": "7bb1ad088bded352acc3c5c8afa9e25538057753",
+    "games/020-puppy-alien-minigolf/RELEASE.md": "6958fb6f92118d5ee71982ed96552ecef9518b2b",
+    "games/020-puppy-alien-minigolf/dist/game.js": "8ec1fa67ffa7fc6dc57c79b758808438ea360e4d",
+    "games/020-puppy-alien-minigolf/dist/index.html": "4c8dfeb8353c499f7077f82def4c6d50c6b467a8",
+    "games/020-puppy-alien-minigolf/dist/style.css": "b571898e7f725180527cb17b4a7ae9c0c5b96ed0",
+    "games/020-puppy-alien-minigolf/dist/vendor/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/020-puppy-alien-minigolf/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/020-puppy-alien-minigolf/package.json": "13ec8c915d6a90d9f4fa6b533ab8f451e2426781",
+    "games/020-puppy-alien-minigolf/prompt.txt": "2faa214e182d93e82e4223f4c06bb8cd4c4c1cfe",
+    "games/020-puppy-alien-minigolf/server.mjs": "0225865a080b7bec3cc828c61fe824d1a2ef1baf",
+    "games/020-puppy-alien-minigolf/src/game.js": "8ec1fa67ffa7fc6dc57c79b758808438ea360e4d",
+    "games/020-puppy-alien-minigolf/src/index.html": "4c8dfeb8353c499f7077f82def4c6d50c6b467a8",
+    "games/020-puppy-alien-minigolf/src/style.css": "b571898e7f725180527cb17b4a7ae9c0c5b96ed0",
+    "games/020-puppy-alien-minigolf/src/vendor/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/020-puppy-alien-minigolf/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/020-puppy-alien-minigolf/verify.mjs": "1b2b654bd32bd0b4a3f567e10ad089fe37e2319b"
+  }
+}

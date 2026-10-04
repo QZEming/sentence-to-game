@@ -1,0 +1,337 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-017-original-20261004T004630Z",
+  "candidate": "ultra-017",
+  "completed_at": "2026-10-04T00:48:02.292289Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "file_count": 16,
+  "files": [
+    {
+      "archive_relative_path": ".gitignore",
+      "copied_sha256": "e27aa21ab2a2b11cff8f9831a629e0064118d0213d45dd742fdb045715dee735",
+      "final_source_sha256": "e27aa21ab2a2b11cff8f9831a629e0064118d0213d45dd742fdb045715dee735",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074177329217039,
+      "mtime_utc": "2026-10-04T00:36:17.329217Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/.gitignore",
+      "size_bytes": 68,
+      "source_sha256": "e27aa21ab2a2b11cff8f9831a629e0064118d0213d45dd742fdb045715dee735",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": ".openai/hosting.json",
+      "copied_sha256": "ed5b814bdab810f99ad60a1c8286f53e5ea0b976a803a2e0bf070243d6c1fe64",
+      "final_source_sha256": "ed5b814bdab810f99ad60a1c8286f53e5ea0b976a803a2e0bf070243d6c1fe64",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073519238107785,
+      "mtime_utc": "2026-10-04T00:25:19.238108Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "ed5b814bdab810f99ad60a1c8286f53e5ea0b976a803a2e0bf070243d6c1fe64",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "QA_REPORT.md",
+      "copied_sha256": "367fe7e07c04e50f809e0fa25b6837258ecbe6f10c140c882f28732445b2ca11",
+      "final_source_sha256": "367fe7e07c04e50f809e0fa25b6837258ecbe6f10c140c882f28732445b2ca11",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074546412434556,
+      "mtime_utc": "2026-10-04T00:42:26.412434Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/QA_REPORT.md",
+      "size_bytes": 1988,
+      "source_sha256": "367fe7e07c04e50f809e0fa25b6837258ecbe6f10c140c882f28732445b2ca11",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "README.md",
+      "copied_sha256": "5305df6b72b6933c3053450c242eb905e200021ba13cd6919da1f9009dc8cb2b",
+      "final_source_sha256": "5305df6b72b6933c3053450c242eb905e200021ba13cd6919da1f9009dc8cb2b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073970780700620,
+      "mtime_utc": "2026-10-04T00:32:50.780701Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/README.md",
+      "size_bytes": 1468,
+      "source_sha256": "5305df6b72b6933c3053450c242eb905e200021ba13cd6919da1f9009dc8cb2b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/game.js",
+      "copied_sha256": "023ee83afce62f25059129fb13d93bb9ce49fc38162adf4479f9a603e2f02072",
+      "final_source_sha256": "023ee83afce62f25059129fb13d93bb9ce49fc38162adf4479f9a603e2f02072",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074177292367085,
+      "mtime_utc": "2026-10-04T00:36:17.292367Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/game.js",
+      "size_bytes": 51268,
+      "source_sha256": "023ee83afce62f25059129fb13d93bb9ce49fc38162adf4479f9a603e2f02072",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/index.html",
+      "copied_sha256": "146e2a260d2afc732716e9fba4b8d46b6c4ac2f330604da3ea7224fb71073b7c",
+      "final_source_sha256": "146e2a260d2afc732716e9fba4b8d46b6c4ac2f330604da3ea7224fb71073b7c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073633133872500,
+      "mtime_utc": "2026-10-04T00:27:13.133872Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/index.html",
+      "size_bytes": 5623,
+      "source_sha256": "146e2a260d2afc732716e9fba4b8d46b6c4ac2f330604da3ea7224fb71073b7c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/style.css",
+      "copied_sha256": "25f99e1fbf1879e932c83c90683697adb897345cf04b49c4faef4b179f743781",
+      "final_source_sha256": "25f99e1fbf1879e932c83c90683697adb897345cf04b49c4faef4b179f743781",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074394182469705,
+      "mtime_utc": "2026-10-04T00:39:54.182470Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/style.css",
+      "size_bytes": 15818,
+      "source_sha256": "25f99e1fbf1879e932c83c90683697adb897345cf04b49c4faef4b179f743781",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073490611278915,
+      "mtime_utc": "2026-10-04T00:24:50.611279Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/three.core.min.js",
+      "copied_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "final_source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073490606118862,
+      "mtime_utc": "2026-10-04T00:24:50.606119Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/vendor/three.core.min.js",
+      "size_bytes": 381124,
+      "source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/three.module.min.js",
+      "copied_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "final_source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791073490600092974,
+      "mtime_utc": "2026-10-04T00:24:50.600093Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/dist/vendor/three.module.min.js",
+      "size_bytes": 338908,
+      "source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/bridge-built.png",
+      "copied_sha256": "bbe59270d3dadaddf9524a209ac4fc1b55a6ee0931d9cfc34cdb2ac2beacebaf",
+      "final_source_sha256": "bbe59270d3dadaddf9524a209ac4fc1b55a6ee0931d9cfc34cdb2ac2beacebaf",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074145345719893,
+      "mtime_utc": "2026-10-04T00:35:45.345720Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/bridge-built.png",
+      "size_bytes": 564895,
+      "source_sha256": "bbe59270d3dadaddf9524a209ac4fc1b55a6ee0931d9cfc34cdb2ac2beacebaf",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/desktop-final.png",
+      "copied_sha256": "4064844979810089941b983e8e8b27cce36b5e6d678f6eab3f2f3adfceff368b",
+      "final_source_sha256": "4064844979810089941b983e8e8b27cce36b5e6d678f6eab3f2f3adfceff368b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074672580602002,
+      "mtime_utc": "2026-10-04T00:44:32.580602Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/desktop-final.png",
+      "size_bytes": 561589,
+      "source_sha256": "4064844979810089941b983e8e8b27cce36b5e6d678f6eab3f2f3adfceff368b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/desktop-initial.png",
+      "copied_sha256": "3bed1448de5bcf8f9c871d9d3cce1687cc08db4fb5836f6f7b5987ceec6dc432",
+      "final_source_sha256": "3bed1448de5bcf8f9c871d9d3cce1687cc08db4fb5836f6f7b5987ceec6dc432",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074116231608235,
+      "mtime_utc": "2026-10-04T00:35:16.231608Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/desktop-initial.png",
+      "size_bytes": 561988,
+      "source_sha256": "3bed1448de5bcf8f9c871d9d3cce1687cc08db4fb5836f6f7b5987ceec6dc432",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/level-one-complete.png",
+      "copied_sha256": "f3ee835acb76d14ea5f9a29586a11ff2ff575b8525a76ba4e9e13ec484a223cd",
+      "final_source_sha256": "f3ee835acb76d14ea5f9a29586a11ff2ff575b8525a76ba4e9e13ec484a223cd",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074217028176999,
+      "mtime_utc": "2026-10-04T00:36:57.028177Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/level-one-complete.png",
+      "size_bytes": 494292,
+      "source_sha256": "f3ee835acb76d14ea5f9a29586a11ff2ff575b8525a76ba4e9e13ec484a223cd",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/mobile-final.png",
+      "copied_sha256": "f86011c424e2aeacd559334545a5283f8793bf883c37848f87b91e4a43d02abe",
+      "final_source_sha256": "f86011c424e2aeacd559334545a5283f8793bf883c37848f87b91e4a43d02abe",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074402662776981,
+      "mtime_utc": "2026-10-04T00:40:02.662777Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/mobile-final.png",
+      "size_bytes": 209232,
+      "source_sha256": "f86011c424e2aeacd559334545a5283f8793bf883c37848f87b91e4a43d02abe",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "output/playwright/mobile.png",
+      "copied_sha256": "1235658e2346bcb29f456a93fc44ec7e9082e01ddd053e675bba93d960902943",
+      "final_source_sha256": "1235658e2346bcb29f456a93fc44ec7e9082e01ddd053e675bba93d960902943",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791074345068205976,
+      "mtime_utc": "2026-10-04T00:39:05.068206Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek/output/playwright/mobile.png",
+      "size_bytes": 213908,
+      "source_sha256": "1235658e2346bcb29f456a93fc44ec7e9082e01ddd053e675bba93d960902943",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "inventory_fixed_at": "2026-10-04T00:48:02.179726Z",
+  "limitations": [
+    "No builds, tests, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Existing README, QA, test scripts and screenshots preserved as original evidence only; no independent gameplay validation.",
+    "First-level completion and eight core simulations do not establish complete playthrough of all four levels.",
+    "No parent directory scan or additional package search; parent reported no additional delivery archive.",
+    "Four-level completion in QA is function simulation with direct positioning, fixed randomness and drifting logs disabled; it does not establish four-level actual walking or random-hazard playthrough.",
+    "QA does not explicitly enumerate eight core simulations; the count remains parent/author report only.",
+    "Native WebMCP was not runtime-verified per original QA report relayed by parent."
+  ],
+  "original_request": "实现一个海狸搭桥帮助动物渡河的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_reported_author_results": {
+    "all_four_levels_completed": "Actual walking and random-hazard playthrough not established; simulated completion reported in QA",
+    "core_simulations_passed": 8,
+    "core_simulations_passed_provenance": "Eight-core-pass count is parent/author report only; QA document does not explicitly enumerate this count",
+    "existing_qa_record": {
+      "line_31_reported": {
+        "all_four_levels_function_simulation": true,
+        "does_not_establish": [
+          "actual walking completion of all four levels",
+          "full random-hazard playthrough"
+        ],
+        "simulation_constraints": [
+          "direct character positioning",
+          "fixed random values",
+          "drifting logs disabled"
+        ]
+      },
+      "line_7_reported": {
+        "first_level_actual_keyboard_playthrough": {
+          "acorns": 36,
+          "bridges": 6,
+          "escorts": "3/3",
+          "stars": 3
+        },
+        "second_level_scope": [
+          "save",
+          "upgrade",
+          "collection",
+          "pause"
+        ]
+      },
+      "native_webmcp_runtime_verified": false,
+      "provenance": "Parent summarized existing original QA; no gameplay rerun by archival agent",
+      "source_relative_path": "QA_REPORT.md"
+    },
+    "features": {
+      "animals": 4,
+      "levels": 4,
+      "routes": 3
+    },
+    "first_level_complete_playthrough_reported": true,
+    "provenance": "Author report relayed by parent only; not rerun or independently verified; validation scope limited to first level and eight core simulations"
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Author report only; site not accessed; not GitHub deployment evidence",
+    "url": "https://beaver-creek-rescue-forest.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Explicit creation parameters supplied by parent only; actual historical generation metadata not independently verified",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek",
+  "stage": "original",
+  "thread_id": "01a1044b-7ac1-7231-a644-2b9982b6a0b1",
+  "title": "溪谷建筑师 Beaver Creek",
+  "total_bytes": 3403356,
+  "turn_id": "01a1044b-9b5d-7675-a8cd-f2f831afd7a9"
+}

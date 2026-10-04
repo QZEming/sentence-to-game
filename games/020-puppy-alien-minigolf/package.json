@@ -1,1 +1,1 @@
-{"name":"cosmic-pup-golf","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.mjs","test":"node verify.mjs"}}
+{"name":"cosmic-pup-golf","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node serve.mjs","check":"node --check dist/game.js && node --check dist/scene.js && node --check dist/physics.js && node --check dist/courses.js","test":"node tests/physics.test.mjs"}}

@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 68,
+      "path": ".gitignore",
+      "sha256": "e27aa21ab2a2b11cff8f9831a629e0064118d0213d45dd742fdb045715dee735"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "ed5b814bdab810f99ad60a1c8286f53e5ea0b976a803a2e0bf070243d6c1fe64"
+    },
+    {
+      "bytes": 1988,
+      "path": "QA_REPORT.md",
+      "sha256": "367fe7e07c04e50f809e0fa25b6837258ecbe6f10c140c882f28732445b2ca11"
+    },
+    {
+      "bytes": 1468,
+      "path": "README.md",
+      "sha256": "5305df6b72b6933c3053450c242eb905e200021ba13cd6919da1f9009dc8cb2b"
+    },
+    {
+      "bytes": 51268,
+      "path": "dist/game.js",
+      "sha256": "023ee83afce62f25059129fb13d93bb9ce49fc38162adf4479f9a603e2f02072"
+    },
+    {
+      "bytes": 5623,
+      "path": "dist/index.html",
+      "sha256": "146e2a260d2afc732716e9fba4b8d46b6c4ac2f330604da3ea7224fb71073b7c"
+    },
+    {
+      "bytes": 15818,
+      "path": "dist/style.css",
+      "sha256": "25f99e1fbf1879e932c83c90683697adb897345cf04b49c4faef4b179f743781"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 564895,
+      "path": "output/playwright/bridge-built.png",
+      "sha256": "bbe59270d3dadaddf9524a209ac4fc1b55a6ee0931d9cfc34cdb2ac2beacebaf"
+    },
+    {
+      "bytes": 561589,
+      "path": "output/playwright/desktop-final.png",
+      "sha256": "4064844979810089941b983e8e8b27cce36b5e6d678f6eab3f2f3adfceff368b"
+    },
+    {
+      "bytes": 561988,
+      "path": "output/playwright/desktop-initial.png",
+      "sha256": "3bed1448de5bcf8f9c871d9d3cce1687cc08db4fb5836f6f7b5987ceec6dc432"
+    },
+    {
+      "bytes": 494292,
+      "path": "output/playwright/level-one-complete.png",
+      "sha256": "f3ee835acb76d14ea5f9a29586a11ff2ff575b8525a76ba4e9e13ec484a223cd"
+    },
+    {
+      "bytes": 209232,
+      "path": "output/playwright/mobile-final.png",
+      "sha256": "f86011c424e2aeacd559334545a5283f8793bf883c37848f87b91e4a43d02abe"
+    },
+    {
+      "bytes": 213908,
+      "path": "output/playwright/mobile.png",
+      "sha256": "1235658e2346bcb29f456a93fc44ec7e9082e01ddd053e675bba93d960902943"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-11/beaver-creek",
+  "source_tree_sha256": "e3129f22246c87f5a21e1fdb747f84c32f833845338672adc0d87ead8cc4e72b",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-017-original-20261004T004630Z",
+  "thread_id": "01a1044b-7ac1-7231-a644-2b9982b6a0b1",
+  "turn_id": "01a1044b-9b5d-7675-a8cd-f2f831afd7a9"
+}
