@@ -1,0 +1,911 @@
+{
+  "archive_id": "097",
+  "status": "completed",
+  "created_at_utc": "2026-10-04T10:44:09.400313+00:00",
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-097-original-20261004T104409Z",
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette",
+  "original_file_count": 29,
+  "original_total_bytes": 3451715,
+  "source_file_count": 28,
+  "source_total_bytes": 3261172,
+  "package_file_count": 1,
+  "package_bytes": 190543,
+  "external_evidence_file_count": 0,
+  "generated_record_count": 3,
+  "generated_records": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "originals": [
+    {
+      "archive_relative_path": "packages/marionette-deploy.tar.gz",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette-deploy.tar.gz",
+      "kind": "raw_original_package",
+      "source_metadata": {
+        "size": "190543",
+        "mtime_ns": "1791109723260831357",
+        "ctime_ns": "1791109723260831357",
+        "dev": "16777229",
+        "ino": "545980187",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "26781aeff5200df414f88a55767c6b0eb77621bb7be1bdbc9250105d9c1c51cf",
+      "copy_sha256": "26781aeff5200df414f88a55767c6b0eb77621bb7be1bdbc9250105d9c1c51cf",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/.gitignore",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/.gitignore",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "74",
+        "mtime_ns": "1791108847959846819",
+        "ctime_ns": "1791108847959846819",
+        "dev": "16777229",
+        "ino": "545957662",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "d93eaf90da8def50cdedb3601a8d588635599c209799071b57a2f7012ad610d6",
+      "copy_sha256": "d93eaf90da8def50cdedb3601a8d588635599c209799071b57a2f7012ad610d6",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/.openai/hosting.json",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/.openai/hosting.json",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "88",
+        "mtime_ns": "1791108458803261208",
+        "ctime_ns": "1791108458803261208",
+        "dev": "16777229",
+        "ino": "545954990",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "fa38018f25dd59a5278bf019d0d4adba201fa7a4ef80121045b1650b2460dbcc",
+      "copy_sha256": "fa38018f25dd59a5278bf019d0d4adba201fa7a4ef80121045b1650b2460dbcc",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/QA_RESULTS.md",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/QA_RESULTS.md",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "2248",
+        "mtime_ns": "1791109623419620092",
+        "ctime_ns": "1791109623419620092",
+        "dev": "16777229",
+        "ino": "545973186",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "ba2b564e269d17bf4be5d349154abde02b6125d6d1aef944dbaea58a819b538e",
+      "copy_sha256": "ba2b564e269d17bf4be5d349154abde02b6125d6d1aef944dbaea58a819b538e",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/README.md",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/README.md",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "1830",
+        "mtime_ns": "1791109155340730809",
+        "ctime_ns": "1791109155340730809",
+        "dev": "16777229",
+        "ino": "545965704",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "2c7adf38bc1cbbd7d83b1acc0a3c4cd27fe3f74b4a24203cbeda4631223e0aba",
+      "copy_sha256": "2c7adf38bc1cbbd7d83b1acc0a3c4cd27fe3f74b4a24203cbeda4631223e0aba",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/assets/THREE-LICENSE.txt",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/assets/THREE-LICENSE.txt",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "1081",
+        "mtime_ns": "1791109109321287808",
+        "ctime_ns": "1791109109321287808",
+        "dev": "16777229",
+        "ino": "545965565",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/assets/three.module.min.js",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/assets/three.module.min.js",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "691648",
+        "mtime_ns": "1791108511288024341",
+        "ctime_ns": "1791108511306813575",
+        "dev": "16777229",
+        "ino": "545957305",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7",
+      "copy_sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/favicon.svg",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/favicon.svg",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "314",
+        "mtime_ns": "1791108570325501464",
+        "ctime_ns": "1791108570325501464",
+        "dev": "16777229",
+        "ino": "545957661",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "d6fe92a50fd3a80261e0375cb21e3c72bb00b3b5b4bde41fd466ef6b666845b7",
+      "copy_sha256": "d6fe92a50fd3a80261e0375cb21e3c72bb00b3b5b4bde41fd466ef6b666845b7",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/game.mjs",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/game.mjs",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "26048",
+        "mtime_ns": "1791109388970441601",
+        "ctime_ns": "1791109388970441601",
+        "dev": "16777229",
+        "ino": "545957658",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "65ba632bdbff969ac73e21c972dfbb9135e01df531220832b879b338bbb00eed",
+      "copy_sha256": "65ba632bdbff969ac73e21c972dfbb9135e01df531220832b879b338bbb00eed",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/index.html",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/index.html",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "3759",
+        "mtime_ns": "1791108570325289006",
+        "ctime_ns": "1791108570325289006",
+        "dev": "16777229",
+        "ino": "545957660",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "e32e835c7e0c315a1138f9e3372a8497e97ab3a8c7b2c5ab18a7af392bbf199d",
+      "copy_sha256": "e32e835c7e0c315a1138f9e3372a8497e97ab3a8c7b2c5ab18a7af392bbf199d",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/physics.mjs",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/physics.mjs",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "5293",
+        "mtime_ns": "1791108570323722470",
+        "ctime_ns": "1791108570323722470",
+        "dev": "16777229",
+        "ino": "545957657",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "0f22eae57aab462072330948ea5b6bd776c66c723d44e57140781bd94eead8b6",
+      "copy_sha256": "0f22eae57aab462072330948ea5b6bd776c66c723d44e57140781bd94eead8b6",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/dist/style.css",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/dist/style.css",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "12900",
+        "mtime_ns": "1791109388959281117",
+        "ctime_ns": "1791109388959281117",
+        "dev": "16777229",
+        "ino": "545957659",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "95def3feb8b26b13db3d56e8be0684e4fa664d84dd829455d62c8b1e30c48eaf",
+      "copy_sha256": "95def3feb8b26b13db3d56e8be0684e4fa664d84dd829455d62c8b1e30c48eaf",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/final-page-fragment.html",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/final-page-fragment.html",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "47649",
+        "mtime_ns": "1791109632257065666",
+        "ctime_ns": "1791109632257065666",
+        "dev": "16777229",
+        "ino": "545978223",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "bd3b45f289df69b6a06cbae5e7b9c09f0122a12a97b6308ec09cd71f56f19181",
+      "copy_sha256": "bd3b45f289df69b6a06cbae5e7b9c09f0122a12a97b6308ec09cd71f56f19181",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/act-1-complete.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/act-1-complete.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "204153",
+        "mtime_ns": "1791109094840627882",
+        "ctime_ns": "1791109094840627882",
+        "dev": "16777229",
+        "ino": "545965548",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "35bced7e86be62465c032b050eac60d851b69322b569edb91c64b510c5972fd2",
+      "copy_sha256": "35bced7e86be62465c032b050eac60d851b69322b569edb91c64b510c5972fd2",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/act-2-complete.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/act-2-complete.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "204755",
+        "mtime_ns": "1791109166354137071",
+        "ctime_ns": "1791109166354137071",
+        "dev": "16777229",
+        "ino": "545965723",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "239a72a642aeb6d76e0ac22250aea573d2c6a4c16a0556a23c8b463ccf5c094b",
+      "copy_sha256": "239a72a642aeb6d76e0ac22250aea573d2c6a4c16a0556a23c8b463ccf5c094b",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/act-3-complete.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/act-3-complete.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "205001",
+        "mtime_ns": "1791109206021887704",
+        "ctime_ns": "1791109206021887704",
+        "dev": "16777229",
+        "ino": "545967476",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "ae25ebf992e92720c0de18e42176daedc2727748974066e17338e06cbc1fb15a",
+      "copy_sha256": "ae25ebf992e92720c0de18e42176daedc2727748974066e17338e06cbc1fb15a",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/act-4-complete.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/act-4-complete.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "207806",
+        "mtime_ns": "1791109229667371930",
+        "ctime_ns": "1791109229667371930",
+        "dev": "16777229",
+        "ino": "545967521",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "a1698ce570b8981461f1a151f342622a2ef79b352683388d3e524f4307bc0b7d",
+      "copy_sha256": "a1698ce570b8981461f1a151f342622a2ef79b352683388d3e524f4307bc0b7d",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/act-5-complete.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/act-5-complete.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "207745",
+        "mtime_ns": "1791109266181071039",
+        "ctime_ns": "1791109266181071039",
+        "dev": "16777229",
+        "ino": "545969158",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "c13b39ebdd8e21f29ad8d0b2f607dc9ff039ac640efc6e8e7f833ef8c3b09122",
+      "copy_sha256": "c13b39ebdd8e21f29ad8d0b2f607dc9ff039ac640efc6e8e7f833ef8c3b09122",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/desktop-final.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/desktop-final.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "395790",
+        "mtime_ns": "1791109532159221640",
+        "ctime_ns": "1791109532159221640",
+        "dev": "16777229",
+        "ino": "545973184",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "0b947ee05328645f1170dccd472981431c0b2b789f92e4b0a17bc3df181968f7",
+      "copy_sha256": "0b947ee05328645f1170dccd472981431c0b2b789f92e4b0a17bc3df181968f7",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/desktop-initial.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/desktop-initial.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "408449",
+        "mtime_ns": "1791108663189335170",
+        "ctime_ns": "1791108663189335170",
+        "dev": "16777229",
+        "ino": "545960195",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "32f00322ca1b314573a9a9ed532ff55b6ee0cb9d8aee447186318eecd7eac69c",
+      "copy_sha256": "32f00322ca1b314573a9a9ed532ff55b6ee0cb9d8aee447186318eecd7eac69c",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/desktop-refined.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/desktop-refined.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "297263",
+        "mtime_ns": "1791108897536443246",
+        "ctime_ns": "1791108897536443246",
+        "dev": "16777229",
+        "ino": "545960500",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "85e2da1d79f9ba2a2af4c6509030b5aae7a0dca0f60a7330bffba7ef6008670e",
+      "copy_sha256": "85e2da1d79f9ba2a2af4c6509030b5aae7a0dca0f60a7330bffba7ef6008670e",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/mobile-before.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/mobile-before.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "141781",
+        "mtime_ns": "1791109313383872769",
+        "ctime_ns": "1791109313383872769",
+        "dev": "16777229",
+        "ino": "545969574",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "01fb5d91bb92255624f5529a6d6a9c5b1f46c73cacb7b4ee7eb94af9984d2df0",
+      "copy_sha256": "01fb5d91bb92255624f5529a6d6a9c5b1f46c73cacb7b4ee7eb94af9984d2df0",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/output/playwright/mobile-touch.png",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/output/playwright/mobile-touch.png",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "139428",
+        "mtime_ns": "1791109431253263431",
+        "ctime_ns": "1791109431253263431",
+        "dev": "16777229",
+        "ino": "545971435",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "0af86c5d84b168d80c00c8f02ba7e94fe8c8475093370d3bb63642a7ff2c5da8",
+      "copy_sha256": "0af86c5d84b168d80c00c8f02ba7e94fe8c8475093370d3bb63642a7ff2c5da8",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/prototype-source.html",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/prototype-source.html",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "44720",
+        "mtime_ns": "1791108457352910937",
+        "ctime_ns": "1791108457352910937",
+        "dev": "16777229",
+        "ino": "545954980",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "4149392772afa8b4557519519d1985f25c5b039d2547b8b414409eb84c8adf5b",
+      "copy_sha256": "4149392772afa8b4557519519d1985f25c5b039d2547b8b414409eb84c8adf5b",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/tests/browser-level.js.txt",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/tests/browser-level.js.txt",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "2619",
+        "mtime_ns": "1791109087154112655",
+        "ctime_ns": "1791109087154112655",
+        "dev": "16777229",
+        "ino": "545965530",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "b5a45039e7f82b0a2448b59787320896716ff7ef33bbc56eb4eb509d52aafed8",
+      "copy_sha256": "b5a45039e7f82b0a2448b59787320896716ff7ef33bbc56eb4eb509d52aafed8",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/tests/browser-smoke.js.txt",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/tests/browser-smoke.js.txt",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "1810",
+        "mtime_ns": "1791109086329522126",
+        "ctime_ns": "1791109086329522126",
+        "dev": "16777229",
+        "ino": "545965523",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "cb9d5f255044c8ade7cff1ed49a9cdd2901b8f8cd9d9521d23478766849cc242",
+      "copy_sha256": "cb9d5f255044c8ade7cff1ed49a9cdd2901b8f8cd9d9521d23478766849cc242",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/tests/browser-touch.js.txt",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/tests/browser-touch.js.txt",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "2342",
+        "mtime_ns": "1791109431301221311",
+        "ctime_ns": "1791109431301221311",
+        "dev": "16777229",
+        "ino": "545971436",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "b24a116dc8d8b3363eb92b8683ae14fa583f187f90ff543176d5368a671ec1c9",
+      "copy_sha256": "b24a116dc8d8b3363eb92b8683ae14fa583f187f90ff543176d5368a671ec1c9",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/tests/game-rules.cjs",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/tests/game-rules.cjs",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "2480",
+        "mtime_ns": "1791109024057971339",
+        "ctime_ns": "1791109024057971339",
+        "dev": "16777229",
+        "ino": "545962258",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "2a18e6fdf39c258f0863313edf8271dcde43ce172abc9535637338d7edcbc785",
+      "copy_sha256": "2a18e6fdf39c258f0863313edf8271dcde43ce172abc9535637338d7edcbc785",
+      "copy_size_mtime_ns_match": true
+    },
+    {
+      "archive_relative_path": "source/marionette/tests/level-reachability.cjs",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette/tests/level-reachability.cjs",
+      "kind": "source_original",
+      "source_metadata": {
+        "size": "2098",
+        "mtime_ns": "1791108946944168470",
+        "ctime_ns": "1791108946944168470",
+        "dev": "16777229",
+        "ino": "545962184",
+        "mode": "33188",
+        "nlink": "1"
+      },
+      "source_sha256": "b3f548b8a455da303d1c1cebca039497c542506ebe0a49711f946189e92c3613",
+      "copy_sha256": "b3f548b8a455da303d1c1cebca039497c542506ebe0a49711f946189e92c3613",
+      "copy_size_mtime_ns_match": true
+    }
+  ],
+  "excluded_source_entries": [
+    {
+      "path": ".git",
+      "reason": "excluded directory; contents not read"
+    },
+    {
+      "path": ".playwright-cli",
+      "reason": "excluded directory; contents not read"
+    }
+  ],
+  "excluded_directory_policy": [
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".codex-runtime",
+    ".git",
+    ".playwright-cli",
+    ".sessions",
+    ".sites-runtime",
+    ".vite",
+    "__pycache__",
+    "node_modules",
+    "sessions"
+  ],
+  "symlinks_and_targets_excluded": true,
+  "parent_shallow_entries": [
+    "marionette",
+    "marionette-deploy.tar.gz"
+  ],
+  "verification": {
+    "algorithm": "SHA-256",
+    "copy_method": "shutil.copy2; follow_symlinks=False",
+    "fixed_eligible_set": true,
+    "same_python_process": true,
+    "stable_snapshot_attempts": [
+      {
+        "attempt": 1,
+        "interval_seconds": 1,
+        "same_fixed_set": true,
+        "same_metadata": true
+      }
+    ],
+    "maximum_attempts": 3,
+    "metadata_integer_encoding": "exact decimal strings including ns/dev/ino",
+    "final_source_and_package_set_unchanged": true,
+    "final_source_and_package_metadata_unchanged": true,
+    "final_source_and_package_sha256_unchanged": true,
+    "all_copied_hashes_match": true,
+    "all_copied_size_mtime_ns_match": true,
+    "package_member_read": false,
+    "package_unpack_repack": false
+  },
+  "author_evidence": {
+    "result_document": "source/marionette/QA_RESULTS.md",
+    "browser_five_act_author_results": [
+      {
+        "act": 1,
+        "name": "初次登台",
+        "stars": 3,
+        "falls": 0,
+        "balance_performance": "完成",
+        "score": 1551,
+        "help_result": "结果保留"
+      },
+      {
+        "act": 2,
+        "name": "独木巡演",
+        "stars": 3,
+        "falls": 0,
+        "balance_performance": "完成",
+        "score": 1727,
+        "help_result": "结果保留"
+      },
+      {
+        "act": 3,
+        "name": "跃过乐池",
+        "stars": 3,
+        "falls": 0,
+        "balance_performance": "完成",
+        "score": 1759,
+        "help_result": "结果保留"
+      },
+      {
+        "act": 4,
+        "name": "风中舞步",
+        "stars": 3,
+        "falls": 0,
+        "balance_performance": "完成",
+        "score": 1856,
+        "help_result": "结果保留"
+      },
+      {
+        "act": 5,
+        "name": "盛大谢幕",
+        "stars": 3,
+        "falls": 0,
+        "balance_performance": "完成",
+        "score": 1999,
+        "help_result": "结果保留"
+      }
+    ],
+    "browser_event_drivers": [
+      "source/marionette/tests/browser-level.js.txt",
+      "source/marionette/tests/browser-smoke.js.txt"
+    ],
+    "chrome_touch_simulation_driver": "source/marionette/tests/browser-touch.js.txt",
+    "VM_fixture_accelerated_logic_drivers": [
+      "source/marionette/tests/game-rules.cjs",
+      "source/marionette/tests/level-reachability.cjs"
+    ],
+    "raw_return_trace_stdout_exit_codes_retained": false,
+    "screenshots_count": 10,
+    "screenshots_viewed": false,
+    "real_phone_multi_browser": "explicitly not covered per author QA; not tested by archive",
+    "viewport": "author QA 390x844,height839,width320; driver reads geometry, does not set viewport",
+    "console": "author QA 0 errors/0 warnings; no raw logs/listeners retained",
+    "audio": "author QA sound toggle normal; audible output independently unknown",
+    "webmcp": "author QA current Chrome no document.modelContext; optional registration not validated",
+    "independent_verification": false
+  },
+  "recovery_and_prompt": {
+    "singleturn": false,
+    "original_prompt": null,
+    "original_prompt_status": "unknown",
+    "initial_generation_turn_uuid": null,
+    "generation_thread_uuid": "01a10627-c3ef-73dd-85c7-72c481c520a9",
+    "recovery_turn_uuid": "01a10661-7dff-75b9-9090-4e2dd6011243",
+    "raw_model": "gpt-6-astra",
+    "raw_reasoning_effort": "ultra",
+    "fork": null,
+    "fork_status": "unknown",
+    "source": "parent-launch-record.json"
+  },
+  "page_reference": {
+    "page_id": "page_846419a2b8b48191abb45ba2aa0ffb7f",
+    "canonical_url": "https://chatgpt.com/space/page_846419a2b8b48191abb45ba2aa0ffb7f",
+    "parent_supported_readonly_observation_recorded": true,
+    "additional_original_export": false
+  },
+  "process_observation": {
+    "initial_default_sandbox": {
+      "source_matches": [
+        82230,
+        82257
+      ],
+      "processes": [],
+      "cwd": [
+        {
+          "pid": 1036,
+          "command": "Google Chrome",
+          "names": [
+            "/"
+          ]
+        },
+        {
+          "pid": 2547,
+          "command": "node",
+          "names": [
+            "/Users/bytedance/my-work/to-do-list"
+          ]
+        },
+        {
+          "pid": 2554,
+          "command": "node",
+          "names": [
+            "/Users/bytedance/my-work/code-review-system"
+          ]
+        },
+        {
+          "pid": 2560,
+          "command": "node",
+          "names": [
+            "/Users/bytedance/my-work/grill-me"
+          ]
+        },
+        {
+          "pid": 82230,
+          "command": "bash",
+          "names": [
+            "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette"
+          ]
+        },
+        {
+          "pid": 82257,
+          "command": "env",
+          "names": [
+            "/Users/bytedance/Documents/Codex/2026-10-04/task-66/marionette"
+          ]
+        }
+      ],
+      "listeners": [
+        {
+          "pid": 2547,
+          "command": "node",
+          "names": [
+            "127.0.0.1:5173"
+          ]
+        },
+        {
+          "pid": 2554,
+          "command": "node",
+          "names": [
+            "127.0.0.1:4827"
+          ]
+        },
+        {
+          "pid": 2560,
+          "command": "node",
+          "names": [
+            "127.0.0.1:4173"
+          ]
+        }
+      ],
+      "command_results": {
+        "ps": {
+          "error": "[Errno 1] Operation not permitted: 'ps'"
+        },
+        "cwd": {
+          "returncode": 0,
+          "stderr": ""
+        },
+        "listeners": {
+          "returncode": 0,
+          "stderr": ""
+        }
+      }
+    },
+    "authorized_readonly_ps_retry": {
+      "ps_returncode": 0,
+      "ps_stderr": "",
+      "source_argv_matches": [],
+      "protected_pids": [
+        1036,
+        2547,
+        2554,
+        2560
+      ],
+      "processes": [
+        {
+          "pid": 1036,
+          "ppid": 1,
+          "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        },
+        {
+          "pid": 1831,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=gpu-process --gpu-recent-crash-count=0 --gpu-preferences=WAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAADAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files --metrics-shmem-handle=1752395122,r,5657690512784186711,10017130385196329234,262144 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190708988185955192 --seatbelt-client=27"
+        },
+        {
+          "pid": 1832,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=network --shared-files --metrics-shmem-handle=1752395122,r,6553085232093142206,7845170434213417955,524288 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190708989122997041 --seatbelt-client=27"
+        },
+        {
+          "pid": 1835,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=utility --utility-sub-type=storage.mojom.StorageService --lang=zh-CN --service-sandbox-type=service --shared-files --metrics-shmem-handle=1752395122,r,17542013595571191992,18024969791730449668,524288 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190708990060038890 --seatbelt-client=34"
+        },
+        {
+          "pid": 2547,
+          "ppid": 1,
+          "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node /Users/bytedance/my-work/to-do-list/server.js"
+        },
+        {
+          "pid": 2554,
+          "ppid": 1,
+          "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node src/server.js"
+        },
+        {
+          "pid": 2560,
+          "ppid": 1,
+          "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node /Users/bytedance/my-work/grill-me/server.mjs"
+        },
+        {
+          "pid": 2704,
+          "ppid": 2554,
+          "command": "/usr/bin/caffeinate -is /Users/bytedance/.nvm/versions/node/v22.21.1/bin/node src/server.js"
+        },
+        {
+          "pid": 4261,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --top-chrome-webui --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=37 --launch-time-ticks=35898171928 --shared-files --metrics-shmem-handle=1752395122,r,125016582796493668,9872819732133569636,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709020982419907 --seatbelt-client=197"
+        },
+        {
+          "pid": 4263,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=39 --launch-time-ticks=35898212119 --shared-files --metrics-shmem-handle=1752395122,r,2401383322412231827,3030794207637173779,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709022856503605 --seatbelt-client=215"
+        },
+        {
+          "pid": 4271,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=42 --launch-time-ticks=35898386750 --shared-files --metrics-shmem-handle=1752395122,r,10777020144402117375,16084271416952969922,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709025667629152 --seatbelt-client=221"
+        },
+        {
+          "pid": 4285,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=49 --launch-time-ticks=35898783563 --shared-files --metrics-shmem-handle=1752395122,r,1395254622789799885,9836135167602938588,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709032226922095 --seatbelt-client=246"
+        },
+        {
+          "pid": 4286,
+          "ppid": 1036,
+          "command": "/Users/bytedance/.codex/plugins/cache/openai-bundled/chrome/latest/extension-host/macos/arm64/ChatGPT for Chrome chrome-extension://hehggadaopoacecdllhhajmbjkdcmajg/"
+        },
+        {
+          "pid": 4552,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=51 --launch-time-ticks=35914720966 --shared-files --metrics-shmem-handle=1752395122,r,3474425730333632837,16755710934754741684,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709034101005793 --seatbelt-client=290"
+        },
+        {
+          "pid": 5628,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=222 --launch-time-ticks=46276080843 --shared-files --metrics-shmem-handle=1752395122,r,13484969140024370507,6672586536120470512,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709194335161972 --seatbelt-client=335"
+        },
+        {
+          "pid": 13070,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --top-chrome-webui --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=25 --launch-time-ticks=476711888 --shared-files --metrics-shmem-handle=1752395122,r,9683433454119959441,8738287576445931008,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709009737917719 --seatbelt-client=85"
+        },
+        {
+          "pid": 17746,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=utility --utility-sub-type=audio.mojom.AudioService --lang=zh-CN --service-sandbox-type=audio --message-loop-type-ui --shared-files --metrics-shmem-handle=1752395122,r,5812387964338826186,14270553047441110337,524288 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709012549043266 --seatbelt-client=140"
+        },
+        {
+          "pid": 23445,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=105 --launch-time-ticks=37877718538 --shared-files --metrics-shmem-handle=1752395122,r,17242624120316849354,4985594528749711355,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709084701265639 --seatbelt-client=316"
+        },
+        {
+          "pid": 28359,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=1456 --launch-time-ticks=106800838863 --shared-files --metrics-shmem-handle=1752395122,r,8111688269576956374,6832507128645821531,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190710350644803638 --seatbelt-client=169"
+        },
+        {
+          "pid": 39198,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=32 --launch-time-ticks=2222687857 --shared-files --metrics-shmem-handle=1752395122,r,9992809391223729695,2073154466132202403,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709016297210662 --seatbelt-client=30"
+        },
+        {
+          "pid": 59092,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=1079 --launch-time-ticks=96340046625 --shared-files --metrics-shmem-handle=1752395122,r,13856669924520317578,15625251833582336685,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709997380026565 --seatbelt-client=181"
+        },
+        {
+          "pid": 60670,
+          "ppid": 2560,
+          "command": "node /Users/bytedance/.local/bin/codex app-server --listen stdio://"
+        },
+        {
+          "pid": 60673,
+          "ppid": 60670,
+          "command": "/Users/bytedance/.local/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex app-server --listen stdio://"
+        },
+        {
+          "pid": 74330,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=1827 --launch-time-ticks=117452005496 --shared-files --metrics-shmem-handle=1752395122,r,3979436270708342171,15729790445373252040,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190710698287329617 --seatbelt-client=288"
+        },
+        {
+          "pid": 79514,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=620 --launch-time-ticks=69261033930 --shared-files --metrics-shmem-handle=1752395122,r,5657884545718283977,2350492085202204148,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190709567277817874 --seatbelt-client=342"
+        },
+        {
+          "pid": 84371,
+          "ppid": 1036,
+          "command": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/154.0.8037.58/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --lang=zh-CN --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=1838 --launch-time-ticks=117761629422 --shared-files --metrics-shmem-handle=1752395122,r,12559415952989203915,7870503214973817806,1572864 --field-trial-handle=1718379636,r,16420885903550426302,6764323220661032856,262144 --variations-seed-version --pseudonymization-salt-handle=1935764596,r,14913057054289851007,18207579202608365569,4 --trace-process-track-uuid=3190710708594789956 --seatbelt-client=250"
+        }
+      ],
+      "initial_transient_source_cwd_pids_still_present": []
+    },
+    "initial_cwd_scope": "Transient bash82230/env82257 coincided with this archive's read-only rg; argv was unavailable in blocked default ps. Both PIDs were absent in successful ps. No dedicated game preview/browser identified.",
+    "signals_sent": [],
+    "runtime_session_directories_read": false
+  },
+  "readme_port": 4173,
+  "readme_port_observed_owner_pid": 2560,
+  "operations_not_performed": [
+    "source edits",
+    "other archive edits",
+    "game",
+    "build",
+    "tests",
+    "browser",
+    "image view",
+    "extra sampling",
+    "remote write",
+    "GitHub write",
+    "Sites write",
+    "Page write",
+    "publisher",
+    "package member read",
+    "package unpack/repack",
+    "process shutdown"
+  ]
+}

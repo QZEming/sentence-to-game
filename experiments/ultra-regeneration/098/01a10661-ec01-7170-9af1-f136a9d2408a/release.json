@@ -1,0 +1,75 @@
+{
+  "additional_environment_recovery": false,
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "098-xenolinguist",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "098",
+  "generation_turn_id": "01a10662-0bfd-7141-8f3e-d6f7c391b4e7",
+  "initial_generation_turn_id": null,
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "3287110e89160a4dbe354fb537f105870e2d818b",
+    "full_old_history_preserved": true,
+    "game_number": "098",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/3287110e89160a4dbe354fb537f105870e2d818b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 9791,
+      "path": "data.js",
+      "sha256": "841d45894ea717f04e7d4dafa13e7ef474e93f610917b75f8cfdd0521d4c4d55"
+    },
+    {
+      "bytes": 5415,
+      "path": "index.html",
+      "sha256": "990545df0b9197d2e174df4d5c2104a04c4474399649c8d428e306c9a7e38389"
+    },
+    {
+      "bytes": 37439,
+      "path": "main.js",
+      "sha256": "96dc38eeffc0f785970ceaf3beb2598f0eabcdc924264f6e026c34d86cd178df"
+    },
+    {
+      "bytes": 26547,
+      "path": "style.css",
+      "sha256": "1c401e16dd1217af50d86aa4196da9a3c2082e1ed3fcbc407939766f30e975ed"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 25899,
+      "path": "world.js",
+      "sha256": "75cbb7e43c51c009fe109e715d6a824acc5c939e67cf594f7147ac82236fde50"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": true,
+  "source_tree_sha256": "0c2a810a985bf5169ad4b65d93fd830dc7e4bf81b6677d2a4fd83ce58993c9e6",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10661-ec01-7170-9af1-f136a9d2408a",
+  "title": "星语 · 异星田野手记",
+  "url": "https://qzemi.cn/sentence-to-game/games/098-xenolinguist/"
+}

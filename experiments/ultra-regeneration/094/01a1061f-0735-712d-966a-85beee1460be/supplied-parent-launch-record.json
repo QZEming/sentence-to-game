@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "game_number": "094",
+  "record_kind": "parent_model_and_recovery_attestation",
+  "independently_verified": false,
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+  "generation_turn_id": null,
+  "initial_generation_turn_id": null,
+  "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+  "model": "gpt-6-astra",
+  "raw_model": "gpt-6-astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "reasoning_effort": "ultra",
+  "fork": "unknown",
+  "fork_turns": "unknown",
+  "fork_status": "Not supplied by parent; not inferred.",
+  "model_parameters_apply_to": [
+    "original_implementation",
+    "recovery_continuation"
+  ],
+  "model_parameter_provenance": "Parent explicitly confirms raw gpt-6-astra and ultra for original and recovery; no independent runtime proof.",
+  "single_turn": false,
+  "singleturn": false,
+  "exact_prompt": null,
+  "complete_parent_prompt": null,
+  "original_prompt_lookup": {
+    "status": "not_found_in_allowed_materials",
+    "exact_prompt": null,
+    "complete_parent_prompt": null,
+    "searched_source_relative_paths": [
+      "README.md",
+      "VALIDATION.md",
+      "dist/game.js",
+      "dist/icons.js",
+      "dist/scene.js",
+      "dist/index.html",
+      "dist/style.css",
+      "scripts/build-standalone.py"
+    ],
+    "method": "Read ordinary source and recovery documents; bounded text search for explicit original request/prompt phrases. No original request or task file is present in eligible shallow source/parent.",
+    "limits": "Forbidden sessions/runtime/Git directories and archive members were not read; game summaries were not reconstructed as a prompt."
+  },
+  "recovery_provenance": {
+    "single_turn": false,
+    "singleturn": false,
+    "initial_turn_id": null,
+    "initial_turn_status": "unknown; not provided by parent",
+    "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+    "generation_thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "known_phases": [
+      "initial_implementation",
+      "environment_recovery_continuation"
+    ],
+    "total_turn_count": null,
+    "original_documents": [
+      "source/README.md",
+      "source/VALIDATION.md"
+    ],
+    "source_document_statement": "Initial environment went offline after saving page/style/forest/runtime/question bank; three JavaScript writes were unconfirmed. Recovery continued the unwritten code while retaining existing assets, bank and Site identifier; no repeated generation or new Site.",
+    "recovery_deliverables": [
+      "source/scripts/build-standalone.py",
+      "original-packages/wild-wisdom-offline.html",
+      "original-packages/wild-wisdom-source.zip"
+    ],
+    "provenance": "Parent attests additional recovery turn; original README and VALIDATION preserved verbatim."
+  }
+}

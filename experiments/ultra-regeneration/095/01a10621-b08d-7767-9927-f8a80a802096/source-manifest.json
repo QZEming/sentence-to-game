@@ -1,0 +1,127 @@
+{
+  "additional_environment_recovery": true,
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "cb654761ad9366518afa87c2bafed7895a0a33225cf25e4c79c98cffee6cab82"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "b9a9993a49e0b0910ac28ff15398b01ecafb8fecdcdd27debd46819c275e8f99"
+    },
+    {
+      "bytes": 2092,
+      "path": "README.md",
+      "sha256": "5e0e9bd9f296b507cb755ac14e0154399a3ab8369e1ce179af81caea96f456c9"
+    },
+    {
+      "bytes": 29081,
+      "path": "dist/assets/index-BWLdRrrS.css",
+      "sha256": "05b5932b7c899dc83d3f7cd29d787ed98a1c2d5c5f52f92087e0eeb2d5f26176"
+    },
+    {
+      "bytes": 547344,
+      "path": "dist/assets/index-ByRZlWJt.js",
+      "sha256": "4ada83be87c8bc572d42f47fe3c4bb36a15d90b523b9fd0b66f8c571877aef3d"
+    },
+    {
+      "bytes": 1667,
+      "path": "dist/assets/solver-worker-B_ejckFv.js",
+      "sha256": "16ab3e5e749255e19927960c8d259609300f300e98a09fa01af11aca04b3e369"
+    },
+    {
+      "bytes": 289,
+      "path": "dist/favicon.svg",
+      "sha256": "9623fe67799f980edb1b29e4a406e52519d2ae2a661ea2a2ec975a74753ec141"
+    },
+    {
+      "bytes": 631,
+      "path": "dist/index.html",
+      "sha256": "84c08a568ce63a92bb3fd073f5c937c1e02dfda165695392f45130721f6495d7"
+    },
+    {
+      "bytes": 531,
+      "path": "index.html",
+      "sha256": "8a2432ca3e35e57c78721c5bfca86eac377880f4a92ea60aaf11a92d4afceee9"
+    },
+    {
+      "bytes": 191112,
+      "path": "original-delivery/orbital-cargo.zip",
+      "sha256": "ea10a905553ab948312ee9ff378acdc200997b79400a9640b5b6b0a07bf0238f"
+    },
+    {
+      "bytes": 35119,
+      "path": "package-lock.json",
+      "sha256": "5c47179ae869507e6b41c222204b8ebc6c67025c0f0dc7595f7e2d107d9f503f"
+    },
+    {
+      "bytes": 244,
+      "path": "package.json",
+      "sha256": "b99050efa72c72ba2c12ba596ff25b917572b62ca2660b339e0102d6e6edb85a"
+    },
+    {
+      "bytes": 289,
+      "path": "public/favicon.svg",
+      "sha256": "9623fe67799f980edb1b29e4a406e52519d2ae2a661ea2a2ec975a74753ec141"
+    },
+    {
+      "bytes": 6087,
+      "path": "src/game.js",
+      "sha256": "6a268ad1e18ac4f77dfd18e32fc27df9e66f2b44b891a17c074a598d3ae56953"
+    },
+    {
+      "bytes": 2503,
+      "path": "src/icons.js",
+      "sha256": "1cff6394a3822e798f09294559df481fd38cbf2f52db45e24a3a10cbdc876708"
+    },
+    {
+      "bytes": 7087,
+      "path": "src/layout.js",
+      "sha256": "feb930ec684310972da48f30523db7a55539167ba358ff6a66a5fc8edd80a0d8"
+    },
+    {
+      "bytes": 19796,
+      "path": "src/main.js",
+      "sha256": "527f390d82ba1b1b05f7d0db61d1be52469e7a626fae3f5a1d8137b57cf89045"
+    },
+    {
+      "bytes": 10360,
+      "path": "src/scene.js",
+      "sha256": "3d11c0f94a721b92109bf4665b973fd391d37d42daa4f280395cd0269da80837"
+    },
+    {
+      "bytes": 4630,
+      "path": "src/session.js",
+      "sha256": "fe0ba4e3d750bc93c7ebf5489f7e9e4fff915be93be58fce9a4fe3b0b7191808"
+    },
+    {
+      "bytes": 128,
+      "path": "src/solver-worker.js",
+      "sha256": "26df0caef78065522fc7cedea88ef1124e1562532a87641b8eaf5e0970a4e784"
+    },
+    {
+      "bytes": 29046,
+      "path": "src/style.css",
+      "sha256": "0a967612c6ab33f62d2e059b866e1c248950865a9b1d3875a0e92c83c9e48a19"
+    },
+    {
+      "bytes": 3351,
+      "path": "tests/game.test.js",
+      "sha256": "cc38d75f35a81e803a9c51ba5a17bc4219d682541ceb142213691540f075d569"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "initial_generation_turn_id": "01a10621-d985-7587-960b-67c872f21c23",
+  "original_source_bytes_verified_unchanged": true,
+  "recovery_turn_id": "01a10661-25fe-70aa-b8f8-9cdd44b3e0bb",
+  "schema_version": 1,
+  "single_turn": false,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-64/orbital-cargo",
+  "source_tree_sha256": "cff704fabcdd51769defbd9745c3066aa278e819c946f3134ecc8599c659a970",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-095-original-20261004T103449Z",
+  "thread_id": "01a10621-b08d-7767-9927-f8a80a802096",
+  "turn_id": "01a10661-25fe-70aa-b8f8-9cdd44b3e0bb"
+}

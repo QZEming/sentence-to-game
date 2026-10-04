@@ -1,0 +1,27 @@
+{
+  "archive_item": "098",
+  "game_title": "星语 · 异星田野手记",
+  "original_user_prompt_full": "实现一个语言学家通过外星居民的动作与场景推断陌生文字含义的 3D 语言破译游戏，尽你所能丰富游戏玩法。",
+  "generation_thread_uuid": "01a10661-ec01-7170-9af1-f136a9d2408a",
+  "generation_turn_uuid": "01a10662-0bfd-7141-8f3e-d6f7c391b4e7",
+  "parent_thread_uuid": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "parent_attestation": {
+    "reported_by": "Parent task /root in current delegation",
+    "fresh": true,
+    "model": "gpt-6-astra",
+    "reasoning_effort": "ultra",
+    "fork_turns": "none",
+    "given_generation_turns": [
+      "01a10662-0bfd-7141-8f3e-d6f7c391b4e7"
+    ],
+    "verbatim_delegated_launch_claim": "fresh gpt-6-astra ultra fork none",
+    "evidence_boundary": "Fresh launch, model, effort, fork setting and one given generation turn are parent reports. This archive does not independently verify historical execution or absence of other turns."
+  },
+  "historical_execution_independently_verified": false,
+  "excluded_history_sources": [
+    ".codex",
+    ".agents",
+    "runtime session caches"
+  ],
+  "recorded_utc": "2026-10-04T10:46:12.867742+00:00"
+}

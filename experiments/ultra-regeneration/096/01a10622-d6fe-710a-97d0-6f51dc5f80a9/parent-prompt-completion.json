@@ -1,0 +1,15 @@
+{
+  "additional_environment_recovery": true,
+  "applies_to_initial_creation_only": true,
+  "fork_turns_requested": "none",
+  "initial_generation_turn_id": "01a10622-f615-75bd-925c-76c18e23d786",
+  "model_requested": "gpt-6-astra",
+  "original_manifest_prompt_kept_unchanged": true,
+  "original_request": "实现一个动物医生观察症状并选择治疗方式照顾奇幻动物的 3D 诊疗模拟游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个动物医生观察症状并选择治疗方式照顾奇幻动物的 3D 诊疗模拟游戏，尽你所能丰富游戏玩法。",
+  "single_turn": false,
+  "source": "parent explicitly supplied complete original prompt and initial create turn; author archives independently disclose subsequent environment recovery",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thinking_requested": "ultra",
+  "total_author_turn_count": null
+}

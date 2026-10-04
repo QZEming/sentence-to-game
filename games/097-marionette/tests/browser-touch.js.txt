@@ -1,0 +1,23 @@
+async(page)=>{
+ const read=()=>page.evaluate(()=>document.getElementById("marionette-game").game.getState());
+ await page.getByRole("button",{name:"开始演出",exact:true}).click();
+ const cdp=await page.context().newCDPSession(page);await cdp.send("Emulation.setTouchEmulationEnabled",{enabled:true,maxTouchPoints:5});
+ async function point(name,id){const b=await page.getByRole("button",{name,exact:true}).boundingBox();return {x:b.x+b.width/2,y:b.y+b.height/2,id,radiusX:2,radiusY:2};}
+ const up=await point("向前移动",1),steady=await point("双线 · 稳住",2),jump=await point("跳跃",3);
+ await cdp.send("Input.dispatchTouchEvent",{type:"touchStart",touchPoints:[up]});await page.waitForTimeout(220);
+ const moved=await read();
+ await cdp.send("Input.dispatchTouchEvent",{type:"touchStart",touchPoints:[up,steady]});await page.waitForTimeout(80);
+ const multi=await page.evaluate(()=>document.querySelector('[data-hold="KeyW"]').classList.contains("held")&&document.querySelector('[data-hold="ShiftLeft"]').classList.contains("held"));
+ await cdp.send("Input.dispatchTouchEvent",{type:"touchEnd",touchPoints:[]});
+ await cdp.send("Input.dispatchTouchEvent",{type:"touchStart",touchPoints:[jump]});await page.waitForTimeout(100);const airborne=await read();
+ await cdp.send("Input.dispatchTouchEvent",{type:"touchCancel",touchPoints:[]});
+ const cleared=await page.locator(".held").count()===0;
+ await page.waitForTimeout(750);
+ await page.screenshot({path:"output/playwright/mobile-touch.png",fullPage:true,scale:"css"});
+ const layout=await page.evaluate(()=>({width:innerWidth,height:innerHeight,documentHeight:document.body.scrollHeight,horizontalOverflow:document.documentElement.scrollWidth>innerWidth,touchBottom:document.querySelector(".touch").getBoundingClientRect().bottom,webmcpAvailable:!!document.modelContext}));
+ await cdp.send("Emulation.setTouchEmulationEnabled",{enabled:false});await cdp.detach();
+ await page.keyboard.press("p");
+ const result={touchMove:moved.position.z<4.8,multitouch:multi,touchJump:airborne.position.y>.1,touchCancel:cleared,controlsFit:layout.touchBottom<=layout.height,horizontalOverflow:layout.horizontalOverflow,layout};
+ if(!result.touchMove||!multi||!result.touchJump||!cleared||!result.controlsFit||result.horizontalOverflow)throw Error(JSON.stringify(result));
+ return result;
+}

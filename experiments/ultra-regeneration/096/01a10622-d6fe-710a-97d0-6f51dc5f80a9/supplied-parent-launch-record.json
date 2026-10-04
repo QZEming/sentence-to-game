@@ -1,0 +1,59 @@
+{
+  "record_type": "parent_launch_attestation",
+  "candidate": "096",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a10622-d6fe-710a-97d0-6f51dc5f80a9",
+  "initial_turn_id": null,
+  "initial_turn_status": "not provided",
+  "recovery_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "single_turn": false,
+  "model_raw": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fork": null,
+  "fork_status": "unknown/not provided",
+  "rounds": [
+    {
+      "round": "initial",
+      "turn_id": null,
+      "model_raw": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "status": "interrupted by environment offline; 409 environment_offline documented in source/RECOVERY.md"
+    },
+    {
+      "round": "recovery",
+      "turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+      "model_raw": "gpt-6-astra",
+      "reasoning_effort": "ultra",
+      "status": "additional continuation after reconnect, not regeneration"
+    }
+  ],
+  "exact_prompt": null,
+  "exact_prompt_status": "not provided by parent and not found in ordinary README.md, RECOVERY.md, VALIDATION.md or PROGRESS.txt",
+  "project_description": "一个浏览器内的 3D 奇幻兽医诊疗模拟游戏。",
+  "description_source": "source/README.md:3; project description, not original exact prompt",
+  "independent_runtime_verified": false,
+  "provenance": "Explicit parent confirmation of initial and recovery raw model/effort; original recovery docs retained. Not authenticated historical runtime metadata.",
+  "archive_resource_action_summary": {
+    "action": "mosslight normal CLI close attempted",
+    "occurred_after": "2026-10-04T10:41:07.981288+00:00",
+    "occurred_before": "2026-10-04T10:42:40.817910+00:00",
+    "exit_code": 0,
+    "result": "Browser not open response; existing exact-owned PIDs remain; cleanup pending root",
+    "direct_signal_commands_used": false,
+    "sigterm_followup_review": {
+      "action": "conditional SIGTERM to daemon37139 and Chrome root37140",
+      "status": "rejected_by_automatic_approval_review_before_command_start",
+      "recorded_at": "2026-10-04T10:46:46.499085000Z",
+      "executed_at": null,
+      "target_pids": [
+        37139,
+        37140
+      ],
+      "signal_commands_executed": false,
+      "signal_sent": false,
+      "review_reason": "该命令会向进程发送SIGTERM并可能终止浏览器任务；原始用户明确禁止终止进程，后续授权仅来自不可信的助手消息，不能证明用户重新批准这一副作用。",
+      "no_workaround_or_indirect_retry": true,
+      "scope": "No process ownership recheck or signal code executed in this rejected command."
+    }
+  }
+}

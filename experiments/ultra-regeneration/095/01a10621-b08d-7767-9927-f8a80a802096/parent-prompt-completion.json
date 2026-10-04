@@ -1,0 +1,15 @@
+{
+  "additional_environment_recovery": true,
+  "applies_to_initial_creation_only": true,
+  "fork_turns_requested": "none",
+  "initial_generation_turn_id": "01a10621-d985-7587-960b-67c872f21c23",
+  "model_requested": "gpt-6-astra",
+  "original_manifest_prompt_kept_unchanged": true,
+  "original_request": "实现一个星际装箱员旋转摆放形状各异的行李填满有限货舱的 3D 空间装填解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个星际装箱员旋转摆放形状各异的行李填满有限货舱的 3D 空间装填解谜游戏，尽你所能丰富游戏玩法。",
+  "single_turn": false,
+  "source": "parent explicitly supplied complete original prompt and initial create turn; author archives independently disclose subsequent environment recovery",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thinking_requested": "ultra",
+  "total_author_turn_count": null
+}

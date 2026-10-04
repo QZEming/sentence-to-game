@@ -1,0 +1,156 @@
+{
+  "additional_environment_recovery": false,
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "f6b4158a08aefd2827e6027222a7d9156dd334868b5aac0c0ef379e65cc5b8da"
+    },
+    {
+      "bytes": 2464,
+      "path": "README.md",
+      "sha256": "9ddad09e8240924cad9c8b51cb583bcafb0a528e7faa21a907efe90b84168c1a"
+    },
+    {
+      "bytes": 9791,
+      "path": "dist/data.js",
+      "sha256": "841d45894ea717f04e7d4dafa13e7ef474e93f610917b75f8cfdd0521d4c4d55"
+    },
+    {
+      "bytes": 5415,
+      "path": "dist/index.html",
+      "sha256": "990545df0b9197d2e174df4d5c2104a04c4474399649c8d428e306c9a7e38389"
+    },
+    {
+      "bytes": 37439,
+      "path": "dist/main.js",
+      "sha256": "96dc38eeffc0f785970ceaf3beb2598f0eabcdc924264f6e026c34d86cd178df"
+    },
+    {
+      "bytes": 26547,
+      "path": "dist/style.css",
+      "sha256": "1c401e16dd1217af50d86aa4196da9a3c2082e1ed3fcbc407939766f30e975ed"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 25899,
+      "path": "dist/world.js",
+      "sha256": "75cbb7e43c51c009fe109e715d6a824acc5c939e67cf594f7147ac82236fde50"
+    },
+    {
+      "bytes": 464977,
+      "path": "original-delivery/all-achievements.png",
+      "sha256": "a8d2ec7d1c440b67c1dc289fd7c4537a64e3da4fa00a9338fe72c48dbd466cf0"
+    },
+    {
+      "bytes": 436640,
+      "path": "original-delivery/chapter-1-complete.png",
+      "sha256": "88f74c5f9247b8da299ae26400d926b5c7daace06b8038426e15d57d9461af59"
+    },
+    {
+      "bytes": 429722,
+      "path": "original-delivery/chapter-2-complete.png",
+      "sha256": "11241540bf52ef40ce66a066277e05620574e21b91af7774233e5880ea13ddd5"
+    },
+    {
+      "bytes": 454561,
+      "path": "original-delivery/chapter-3-complete.png",
+      "sha256": "63ccaf0297f63e654ee9ba2069224ad3d8812a22b96babcd2548204157c38d9b"
+    },
+    {
+      "bytes": 447491,
+      "path": "original-delivery/chapter-4-complete.png",
+      "sha256": "97571e423793684cefe209ff36f53fccf968fecd065199251e1cbccb53964f7e"
+    },
+    {
+      "bytes": 3966,
+      "path": "original-delivery/complete-journey.js",
+      "sha256": "777ae0d31601ad6050aa658c437a608de23c1c64e858bb0d3a10d174a7014ab7"
+    },
+    {
+      "bytes": 504914,
+      "path": "original-delivery/desktop-final.png",
+      "sha256": "257af3acd6cee3fb1dbc2d1ea74f745192f116f926cfc610e7c7caf6869ea445"
+    },
+    {
+      "bytes": 484707,
+      "path": "original-delivery/desktop-initial.png",
+      "sha256": "0686b001275e3dd8fe9837b710ab5a57aaa011730144f019d69ae65c4e24196b"
+    },
+    {
+      "bytes": 453230,
+      "path": "original-delivery/ending.png",
+      "sha256": "b913e6eb438d1b8bc28937bacbb0417847d0fa283504b3aad04aec3cf3bce50a"
+    },
+    {
+      "bytes": 98041,
+      "path": "original-delivery/landscape-observation.png",
+      "sha256": "b6f02fadaaec67bbb7395bba95d7a8454ca2e13272981131b417d2d1fdfdd37f"
+    },
+    {
+      "bytes": 179044,
+      "path": "original-delivery/mobile-final.png",
+      "sha256": "f54e3010d10ccd0155c99221f1909029a2bcdfc1f227e750a2c25a600f9301d8"
+    },
+    {
+      "bytes": 188124,
+      "path": "original-delivery/mobile-fresh.png",
+      "sha256": "55cefc2636ba5d3cfb8c67e2145f58acd67cb5355aa5376327613f92eb256204"
+    },
+    {
+      "bytes": 104383,
+      "path": "original-delivery/mobile-journal.png",
+      "sha256": "eb268aad31c78e787a0870426816c25878db33199cbe26e6b69ec1b482c38054"
+    },
+    {
+      "bytes": 191926,
+      "path": "original-delivery/mobile-settled.png",
+      "sha256": "7fd42cf13b39bcae3d1f4ebb53ace7beca4ee3648a084346be40470e4fc763a7"
+    },
+    {
+      "bytes": 152009,
+      "path": "original-delivery/mobile.png",
+      "sha256": "9ffc0d5f980b8af9d88cf33149509bc0a87119c54abd926b4f39625ed1ccde53"
+    },
+    {
+      "bytes": 468864,
+      "path": "original-delivery/observation.png",
+      "sha256": "a38bf1a2b43301e6875f3a9f7e552a6727f84eb32db308777108023c9cc4f0a9"
+    },
+    {
+      "bytes": 1291,
+      "path": "original-delivery/verification.json",
+      "sha256": "b9531edd91df870030a80ae8a7e681c05976fa7168a215d7b833bdd213a86b97"
+    },
+    {
+      "bytes": 218007,
+      "path": "original-delivery/xenolinguist.tar.gz",
+      "sha256": "cb566396d34f5554046718e229c00181469993a437b6810d09d3ec078d78671e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "initial_generation_turn_id": null,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "single_turn": true,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-67/xenolinguist",
+  "source_tree_sha256": "0c2a810a985bf5169ad4b65d93fd830dc7e4bf81b6677d2a4fd83ce58993c9e6",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-098-original-20261004T104612Z",
+  "thread_id": "01a10661-ec01-7170-9af1-f136a9d2408a",
+  "turn_id": "01a10662-0bfd-7141-8f3e-d6f7c391b4e7"
+}

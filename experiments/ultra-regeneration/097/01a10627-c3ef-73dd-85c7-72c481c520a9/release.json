@@ -1,0 +1,71 @@
+{
+  "additional_environment_recovery": true,
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "097-marionette",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "097",
+  "generation_turn_id": "01a10661-7dff-75b9-9090-4e2dd6011243",
+  "initial_generation_turn_id": "01a10627-e411-7503-8cd3-f6fb0429f6c8",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "3287110e89160a4dbe354fb537f105870e2d818b",
+    "full_old_history_preserved": true,
+    "game_number": "097",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/3287110e89160a4dbe354fb537f105870e2d818b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 1081,
+      "path": "assets/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 691648,
+      "path": "assets/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 314,
+      "path": "favicon.svg",
+      "sha256": "d6fe92a50fd3a80261e0375cb21e3c72bb00b3b5b4bde41fd466ef6b666845b7"
+    },
+    {
+      "bytes": 26048,
+      "path": "game.mjs",
+      "sha256": "65ba632bdbff969ac73e21c972dfbb9135e01df531220832b879b338bbb00eed"
+    },
+    {
+      "bytes": 3759,
+      "path": "index.html",
+      "sha256": "e32e835c7e0c315a1138f9e3372a8497e97ab3a8c7b2c5ab18a7af392bbf199d"
+    },
+    {
+      "bytes": 5293,
+      "path": "physics.mjs",
+      "sha256": "0f22eae57aab462072330948ea5b6bd776c66c723d44e57140781bd94eead8b6"
+    },
+    {
+      "bytes": 12900,
+      "path": "style.css",
+      "sha256": "95def3feb8b26b13db3d56e8be0684e4fa664d84dd829455d62c8b1e30c48eaf"
+    }
+  ],
+  "recovery_turn_id": "01a10661-7dff-75b9-9090-4e2dd6011243",
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": false,
+  "source_tree_sha256": "4538e6c48ab6d96a4cc6e7bc86cd6204230aa3ac7f2f84e6d133ea5fcd3c390f",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10627-c3ef-73dd-85c7-72c481c520a9",
+  "title": "MARIONETTE · 午夜木偶剧场",
+  "url": "https://qzemi.cn/sentence-to-game/games/097-marionette/"
+}

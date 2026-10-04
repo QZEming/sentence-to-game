@@ -1,0 +1,15 @@
+{
+  "additional_environment_recovery": true,
+  "applies_to_initial_creation_only": true,
+  "fork_turns_requested": "none",
+  "initial_generation_turn_id": "01a10627-e411-7503-8cd3-f6fb0429f6c8",
+  "model_requested": "gpt-6-astra",
+  "original_manifest_prompt_kept_unchanged": true,
+  "original_request": "实现一个木偶师操纵提线木偶完成平衡表演与舞台挑战的 3D 提线物理游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个木偶师操纵提线木偶完成平衡表演与舞台挑战的 3D 提线物理游戏，尽你所能丰富游戏玩法。",
+  "single_turn": false,
+  "source": "parent explicitly supplied complete original prompt and initial create turn; author archives independently disclose subsequent environment recovery",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thinking_requested": "ultra",
+  "total_author_turn_count": null
+}

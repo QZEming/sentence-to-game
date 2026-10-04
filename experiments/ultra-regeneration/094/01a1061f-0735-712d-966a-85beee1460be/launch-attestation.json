@@ -1,0 +1,62 @@
+{
+  "additional_environment_recovery": true,
+  "exact_prompt_evidence": "explicit_parent_sentence_supplement; original manifest missing/null prompt retained",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author development task with additional environment recovery turns; not a fresh single-turn generation or a single raw inference answer",
+  "generation_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+  "initial_generation_turn_id": "01a1061f-2766-7798-96a9-b54882b08a16",
+  "input_scope": "initial creation input attested as one complete sentence only; later environment recovery continued the author project",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "original_source_unchanged_since_supplied_snapshot": true,
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "parent_initial_launch_completion": {
+    "additional_environment_recovery": true,
+    "applies_to_initial_creation_only": true,
+    "fork_turns_requested": "none",
+    "initial_generation_turn_id": "01a1061f-2766-7798-96a9-b54882b08a16",
+    "model_requested": "gpt-6-astra",
+    "original_request": "实现一个动物选手参加奇幻知识竞赛并争夺答题奖励的 3D 问答竞技游戏，尽你所能丰富游戏玩法。",
+    "prompt": "实现一个动物选手参加奇幻知识竞赛并争夺答题奖励的 3D 问答竞技游戏，尽你所能丰富游戏玩法。",
+    "single_turn": false,
+    "source": "parent explicitly supplied complete original prompt and initial create turn; author archives independently disclose subsequent environment recovery",
+    "thinking_requested": "ultra",
+    "total_author_turn_count": null
+  },
+  "prompt": "实现一个动物选手参加奇幻知识竞赛并争夺答题奖励的 3D 问答竞技游戏，尽你所能丰富游戏玩法。",
+  "publisher_did_not_claim_initial_turn_source_complete_or_unchanged": true,
+  "raw_supplied_missing_launch_fields_preserved": true,
+  "recovery_provenance": {
+    "generation_thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+    "initial_turn_id": null,
+    "initial_turn_status": "unknown; not provided by parent",
+    "known_phases": [
+      "initial_implementation",
+      "environment_recovery_continuation"
+    ],
+    "original_documents": [
+      "source/README.md",
+      "source/VALIDATION.md"
+    ],
+    "provenance": "Parent attests additional recovery turn; original README and VALIDATION preserved verbatim.",
+    "recovery_deliverables": [
+      "source/scripts/build-standalone.py",
+      "original-packages/wild-wisdom-offline.html",
+      "original-packages/wild-wisdom-source.zip"
+    ],
+    "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+    "single_turn": false,
+    "singleturn": false,
+    "source_document_statement": "Initial environment went offline after saving page/style/forest/runtime/question bank; three JavaScript writes were unconfirmed. Recovery continued the unwritten code while retaining existing assets, bank and Site identifier; no repeated generation or new Site.",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "total_turn_count": null
+  },
+  "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": false,
+  "supplied_parent_launch_record": "supplied-parent-launch-record.json; parent attestation only, not full task export",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+  "total_author_turn_count": null
+}

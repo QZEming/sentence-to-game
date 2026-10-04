@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-095",
+  "parent_source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a10621-b08d-7767-9927-f8a80a802096",
+  "initial_generation_turn_id": null,
+  "initial_turn_status": "unknown; not provided by parent or found in ordinary project docs",
+  "recovery_turn_id": "01a10661-25fe-70aa-b8f8-9cdd44b3e0bb",
+  "single_turn": false,
+  "initial_and_recovery_raw_model": "gpt-6-astra",
+  "initial_and_recovery_effort": "ultra",
+  "fork_turns": null,
+  "fork_status": "not provided/unknown",
+  "attestation_source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "scope": "Parent attestation only; no independent historical runtime metadata read",
+  "existing_recovery_record": {
+    "path": "orbital-cargo/README.md",
+    "lines": [
+      32,
+      34,
+      36,
+      38
+    ],
+    "report": "Initial execution environment went offline with game.js/scene.js/basic config only; recovery continued existing project and completed UI/session/tests, reusing original Site identity.",
+    "continuity_limit": "Author continuity statement, not independent proof initial source bytes remained unchanged."
+  },
+  "exact_prompt": null,
+  "exact_prompt_status": "not supplied by parent and not found as explicit original sentence in ordinary project documentation",
+  "ordinary_documents_checked": [
+    "orbital-cargo/README.md",
+    "orbital-cargo/package.json"
+  ],
+  "do_not_infer_prompt_from_product_description": true,
+  "recorded_at": "2026-10-04T10:41:07.497793Z"
+}

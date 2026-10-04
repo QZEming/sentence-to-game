@@ -1,0 +1,74 @@
+{
+  "additional_environment_recovery": true,
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "existing_dist_with_recorded_path_adaptation",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "095-orbital-cargo",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "095",
+  "generation_turn_id": "01a10661-25fe-70aa-b8f8-9cdd44b3e0bb",
+  "initial_generation_turn_id": "01a10621-d985-7587-960b-67c872f21c23",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "3287110e89160a4dbe354fb537f105870e2d818b",
+    "full_old_history_preserved": true,
+    "game_number": "095",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/3287110e89160a4dbe354fb537f105870e2d818b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [
+    {
+      "kind": "mechanical_subdirectory_resource_path_adaptation",
+      "original_sha256": "4ada83be87c8bc572d42f47fe3c4bb36a15d90b523b9fd0b66f8c571877aef3d",
+      "path": "assets/index-ByRZlWJt.js",
+      "published_sha256": "08292fca232523b45c3955f7f2090135e2272079dc351595bce4b12c4cf17a9f"
+    },
+    {
+      "kind": "mechanical_subdirectory_resource_path_adaptation",
+      "original_sha256": "84c08a568ce63a92bb3fd073f5c937c1e02dfda165695392f45130721f6495d7",
+      "path": "index.html",
+      "published_sha256": "ed52c81a16e0920a7903f13dbf38b85bb8b8224a268ed10ca06a38b5912f5c6d"
+    }
+  ],
+  "published_files": [
+    {
+      "bytes": 29081,
+      "path": "assets/index-BWLdRrrS.css",
+      "sha256": "05b5932b7c899dc83d3f7cd29d787ed98a1c2d5c5f52f92087e0eeb2d5f26176"
+    },
+    {
+      "bytes": 547338,
+      "path": "assets/index-ByRZlWJt.js",
+      "sha256": "08292fca232523b45c3955f7f2090135e2272079dc351595bce4b12c4cf17a9f"
+    },
+    {
+      "bytes": 1667,
+      "path": "assets/solver-worker-B_ejckFv.js",
+      "sha256": "16ab3e5e749255e19927960c8d259609300f300e98a09fa01af11aca04b3e369"
+    },
+    {
+      "bytes": 289,
+      "path": "favicon.svg",
+      "sha256": "9623fe67799f980edb1b29e4a406e52519d2ae2a661ea2a2ec975a74753ec141"
+    },
+    {
+      "bytes": 634,
+      "path": "index.html",
+      "sha256": "ed52c81a16e0920a7903f13dbf38b85bb8b8224a268ed10ca06a38b5912f5c6d"
+    }
+  ],
+  "recovery_turn_id": "01a10661-25fe-70aa-b8f8-9cdd44b3e0bb",
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": false,
+  "source_tree_sha256": "cff704fabcdd51769defbd9745c3066aa278e819c946f3134ecc8599c659a970",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10621-b08d-7767-9927-f8a80a802096",
+  "title": "ORBITAL CARGO · 星际装箱员",
+  "url": "https://qzemi.cn/sentence-to-game/games/095-orbital-cargo/"
+}

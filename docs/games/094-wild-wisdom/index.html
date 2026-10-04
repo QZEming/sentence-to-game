@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#287e68">
+<title>森灵问答 · Wild Wisdom</title><meta name="description" content="走进云端森林，与四位动物选手一起争夺知识水晶。3D 奇幻问答、角色技能、限时挑战与收藏奖励。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232b836c'/%3E%3Cpath d='M32 12 49 29 32 52 15 29Z' fill='%23d6f29c'/%3E%3Cpath d='M15 29h34M32 12v40' fill='none' stroke='%232b836c' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css"><script type="module" src="./game.js"></script>
+</head>
+<body>
+<aside class="sidebar" aria-label="主导航">
+<a class="brand-mark" href="./" aria-label="森灵问答首页"><i data-icon="sparkles"></i></a>
+<div class="side-nav"><button class="nav-item active" data-nav="arena"><i data-icon="swords"></i><span>竞技场</span></button><button class="nav-item" data-nav="characters"><i data-icon="paw"></i><span>选手图鉴</span></button><button class="nav-item" data-nav="achievements"><i data-icon="medal"></i><span>成就殿堂</span></button><button class="nav-item" data-nav="shop"><i data-icon="bag"></i><span>魔法商店</span></button></div>
+<button class="nav-item guide-nav" data-nav="guide"><i data-icon="book"></i><span>冒险指南</span></button><div class="sidebar-bottom">WILD<br>WISDOM</div>
+</aside>
+<div class="app-shell">
+<header class="header"><a href="./" class="wordmark">森灵问答<span>WILD WISDOM</span></a><div class="header-divider"></div><span class="header-caption">每一份好奇，都有回响</span><div class="wallet"><button class="currency coin" data-nav="shop" aria-label="金币和魔法商店"><i data-icon="coin"></i><b id="coins">120</b><span class="plus">+</span></button><div class="currency gem"><i data-icon="gem"></i><b id="gems">5</b></div><button class="icon-btn sound-btn" id="sound" aria-label="开启音效"><i data-icon="volume-off"></i></button><button class="profile" data-nav="achievements" aria-label="我的等级"><span>🦊</span><small id="level">1</small></button></div></header>
+<main>
+<div class="page-heading"><div><div class="eyebrow">THE FOREST CHAMPIONSHIP</div><h1>知识竞技场 <span>第 01 赛季</span></h1><p>和森林伙伴一起，让好奇心赢得奖赏。</p></div><button class="text-btn" data-nav="guide"><i data-icon="help"></i> 玩法指南</button></div>
+<div class="game-layout">
+<div class="play-column">
+<section class="arena" id="arena" aria-label="3D 森林竞技场">
+<div id="scene" class="scene"></div>
+<div class="arena-top"><div class="location-chip"><span class="location-icon"><i data-icon="leaf"></i></span><div><b>翡翠浮岛</b><small>EMERALD GLADE</small></div></div><div class="scene-controls"><button class="glass-btn" id="rotate" aria-label="旋转视角" title="旋转视角"><i data-icon="rotate"></i></button><button class="glass-btn" id="fullscreen" aria-label="全屏竞技场" title="全屏竞技场"><i data-icon="expand"></i></button></div></div>
+<div class="arena-banner" id="arena-banner"><span class="tiny-star">✦</span> 森林知识杯 <span class="tiny-star">✦</span><small>智慧汇聚的地方</small></div>
+<div id="player-labels" class="player-labels"></div>
+<div class="scene-loading" id="scene-loading">正在唤醒森林…</div>
+<div class="arena-bottom"><span><i data-icon="users"></i><b id="arena-state">4 位选手 · 即将开赛</b></span><span class="drag-hint"><i data-icon="move"></i> 拖动探索 3D 场景</span></div>
+<div class="scene-toast" id="scene-toast"></div>
+</section>
+<section class="interaction-panel" id="interaction-panel" aria-live="polite"></section>
+<div class="bottom-note"><span><i data-icon="sparkles"></i> 好奇心是最好的魔法</span><span>1–4 选择答案 <kbd>Space</kbd> 继续 <kbd>Esc</kbd> 暂停</span></div>
+</div>
+<aside class="match-sidebar">
+<section class="standings panel"><div class="panel-heading"><h2><i data-icon="trophy"></i> 选手席</h2><span class="status-badge" id="match-status">等待开赛</span></div><div class="round-track" id="round-track"></div><div id="contestants" class="contestants"></div><div class="leader-note" id="leader-note"><i data-icon="sparkles"></i> 每个人都有成为冠军的可能</div></section>
+<section class="reward-card"><div class="reward-copy"><span class="eyebrow">WINNER'S TREASURE</span><h2>智慧，值得嘉奖</h2><p>赢下赛事，带走森林的礼物。</p></div><div class="treasure-medallion"><i data-icon="trophy"></i><span class="treasure-spark s1">✦</span><span class="treasure-spark s2">✧</span></div><div class="reward-items"><div><span class="reward-icon gold"><i data-icon="coin"></i></span><strong>+120</strong><small>冠军金币</small></div><div><span class="reward-icon purple"><i data-icon="gem"></i></span><strong>+8</strong><small>魔法水晶</small></div><div><span class="reward-icon green"><i data-icon="medal"></i></span><strong>森林智者</strong><small>专属成就</small></div></div></section>
+<section class="skills panel"><div class="panel-heading"><h2><i data-icon="wand"></i> 魔法锦囊</h2><span class="muted">每局各 1 次</span></div><div class="skill-buttons"><button class="skill" data-skill="hint"><span class="skill-icon pink"><i data-icon="bulb"></i></span><b>灵光一闪</b><small>排除两个错项</small><kbd>Q</kbd></button><button class="skill" data-skill="freeze"><span class="skill-icon blue"><i data-icon="snow"></i></span><b>时光慢行</b><small>增加 10 秒</small><kbd>W</kbd></button><button class="skill" data-skill="double"><span class="skill-icon amber"><i data-icon="zap"></i></span><b>幸运加倍</b><small>本题双倍积分</small><kbd>E</kbd></button></div></section>
+<div class="daily-note"><span class="daily-icon"><i data-icon="sun"></i></span><div><b>今天也要保持好奇</b><p id="daily-progress">完成一局，开启你的森林冒险。</p></div></div>
+</aside>
+</div>
+</main><footer><span>森灵问答 <span class="footer-dot">·</span> A little curiosity. A little magic.</span><span>单人对 AI · 进度保存在此设备</span></footer>
+</div>
+<dialog id="modal" aria-labelledby="modal-title"><div class="modal-heading"><h2 id="modal-title"></h2><button id="close-modal" class="icon-btn" aria-label="关闭弹窗"><i data-icon="close"></i></button></div><div id="modal-content"></div></dialog>
+<div id="toast" role="status"></div>
+</body></html>

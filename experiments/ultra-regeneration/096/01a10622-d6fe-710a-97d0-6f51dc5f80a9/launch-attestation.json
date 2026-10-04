@@ -1,0 +1,50 @@
+{
+  "additional_environment_recovery": true,
+  "exact_prompt_evidence": "explicit_parent_sentence_supplement; original manifest missing/null prompt retained",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author development task with additional environment recovery turns; not a fresh single-turn generation or a single raw inference answer",
+  "generation_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "initial_generation_turn_id": "01a10622-f615-75bd-925c-76c18e23d786",
+  "input_scope": "initial creation input attested as one complete sentence only; later environment recovery continued the author project",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "original_source_unchanged_since_supplied_snapshot": true,
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "parent_initial_launch_completion": {
+    "additional_environment_recovery": true,
+    "applies_to_initial_creation_only": true,
+    "fork_turns_requested": "none",
+    "initial_generation_turn_id": "01a10622-f615-75bd-925c-76c18e23d786",
+    "model_requested": "gpt-6-astra",
+    "original_request": "实现一个动物医生观察症状并选择治疗方式照顾奇幻动物的 3D 诊疗模拟游戏，尽你所能丰富游戏玩法。",
+    "prompt": "实现一个动物医生观察症状并选择治疗方式照顾奇幻动物的 3D 诊疗模拟游戏，尽你所能丰富游戏玩法。",
+    "single_turn": false,
+    "source": "parent explicitly supplied complete original prompt and initial create turn; author archives independently disclose subsequent environment recovery",
+    "thinking_requested": "ultra",
+    "total_author_turn_count": null
+  },
+  "prompt": "实现一个动物医生观察症状并选择治疗方式照顾奇幻动物的 3D 诊疗模拟游戏，尽你所能丰富游戏玩法。",
+  "publisher_did_not_claim_initial_turn_source_complete_or_unchanged": true,
+  "raw_supplied_missing_launch_fields_preserved": true,
+  "recovery_provenance": {
+    "continuation": "Recovered after reconnect; preserved interface, image assets, dependency and project_id; added missing data.js, scene.js and game.js.",
+    "documentation": [
+      "source/RECOVERY.md",
+      "source/VALIDATION.md",
+      "source/PROGRESS.txt"
+    ],
+    "initial_error": "409 environment_offline",
+    "initial_saved_scope": "HTML/CSS interface, vendored Three.js, original creature sheet and Site identity confirmed saved; playable/deployed completion not claimed.",
+    "initial_turn_id": null,
+    "recovery_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+    "single_turn": false
+  },
+  "recovery_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": false,
+  "supplied_parent_launch_record": "supplied-parent-launch-record.json; parent attestation only, not full task export",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10622-d6fe-710a-97d0-6f51dc5f80a9",
+  "total_author_turn_count": null
+}

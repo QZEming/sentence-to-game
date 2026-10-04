@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#112d2e"><meta name="description" content="观察陌生文明，解读十二个词语。在 3D 外星遗迹中，成为第一个听懂他们的人。">
+<title>星语 · 异星田野手记</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23132f30'/%3E%3Cpath d='M20 7L30 20 20 33 10 20Z M10 20H30' fill='none' stroke='%23d7eea8' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="app">
+ <header class="topbar">
+  <a href="./" class="brand" aria-label="星语首页"><span class="brand-mark">⟐</span><div><span class="brand-name">星语<span class="brand-divider">/</span><span class="brand-en">LINGUA</span></span><small>异星田野手记</small></div></a>
+  <div class="expedition"><span class="tiny-star">✦</span> 开普勒 · 第 749 号考察<span class="separator"></span><span id="day-label">DAY 01</span></div>
+  <nav class="top-actions"><button id="sound-toggle" class="icon-button" title="开启声音" aria-label="开启声音"></button><button id="help-button" class="icon-button" title="操作指南" aria-label="操作指南"></button><button id="settings-button" class="icon-button" title="旅程设置" aria-label="旅程设置"></button><button id="journal-toggle" class="mobile-journal">词典 <span id="mobile-count">0/12</span></button></nav>
+ </header>
+ <main>
+  <section id="world-shell" aria-label="可交互的三维外星世界">
+   <canvas id="world" tabindex="0" aria-label="3D 世界，WASD 移动，E 观察附近居民，拖动旋转视角"></canvas>
+   <div class="scene-vignette"></div>
+   <div class="chapter-heading"><div class="eyebrow"><span class="line"></span> <span id="chapter-num">CHAPTER 01</span> <span class="coordinate" id="coordinate">24° N / 079° E</span></div><h1 id="chapter-title">初遇 · 潮汐聚落</h1><p id="chapter-subtitle">语言尚未诞生于你我之间。</p></div>
+   <div class="weather"><span>◌</span><div id="weather-text">暮光时刻<small>双星历 · 涨潮</small></div></div>
+   <div id="markers"></div>
+   <div id="objective-card"><span class="objective-kicker">当前研究</span><div><span class="objective-icon">⌕</span><p id="objective-text">观察聚落居民，收集语言线索</p></div><div class="objective-progress"><i id="objective-progress-fill"></i></div><span id="objective-detail">寻找世界中的 3 个观察点</span></div>
+   <button id="focus-reset" class="scene-button" title="视角归位" aria-label="视角归位">⌖</button>
+   <div class="scene-caption"><span class="live-dot"></span> <span id="scene-caption-text">潮汐聚落 · 勘察中</span></div>
+   <div class="compass"><span>N</span><div>✧</div><small>W &nbsp; · &nbsp; E</small></div>
+   <div id="nearby" class="nearby hidden"><kbd>E</kbd><span>观察居民</span></div>
+   <div class="explore-controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移动</span><span><i class="mouse-icon"></i> 拖动环视</span><span><kbd>E</kbd> 观察</span><span><kbd>J</kbd> 词典</span></div>
+   <div id="touch-pad" aria-label="移动控制"><button data-dir="up" aria-label="向前">↑</button><button data-dir="left" aria-label="向左">←</button><button data-dir="down" aria-label="向后">↓</button><button data-dir="right" aria-label="向右">→</button></div>
+   <div id="world-error" class="hidden"><h2>这段旅程需要 3D 支持</h2><p>请使用支持 WebGL 的浏览器，并开启硬件加速后重试。</p><button onclick="location.reload()">重新载入</button></div>
+  </section>
+  <aside id="journal" aria-label="语言学家的词典">
+   <div class="journal-top"><span class="eyebrow">FIELD NOTES <span class="journal-number">No. 0749</span></span><div class="journal-heading"><h2>语言学家的词典</h2><span class="book-icon">▤</span></div><p>每一种理解，都始于一次注视。</p></div>
+   <div class="journal-tabs"><button class="active" data-tab="words">符号词典 <span id="word-count">0</span></button><button data-tab="evidence">观察手记 <span id="evidence-count">0</span></button></div>
+   <div class="journal-scroll" id="journal-content"></div>
+   <div class="journal-bottom"><div><span>文明理解度</span><strong id="understanding">0<span>%</span></strong></div><div class="understanding-bar"><i id="understanding-fill"></i></div><p id="journal-footnote">未知并非沉默，只是尚未被听懂。</p></div>
+  </aside>
+ </main>
+ <footer class="journey-bar"><div class="journey-label"><span class="orbit-icon">◎</span><div>我们的旅程<small>THE EXPEDITION</small></div></div><div class="chapter-nav" id="chapter-nav"></div><button id="map-button" class="map-button"><span>⌘</span> 星图与成就</button></footer>
+ <div id="toast" role="status" aria-live="polite"></div>
+ <div id="observation" class="observation hidden" role="dialog" aria-modal="false" aria-labelledby="observation-title"></div>
+ <div id="modal-root"></div>
+ <div id="loading"><div class="loading-glyph">⟐</div><h2>正在接近未知世界</h2><p>正在校准语言学家的观测仪…</p></div>
+</div>
+<script type="module" src="./main.js"></script>
+</body></html>

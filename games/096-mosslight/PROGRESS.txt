@@ -1,0 +1,4 @@
+Recovered after the execution environment went offline during the first round.
+The original interface, image assets, Three.js, and Site identity were preserved.
+Implemented: interactive 3D clinic, four creature models, six cases, four examination tools, diagnosis, six treatment choices, three minigames, recovery care, daily goals, upgrades, achievements, case history, and local browser save.
+Validation: all JavaScript syntax checks passed; independent static review passed; six consecutive cases completed in a real browser, including error/retry, persistence, reward, upgrade, and mobile checks. See VALIDATION.md and output/playwright/ for evidence.

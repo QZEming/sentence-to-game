@@ -1,0 +1,71 @@
+{
+  "additional_environment_recovery": true,
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "096-mosslight",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "096",
+  "generation_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "initial_generation_turn_id": "01a10622-f615-75bd-925c-76c18e23d786",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "3287110e89160a4dbe354fb537f105870e2d818b",
+    "full_old_history_preserved": true,
+    "game_number": "096",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/3287110e89160a4dbe354fb537f105870e2d818b",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 1909473,
+      "path": "creatures.png",
+      "sha256": "3418160f75319310747648c7555b7bddf5e3934245f3971c1c439014858f1eb2"
+    },
+    {
+      "bytes": 8590,
+      "path": "data.js",
+      "sha256": "88585271e0cb35f22166d2487067677edf33665403fb3f5c8a82a316a7cd12a2"
+    },
+    {
+      "bytes": 26501,
+      "path": "game.js",
+      "sha256": "270eb65ae093bcfb7508152e6e914babddc622014175ca1f45c61d2016b46414"
+    },
+    {
+      "bytes": 6826,
+      "path": "index.html",
+      "sha256": "69a368b64e6998267b546948a26d95c9dbde9228033b10bb2b967c8460d4b610"
+    },
+    {
+      "bytes": 16265,
+      "path": "scene.js",
+      "sha256": "6269ecdab909719bc63dc34972de25056328853098bbdae262107e27915526cf"
+    },
+    {
+      "bytes": 23740,
+      "path": "style.css",
+      "sha256": "b243a7ab9515afcb33e094d4276f5ac50e5c1ea16e8734ff58b238fd9dfd839b"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "recovery_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": false,
+  "source_tree_sha256": "1253b94d0cf38f0e459130081fd09f457b293acb0d0272c97295416716b4b1b5",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10622-d6fe-710a-97d0-6f51dc5f80a9",
+  "title": "苔光奇兽诊所 · Mosslight",
+  "url": "https://qzemi.cn/sentence-to-game/games/096-mosslight/"
+}

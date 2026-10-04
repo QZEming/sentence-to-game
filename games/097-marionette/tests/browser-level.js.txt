@@ -1,0 +1,31 @@
+async (page) => {
+ const index=ACT_INDEX;
+ const routes=[[[0,2],[0,-1.7,"pose"],[1,-1.7],[0,-3],[0,-5.7],[0,-8.7]],[[-1,4],[-1,1.8],[-1,-1,"pose"],[1,-1],[1,-3.6],[1,-6],[1.8,-6],[0,-6],[0,-9]],[[0,3.3],[0,1.5,"jump"],[.8,.5],[1.5,-2.2,"jump_pose"],[.6,-3.2],[-1,-5.8,"jump"],[-1,-6.7],[0,-9.3,"jump"]],[[0,1.5],[0,-1.5,"pose"],[-1,-1.5],[0,-2.8],[0,-5.4,"jump"],[0,-8.7]],[[-1,4],[-1,1.7],[-1,-1,"pose"],[-.2,-1.9],[1,-4,"jump"],[1,-5.3],[1,-7.1,"jump"],[0,-9]]];
+ const read=()=>page.evaluate(()=>document.getElementById("marionette-game").game.getState());
+ await page.getByRole("button",{name:new RegExp("^第"+(index+1)+"幕 ")}).click();
+ await page.getByRole("button",{name:"开始演出",exact:true}).click();
+ const held=new Set();async function input(next){for(const k of [...held])if(!next.has(k)){await page.keyboard.up(k);held.delete(k);}for(const k of next)if(!held.has(k)){await page.keyboard.down(k);held.add(k);}}
+ async function steer(x,z,s){const set=new Set(["Shift"]);const ex=x-s.position.x-s.velocity.x*.13,ez=z-s.position.z-s.velocity.z*.13;if(ex>.06)set.add("d");if(ex<-.06)set.add("a");if(ez>.06)set.add("s");if(ez<-.06)set.add("w");await input(set);}
+ const segments=[];
+ for(const [x,z,type=""] of routes[index]){
+ let s=await read();const start=s.simulationTime;let jumped=false;
+ while(s.status==="playing"&&s.simulationTime-start<9){
+ await steer(x,z,s);
+ if(type.includes("jump")&&!jumped){await page.keyboard.press("Space");jumped=true;}
+ await page.waitForTimeout(35);s=await read();
+ if(Math.hypot(x-s.position.x,z-s.position.z)<.16&&s.position.grounded&&Math.hypot(s.velocity.x,s.velocity.z)<.85)break;
+ }
+ if(type.includes("pose")){const start=s.simulationTime;while(!s.balancePerformanceComplete&&s.simulationTime-start<8){await steer(x,z,s);await page.waitForTimeout(35);s=await read();}}
+ segments.push({x,z,state:s.status,falls:s.falls,time:s.simulationTime});
+ if(s.status==="won")break;
+ if(s.falls)throw Error("Route failure: "+JSON.stringify({index,segments,s}));
+ }
+ await input(new Set());const result=await read();
+ if(result.status!=="won"||result.stars!==3||result.falls!==0)throw Error("Act did not finish: "+JSON.stringify({result,segments}));
+ const before=JSON.stringify(result);
+ await page.getByRole("button",{name:"操作指南",exact:true}).click();
+ await page.getByRole("button",{name:"回到舞台",exact:true}).click();
+ if(JSON.stringify(await read())!==before)throw Error("Help changed completed result");
+ await page.screenshot({path:"output/playwright/act-"+(index+1)+"-complete.png",scale:"css"});
+ return {result,segments,helpPreservesResult:true};
+}

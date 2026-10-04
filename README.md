@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**93 / 100**。
+当前进度：**98 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -107,6 +107,11 @@
 | 091 | [符文决斗 · RUNEWEAVER](games/091-rune-duel/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/091-rune-duel/) | [源码](games/091-rune-duel/src/) |
 | 092 | [STRATA · 深层勘探](games/092-strata/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/092-strata/) | [源码](games/092-strata/src/) |
 | 093 | [Beetle Bounce — 森林弹珠](games/093-beetle-bounce/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/093-beetle-bounce/) | [源码](games/093-beetle-bounce/src/) |
+| 094 | [森灵问答 · Wild Wisdom](games/094-wild-wisdom/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/094-wild-wisdom/) | [源码](games/094-wild-wisdom/src/) |
+| 095 | [ORBITAL CARGO · 星际装箱员](games/095-orbital-cargo/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/095-orbital-cargo/) | [源码](games/095-orbital-cargo/src/) |
+| 096 | [苔光奇兽诊所 · Mosslight](games/096-mosslight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/096-mosslight/) | [源码](games/096-mosslight/src/) |
+| 097 | [MARIONETTE · 午夜木偶剧场](games/097-marionette/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/097-marionette/) | [源码](games/097-marionette/src/) |
+| 098 | [星语 · 异星田野手记](games/098-xenolinguist/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/098-xenolinguist/) | [源码](games/098-xenolinguist/src/) |
 
 ## 生成记录
 

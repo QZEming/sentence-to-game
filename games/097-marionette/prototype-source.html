@@ -1,0 +1,223 @@
+<div id="marionette-game">
+<style>
+#marionette-game{--gold:#d8b46b;--ink:#141415;--panel:#1a1a1c;--line:#36332d;--muted:#a8a49b;--white:#f1ede4;color:var(--white);background:var(--ink);font:14px/1.6 "Inter","PingFang SC","Microsoft YaHei",sans-serif;border-radius:16px;overflow:hidden;isolation:isolate;box-shadow:0 20px 60px #0003}
+#marionette-game *{box-sizing:border-box}#marionette-game button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}#marionette-game button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}#marionette-game button:disabled{opacity:.5;cursor:wait}#marionette-game .top{min-height:82px;display:flex;align-items:center;gap:28px;padding:18px 26px;border-bottom:1px solid var(--line)}#marionette-game .brand{font-family:Georgia,serif;font-size:25px;letter-spacing:4px;line-height:1.1;color:#e7d3a4}#marionette-game .brand small{display:block;font:11px/1.6 sans-serif;letter-spacing:4px;color:var(--muted);margin-top:7px}#marionette-game .nav{display:flex;gap:24px;margin-left:auto}#marionette-game .nav button{border:0;background:none;color:var(--muted);font-size:13px;padding:9px 0}#marionette-game .nav button.active{color:var(--gold);border-bottom:1px solid var(--gold)}#marionette-game .tools{display:flex;gap:8px}#marionette-game .icon{border:1px solid var(--line);background:transparent;border-radius:6px;width:36px;height:36px}#marionette-game .body{display:grid;grid-template-columns:205px minmax(0,1fr)}#marionette-game aside{padding:24px 17px;background:#18181a;border-right:1px solid var(--line)}#marionette-game .eyebrow{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}#marionette-game aside h2{font-family:Georgia,"Songti SC",serif;font-size:23px;font-weight:400;letter-spacing:2px;margin:7px 0 22px}#marionette-game .acts{display:flex;flex-direction:column;gap:8px}#marionette-game .act{display:flex;align-items:center;text-align:left;gap:13px;width:100%;border:1px solid transparent;border-radius:8px;background:transparent;padding:12px 10px;color:var(--muted)}#marionette-game .act.active{border-color:#6b5835;background:#2a251c;color:#eee0c0}#marionette-game .act .roman{font:22px Georgia,serif;color:#736b5d;width:24px;text-align:center}#marionette-game .act.active .roman{color:var(--gold)}#marionette-game .act b{font-weight:400;display:block;font-size:14px}#marionette-game .act small{display:block;font-size:10px;letter-spacing:1px;color:#928b7e}#marionette-game .act .record{margin-left:auto;color:var(--gold);font-size:12px}#marionette-game .side-bottom{border-top:1px solid var(--line);margin-top:25px;padding-top:20px;color:var(--muted);font-size:12px}#marionette-game .side-bottom strong{font:26px Georgia,serif;color:var(--gold);display:block;margin:3px 0 12px}#marionette-game .small-button{background:none;border:0;padding:0;color:var(--gold);font-size:12px}#marionette-game .stage{position:relative;min-height:580px;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,#383022,#121214 75%)}#marionette-game canvas{display:block;width:100%;height:100%;touch-action:none}#marionette-game .canvas{position:absolute;inset:0}#marionette-game .vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#101014a6 0%,transparent 26%,transparent 74%,#111115da 100%)}#marionette-game .stage-head{position:absolute;top:23px;left:26px;right:26px;display:flex;align-items:start;justify-content:space-between;pointer-events:none}#marionette-game .chapter{color:var(--gold);font-size:10px;letter-spacing:2.4px}#marionette-game .stage-head h1{font-size:22px;font-weight:400;letter-spacing:3px;margin:2px 0 4px}#marionette-game .goal{font-size:12px;color:#b9b4a9}#marionette-game .metrics{display:flex;gap:23px;text-align:center}#marionette-game .metrics span{font-size:10px;color:var(--muted);display:block;letter-spacing:1px}#marionette-game .metrics b{font:23px/1.6 Georgia,serif;font-variant-numeric:tabular-nums;font-weight:400}#marionette-game .metrics .starcount{color:var(--gold)}#marionette-game .wind{position:absolute;right:24px;top:112px;color:#b9c7bf;font-size:11px;letter-spacing:1px}#marionette-game .banner{position:absolute;left:50%;top:33%;transform:translateX(-50%);padding:7px 17px;background:#131414d9;border:1px solid #7a6443;color:#e8cf96;border-radius:5px;white-space:nowrap;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none}#marionette-game .banner.show{opacity:1}#marionette-game .bottom-hud{position:absolute;left:26px;right:26px;bottom:22px;display:flex;align-items:end;justify-content:space-between;gap:12px;pointer-events:none}#marionette-game .balance{width:180px}#marionette-game .balance-label{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:8px}#marionette-game .balance-label b{font-weight:400;color:var(--gold)}#marionette-game .balance-track{height:4px;background:#5f493b;position:relative;border-radius:4px}#marionette-game .balance-safe{height:4px;background:#c6b77b;width:40%;margin-left:30%}#marionette-game .balance-needle{height:12px;width:3px;position:absolute;top:-4px;left:50%;background:#fff0c7;transition:left .04s}#marionette-game .falls{font-size:11px;color:var(--muted);margin-top:9px}#marionette-game .status{font-size:11px;color:var(--muted);text-align:right}#marionette-game .status strong{display:block;font-weight:400;font-size:14px;color:#ddd2b8}#marionette-game .overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#1110169c;backdrop-filter:blur(4px);padding:24px;z-index:5}#marionette-game .overlay.hidden{display:none}#marionette-game .modal{width:370px;max-width:100%;padding:32px;border:1px solid #66543a;border-radius:12px;background:linear-gradient(140deg,#28241feF,#18181afa);text-align:center;box-shadow:0 16px 80px #0006}#marionette-game .modal .overline{font-size:10px;letter-spacing:4px;color:var(--gold)}#marionette-game .modal h2{font-family:Georgia,"Songti SC",serif;font-size:31px;font-weight:400;letter-spacing:4px;margin:12px 0}#marionette-game .modal p{font-size:13px;color:#bab3a5;line-height:1.9;margin:10px 0 24px}#marionette-game .primary{background:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:11px 24px;color:#242019;font-weight:600;min-width:130px}#marionette-game .secondary{border:1px solid #645841;background:transparent;border-radius:5px;padding:10px 16px;margin-left:6px;color:#d3c4a7}#marionette-game .ready{background:none;backdrop-filter:none;align-items:end;padding-bottom:102px;pointer-events:none}#marionette-game .ready .modal{width:auto;padding:15px 20px;display:flex;gap:20px;align-items:center;text-align:left;pointer-events:auto;background:#191817ee}#marionette-game .ready .modal h2{font-size:18px;margin:0 0 3px;letter-spacing:1px}#marionette-game .ready .modal p{font-size:11px;margin:0;max-width:230px}#marionette-game .ready .overline{display:none}#marionette-game .result-stars{font-size:32px;letter-spacing:10px;color:var(--gold);margin-bottom:10px}#marionette-game .footer{padding:16px 23px;border-top:1px solid var(--line);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}#marionette-game .bindings{display:flex;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:11px}#marionette-game kbd{font:11px/1.6 sans-serif;padding:4px 6px;border:1px solid #48433a;border-bottom-width:2px;border-radius:4px;color:#e4d8c0;background:#242323;margin-right:4px}#marionette-game .pulls{display:flex;gap:8px}#marionette-game .pull{border:1px solid #66563e;border-radius:5px;background:#29251e;font-size:12px;padding:7px 10px;color:#d3bd90}#marionette-game .held{background:var(--gold)!important;color:#1a1711!important;box-shadow:0 0 15px #d6b06944}#marionette-game .touch{display:none;justify-content:space-between;padding:10px 22px 18px;gap:12px}#marionette-game .dpad{display:grid;grid-template-columns:repeat(3,38px);gap:5px}#marionette-game .dpad button,#marionette-game .jump{border:1px solid #66563e;border-radius:5px;background:#28251f;width:38px;height:38px;font-size:16px}#marionette-game .jump{width:auto;padding:0 18px;align-self:center;height:50px}#marionette-game .help-list{text-align:left;color:#c7bca8;font-size:12px;margin:18px 0;display:grid;gap:10px}#marionette-game .load-error{padding:150px 35px;text-align:center;color:#dcc396}
+@media(max-width:850px){#marionette-game .top{padding:18px;gap:18px}#marionette-game .body{grid-template-columns:160px minmax(0,1fr)}#marionette-game aside{padding:22px 10px}#marionette-game .act{gap:7px;padding:10px 7px}#marionette-game .stage-head{left:18px;right:18px}#marionette-game .metrics{gap:13px}#marionette-game .nav{gap:16px}#marionette-game .nav button{font-size:12px}#marionette-game .brand{font-size:20px;letter-spacing:3px}#marionette-game .brand small{font-size:9px}#marionette-game .goal{max-width:190px}#marionette-game .bindings{gap:10px}#marionette-game .footer{padding:14px 17px;gap:15px}#marionette-game .touch{display:flex}#marionette-game .stage{min-height:560px}}
+@media(max-width:580px){#marionette-game{border-radius:8px}#marionette-game .top{flex-wrap:wrap;padding:16px;gap:15px}#marionette-game .tools{margin-left:auto}#marionette-game .nav{order:3;width:100%;margin:0;justify-content:space-around;gap:15px}#marionette-game .body{display:block}#marionette-game aside{border-right:0;padding:10px;border-bottom:1px solid var(--line)}#marionette-game aside h2,#marionette-game aside>.eyebrow,#marionette-game .side-bottom{display:none}#marionette-game .acts{flex-direction:row;gap:4px}#marionette-game .act{display:block;text-align:center;padding:7px 2px;border-radius:5px}#marionette-game .act .roman{display:none}#marionette-game .act b{font-size:12px}#marionette-game .act small{font-size:8px;letter-spacing:0}#marionette-game .act .record{display:none}#marionette-game .stage{min-height:560px}#marionette-game .stage-head{top:18px;gap:8px}#marionette-game .stage-head h1{font-size:19px}#marionette-game .metrics{gap:12px}#marionette-game .metrics b{font-size:20px}#marionette-game .metrics .score-metric{display:none}#marionette-game .chapter{font-size:8px}#marionette-game .goal{font-size:10px;max-width:150px}#marionette-game .ready .modal{max-width:94%;gap:12px;padding:13px}#marionette-game .ready .modal h2{font-size:16px}#marionette-game .ready .modal p{font-size:10px}#marionette-game .primary{padding:10px 13px;min-width:104px;font-size:12px}#marionette-game .bottom-hud{left:18px;right:18px}#marionette-game .balance{width:142px}#marionette-game .footer{gap:12px}#marionette-game .bindings{display:none}#marionette-game .pulls{width:100%;justify-content:space-between}#marionette-game .pull{flex:1;padding:10px 5px}#marionette-game .touch{padding:0 18px 15px}}
+@media(prefers-reduced-motion:reduce){#marionette-game *{transition:none!important}}
+</style>
+<header class="top"><div class="brand">MARIONETTE<small>午夜木偶剧场</small></div><nav class="nav" aria-label="游戏模式"><button class="active" data-mode="story">舞台挑战</button><button data-mode="practice">自由排练</button><button id="mg-help">操作指南</button></nav><div class="tools"><button class="icon" id="mg-sound" title="开启音效" aria-label="开启音效">♪</button><button class="icon" id="mg-pause" title="暂停 / 继续" aria-label="暂停或继续">Ⅱ</button></div></header>
+<div class="body"><aside><div class="eyebrow">THE PLAYBILL</div><h2>今夜的演出</h2><div class="acts" id="mg-acts"></div><div class="side-bottom">累计获得星光<strong id="mg-total">0 / 15</strong><div>每一次登台，都可以重来。</div><button class="small-button" id="mg-retry">重新开始本幕</button></div></aside><main class="stage"><div class="canvas" id="mg-canvas"></div><div class="vignette"></div><div class="stage-head"><div><div class="chapter" id="mg-chapter">ACT I · THE FIRST STRING</div><h1 id="mg-title">初次登台</h1><div class="goal" id="mg-goal">青环稳住 2 秒 · 收集 2 星 · 抵达终点。</div></div><div class="metrics"><div class="score-metric"><span>演出得分</span><b id="mg-score">0000</b></div><div><span>星光</span><b class="starcount" id="mg-stars">0 / 3</b></div><div><span>舞台时间</span><b id="mg-time">00:00</b></div></div></div><div class="wind" id="mg-wind"></div><div class="banner" id="mg-banner" role="status" aria-live="polite"></div><div class="bottom-hud"><div class="balance"><div class="balance-label"><span>身体平衡</span><b id="mg-balance-label">稳稳当当</b></div><div class="balance-track"><div class="balance-safe"></div><div class="balance-needle" id="mg-needle"></div></div><div class="falls">跌落 <span id="mg-falls">0</span> 次 · <span id="mg-checkpoint">起点</span></div></div><div class="status"><strong id="mg-status">等待开场</strong><span>收集星光，走进终点光环</span></div></div><div class="overlay ready" id="mg-overlay"><div class="modal"><div class="overline">THE CURTAIN RISES</div><div><h2>准备好登台了吗？</h2><p>WASD 移动，Q / E 提线。<br>双线收紧，稳住你的舞步。</p></div><button class="primary" id="mg-start" disabled>布置舞台中…</button></div></div></main></div>
+<footer class="footer"><div class="bindings"><span><kbd>W A S D</kbd> 移动</span><span><kbd>SPACE</kbd> 跳跃</span><span><kbd>Q</kbd><kbd>E</kbd> 提线</span><span><kbd>P</kbd> 暂停</span></div><div class="pulls"><button class="pull" data-hold="KeyQ">Q · 左提线</button><button class="pull" data-hold="ShiftLeft">双线 · 稳住</button><button class="pull" data-hold="KeyE">E · 右提线</button></div></footer><div class="touch"><div class="dpad"><span></span><button data-hold="KeyW" aria-label="向前移动">↑</button><span></span><button data-hold="KeyA" aria-label="向左移动">←</button><button data-hold="KeyS" aria-label="向后移动">↓</button><button data-hold="KeyD" aria-label="向右移动">→</button></div><button class="jump" data-hold="Space">跳跃</button><button class="pull" id="mg-touch-reset">返回检查点</button></div>
+</div>
+<script>
+
+const P=(x,z,w,d,checkpoint=false)=>({x,z,w,d,checkpoint});
+const LEVELS=[
+ {name:"初次登台",en:"THE FIRST STRING",roman:"I",goal:"沿木台前进，收集星光，抵达金色终点。",tip:"试着轻点 Q / E。双线同时收紧可以稳住身体。",par:45,wind:0,platforms:[P(0,5,4,4),P(0,1.5,2.5,3.4),P(0,-1.7,4,3,true),P(0,-5,2.2,4),P(0,-8.7,4,3.8)],stars:[[0,2.0],[1,-1.7],[0,-5.7]],end:[0,-8.7]},
+ {name:"独木巡演",en:"A DELICATE BALANCE",roman:"II",goal:"走过窄桥，在休息台上恢复平衡。",tip:"转向会产生惯性。按住双线稳住，再踏上窄桥。",par:65,wind:0,platforms:[P(0,5,4,4),P(-1,1.8,1.05,3.4),P(-1,-1,4.8,2.6,true),P(1,-3.6,1.3,3.3),P(1,-6,3,2),P(0,-7.4,1.2,1.4),P(0,-9,4,3.2)],stars:[[-1,1.8],[1,-3.6],[1.8,-6]],end:[0,-9]},
+ {name:"跃过乐池",en:"LEAP OF FAITH",roman:"III",goal:"踏准边缘起跳，跨过三处舞台缺口。",tip:"空格起跳。可以在落地前提前按下下一次跳跃。",par:65,wind:0,platforms:[P(0,5,4,4),P(0,1.5,3,2.5),P(1.5,-2.2,2.5,2.5,true),P(-1,-5.8,2.5,2.5),P(0,-9.3,4,3)],stars:[[0,1.5],[1.5,-2.2],[-1,-5.8]],end:[0,-9.3]},
+ {name:"风中舞步",en:"DANCE WITH THE WIND",roman:"IV",goal:"抵住侧风，绕过摆锤的运动轨迹。",tip:"观察右上角风向。摆锤靠近时停一下或跳过去。",par:75,wind:3.8,pendulum:{z:-4.1,amp:2.8,speed:1.8},platforms:[P(0,5,4,4),P(0,1.6,1.85,3.2),P(0,-1.5,3.5,3,true),P(0,-4.8,1.5,3.8),P(0,-8.7,4,4)],stars:[[0,1.5],[-1,-1.5],[0,-5.4]],end:[0,-8.7]},
+ {name:"盛大谢幕",en:"THE FINAL BOW",roman:"V",goal:"穿越窄桥、跳台和机关，完成最后一幕。",tip:"最后的演出，把你学会的每一步都串起来。",par:90,wind:2.8,pendulum:{z:-6.6,amp:2.6,speed:2.2},platforms:[P(0,5,4,4),P(-1,1.8,1.1,3.4),P(-1,-1,2.5,2.3,true),P(1,-4,2.5,2.2),P(1,-6.3,1.1,2.7),P(0,-9,4,3.2)],stars:[[-1,1.7],[1,-4],[1,-6.4]],end:[0,-9]}
+];
+function newState(index=0,practice=false){
+return {level:index,practice,x:0,z:5,y:0,vx:0,vz:0,vy:0,roll:0,rollV:0,grounded:true,coyote:.12,jumpBuffer:0,time:0,falls:0,stars:[false,false,false],checkpoint:{x:0,z:5},checked:false,score:0,status:"ready",wind:0,hitCooldown:0,unstable:0,events:[],stableTime:0,poseTime:0,poseDone:false,goalNotice:0};
+}
+function groundAt(level,x,z){return level.platforms.find(p=>Math.abs(x-p.x)<=p.w/2+.08&&Math.abs(z-p.z)<=p.d/2+.08);}
+function resetBody(s){Object.assign(s,{x:s.checkpoint.x,z:s.checkpoint.z,y:0,vx:0,vz:0,vy:0,roll:0,rollV:0,grounded:true,coyote:.12,jumpBuffer:0,unstable:0,hitCooldown:1});}
+function gameStep(s,k,dt){
+ if(s.status!=="playing")return;
+ const l=LEVELS[s.level];s.time+=dt;s.goalNotice=Math.max(0,s.goalNotice-dt);s.hitCooldown=Math.max(0,s.hitCooldown-dt);s.jumpBuffer=Math.max(0,s.jumpBuffer-dt);
+ let ax=(k.KeyD||k.ArrowRight?1:0)-(k.KeyA||k.ArrowLeft?1:0);
+ let az=(k.KeyS||k.ArrowDown?1:0)-(k.KeyW||k.ArrowUp?1:0);
+ const inputLength=Math.hypot(ax,az);if(inputLength>1){ax/=inputLength;az/=inputLength;}
+ const q=!!k.KeyQ,e=!!k.KeyE,steady=(q&&e)||!!k.ShiftLeft||!!k.ShiftRight;
+ const oldVX=s.vx; const speed=steady&&s.grounded?2.0:4.15;const control=s.grounded?7:3.8;
+ s.wind=l.wind&&s.z<3&&s.z>-7?Math.sin(s.time*.85)*l.wind:0;
+ s.vx+=((ax*speed-s.vx)*control+s.wind*(steady?.25:1))*dt;s.vz+=(az*speed-s.vz)*control*dt;
+ s.x+=s.vx*dt;s.z+=s.vz*dt;
+ s.rollV+=(-s.roll*(steady?28:s.practice?10:5.5)-s.rollV*(steady?8:3.8)+(steady?0:(e?6:0)-(q?6:0))+(s.vx-oldVX)/dt*.27+s.wind*.52)*dt;
+ s.roll+=s.rollV*dt;
+ if(steady)s.stableTime+=dt;
+ const ground=groundAt(l,s.x,s.z); if(s.grounded&&!ground)s.grounded=false;
+ if(s.grounded){s.coyote=.12;s.y=0;}else s.coyote=Math.max(0,s.coyote-dt);
+ if(s.jumpBuffer>0&&s.coyote>0){s.vy=6.9;s.grounded=false;s.coyote=0;s.jumpBuffer=0;s.events.push("jump");}
+ if(!s.grounded){const py=s.y;s.vy-=17.5*dt;s.y+=s.vy*dt;if(ground&&py>=0&&s.y<=0&&s.vy<0){s.y=0;s.grounded=true;s.rollV+=s.vx*.2;s.vy=0;s.events.push("land");}}
+ if(ground?.checkpoint&&s.grounded&&!s.checked){s.checked=true;s.checkpoint={x:ground.x,z:ground.z};s.events.push("checkpoint");}
+ if(!s.poseDone&&ground?.checkpoint&&s.grounded&&Math.hypot(s.x-ground.x,s.z-ground.z)<.85&&Math.hypot(s.vx,s.vz)<.7&&Math.abs(s.roll)<.2){s.poseTime+=dt;if(s.poseTime>=2){s.poseDone=true;s.score+=250;s.events.push("pose");}}else if(!s.poseDone)s.poseTime=Math.max(0,s.poseTime-dt*.7);
+ if(l.pendulum&&s.hitCooldown===0){const px=Math.sin(s.time*l.pendulum.speed)*l.pendulum.amp;if(Math.hypot(s.x-px,s.z-l.pendulum.z)<.87&&s.y<1.2){s.vx+=(s.x<px?-1:1)*5;s.rollV+=(s.x<px?-1:1)*2.4;s.hitCooldown=1.2;s.events.push("hit");}}
+ l.stars.forEach((p,i)=>{if(!s.stars[i]&&Math.hypot(s.x-p[0],s.z-p[1])<.86&&s.y>-.25&&s.y<2){s.stars[i]=true;s.score+=150;s.events.push("star");}});
+ if(Math.abs(s.roll)>1.18&&s.grounded&&!s.practice)s.unstable+=dt;else s.unstable=Math.max(0,s.unstable-dt*2);
+ if(s.y<-3.5||s.unstable>.7){s.falls++;resetBody(s);s.events.push("fall");}
+ if(Math.hypot(s.x-l.end[0],s.z-l.end[1])<1.1&&s.grounded){if(!s.practice&&(!s.poseDone||s.stars.filter(Boolean).length<2)){if(s.goalNotice===0){s.events.push("locked");s.goalNotice=2.5;}return;}s.status="won";s.score+=500+Math.max(0,Math.round((l.par-s.time)*10))-s.falls*25;s.score=Math.max(500,s.score);s.events.push("win");}
+}
+
+(async()=>{
+const root=document.getElementById("marionette-game");if(!root)return;
+const $=id=>root.querySelector("#mg-"+id);
+const start=$("start");
+let T;
+try{T=await import("https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js");}
+catch(first){try{T=await import("https://unpkg.com/three@0.170.0/build/three.module.min.js");}catch(second){start.textContent="3D 引擎加载失败";$("overlay").querySelector("p").textContent="请检查网络连接，然后重新打开游戏。";return;}}
+try{
+const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const scene=new T.Scene();scene.background=new T.Color("#131217");scene.fog=new T.FogExp2("#171419",.028);
+const holder=$("canvas");const renderer=new T.WebGLRenderer({antialias:true,alpha:false});
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.75));renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.3;
+holder.appendChild(renderer.domElement);renderer.domElement.setAttribute("role","img");renderer.domElement.setAttribute("aria-label","提线木偶的三维剧场。使用键盘或下方按钮移动和跳跃。");
+const camera=new T.PerspectiveCamera(43,1,.1,100);camera.position.set(1,15,21);camera.lookAt(0,0,-1.5);
+function resize(){const w=holder.clientWidth,h=holder.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.position.set(.6,15,w/h<.9?28:21);camera.lookAt(0,0,-1.8);camera.updateProjectionMatrix();}
+new ResizeObserver(resize).observe(holder);resize();
+const mat=(color,metalness=0,roughness=.55)=>new T.MeshStandardMaterial({color,metalness,roughness});
+const wood=mat("#af7846"),darkWood=mat("#40261b"),edge=mat("#7d5432"),gold=mat("#d3aa55",.6,.3),black=mat("#171919"),red=mat("#781f28"),jointMat=mat("#6e4127");
+const velvet=mat("#542027",0,.96),bright=new T.MeshStandardMaterial({color:"#f7cf71",emissive:"#daa33e",emissiveIntensity:2,metalness:.3});
+function mesh(geo,material,parent=scene){const m=new T.Mesh(geo,material);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
+function box(w,h,d,x,y,z,material,parent=scene){const m=mesh(new T.BoxGeometry(w,h,d),material,parent);m.position.set(x,y,z);return m;}
+function sphere(r,x,y,z,material,parent=scene){const m=mesh(new T.SphereGeometry(r,16,12),material,parent);m.position.set(x,y,z);return m;}
+function cylinder(r1,r2,len,x,y,z,material,parent=scene){const m=mesh(new T.CylinderGeometry(r1,r2,len,20),material,parent);m.position.set(x,y,z);return m;}
+function rod(a,b,r,material,parent=scene){const m=mesh(new T.CylinderGeometry(r,r,1,12),material,parent);setRod(m,a,b);return m;}
+function setRod(m,a,b){m.position.copy(a).add(b).multiplyScalar(.5);m.scale.y=a.distanceTo(b);m.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),b.clone().sub(a).normalize());}
+scene.add(new T.HemisphereLight("#f4dcb2","#30213c",1.7));
+const key=new T.SpotLight("#ffda99",1700,50,.62,.7,1.1);key.position.set(-6,14,7);key.target.position.set(0,0,-1);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.bias=-.0002;scene.add(key,key.target);
+const rim=new T.SpotLight("#ffeac0",1700,50,.65,.9,1.4);rim.position.set(8,12,-9);rim.target.position.set(0,0,-1);scene.add(rim,rim.target);
+const fill=new T.PointLight("#bfa3c9",65,22,2);fill.position.set(-8,5,-5);scene.add(fill);
+box(27,.8,28,0,-2.7,-2,darkWood);box(27,.45,.28,0,-2.05,12,edge);
+for(let i=0;i<36;i++){box(.025,.01,27,-13+i*.75,-2.29,-2,black);}
+for(const side of [-1,1]){
+ box(.28,12,22,side*12,3.1,-2,black);
+ for(let i=0;i<9;i++){const c=cylinder(.59,.63,11,side*(10.4+i*.48),3.3,-7+i*.15,velvet);c.scale.z=.8;}
+ const col=cylinder(.26,.33,12,side*10.15,3.1,-8,gold);box(.6,.15,.65,side*10.15,9.1,-8,gold);
+ for(let z=-9;z<9;z+=2.0){sphere(.09,side*9.3,.1,z,bright);const light=new T.PointLight("#ffb855",2,4);light.position.set(side*9.3,.4,z);scene.add(light);}
+}
+box(21,.23,.4,0,8.9,-9,gold);
+for(let i=0;i<16;i++){const c=cylinder(.58,.69,3.8,-10+i*1.3,9,-10,velvet);c.rotation.z=Math.sin(i/15*Math.PI)*.14;}
+for(let i=0;i<9;i++){const bulb=sphere(.12,-8+i*2,7.5-Math.sin(i/8*Math.PI),-9,bright);}
+const back=box(22,11,.4,0,3,-13,mat("#211b21"));
+const arch=new T.Mesh(new T.TorusGeometry(5.5,.045,8,72,Math.PI),gold);arch.position.set(0,1,-12.7);scene.add(arch);
+const dustGeo=new T.BufferGeometry();const dustArr=new Float32Array(150*3);for(let i=0;i<150;i++){dustArr[i*3]=(Math.random()-.5)*23;dustArr[i*3+1]=Math.random()*10;dustArr[i*3+2]=(Math.random()-.5)*25;}
+dustGeo.setAttribute("position",new T.BufferAttribute(dustArr,3));const dust=new T.Points(dustGeo,new T.PointsMaterial({color:"#e6c993",size:.028,transparent:true,opacity:.6}));scene.add(dust);
+const pathGroup=new T.Group();scene.add(pathGroup);let starMeshes=[],portal=null,checkpointRing=null,pendulum=null;
+const starShape=new T.Shape();for(let i=0;i<10;i++){const a=i*Math.PI/5+Math.PI/2,r=i%2===0?.32:.145;const x=Math.cos(a)*r,y=Math.sin(a)*r;i?starShape.lineTo(x,y):starShape.moveTo(x,y);}starShape.closePath();
+const starGeometry=new T.ExtrudeGeometry(starShape,{depth:.09,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.035,bevelThickness:.025});
+const outlineMat=new T.MeshStandardMaterial({color:"#d8b367",metalness:.5,roughness:.4});
+function disposeGroup(group){while(group.children.length){const item=group.children[group.children.length-1];group.remove(item);item.traverse(o=>{if(o.geometry&&o.geometry!==starGeometry)o.geometry.dispose();});}}
+function createLevel(index){
+ disposeGroup(pathGroup);starMeshes=[];checkpointRing=null;pendulum=null;const l=LEVELS[index];
+ l.platforms.forEach((p,i)=>{
+  box(p.w,.38,p.d,p.x,-.19,p.z,edge,pathGroup);
+  box(p.w-.035,.055,p.d-.035,p.x,.015,p.z,wood,pathGroup);
+  const count=Math.ceil(p.w/.42);
+  for(let j=1;j<count;j++){const x=p.x-p.w/2+j*p.w/count;box(.016,.008,p.d-.06,x,.047,p.z,darkWood,pathGroup);}
+  for(const side of [-1,1])box(.035,.025,p.d,p.x+side*(p.w/2-.03),.05,p.z,gold,pathGroup);
+  for(const side of [-1,1])for(const sideZ of [-1,1]){sphere(.027,p.x+side*(p.w/2-.15),.052,p.z+sideZ*(p.d/2-.14),black,pathGroup);}
+  if(p.w>2.6){cylinder(.28,.45,2.2,p.x,-1.4,p.z,darkWood,pathGroup);}
+  if(p.checkpoint){checkpointRing=mesh(new T.TorusGeometry(.6,.035,8,48),mat("#91aaa0",.4),pathGroup);checkpointRing.rotation.x=-Math.PI/2;checkpointRing.position.set(p.x,.07,p.z);}
+ });
+ l.stars.forEach(([x,z])=>{const group=new T.Group();pathGroup.add(group);group.position.set(x,.95,z);const star=mesh(starGeometry,bright,group);const ring=mesh(new T.TorusGeometry(.5,.012,5,36),gold,group);ring.rotation.x=Math.PI/2;ring.position.y=-.35;starMeshes.push(group);});
+ portal=new T.Group();portal.position.set(l.end[0],.04,l.end[1]);pathGroup.add(portal);
+ const disc=mesh(new T.CircleGeometry(.9,48),new T.MeshBasicMaterial({color:"#e0b567",transparent:true,opacity:.22,side:T.DoubleSide}),portal);disc.rotation.x=-Math.PI/2;
+ const ring=mesh(new T.TorusGeometry(1,.06,12,64),bright,portal);ring.rotation.x=Math.PI/2;ring.position.y=.05;
+ const upright=mesh(new T.TorusGeometry(1.15,.038,10,64),bright,portal);upright.position.y=1.15;
+ const gateLight=new T.PointLight("#ffca70",22,5);gateLight.position.y=1;portal.add(gateLight);
+ if(l.pendulum){pendulum=new T.Group();pathGroup.add(pendulum);pendulum.position.z=l.pendulum.z;pendulum.userData.ball=sphere(.48,0,.9,0,gold,pendulum);pendulum.userData.line=rod(new T.Vector3(0,5.4,0),new T.Vector3(0,.9,0),.025,gold,pendulum);sphere(.1,0,5.4,0,black,pendulum);}
+}
+const puppet=new T.Group();scene.add(puppet);
+const bodyPivot=new T.Group();puppet.add(bodyPivot);bodyPivot.position.y=.96;
+const torso=cylinder(.29,.23,.66,0,.35,0,wood,bodyPivot);
+const vest=mesh(new T.CylinderGeometry(.302,.255,.45,18),red,bodyPivot);vest.position.set(0,.31,0);
+for(let i=0;i<3;i++)sphere(.033,0,.16+i*.12,.258,gold,bodyPivot);
+const neck=cylinder(.10,.10,.15,0,.8,0,jointMat,bodyPivot);
+const head=sphere(.31,0,1.1,0,wood,bodyPivot);head.scale.set(.92,1.04,.94);
+sphere(.042,-.105,1.13,.253,black,bodyPivot);sphere(.042,.105,1.13,.253,black,bodyPivot);
+const nose=cylinder(.045,.05,.11,0,1.03,.30,edge,bodyPivot);nose.rotation.x=Math.PI/2;
+const smile=mesh(new T.TorusGeometry(.086,.011,6,20,Math.PI),jointMat,bodyPivot);smile.position.set(0,.97,.265);smile.rotation.z=Math.PI;
+const hat=cylinder(.31,.32,.07,0,1.41,0,black,bodyPivot);cylinder(.195,.24,.31,0,1.59,0,black,bodyPivot);cylinder(.232,.24,.075,0,1.48,0,red,bodyPivot);
+const pelvis=sphere(.23,0,-.12,0,wood,bodyPivot);pelvis.scale.set(1.1,.8,.75);
+const arms=[],legs=[];
+function limb(side,type){const g=new T.Group();scene.add(g);const isArm=type==="arm";const j1=sphere(.105,0,0,0,jointMat,g),j2=sphere(.087,0,0,0,jointMat,g);
+const upper=rod(new T.Vector3(),new T.Vector3(0,.4,0),isArm?.077:.10,wood,g),lower=rod(new T.Vector3(),new T.Vector3(0,.4,0),isArm?.065:.082,wood,g);
+const tip=isArm?sphere(.105,0,0,0,wood,g):box(.21,.13,.39,0,0,0,black,g);
+return {side,type,g,j1,j2,upper,lower,tip,mid:new T.Vector3(),end:new T.Vector3(),velM:new T.Vector3(),velE:new T.Vector3(),init:false};}
+for(const side of [-1,1]){arms.push(limb(side,"arm"));legs.push(limb(side,"leg"));}
+const controller=new T.Group();scene.add(controller);box(1.55,.10,.14,0,0,0,darkWood,controller);box(.13,.10,.75,0,.05,0,darkWood,controller);
+for(const side of [-1,1])sphere(.06,side*.67,.05,0,gold,controller);
+const stringMaterial=new T.LineBasicMaterial({color:"#e9d8aa",transparent:true,opacity:.58});const strings=[];
+for(let i=0;i<4;i++){const geo=new T.BufferGeometry().setFromPoints([new T.Vector3(),new T.Vector3()]);const line=new T.Line(geo,stringMaterial);scene.add(line);strings.push(line);}
+const shadow=mesh(new T.CircleGeometry(.44,32),new T.MeshBasicMaterial({color:"#120e0b",opacity:.30,transparent:true,depthWrite:false}));shadow.rotation.x=-Math.PI/2;
+let state=newState(),keys={},records=[0,0,0,0,0],highs=[0,0,0,0,0],bannerUntil=0,mode="story",savedStatus="ready";
+try{const saved=JSON.parse(localStorage.getItem("marionette-v1")||"null");if(saved&&Array.isArray(saved.stars)){records=records.map((_,i)=>Math.max(0,Math.min(3,Number(saved.stars[i])||0)));highs=highs.map((_,i)=>Math.max(0,Number(saved.highs?.[i])||0));}}catch{}
+let soundOn=false,audio=null;
+function sound(type){if(!soundOn)return;try{audio=audio||new (window.AudioContext||window.webkitAudioContext)();audio.resume();const notes=type==="win"?[523,659,784,1047]:type==="star"?[784,1047]:type==="fall"?[220,130]:type==="jump"?[330]:type==="checkpoint"?[440,554,659]:[160];notes.forEach((f,i)=>{const o=audio.createOscillator(),g=audio.createGain();o.type="sine";o.frequency.value=f;o.connect(g);g.connect(audio.destination);const t=audio.currentTime+i*.10;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.06,t+.01);g.gain.exponentialRampToValueAtTime(.001,t+.28);o.start(t);o.stop(t+.3);});}catch{}}
+function banner(text){$("banner").textContent=text;$("banner").classList.add("show");bannerUntil=performance.now()+2300;}
+function buildActButtons(){const acts=$("acts");acts.replaceChildren();LEVELS.forEach((l,i)=>{const b=document.createElement("button");b.className="act"+(i===state.level?" active":"");b.setAttribute("aria-label","第"+(i+1)+"幕 "+l.name);b.innerHTML='<span class="roman">'+l.roman+'</span><span><b>'+l.name+'</b><small>ACT 0'+(i+1)+'</small></span><span class="record">'+(records[i]?"★".repeat(records[i]):"·")+'</span>';b.onclick=()=>selectLevel(i);acts.appendChild(b);});$("total").textContent=records.reduce((a,b)=>a+b,0)+" / 15";}
+function clearKeys(){keys={};root.querySelectorAll(".held").forEach(b=>b.classList.remove("held"));}
+function readyOverlay(){const o=$("overlay");o.className="overlay ready";o.innerHTML='<div class="modal"><div><h2>'+LEVELS[state.level].name+'</h2><p>'+LEVELS[state.level].tip+'</p></div><button class="primary" id="mg-begin">开始演出</button></div>';$("begin").onclick=begin;}
+function selectLevel(index){clearKeys();state=newState(index,mode==="practice");createLevel(index);buildActButtons();arms.concat(legs).forEach(l=>l.init=false);$("chapter").textContent="ACT "+LEVELS[index].roman+" · "+LEVELS[index].en;$("title").textContent=LEVELS[index].name;$("goal").textContent=state.practice?LEVELS[index].goal:"青环稳住 2 秒 · 收集 2 星 · 抵达终点";$("status").textContent="等待开场";readyOverlay();updateHUD();}
+function begin(){state.status="playing";$("overlay").className="overlay hidden";$("status").textContent=state.practice?"自由排练":"演出进行中";clearKeys();banner(state.practice?LEVELS[state.level].tip:"在青色圆环内站稳 2 秒，收集至少 2 颗星光。");sound("checkpoint");}
+function pause(){if(state.status==="playing"){state.status="paused";clearKeys();$("overlay").className="overlay";$("overlay").innerHTML='<div class="modal"><div class="overline">INTERMISSION</div><h2>幕间休息</h2><p>舞台在这里，等你回来。</p><button class="primary" id="mg-resume">继续演出</button><button class="secondary" id="mg-again">重新开始</button></div>';$("resume").onclick=()=>{state.status="playing";$("overlay").className="overlay hidden";};$("again").onclick=()=>selectLevel(state.level);}else if(state.status==="paused"){$("resume")?.click();}}
+function help(){if(state.status==="help")return;savedStatus=state.status;if(state.status==="playing")state.status="help";clearKeys();$("overlay").className="overlay";$("overlay").innerHTML='<div class="modal"><div class="overline">THE PUPPETEER’S GUIDE</div><h2>掌握你的提线</h2><div class="help-list"><div><kbd>W A S D</kbd> 或方向键：控制移动。</div><div><kbd>Q</kbd><kbd>E</kbd> 左右提线：轻点修正倾斜。</div><div><kbd>Q + E</kbd> 或 Shift：收紧双线，减速稳定。</div><div><kbd>空格</kbd> 起跳，跨越舞台缺口。</div><div><kbd>R</kbd> 返回检查点；P 暂停。</div><div>触碰青色圆环激活检查点。在环内停下、身体保持平衡 2 秒，完成定点表演（+250）。挑战模式需完成表演并收集至少 2 星，才能通过终点。每星 +150，通关 +500，另有时间奖励；每次跌落扣 25 分。</div><div>自由排练降低平衡难度，可直接通过终点。最高星数与纪录仅保存在本机。</div></div><button class="primary" id="mg-help-close">回到舞台</button></div>';$("help-close").onclick=()=>{if(savedStatus==="ready"||savedStatus==="won")selectLevel(state.level);else{state.status="playing";$("overlay").className="overlay hidden";if(savedStatus==="paused")pause();}};}
+function onWin(){
+ const n=state.stars.filter(Boolean).length;if(!state.practice){records[state.level]=Math.max(records[state.level],n);highs[state.level]=Math.max(highs[state.level],state.score);try{localStorage.setItem("marionette-v1",JSON.stringify({stars:records,highs}));}catch{}}
+ buildActButtons();$("status").textContent="演出完成";const last=state.level===4;
+ $("overlay").className="overlay";$("overlay").innerHTML='<div class="modal"><div class="overline">'+(last?"THE FINAL CURTAIN":"BRAVO, PUPPETEER")+'</div><h2>'+(last?"谢幕，木偶师":"漂亮的演出")+'</h2><div class="result-stars">'+"★".repeat(n)+"☆".repeat(3-n)+'</div><p>本幕得分 '+state.score+' · 用时 '+Math.floor(state.time)+' 秒<br>跌落 '+state.falls+' 次 · 本机最高 '+highs[state.level]+' 分</p><button class="primary" id="mg-next">'+(last?"再次巡演":"下一幕")+'</button><button class="secondary" id="mg-replay">再试一次</button></div>';
+ $("next").onclick=()=>selectLevel(last?0:state.level+1);$("replay").onclick=()=>selectLevel(state.level);
+ spawnConfetti();
+}
+function updateHUD(){$("score").textContent=String(state.score).padStart(4,"0");$("stars").textContent=state.stars.filter(Boolean).length+" / 3";const t=Math.floor(state.time);$("time").textContent=String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0");$("falls").textContent=state.falls;$("checkpoint").textContent=state.poseDone?"平衡表演完成":state.checked?"表演 "+Math.min(2,state.poseTime).toFixed(1)+" / 2 秒":"起点";$("needle").style.left=Math.max(2,Math.min(98,50+state.roll*36))+"%";const a=Math.abs(state.roll);$("balance-label").textContent=a>.9?"快拉线稳住":a>.48?"身体倾斜":"稳稳当当";$("balance-label").style.color=a>.9?"#eaa18c":"#d8b46b";$("wind").textContent=LEVELS[state.level].wind?"侧风 "+(state.wind<0?"←":"→")+" "+Math.round(Math.abs(state.wind)/LEVELS[state.level].wind*100)+"%":"";}
+$("help").onclick=help;$("pause").onclick=pause;$("sound").onclick=()=>{soundOn=!soundOn;$("sound").textContent=soundOn?"♫":"♪";$("sound").setAttribute("aria-label",soundOn?"关闭音效":"开启音效");$("sound").title=soundOn?"关闭音效":"开启音效";if(soundOn)sound("star");};
+$("retry").onclick=()=>selectLevel(state.level);
+$("touch-reset").onclick=()=>{if(state.status==="playing"){state.falls++;resetBody(state);clearKeys();banner("已回到检查点");}};
+root.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{mode=b.dataset.mode;root.querySelectorAll("[data-mode]").forEach(n=>n.classList.toggle("active",n===b));selectLevel(state.level);});
+root.querySelectorAll("[data-hold]").forEach(b=>{const code=b.dataset.hold;b.addEventListener("pointerdown",e=>{e.preventDefault();b.setPointerCapture(e.pointerId);keys[code]=true;b.classList.add("held");if(code==="Space")state.jumpBuffer=.14;});const release=()=>{keys[code]=false;b.classList.remove("held");};b.addEventListener("pointerup",release);b.addEventListener("pointercancel",release);b.addEventListener("lostpointercapture",release);});
+const accepted=["KeyW","KeyA","KeyS","KeyD","ArrowUp","ArrowLeft","ArrowDown","ArrowRight","KeyQ","KeyE","ShiftLeft","ShiftRight","Space","KeyP","Escape","KeyR"];
+window.addEventListener("keydown",e=>{if(!accepted.includes(e.code)||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(state.status==="playing")e.preventDefault();if(e.repeat)return;if(e.code==="KeyP"||e.code==="Escape"){pause();return;}if(e.code==="KeyR"&&state.status==="playing"){state.falls++;resetBody(state);clearKeys();banner("已回到检查点");return;}keys[e.code]=true;if(e.code==="Space")state.jumpBuffer=.14;root.querySelectorAll('[data-hold="'+e.code+'"]').forEach(b=>b.classList.add("held"));});
+window.addEventListener("keyup",e=>{keys[e.code]=false;root.querySelectorAll('[data-hold="'+e.code+'"]').forEach(b=>b.classList.remove("held"));});
+window.addEventListener("blur",()=>{clearKeys();if(state.status==="playing")pause();});document.addEventListener("visibilitychange",()=>{if(document.hidden){clearKeys();if(state.status==="playing")pause();}});
+const confetti=[];function spawnConfetti(){if(reduced)return;for(let i=0;i<65;i++){const m=mesh(new T.BoxGeometry(.05,.08,.015),i%3===0?red:gold);m.position.set(state.x+(Math.random()-.5)*2,2+Math.random()*3,state.z+(Math.random()-.5)*2);confetti.push({m,v:new T.Vector3((Math.random()-.5)*3,1+Math.random()*3,(Math.random()-.5)*3),life:4});}}
+function animatePuppet(dt,elapsed){
+ const s=state;puppet.position.set(s.x,s.y,s.z);bodyPivot.rotation.z=-s.roll;bodyPivot.rotation.x=s.vz*.045;
+ if(s.status==="ready"&&!reduced)bodyPivot.rotation.z=Math.sin(elapsed*1.4)*.035;
+ puppet.updateMatrixWorld(true);controller.position.set(s.x+.14*s.vx,s.y+3.7,s.z);controller.rotation.z=-s.roll*.3+(keys.KeyQ?.10:0)-(keys.KeyE?.10:0);
+ const gait=s.time*Math.max(2,Math.hypot(s.vx,s.vz)*3);const moving=Math.min(1,Math.hypot(s.vx,s.vz)/2);
+ for(const l of arms.concat(legs)){
+  const arm=l.type==="arm",side=l.side;
+  const anchor=bodyPivot.localToWorld(new T.Vector3(side*(arm?.33:.16),arm?.64:-.14,0));
+  const phase=gait+(side===1?Math.PI:0);const swing=Math.sin(phase)*moving;
+  const lift=(side<0&&keys.KeyQ)||(side>0&&keys.KeyE)||keys.ShiftLeft||keys.ShiftRight;
+  let midTarget,endTarget;
+  if(arm){midTarget=anchor.clone().add(new T.Vector3(side*.27,-.30+Number(lift)*.18,swing*.12));endTarget=anchor.clone().add(new T.Vector3(side*.47,-.55+Number(lift)*.43,.03-swing*.17));}
+  else{midTarget=anchor.clone().add(new T.Vector3(side*.03,-.34,swing*.17));endTarget=new T.Vector3(s.x+side*.18,s.y+.075+Math.max(0,swing)*.17,s.z+swing*.29+.06);if(!s.grounded){midTarget.y+=.08;endTarget.y+=.2;}}
+  if(!l.init||l.end.distanceTo(endTarget)>2){l.mid.copy(midTarget);l.end.copy(endTarget);l.velM.set(0,0,0);l.velE.set(0,0,0);l.init=true;}
+  const spring=arm?90:180;const damping=Math.exp(-(arm?10:18)*dt);
+  l.velM.addScaledVector(midTarget.clone().sub(l.mid),spring*dt).multiplyScalar(damping);l.mid.addScaledVector(l.velM,dt);
+  l.velE.addScaledVector(endTarget.clone().sub(l.end),spring*dt).multiplyScalar(damping);l.end.addScaledVector(l.velE,dt);
+  const maxLen=arm?.48:.48;for(let n=0;n<3;n++){const d=l.mid.clone().sub(anchor);if(d.length()>maxLen)l.mid.copy(anchor).add(d.setLength(maxLen));const d2=l.end.clone().sub(l.mid);if(d2.length()>maxLen)l.end.copy(l.mid).add(d2.setLength(maxLen));}
+  l.j1.position.copy(anchor);l.j2.position.copy(l.mid);l.tip.position.copy(l.end);setRod(l.upper,anchor,l.mid);setRod(l.lower,l.mid,l.end);
+ }
+ controller.updateMatrixWorld(true);
+ const anchors=[controller.localToWorld(new T.Vector3(-.67,0,0)),controller.localToWorld(new T.Vector3(.67,0,0)),controller.localToWorld(new T.Vector3(-.3,0,.1)),controller.localToWorld(new T.Vector3(.3,0,.1))];
+ const ends=[arms[0].end,arms[1].end,bodyPivot.localToWorld(new T.Vector3(-.3,.64,0)),bodyPivot.localToWorld(new T.Vector3(.3,.64,0))];
+ strings.forEach((line,i)=>{const a=line.geometry.attributes.position;a.setXYZ(0,anchors[i].x,anchors[i].y,anchors[i].z);a.setXYZ(1,ends[i].x,ends[i].y,ends[i].z);a.needsUpdate=true;line.geometry.computeBoundingSphere();});
+ shadow.position.set(s.x,.071,s.z);shadow.visible=!!groundAt(LEVELS[s.level],s.x,s.z);shadow.scale.setScalar(Math.max(.5,1-s.y*.13));shadow.material.opacity=.30*Math.max(.2,1-s.y*.2);
+}
+function visualStep(dt,t){
+ animatePuppet(dt,t);starMeshes.forEach((m,i)=>{m.visible=!state.stars[i];m.position.y=.95+(reduced?0:Math.sin(t*2+i)*.11);m.children[0].rotation.y=t*.7;});
+ if(checkpointRing){checkpointRing.material.color.set(state.poseDone?"#e6ce8d":state.checked?"#b7e6c8":"#91aaa0");checkpointRing.scale.setScalar(state.poseDone?1.15:1+state.poseTime*.1);}
+ if(pendulum){const d=LEVELS[state.level].pendulum;const x=Math.sin(state.time*d.speed)*d.amp;pendulum.userData.ball.position.set(x,.9,0);setRod(pendulum.userData.line,new T.Vector3(0,5.4,0),new T.Vector3(x,.9,0));}
+ if(!reduced){dust.rotation.y=t*.009;portal.children[2].rotation.z=Math.sin(t*.6)*.03;}
+ for(let i=confetti.length-1;i>=0;i--){const c=confetti[i];c.life-=dt;c.v.y-=3*dt;c.m.position.addScaledVector(c.v,dt);c.m.rotation.x+=dt*2;c.m.rotation.z+=dt;if(c.life<=0){scene.remove(c.m);c.m.geometry.dispose();confetti.splice(i,1);}}
+ if(performance.now()>bannerUntil)$("banner").classList.remove("show");
+}
+createLevel(0);buildActButtons();start.disabled=false;start.textContent="开始演出";start.onclick=begin;
+let last=performance.now(),acc=0,ui=0;const fixed=1/120;
+function frame(now){if(!root.isConnected){renderer.dispose();return;}requestAnimationFrame(frame);const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;ui+=dt;while(acc>=fixed){gameStep(state,keys,fixed);acc-=fixed;}
+ while(state.events.length){const e=state.events.shift();if(["star","fall","jump","checkpoint","win","pose"].includes(e))sound(e);if(e==="star")banner("星光 +150");if(e==="pose")banner("平衡表演完成 +250");if(e==="locked")banner(!state.poseDone?"先回到青环，站稳 2 秒完成表演":"收集至少 2 颗星光，终点才会开启");if(e==="checkpoint")banner("检查点已激活 · 在环内站稳 2 秒");if(e==="hit")banner("碰到摆锤了，双线稳住！");if(e==="fall"){clearKeys();arms.concat(legs).forEach(l=>l.init=false);banner("重新提起线，再来一次");}if(e==="win")onWin();}
+ if(ui>.07){updateHUD();ui=0;}visualStep(dt,now/1000);renderer.render(scene,camera);}
+requestAnimationFrame(frame);
+const api={getState:()=>({level:state.level+1,title:LEVELS[state.level].name,status:state.status,stars:state.stars.filter(Boolean).length,score:state.score,seconds:Math.floor(state.time),falls:state.falls,balancePerformanceComplete:state.poseDone,practice:state.practice}),selectLevel:(i)=>{if(!Number.isInteger(i)||i<1||i>5)throw new Error("幕数必须为 1 到 5 的整数");selectLevel(i-1);return api.getState();}};
+root.game=api;
+if(document.modelContext?.registerTool){try{await document.modelContext.registerTool({name:"read_marionette_game",description:"查看木偶游戏当前关卡、分数与状态",inputSchema:{type:"object",properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>api.getState()});await document.modelContext.registerTool({name:"select_marionette_act",description:"选择第 1 到 5 幕并重置该幕为待开始状态",inputSchema:{type:"object",properties:{act:{type:"integer",minimum:1,maximum:5}},required:["act"],additionalProperties:false},annotations:{readOnlyHint:false},execute:input=>api.selectLevel(input.act)});}catch{}}
+}catch(err){start.disabled=true;start.textContent="舞台暂时无法启动";$("overlay").className="overlay";$("overlay").querySelector("p").textContent="当前设备需要支持 WebGL 的浏览器。可以在桌面 Chrome 或 Edge 中重新打开。";console.error(err);}
+})();
+
+</script>

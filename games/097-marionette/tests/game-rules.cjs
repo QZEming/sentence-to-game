@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const path=require('path');
+vm.runInThisContext(fs.readFileSync(path.join(__dirname,'../dist/physics.mjs'),'utf8').replace(/export \{[^}]+\};/, ''));
+const dt=1/120,run=(s,n=1)=>{for(let i=0;i<n;i++)gameStep(s,{ShiftLeft:true},dt);};
+const stateAt=(x,z)=>Object.assign(newState(0),{status:'playing',x,z});
+const s=stateAt(1.8,-1.7);run(s);console.log('checkpoint outside ring:',{centerDistance:1.8,checked:s.checked,poseTime:s.poseTime,checkpoint:s.checkpoint});
+const locked=stateAt(0,-8.7);run(locked);assert.equal(locked.status,'playing');locked.stars=[true,true,false];run(locked);assert.equal(locked.status,'playing');locked.poseDone=true;run(locked);assert.equal(locked.status,'won');console.log('challenge gate passed: missing stars/pose both block; complete unlocks');
+const practice=Object.assign(stateAt(0,-8.7),{practice:true});run(practice);assert.equal(practice.status,'won');console.log('practice gate passed: no pose/stars needed');
+const star=stateAt(0,2);run(star,120);assert.equal(star.score,150);assert.deepEqual(star.stars,[true,false,false]);star.checkpoint={x:0,z:5};resetBody(star);Object.assign(star,{x:0,z:2});run(star,120);assert.equal(star.score,150);console.log('star persistence passed: no duplicate score after reset');
+const pose=stateAt(0,-1.7);run(pose,240);assert.equal(pose.poseDone,false);run(pose);assert.equal(pose.poseDone,true);assert.equal(pose.score,250);run(pose,240);assert.equal(pose.score,250);console.log('pose score passed: awards exactly once at ~2s');
+const lost=Object.assign(stateAt(0,-1.7),{stars:[true,true,false],score:550,poseDone:true,checked:true,checkpoint:{x:0,z:-1.7},y:-4,grounded:false});run(lost);assert.equal(lost.falls,1);assert.equal(lost.x,0);assert.equal(lost.z,-1.7);assert.equal(lost.score,550);assert.equal(lost.poseDone,true);Object.assign(lost,{x:0,z:-8.7,time:50});run(lost);assert.equal(lost.score,1025);console.log('fall persistence and final penalty passed: 550+500-25=1025');
+const paused=Object.assign(newState(),{status:'paused'});gameStep(paused,{KeyW:true},1);assert.equal(paused.time,0);assert.equal(paused.z,5);
+const distances=[false,true].map(steady=>{const s=Object.assign(newState(2),{status:'playing',y:.1,grounded:false,vy:6.9,vz:-4.15});for(let i=0;i<60;i++)gameStep(s,{KeyW:true,ShiftLeft:steady},dt);return 5-s.z;});assert.ok(Math.abs(distances[0]-distances[1])<1e-8);console.log('pause and airborne stability passed');

@@ -1,0 +1,127 @@
+{
+  "additional_environment_recovery": true,
+  "files": [
+    {
+      "bytes": 65,
+      "path": ".gitignore",
+      "sha256": "537e3f0337adb48a70a4bcd69d48682625a68fc6b673b7a4d06a7713be6d84a0"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "16e9a7aea11deeaf33d24c131d3ba205b2f887e37a89639358b322e8072f32e6"
+    },
+    {
+      "bytes": 656,
+      "path": "PROGRESS.txt",
+      "sha256": "9c17871d8e4616de1043cc57c1e269a001a25cbd3b644e5ed548ed74d541a9a2"
+    },
+    {
+      "bytes": 1629,
+      "path": "README.md",
+      "sha256": "d02b124c09e39755751fdc6780a6bde127f1d96aa3c5002fb0e7d04a1c7cce20"
+    },
+    {
+      "bytes": 766,
+      "path": "RECOVERY.md",
+      "sha256": "72e2c2bad4f2f5bdb6c3e419be18dc70338016b1a87e099290c2be30f603f6d1"
+    },
+    {
+      "bytes": 2212,
+      "path": "VALIDATION.md",
+      "sha256": "0af870e2ddcebb9b44638e90623c29494dec859af11ef401d7cbf28bd2608577"
+    },
+    {
+      "bytes": 1909473,
+      "path": "dist/creatures.png",
+      "sha256": "3418160f75319310747648c7555b7bddf5e3934245f3971c1c439014858f1eb2"
+    },
+    {
+      "bytes": 8590,
+      "path": "dist/data.js",
+      "sha256": "88585271e0cb35f22166d2487067677edf33665403fb3f5c8a82a316a7cd12a2"
+    },
+    {
+      "bytes": 26501,
+      "path": "dist/game.js",
+      "sha256": "270eb65ae093bcfb7508152e6e914babddc622014175ca1f45c61d2016b46414"
+    },
+    {
+      "bytes": 6826,
+      "path": "dist/index.html",
+      "sha256": "69a368b64e6998267b546948a26d95c9dbde9228033b10bb2b967c8460d4b610"
+    },
+    {
+      "bytes": 16265,
+      "path": "dist/scene.js",
+      "sha256": "6269ecdab909719bc63dc34972de25056328853098bbdae262107e27915526cf"
+    },
+    {
+      "bytes": 23740,
+      "path": "dist/style.css",
+      "sha256": "b243a7ab9515afcb33e094d4276f5ac50e5c1ea16e8734ff58b238fd9dfd839b"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 2196019,
+      "path": "original-delivery/mosslight-release.tar.gz",
+      "sha256": "a008e0b7e274341b0b082451ed18939c6b6036731f85ebed2a907775ea17e500"
+    },
+    {
+      "bytes": 323041,
+      "path": "output/playwright/deer.png",
+      "sha256": "bf536820fd3b16e1b9a9ca88aa364811272fb7ad5b8aa7b45a11cef0f6185872"
+    },
+    {
+      "bytes": 330419,
+      "path": "output/playwright/desktop.png",
+      "sha256": "07b0c646a91dd7e5c8fa84d44185f750a2a962c71cafebcfc40d151e0f07125f"
+    },
+    {
+      "bytes": 730296,
+      "path": "output/playwright/guide-clean.png",
+      "sha256": "d6c6c5f26b47b130299d99d882ed3f85346eedb509e907cbb32da0e3fd8cdade"
+    },
+    {
+      "bytes": 576058,
+      "path": "output/playwright/guide.png",
+      "sha256": "599cdceb43c4d078e272c4e72b1a83d2045749ca24470b0ddba211c05bf182c7"
+    },
+    {
+      "bytes": 165048,
+      "path": "output/playwright/mobile-clean.png",
+      "sha256": "09a7f4e6d8040d31022a304c8fa53fadee109b4f9ea74591507fcc1137839c54"
+    },
+    {
+      "bytes": 168015,
+      "path": "output/playwright/mobile.png",
+      "sha256": "fb26117764072af4e51a66f813e467205ba776dd4fe5b0efc3552003534b7c0e"
+    },
+    {
+      "bytes": 6198,
+      "path": "output/playwright/verify-flow.js",
+      "sha256": "6670dd73f8a11c1366eec37cdf24b3305ffe84c2a83a16c91342a92bb8d7d5b3"
+    },
+    {
+      "bytes": 2233,
+      "path": "output/playwright/verify-ui.js",
+      "sha256": "a7ca134ff8bee6306bd722d6281f57015f1d4d6c20f8b3478fab25c4d789b79a"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "initial_generation_turn_id": "01a10622-f615-75bd-925c-76c18e23d786",
+  "original_source_bytes_verified_unchanged": true,
+  "recovery_turn_id": "01a10661-5374-744a-896d-0d962dcf1388",
+  "schema_version": 1,
+  "single_turn": false,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-65/mosslight",
+  "source_tree_sha256": "1253b94d0cf38f0e459130081fd09f457b293acb0d0272c97295416716b4b1b5",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-096-original-20261004T103944Z",
+  "thread_id": "01a10622-d6fe-710a-97d0-6f51dc5f80a9",
+  "turn_id": "01a10661-5374-744a-896d-0d962dcf1388"
+}

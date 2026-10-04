@@ -1,0 +1,631 @@
+{
+  "schema_version": 1,
+  "game_number": "094",
+  "title": "森灵问答 · Wild Wisdom",
+  "archive_created_utc": "2026-10-04T10:41:31.394478+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-094-original-20261004T104131Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom",
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-63",
+  "fixed_original_file_count": 20,
+  "fixed_original_bytes": "13863178",
+  "source_file_count": 14,
+  "exclusive_screenshot_count": 4,
+  "original_deliverable_count": 2,
+  "source_recovery_document_count": 2,
+  "generated_records_excluded_from_original_count": 3,
+  "verification": {
+    "metadata_snapshots_interval_seconds": 1,
+    "metadata_stability_attempts": 1,
+    "metadata_stable": true,
+    "copy2_used": true,
+    "all_copy_hashes_match": true,
+    "final_source_evidence_deliverable_bytes_mtime_hashes_and_file_sets_unchanged": true,
+    "final_copy_metadata_hashes_and_file_set_verified": true
+  },
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "local_preview": {
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom",
+    "command": "python3 -m http.server 14173 --bind 127.0.0.1 --directory dist",
+    "url": "http://127.0.0.1:14173/",
+    "port": 14173,
+    "started_during_archive": false
+  },
+  "process_observation": {
+    "observed_at_utc": "2026-10-04T10:37:58.269960+00:00",
+    "provenance": "One independent read-only ps/lsof metadata observation with approved escalation; no load sampling",
+    "scope": "Exact source/parent cwd and target path/name argv matches plus descendants; observer ancestors excluded",
+    "ps_exit_code": 0,
+    "ps_stderr": "",
+    "cwd_lsof_exit_code": 0,
+    "cwd_lsof_stderr": "",
+    "roots": [],
+    "descendants": [],
+    "matched_processes": [],
+    "port_14173": {
+      "lsof_exit_code": 1,
+      "stdout": "",
+      "stderr": "",
+      "listening_observed": false,
+      "ownership_inferred_by_port_alone": false
+    },
+    "protected_original_processes": [
+      {
+        "pid": 1036,
+        "label": "original Chrome",
+        "observed": true,
+        "state": "S",
+        "cpu": "0.0",
+        "action": "retained; no signals or shutdown"
+      },
+      {
+        "pid": 2547,
+        "label": "original port 5173 service",
+        "observed": true,
+        "state": "S",
+        "cpu": "0.0",
+        "action": "retained; no signals or shutdown"
+      },
+      {
+        "pid": 2554,
+        "label": "original port 4827 service",
+        "observed": true,
+        "state": "S",
+        "cpu": "0.0",
+        "action": "retained; no signals or shutdown"
+      },
+      {
+        "pid": 2560,
+        "label": "original port 4173 service",
+        "observed": true,
+        "state": "S",
+        "cpu": "0.0",
+        "action": "retained; no signals or shutdown"
+      }
+    ],
+    "signals": [],
+    "limitations": "Point-in-time accessible metadata; shared-browser page ownership is not established by a generic unmatched process. No agent/CUA or other task was controlled. Copy does not depend on process shutdown."
+  },
+  "original_prompt_lookup": {
+    "status": "not_found_in_allowed_materials",
+    "exact_prompt": null,
+    "complete_parent_prompt": null,
+    "searched_source_relative_paths": [
+      "README.md",
+      "VALIDATION.md",
+      "dist/game.js",
+      "dist/icons.js",
+      "dist/scene.js",
+      "dist/index.html",
+      "dist/style.css",
+      "scripts/build-standalone.py"
+    ],
+    "method": "Read ordinary source and recovery documents; bounded text search for explicit original request/prompt phrases. No original request or task file is present in eligible shallow source/parent.",
+    "limits": "Forbidden sessions/runtime/Git directories and archive members were not read; game summaries were not reconstructed as a prompt."
+  },
+  "recovery_provenance": {
+    "single_turn": false,
+    "singleturn": false,
+    "initial_turn_id": null,
+    "initial_turn_status": "unknown; not provided by parent",
+    "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+    "generation_thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "known_phases": [
+      "initial_implementation",
+      "environment_recovery_continuation"
+    ],
+    "total_turn_count": null,
+    "original_documents": [
+      "source/README.md",
+      "source/VALIDATION.md"
+    ],
+    "source_document_statement": "Initial environment went offline after saving page/style/forest/runtime/question bank; three JavaScript writes were unconfirmed. Recovery continued the unwritten code while retaining existing assets, bank and Site identifier; no repeated generation or new Site.",
+    "recovery_deliverables": [
+      "source/scripts/build-standalone.py",
+      "original-packages/wild-wisdom-offline.html",
+      "original-packages/wild-wisdom-source.zip"
+    ],
+    "provenance": "Parent attests additional recovery turn; original README and VALIDATION preserved verbatim."
+  },
+  "validation_limits": {
+    "method": "Read-only source/recovery documentation and selected implementation code; four exclusive PNG metadata only. No script, build, test, browser, game or image viewing.",
+    "author_validation_claim": "VALIDATION documents 58 interaction checks, classic 8-question and practice 10-question runs, blitz timeout, abilities, pause, scoring, rewards, shopping, persistence, achievements and keyboard; these are author statements.",
+    "test_method_evidence": "No eligible driver/test/results or captured raw error log is present. Cannot independently distinguish VM/API/direct-state fixtures/hook/time acceleration from native browser keyboard/mouse/touch or verify controlled initial profiles/full-run methodology.",
+    "browser_render_claim": "Author documents actual Chromium/Three canvas rendering, kept separate from unknown methodology for the 58 checks.",
+    "offline_claim": "Author documents serving the original standalone HTML over local HTTP and blocking all extra requests, rendering embedded scene/background and completing an 8-question match. Direct file: navigation was prohibited by that automation and explicitly not claimed verified.",
+    "offline_method_limit": "No offline driver/results/network capture is preserved in allowed evidence, so full-run input method and network/error assertions are not independently reconstructed here.",
+    "mobile_claim": "1440px desktop and 390px mobile layout screenshots, no horizontal overflow; no known full viewport height, touch-method evidence or physical-device validation.",
+    "console_pageerror": "Author reports 0 console errors and warnings; no captured console/pageerror log or observation scope in eligible evidence.",
+    "audio": "Synthetic audio implementation exists; no captured playback/audibility validation.",
+    "webmcp": "Optional read/start/submit implementation present. VALIDATION explicitly states document.modelContext absent, so native registration/calls not verified.",
+    "generated_images": "Unattributed parent generated_images directory not entered or copied. Original forest asset in source retained.",
+    "source_bundled_runtime": "Publish Three module and license preserved; dependency/runtime/session/cache and links excluded.",
+    "source_unchanged": true,
+    "remote_actions": false
+  },
+  "publication_provenance": {
+    "source_record_status": "Original README and VALIDATION record private Sites uploads denied twice by automatic approval and no published private Site URL.",
+    "current_remote_state_independently_checked": false,
+    "github_publication": "Original formal GitHub publication is assigned to sole publisher separately; this archive agent performed no GitHub action.",
+    "actions_during_archive": "No upload, retry, destination change, new Site or remote write."
+  },
+  "files": [
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/.gitignore",
+      "archive_relative_path": "source/.gitignore",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "40",
+        "mtime_ns": "1791104156099007460",
+        "ctime_ns": "1791104156099007460",
+        "dev": "16777229",
+        "ino": "545943041",
+        "mode": "0o644"
+      },
+      "sha256": "1bbf504c78c32a553f7585a24532b411e28a78370ac2867f80df8f0d82d9dd0f",
+      "copy_metadata": {
+        "bytes": "40",
+        "mtime_ns": "1791104156099007460",
+        "ctime_ns": "1791110491397366520",
+        "dev": "16777229",
+        "ino": "545983336",
+        "mode": "0o644"
+      },
+      "copy_sha256": "1bbf504c78c32a553f7585a24532b411e28a78370ac2867f80df8f0d82d9dd0f"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/.openai/hosting.json",
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "106",
+        "mtime_ns": "1791104187778447875",
+        "ctime_ns": "1791104187778652001",
+        "dev": "16777229",
+        "ino": "545943120",
+        "mode": "0o644"
+      },
+      "sha256": "29d2d5e98f2e18a8dddf02b0dd310c8618843fbb50da3a70855f39e14268c5e9",
+      "copy_metadata": {
+        "bytes": "106",
+        "mtime_ns": "1791104187778447875",
+        "ctime_ns": "1791110491402170613",
+        "dev": "16777229",
+        "ino": "545983338",
+        "mode": "0o644"
+      },
+      "copy_sha256": "29d2d5e98f2e18a8dddf02b0dd310c8618843fbb50da3a70855f39e14268c5e9"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/README.md",
+      "archive_relative_path": "source/README.md",
+      "category": "source_recovery_document",
+      "metadata": {
+        "bytes": "2481",
+        "mtime_ns": "1791109753347298651",
+        "ctime_ns": "1791109753347298651",
+        "dev": "16777229",
+        "ino": "545971287",
+        "mode": "0o644"
+      },
+      "sha256": "05a401a3ffeff488600639c5a565427ad5136e75a9040aa1a0190fb230653eec",
+      "copy_metadata": {
+        "bytes": "2481",
+        "mtime_ns": "1791109753347298651",
+        "ctime_ns": "1791110491406480208",
+        "dev": "16777229",
+        "ino": "545983339",
+        "mode": "0o644"
+      },
+      "copy_sha256": "05a401a3ffeff488600639c5a565427ad5136e75a9040aa1a0190fb230653eec"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/VALIDATION.md",
+      "archive_relative_path": "source/VALIDATION.md",
+      "category": "source_recovery_document",
+      "metadata": {
+        "bytes": "2402",
+        "mtime_ns": "1791109753349573302",
+        "ctime_ns": "1791109753349573302",
+        "dev": "16777229",
+        "ino": "545971289",
+        "mode": "0o644"
+      },
+      "sha256": "9a9e80dabdcfc6102dd2fa726eb6b1e932880e248722fe8e77e25832f6f1513c",
+      "copy_metadata": {
+        "bytes": "2402",
+        "mtime_ns": "1791109753349573302",
+        "ctime_ns": "1791110491408297029",
+        "dev": "16777229",
+        "ino": "545983340",
+        "mode": "0o644"
+      },
+      "copy_sha256": "9a9e80dabdcfc6102dd2fa726eb6b1e932880e248722fe8e77e25832f6f1513c"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/game.js",
+      "archive_relative_path": "source/dist/game.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "29721",
+        "mtime_ns": "1791109393032411612",
+        "ctime_ns": "1791109393032411612",
+        "dev": "16777229",
+        "ino": "545960528",
+        "mode": "0o644"
+      },
+      "sha256": "b43ef3e216913c0034116bf1f2b240c9df388f66c62f8a53cb2fc852d433d0d7",
+      "copy_metadata": {
+        "bytes": "29721",
+        "mtime_ns": "1791109393032411612",
+        "ctime_ns": "1791110491411099760",
+        "dev": "16777229",
+        "ino": "545983342",
+        "mode": "0o644"
+      },
+      "copy_sha256": "b43ef3e216913c0034116bf1f2b240c9df388f66c62f8a53cb2fc852d433d0d7"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/icons.js",
+      "archive_relative_path": "source/dist/icons.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "2281",
+        "mtime_ns": "1791108490303181067",
+        "ctime_ns": "1791108490303181067",
+        "dev": "16777229",
+        "ino": "545957257",
+        "mode": "0o644"
+      },
+      "sha256": "e05addaa0ef2b78f0fc3c1c443f0dd7e4fb677caac2cdd40633b2bd8107d961d",
+      "copy_metadata": {
+        "bytes": "2281",
+        "mtime_ns": "1791108490303181067",
+        "ctime_ns": "1791110491419850409",
+        "dev": "16777229",
+        "ino": "545983343",
+        "mode": "0o644"
+      },
+      "copy_sha256": "e05addaa0ef2b78f0fc3c1c443f0dd7e4fb677caac2cdd40633b2bd8107d961d"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/index.html",
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "6646",
+        "mtime_ns": "1791108983704762865",
+        "ctime_ns": "1791108983704762865",
+        "dev": "16777229",
+        "ino": "545946225",
+        "mode": "0o644"
+      },
+      "sha256": "79139cd756fb46b9b8d729b8034be69bfb8dd63a109cbd88c6d4df3539999177",
+      "copy_metadata": {
+        "bytes": "6646",
+        "mtime_ns": "1791108983704762865",
+        "ctime_ns": "1791110491423657216",
+        "dev": "16777229",
+        "ino": "545983344",
+        "mode": "0o644"
+      },
+      "copy_sha256": "79139cd756fb46b9b8d729b8034be69bfb8dd63a109cbd88c6d4df3539999177"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/questions.json",
+      "archive_relative_path": "source/dist/questions.json",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "13989",
+        "mtime_ns": "1791108425484411654",
+        "ctime_ns": "1791108425484579946",
+        "dev": "16777229",
+        "ino": "545954882",
+        "mode": "0o644"
+      },
+      "sha256": "62c09fc7962f0e599f2af11a8ee51026c584f61c4d878d46ffaea0137db00b47",
+      "copy_metadata": {
+        "bytes": "13989",
+        "mtime_ns": "1791108425484411654",
+        "ctime_ns": "1791110491427059943",
+        "dev": "16777229",
+        "ino": "545983345",
+        "mode": "0o644"
+      },
+      "copy_sha256": "62c09fc7962f0e599f2af11a8ee51026c584f61c4d878d46ffaea0137db00b47"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/scene.js",
+      "archive_relative_path": "source/dist/scene.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "13641",
+        "mtime_ns": "1791109132154480716",
+        "ctime_ns": "1791109132154480716",
+        "dev": "16777229",
+        "ino": "545960191",
+        "mode": "0o644"
+      },
+      "sha256": "0948fae54e8f5b55ff5b31458e80beaaa054bdf451a8ba584b89e641f96514ae",
+      "copy_metadata": {
+        "bytes": "13641",
+        "mtime_ns": "1791109132154480716",
+        "ctime_ns": "1791110491428906305",
+        "dev": "16777229",
+        "ino": "545983346",
+        "mode": "0o644"
+      },
+      "copy_sha256": "0948fae54e8f5b55ff5b31458e80beaaa054bdf451a8ba584b89e641f96514ae"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/style.css",
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "32353",
+        "mtime_ns": "1791109132155456576",
+        "ctime_ns": "1791109132155456576",
+        "dev": "16777229",
+        "ino": "545946227",
+        "mode": "0o644"
+      },
+      "sha256": "a8816b4984e26184954487d66a41b96f8a9ba93da808a98d6fe3b3f95ccfea37",
+      "copy_metadata": {
+        "bytes": "32353",
+        "mtime_ns": "1791109132155456576",
+        "ctime_ns": "1791110491438379366",
+        "dev": "16777229",
+        "ino": "545983347",
+        "mode": "0o644"
+      },
+      "copy_sha256": "a8816b4984e26184954487d66a41b96f8a9ba93da808a98d6fe3b3f95ccfea37"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/assets/forest.png",
+      "archive_relative_path": "source/dist/assets/forest.png",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "1918780",
+        "mtime_ns": "1791104229523550820",
+        "ctime_ns": "1791104229523756737",
+        "dev": "16777229",
+        "ino": "545943393",
+        "mode": "0o644"
+      },
+      "sha256": "90930ba81ee7f28801ed2c244a67d7baf8c71ba255db782656cc40be3cf719a3",
+      "copy_metadata": {
+        "bytes": "1918780",
+        "mtime_ns": "1791104229523550820",
+        "ctime_ns": "1791110491445572275",
+        "dev": "16777229",
+        "ino": "545983349",
+        "mode": "0o644"
+      },
+      "copy_sha256": "90930ba81ee7f28801ed2c244a67d7baf8c71ba255db782656cc40be3cf719a3"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/vendor/THREE-LICENSE.txt",
+      "archive_relative_path": "source/dist/vendor/THREE-LICENSE.txt",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "1081",
+        "mtime_ns": "1791109303076903924",
+        "ctime_ns": "1791109303076903924",
+        "dev": "16777229",
+        "ino": "545969245",
+        "mode": "0o644"
+      },
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "copy_metadata": {
+        "bytes": "1081",
+        "mtime_ns": "1791109303076903924",
+        "ctime_ns": "1791110491451194487",
+        "dev": "16777229",
+        "ino": "545983351",
+        "mode": "0o644"
+      },
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/dist/vendor/three.module.js",
+      "archive_relative_path": "source/dist/vendor/three.module.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "1314681",
+        "mtime_ns": "1791104191794933225",
+        "ctime_ns": "1791104191794933225",
+        "dev": "16777229",
+        "ino": "545943128",
+        "mode": "0o644"
+      },
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "copy_metadata": {
+        "bytes": "1314681",
+        "mtime_ns": "1791104191794933225",
+        "ctime_ns": "1791110491454079467",
+        "dev": "16777229",
+        "ino": "545983352",
+        "mode": "0o644"
+      },
+      "copy_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom/scripts/build-standalone.py",
+      "archive_relative_path": "source/scripts/build-standalone.py",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "2261",
+        "mtime_ns": "1791109596699050869",
+        "ctime_ns": "1791109596699050869",
+        "dev": "16777229",
+        "ino": "545976469",
+        "mode": "0o644"
+      },
+      "sha256": "09b0f62d60b27ed498e8122ee8992bc97b488a1f35c60af250caa69aab9b5c33",
+      "copy_metadata": {
+        "bytes": "2261",
+        "mtime_ns": "1791109596699050869",
+        "ctime_ns": "1791110491609482533",
+        "dev": "16777229",
+        "ino": "545983354",
+        "mode": "0o644"
+      },
+      "copy_sha256": "09b0f62d60b27ed498e8122ee8992bc97b488a1f35c60af250caa69aab9b5c33"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/output/playwright/desktop-answer.png",
+      "archive_relative_path": "evidence/output/playwright/desktop-answer.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "779427",
+        "mtime_ns": "1791109200615093166",
+        "ctime_ns": "1791109200615093166",
+        "dev": "16777229",
+        "ino": "545967460",
+        "mode": "0o644"
+      },
+      "sha256": "c5986b0912fd7981ea07acd42fce6eb4b83db99b630651804d825d96d4081a0b",
+      "copy_metadata": {
+        "bytes": "779427",
+        "mtime_ns": "1791109200615093166",
+        "ctime_ns": "1791110491613158425",
+        "dev": "16777229",
+        "ino": "545983358",
+        "mode": "0o644"
+      },
+      "copy_sha256": "c5986b0912fd7981ea07acd42fce6eb4b83db99b630651804d825d96d4081a0b"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/output/playwright/desktop-lobby.png",
+      "archive_relative_path": "evidence/output/playwright/desktop-lobby.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "765061",
+        "mtime_ns": "1791109065487277406",
+        "ctime_ns": "1791109065487277406",
+        "dev": "16777229",
+        "ino": "545963920",
+        "mode": "0o644"
+      },
+      "sha256": "314a7e94f70f0fef0e22a3c082766a7bdcd69b496fa262eebce5d56bd6c00cc1",
+      "copy_metadata": {
+        "bytes": "765061",
+        "mtime_ns": "1791109065487277406",
+        "ctime_ns": "1791110491618063475",
+        "dev": "16777229",
+        "ino": "545983359",
+        "mode": "0o644"
+      },
+      "copy_sha256": "314a7e94f70f0fef0e22a3c082766a7bdcd69b496fa262eebce5d56bd6c00cc1"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/output/playwright/mobile-lobby.png",
+      "archive_relative_path": "evidence/output/playwright/mobile-lobby.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "284708",
+        "mtime_ns": "1791109273933448071",
+        "ctime_ns": "1791109273933448071",
+        "dev": "16777229",
+        "ino": "545969181",
+        "mode": "0o644"
+      },
+      "sha256": "495aa9236a6308a888c4aed4091111c1de8020461f836d997c5f58d27b559c37",
+      "copy_metadata": {
+        "bytes": "284708",
+        "mtime_ns": "1791109273933448071",
+        "ctime_ns": "1791110491621968406",
+        "dev": "16777229",
+        "ino": "545983360",
+        "mode": "0o644"
+      },
+      "copy_sha256": "495aa9236a6308a888c4aed4091111c1de8020461f836d997c5f58d27b559c37"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/output/playwright/mobile-question.png",
+      "archive_relative_path": "evidence/output/playwright/mobile-question.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "280104",
+        "mtime_ns": "1791109274481168880",
+        "ctime_ns": "1791109274481168880",
+        "dev": "16777229",
+        "ino": "545969182",
+        "mode": "0o644"
+      },
+      "sha256": "bbe5cee497e02d374ad49da8d4e8c32c39aa86355ea75a2ec3c03ee83635bdde",
+      "copy_metadata": {
+        "bytes": "280104",
+        "mtime_ns": "1791109274481168880",
+        "ctime_ns": "1791110491625450091",
+        "dev": "16777229",
+        "ino": "545983361",
+        "mode": "0o644"
+      },
+      "copy_sha256": "bbe5cee497e02d374ad49da8d4e8c32c39aa86355ea75a2ec3c03ee83635bdde"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom-offline.html",
+      "archive_relative_path": "original-packages/wild-wisdom-offline.html",
+      "category": "original_offline_html",
+      "metadata": {
+        "bytes": "3972790",
+        "mtime_ns": "1791109596776538932",
+        "ctime_ns": "1791109596776538932",
+        "dev": "16777229",
+        "ino": "545976471",
+        "mode": "0o644"
+      },
+      "sha256": "c48c554f20d1c8e324661642067904b11723e3bde2d766a572348a87f9550d7c",
+      "copy_metadata": {
+        "bytes": "3972790",
+        "mtime_ns": "1791109596776538932",
+        "ctime_ns": "1791110491631301217",
+        "dev": "16777229",
+        "ino": "545983364",
+        "mode": "0o644"
+      },
+      "copy_sha256": "c48c554f20d1c8e324661642067904b11723e3bde2d766a572348a87f9550d7c"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom-source.zip",
+      "archive_relative_path": "original-packages/wild-wisdom-source.zip",
+      "category": "original_source_package",
+      "metadata": {
+        "bytes": "4440625",
+        "mtime_ns": "1791109753567476816",
+        "ctime_ns": "1791109753567476816",
+        "dev": "16777229",
+        "ino": "545971536",
+        "mode": "0o644"
+      },
+      "sha256": "2d09611d25a5b3d58746dd2c62861382b209c1037d0408af91bf49c2b75b4ea6",
+      "copy_metadata": {
+        "bytes": "4440625",
+        "mtime_ns": "1791109753567476816",
+        "ctime_ns": "1791110491824849314",
+        "dev": "16777229",
+        "ino": "545983366",
+        "mode": "0o644"
+      },
+      "copy_sha256": "2d09611d25a5b3d58746dd2c62861382b209c1037d0408af91bf49c2b75b4ea6"
+    }
+  ]
+}

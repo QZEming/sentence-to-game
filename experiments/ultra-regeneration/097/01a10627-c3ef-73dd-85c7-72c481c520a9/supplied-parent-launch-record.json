@@ -1,0 +1,65 @@
+{
+  "record_type": "parent-launch-and-recovery-attestation",
+  "archive_id": "097",
+  "created_at_utc": "2026-10-04T10:44:09.400313+00:00",
+  "authorization_parent_thread_uuid": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_uuid": "01a10627-c3ef-73dd-85c7-72c481c520a9",
+  "initial_generation_turn_uuid": null,
+  "initialturn_status": "unknown; parent did not provide and ordinary task files did not record",
+  "recovery_turn_uuid": "01a10661-7dff-75b9-9090-4e2dd6011243",
+  "recovery_turn_source": "parent attestation",
+  "parent_attested_raw_launch_config": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "ultra",
+    "fork": null
+  },
+  "fork_status": "unknown; not provided",
+  "parent_attested_raw_config_phrase": "gpt-6-astra/ultra",
+  "singleturn": false,
+  "singleturn_source": "parent attestation: execution environment recovery added a turn",
+  "original_prompt": null,
+  "original_prompt_status": "unknown; full original user request neither provided by parent nor explicitly recorded in inspected ordinary README/QA/prototype/task files",
+  "artifact_description_verbatim": "浏览器 3D 提线木偶游戏，使用本地分发的 Three.js 0.170.0。五幕依次引入行走、窄桥、跳台、侧风与摆锤；挑战模式需完成定点平衡表演并收集至少两颗星，才能从金色光环谢幕。自由排练允许直接探索。",
+  "artifact_description_source": "source/marionette/README.md:3; artifact description, not user original prompt",
+  "recovery_originals": [
+    "source/marionette/README.md",
+    "source/marionette/QA_RESULTS.md",
+    "source/marionette/prototype-source.html",
+    "source/marionette/output/final-page-fragment.html"
+  ],
+  "page_reference_and_parent_read_observation": {
+    "page_id": "page_846419a2b8b48191abb45ba2aa0ffb7f",
+    "canonical_url": "https://chatgpt.com/space/page_846419a2b8b48191abb45ba2aa0ffb7f",
+    "title": "午夜木偶剧场 3D 提线游戏",
+    "created_at": "2026-10-04T09:09:26.847038Z",
+    "updated_at": "2026-10-04T10:30:47.788107Z",
+    "metadata_current_sequence": 6,
+    "metadata_projection_through_sequence": 6,
+    "content_through_sequence": null,
+    "content_through_sequence_status": "not provided",
+    "source": "Parent reports supported read-only chatgpt_space_read_page of all three markdown blocks; not delegate independent read or execution.",
+    "current_author_claim_not_independent_QA_or_publication_verification": true,
+    "blocks": [
+      {
+        "index": 1,
+        "description": "site link and controls",
+        "sha256": "213a428c6102d81bcf8e3c68ffe7c70bc449b0e25e06cf11a712f981d0cf5939"
+      },
+      {
+        "index": 2,
+        "description": "visualize reference; file not read/executed",
+        "sha256": "feb29aca04b97ebc75f3e110de92e371ded961f344dc2797bc0eac6379a0f638",
+        "reference": "fde1_bGliZmlsZV82ZUVlai1TV21PSUVRZTN0a3poUFpn_FileDrive_2b43ad1690e081918386021ded4ec808"
+      },
+      {
+        "index": 3,
+        "description": "recovery and verification author declaration",
+        "sha256": "747db1e6644a0d42157a646094cd4b5d5dc7b2b73e8ca1eb90b14dec60a5186b",
+        "verbatim_statement": "2026-10-04，本轮为执行环境离线后的恢复轮次。保留并恢复原有原型，没有从头重生成；正式游戏已发布到原私有站点。五幕均在 Chrome 中通过真实键盘操作完成三星、零跌落通关，暂停、帮助页结果保留、混合输入和本机纪录通过验证。390 × 844 下的移动、双指稳定、跳跃与取消触摸通过 Chrome 触控模拟；320 像素宽度无横向溢出。尚未覆盖实体手机及其他浏览器，可选 WebMCP 在当前浏览器不可用，不影响正常游玩。"
+      }
+    ],
+    "page_edited": false,
+    "extra_original_export": false
+  },
+  "provenance_limit": "Parent model/UUID/recovery attestation is not independent historical launch or model-execution verification; local docs and current Page are author statements."
+}

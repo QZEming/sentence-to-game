@@ -1,0 +1,117 @@
+{
+  "additional_environment_recovery": true,
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "1bbf504c78c32a553f7585a24532b411e28a78370ac2867f80df8f0d82d9dd0f"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "29d2d5e98f2e18a8dddf02b0dd310c8618843fbb50da3a70855f39e14268c5e9"
+    },
+    {
+      "bytes": 2481,
+      "path": "README.md",
+      "sha256": "05a401a3ffeff488600639c5a565427ad5136e75a9040aa1a0190fb230653eec"
+    },
+    {
+      "bytes": 2402,
+      "path": "VALIDATION.md",
+      "sha256": "9a9e80dabdcfc6102dd2fa726eb6b1e932880e248722fe8e77e25832f6f1513c"
+    },
+    {
+      "bytes": 1918780,
+      "path": "dist/assets/forest.png",
+      "sha256": "90930ba81ee7f28801ed2c244a67d7baf8c71ba255db782656cc40be3cf719a3"
+    },
+    {
+      "bytes": 29721,
+      "path": "dist/game.js",
+      "sha256": "b43ef3e216913c0034116bf1f2b240c9df388f66c62f8a53cb2fc852d433d0d7"
+    },
+    {
+      "bytes": 2281,
+      "path": "dist/icons.js",
+      "sha256": "e05addaa0ef2b78f0fc3c1c443f0dd7e4fb677caac2cdd40633b2bd8107d961d"
+    },
+    {
+      "bytes": 6646,
+      "path": "dist/index.html",
+      "sha256": "79139cd756fb46b9b8d729b8034be69bfb8dd63a109cbd88c6d4df3539999177"
+    },
+    {
+      "bytes": 13989,
+      "path": "dist/questions.json",
+      "sha256": "62c09fc7962f0e599f2af11a8ee51026c584f61c4d878d46ffaea0137db00b47"
+    },
+    {
+      "bytes": 13641,
+      "path": "dist/scene.js",
+      "sha256": "0948fae54e8f5b55ff5b31458e80beaaa054bdf451a8ba584b89e641f96514ae"
+    },
+    {
+      "bytes": 32353,
+      "path": "dist/style.css",
+      "sha256": "a8816b4984e26184954487d66a41b96f8a9ba93da808a98d6fe3b3f95ccfea37"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 779427,
+      "path": "original-delivery/desktop-answer.png",
+      "sha256": "c5986b0912fd7981ea07acd42fce6eb4b83db99b630651804d825d96d4081a0b"
+    },
+    {
+      "bytes": 765061,
+      "path": "original-delivery/desktop-lobby.png",
+      "sha256": "314a7e94f70f0fef0e22a3c082766a7bdcd69b496fa262eebce5d56bd6c00cc1"
+    },
+    {
+      "bytes": 284708,
+      "path": "original-delivery/mobile-lobby.png",
+      "sha256": "495aa9236a6308a888c4aed4091111c1de8020461f836d997c5f58d27b559c37"
+    },
+    {
+      "bytes": 280104,
+      "path": "original-delivery/mobile-question.png",
+      "sha256": "bbe5cee497e02d374ad49da8d4e8c32c39aa86355ea75a2ec3c03ee83635bdde"
+    },
+    {
+      "bytes": 3972790,
+      "path": "original-delivery/wild-wisdom-offline.html",
+      "sha256": "c48c554f20d1c8e324661642067904b11723e3bde2d766a572348a87f9550d7c"
+    },
+    {
+      "bytes": 4440625,
+      "path": "original-delivery/wild-wisdom-source.zip",
+      "sha256": "2d09611d25a5b3d58746dd2c62861382b209c1037d0408af91bf49c2b75b4ea6"
+    },
+    {
+      "bytes": 2261,
+      "path": "scripts/build-standalone.py",
+      "sha256": "09b0f62d60b27ed498e8122ee8992bc97b488a1f35c60af250caa69aab9b5c33"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "initial_generation_turn_id": "01a1061f-2766-7798-96a9-b54882b08a16",
+  "original_source_bytes_verified_unchanged": true,
+  "recovery_turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3",
+  "schema_version": 1,
+  "single_turn": false,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-63/wild-wisdom",
+  "source_tree_sha256": "70b5046317bd9a6d78bff3e0bdabf157f2d9693aa31e68dd2dfe5798e9397476",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-094-original-20261004T104131Z",
+  "thread_id": "01a1061f-0735-712d-966a-85beee1460be",
+  "turn_id": "01a10660-fab5-706c-a879-452fc4bdb3f3"
+}
