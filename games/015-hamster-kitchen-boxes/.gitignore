@@ -1,4 +1,3 @@
 node_modules/
-dist/
-.playwright-cli/
+.sites-runtime/
 .DS_Store

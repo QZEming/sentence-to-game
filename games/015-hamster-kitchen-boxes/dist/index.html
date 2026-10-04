@@ -1,13 +1,47 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#214d47"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>小小仓鼠，大大厨房 · Hamster Kitchen</title>  <script type="module" crossorigin src="/assets/index-Bvaq3st4.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CZnunARC.css">
-</head><body><div id="app">
-<header class="header"><a class="brand" href="#" aria-label="仓鼠厨房首页"><span class="brand-icon">🐹</span><span>HAMSTER<span class="brand-second">K I T C H E N</span></span></a><nav><button class="nav-link active" id="adventure">厨房冒险<span class="tiny-dot"></span></button><button class="nav-link" id="journal">冒险手册 <span class="external">↗</span></button></nav><div class="header-right"><span class="saved"><i></i> 进度自动保存</span><button class="icon-button" id="sound" aria-label="切换音效" title="切换音效">♫</button></div></header>
-<main><div id="scene" aria-label="3D 厨房推箱子游戏"></div><div class="vignette"></div>
-<section class="intro"><div class="eyebrow"><span></span> A TINY PAW, A BIG ADVENTURE</div><h1>小小仓鼠<br>大大厨房<span class="title-dot">.</span></h1><p>一颗葵花籽，一场小冒险。<br>和栗栗一起，把日子推向甜蜜。</p><button class="chapter-button" id="levels"><span class="chapter-icon">▦</span><span><small>CHAPTER 01</small>晨光里的厨房</span><span class="arrow">⌄</span></button></section>
-<div class="scene-label"><span class="live-dot"></span> 自由探索 · 厨房台面 <span class="weather">☀ 08:30 AM</span></div>
-<aside class="level-card"><div class="level-top"><span id="level-number">LEVEL 01 / 06</span><span class="difficulty" id="difficulty">初次见面</span></div><h2 id="level-title">早餐准备时间</h2><p id="level-description">把木箱推到餐垫上，早餐就准备好啦。</p><div class="goal-count"><span class="goal-symbol">▣</span><span>归位的木箱</span><strong id="goals">0 <em>/ 2</em></strong></div><div class="progress-track"><div id="goal-progress"></div></div><div class="stats"><div><span>移动步数</span><strong id="moves">00</strong></div><div><span>收集葵花籽</span><strong id="seeds">0 <em>/ 3</em></strong></div><div><span>用时</span><strong id="timer">00:00</strong></div></div><div class="card-foot"><span>✧</span> <span id="tip">慢慢来，每一步都有小惊喜。</span></div></aside>
-<div class="right-tools"><button id="camera" title="旋转视角 (C)" aria-label="旋转视角">⟳</button><button id="zoom" title="切换缩放" aria-label="切换缩放">＋</button></div>
-<div class="hamster-tag"><span>🐹</span><div>栗栗<small>今日也要元气满满</small></div><span class="tag-heart">♥</span></div>
-<div class="bottom-bar"><div class="movement-guide"><div class="key-group"><kbd>W</kbd><div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div></div><span>移动栗栗<small>也可以使用方向键</small></span></div><div class="divider"></div><button id="undo" class="action"><span>↶</span><div>撤销<small>Z</small></div></button><button id="restart" class="action"><span>⟲</span><div>重来<small>R</small></div></button><button id="hint" class="action"><span>☼</span><div>小提示<small>H</small></div></button><div class="divider"></div><div class="objective"><span class="objective-icon">▣</span><div>把木箱推到<span class="orange-text">橙色餐垫</span>上<small>推得动的小木箱，装得下大大的梦想。</small></div></div></div>
-<div class="mobile-controls" aria-label="触屏方向控制"><button data-dir="0" aria-label="向上移动">↑</button><div><button data-dir="2" aria-label="向左移动">←</button><button data-dir="1" aria-label="向下移动">↓</button><button data-dir="3" aria-label="向右移动">→</button></div></div><div id="toast" role="status" aria-live="polite"></div><div class="footer-note">MADE FOR LITTLE MOMENTS OF JOY <span>✧</span></div>
-</main><dialog id="modal"><button id="close-modal" aria-label="关闭弹窗">×</button><div id="modal-content"></div></dialog></div></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#f5f3eb"><meta name="description" content="化身小仓鼠，在巨型厨房里推箱子、收集瓜子，破解冰面与机关。九个手工设计的 3D 谜题等你来挑战。"><title>小小仓鼠 · 巨型厨房</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ef833f'/%3E%3Ccircle cx='20' cy='20' r='10' fill='%23ffe3b7'/%3E%3Ccircle cx='44' cy='20' r='10' fill='%23ffe3b7'/%3E%3Cellipse cx='32' cy='36' rx='23' ry='22' fill='%23fff5de'/%3E%3Ccircle cx='24' cy='32' r='3' fill='%23473127'/%3E%3Ccircle cx='40' cy='32' r='3' fill='%23473127'/%3E%3Cpath d='M28 41 Q32 47 36 41' fill='none' stroke='%23473127' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="./" class="brand" aria-label="小小仓鼠游戏首页"><span class="brand-mark">🐹</span><span><b>小小仓鼠<span class="brand-dot">.</span></b><small>A LITTLE KITCHEN ADVENTURE</small></span></a>
+  <div class="header-middle"><span class="tiny-star">✦</span> 身体小小，冒险大大</div>
+  <nav><button class="round-btn" id="sound" aria-label="开启音效" title="开启音效">♪</button><button class="round-btn" id="help" aria-label="游戏玩法" title="游戏玩法">?</button><button class="collection-btn" id="collection"><span>✧</span> 成就收藏 <b id="achievement-count">0/5</b></button></nav>
+</header>
+<main class="layout">
+<aside class="sidebar">
+  <div class="chapter-heading"><span class="eyebrow">THE KITCHEN CHAPTERS</span><h1>厨房大冒险</h1><p>把每一箱美味，送到它的家。</p></div>
+  <div class="journey"><span>冒险进度</span><b id="journey-count">0 / 9</b><div class="progress-track"><i id="journey-fill"></i></div></div>
+  <div class="levels" id="levels" aria-label="选择关卡"></div>
+  <div class="side-note"><span class="note-icon">🌻</span><div><b>小仓鼠的心愿</b><p>今天也要把口袋<br>装得满满当当。</p></div></div>
+  <footer class="sidebar-footer"><span>✦</span> 慢慢想，没关系。</footer>
+</aside>
+<section class="game-column">
+  <div class="game-topline"><div><span class="chapter-pill" id="chapter-pill">CHAPTER 01</span><span class="level-type" id="level-type">初来乍到</span></div><span class="save-label" id="save-label">进度保存在本机</span></div>
+  <div class="game-stage" id="game-stage">
+    <canvas id="game-canvas" tabindex="0" aria-label="3D 推箱子棋盘，使用方向键或 WASD 移动"></canvas>
+    <div id="loading" class="loading"><span>🐹</span><b>厨房正在苏醒…</b></div>
+    <div class="stage-top">
+      <div class="level-title"><span id="level-location">☀ 早餐操作台</span><h2 id="level-title">第一颗瓜子</h2></div>
+      <div class="hud"><div><span class="hud-icon target-icon">◎</span><b id="goals">0 / 2</b><small>归位</small></div><i></i><div><span class="hud-icon">✧</span><b id="seeds">0 / 3</b><small>瓜子</small></div><i></i><div><span class="hud-icon steps-icon">⌁</span><b id="moves">0</b><small>步数</small></div></div>
+    </div>
+    <div class="view-tools"><button id="camera" aria-label="切换俯视视角" title="切换视角 C">▧</button><button id="zoom-in" aria-label="拉近视角" title="拉近视角">＋</button><button id="zoom-out" aria-label="拉远视角" title="拉远视角">−</button></div>
+    <div class="stage-bottom"><span class="scene-label"><i></i> <span id="scene-label">晨光厨房 · 经典推箱子</span></span><span class="drag-tip">拖动旋转 · 滚轮缩放</span></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="touch-controls" aria-label="触屏方向控制"><button data-dir="U" aria-label="向上">↑</button><div><button data-dir="L" aria-label="向左">←</button><button data-dir="D" aria-label="向下">↓</button><button data-dir="R" aria-label="向右">→</button></div></div>
+    <div class="win-panel" id="win-panel" hidden><div class="win-card"><div class="win-icon">🐹</div><span class="eyebrow">A TINY BIG VICTORY</span><h2 id="win-title">美味，全部就位！</h2><div class="win-stars" id="win-stars">★★★</div><p id="win-summary"></p><div class="win-stats" id="win-stats"></div><button class="primary" id="next-level">继续冒险 <span>✦</span></button><button class="text-btn" id="replay">再试一次，收集全部瓜子</button></div></div>
+  </div>
+  <div class="under-stage">
+    <div class="mission"><span class="mission-icon">◎</span><div><b id="mission-title">把木箱推到薄荷色餐垫上</b><p id="mission-text">箱子只能推，不能拉。记得为自己留一条路。</p></div></div>
+    <div class="actions"><button id="undo" title="撤销 Z"><span>↶</span> 撤销 <kbd>Z</kbd></button><button id="restart" title="重来 R"><span>⟳</span> 重来 <kbd>R</kbd></button><button id="hint" class="hint-btn" title="提示 H"><span>✦</span> 提示 <kbd>H</kbd></button></div>
+  </div>
+  <div class="bottom-line"><div class="keyboard-guide"><span class="key-cluster"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><span>或方向键移动</span><span class="guide-divider"></span><span>点击相邻格也能走</span></div><div class="star-guide">★ <span id="star-guide">30 步以内，摘下三星</span></div></div>
+</section>
+</main>
+<dialog id="help-dialog"><button class="dialog-close" aria-label="关闭">×</button><span class="eyebrow">LITTLE PAWS, BIG IDEAS</span><h2>欢迎来到巨型厨房</h2><p class="dialog-intro">你是仓鼠「栗子」。把散落的食物箱推到餐垫上，顺路收集最爱的瓜子！</p><div class="help-grid"><div><span>📦</span><b>送美味回家</b><p>每个箱子都要推到薄荷色圆形餐垫上。箱子只能推，不能拉。</p></div><div><span>🌻</span><b>顺路装满口袋</b><p>收集三颗瓜子是一项额外挑战，不影响过关。完成后获得收藏奖励。</p></div><div><span>🧊</span><b>小心冰面</b><p>木箱进入蓝色冰面会一直滑行，直到普通地面、餐垫或障碍前。仓鼠不会滑。</p></div><div><span>🔘</span><b>合作小机关</b><p>仓鼠或箱子压住黄色踏板时，栅栏就会打开。移开后重新关闭。</p></div></div><p class="help-keys"><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动　<kbd>Z</kbd> 撤销　<kbd>R</kbd> 重来　<kbd>H</kbd> 提示　<kbd>C</kbd> 切换视角</p><button class="primary" id="close-help">出发，去找瓜子！</button></dialog>
+<dialog id="collection-dialog"><button class="dialog-close" aria-label="关闭">×</button><span class="eyebrow">CHEST OF LITTLE WONDERS</span><h2>栗子的收藏</h2><p class="dialog-intro">每一次小小的进步，都值得收进口袋。</p><div id="achievements"></div></dialog>
+<script type="module" src="game.js"></script>
+</body></html>

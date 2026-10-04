@@ -1,0 +1,28 @@
+{
+  "base_commit": "b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "full_old_history_preserved": true,
+  "game_number": "016",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/010/manifest.json": "52790ba8ebcb53fa003a9ac9901ece2e4dff9e93",
+    "experiments/page-857ec841-top50-gpt6astra/010/prompt.txt": "6ee1e5ae74936022d75c6493cebdb07856986b7a",
+    "experiments/page-857ec841-top50-gpt6astra/010/provenance.json": "7d763a8d6445a353c22f7c95f86038c4d8916fc1",
+    "experiments/page-857ec841-top50-gpt6astra/010/release.json": "60d7118a68128e14300c2ddcbae9f7bc08271dc8"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "source_and_published_blobs": {
+    "docs/games/016-octopus-shipwreck-puzzle/assets/index-CZ-xIN6T.js": "66c84d5b9a82c66ec4b85084ad477f02721c7168",
+    "docs/games/016-octopus-shipwreck-puzzle/assets/index-fDMtaHPO.css": "8595db90a7b1eada2e7c92878c015a5eb6e6f0f8",
+    "docs/games/016-octopus-shipwreck-puzzle/index.html": "1a5e63b5d85b17021bedf40ce801b9431c78e7f7",
+    "games/016-octopus-shipwreck-puzzle/README.md": "1f20d5c26042f1397252feeab8520b52cdea05fd",
+    "games/016-octopus-shipwreck-puzzle/RELEASE.md": "1ca3f4b00c22a5a8f5577a19215b33abb4e87309",
+    "games/016-octopus-shipwreck-puzzle/dist/assets/index-CZ-xIN6T.js": "66c84d5b9a82c66ec4b85084ad477f02721c7168",
+    "games/016-octopus-shipwreck-puzzle/dist/assets/index-fDMtaHPO.css": "8595db90a7b1eada2e7c92878c015a5eb6e6f0f8",
+    "games/016-octopus-shipwreck-puzzle/dist/index.html": "bb0d7683b247c7355a8198bc2ab79fa5c6e3d567",
+    "games/016-octopus-shipwreck-puzzle/index.html": "d142c09c4ae1a1f593dc9ff8970f67b8a794bdbd",
+    "games/016-octopus-shipwreck-puzzle/package-lock.json": "eeeaf76d6ad5c615a05e027b18a826ba5fda4c0c",
+    "games/016-octopus-shipwreck-puzzle/package.json": "bf3d91e90b48e7c3bf95adf3bf35cc70a51fb6f8",
+    "games/016-octopus-shipwreck-puzzle/prompt.txt": "6ee1e5ae74936022d75c6493cebdb07856986b7a",
+    "games/016-octopus-shipwreck-puzzle/src/main.js": "5dd796caef7ede835602ef7324bc346928bafe74",
+    "games/016-octopus-shipwreck-puzzle/src/style.css": "155369eb44791ddd4249871929922920482cbfbe"
+  }
+}

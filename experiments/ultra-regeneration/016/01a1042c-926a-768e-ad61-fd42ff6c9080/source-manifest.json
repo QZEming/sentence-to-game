@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "c2a23493f30648b81e452bd2af53c8e8b1a5695da31318c388a8982f23fc4cd2"
+    },
+    {
+      "bytes": 1513,
+      "path": "README.md",
+      "sha256": "1a90f7ff63bfb3fabf145c29ab132ecae699de6e2a348cc308db8194af69cadc"
+    },
+    {
+      "bytes": 14739,
+      "path": "dist/game.js",
+      "sha256": "261851892b4735dda76481a80be77b7652158b12df9d8560c152ded17c134fcf"
+    },
+    {
+      "bytes": 4060,
+      "path": "dist/index.html",
+      "sha256": "1421676390f82624feb1c65bfdaf34d0dc58d790fac83b6ef215409e7a6c03c2"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/lib/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/lib/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/lib/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 11472,
+      "path": "dist/puzzles.js",
+      "sha256": "062fb038dea4acc1855b8df4b63e2126009126921842dfd5862a4146e55689de"
+    },
+    {
+      "bytes": 15979,
+      "path": "dist/style.css",
+      "sha256": "31bde625d0edb2990507c698f86c1886e521e96ed7123ce677ab8194aeb4af5a"
+    },
+    {
+      "bytes": 17166,
+      "path": "dist/world.js",
+      "sha256": "e629d21289be6041e714ec4707cc535af4516b41f7c18b3c920145710030b349"
+    },
+    {
+      "bytes": 424229,
+      "path": "original-delivery/octo-vault-source.zip",
+      "sha256": "1bb10a6382a701e2792aadd6503d67317b167fa3d4882a546405e593cf12093a"
+    },
+    {
+      "bytes": 421606,
+      "path": "original-delivery/octo-vault.tar.gz",
+      "sha256": "6f2bfb242c32c80a5d45ca5bf8aa51bb9e79e11a5b7420c2f23b13472bbd13c0"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-10/octo-vault",
+  "source_tree_sha256": "cb3a9c9c7841b1b201e1376ba8763b566049c6651a8697a6bff6d1cb53ef904f",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-016-original-20261004T001952Z",
+  "thread_id": "01a1042c-926a-768e-ad61-fd42ff6c9080",
+  "turn_id": "01a1042c-b109-73c4-88ad-baed6770b6c8"
+}

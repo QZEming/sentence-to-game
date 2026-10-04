@@ -1,0 +1,30 @@
+{
+  "base_commit": "b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "full_old_history_preserved": true,
+  "game_number": "014",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/008/manifest.json": "7b004c56c7b76c895074bea05967ac3a1c57ebef",
+    "experiments/page-857ec841-top50-gpt6astra/008/prompt.txt": "e1df72061db90c3b13e22a542ba93ad375569e40",
+    "experiments/page-857ec841-top50-gpt6astra/008/provenance.json": "d7e020f9d2ff328b3fe7b8f67226f8b798c82513",
+    "experiments/page-857ec841-top50-gpt6astra/008/release.json": "b2fd8ca9887c77ee4aa0eac07174b3161fd840bc"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "source_and_published_blobs": {
+    "docs/games/014-fox-forest-light/assets/index-BGraDWjt.js": "e89ed4b320e1b412c67174f787e863c5d9b6070a",
+    "docs/games/014-fox-forest-light/assets/index-vR6z1d76.css": "ce8eabaa415d0efec3134aa3527e5204ff186e14",
+    "docs/games/014-fox-forest-light/index.html": "a4ba6e28a6ad66a00361ff6853c983a6566859ea",
+    "games/014-fox-forest-light/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+    "games/014-fox-forest-light/README.md": "6866f48a59662388d7bc8565ae11db862208f3b7",
+    "games/014-fox-forest-light/RELEASE.md": "edd125f673f3a2c4485f418565091e9ffde7b456",
+    "games/014-fox-forest-light/dist/assets/index-BGraDWjt.js": "e89ed4b320e1b412c67174f787e863c5d9b6070a",
+    "games/014-fox-forest-light/dist/assets/index-vR6z1d76.css": "ce8eabaa415d0efec3134aa3527e5204ff186e14",
+    "games/014-fox-forest-light/dist/index.html": "26dbaf4509ccb44552f25778b2821570715c9b1a",
+    "games/014-fox-forest-light/index.html": "2dd491b288f49cac58526cd18575cb3a95e4d42d",
+    "games/014-fox-forest-light/package-lock.json": "902b24935c782842a690f14215a79d9ad0357a9f",
+    "games/014-fox-forest-light/package.json": "f146256cf969c1f0192b3c69d1c7959ed61e906d",
+    "games/014-fox-forest-light/prompt.txt": "e1df72061db90c3b13e22a542ba93ad375569e40",
+    "games/014-fox-forest-light/scripts/check-puzzles.mjs": "94739244b91994e20e066f459ef8b8f9ab993e87",
+    "games/014-fox-forest-light/src/main.js": "446107670e6b8a4bf75df10d79421a7b363db928",
+    "games/014-fox-forest-light/src/style.css": "83f6101cdf80a8e533544a5052b7d2fd3f69b246"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "existing_dist_with_recorded_path_adaptation",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "014-fox-forest-light",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "014",
+  "generation_turn_id": "01a103e9-d1d0-7757-8d9e-b6b4b8d8c908",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "b10ec4c2b0dc948666fa94f802c627ddc46132de",
+    "full_old_history_preserved": true,
+    "game_number": "014",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/008/manifest.json": "7b004c56c7b76c895074bea05967ac3a1c57ebef",
+      "experiments/page-857ec841-top50-gpt6astra/008/prompt.txt": "e1df72061db90c3b13e22a542ba93ad375569e40",
+      "experiments/page-857ec841-top50-gpt6astra/008/provenance.json": "d7e020f9d2ff328b3fe7b8f67226f8b798c82513",
+      "experiments/page-857ec841-top50-gpt6astra/008/release.json": "b2fd8ca9887c77ee4aa0eac07174b3161fd840bc"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/b10ec4c2b0dc948666fa94f802c627ddc46132de",
+    "source_and_published_blobs": {
+      "docs/games/014-fox-forest-light/assets/index-BGraDWjt.js": "e89ed4b320e1b412c67174f787e863c5d9b6070a",
+      "docs/games/014-fox-forest-light/assets/index-vR6z1d76.css": "ce8eabaa415d0efec3134aa3527e5204ff186e14",
+      "docs/games/014-fox-forest-light/index.html": "a4ba6e28a6ad66a00361ff6853c983a6566859ea",
+      "games/014-fox-forest-light/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+      "games/014-fox-forest-light/README.md": "6866f48a59662388d7bc8565ae11db862208f3b7",
+      "games/014-fox-forest-light/RELEASE.md": "edd125f673f3a2c4485f418565091e9ffde7b456",
+      "games/014-fox-forest-light/dist/assets/index-BGraDWjt.js": "e89ed4b320e1b412c67174f787e863c5d9b6070a",
+      "games/014-fox-forest-light/dist/assets/index-vR6z1d76.css": "ce8eabaa415d0efec3134aa3527e5204ff186e14",
+      "games/014-fox-forest-light/dist/index.html": "26dbaf4509ccb44552f25778b2821570715c9b1a",
+      "games/014-fox-forest-light/index.html": "2dd491b288f49cac58526cd18575cb3a95e4d42d",
+      "games/014-fox-forest-light/package-lock.json": "902b24935c782842a690f14215a79d9ad0357a9f",
+      "games/014-fox-forest-light/package.json": "f146256cf969c1f0192b3c69d1c7959ed61e906d",
+      "games/014-fox-forest-light/prompt.txt": "e1df72061db90c3b13e22a542ba93ad375569e40",
+      "games/014-fox-forest-light/scripts/check-puzzles.mjs": "94739244b91994e20e066f459ef8b8f9ab993e87",
+      "games/014-fox-forest-light/src/main.js": "446107670e6b8a4bf75df10d79421a7b363db928",
+      "games/014-fox-forest-light/src/style.css": "83f6101cdf80a8e533544a5052b7d2fd3f69b246"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [
+    {
+      "kind": "mechanical_subdirectory_resource_path_adaptation",
+      "original_sha256": "8ca4cb6ffbe97a0ba966fa95b9884a369e09e040b24f51c39d927449ec1ba318",
+      "path": "assets/index-BP4E58H1.js",
+      "published_sha256": "44961a72a580e6b62a2f952464a537c0c6dc0decd0afe12ad354f22d2f0ed149"
+    },
+    {
+      "kind": "mechanical_subdirectory_resource_path_adaptation",
+      "original_sha256": "ef8affb92d1c291432ca868cf60a3c6710f5e06cd1977fd1f1f8c9aeee2fbb62",
+      "path": "index.html",
+      "published_sha256": "1eab275309c34001430663b4708731145ed6790ef375b3fd31d9736c9dc351ac"
+    }
+  ],
+  "published_files": [
+    {
+      "bytes": 18433,
+      "path": "assets/effects-DgbHroQR.js",
+      "sha256": "4c44b1c0013e6c091748e1a46d4bf83ad7322e7e425a70566440de5e8a8b7f90"
+    },
+    {
+      "bytes": 65057,
+      "path": "assets/index-BP4E58H1.js",
+      "sha256": "44961a72a580e6b62a2f952464a537c0c6dc0decd0afe12ad354f22d2f0ed149"
+    },
+    {
+      "bytes": 21194,
+      "path": "assets/index-D7Sboyj4.css",
+      "sha256": "c77c47f5e3628a3736e57efbfeae048f472fc59cc6e0321009eaaa2b52714f0c"
+    },
+    {
+      "bytes": 519705,
+      "path": "assets/three-Dghjnb8Y.js",
+      "sha256": "2c24cc00ee94147910b42d3a0acd90cdb5d84961308c27dff57f3f07794c6859"
+    },
+    {
+      "bytes": 4286,
+      "path": "favicon.ico",
+      "sha256": "e81f8c25d79ffc9bc2919f29396d891d0fc87b2799666544c7954b1dc791f418"
+    },
+    {
+      "bytes": 381,
+      "path": "fox.svg",
+      "sha256": "0a4f3796cb61cc0e9cb4b678241b6990ba39bd79e7ef3a5ec9bf67056fbc9ea0"
+    },
+    {
+      "bytes": 835,
+      "path": "index.html",
+      "sha256": "1eab275309c34001430663b4708731145ed6790ef375b3fd31d9736c9dc351ac"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "2bf3da6a93152be9ca8d1d4fe63f378c07be54fc279c554a515478c8906bc41e",
+  "thinking_requested": "ultra",
+  "thread_id": "01a103e9-b137-76a2-b149-513cfb0760ac",
+  "title": "森光 LUMEN FOX — 森林中的一束光",
+  "url": "https://qzemi.cn/sentence-to-game/games/014-fox-forest-light/"
+}

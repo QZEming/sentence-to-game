@@ -1,0 +1,38 @@
+{
+  "base_commit": "b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "full_old_history_preserved": true,
+  "game_number": "015",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/009/manifest.json": "c5d7f5845adee74bc0c0e78387fc6bc3d0ee5a9c",
+    "experiments/page-857ec841-top50-gpt6astra/009/prompt.txt": "8a063202b6f12ac6c4a26a7f64bedfe049646193",
+    "experiments/page-857ec841-top50-gpt6astra/009/provenance.json": "78942940dbd9393c51998e0324b9315172d38aee",
+    "experiments/page-857ec841-top50-gpt6astra/009/release.json": "18fd033776323c5eff7d3d0393c4fa775d4ec8e0"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/b10ec4c2b0dc948666fa94f802c627ddc46132de",
+  "source_and_published_blobs": {
+    "docs/games/015-hamster-kitchen-boxes/assets/index-CZnunARC.css": "dd5ed88d4efa7f92f62d701640a2a6429c2a943c",
+    "docs/games/015-hamster-kitchen-boxes/assets/index-lLOpmMW_.js": "c31dd792f06e2cca32dc5d102f91b30bed04b58a",
+    "docs/games/015-hamster-kitchen-boxes/assets/solver-worker-B0MFmhIB.js": "90dc765cfe18fdfa77583f2c36b311e2cf71daff",
+    "docs/games/015-hamster-kitchen-boxes/favicon.svg": "1f29082d39b7c3f8c4cac1958a86b7dbd7093271",
+    "docs/games/015-hamster-kitchen-boxes/index.html": "7ede8e39ebee0365dbc565f26cf4e1c8e64a58fc",
+    "games/015-hamster-kitchen-boxes/.gitignore": "e6d806523ea319a168db6631cf09c13f96517f77",
+    "games/015-hamster-kitchen-boxes/README.md": "5134d91494475a3e69c58c3a4a0122e54ce35b3c",
+    "games/015-hamster-kitchen-boxes/RELEASE.md": "30bbf9e45f40f99caaa607581d996fb7471eecdc",
+    "games/015-hamster-kitchen-boxes/dist/assets/index-Bvaq3st4.js": "c41222c11afa5ddf74d4d1292010dd9e8262a540",
+    "games/015-hamster-kitchen-boxes/dist/assets/index-CZnunARC.css": "dd5ed88d4efa7f92f62d701640a2a6429c2a943c",
+    "games/015-hamster-kitchen-boxes/dist/assets/solver-worker-B0MFmhIB.js": "90dc765cfe18fdfa77583f2c36b311e2cf71daff",
+    "games/015-hamster-kitchen-boxes/dist/favicon.svg": "1f29082d39b7c3f8c4cac1958a86b7dbd7093271",
+    "games/015-hamster-kitchen-boxes/dist/index.html": "33c3d36aed1bfad885ae1bd22c7d169122b4e28f",
+    "games/015-hamster-kitchen-boxes/index.html": "87b7e511996484280270ab45884d33a85f11f350",
+    "games/015-hamster-kitchen-boxes/package-lock.json": "f4efc5ab0f8cb2368cf31e8e117e43ec5c545f92",
+    "games/015-hamster-kitchen-boxes/package.json": "fdc8cc82b473d581c1f6b927065e2e17177f6a81",
+    "games/015-hamster-kitchen-boxes/prompt.txt": "8a063202b6f12ac6c4a26a7f64bedfe049646193",
+    "games/015-hamster-kitchen-boxes/public/favicon.svg": "1f29082d39b7c3f8c4cac1958a86b7dbd7093271",
+    "games/015-hamster-kitchen-boxes/src/engine.js": "1e609749db92e482fa58214d1e82eb34cfdb4e95",
+    "games/015-hamster-kitchen-boxes/src/main.js": "2d25042d117acd50667eae92bb546c5adef4fa34",
+    "games/015-hamster-kitchen-boxes/src/scene.js": "cee53fc0976987c28a06049b871f27a4333d409e",
+    "games/015-hamster-kitchen-boxes/src/solver-worker.js": "a91bacbbd4c430b7e7137a882c9e6fcf367e6744",
+    "games/015-hamster-kitchen-boxes/src/style.css": "73590ca07ab182c2d2445608068c100c8d54d625",
+    "games/015-hamster-kitchen-boxes/tests/engine.test.js": "00d25e7c0e8bc54aea55942457d827b16bc879de"
+  }
+}

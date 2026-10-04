@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "db0f3878b3612e873c3695cbdc550bd6f2e374578dfda7ff9e4941d3d97ab43b"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "ece23987752077bf33590952b59796ddfc148b504f4ba7e389e736d08a08e5e1"
+    },
+    {
+      "bytes": 2223,
+      "path": "README.md",
+      "sha256": "996a19bd898743a0bcc9449e0445351d0ca8e922408c35b667252f0c8728eca0"
+    },
+    {
+      "bytes": 24033,
+      "path": "dist/game.js",
+      "sha256": "5f4779b5d5c9711827fc6a051d2624505648d11921c1473d505675a1927f174b"
+    },
+    {
+      "bytes": 6405,
+      "path": "dist/index.html",
+      "sha256": "7be9701feef041b55d5d0b0000d447cc60f67e31a5bf8d26e080c5613a2f86b9"
+    },
+    {
+      "bytes": 17394,
+      "path": "dist/style.css",
+      "sha256": "e936ce0179ab56fe6b6a187da8beb4a6289a740c9a8b93a5206bd11e7fa8de55"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.txt",
+      "sha256": "24b4afa38497439369e9020030f4ff4374ae31f4b1e67df1dc808f81a0108b11"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 15610,
+      "path": "dist/world.js",
+      "sha256": "2f484bfab314c0b9f2241b9edd84ff85c53233e30ca887de4fe08c364127a989"
+    },
+    {
+      "bytes": 256892,
+      "path": "original-delivery/escape-success.png",
+      "sha256": "15bc3e5da85ddf614f8d9da043ad59b1b01c2add28128c17ed2bdd2ea2e4ebd9"
+    },
+    {
+      "bytes": 290797,
+      "path": "original-delivery/nullshift-deploy.tar.gz",
+      "sha256": "458d3ffb0ada3b98a0fe5b7641d5b14ae157580beb8cfd4464a79303ccae415d"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-7/nullshift",
+  "source_tree_sha256": "93574c7fbd3e33b26e35fa93fb94aff67ab3881aa047403c6fd8588d723bc5c0",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-013-original-20261003T223334Z",
+  "thread_id": "01a103cb-9279-7714-97cb-ec98508800a0",
+  "turn_id": "01a103cb-b194-7475-9f27-68ff054a9b90"
+}

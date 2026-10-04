@@ -1,52 +1,328 @@
 import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { LEVELS, traceLight } from './puzzles.js';
+import { createForest, createFox, createMirror, createSource, createReceiver, createPrism, createFilter, createPlate, createObstacle, createGate } from './world.js';
+import { ForestAudio } from './audio.js';
 import './style.css';
-const $=s=>document.querySelector(s), canvas=$('#world');
-const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.setClearColor(0x142e2b);renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.5;
-const scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x17332e,.026);
-const camera=new THREE.OrthographicCamera(-12,12,8,-8,.1,100);camera.position.set(15,20,23);camera.lookAt(0,0,0);
-scene.add(new THREE.HemisphereLight(0x8cc6b0,0x26301d,2.1));const sun=new THREE.DirectionalLight(0xffe6af,3.2);sun.position.set(-8,18,5);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-15,right:15,top:15,bottom:-15});sun.shadow.bias=-.001;scene.add(sun);const moon=new THREE.DirectionalLight(0x6aaba7,2);moon.position.set(10,9,-12);scene.add(moon);
-const materials={};function mat(color,extra={}){const key=color+JSON.stringify(extra);return materials[key]??=new THREE.MeshStandardMaterial({color,roughness:.9,...extra})}function mesh(geo,color,x=0,y=0,z=0,parent=scene,extra={}){const m=new THREE.Mesh(geo,mat(color,extra));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m}const box=(w,h,d,c,x,y,z,p)=>mesh(new THREE.BoxGeometry(w,h,d),c,x,y,z,p);const cyl=(rt,rb,h,n,c,x,y,z,p)=>mesh(new THREE.CylinderGeometry(rt,rb,h,n),c,x,y,z,p);const ico=(r,c,x,y,z,p,detail=0)=>mesh(new THREE.IcosahedronGeometry(r,detail),c,x,y,z,p);
-let seed=37;const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
-const environment=new THREE.Group();scene.add(environment);
-// A layered, irregular floating diorama.
-cyl(9,8.5,1.5,11,0x273f32,0,-1,0,environment);cyl(8.65,9,.45,11,0x466246,0,-.12,0,environment);cyl(8.38,8.6,.18,11,0x587447,0,.12,0,environment);
-for(let i=0;i<42;i++){const a=i/42*Math.PI*2,r=8.45+rand()*.45;const rock=ico(.5+rand()*.65,0x334b3c,Math.cos(a)*r,-.55,Math.sin(a)*r,environment);rock.scale.set(1,1+rand(),.8)}
-const floor=mesh(new THREE.PlaneGeometry(200,200),0x142d28,0,-2.1,0);floor.rotation.x=-Math.PI/2;
-function tree(x,z,scale=1,type=0){const g=new THREE.Group();g.position.set(x,.2,z);g.scale.setScalar(scale);environment.add(g);cyl(.12,.24,2.4,6,0x5d5140,0,1,0,g);if(type){for(let k=0;k<3;k++){const m=cyl(0,1.35-k*.25,2.2,6,[0x274b38,0x365b3d,0x476747][k],0,2+k*.7,0,g);m.rotation.y=k*.45}}else{ico(1.25,0x486544,0,2.8,0,g);ico(.95,0x537649,.7,2.6,0,g);ico(1.05,0x35583e,-.6,2.5,.25,g)}return g}
-for(let i=0;i<40;i++){const a=i/40*Math.PI*2,r=7.2+rand()*.65;const x=Math.cos(a)*r,z=Math.sin(a)*r;if(z>2.5&&x>-6&&x<7)continue;tree(x,z,.72+rand()*.52,i%3!==0)}
-for(let i=0;i<28;i++){let x=(rand()-.5)*14,z=(rand()-.5)*14;if(Math.hypot(x,z)>7.3||Math.hypot(x,z)<5.3)continue;ico(.27+rand()*.35,0x536b50,x,.3,z,environment)}
-// Curved stepping stone trail and tiny wildflowers.
-for(let i=0;i<24;i++){let x=-5.7+i*.49,z=1.9+Math.sin(i*.24)*.85;const s=cyl(.23+rand()*.16,.3,.055,6,0x8c9575,x,.235,z,environment);s.rotation.y=rand()*6;s.scale.z=.7}
-for(let i=0;i<160;i++){const x=(rand()-.5)*15,z=(rand()-.5)*14;if(Math.hypot(x,z)>8)continue;const g=new THREE.Group();g.position.set(x,.22,z);environment.add(g);for(let j=0;j<3;j++){const blade=mesh(new THREE.ConeGeometry(.035,.18+rand()*.15,3),i%6===0?0xa6b97a:0x718450,(rand()-.5)*.2,.13,(rand()-.5)*.2,g);blade.rotation.z=(rand()-.5)*.7}if(i%8===0)ico(.045,0xf0d38b,0,.32,0,g)}
-// Mossy arch, the sleeping forest sanctuary.
-const arch=new THREE.Group();arch.position.set(3,.2,-3.8);environment.add(arch);for(const x of [-.95,.95]){box(.48,1.5,.6,0x7f8a6b,x,.75,0,arch);box(.65,.2,.75,0x9a9d7b,x,1.45,0,arch);ico(.3,0x617947,x,1.62,0,arch)}box(2.5,.38,.7,0x8c9273,0,1.8,0,arch);box(2.8,.18,.82,0x64784d,0,2.05,0,arch);const archRune=mesh(new THREE.OctahedronGeometry(.24),0xcfb97a,0,1.83,.39,arch,{emissive:0x5d461c,emissiveIntensity:.8});
-// Little fox: geometry only, no external assets.
-const fox=new THREE.Group();scene.add(fox);const foxVisual=new THREE.Group();foxVisual.scale.setScalar(1.2);fox.add(foxVisual);const body=box(.48,.45,.78,0xd57a36,0,.52,0,foxVisual);const chest=box(.36,.32,.25,0xffe5bc,0,.47,.36,foxVisual);const head=box(.49,.43,.46,0xe99042,0,.87,.37,foxVisual);const muzzle=mesh(new THREE.ConeGeometry(.21,.38,4),0xffe1b3,0,.77,.68,foxVisual);muzzle.rotation.x=Math.PI/2;muzzle.rotation.z=Math.PI/4;box(.13,.1,.08,0x302c24,0,.8,.88,foxVisual);for(const x of [-.19,.19]){const ear=mesh(new THREE.ConeGeometry(.15,.35,3),0xd87934,x,1.2,.31,foxVisual);ear.rotation.z=x>.0?-.17:.17;const inner=mesh(new THREE.ConeGeometry(.085,.22,3),0x593d30,x,1.22,.37,foxVisual);box(.055,.085,.035,0x222a22,x*.88,.92,.607,foxVisual)}const legs=[];for(const x of [-.17,.17])for(const z of [-.24,.25]){const leg=box(.12,.3,.13,0x673f2a,x,.23,z,foxVisual);legs.push(leg)}const tail=new THREE.Group();tail.position.set(0,.53,-.37);tail.rotation.x=-.52;foxVisual.add(tail);const t=mesh(new THREE.ConeGeometry(.25,.8,5),0xde8238,0,.15,-.25,tail);t.rotation.x=-Math.PI/2;const tip=mesh(new THREE.ConeGeometry(.19,.32,5),0xffe4ba,0,.15,-.7,tail);tip.rotation.x=-Math.PI/2;
-const foxRing=mesh(new THREE.RingGeometry(.36,.39,40),0xeed391,0,.255,0,fox,{transparent:true,opacity:.55,side:THREE.DoubleSide});foxRing.rotation.x=-Math.PI/2;
-const levels=[{name:'初光林地',source:[-5,0],mirrors:[[-2,0,3],[-2,3,0],[3,3,1]],goals:[[-2,1.5],[.5,3],[3,-2]],solution:[1,1,3],names:['点亮苔石上的光之芽','连接林间的琥珀水晶','唤醒沉睡的森林圣坛']},{name:'月影回廊',source:[-5,-2],mirrors:[[-3,-2,0],[-3,2,2],[1,2,0],[1,-2,1]],goals:[[-3,0],[-1,2],[4,-2]],solution:[1,1,3,3],names:['让光穿过月影石','唤醒回廊的双生水晶','将微光送往东侧圣坛']},{name:'星河归途',source:[-5,-3],mirrors:[[-2,-3,2],[-2,2,0],[3,2,1],[3,-1,0],[0,-1,2]],goals:[[-2,0],[3,.5],[0,4]],solution:[1,1,3,1,3],names:['照亮古树的记忆','穿过最后的星河水晶','点燃森林之心']}];
-let levelIndex=0,selected=-1,elapsed=0,paused=false,won=false,moves=0,collected=0,sound=false,audio=null,foxTarget=null,toastTimeout;let mirrorData=[],goalData=[],stars=[],segments=[],lightStates=[];const puzzle=new THREE.Group();scene.add(puzzle);let beams=new THREE.Group();scene.add(beams);const keys={};const savedKey='foxlight-journey-v1';let best=0;try{best=Number(localStorage.getItem(savedKey)||0)}catch{}
-const fireflyPositions=new Float32Array(100*3);for(let i=0;i<100;i++){fireflyPositions[i*3]=(rand()-.5)*20;fireflyPositions[i*3+1]=.4+rand()*4;fireflyPositions[i*3+2]=(rand()-.5)*17}const fg=new THREE.BufferGeometry();fg.setAttribute('position',new THREE.BufferAttribute(fireflyPositions,3));const fireflies=new THREE.Points(fg,new THREE.PointsMaterial({color:0xe5d9a0,size:.055,transparent:true,opacity:.8}));scene.add(fireflies);
-function disposeGroup(group){group.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.userData.uniqueMaterial)o.material.dispose()});group.clear()}
-function toast(t){$('#toast').textContent=t;$('#toast').classList.add('visible');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>$('#toast').classList.remove('visible'),4200)}
-function chime(freq=440){if(!sound)return;audio??=new (window.AudioContext||window.webkitAudioContext)();audio.resume();const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.setValueAtTime(freq,audio.currentTime);g.gain.setValueAtTime(.06,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.6);o.connect(g);g.connect(audio.destination);o.start();o.stop(audio.currentTime+.6)}
-function buildLevel(index){levelIndex=index;const l=levels[index];disposeGroup(puzzle);disposeGroup(beams);mirrorData=[];goalData=[];stars=[];selected=-1;elapsed=0;moves=0;collected=0;won=false;paused=false;foxTarget=null;lightStates=[];fox.position.set(-4,.05,3.6);fox.rotation.y=.4;$('#chapter-name').innerHTML=`0${index+1} <i>/</i> ${l.name}`;$('#objectives').innerHTML=l.names.map(t=>`<div class="objective"><span class="circle"></span><span>${t}</span></div>`).join('');document.querySelectorAll('.right-rail>span').forEach((s,i)=>s.classList.toggle('active',i===index));$('#continue-journey').hidden=true;$('#dust-count').textContent=0;$('#journal-count').textContent=Math.max(best,index);$('#mirror-panel').classList.remove('visible');
-const [sx,sz]=l.source;cyl(.55,.66,.25,8,0x737d5c,sx,.34,sz,puzzle);cyl(.2,.3,.9,6,0x8a9268,sx,.85,sz,puzzle);const source=mesh(new THREE.OctahedronGeometry(.32),0xffe7a2,sx,1.48,sz,puzzle,{emissive:0xffd66c,emissiveIntensity:3});source.rotation.z=Math.PI/2;const lamp=new THREE.PointLight(0xffd784,8,5);lamp.position.set(sx,1.6,sz);puzzle.add(lamp);const halo=mesh(new THREE.TorusGeometry(.46,.025,6,40),0xd4b574,sx,1.48,sz,puzzle);halo.rotation.y=Math.PI/2;
-l.mirrors.forEach(([x,z,a],i)=>{const group=new THREE.Group();group.position.set(x,.2,z);puzzle.add(group);cyl(.46,.53,.18,8,0x949578,0,.13,0,group);cyl(.33,.4,.13,8,0x667456,0,.27,0,group);box(.13,.68,.13,0xb5a077,0,.64,0,group);const pivot=new THREE.Group();pivot.position.y=1.24;group.add(pivot);box(1.03,1.07,.11,0xbfae7e,0,0,0,pivot);const surface=mesh(new THREE.BoxGeometry(.85,.89,.13),0xa4d5cb,0,0,0,pivot,{metalness:.75,roughness:.15,emissive:0x326458,emissiveIntensity:.3});for(const dx of [-.49,.49]){ico(.075,0xdbc58c,dx,.52,0,pivot);ico(.075,0xdbc58c,dx,-.52,0,pivot)}const ring=mesh(new THREE.RingGeometry(.57,.6,48),0xf2d790,0,.305,0,group,{side:THREE.DoubleSide,transparent:true,opacity:0});ring.rotation.x=-Math.PI/2;ring.material=ring.material.clone();ring.userData.uniqueMaterial=true;const hitbox=mesh(new THREE.BoxGeometry(1.3,1.8,1.3),0xffffff,0,.9,0,group,{visible:false});hitbox.userData.mirror=i;mirrorData.push({x,z,a,pivot,ring,hitbox});pivot.rotation.y=-a*Math.PI/4});
-l.goals.forEach(([x,z],i)=>{const group=new THREE.Group();group.position.set(x,.2,z);puzzle.add(group);cyl(.47,.57,.18,6,0x8a9370,0,.12,0,group);cyl(.25,.35,.5,5,0x657453,0,.44,0,group);const crystal=mesh(new THREE.OctahedronGeometry(i===2?.4:.24),0x83aba0,0,1.2,0,group,{emissive:0xffd17b,emissiveIntensity:0,metalness:.25,roughness:.25});crystal.material=crystal.material.clone();crystal.userData.uniqueMaterial=true;crystal.scale.y=1.4;const glow=new THREE.PointLight(0xffd879,0,3);glow.position.y=1.3;group.add(glow);const ring=mesh(new THREE.TorusGeometry(.36,.016,5,32),0xc8b77e,0,.88,0,group);ring.rotation.x=Math.PI/2;goalData.push({x,z,crystal,glow,lit:false})});
-const coords=[[-4,2],[-.5,4.2],[4.6,1.2],[1.5,-3.8],[-4.7,-3.7]];coords.forEach(([x,z],i)=>{const star=mesh(new THREE.OctahedronGeometry(.12),0xffe6a7,x,.75,z,puzzle,{emissive:0xf8c86b,emissiveIntensity:2});stars.push({x,z,mesh:star,taken:false,phase:i})});traceLight();}
-function cross(ax,az,bx,bz){return ax*bz-az*bx}
-function traceLight(){disposeGroup(beams);segments=[];const l=levels[levelIndex];let p=new THREE.Vector2(...l.source),d=new THREE.Vector2(1,0),previous=-1;for(let bounce=0;bounce<16;bounce++){let distance=17,target=-1;mirrorData.forEach((m,i)=>{if(i===previous)return;const a=m.a*Math.PI/4,v=new THREE.Vector2(Math.cos(a),Math.sin(a)),ax=m.x-v.x*.6,az=m.z-v.y*.6;const denom=cross(d.x,d.y,v.x,v.y);if(Math.abs(denom)<.00001)return;const t=cross(ax-p.x,az-p.y,v.x,v.y)/denom,u=cross(ax-p.x,az-p.y,d.x,d.y)/denom;if(t>.01&&u>=0&&u<=1.2&&t<distance){distance=t;target=i}});let end=p.clone().addScaledVector(d,distance);if(target===-1){for(let t=.05;t<distance;t+=.05){if(p.clone().addScaledVector(d,t).length()>8){distance=t;end=p.clone().addScaledVector(d,t);break}}}segments.push({start:p.clone(),end:end.clone()});drawBeam(p,end);if(target===-1)break;const m=mirrorData[target],a=m.a*Math.PI/4,v=new THREE.Vector2(Math.cos(a),Math.sin(a));d=v.multiplyScalar(2*d.dot(v)).sub(d).normalize();p=end;previous=target}
-let total=0;goalData.forEach((g,i)=>{const pt=new THREE.Vector2(g.x,g.z);g.lit=segments.some(s=>{const v=s.end.clone().sub(s.start),t=THREE.MathUtils.clamp(pt.clone().sub(s.start).dot(v)/v.lengthSq(),0,1);return pt.distanceTo(s.start.clone().addScaledVector(v,t))<.33});if(g.lit)total++;g.crystal.material.emissiveIntensity=g.lit?2.5:0;g.crystal.material.color.setHex(g.lit?0xffe6a2:0x83aba0);g.glow.intensity=g.lit?5:0;const el=document.querySelectorAll('.objective')[i];el.classList.toggle('done',g.lit);el.querySelector('.circle').textContent=g.lit?'✓':'';if(g.lit&&!lightStates[i])chime(523+i*130);lightStates[i]=g.lit});$('#progress').textContent=`${total}/3`;archRune.material.emissiveIntensity=total===3?4:.4;if(total===3&&!won){won=true;$('#continue-journey').hidden=false;best=Math.max(best,levelIndex+1);try{localStorage.setItem(savedKey,String(best))}catch{}$('#journal-count').textContent=best;const completedIndex=levelIndex;setTimeout(()=>{if(won&&levelIndex===completedIndex)showWin()},900)}}
-function drawBeam(a,b){const start=new THREE.Vector3(a.x,1.44,a.y),end=new THREE.Vector3(b.x,1.44,b.y),delta=end.clone().sub(start),length=delta.length();for(const [radius,opacity] of [[.018,1],[.045,.18],[.105,.035]]){const material=new THREE.MeshBasicMaterial({color:0xffd178,transparent:true,opacity,depthWrite:false,toneMapped:false});const ray=new THREE.Mesh(new THREE.CylinderGeometry(radius,radius,length,6),material);ray.userData.uniqueMaterial=true;ray.position.copy(start).add(end).multiplyScalar(.5);ray.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.normalize());beams.add(ray)}}
-function selectMirror(i){selected=i;mirrorData.forEach((m,k)=>m.ring.material.opacity=k===i?.8:0);$('#mirror-panel').classList.add('visible');$('#mirror-name').textContent=`林间镜 · 0${i+1}`;$('#angle').textContent=`${mirrorData[i].a*45}°`;chime(330)}
-function rotate(dir){if(paused||won)return;if(selected<0){let near=0,dist=Infinity;mirrorData.forEach((m,i)=>{const d=Math.hypot(fox.position.x-m.x,fox.position.z-m.z);if(d<dist){near=i;dist=d}});selectMirror(near)}const m=mirrorData[selected];m.a=(m.a+dir+4)%4;m.pivot.rotation.y=-m.a*Math.PI/4;moves++;$('#angle').textContent=`${m.a*45}°`;traceLight();chime(280+40*m.a)}
-function showModal(html){paused=true;keys.w=keys.a=keys.s=keys.d=false;$('#modal-content').innerHTML=html;$('#modal-backdrop').hidden=false}function closeModal(){paused=false;$('#modal-backdrop').hidden=true;$('#pause').textContent='Ⅱ'}function showWin(){chime(880);showModal(`<div class="modal-icon">✺</div><span class="tiny">A LITTLE LIGHT GOES A LONG WAY</span><h2>${levelIndex===2?'森林，重新亮起来了。':'一束微光，一次新生。'}</h2><p>${levelIndex===2?'你带着小狐狸穿过了三片林地。古老的镜子重新连接了星光，森林会记得你。':'沉睡的水晶已被唤醒。前方的林地里，还有更多迷失的光，等着与你相遇。'}</p><div class="stat">◷ ${formatTime(elapsed)}</div><div class="stat">◇ ${moves} 次旋转</div><div class="stat">✦ ${collected}/5 星屑</div><br><button class="primary" id="next-level">${levelIndex===2?'再走一次光的旅程':'前往下一片森林 →'}</button><button class="text-button" id="keep-exploring">留在这里，继续收集星屑</button>`);$('#next-level').onclick=()=>{closeModal();buildLevel((levelIndex+1)%3);toast('新的光线谜题已经出现。点击镜子，继续你的旅程。')};$('#keep-exploring').onclick=closeModal}
-function hint(){if(paused)return;const l=levels[levelIndex];let i=mirrorData.findIndex((m,j)=>m.a!==l.solution[j]);if(i<0){toast('光已归位！去收集散落的星屑吧。');return}selectMirror(i);toast(`森林低语：第 ${i+1} 面镜子的光，需要沿 ${l.solution[i]*45}° 的镜面转弯。`)}
-$('#continue-journey').onclick=showWin;$('#rotate-left').onclick=()=>rotate(-1);$('#rotate-right').onclick=()=>rotate(1);$('#deselect').onclick=()=>{selected=-1;mirrorData.forEach(m=>m.ring.material.opacity=0);$('#mirror-panel').classList.remove('visible')};$('#hint').onclick=hint;$('#modal-close').onclick=closeModal;$('#modal-backdrop').onclick=e=>{if(e.target===$('#modal-backdrop'))closeModal()};$('#help').onclick=()=>showModal('<div class="modal-icon">✧</div><span class="tiny">HOW TO PLAY</span><h2>跟着光，慢慢走。</h2><p><b>W A S D / 方向键</b> 移动小狐狸，也可以点击地面前往。<br><b>点击镜子</b> 选中，再用 <b>Q / E</b> 或下方按钮旋转 45°。<br>让金色光束依次经过三枚水晶，即可唤醒森林。<br><b>靠近星屑</b> 自动收集，全部找到会得到特别的祝福。<br><b>空格</b> 获得提示 · <b>R</b> 重置当前关卡 · <b>Esc</b> 暂停。</p><p>这里没有倒计时，也不必着急。森林会等你。</p>');$('#pause').onclick=()=>{if(paused){closeModal();return}showModal('<div class="modal-icon">☾</div><span class="tiny">TAKE A LITTLE BREATH</span><h2>森林也在休息。</h2><p>旅程已暂停。关闭窗口，即可继续追寻微光。</p>');$('#pause').textContent='▷'};$('#sound').onclick=()=>{sound=!sound;$('#sound').style.color=sound?'#f1ce88':'';$('#sound').textContent=sound?'♫':'♪';toast(sound?'林间音效已开启':'林间音效已关闭');chime(660)};$('#journal').onclick=()=>showModal(`<div class="modal-icon">▧</div><span class="tiny">THE FOREST JOURNAL</span><h2>写给追光的你。</h2><p>「很久以前，森林的光被留在了一面面镜子里。只有愿意停下脚步的小小旅人，才能让它们再次相遇。」</p><p>${best>=1?'✦ 初光林地：光会沿着镜面，以相同的角度离开。':'○ 初光林地：唤醒圣坛，解锁第一段记忆。'}<br>${best>=2?'✦ 月影回廊：有时，回头也是前往终点的路。':'○ 月影回廊：尚未找回的记忆。'}<br>${best>=3?'✦ 星河归途：你寻找的光，也在寻找你。':'○ 星河归途：尚未找回的记忆。'}</p><p>已找回 ${best}/3 段森林记忆 · 本关星屑 ${collected}/5</p>`);
-const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),ground=new THREE.Plane(new THREE.Vector3(0,1,0),-.25);canvas.addEventListener('pointerdown',e=>{if(paused)return;pointer.set(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects(mirrorData.map(m=>m.hitbox));if(hit.length){selectMirror(hit[0].object.userData.mirror);return}const target=new THREE.Vector3();if(raycaster.ray.intersectPlane(ground,target)&&Math.hypot(target.x,target.z)<7.4)foxTarget=target});canvas.addEventListener('pointermove',e=>{pointer.set(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1);raycaster.setFromCamera(pointer,camera);canvas.style.cursor=raycaster.intersectObjects(mirrorData.map(m=>m.hitbox)).length?'pointer':'default'});
-window.addEventListener('keydown',e=>{const k=e.key.toLowerCase();if([' ','arrowup','arrowdown','arrowleft','arrowright'].includes(k))e.preventDefault();keys[k]=true;if(e.repeat)return;if(k==='escape'){$('#modal-backdrop').hidden?$('#pause').click():closeModal();return}if(paused)return;if(k==='q')rotate(-1);if(k==='e')rotate(1);if(k===' ')hint();if(k==='r'){buildLevel(levelIndex);toast('光回到了最初的地方。再试一次吧。')}});window.addEventListener('keyup',e=>keys[e.key.toLowerCase()]=false);window.addEventListener('blur',()=>{Object.keys(keys).forEach(k=>keys[k]=false)});document.querySelectorAll('[data-move]').forEach(b=>{b.onpointerdown=e=>{b.setPointerCapture(e.pointerId);keys[b.dataset.move]=true};b.onpointerup=b.onpointercancel=()=>keys[b.dataset.move]=false});
-function formatTime(s){return`${Math.floor(s/60).toString().padStart(2,'0')}:${Math.floor(s%60).toString().padStart(2,'0')}`}
-function resize(){renderer.setSize(innerWidth,innerHeight);const aspect=innerWidth/innerHeight,h=innerWidth<600?9/aspect:9;camera.left=-h*aspect;camera.right=h*aspect;camera.top=h;camera.bottom=-h;camera.setViewOffset(innerWidth,innerHeight,innerWidth<600?-innerWidth*.02:-innerWidth*.12,innerWidth<600?-innerHeight*.12:0,innerWidth,innerHeight);camera.updateProjectionMatrix()}window.addEventListener('resize',resize);resize();buildLevel(0);
-let last=performance.now(),time=0;function animate(now){requestAnimationFrame(animate);const dt=Math.min((now-last)/1000,.04);last=now;if(!paused){time+=dt;if(!won)elapsed+=dt;$('#timer').textContent=formatTime(elapsed);let mx=(keys.d||keys.arrowright?1:0)-(keys.a||keys.arrowleft?1:0),mz=(keys.s||keys.arrowdown?1:0)-(keys.w||keys.arrowup?1:0);let movement=new THREE.Vector3(mx*.84+mz*.54,0,-mx*.54+mz*.84);if(mx||mz)foxTarget=null;else if(foxTarget){movement.copy(foxTarget).sub(fox.position);movement.y=0;if(movement.length()<.15){foxTarget=null;movement.set(0,0,0)}}const moving=movement.length()>.01;if(moving){movement.normalize();const next=fox.position.clone().addScaledVector(movement,dt*2.8);if(Math.hypot(next.x,next.z)<7.5)fox.position.copy(next);const desired=Math.atan2(movement.x,movement.z);fox.rotation.y+=Math.atan2(Math.sin(desired-fox.rotation.y),Math.cos(desired-fox.rotation.y))*Math.min(1,dt*13);foxVisual.position.y=Math.sin(time*15)*.035;legs.forEach((leg,i)=>leg.rotation.x=Math.sin(time*15+i%2*Math.PI)*.38)}else{foxVisual.position.y=Math.sin(time*2)*.018;legs.forEach(l=>l.rotation.x=0)}tail.rotation.y=Math.sin(time*4)*.12;stars.forEach(st=>{if(st.taken)return;st.mesh.position.y=.8+Math.sin(time*2+st.phase)*.13;st.mesh.rotation.y=time;if(Math.hypot(fox.position.x-st.x,fox.position.z-st.z)<.55){st.taken=true;st.mesh.visible=false;collected++;$('#dust-count').textContent=collected;chime(800+collected*90);toast(collected===5?'✦ 星屑已集齐！你得到了森林的祝福。':`✦ 拾起一枚森林星屑 · ${collected}/5`)}});goalData.forEach((g,i)=>{g.crystal.rotation.y=time*.35;g.crystal.position.y=1.2+Math.sin(time*1.5+i)*.035});fireflies.rotation.y=Math.sin(time*.06)*.1;fireflies.position.y=Math.sin(time*.4)*.1;mirrorData.forEach((m,i)=>{if(i===selected)m.ring.material.opacity=.5+Math.sin(time*3)*.25})}renderer.render(scene,camera)}requestAnimationFrame(animate);setTimeout(()=>{$('#loading').style.opacity=0;setTimeout(()=>$('#loading').remove(),650)},600);
-// Small debug surface for deterministic gameplay checks.
-window.foxlight={get state(){return{level:levelIndex,mirrors:mirrorData.map(m=>m.a),lit:goalData.map(g=>g.lit),won,collected,segments:segments.length}},solve(){levels[levelIndex].solution.forEach((a,i)=>{mirrorData[i].a=a;mirrorData[i].pivot.rotation.y=-a*Math.PI/4});traceLight()},level:buildLevel};
+
+const icons = {
+ book:'<path d="M3 4.5C6 3 9 3 12 5c3-2 6-2 9-.5v15c-3-1.5-6-1.5-9 .5-3-2-6-2-9-.5z"/><path d="M12 5v15M6 8h3m-3 4h3m6-4h3m-3 4h3"/>',
+ sound:'<path d="m11 4-6 5H2v6h3l6 5zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
+ mute:'<path d="m11 4-6 5H2v6h3l6 5zM16 9l5 6m0-6-5 6"/>',
+ settings:'<path d="m10 3 4 0 .6 2.6 2 .9 2.4-.8 2 3.5-1.9 1.8v2l1.9 1.8-2 3.5-2.4-.8-2 .9L14 21h-4l-.6-2.6-2-.9-2.4.8-2-3.5L4.9 13v-2L3 9.2l2-3.5 2.4.8 2-.9z"/><circle cx="12" cy="12" r="3"/>',
+ map:'<path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/>',
+ reset:'<path d="M3 10a9 9 0 1 1 1.8 8M3 4v6h6"/>',
+ spark:'<path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8z"/>',
+ bulb:'<path d="M8 16c0-3-3-3-3-7a7 7 0 0 1 14 0c0 4-3 4-3 7M8 17h8m-7 3h6m-5 2h4M12 6v5m-2-2 2 2 2-2"/>',
+ leaf:'<path d="M20 3C8 1 2 7 5 15s17 7 15-12ZM5 20 16 8M9 15h6m-6 0V9"/>',
+ lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2"/>',
+ check:'<path d="m5 12 4 4L19 6"/>',
+ close:'<path d="m6 6 12 12M6 18 18 6"/>',
+ arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ mouse:'<rect x="6" y="2" width="12" height="20" rx="6"/><path d="M12 2v7M6 9h12"/>',
+ rotateLeft:'<path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/>',
+ rotateRight:'<path d="M21 10a9 9 0 1 0-2 8m2-14v6h-6"/>',
+ compass:'<path d="m15 3 3 16-7-5-7 1z"/>',
+ mirror:'<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M12 17v4m-4 0h8M8 9l4-3m-2 8 6-6"/>',
+ diamond:'<path d="m12 2 8 10-8 10-8-10zM4 12h16M12 2v20"/>',
+ up:'<path d="m6 15 6-6 6 6"/>',
+ down:'<path d="m6 9 6 6 6-6"/>',
+ left:'<path d="m15 6-6 6 6 6"/>',
+ right:'<path d="m9 6 6 6-6 6"/>',
+ fullscreen:'<path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>',
+};
+const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.spark}</svg>`;
+const $ = s => document.querySelector(s);
+const COLOR = {gold:0xffd785,blue:0x79d4f4,rose:0xec94ba};
+const NAMES = ['苏醒林地','苔藓回廊','蓝蕨幽谷','棱晶花园','古树圣所'];
+const ENGLISH = ['THE FIRST LIGHT','THE SILVER TRAIL','THE BLUE HOUR','THE TWIN STARS','HEART OF THE FOREST'];
+const NOTES = ['光遇到镜子时，总会以同样的角度离开。也许，转一个方向，就能找到答案。','每一面镜子都是一个转折。不用着急，让光一步一步走到远方。','晨光穿过蓝色晶片，就有了夜空的颜色。月石只聆听同色的呼唤。','棱晶藏着两个梦。一半是蓝色的月光，一半是粉色的晚霞。','有些路，需要亲自走过去。站上月纹石板，沉睡的荆棘便会让路。'];
+const STORAGE_KEY = 'lumen-fox-v1';
+function sanitizeRun(raw,definition){
+ if(!raw||typeof raw!=='object'||Array.isArray(raw))return null;
+ const restoredAngles=Object.fromEntries(definition.mirrors.map(m=>[m.id,[0,45,90,135].includes(raw.angles?.[m.id])?raw.angles[m.id]:m.angle]));
+ const position=raw.fox&&Number.isFinite(raw.fox.x)&&Number.isFinite(raw.fox.z)&&Math.hypot(raw.fox.x,raw.fox.z)<=9.75?{x:raw.fox.x,z:raw.fox.z}:{...definition.spawn};
+ const restoredSolved=raw.solved===true&&traceLight(definition,restoredAngles,definition.plates.map(p=>p.id)).litReceiverIds.length===definition.receivers.length;
+ return {angles:restoredAngles,rotations:Number.isFinite(raw.rotations)?Math.max(0,Math.min(1e7,Math.floor(raw.rotations))):0,seconds:Number.isFinite(raw.seconds)?Math.max(0,Math.min(31536000,raw.seconds)):0,fox:position,solved:restoredSolved};
+}
+let saved = {completed:[],wisps:{},runs:{},current:0,sound:true,quality:'high'};
+try {
+ const stored=JSON.parse(localStorage.getItem(STORAGE_KEY));
+ if(stored&&typeof stored==='object'){
+  saved.completed=[...new Set(Array.isArray(stored.completed)?stored.completed.filter(id=>LEVELS.some(l=>l.id===id)):[])];
+  for(const definition of LEVELS){
+   const stars=stored.wisps?.[definition.id];saved.wisps[definition.id]=[...new Set(Array.isArray(stars)?stars.filter(id=>definition.wisps.some(w=>w.id===id)):[])];
+   const run=sanitizeRun(stored.runs?.[definition.id],definition);if(run)saved.runs[definition.id]=run;
+  }
+  saved.current=Number.isInteger(stored.current)?Math.min(Math.max(0,stored.current),LEVELS.length-1):0;saved.sound=stored.sound!==false;saved.quality=stored.quality==='low'?'low':'high';
+ }
+} catch {}
+let levelIndex=saved.current,level;
+let angles={},selected=null,rotations=0,seconds=0,solved=false,paused=false,hintStep=0;
+let collected=new Set(),activePlates=[],lastTrace=null,route=[],keys=new Set(),dash=0,dashCooldown=0;
+let entities={},labels=[],wispModels=[],beamParticles=[],toastTimer,saveTimer=0,lastTime=0,frameCount=0,gateReady=true;
+let soundEnabled=saved.sound!==false,quality=saved.quality==='low'?'low':'high';
+const audio=new ForestAudio();
+function persist(){
+ saved.current=levelIndex;saved.sound=soundEnabled;saved.quality=quality;
+ if(level&&fox){saved.runs[level.id]={angles:{...angles},rotations,seconds,fox:{x:fox.position.x,z:fox.position.z},solved};saved.wisps[level.id]=[...collected];}
+ saveTimer=0;try{localStorage.setItem(STORAGE_KEY,JSON.stringify(saved));}catch{}
+}
+function play(name){if(soundEnabled&&audioStarted)audio.play(name);}
+let audioStarted=false;
+function unlockAudio(){if(!audioStarted&&soundEnabled){audioStarted=true;audio.setEnabled(true);audio.start();}}
+
+$('#app').innerHTML=`
+<div class="app-shell">
+ <header class="site-header">
+  <div class="brand"><img src="/fox.svg" alt="森光小狐狸"/><div><div class="brand-name">森光</div><div class="brand-sub">LUMEN FOX</div></div></div>
+  <div class="header-middle"><span class="little-star">✧</span> 跟随一束光，唤醒一座森林 <span class="little-star">✧</span></div>
+  <div class="header-actions"><button class="header-link" id="journal-button" title="旅途手记 (J)">${icon('book')}<span>旅途手记</span></button><button class="icon-btn" id="sound-button" title="切换森林音效" aria-label="关闭音效">${icon(soundEnabled?'sound':'mute')}</button><button class="icon-btn" id="settings-button" title="设置与暂停" aria-label="设置与暂停">${icon('settings')}</button></div>
+ </header>
+ <aside class="sidebar">
+  <div class="journey-heading"><div class="eyebrow">THE JOURNEY</div>${icon('leaf')}</div>
+  <nav class="chapter-list" aria-label="森林章节"></nav>
+  <div class="sidebar-divider"></div>
+  <div class="eyebrow">CURRENT QUEST</div><h2 class="quest-title">唤醒沉睡的林地</h2>
+  <div class="objectives"><div class="objective" id="quest-light"><span class="objective-mark"></span><span>点亮森林月石</span><em>0 / 1</em></div><div class="objective" id="quest-wisps"><span class="objective-mark"></span><span>收集林间星屑<div class="optional-tag">可选探索</div></span><em>0 / 3</em></div><div class="objective" id="quest-gate"><span class="objective-mark"></span><span>开启通往下一片森林的星门</span></div></div>
+  <div class="quest-progress"><div style="width:0%"></div></div>
+  <div class="forest-note"><div class="note-card"><div class="note-card-top">${icon('leaf')} 森林的低语</div><p id="forest-note"></p></div></div>
+  <div class="side-footer"><span><i class="save-dot"></i>旅途自动保存</span><span>v 1.0</span></div>
+ </aside>
+ <main class="game-main">
+  <div class="scene" id="scene" aria-label="3D 森林游戏：点击地面移动，点击镜子进行旋转"></div>
+  <div class="scene-header"><div class="scene-overline"></div><h1></h1><div class="scene-subtitle"></div></div>
+  <div class="scene-tools"><button class="hint-btn" id="hint-button" title="森林提示 (H)">${icon('bulb')}<span>灵感</span></button><button class="icon-btn" id="map-button" title="森林地图 (M)" aria-label="森林地图">${icon('map')}</button><button class="icon-btn" id="reset-button" title="重新开始本关 (R)" aria-label="重新开始本关">${icon('reset')}</button></div>
+  <div class="scene-status"><span>${icon('spark')}<b id="wisp-count">0 / 3</b> 星屑</span><span>${icon('clock')}<b id="timer">00:00</b></span></div>
+  <div class="world-labels"></div>
+  <div class="mini-map"><span class="map-title">FOREST COMPASS</span><canvas width="210" height="184" id="minimap"></canvas></div>
+  <div class="compass">${icon('compass')}<span>N</span></div>
+  <div class="mirror-controls hidden"><div class="mirror-card-top"><span class="eyebrow">ANCIENT MIRROR</span><button class="close-btn" id="deselect-button" aria-label="取消选择镜子">${icon('close')}</button></div><h3 id="mirror-name">古老的镜子</h3><div class="angle-line"><span>镜面角度</span><span class="angle-value">45°</span></div><div class="rotate-buttons"><button id="rotate-left" title="逆时针旋转 (Q)">${icon('rotateLeft')}<span>左转 <kbd>Q</kbd></span></button><button id="rotate-right" title="顺时针旋转 (E)"><span>右转 <kbd>E</kbd></span>${icon('rotateRight')}</button></div><p class="mirror-tip">每次转动 45°。观察光线，让它找到月石。</p></div>
+  <div class="hint-panel hidden"><button class="close-btn" id="close-hint" aria-label="关闭提示">${icon('close')}</button><div class="eyebrow">A LITTLE INSPIRATION</div><p></p><button class="more-hint">再给我一点提示 →</button></div>
+  <div class="mobile-pad" aria-label="触屏移动控制"><button data-key="w" aria-label="向前">${icon('up')}</button><button data-key="a" aria-label="向左">${icon('left')}</button><button data-key="s" aria-label="向后">${icon('down')}</button><button data-key="d" aria-label="向右">${icon('right')}</button></div>
+  <div class="bottom-hud"><div class="story-strip"><div class="story-copy"><div class="fox-avatar"><img src="/fox.svg" alt="小狐狸阿烁"/></div><div><h2 id="story-title">让光，找到回家的路。</h2><p id="story-text">点击镜子，再用 Q / E 转动它。每一束光，都有自己的归途。</p></div></div><button class="guide-pill" id="guide-button">${icon('book')} 冒险指南</button></div><div class="controls-bar"><div class="controls-left"><div class="control-item"><div class="key-group"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div>移动</div><div class="control-item touch-help">${icon('mouse')}点击地面移动</div><div class="control-item"><div class="key-group"><kbd>Q</kbd><kbd>E</kbd></div>旋转镜子</div><div class="control-item"><kbd>Space</kbd>轻盈冲刺</div><div class="control-item camera-help">${icon('mouse')}拖动右键环视</div></div><div class="controls-right"><button class="text-btn" id="recenter-button" title="重置视角 (C)">${icon('compass')}重置视角</button><button class="text-btn" id="help-button" aria-label="操作帮助">${icon('book')}帮助</button></div></div></div>
+  <div class="toast hidden" role="status"></div><div class="success-banner hidden"></div>
+  <div class="loading"><img src="/fox.svg" alt=""/><span>森林正在醒来</span><div class="loading-line"></div></div><div class="level-transition"></div>
+ </main>
+</div><div id="modal-root"></div>`;
+
+let renderer,composer,scene,camera,bloom,forest,fox,puzzleGroup,beamGroup,particleGroup;
+let transitioning=false;
+let cameraAngle=Math.PI/4,cameraZoom=1,targetZoom=1,camElevation=.79;
+const sceneEl=$('#scene');
+try{
+ renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
+ renderer.setPixelRatio(Math.min(window.devicePixelRatio,quality==='high'?1.7:1));
+ renderer.shadowMap.enabled=quality==='high';renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+ renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.25;
+ renderer.domElement.tabIndex=0;renderer.domElement.setAttribute('aria-label','交互式三维森林');sceneEl.appendChild(renderer.domElement);
+ scene=new THREE.Scene();scene.background=new THREE.Color(0x17382f);scene.fog=new THREE.FogExp2(0x17382f,.019);
+ camera=new THREE.OrthographicCamera(-18,18,15,-15,.1,130);
+ scene.add(new THREE.HemisphereLight(0xc7e3d4,0x3e4133,2.25));
+ const sun=new THREE.DirectionalLight(0xffe6ad,3.8);sun.position.set(-9,18,5);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-15,right:15,top:15,bottom:-15,near:.1,far:60});sun.shadow.bias=-.0006;sun.shadow.normalBias=.04;scene.add(sun);
+ const rim=new THREE.DirectionalLight(0x8dcbc1,1.7);rim.position.set(8,10,-12);scene.add(rim);
+ const fill=new THREE.DirectionalLight(0xa6bd84,.7);fill.position.set(7,4,10);scene.add(fill);
+ forest=createForest(scene);fox=createFox();scene.add(fox);
+ puzzleGroup=new THREE.Group();beamGroup=new THREE.Group();particleGroup=new THREE.Group();scene.add(puzzleGroup,beamGroup,particleGroup);
+ composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));
+ bloom=new UnrealBloomPass(new THREE.Vector2(1000,800),.42,.5,.85);composer.addPass(bloom);composer.addPass(new OutputPass());
+}catch(error){
+ $('.loading').innerHTML=`<img src="/fox.svg" alt=""/><span>浏览器暂时无法开启 3D 森林</span><p style="font-size:11px;letter-spacing:0">请开启浏览器的硬件加速，或使用支持 WebGL 的浏览器重试。</p><button class="primary-btn" style="width:auto" onclick="location.reload()">重新尝试</button>`;console.error(error);
+}
+const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),groundPlane=new THREE.Plane(new THREE.Vector3(0,1,0),0);
+const clockText=value=>`${String(Math.floor(value/60)).padStart(2,'0')}:${String(Math.floor(value%60)).padStart(2,'0')}`;
+function resize(){if(!renderer)return;const w=sceneEl.clientWidth,h=sceneEl.clientHeight;renderer.setSize(w,h);composer.setSize(w,h);const aspect=w/h;const view=Math.max(14.2,12/aspect);camera.left=-view*aspect;camera.right=view*aspect;camera.top=view;camera.bottom=-view;camera.updateProjectionMatrix();}
+function updateCamera(){cameraZoom=THREE.MathUtils.lerp(cameraZoom,targetZoom,.1);camera.zoom=cameraZoom;const r=33;camera.position.set(Math.sin(cameraAngle)*r,Math.sin(camElevation)*r+7,Math.cos(cameraAngle)*r);camera.lookAt(0,.25,0);camera.updateProjectionMatrix();}
+function disposeGroup(group){const geometries=new Set(),materials=new Set();group.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material])materials.add(m);}});group.clear();for(const g of geometries)g.dispose();/* Shared model materials stay cached by world.js; ephemeral beam materials are disposed separately. */if(group===beamGroup||group===particleGroup)for(const m of materials)m.dispose();}
+function addLabel(object,text,cls=''){const el=document.createElement('div');el.className=`world-label ${cls}`;el.innerHTML=`<span>${text}</span><i></i>`;$('.world-labels').appendChild(el);labels.push({object,el,offset:cls.includes('fox')?1.65:2.55});return el;}
+function buildLevel(index,reset=false){
+ levelIndex=index;level=LEVELS[index];if(reset)delete saved.runs[level.id];const run=saved.runs[level.id];
+ angles=run?{...run.angles}:Object.fromEntries(level.mirrors.map(m=>[m.id,m.angle]));selected=null;rotations=run?.rotations||0;seconds=run?.seconds||0;solved=false;hintStep=0;route=[];keys.clear();activePlates=[];lastTrace=null;dash=0;dashCooldown=0;saveTimer=0;
+ collected=new Set(saved.wisps[level.id]||[]);entities={};labels=[];wispModels=[];beamParticles=[];
+ disposeGroup(puzzleGroup);disposeGroup(beamGroup);disposeGroup(particleGroup);$('.world-labels').innerHTML='';$('.success-banner').classList.add('hidden');$('.mirror-controls').classList.add('hidden');$('.hint-panel').classList.add('hidden');
+ const add=(data,factory,kind)=>{const obj=factory(data);obj.userData.kind=kind;obj.userData.id=data.id;obj.userData.data=data;puzzleGroup.add(obj);if(data.id)entities[data.id]=obj;return obj;};
+ const source=add(level.source,createSource,'source');addLabel(source,'晨光之源');
+ for(const data of level.mirrors){const obj=add(data,createMirror,'mirror');obj.userData.setAngle(angles[data.id]);const label=addLabel(obj,`镜 ${level.mirrors.indexOf(data)+1}`,'mirror-label');label.querySelector('span').onclick=()=>selectMirror(data.id,true);obj.userData.label=label;}
+ for(const data of level.receivers){const obj=add(data,createReceiver,'receiver');addLabel(obj,`${data.color==='blue'?'蓝色':data.color==='rose'?'粉色':''}月石`);}
+ for(const data of level.prisms)addLabel(add(data,createPrism,'prism'),'分光棱晶');
+ for(const data of level.filters)addLabel(add(data,createFilter,'filter'),'蓝色晶片');
+ for(const data of level.plates)addLabel(add(data,createPlate,'plate'),'月纹石板');
+ for(const data of level.obstacles)add(data,createObstacle,'obstacle');
+ entities.gate=add(level.gate,createGate,'gate');addLabel(entities.gate,'沉睡的星门');
+ for(const data of level.wisps){
+  if(collected.has(data.id))continue;
+  const obj=new THREE.Group();obj.position.set(data.x,1,data.z);obj.userData.data=data;
+  const gem=new THREE.Mesh(new THREE.OctahedronGeometry(.15),new THREE.MeshStandardMaterial({color:0xffde7e,emissive:0xffcb65,emissiveIntensity:2.7,roughness:.15}));obj.add(gem);
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(.29,.015,5,24),new THREE.MeshBasicMaterial({color:0xe5cf7d,transparent:true,opacity:.48}));ring.rotation.x=Math.PI/2;obj.add(ring);
+  const glow=new THREE.PointLight(0xffc759,.6,2);obj.add(glow);puzzleGroup.add(obj);wispModels.push(obj);
+ }
+ const position=run?.fox||level.spawn;fox.position.set(position.x,0,position.z);
+ activePlates=level.plates.filter(p=>run?.solved||Math.hypot(fox.position.x-p.x,fox.position.z-p.z)<.8).map(p=>p.id);
+ if(!canStand(fox.position.x,fox.position.z)){fox.position.set(level.spawn.x,0,level.spawn.z);if(!run?.solved)activePlates=[];}
+ for(const p of level.plates)entities[p.id].userData.setActive(activePlates.includes(p.id));
+ gateReady=!run?.solved||Math.hypot(fox.position.x-level.gate.x,fox.position.z-level.gate.z)>=1.15;
+ fox.rotation.y=2.3;addLabel(fox,'阿烁','fox-label');
+ $('.scene-overline').textContent=`CHAPTER ${['I','II','III','IV','V'][index]} · ${ENGLISH[index]}`;
+ $('.scene-header h1').textContent=NAMES[index];$('.scene-subtitle').textContent=level.name+' · '+['与光的第一次相遇','循着苔痕，走过三个转弯','把晨光染成夜空的颜色','一束晨光，两颗星星','让最后一束光重回森林'][index];
+ $('#forest-note').textContent=NOTES[index];$('.quest-title').textContent=index===4?'唤醒森林之心':'唤醒沉睡的林地';
+ $('#story-title').textContent=['让光，找到回家的路。','慢慢来，每个转弯都有意义。','原来，光也有自己的颜色。','有些美好，值得同时点亮。','只差一步，森林就会醒来。'][index];
+ $('#story-text').textContent=['点击镜子，再用 Q / E 转动它。每一束光，都有自己的归途。','顺着光路依次调整三面镜子，让晨光抵达远处的月石。','让光穿过蓝色晶片，再借助镜子绕过岩石。','棱晶把晨光分成蓝与粉。让两束光找到同色的月石。','排好四面镜子后，站上月纹石板，让荆棘为光让路。'][index];
+ updateChapters();recomputeLight({restoring:!!run});updateHUD();persist();
+}
+function updateChapters(){
+ const highest=Math.max(0,...saved.completed.map(id=>LEVELS.findIndex(l=>l.id===id)+1));
+ $('.chapter-list').innerHTML=LEVELS.map((l,i)=>`<button class="chapter ${i===levelIndex?'active':''} ${saved.completed.includes(l.id)?'complete':''}" data-level="${i}" ${i>highest?'disabled':''} ${i===levelIndex?'aria-current="step"':''}><span class="chapter-number">${saved.completed.includes(l.id)?icon('check'):i>highest?icon('lock'):String(i+1).padStart(2,'0')}</span><span class="chapter-text"><strong>${NAMES[i]}</strong><small>${['初识光的方向','镜与镜的对话','月石的颜色','一束光的两种可能','最后的森林之歌'][i]}</small></span>${i===levelIndex?'<i class="chapter-active-dot"></i>':''}</button>`).join('');
+ for(const btn of document.querySelectorAll('.chapter'))btn.onclick=()=>{if(Number(btn.dataset.level)!==levelIndex)transitionTo(Number(btn.dataset.level));};
+}
+function updateHUD(){
+ const lit=solved?level.receivers.length:(lastTrace?.litReceiverIds.length||0);
+ $('#wisp-count').textContent=`${collected.size} / ${level.wisps.length}`;$('#quest-wisps em').textContent=`${collected.size} / ${level.wisps.length}`;$('#quest-light em').textContent=`${lit} / ${level.receivers.length}`;
+ for(const [id,done] of [['#quest-light',lit===level.receivers.length],['#quest-wisps',collected.size===level.wisps.length],['#quest-gate',solved]]){$(id).classList.toggle('done',done);$(id+' .objective-mark').innerHTML=done?icon('check'):'';}
+ $('.quest-progress div').style.width=`${((lit/level.receivers.length)*.55+(collected.size/level.wisps.length)*.2+(solved?.25:0))*100}%`;
+ $('#timer').textContent=clockText(seconds);
+}
+function cylinderBetween(from,to,radius,material){const a=new THREE.Vector3(from.x,1.35,from.z),b=new THREE.Vector3(to.x,1.35,to.z),delta=b.clone().sub(a);const mesh=new THREE.Mesh(new THREE.CylinderGeometry(radius,radius,delta.length(),7),material);mesh.position.copy(a).add(b).multiplyScalar(.5);mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.normalize());return mesh;}
+function recomputeLight({restoring=false}={}){
+ if(solved)return;
+ const previousLit=lastTrace?.litReceiverIds||[];lastTrace=traceLight(level,angles,activePlates);disposeGroup(beamGroup);beamParticles=[];
+ for(const segment of lastTrace.segments){
+  const color=COLOR[segment.color];
+  beamGroup.add(cylinderBetween(segment.from,segment.to,.024,new THREE.MeshBasicMaterial({color:0xfff6da,toneMapped:false})));
+  beamGroup.add(cylinderBetween(segment.from,segment.to,.065,new THREE.MeshBasicMaterial({color,transparent:true,opacity:.5,depthWrite:false,blending:THREE.AdditiveBlending})));
+  beamGroup.add(cylinderBetween(segment.from,segment.to,.16,new THREE.MeshBasicMaterial({color,transparent:true,opacity:.065,depthWrite:false,blending:THREE.AdditiveBlending})));
+  const sphere=new THREE.Mesh(new THREE.SphereGeometry(.075,6,6),new THREE.MeshBasicMaterial({color,toneMapped:false}));beamGroup.add(sphere);beamParticles.push({sphere,segment,offset:Math.random()});
+ }
+ for(const receiver of level.receivers){const lit=lastTrace.litReceiverIds.includes(receiver.id);entities[receiver.id].userData.setLit(lit);if(lit&&!previousLit.includes(receiver.id)&&!restoring){play('lit');burst(new THREE.Vector3(receiver.x,1.3,receiver.z),COLOR[receiver.color],15);}}
+ for(const obstacle of level.obstacles)entities[obstacle.id].userData.setOpen?.(activePlates.includes(obstacle.plateId));
+ updateHUD();if(lastTrace.litReceiverIds.length===level.receivers.length)completeLevel({silent:restoring});
+}
+function selectMirror(id,walk=false){
+ if(!entities[id]||solved){if(solved)toast('月石已经点亮。可以继续探索，或走向星门。');return;}
+ selected=id;for(const m of level.mirrors){entities[m.id].userData.setSelected(m.id===id);entities[m.id].userData.label.classList.toggle('selected',m.id===id);}
+ $('.mirror-controls').classList.remove('hidden');$('#mirror-name').textContent=`古老的镜子 · ${level.mirrors.findIndex(m=>m.id===id)+1}`;$('.angle-value').textContent=angles[id]+'°';
+ if(walk){const data=entities[id].userData.data;const delta=new THREE.Vector2(fox.position.x-data.x,fox.position.z-data.z).normalize().multiplyScalar(1.35);goTo(data.x+delta.x,data.z+delta.y);}
+ play('click');
+}
+function deselect(){selected=null;$('.mirror-controls').classList.add('hidden');for(const m of level.mirrors){entities[m.id].userData.setSelected(false);entities[m.id].userData.label.classList.remove('selected');}}
+function rotateMirror(direction){
+ if(solved)return;
+ if(!selected){const nearest=[...level.mirrors].sort((a,b)=>Math.hypot(a.x-fox.position.x,a.z-fox.position.z)-Math.hypot(b.x-fox.position.x,b.z-fox.position.z))[0];selectMirror(nearest.id);}
+ angles[selected]=(angles[selected]+direction*45+180)%180;entities[selected].userData.setAngle(angles[selected]);rotations++;$('.angle-value').textContent=angles[selected]+'°';play('rotate');recomputeLight();persist();
+}
+function toast(text){clearTimeout(toastTimer);$('.toast').textContent=text;$('.toast').classList.remove('hidden');toastTimer=setTimeout(()=>$('.toast').classList.add('hidden'),3800);}
+function showHint(){hintStep++;const panel=$('.hint-panel');panel.classList.remove('hidden');
+ if(hintStep===1)panel.querySelector('p').textContent=level.hint;
+ else{const wrong=level.mirrors.find(m=>angles[m.id]!==m.solutionAngle);if(wrong){selectMirror(wrong.id);panel.querySelector('p').textContent=`试着把镜 ${level.mirrors.indexOf(wrong)+1} 转到 ${wrong.solutionAngle}°。镜面与光线的夹角，会决定光的下一站。`;}else if(level.plates.length&&!solved)panel.querySelector('p').textContent='光路已经准备好了！点击右前方的「月纹石板」，让阿烁站上去。';else panel.querySelector('p').textContent='光已经找到归途。还可以在林间寻找三枚金色星屑，或走向星门。';}
+ panel.querySelector('.more-hint').textContent=hintStep===1?'再给我一点提示 →':'看看下一步 →';play('click');
+}
+function transitionTo(index){if(transitioning||index<0||index>=LEVELS.length)return;persist();transitioning=true;closeModal();$('.level-transition').classList.add('active');setTimeout(()=>{buildLevel(index);transitioning=false;$('.level-transition').classList.remove('active');toast(`抵达${NAMES[index]}。新的光正在等你。`);},450);}
+function completeLevel({silent=false}={}){
+ solved=true;route=[];if(!silent)play('solve');entities.gate.userData.setOpen(true);deselect();
+ const gateLabel=labels.find(l=>l.object===entities.gate);if(gateLabel)gateLabel.el.querySelector('span').textContent='星门已开启';
+ if(!saved.completed.includes(level.id))saved.completed.push(level.id);persist();updateChapters();updateHUD();
+ if(!silent)for(const r of level.receivers)burst(new THREE.Vector3(r.x,1.3,r.z),COLOR[r.color],30);
+ $('#story-title').textContent=levelIndex===4?'你让整个森林，重新有了光。':'林地醒来了，谢谢你，阿烁。';$('#story-text').textContent='星门已经开启。还可以继续收集星屑，或走进下一片森林。';
+ if(!silent){const completedIndex=levelIndex;setTimeout(()=>{if(levelIndex!==completedIndex||!solved)return;showSuccess();},850);}
+}
+function showSuccess(){
+ const last=levelIndex===LEVELS.length-1;const panel=$('.success-banner');panel.innerHTML=`<div class="success-spark">✧</div><div class="eyebrow">${last?'THE FOREST REMEMBERS':'A LITTLE LIGHT RETURNS'}</div><h2>${last?'森林，因你苏醒':'一片林地，重新发光'}</h2><p>${last?'所有月石汇成了星河。小小的狐狸，也能为整个森林带来光。':'晨光穿过古镜，落在月石上。<br/>前方的森林，正在静静等你。'}</p><div class="success-stats"><div><strong>${clockText(seconds)}</strong><small>探索时光</small></div><div><strong>${collected.size} / 3</strong><small>林间星屑</small></div><div><strong>${rotations}</strong><small>镜面转动</small></div></div><button class="primary-btn" id="next-level">${last?'查看旅途收藏':'前往'+NAMES[levelIndex+1]}${icon('arrow')}</button><button class="secondary-btn" id="keep-exploring">再留一会儿 · 继续探索</button>`;panel.classList.remove('hidden');
+ $('#next-level').onclick=()=>{panel.classList.add('hidden');last?showJournal():transitionTo(levelIndex+1);};$('#keep-exploring').onclick=()=>panel.classList.add('hidden');
+}
+function burst(position,color,count=18){for(let i=0;i<count;i++){const obj=new THREE.Mesh(new THREE.OctahedronGeometry(.035+Math.random()*.045),new THREE.MeshBasicMaterial({color,transparent:true}));obj.position.copy(position);obj.userData={velocity:new THREE.Vector3((Math.random()-.5)*2.6,Math.random()*2+.5,(Math.random()-.5)*2.6),life:1.3};particleGroup.add(obj);}}
+function canStand(x,z){
+ if(Math.hypot(x,z)>9.75)return false;
+ for(const o of level.obstacles){if(o.plateId&&(activePlates.includes(o.plateId)||solved))continue;if(Math.hypot(x-o.x,z-o.z)<o.radius+.3)return false;}
+ for(const obj of [...level.mirrors,...level.receivers,...level.prisms])if(Math.hypot(x-obj.x,z-obj.z)<.56)return false;
+ return true;
+}
+function goTo(x,z){
+ const scale=.5;let end={x:Math.round(x/scale),z:Math.round(z/scale)};const start={x:Math.round(fox.position.x/scale),z:Math.round(fox.position.z/scale)};
+ if(!canStand(end.x*scale,end.z*scale)){let found=null;for(let r=1;r<=5&&!found;r++)for(let dx=-r;dx<=r&&!found;dx++)for(let dz=-r;dz<=r;dz++){if(Math.abs(dx)!==r&&Math.abs(dz)!==r)continue;if(canStand((end.x+dx)*scale,(end.z+dz)*scale)){found={x:end.x+dx,z:end.z+dz};break;}}if(!found)return;end=found;}
+ const key=p=>`${p.x},${p.z}`,startKey=key(start),endKey=key(end);const open=[{...start,g:0,f:0}],costs=new Map([[startKey,0]]),parents=new Map(),closed=new Set();
+ for(let n=0;open.length&&n<1900;n++){
+  open.sort((a,b)=>a.f-b.f);const current=open.shift(),ck=key(current);if(closed.has(ck))continue;if(ck===endKey){const points=[];let k=endKey;while(k!==startKey){const [px,pz]=k.split(',').map(Number);points.unshift(new THREE.Vector3(px*scale,0,pz*scale));k=parents.get(k);if(!k)break;}route=points;return;}
+  closed.add(ck);
+  for(const [dx,dz]of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]){const next={x:current.x+dx,z:current.z+dz},nk=key(next);if(closed.has(nk)||!canStand(next.x*scale,next.z*scale))continue;if(dx&&dz&&(!canStand((current.x+dx)*scale,current.z*scale)||!canStand(current.x*scale,(current.z+dz)*scale)))continue;const g=current.g+Math.hypot(dx,dz);if(g>=(costs.get(nk)??Infinity))continue;costs.set(nk,g);parents.set(nk,ck);open.push({...next,g,f:g+Math.hypot(next.x-end.x,next.z-end.z)});}
+ }
+ toast('这里暂时过不去，试试另一条林间小路。');
+}
+function moveFox(dt,t){
+ const forward=new THREE.Vector3(-Math.sin(cameraAngle),0,-Math.cos(cameraAngle)),right=new THREE.Vector3(Math.cos(cameraAngle),0,-Math.sin(cameraAngle));let direction=new THREE.Vector3();
+ if(keys.has('w')||keys.has('arrowup'))direction.add(forward);if(keys.has('s')||keys.has('arrowdown'))direction.sub(forward);if(keys.has('a')||keys.has('arrowleft'))direction.sub(right);if(keys.has('d')||keys.has('arrowright'))direction.add(right);
+ let moving=direction.lengthSq()>.001;
+ if(moving)route=[];else if(route.length){direction.copy(route[0]).sub(fox.position);direction.y=0;if(direction.length()<.16)route.shift();else moving=true;}
+ dash=Math.max(0,dash-dt);dashCooldown=Math.max(0,dashCooldown-dt);
+ if(moving){direction.normalize();const speed=dash>0?9:keys.has('shift')?5.3:3.4;const step=direction.clone().multiplyScalar(Math.min(speed*dt,route.length?route[0].distanceTo(fox.position):Infinity));
+  if(canStand(fox.position.x+step.x,fox.position.z))fox.position.x+=step.x;if(canStand(fox.position.x,fox.position.z+step.z))fox.position.z+=step.z;
+  const angle=Math.atan2(direction.x,direction.z);fox.rotation.y+=Math.atan2(Math.sin(angle-fox.rotation.y),Math.cos(angle-fox.rotation.y))*Math.min(1,dt*14);play('step');
+ }
+ fox.userData.animate?.(t,moving);if(dash>0)fox.position.y=Math.sin((1-dash/.28)*Math.PI)*.36;else fox.position.y=0;
+ for(const w of wispModels){if(!w.visible)continue;if(Math.hypot(fox.position.x-w.position.x,fox.position.z-w.position.z)<.85){w.visible=false;collected.add(w.userData.data.id);saved.wisps[level.id]=[...collected];persist();play('collect');burst(w.position,0xffdc8e,18);updateHUD();toast(collected.size===3?'三枚星屑都找到了！这片森林记住了你的脚步。':`捡到一枚林间星屑 · ${collected.size} / 3`);}}
+ const nextActive=level.plates.filter(p=>Math.hypot(fox.position.x-p.x,fox.position.z-p.z)<.8).map(p=>p.id);
+ if(!solved&&nextActive.join()!==activePlates.join()){activePlates=nextActive;for(const p of level.plates)entities[p.id].userData.setActive(activePlates.includes(p.id));recomputeLight();if(!solved&&route.length){const destination=route.at(-1).clone();goTo(destination.x,destination.z);}if(nextActive.length)toast('月纹石板亮了，荆棘正在让路。');}
+ const gateDistance=Math.hypot(fox.position.x-level.gate.x,fox.position.z-level.gate.z);if(gateDistance>=1.15)gateReady=true;
+ if(solved&&gateReady&&$('.success-banner').classList.contains('hidden')&&gateDistance<1.15){gateReady=false;route=[];if(levelIndex<LEVELS.length-1)transitionTo(levelIndex+1);else{showSuccess();fox.position.z+=1.2;}}
+}
+function updateLabels(){for(const label of labels){const p=label.object.position.clone();p.y+=label.offset;p.project(camera);label.el.style.left=`${(p.x*.5+.5)*sceneEl.clientWidth}px`;label.el.style.top=`${(-p.y*.5+.5)*sceneEl.clientHeight}px`;label.el.style.opacity=p.z>1?'0':'1';}}
+const mini=$('#minimap').getContext('2d');
+function drawMinimap(){
+ const w=210,h=184;mini.clearRect(0,0,w,h);const point=(x,z)=>({x:105+x*7.7,y:89+z*7.7});mini.strokeStyle='#98b38933';mini.lineWidth=1;mini.beginPath();mini.arc(105,89,77,0,Math.PI*2);mini.stroke();
+ if(lastTrace)for(const s of lastTrace.segments){const a=point(s.from.x,s.from.z),b=point(s.to.x,s.to.z);mini.strokeStyle='#'+COLOR[s.color].toString(16);mini.globalAlpha=.6;mini.beginPath();mini.moveTo(a.x,a.y);mini.lineTo(b.x,b.y);mini.stroke();}mini.globalAlpha=1;
+ for(const m of level.mirrors){const p=point(m.x,m.z),a=angles[m.id]*Math.PI/180;mini.strokeStyle=selected===m.id?'#fff1b6':'#b1d5c4';mini.lineWidth=3;mini.beginPath();mini.moveTo(p.x-Math.cos(a)*5,p.y-Math.sin(a)*5);mini.lineTo(p.x+Math.cos(a)*5,p.y+Math.sin(a)*5);mini.stroke();}
+ for(const r of level.receivers){const p=point(r.x,r.z);mini.fillStyle=solved||lastTrace?.litReceiverIds.includes(r.id)?'#fff2b4':'#78968c';mini.beginPath();mini.arc(p.x,p.y,4,0,Math.PI*2);mini.fill();}
+ for(const p of level.plates){const pt=point(p.x,p.z);mini.fillStyle=activePlates.includes(p.id)?'#dbdb9a':'#617b6d';mini.fillRect(pt.x-3,pt.y-3,6,6);}
+ const f=point(fox.position.x,fox.position.z);mini.fillStyle='#f8a764';mini.beginPath();mini.arc(f.x,f.y,4,0,Math.PI*2);mini.fill();mini.strokeStyle='#ffe5b6';mini.lineWidth=1;mini.stroke();
+}
+function tick(ms){
+ requestAnimationFrame(tick);const t=ms/1000,dt=Math.min(t-lastTime,.045)||.016;lastTime=t;if(!renderer||!level)return;
+ if(!paused&&!transitioning){if(!solved)seconds+=dt;moveFox(dt,t);saveTimer+=dt;if(saveTimer>=3)persist();forest.ambientUpdate?.(t);for(const w of wispModels){w.position.y=1+Math.sin(t*1.8+w.position.x)*.12;w.rotation.y=t*.7;}}
+ for(const {sphere,segment,offset}of beamParticles){const k=(t*.22+offset)%1;sphere.position.set(THREE.MathUtils.lerp(segment.from.x,segment.to.x,k),1.35,THREE.MathUtils.lerp(segment.from.z,segment.to.z,k));}
+ for(const p of [...particleGroup.children]){p.userData.life-=dt;p.position.addScaledVector(p.userData.velocity,dt);p.userData.velocity.y-=dt*1.3;p.material.opacity=Math.max(0,p.userData.life/1.3);p.rotation.x+=dt;if(p.userData.life<=0){particleGroup.remove(p);p.geometry.dispose();p.material.dispose();}}
+ updateCamera();updateLabels();if(frameCount++%8===0){drawMinimap();$('#timer').textContent=clockText(seconds);}
+ if(quality==='high')composer.render();else renderer.render(scene,camera);
+}
+
+function openModal(content){keys.clear();paused=true;$('#modal-root').innerHTML=`<div class="modal-backdrop"><section role="dialog" aria-modal="true" class="modal"><button class="close-btn" id="modal-close" aria-label="关闭窗口">${icon('close')}</button>${content}</section></div>`;$('#modal-close').onclick=closeModal;$('.modal-backdrop').onclick=e=>{if(e.target===e.currentTarget)closeModal();};$('#modal-close').focus();}
+function closeModal(){paused=false;$('#modal-root').innerHTML='';keys.clear();}
+function showHelp(){
+ play('click');openModal(`<div class="eyebrow">A SMALL FOX. A BIG ADVENTURE.</div><h2>欢迎来到森光</h2><p>你是小狐狸「阿烁」。循着遗落的晨光，穿过五片静谧林地，让沉睡的森林重新闪耀。</p><div class="manual-grid"><div class="manual-item">${icon('mouse')}<strong>自在探索</strong><p>点击地面让阿烁走过去，或用 WASD / 方向键移动。Shift 奔跑，空格轻盈冲刺。</p></div><div class="manual-item">${icon('mirror')}<strong>让光转个弯</strong><p>点击镜子选中，再用 Q / E 或屏幕按钮旋转。每次转动 45°，光会实时改变方向。</p></div><div class="manual-item">${icon('diamond')}<strong>唤醒森林月石</strong><p>让光照到同色月石。之后还会遇到滤色晶片、分光棱晶和能移开荆棘的压力板。</p></div><div class="manual-item">${icon('spark')}<strong>带走一点星光</strong><p>每片林地藏着三枚星屑，靠近即可收集。解开光路后，穿过星门继续旅途。</p></div></div><div class="help-controls"><span><kbd>H</kbd> 提示</span><span><kbd>M</kbd> 地图</span><span><kbd>R</kbd> 重玩</span><span><kbd>C</kbd> 重置视角</span><span><kbd>Esc</kbd> 暂停</span></div><p style="font-size:10px">鼠标滚轮缩放 · 按住右键拖动环视 · 进度自动保存在当前浏览器</p><button class="primary-btn" id="start-adventure">出发，跟着光走 ${icon('arrow')}</button>`);$('#start-adventure').onclick=closeModal;
+}
+function showJournal(){
+ const total=Object.values(saved.wisps).reduce((n,a)=>n+a.length,0);openModal(`<div class="eyebrow">LITTLE THINGS, LONG JOURNEYS</div><h2>阿烁的旅途手记</h2><p>「我以为自己在追逐光，后来才发现，我也可以成为光。」</p><div class="success-stats"><div><strong>${saved.completed.length} / 5</strong><small>已苏醒的林地</small></div><div><strong>${total} / 15</strong><small>收藏的星屑</small></div></div>${LEVELS.map((l,i)=>`<div class="journal-entry"><div class="entry-icon">${saved.completed.includes(l.id)?'✧':'·'}</div><div><h3>${NAMES[i]} <span style="font-family:Outfit;font-size:10px;color:#b3bb91">${(saved.wisps[l.id]||[]).length} / 3 星屑</span></h3><p>${saved.completed.includes(l.id)?NOTES[i]:'这页手记还在等待你的脚印。'}</p></div></div>`).join('')}`);
+}
+function showMap(){
+ const highest=Math.max(0,...saved.completed.map(id=>LEVELS.findIndex(l=>l.id===id)+1));openModal(`<div class="eyebrow">FIVE CLEARINGS. ONE FOREST.</div><h2>森林地图</h2><p>循着光走，一片接着一片。已解锁的林地随时欢迎你回来。</p><div class="map-grid">${LEVELS.map((l,i)=>`<button class="map-level" data-go="${i}" ${i>highest?'disabled':''}><span class="map-index">${String(i+1).padStart(2,'0')}</span><span><strong>${NAMES[i]}</strong><small>${l.name} · ${(saved.wisps[l.id]||[]).length} / 3 星屑</small></span>${icon(i>highest?'lock':saved.completed.includes(l.id)?'check':'arrow')}</button>`).join('')}</div>`);for(const b of document.querySelectorAll('[data-go]'))b.onclick=()=>{if(+b.dataset.go===levelIndex)closeModal();else transitionTo(+b.dataset.go);};
+}
+function toggleSound(){soundEnabled=!soundEnabled;audio.setEnabled(soundEnabled);if(soundEnabled){audioStarted=true;audio.start();}$('#sound-button').innerHTML=icon(soundEnabled?'sound':'mute');$('#sound-button').setAttribute('aria-label',soundEnabled?'关闭音效':'开启音效');persist();}
+function showSettings(){openModal(`<div class="eyebrow">TAKE A LITTLE BREATH</div><h2>在树荫下，歇一会儿</h2><p>冒险已暂停。森林会在这里等你。</p><div class="settings-row"><span>森林音效<small>轻柔旋律、鸟鸣与交互音效</small></span><button class="toggle-btn" id="setting-sound">${soundEnabled?'已开启':'已关闭'}</button></div><div class="settings-row"><span>画面品质<small>流畅模式会降低分辨率并关闭辉光与阴影</small></span><button class="toggle-btn" id="setting-quality">${quality==='high'?'精致':'流畅'}</button></div><div class="settings-row"><span>沉浸模式<small>全屏探索这片森林</small></span><button class="toggle-btn" id="fullscreen-button">${document.fullscreenElement?'退出全屏':'进入全屏'}</button></div><button class="primary-btn" id="resume-button" style="margin-top:25px">继续旅途 ${icon('arrow')}</button>`);
+ $('#setting-sound').onclick=()=>{toggleSound();$('#setting-sound').textContent=soundEnabled?'已开启':'已关闭';};$('#setting-quality').onclick=()=>{quality=quality==='high'?'low':'high';renderer.setPixelRatio(Math.min(devicePixelRatio,quality==='high'?1.7:1));renderer.shadowMap.enabled=quality==='high';scene.traverse(o=>{if(o.isMesh){for(const m of Array.isArray(o.material)?o.material:[o.material])m.needsUpdate=true;}});resize();$('#setting-quality').textContent=quality==='high'?'精致':'流畅';persist();};
+ $('#fullscreen-button').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();$('#fullscreen-button').textContent=document.fullscreenElement?'退出全屏':'进入全屏';}catch{toast('当前浏览器暂不支持全屏模式。');}};$('#resume-button').onclick=closeModal;
+}
+
+$('#journal-button').onclick=showJournal;$('#sound-button').onclick=toggleSound;$('#settings-button').onclick=showSettings;$('#hint-button').onclick=showHint;$('#map-button').onclick=showMap;$('#reset-button').onclick=()=>{buildLevel(levelIndex,true);toast('晨光回到起点。再试一次吧。');};$('#rotate-left').onclick=()=>rotateMirror(-1);$('#rotate-right').onclick=()=>rotateMirror(1);$('#deselect-button').onclick=deselect;$('#guide-button').onclick=showHelp;$('#help-button').onclick=showHelp;$('#recenter-button').onclick=()=>{cameraAngle=Math.PI/4;targetZoom=1;camElevation=.79;};$('#close-hint').onclick=()=>$('.hint-panel').classList.add('hidden');$('.more-hint').onclick=showHint;
+document.addEventListener('pointerdown',unlockAudio,{once:false});
+document.addEventListener('keydown',e=>{
+ unlockAudio();const k=e.key.toLowerCase();if([' ','arrowup','arrowdown','arrowleft','arrowright'].includes(k))e.preventDefault();if(k==='escape'){paused?closeModal():showSettings();return;}if(paused)return;
+ keys.add(k);if(e.repeat)return;if(k==='q')rotateMirror(-1);if(k==='e')rotateMirror(1);if(k==='h')showHint();if(k==='m')showMap();if(k==='j')showJournal();if(k==='r'){buildLevel(levelIndex,true);toast('这一束晨光，重新出发。');}if(k==='c'){cameraAngle=Math.PI/4;targetZoom=1;camElevation=.79;}if(k===' '&&dashCooldown<=0){dash=.28;dashCooldown=1;play('collect');}if(k==='f'){const nearest=[...level.mirrors].sort((a,b)=>Math.hypot(a.x-fox.position.x,a.z-fox.position.z)-Math.hypot(b.x-fox.position.x,b.z-fox.position.z))[0];selectMirror(nearest.id,true);}
+});document.addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));window.addEventListener('blur',()=>keys.clear());
+for(const btn of document.querySelectorAll('[data-key]')){btn.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(btn.dataset.key);btn.setPointerCapture(e.pointerId);});for(const event of ['pointerup','pointercancel','lostpointercapture'])btn.addEventListener(event,()=>keys.delete(btn.dataset.key));}
+let dragging=false,dragStart=null,pointerDown=null;
+sceneEl.addEventListener('contextmenu',e=>e.preventDefault());
+sceneEl.addEventListener('pointerdown',e=>{if(paused)return;pointerDown={x:e.clientX,y:e.clientY};if(e.button===2){dragging=true;dragStart={x:e.clientX,y:e.clientY};sceneEl.setPointerCapture(e.pointerId);}});
+sceneEl.addEventListener('pointermove',e=>{if(dragging&&dragStart){cameraAngle-=(e.clientX-dragStart.x)*.006;camElevation=THREE.MathUtils.clamp(camElevation+(e.clientY-dragStart.y)*.004,.35,1.2);dragStart={x:e.clientX,y:e.clientY};}});
+sceneEl.addEventListener('pointerup',e=>{
+ if(dragging){dragging=false;dragStart=null;return;}if(paused||e.button===2||!pointerDown||Math.hypot(e.clientX-pointerDown.x,e.clientY-pointerDown.y)>8)return;
+ const rect=sceneEl.getBoundingClientRect();pointer.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(pointer,camera);
+ const hits=raycaster.intersectObjects(puzzleGroup.children,true);let target=null;for(const hit of hits){let obj=hit.object;while(obj.parent&&obj.parent!==puzzleGroup)obj=obj.parent;if(['mirror','plate','gate'].includes(obj.userData.kind)){target=obj;break;}}
+ if(target?.userData.kind==='mirror'){selectMirror(target.userData.id,true);return;}
+ const pos=new THREE.Vector3();if(target){pos.copy(target.position);}else if(!raycaster.ray.intersectPlane(groundPlane,pos))return;
+ goTo(pos.x,pos.z);const marker=document.createElement('div');marker.className='click-marker';marker.style.left=(e.clientX-rect.left)+'px';marker.style.top=(e.clientY-rect.top)+'px';sceneEl.appendChild(marker);setTimeout(()=>marker.remove(),800);
+});sceneEl.addEventListener('wheel',e=>{e.preventDefault();targetZoom=THREE.MathUtils.clamp(targetZoom-e.deltaY*.001,.7,1.5);},{passive:false});
+window.addEventListener('resize',resize);window.addEventListener('pagehide',persist);document.addEventListener('visibilitychange',()=>{if(document.hidden){persist();keys.clear();if(!paused)showSettings();}});
+if(renderer){resize();updateCamera();buildLevel(levelIndex);requestAnimationFrame(tick);requestAnimationFrame(()=>$('.loading').classList.add('hidden'));}
+// Read-only diagnostics help verify rendering and progression without bypassing game rules.
+window.lumenFox={getState:()=>({level:levelIndex,levelName:level?.name,angles:{...angles},solved,collected:[...collected],completed:[...saved.completed],fox:{x:fox?.position.x,z:fox?.position.z},activePlates:[...activePlates],lit:[...(lastTrace?.litReceiverIds||[])],paused,rotations,routeLength:route.length,render:renderer?{calls:renderer.info.render.calls,triangles:renderer.info.render.triangles}:null,objects:level?[...level.mirrors,...level.wisps,...level.plates,level.gate].map(o=>{const p=new THREE.Vector3(o.x,0,o.z).project(camera),rect=sceneEl.getBoundingClientRect();return{id:o.id||'gate',x:o.x,z:o.z,screen:{x:rect.left+(p.x*.5+.5)*rect.width,y:rect.top+(-p.y*.5+.5)*rect.height}};}):[]})};

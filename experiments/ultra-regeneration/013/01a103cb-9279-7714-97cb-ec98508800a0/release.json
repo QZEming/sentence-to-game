@@ -1,0 +1,84 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "013-astronaut-gravity-escape",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "013",
+  "generation_turn_id": "01a103cb-b194-7475-9f27-68ff054a9b90",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "b10ec4c2b0dc948666fa94f802c627ddc46132de",
+    "full_old_history_preserved": true,
+    "game_number": "013",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/007/manifest.json": "e7ae166f137eb2bc53829840bf998b04c1f8fb41",
+      "experiments/page-857ec841-top50-gpt6astra/007/prompt.txt": "855eec9dd9cd786b7f395c007a3e709e424d16e8",
+      "experiments/page-857ec841-top50-gpt6astra/007/provenance.json": "bebacd0d4823d707ee91b1a4ad792dbba9197c19",
+      "experiments/page-857ec841-top50-gpt6astra/007/release.json": "68270f1ccdd003865ec2f34d8cb74e9187f7275c"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/b10ec4c2b0dc948666fa94f802c627ddc46132de",
+    "source_and_published_blobs": {
+      "docs/games/013-astronaut-gravity-escape/assets/index-B6X6C6o3.js": "8b672349133530e51c0ff08f8b23a27b875b5ec7",
+      "docs/games/013-astronaut-gravity-escape/assets/index-Do93KyEi.css": "b87d42384a374da23c979777f02a3ced61d9418e",
+      "docs/games/013-astronaut-gravity-escape/assets/three-lQAghCnz.js": "be9830c061dc1beb3938a9202ce20c3d87890423",
+      "docs/games/013-astronaut-gravity-escape/index.html": "6d291385620823ea2c35d1e5a65dc85b9f29d9db",
+      "games/013-astronaut-gravity-escape/.gitignore": "e6d806523ea319a168db6631cf09c13f96517f77",
+      "games/013-astronaut-gravity-escape/README.md": "978d2be6e3eb23e4d926827b8b6fe111191a16a9",
+      "games/013-astronaut-gravity-escape/RELEASE.md": "e7d04894d6c8c209088b8681ae5c3c7d335e16ef",
+      "games/013-astronaut-gravity-escape/dist/assets/index-B6X6C6o3.js": "8b672349133530e51c0ff08f8b23a27b875b5ec7",
+      "games/013-astronaut-gravity-escape/dist/assets/index-Do93KyEi.css": "b87d42384a374da23c979777f02a3ced61d9418e",
+      "games/013-astronaut-gravity-escape/dist/assets/three-lQAghCnz.js": "be9830c061dc1beb3938a9202ce20c3d87890423",
+      "games/013-astronaut-gravity-escape/dist/index.html": "14beeef667c3466bd52177d81999c3bffd7dcb14",
+      "games/013-astronaut-gravity-escape/index.html": "a1a84028cf11b6d67ccfcc3a0ae9e249f462843c",
+      "games/013-astronaut-gravity-escape/package-lock.json": "f31b3aa0f3888c5fe595ebc3bbbb7e3c5788647e",
+      "games/013-astronaut-gravity-escape/package.json": "87f842f1c37abead51ed153bb78198eb266c535e",
+      "games/013-astronaut-gravity-escape/prompt.txt": "855eec9dd9cd786b7f395c007a3e709e424d16e8",
+      "games/013-astronaut-gravity-escape/src/main.js": "5099224215800e36701d4c6d41506bed1a6bdd1c",
+      "games/013-astronaut-gravity-escape/src/style.css": "49e60b9193f5362aa497a580e2de60121a54b76b",
+      "games/013-astronaut-gravity-escape/vite.config.js": "e79707ac6f8e2a8264585fcaa1cf551bd2bf14e0"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 24033,
+      "path": "game.js",
+      "sha256": "5f4779b5d5c9711827fc6a051d2624505648d11921c1473d505675a1927f174b"
+    },
+    {
+      "bytes": 6405,
+      "path": "index.html",
+      "sha256": "7be9701feef041b55d5d0b0000d447cc60f67e31a5bf8d26e080c5613a2f86b9"
+    },
+    {
+      "bytes": 17394,
+      "path": "style.css",
+      "sha256": "e936ce0179ab56fe6b6a187da8beb4a6289a740c9a8b93a5206bd11e7fa8de55"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE.txt",
+      "sha256": "24b4afa38497439369e9020030f4ff4374ae31f4b1e67df1dc808f81a0108b11"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 15610,
+      "path": "world.js",
+      "sha256": "2f484bfab314c0b9f2241b9edd84ff85c53233e30ca887de4fe08c364127a989"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "93574c7fbd3e33b26e35fa93fb94aff67ab3881aa047403c6fd8588d723bc5c0",
+  "thinking_requested": "ultra",
+  "thread_id": "01a103cb-9279-7714-97cb-ec98508800a0",
+  "title": "NULLSHIFT · 失重边界",
+  "url": "https://qzemi.cn/sentence-to-game/games/013-astronaut-gravity-escape/"
+}

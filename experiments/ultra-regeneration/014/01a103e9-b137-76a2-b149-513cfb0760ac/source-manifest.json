@@ -1,0 +1,198 @@
+{
+  "files": [
+    {
+      "bytes": 47,
+      "path": ".gitignore",
+      "sha256": "b24b7dd8afee63ec57330b095705e34b65e97e7d74029648d376562cc1dc956d"
+    },
+    {
+      "bytes": 2304,
+      "path": "README.md",
+      "sha256": "86fc027381419bd03c616f2f9741b9bf4b7550b7610f3579236c9130b63ce653"
+    },
+    {
+      "bytes": 18433,
+      "path": "dist/assets/effects-DgbHroQR.js",
+      "sha256": "4c44b1c0013e6c091748e1a46d4bf83ad7322e7e425a70566440de5e8a8b7f90"
+    },
+    {
+      "bytes": 65053,
+      "path": "dist/assets/index-BP4E58H1.js",
+      "sha256": "8ca4cb6ffbe97a0ba966fa95b9884a369e09e040b24f51c39d927449ec1ba318"
+    },
+    {
+      "bytes": 21194,
+      "path": "dist/assets/index-D7Sboyj4.css",
+      "sha256": "c77c47f5e3628a3736e57efbfeae048f472fc59cc6e0321009eaaa2b52714f0c"
+    },
+    {
+      "bytes": 519705,
+      "path": "dist/assets/three-Dghjnb8Y.js",
+      "sha256": "2c24cc00ee94147910b42d3a0acd90cdb5d84961308c27dff57f3f07794c6859"
+    },
+    {
+      "bytes": 4286,
+      "path": "dist/favicon.ico",
+      "sha256": "e81f8c25d79ffc9bc2919f29396d891d0fc87b2799666544c7954b1dc791f418"
+    },
+    {
+      "bytes": 381,
+      "path": "dist/fox.svg",
+      "sha256": "0a4f3796cb61cc0e9cb4b678241b6990ba39bd79e7ef3a5ec9bf67056fbc9ea0"
+    },
+    {
+      "bytes": 830,
+      "path": "dist/index.html",
+      "sha256": "ef8affb92d1c291432ca868cf60a3c6710f5e06cd1977fd1f1f8c9aeee2fbb62"
+    },
+    {
+      "bytes": 580,
+      "path": "index.html",
+      "sha256": "b0b3e058581ca4629a2a32c66088e1485a551d96ef6d150a96a994cc225be518"
+    },
+    {
+      "bytes": 617854,
+      "path": "output/playwright/chapter-1-solved.png",
+      "sha256": "4020d1779c057ad354aadaefd01d4f70b874af90f68fefa24a2b07acddb37f88"
+    },
+    {
+      "bytes": 619520,
+      "path": "output/playwright/chapter-2-solved.png",
+      "sha256": "4764f04359db6951692304565de9f76cb657af5cab7d66afccce10c687963199"
+    },
+    {
+      "bytes": 623633,
+      "path": "output/playwright/chapter-3-solved.png",
+      "sha256": "458db291050784faf199eb176042cede520854b9089608b61c5f87d013ceb662"
+    },
+    {
+      "bytes": 624210,
+      "path": "output/playwright/chapter-4-solved.png",
+      "sha256": "2876a9b722f8ecd2df87ae362cc138e4cbf58770e2c91fb8c9036e86f36bf54e"
+    },
+    {
+      "bytes": 619779,
+      "path": "output/playwright/chapter-5-solved.png",
+      "sha256": "cfd5169f6676c3a11af0c981095f73e9a1b69bb1fc0e60682239e2ca95ac7e97"
+    },
+    {
+      "bytes": 568095,
+      "path": "output/playwright/final-desktop.png",
+      "sha256": "c7f0d41a1cc7fe70d66e5d2a3c01dff23c8e07bc4178a4de07e6a796e76cd26d"
+    },
+    {
+      "bytes": 611386,
+      "path": "output/playwright/first-solved.png",
+      "sha256": "5c2803221a12259abcb2598890a818f6bd1c67a3e8f04fdef96990b5a73ff4d1"
+    },
+    {
+      "bytes": 583751,
+      "path": "output/playwright/forest-desktop.png",
+      "sha256": "c719de8ac53de67988dc87a6583d857b1a00bf2d825ea4c8254fc294d5a1772b"
+    },
+    {
+      "bytes": 195297,
+      "path": "output/playwright/forest-mobile.png",
+      "sha256": "b46edb99965d517664d523369cc94e0e2cfb26006dbbef39a1b308489029f028"
+    },
+    {
+      "bytes": 569916,
+      "path": "output/playwright/forest-refined.png",
+      "sha256": "ebf0306caa75c5b77818b02393ac77a4d237904bc59d973eab051bd84c74aa4c"
+    },
+    {
+      "bytes": 1832,
+      "path": "output/playwright/full-journey.js",
+      "sha256": "8bb45fad63bfd67539c5b625a6f00cf9efe8acb93fff1c756937f9d7946d326c"
+    },
+    {
+      "bytes": 682855,
+      "path": "output/playwright/journey-complete.png",
+      "sha256": "1a5e9ea4942255840702f9e39a9b6736091eed64e9daf903d4ed4f90a6c99750"
+    },
+    {
+      "bytes": 213013,
+      "path": "output/playwright/mobile-map.png",
+      "sha256": "afdab5e09cabfe2665d94fb4f4f361702f638ac93490f6f01ddb922d49bf43b4"
+    },
+    {
+      "bytes": 200115,
+      "path": "output/playwright/mobile-mirror-controls.png",
+      "sha256": "178097a140548e52018058b80a0e483079ba388fe5e74edca6d02207babd5e3d"
+    },
+    {
+      "bytes": 3149,
+      "path": "output/playwright/regression.js",
+      "sha256": "371d6924927c974a7f62f936fdeae16ceb5b36b90de94d907f3757b061be48a4"
+    },
+    {
+      "bytes": 918,
+      "path": "output/playwright/verification.json",
+      "sha256": "a81f03e7b08375f1df3775f47036a8303d352761ff2bd3872f3e061eaa535c13"
+    },
+    {
+      "bytes": 35111,
+      "path": "package-lock.json",
+      "sha256": "fbdc9f0db87726cf74437314cae094c523b70b3a0b1b1c8501ff4136c1316c29"
+    },
+    {
+      "bytes": 278,
+      "path": "package.json",
+      "sha256": "24a77de85ed20d917a25b3c6743b862f1b6fcbd7919d2fcc82736c48c9c764ce"
+    },
+    {
+      "bytes": 4286,
+      "path": "public/favicon.ico",
+      "sha256": "e81f8c25d79ffc9bc2919f29396d891d0fc87b2799666544c7954b1dc791f418"
+    },
+    {
+      "bytes": 381,
+      "path": "public/fox.svg",
+      "sha256": "0a4f3796cb61cc0e9cb4b678241b6990ba39bd79e7ef3a5ec9bf67056fbc9ea0"
+    },
+    {
+      "bytes": 9537,
+      "path": "src/audio.js",
+      "sha256": "dd7decca73096f64dc09023fe68abcbd25a64436c7d949f28d5590cc4c4748b4"
+    },
+    {
+      "bytes": 46505,
+      "path": "src/main.js",
+      "sha256": "4cc0764ff4339ae21d7638dadac375b485752b38626eaf1f9495e42fe1847a04"
+    },
+    {
+      "bytes": 10830,
+      "path": "src/puzzles.js",
+      "sha256": "c0a04f8f28ed83eb012fe9ff3f83d5c252aa89fe5db74a37c05f7ef137cbf09c"
+    },
+    {
+      "bytes": 4299,
+      "path": "src/puzzles.test.js",
+      "sha256": "69728645542313c307114bf1b048366645efd89b252a194d14ae658b9e000618"
+    },
+    {
+      "bytes": 21012,
+      "path": "src/style.css",
+      "sha256": "42c1ad794e5ae5ed1c479c9cd809edd0ffa05df9f41f4b2ffe6944616d68e98c"
+    },
+    {
+      "bytes": 32038,
+      "path": "src/world.js",
+      "sha256": "1128680c20ed896fbcedbd6b6d18c76b13bad6a2b0e06fab2ddf61a18525b45d"
+    },
+    {
+      "bytes": 438,
+      "path": "vite.config.js",
+      "sha256": "eb5bd05640d1b0c97bdd1beed7b1fa83963c3687e9343b76db08d27c09843bce"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-8",
+  "source_tree_sha256": "2bf3da6a93152be9ca8d1d4fe63f378c07be54fc279c554a515478c8906bc41e",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-014-original-20261003T230913Z",
+  "thread_id": "01a103e9-b137-76a2-b149-513cfb0760ac",
+  "turn_id": "01a103e9-d1d0-7757-8d9e-b6b4b8d8c908"
+}
