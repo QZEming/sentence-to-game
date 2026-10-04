@@ -1,11 +1,41 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#103e57"><title>冰川疾行 · Penguin Alpine</title><meta name="description" content="穿越冰山，跃过裂隙，跟随一只小企鹅开启 3D 滑雪冒险。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23103e57'/%3E%3Cpath d='M6 25 16 6 26 25Z' fill='%23b8f4ff'/%3E%3Cpath d='m12 14 4-8 4 8-4-2Z' fill='white'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
-<canvas id="world" aria-label="3D 企鹅滑雪场景"></canvas><div id="shade"></div>
-<header><a class="brand" href="./"><span class="brand-icon">❄</span><span>PENGUIN<span class="brand-sub">ALPINE CLUB</span></span></a><div class="location"><span class="live-dot"></span><span id="biome">01 / 蔚蓝冰川</span><span class="weather">−18°C · 微风</span></div><div class="tools"><button id="sound" aria-label="开启音效" title="音效">♪</button><button id="pause" aria-label="暂停游戏" title="暂停 P">Ⅱ</button></div></header>
-<main id="menu"><div class="eyebrow"><span></span> THE GREAT ANTARCTIC ESCAPE</div><h1>冰川<span>疾行</span><i>Penguin Alpine</i></h1><p class="intro">踩上雪板，奔向极地的尽头。<br>冰山之间，每一次腾空都是自由。</p><div class="mode-label">选择你的冒险 <span>01 — 03</span></div><div class="modes" role="group" aria-label="游戏模式"><button class="mode active" data-mode="endless"><span>∞</span><b>无尽远征</b><small>一路向前，挑战极限</small></button><button class="mode" data-mode="race"><span>◷</span><b>极地竞速</b><small>90 秒的极速冲刺</small></button><button class="mode" data-mode="zen"><span>✧</span><b>自由漫游</b><small>没有失败，只有风景</small></button></div><button id="start" class="primary">出发，去滑雪 <span>❄</span></button><div class="record">个人最佳 <b id="best">0</b> <span>· 记录保存在此设备</span></div></main>
-<div class="scene-note" id="scene-note"><div class="note-line"></div><small>YOUR LITTLE EXPLORER</small><b>小小企鹅，大大冒险。</b><span>海拔 2,840 m &nbsp; / &nbsp; 南纬 78°</span></div>
-<section id="hud" hidden><div class="hud-top"><div><label>远征得分</label><strong id="score">00000</strong><span id="combo"></span></div><div class="stats"><div><label>旅程</label><b id="distance">0 m</b></div><div><label>小鱼</label><b id="fish">0</b></div><div><label id="time-label">存活</label><b id="timer">0:00</b></div></div></div><div class="hud-bottom"><div class="health"><label>探险状态</label><b id="hearts">♥ ♥ ♥</b><span id="power"></span></div><div class="speed"><strong id="speed">0</strong><span>km/h</span><div class="boost-track"><i id="boost-fill"></i></div><small>SHIFT · 冲刺能量</small></div></div><div class="mission"><span>本局任务</span><b id="mission">收集 15 条小鱼</b><div><i id="mission-fill"></i></div></div></section>
-<div id="toast" role="status"></div><div id="event"></div>
-<section id="modal" hidden><div class="modal-card"><span class="eyebrow" id="modal-eyebrow">TAKE A BREATHER</span><h2 id="modal-title">稍作休息</h2><p id="modal-desc">冰川会等你，冒险也是。</p><div id="results"></div><button id="resume" class="primary">继续冒险</button><button id="restart" class="secondary">重新出发</button><button id="home" class="text-button">返回营地</button></div></section>
-<footer id="controls"><div><kbd>A</kbd><kbd>D</kbd><span>左右转向</span></div><div><kbd>SPACE</kbd><span>跳跃 / 连按二段跳</span></div><div><kbd>SHIFT</kbd><span>极速冲刺</span></div><div><kbd>F</kbd><span>空中特技</span></div><div><kbd>P</kbd><span>暂停</span></div><span class="footer-tag">MADE FOR THE WILD.</span></footer>
-<div id="touch" hidden><div><button data-key="a" aria-label="向左">◀</button><button data-key="d" aria-label="向右">▶</button></div><div><button data-key="shift" aria-label="冲刺">⚡</button><button data-key="f" aria-label="特技">↻</button><button data-key=" " aria-label="跳跃">跳</button></div></div>
-<div id="load-error" hidden>场景暂时无法加载。请使用支持 WebGL 的浏览器重新打开。</div><script type="module" src="game.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#d9f3fa">
+<title>极地滑行 · Polar Drift</title><meta name="description" content="操控企鹅穿越冰川：腾空转体、收集鱼群、挑战旗门。支持竞速、无尽和自由练习。">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="world" aria-label="3D 企鹅滑雪场景"></div><div id="vignette"></div><div id="flash"></div>
+<header class="topbar"><a class="brand" href="./" aria-label="极地滑行首页"><span class="brand-mark">✳</span><span>POLAR DRIFT<small>极 地 滑 行</small></span></a><div class="top-actions"><span class="record">个人最佳 <b id="best">0</b></span><button id="sound" class="icon-button" aria-label="开启音效" title="音效">♪<span class="sound-slash"></span></button><button id="help" class="icon-button" aria-label="操作说明" title="操作说明">?</button><button id="pause" class="icon-button hidden" aria-label="暂停游戏" title="暂停 Esc">Ⅱ</button></div></header>
+<main>
+<section id="menu" class="menu">
+<div class="eyebrow"><span></span> 南极探险队 · 01 号选手</div>
+<h1>冰雪之间，<br>自在<span>飞驰。</span></h1>
+<p class="intro">系好围巾，跟着鱼群出发。<br>把整座冰川，变成你的滑雪场。</p>
+<div class="mode-picker" role="group" aria-label="游戏模式">
+<button class="mode active" data-mode="race" aria-pressed="true"><span class="mode-icon">⚑</span><b>冰川竞速</b><small>2,000 米挑战</small></button>
+<button class="mode" data-mode="endless" aria-pressed="false"><span class="mode-icon">∞</span><b>无尽远征</b><small>挑战你的极限</small></button>
+<button class="mode" data-mode="zen" aria-pressed="false"><span class="mode-icon">✧</span><b>自由滑行</b><small>无伤练习模式</small></button>
+</div>
+<div class="outfit"><span>今天的围巾</span><div role="group" aria-label="选择围巾颜色"><button class="swatch active" data-color="#fa634d" style="--swatch:#fa634d" aria-label="珊瑚红围巾" aria-pressed="true"></button><button class="swatch" data-color="#f5bb42" style="--swatch:#f5bb42" aria-label="日光黄围巾" aria-pressed="false"></button><button class="swatch" data-color="#6e71cf" style="--swatch:#6e71cf" aria-label="极光紫围巾" aria-pressed="false"></button><button class="swatch" data-color="#269b86" style="--swatch:#269b86" aria-label="冰薄荷围巾" aria-pressed="false"></button></div></div>
+<button id="start" class="primary">开始滑行 <span>SPACE</span></button><p class="menu-hint">方向键转向 · 空格跳跃 · Shift 冲刺</p>
+</section>
+<div id="expedition" class="expedition"><span class="tiny-label">你的下一场冒险</span><b>冰川起点</b><span>72° S &nbsp; / &nbsp; 100% 快乐</span><div class="expedition-line"></div><small>GLACIER RUN</small></div>
+<section id="hud" class="hidden" aria-label="游戏信息">
+<div class="scoreboard glass"><span class="tiny-label">本次得分</span><strong id="score">00000</strong><div class="score-detail"><span>◇ <b id="fish">0</b> 条鱼</span><span id="hearts" aria-label="3 颗心">♥ ♥ ♥</span></div></div>
+<div class="journey"><div><span id="biome">01 / 冰川起点</span><b><span id="distance">0</span><small id="distance-goal"> / 2000 M</small></b></div><div class="progress"><i id="progress-fill"></i></div></div>
+<div class="mission glass"><span class="tiny-label">本次小目标</span><div><span id="mission-icon">◇</span><p id="mission-text">收集 20 条鱼<small id="mission-progress">0 / 20</small></p></div></div>
+<div id="power-status" class="power-status"></div>
+<div id="combo" class="combo hidden"><strong>×<span id="multiplier">1.25</span></strong><span id="combo-label">漂亮连击</span><i></i></div>
+<div class="speed"><strong id="speed">0</strong><span>KM/H</span><div class="energy-label"><span>冲刺能量</span><span>SHIFT</span></div><div class="energy"><i id="energy-fill"></i></div></div>
+</section>
+<div id="toast" role="status" class="toast hidden"></div><div id="countdown" class="countdown hidden"></div>
+<div id="desktop-controls" class="desktop-controls hidden"><span><kbd>←</kbd><kbd>→</kbd> 转向</span><span><kbd>SPACE</kbd> 跳跃</span><span><kbd>SHIFT</kbd> 冲刺</span><span><kbd>A / D</kbd> 空中转体</span><span><kbd>ESC</kbd> 暂停</span></div>
+<div id="touch-controls" class="touch-controls hidden"><div><button data-action="left" aria-label="向左滑行">◀</button><button data-action="right" aria-label="向右滑行">▶</button></div><div><button data-action="boost" aria-label="冲刺">冲刺</button><button data-action="jump" class="touch-jump" aria-label="跳跃">跳跃</button></div></div>
+<footer id="menu-footer"><span>一场小小的极地逃离</span><span>3D EXPLORATION &nbsp; / &nbsp; PLAY WITH JOY</span><button id="quality" title="切换画质">画质：高</button></footer>
+</main>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-card"><div class="eyebrow" id="modal-eyebrow">POLAR DRIFT</div><h2 id="modal-title"></h2><div id="modal-body"></div><div id="modal-actions"></div></div></div>
+<div id="loading" class="loading"><span class="brand-mark">✳</span><p>正在铺好雪道…</p></div>
+<script type="module" src="./game.js"></script>
+</body></html>

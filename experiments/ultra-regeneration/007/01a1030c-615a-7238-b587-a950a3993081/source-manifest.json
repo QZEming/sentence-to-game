@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "bytes": 74,
+      "path": ".gitignore",
+      "sha256": "b4f07cc717df89e55dcf4bc57d243bc88e361b392d93a99a14922d2312e6385f"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "23b09e9d9a0c94eaaf1f92f30c6ee6e0ce6d2dddd9345357a540375f5d282d4a"
+    },
+    {
+      "bytes": 3128,
+      "path": "README.md",
+      "sha256": "d2f3117e70d777bb3dee0e880bdc2f1959d2c5c7fc08f661947bfb54573a2387"
+    },
+    {
+      "bytes": 327,
+      "path": "dist/favicon.svg",
+      "sha256": "7b0fd6fbb2a8f79bd1a83039551d0f55b28f9527764b1ba1df385ff268c951ea"
+    },
+    {
+      "bytes": 32690,
+      "path": "dist/game.js",
+      "sha256": "a4b677e9d95777102fc2fd3a392fb90b1060bf41d9a7206ebb822c3a1ccc25d4"
+    },
+    {
+      "bytes": 5546,
+      "path": "dist/index.html",
+      "sha256": "9b4b1eea2bdb250e92f7d99df27642a3e28a345c08e14cfa85616485927ae57d"
+    },
+    {
+      "bytes": 12934,
+      "path": "dist/style.css",
+      "sha256": "c4d8c6754fad0498a1feb1410b12766327d38631babb73133d4aa6f6f02981ef"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 695384,
+      "path": "output/playwright/desktop-menu.png",
+      "sha256": "0cd08b106f9d7a0807e5d710dc7c754357b408b11a6b9d06469e27b29e869a45"
+    },
+    {
+      "bytes": 76471,
+      "path": "output/playwright/mobile-gameplay.png",
+      "sha256": "55bdc962e410f1f9203edf95c02d4f67bf0e9cd5c6972891ae61d99efb10795b"
+    },
+    {
+      "bytes": 93458,
+      "path": "output/playwright/mobile-menu.png",
+      "sha256": "765909b982dc7844fb03ee31390e8f531d33cc33b165b65036eff3d871aa45a8"
+    },
+    {
+      "bytes": 170,
+      "path": "package.json",
+      "sha256": "5fc1459113fdf1b99f2ce7549f49084e1656c58f9076fa07cfd258f8fe248e3a"
+    },
+    {
+      "bytes": 998,
+      "path": "server.mjs",
+      "sha256": "9a5615ebc7a2842945ae58275d6c327620e928ae4affda88e9f4839797fb7429"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_zip_bytes": 1244997,
+  "original_zip_sha256": "3f0544d99f411bf712a69998af211c284caa5f7a1e671716dec3feed226e2525",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task/polar-drift",
+  "source_tree_sha256": "6c22896ed5ba5b4bb82f9e157912d15e3671ec306ba23cac2c6df6bbe5bad32b",
+  "thread_id": "01a1030c-615a-7238-b587-a950a3993081",
+  "turn_id": "01a1030c-84e3-77d7-95b4-2f0881d48ca0",
+  "zip_validation": {
+    "comparison": "every_zip_file_byte_exact; only_explicit_metadata_omissions_allowed",
+    "verified": true,
+    "wrapper_stripped": null,
+    "zip_missing_metadata": [
+      ".openai/hosting.json"
+    ]
+  }
+}

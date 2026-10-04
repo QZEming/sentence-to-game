@@ -1,0 +1,90 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "007-penguin-iceberg-ski",
+  "game_number": "007",
+  "generation_turn_id": "01a1030c-84e3-77d7-95b4-2f0881d48ca0",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "a684eec7efdd01d487e8fcfb2a0fd0c40305fade",
+    "full_old_history_preserved": true,
+    "game_number": "007",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/001/manifest.json": "c250282dd99ec6155bc72a196b19e2b6671e6cc9",
+      "experiments/page-857ec841-top50-gpt6astra/001/prompt.txt": "beb9d6c1f05ec78c8f0a76ac266dc37b207e6e86",
+      "experiments/page-857ec841-top50-gpt6astra/001/provenance.json": "eeebe92b10a56bfd8afccdd1903e16dc1e8b1f22",
+      "experiments/page-857ec841-top50-gpt6astra/001/release.json": "f246ba387b8ced31cfa591869b474856abe6d195"
+    },
+    "old_local_original_archive": "archive/001",
+    "preserved_version_prefix": "versions/pre-ultra/a684eec7efdd01d487e8fcfb2a0fd0c40305fade",
+    "schema_version": 1,
+    "source_and_published_blobs": {
+      "docs/games/007-penguin-iceberg-ski/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+      "docs/games/007-penguin-iceberg-ski/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+      "docs/games/007-penguin-iceberg-ski/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+      "docs/games/007-penguin-iceberg-ski/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+      "docs/games/007-penguin-iceberg-ski/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/007-penguin-iceberg-ski/README.md": "4955e12ab11ecced07f48c31e4a46a4a57fb4701",
+      "games/007-penguin-iceberg-ski/RELEASE.md": "f744c84c2eeb400e2e78bf988e41cfbdc8d585bc",
+      "games/007-penguin-iceberg-ski/dist/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+      "games/007-penguin-iceberg-ski/dist/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+      "games/007-penguin-iceberg-ski/dist/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+      "games/007-penguin-iceberg-ski/dist/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+      "games/007-penguin-iceberg-ski/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/007-penguin-iceberg-ski/prompt.txt": "beb9d6c1f05ec78c8f0a76ac266dc37b207e6e86",
+      "games/007-penguin-iceberg-ski/src/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+      "games/007-penguin-iceberg-ski/src/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+      "games/007-penguin-iceberg-ski/src/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+      "games/007-penguin-iceberg-ski/src/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+      "games/007-penguin-iceberg-ski/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+    }
+  },
+  "parameter_evidence": "parent_actual_create_request_parameter_attestation",
+  "published_files": [
+    {
+      "bytes": 327,
+      "path": "favicon.svg",
+      "sha256": "7b0fd6fbb2a8f79bd1a83039551d0f55b28f9527764b1ba1df385ff268c951ea"
+    },
+    {
+      "bytes": 32690,
+      "path": "game.js",
+      "sha256": "a4b677e9d95777102fc2fd3a392fb90b1060bf41d9a7206ebb822c3a1ccc25d4"
+    },
+    {
+      "bytes": 5546,
+      "path": "index.html",
+      "sha256": "9b4b1eea2bdb250e92f7d99df27642a3e28a345c08e14cfa85616485927ae57d"
+    },
+    {
+      "bytes": 12934,
+      "path": "style.css",
+      "sha256": "c4d8c6754fad0498a1feb1410b12766327d38631babb73133d4aa6f6f02981ef"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "6c22896ed5ba5b4bb82f9e157912d15e3671ec306ba23cac2c6df6bbe5bad32b",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1030c-615a-7238-b587-a950a3993081",
+  "title": "极地滑行 · Polar Drift",
+  "url": "https://qzemi.cn/sentence-to-game/games/007-penguin-iceberg-ski/",
+  "zip_sha256": "3f0544d99f411bf712a69998af211c284caa5f7a1e671716dec3feed226e2525"
+}

@@ -1,0 +1,34 @@
+{
+  "base_commit": "a684eec7efdd01d487e8fcfb2a0fd0c40305fade",
+  "full_old_history_preserved": true,
+  "game_number": "007",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/001/manifest.json": "c250282dd99ec6155bc72a196b19e2b6671e6cc9",
+    "experiments/page-857ec841-top50-gpt6astra/001/prompt.txt": "beb9d6c1f05ec78c8f0a76ac266dc37b207e6e86",
+    "experiments/page-857ec841-top50-gpt6astra/001/provenance.json": "eeebe92b10a56bfd8afccdd1903e16dc1e8b1f22",
+    "experiments/page-857ec841-top50-gpt6astra/001/release.json": "f246ba387b8ced31cfa591869b474856abe6d195"
+  },
+  "old_local_original_archive": "archive/001",
+  "preserved_version_prefix": "versions/pre-ultra/a684eec7efdd01d487e8fcfb2a0fd0c40305fade",
+  "schema_version": 1,
+  "source_and_published_blobs": {
+    "docs/games/007-penguin-iceberg-ski/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+    "docs/games/007-penguin-iceberg-ski/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+    "docs/games/007-penguin-iceberg-ski/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+    "docs/games/007-penguin-iceberg-ski/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "docs/games/007-penguin-iceberg-ski/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/007-penguin-iceberg-ski/README.md": "4955e12ab11ecced07f48c31e4a46a4a57fb4701",
+    "games/007-penguin-iceberg-ski/RELEASE.md": "f744c84c2eeb400e2e78bf988e41cfbdc8d585bc",
+    "games/007-penguin-iceberg-ski/dist/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+    "games/007-penguin-iceberg-ski/dist/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+    "games/007-penguin-iceberg-ski/dist/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+    "games/007-penguin-iceberg-ski/dist/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/007-penguin-iceberg-ski/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/007-penguin-iceberg-ski/prompt.txt": "beb9d6c1f05ec78c8f0a76ac266dc37b207e6e86",
+    "games/007-penguin-iceberg-ski/src/game.js": "d8996af98eb7009530d3d3ef6519c3194555e1b6",
+    "games/007-penguin-iceberg-ski/src/index.html": "bfac897e08fed4125e2b22d9a845445184ab48fc",
+    "games/007-penguin-iceberg-ski/src/style.css": "de1dfd26aae2864c2dd6b2ade6dbd200d6df3ded",
+    "games/007-penguin-iceberg-ski/src/vendor/LICENSE.three.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/007-penguin-iceberg-ski/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}

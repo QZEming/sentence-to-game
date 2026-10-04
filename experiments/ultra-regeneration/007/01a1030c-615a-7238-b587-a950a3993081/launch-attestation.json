@@ -1,0 +1,21 @@
+{
+  "authorized_publication": "GitHub QZEming/sentence-to-game and https://qzemi.cn/sentence-to-game/",
+  "candidate": 1,
+  "evidence": "Parent reports actual create call explicitly requested these parameters. Historical server-side execution settings were not independently authenticated.",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_number": "007",
+  "generation_turn_id": "01a1030c-84e3-77d7-95b4-2f0881d48ca0",
+  "initial_prompt_context_evidence": "parent attestation: only the exact one full sentence in a fresh isolated session",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_and_thinking_independently_authenticated": false,
+  "prompt": "实现一个企鹅在冰山间滑雪的 3D 游戏，尽你所能丰富游戏玩法。",
+  "request_parameters": {
+    "fork_turns": "none",
+    "model": "gpt-6-astra",
+    "thinking": "ultra"
+  },
+  "schema_version": 1,
+  "sites_upload": "author Sites upload request rejected; publisher does not invoke Sites or retry that upload",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a1030c-615a-7238-b587-a950a3993081"
+}

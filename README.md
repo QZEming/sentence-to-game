@@ -20,7 +20,7 @@
 | 004 | [裂隙前线 · Riftfront](games/004-riftfront/README.md) | [进入战场](https://qzemi.cn/sentence-to-game/games/004-riftfront/) | [源码](games/004-riftfront/src/) |
 | 005 | [逐光竞速 · APEX HORIZON](games/005-apex-horizon/README.md) | [驰骋赛道](https://qzemi.cn/sentence-to-game/games/005-apex-horizon/) | [源码](games/005-apex-horizon/src/) |
 | 006 | [星绒守夜队](games/006-sugarlight-guardians/README.md) | [开始守夜](https://qzemi.cn/sentence-to-game/games/006-sugarlight-guardians/) | [源码](games/006-sugarlight-guardians/src/) |
-| 007 | [冰川疾行 · Penguin Alpine](games/007-penguin-iceberg-ski/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/007-penguin-iceberg-ski/) | [源码](games/007-penguin-iceberg-ski/src/) |
+| 007 | [极地滑行 · Polar Drift](games/007-penguin-iceberg-ski/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/007-penguin-iceberg-ski/) | [源码](games/007-penguin-iceberg-ski/src/) |
 | 008 | [月下夜滑 · Rooftop Raccoon](games/008-raccoon-nightmarket-skate/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/008-raccoon-nightmarket-skate/) | [源码](games/008-raccoon-nightmarket-skate/src/) |
 | 009 | [ORBIT ZERO — 最后一束信号](games/009-robot-space-parkour/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/009-robot-space-parkour/) | [源码](games/009-robot-space-parkour/src/) |
 | 010 | [荷间 · LILYBOUND](games/010-frog-lily-jump/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/010-frog-lily-jump/) | [源码](games/010-frog-lily-jump/src/) |
