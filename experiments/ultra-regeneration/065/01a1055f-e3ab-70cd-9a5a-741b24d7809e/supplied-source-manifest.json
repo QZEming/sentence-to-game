@@ -1,0 +1,547 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_selected_external_file_set_unchanged": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-065-original-20261004T060218Z",
+  "candidate": "ultra-065",
+  "completed_at": "2026-10-04T06:06:38.260585Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "external_output_shallow_inventory": [
+    {
+      "bytes": 289373,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/battle.png",
+      "relative": "playwright/battle.png"
+    },
+    {
+      "bytes": 162644,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/champion.png",
+      "relative": "playwright/champion.png"
+    },
+    {
+      "bytes": 286992,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/hangar-final.png",
+      "relative": "playwright/hangar-final.png"
+    },
+    {
+      "bytes": 288645,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/hangar.png",
+      "relative": "playwright/hangar.png"
+    },
+    {
+      "bytes": 2365,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/logic-smoke.mjs",
+      "relative": "playwright/logic-smoke.mjs"
+    },
+    {
+      "bytes": 103301,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/mobile-battle.png",
+      "relative": "playwright/mobile-battle.png"
+    },
+    {
+      "bytes": 125565,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/mobile-hangar.png",
+      "relative": "playwright/mobile-hangar.png"
+    },
+    {
+      "bytes": 1419,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/verification.json",
+      "relative": "playwright/verification.json"
+    }
+  ],
+  "external_selected_file_set": [
+    "playwright/battle.png",
+    "playwright/champion.png",
+    "playwright/hangar-final.png",
+    "playwright/hangar.png",
+    "playwright/logic-smoke.mjs",
+    "playwright/mobile-battle.png",
+    "playwright/mobile-hangar.png",
+    "playwright/verification.json"
+  ],
+  "file_count": 22,
+  "files": [
+    {
+      "archive_relative_path": "iron-circuit/.openai/hosting.json",
+      "copied_sha256": "cbab14b9220d01d5d80bbc257366916578311a4696760414b5e7b7c25d662265",
+      "final_source_sha256": "cbab14b9220d01d5d80bbc257366916578311a4696760414b5e7b7c25d662265",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091878956116250,
+      "mtime_utc": "2026-10-04T05:31:18.956116Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "cbab14b9220d01d5d80bbc257366916578311a4696760414b5e7b7c25d662265",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/README.md",
+      "copied_sha256": "2537a5b8be971464adbdb8ca806a40e3d3d652a1cd3e57e99beb9a28cf959f84",
+      "final_source_sha256": "2537a5b8be971464adbdb8ca806a40e3d3d652a1cd3e57e99beb9a28cf959f84",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092558670943035,
+      "mtime_utc": "2026-10-04T05:42:38.670943Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/README.md",
+      "size_bytes": 1538,
+      "source_sha256": "2537a5b8be971464adbdb8ca806a40e3d3d652a1cd3e57e99beb9a28cf959f84",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/data.js",
+      "copied_sha256": "9117c14af0dea3e5f7ffb14ed96b5783a63f873d83c19911fa305ce1c3d484f1",
+      "final_source_sha256": "9117c14af0dea3e5f7ffb14ed96b5783a63f873d83c19911fa305ce1c3d484f1",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091961126252452,
+      "mtime_utc": "2026-10-04T05:32:41.126252Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/data.js",
+      "size_bytes": 7022,
+      "source_sha256": "9117c14af0dea3e5f7ffb14ed96b5783a63f873d83c19911fa305ce1c3d484f1",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/engine.js",
+      "copied_sha256": "50edc526e309b276f874c3c4d747dcdbea16b3c594abb269168176164744129b",
+      "final_source_sha256": "50edc526e309b276f874c3c4d747dcdbea16b3c594abb269168176164744129b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092581643317731,
+      "mtime_utc": "2026-10-04T05:43:01.643318Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/engine.js",
+      "size_bytes": 25440,
+      "source_sha256": "50edc526e309b276f874c3c4d747dcdbea16b3c594abb269168176164744129b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/icon.svg",
+      "copied_sha256": "7f0043994198b4ff820b708c01c6dd8b32b01bc09de59fd4e5cacf20c5908ba8",
+      "final_source_sha256": "7f0043994198b4ff820b708c01c6dd8b32b01bc09de59fd4e5cacf20c5908ba8",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091860781698776,
+      "mtime_utc": "2026-10-04T05:31:00.781699Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/icon.svg",
+      "size_bytes": 204,
+      "source_sha256": "7f0043994198b4ff820b708c01c6dd8b32b01bc09de59fd4e5cacf20c5908ba8",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/index.html",
+      "copied_sha256": "ee7dc98d427d76425e0b77a91fbdc0a445c5cac7598311f158e473e341fc9d47",
+      "final_source_sha256": "ee7dc98d427d76425e0b77a91fbdc0a445c5cac7598311f158e473e341fc9d47",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091860769346708,
+      "mtime_utc": "2026-10-04T05:31:00.769347Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/index.html",
+      "size_bytes": 7577,
+      "source_sha256": "ee7dc98d427d76425e0b77a91fbdc0a445c5cac7598311f158e473e341fc9d47",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/main.js",
+      "copied_sha256": "3ed40518733440ad5e93222f46e37a1c7fc1709afb34ae1e9761124d106a3034",
+      "final_source_sha256": "3ed40518733440ad5e93222f46e37a1c7fc1709afb34ae1e9761124d106a3034",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092518860661462,
+      "mtime_utc": "2026-10-04T05:41:58.860662Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/main.js",
+      "size_bytes": 21768,
+      "source_sha256": "3ed40518733440ad5e93222f46e37a1c7fc1709afb34ae1e9761124d106a3034",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/mech-assets.js",
+      "copied_sha256": "a3cdffdc80020f9195118578b0a5ebeab32991fb9367971dec863ac0249b2a75",
+      "final_source_sha256": "a3cdffdc80020f9195118578b0a5ebeab32991fb9367971dec863ac0249b2a75",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091878924642516,
+      "mtime_utc": "2026-10-04T05:31:18.924643Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/mech-assets.js",
+      "size_bytes": 11076,
+      "source_sha256": "a3cdffdc80020f9195118578b0a5ebeab32991fb9367971dec863ac0249b2a75",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/style.css",
+      "copied_sha256": "b77e9fca455e1d48ed0e83a6cc8cebaa00f922c25b8a03184cf8de6ca2479e4b",
+      "final_source_sha256": "b77e9fca455e1d48ed0e83a6cc8cebaa00f922c25b8a03184cf8de6ca2479e4b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092454939858435,
+      "mtime_utc": "2026-10-04T05:40:54.939858Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/style.css",
+      "size_bytes": 28290,
+      "source_sha256": "b77e9fca455e1d48ed0e83a6cc8cebaa00f922c25b8a03184cf8de6ca2479e4b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092271348004597,
+      "mtime_utc": "2026-10-04T05:37:51.348005Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/vendor/three.core.js",
+      "copied_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "final_source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092271338313868,
+      "mtime_utc": "2026-10-04T05:37:51.338314Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/vendor/three.core.js",
+      "size_bytes": 1403455,
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/dist/vendor/three.module.js",
+      "copied_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "final_source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092271340697081,
+      "mtime_utc": "2026-10-04T05:37:51.340697Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/dist/vendor/three.module.js",
+      "size_bytes": 603113,
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "iron-circuit/package.json",
+      "copied_sha256": "db5c26a0a0104e8de7b9d6a2fe4f9a860dd58236eb6ddb6dbb3d0a42a29d63eb",
+      "final_source_sha256": "db5c26a0a0104e8de7b9d6a2fe4f9a860dd58236eb6ddb6dbb3d0a42a29d63eb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092228482486264,
+      "mtime_utc": "2026-10-04T05:37:08.482486Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit/package.json",
+      "size_bytes": 272,
+      "source_sha256": "db5c26a0a0104e8de7b9d6a2fe4f9a860dd58236eb6ddb6dbb3d0a42a29d63eb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/iron-circuit.tar.gz",
+      "copied_sha256": "253a7735108c8a0e01e85ab5a051e980b1f1ad0f8938480ef17824abad59ea2d",
+      "final_source_sha256": "253a7735108c8a0e01e85ab5a051e980b1f1ad0f8938480ef17824abad59ea2d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092836848278654,
+      "mtime_utc": "2026-10-04T05:47:16.848279Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit.tar.gz",
+      "size_bytes": 433761,
+      "source_sha256": "253a7735108c8a0e01e85ab5a051e980b1f1ad0f8938480ef17824abad59ea2d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/battle.png",
+      "copied_sha256": "97f1b632ccfb8f1ade86a1b104389a2c5982e285dbb2cf4f76fbb433930b0cdf",
+      "final_source_sha256": "97f1b632ccfb8f1ade86a1b104389a2c5982e285dbb2cf4f76fbb433930b0cdf",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092439012572166,
+      "mtime_utc": "2026-10-04T05:40:39.012572Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/battle.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 289373,
+      "source_sha256": "97f1b632ccfb8f1ade86a1b104389a2c5982e285dbb2cf4f76fbb433930b0cdf",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/champion.png",
+      "copied_sha256": "289b6c2cddac770a208332f06c76efdd465574709e33940229c8bb75bfee60de",
+      "final_source_sha256": "289b6c2cddac770a208332f06c76efdd465574709e33940229c8bb75bfee60de",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092872342124863,
+      "mtime_utc": "2026-10-04T05:47:52.342125Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/champion.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 162644,
+      "source_sha256": "289b6c2cddac770a208332f06c76efdd465574709e33940229c8bb75bfee60de",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/hangar-final.png",
+      "copied_sha256": "4d77a71941c7e5b7ef84626092a0ed1fbd42e576f36cf46512872557344e2020",
+      "final_source_sha256": "4d77a71941c7e5b7ef84626092a0ed1fbd42e576f36cf46512872557344e2020",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092680859454627,
+      "mtime_utc": "2026-10-04T05:44:40.859455Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/hangar-final.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 286992,
+      "source_sha256": "4d77a71941c7e5b7ef84626092a0ed1fbd42e576f36cf46512872557344e2020",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/hangar.png",
+      "copied_sha256": "a79f8b8f1841b5cacdb5b207e0afafbd0215f1a4963cd11475fade3183d516a5",
+      "final_source_sha256": "a79f8b8f1841b5cacdb5b207e0afafbd0215f1a4963cd11475fade3183d516a5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092378000044919,
+      "mtime_utc": "2026-10-04T05:39:38.000045Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/hangar.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 288645,
+      "source_sha256": "a79f8b8f1841b5cacdb5b207e0afafbd0215f1a4963cd11475fade3183d516a5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/logic-smoke.mjs",
+      "copied_sha256": "4a7250f8b8670edfee640fa1e31d589e657c963c6c125c6c2712dba1b6f431bc",
+      "final_source_sha256": "4a7250f8b8670edfee640fa1e31d589e657c963c6c125c6c2712dba1b6f431bc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092644068465113,
+      "mtime_utc": "2026-10-04T05:44:04.068465Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/logic-smoke.mjs",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 2365,
+      "source_sha256": "4a7250f8b8670edfee640fa1e31d589e657c963c6c125c6c2712dba1b6f431bc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/mobile-battle.png",
+      "copied_sha256": "ae0845bb79800fcf11f012bd84e894e369b53bab0a9a4b05d817bba00e0a3234",
+      "final_source_sha256": "ae0845bb79800fcf11f012bd84e894e369b53bab0a9a4b05d817bba00e0a3234",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092714501746516,
+      "mtime_utc": "2026-10-04T05:45:14.501746Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/mobile-battle.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 103301,
+      "source_sha256": "ae0845bb79800fcf11f012bd84e894e369b53bab0a9a4b05d817bba00e0a3234",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/mobile-hangar.png",
+      "copied_sha256": "07b48f3b9463cd4d47495059fc4e25e6cd2abe279d055325a61a640213921414",
+      "final_source_sha256": "07b48f3b9463cd4d47495059fc4e25e6cd2abe279d055325a61a640213921414",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092616188860337,
+      "mtime_utc": "2026-10-04T05:43:36.188860Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/mobile-hangar.png",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 125565,
+      "source_sha256": "07b48f3b9463cd4d47495059fc4e25e6cd2abe279d055325a61a640213921414",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/verification.json",
+      "copied_sha256": "9ff6bbb74b97cf7fed8155cbf52f4516a1c9f44052885541b3d958859bb6afa3",
+      "final_source_sha256": "9ff6bbb74b97cf7fed8155cbf52f4516a1c9f44052885541b3d958859bb6afa3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092948112274137,
+      "mtime_utc": "2026-10-04T05:49:08.112274Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/output/playwright/verification.json",
+      "provenance": "Authorized original isolated task-34 output. Game-specific JSON marker and logic-smoke imports confirmed; images not opened. hangar.png belongs to task context but is not listed by JSON.",
+      "size_bytes": 1419,
+      "source_sha256": "9ff6bbb74b97cf7fed8155cbf52f4516a1c9f44052885541b3d958859bb6afa3",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "797eb2c8747150de2cd988a9a9292d158e37bc182f07c2fd4a0e331fac035aa9"
+  },
+  "inventory_fixed_at": "2026-10-04T06:06:37.997005Z",
+  "limitations": [
+    "Only fixed inventory, original-byte copying and SHA256 checks; no test/build/browser/gameplay/source modification/remote/process/load sampling actions.",
+    "Original package not unpacked or rebuilt; no image viewing.",
+    "Forbidden .playwright-cli/runtime/session paths and unrelated directories not read."
+  ],
+  "original_evidence_inventory": {
+    "browser_input_driver_present": false,
+    "documents": [
+      "iron-circuit/README.md"
+    ],
+    "logic_sources": [
+      "root-artifacts/output/playwright/logic-smoke.mjs"
+    ],
+    "reports": [
+      "root-artifacts/output/playwright/verification.json"
+    ],
+    "screenshots": [
+      "root-artifacts/output/playwright/battle.png",
+      "root-artifacts/output/playwright/champion.png",
+      "root-artifacts/output/playwright/hangar-final.png",
+      "root-artifacts/output/playwright/hangar.png",
+      "root-artifacts/output/playwright/mobile-battle.png",
+      "root-artifacts/output/playwright/mobile-hangar.png"
+    ]
+  },
+  "original_request": null,
+  "original_request_status": "Exact original sentence missing from available parent evidence; summary only, no fabrication.",
+  "original_request_summary": "机甲组装近战擂台一句话",
+  "original_verification_scope": {
+    "browser_summary": "JSON reports desktop 1440x1000/mobile 390x844, 0 errors/warnings, assembly purchases, reload persistence, Escape pause/resume, Titan/spear league wins in 3 rounds with 600/600/1800 rewards, survival waves 1-3 (two enemies in wave3) with 250 each, coreburst and screen movement/melee/dash/training.",
+    "limitations": [
+      "Result summary contains no input driver, event sequence, elapsed duration or state-hook invocation evidence; cannot infer real keyboard/mouse complete sequence or physical mobile gameplay.",
+      "Source window.__IRON__ exposes read-only getSnapshot/getRendererInfo; its presence does not establish the test method.",
+      "No browser driver was found in fixed source/output inventory; logic-smoke is rule simulation, not league/survival browser input trace.",
+      "JSON source_commit is an original report field, not independently verified Git HEAD or remote publication evidence.",
+      "Six images preserved; JSON references five and hangar.png is retained by isolated task provenance only.",
+      "Exact original request sentence is missing and remains null, with supplied summary separately recorded."
+    ],
+    "logic_method": "logic-smoke.mjs imports ../../iron-circuit/dist modules, constructs IronEngine.prototype fixture, sets battle/positions/time, calls action/update/hurt and directly sets attack/ult/hp for six targeted rule simulations. PASS is a script print, not a saved execution log.",
+    "preview": {
+      "default_npm_start_port": 4173,
+      "documented_port": 4174
+    },
+    "provenance": "Original verification.json retained summary plus moonbloom_state static reading of source and logic-smoke; no independent test execution/image viewing."
+  },
+  "original_verification_summary": {
+    "browser_checks": {
+      "assembly": "Weapon replacement and Titan purchase succeeded",
+      "console_errors": 0,
+      "console_warnings": 0,
+      "desktop_viewport": "1440x1000",
+      "hangar_panel_overlap": false,
+      "league": "Won all 3 rounds with Titan/spear; champion counter incremented; rewards were 600, 600, 1800",
+      "mobile": "On-screen movement, melee, dash, and training mode succeeded",
+      "mobile_horizontal_overflow": false,
+      "mobile_viewport": "390x844",
+      "pause": "Escape pause and resume succeeded",
+      "persistence": "Reload restored equipped Titan chassis and spear, unlock, and credit balance",
+      "survival": "Won waves 1–3; third wave defeated 2 enemies; rewards 250 each; bestWave=3",
+      "ultimate": "Core burst used in survival; consumed charge and damaged enemies"
+    },
+    "date": "2026-10-04",
+    "game": "IRON CIRCUIT — 铁环机甲擂台",
+    "logic_checks": [
+      "Each swing damages its target once",
+      "Held block resumes after attack recovery",
+      "Core burst interrupts enemy windup",
+      "Perfect parry prevents damage and stuns attacker",
+      "Dash uses energy once and grants invulnerability",
+      "Training target respawns and restores its marker"
+    ],
+    "screenshots": [
+      "hangar-final.png",
+      "battle.png",
+      "champion.png",
+      "mobile-hangar.png",
+      "mobile-battle.png"
+    ],
+    "source_commit": "65179b248a2328ce37b1ab06bcc36db394f067c1",
+    "syntax": "All four application modules passed node --check"
+  },
+  "parent_readonly_process_observation": {
+    "dedicated_task_or_preview_or_browser_present": false,
+    "default_npm_port": 4173,
+    "default_port_listener_is_protected_user_service": true,
+    "default_port_listener_pid": 2560,
+    "documented_preview_listener_present": false,
+    "documented_preview_port": 4174,
+    "observed_at": "2026-10-04T06:02:33Z",
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only ps/lsof observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "browser_errors_reported": 0,
+    "league_completion_reported": true,
+    "provenance": "Parent/author report only, no independent execution validation.",
+    "save_and_mobile_checks_reported": true,
+    "survival_first_three_waves_reported": true
+  },
+  "parent_reported_generation_workflow": {
+    "actual_running_thread_confirmed_by_parent_read": true,
+    "create_error_reported": true,
+    "generation_retried": false,
+    "provenance": "Parent workflow report only, not independent historical evidence."
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not fetched, not formal user domain or GitHub delivery evidence.",
+    "url": "https://iron-circuit-mech-arena.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters; not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".openai/hosting.json",
+    "README.md",
+    "dist/data.js",
+    "dist/engine.js",
+    "dist/icon.svg",
+    "dist/index.html",
+    "dist/main.js",
+    "dist/mech-assets.js",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.core.js",
+    "dist/vendor/three.module.js",
+    "package.json"
+  ],
+  "source_inventory_observed_at": "2026-10-04T06:04:59.327358Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit",
+  "stage": "original",
+  "thread_id": "01a1055f-e3ab-70cd-9a5a-741b24d7809e",
+  "title": "铁环机甲 Iron Circuit",
+  "total_bytes": 3805007,
+  "turn_id": "01a10560-0989-7237-9b33-73b9924d999c"
+}

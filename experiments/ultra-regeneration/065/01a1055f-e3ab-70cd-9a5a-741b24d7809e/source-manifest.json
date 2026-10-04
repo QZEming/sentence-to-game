@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "cbab14b9220d01d5d80bbc257366916578311a4696760414b5e7b7c25d662265"
+    },
+    {
+      "bytes": 1538,
+      "path": "README.md",
+      "sha256": "2537a5b8be971464adbdb8ca806a40e3d3d652a1cd3e57e99beb9a28cf959f84"
+    },
+    {
+      "bytes": 7022,
+      "path": "dist/data.js",
+      "sha256": "9117c14af0dea3e5f7ffb14ed96b5783a63f873d83c19911fa305ce1c3d484f1"
+    },
+    {
+      "bytes": 25440,
+      "path": "dist/engine.js",
+      "sha256": "50edc526e309b276f874c3c4d747dcdbea16b3c594abb269168176164744129b"
+    },
+    {
+      "bytes": 204,
+      "path": "dist/icon.svg",
+      "sha256": "7f0043994198b4ff820b708c01c6dd8b32b01bc09de59fd4e5cacf20c5908ba8"
+    },
+    {
+      "bytes": 7577,
+      "path": "dist/index.html",
+      "sha256": "ee7dc98d427d76425e0b77a91fbdc0a445c5cac7598311f158e473e341fc9d47"
+    },
+    {
+      "bytes": 21768,
+      "path": "dist/main.js",
+      "sha256": "3ed40518733440ad5e93222f46e37a1c7fc1709afb34ae1e9761124d106a3034"
+    },
+    {
+      "bytes": 11076,
+      "path": "dist/mech-assets.js",
+      "sha256": "a3cdffdc80020f9195118578b0a5ebeab32991fb9367971dec863ac0249b2a75"
+    },
+    {
+      "bytes": 28290,
+      "path": "dist/style.css",
+      "sha256": "b77e9fca455e1d48ed0e83a6cc8cebaa00f922c25b8a03184cf8de6ca2479e4b"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 289373,
+      "path": "original-delivery/battle.png",
+      "sha256": "97f1b632ccfb8f1ade86a1b104389a2c5982e285dbb2cf4f76fbb433930b0cdf"
+    },
+    {
+      "bytes": 162644,
+      "path": "original-delivery/champion.png",
+      "sha256": "289b6c2cddac770a208332f06c76efdd465574709e33940229c8bb75bfee60de"
+    },
+    {
+      "bytes": 286992,
+      "path": "original-delivery/hangar-final.png",
+      "sha256": "4d77a71941c7e5b7ef84626092a0ed1fbd42e576f36cf46512872557344e2020"
+    },
+    {
+      "bytes": 288645,
+      "path": "original-delivery/hangar.png",
+      "sha256": "a79f8b8f1841b5cacdb5b207e0afafbd0215f1a4963cd11475fade3183d516a5"
+    },
+    {
+      "bytes": 433761,
+      "path": "original-delivery/iron-circuit.tar.gz",
+      "sha256": "253a7735108c8a0e01e85ab5a051e980b1f1ad0f8938480ef17824abad59ea2d"
+    },
+    {
+      "bytes": 2365,
+      "path": "original-delivery/logic-smoke.mjs",
+      "sha256": "4a7250f8b8670edfee640fa1e31d589e657c963c6c125c6c2712dba1b6f431bc"
+    },
+    {
+      "bytes": 103301,
+      "path": "original-delivery/mobile-battle.png",
+      "sha256": "ae0845bb79800fcf11f012bd84e894e369b53bab0a9a4b05d817bba00e0a3234"
+    },
+    {
+      "bytes": 125565,
+      "path": "original-delivery/mobile-hangar.png",
+      "sha256": "07b48f3b9463cd4d47495059fc4e25e6cd2abe279d055325a61a640213921414"
+    },
+    {
+      "bytes": 1419,
+      "path": "original-delivery/verification.json",
+      "sha256": "9ff6bbb74b97cf7fed8155cbf52f4516a1c9f44052885541b3d958859bb6afa3"
+    },
+    {
+      "bytes": 272,
+      "path": "package.json",
+      "sha256": "db5c26a0a0104e8de7b9d6a2fe4f9a860dd58236eb6ddb6dbb3d0a42a29d63eb"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-34/iron-circuit",
+  "source_tree_sha256": "69a28558d9e13587e2b462e9daebf799c4da35fe0ede9524b0989d7d69e82c55",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-065-original-20261004T060218Z",
+  "thread_id": "01a1055f-e3ab-70cd-9a5a-741b24d7809e",
+  "turn_id": "01a10560-0989-7237-9b33-73b9924d999c"
+}

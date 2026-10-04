@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#151919"><meta name="description" content="长颈鹿队长带领动物球队，挑战日落街头篮球联赛。可玩的 3D 3 对 3 篮球游戏。">
+<title>高个子俱乐部 · WILD HOOPS</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23e8fd73'/%3E%3Ccircle cx='20' cy='20' r='13' fill='none' stroke='%23151919' stroke-width='2'/%3E%3Cpath d='M7 20h26M20 7v26M11 10q18 10 0 20M29 10q-18 10 0 20' fill='none' stroke='%23151919' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="court" aria-label="3D 街头篮球球场"></canvas>
+<div class="vignette"></div>
+<header class="topbar"><a class="brand" href="#" id="home-link"><span class="brand-ball">✳</span><span>WILD<span class="thin">HOOPS</span><small>动物街头篮球联赛</small></span></a><nav><button class="nav-link active" data-panel="home">主场</button><button class="nav-link" data-panel="team">我的球队</button><button class="nav-link" data-panel="league">街头联赛</button></nav><div class="top-actions"><button class="icon-btn" id="mobile-team-btn" aria-label="我的球队">☰</button><span class="coins"><span>◈</span> <b id="coin-count">0</b></span><button class="icon-btn" id="sound-btn" aria-label="开启音效" title="音效">♫<span class="muted-mark">／</span></button><button class="icon-btn" id="help-btn" aria-label="操作指南">?</button><button class="icon-btn" id="fullscreen-btn" aria-label="全屏">⛶</button></div></header>
+<main id="menu" class="menu">
+ <div class="eyebrow"><span></span> SEASON 01 / 日落街区</div>
+ <h1>脖子长，<br>野心<span>更大。</span></h1>
+ <p class="intro">带上你的动物队友。<br>从街角球场，一路打到街头之王。</p>
+ <div class="captain-chip"><span>🦒</span><div><strong>高高 & 荒野全明星</strong><small>一支不太普通的 3 人球队</small></div><b>03</b></div>
+ <button class="primary big" id="quick-btn"><span class="play-icon">▶</span><span>开始比赛<small>3 对 3 · 快速对战</small></span><span class="key-cap">↵</span></button>
+ <div class="secondary-actions"><button id="league-btn">♜ <span>挑战联赛</span></button><button id="practice-btn">◎ <span>自由训练</span></button></div>
+ <div class="local-note"><i></i> 球队成长自动保存在本机</div>
+</main>
+<aside id="location-card" class="location-card"><div class="location-label">HOME COURT <span>01 / 03</span></div><h2>日落公园 <span>↗</span></h2><p>SUNSET PARK · 18:42</p><div class="court-tags"><span>3V3 半场</span><span>街头规则</span><span>先得 15 分</span></div></aside>
+<div id="captain-label" class="captain-label"><span>队长 · 01</span><strong>高高</strong><small>天生高一头</small></div>
+<footer id="menu-footer"><span>NO CAGES. JUST COURTS.</span><span>WASD 移动 <i>·</i> 空格 蓄力投篮 <i>·</i> E 传球</span><span class="version">VOL. 01 — EST. 2026</span></footer>
+<section id="hud" class="hidden">
+ <div class="scoreboard"><div class="team-score"><small>荒野全明星</small><b id="score-home">00</b></div><div class="clock"><span id="mode-name">街头热身赛</span><strong id="time">03:00</strong><small>先得 15 分</small></div><div class="team-score away"><small id="opponent-name">街区猛兽</small><b id="score-away">00</b></div></div>
+ <div class="game-top-right"><button class="icon-btn" id="camera-btn" aria-label="切换视角">◫</button><button class="icon-btn" id="pause-btn" aria-label="暂停">Ⅱ</button></div>
+ <div class="possession"><span id="possession-text">我方球权</span><b id="shot-clock">24</b></div>
+ <div id="callout" role="status"></div><div id="toast" role="status"></div>
+ <div class="player-hud"><div class="player-portrait" id="player-emoji">🦒</div><div><small id="player-role">队长 / 全能锋线</small><strong id="player-name">高高</strong><div class="stamina-track"><div id="stamina-fill"></div></div><span>体力 <b id="stamina-num">100</b></span></div><button id="special-btn"><b>Q</b><span>高空统治<small id="special-status">技能就绪</small></span></button></div>
+ <div id="shot-meter" class="shot-meter hidden"><span>在绿色区域松开</span><div class="meter-track"><div class="perfect-zone"></div><i id="meter-tick"></i></div><b id="shot-quality">蓄力中</b></div>
+ <div class="game-controls"><span><kbd>W A S D</kbd>移动</span><span><kbd>SPACE</kbd>投篮 / 盖帽</span><span><kbd>E</kbd>传球 / 换人</span><span><kbd>F</kbd>抢断</span><span><kbd>SHIFT</kbd>冲刺</span><span><kbd>Q</kbd>必杀技</span></div>
+ <div id="touch-controls"><div id="joystick"><i></i></div><div class="touch-buttons"><button data-action="pass">传球</button><button data-action="steal">抢断</button><button data-action="shoot" class="touch-shoot">投篮</button><button data-action="sprint">冲刺</button></div></div>
+</section>
+<div id="modal" class="modal hidden"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button id="close-modal" class="close-btn" aria-label="关闭">×</button><div id="modal-content"></div></section></div>
+<div id="loading"><span class="brand-ball">✳</span><strong>正在召集动物队友…</strong></div>
+<script type="module" src="./game.js"></script>
+</body></html>

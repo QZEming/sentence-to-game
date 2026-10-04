@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**63 / 100**。
+当前进度：**65 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -77,6 +77,8 @@
 | 061 | [WILDFRAME 野境 · 野生动物摄影观察游戏](games/061-wildlife-photography-observation/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/061-wildlife-photography-observation/) | [源码](games/061-wildlife-photography-observation/src/) |
 | 062 | [钳王争霸 · CRAB CLASH](games/062-crab-clash/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/062-crab-clash/) | [源码](games/062-crab-clash/src/) |
 | 063 | [水獭冰壶俱乐部 · Otter Curling Club](games/063-otter-curling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/063-otter-curling/) | [源码](games/063-otter-curling/src/) |
+| 064 | [高个子俱乐部 · WILD HOOPS](games/064-giraffe-street-hoops/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/064-giraffe-street-hoops/) | [源码](games/064-giraffe-street-hoops/src/) |
+| 065 | [IRON CIRCUIT — 铁环机甲擂台](games/065-mech-assembly-arena/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/065-mech-assembly-arena/) | [源码](games/065-mech-assembly-arena/src/) |
 
 ## 生成记录
 

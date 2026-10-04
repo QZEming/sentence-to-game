@@ -1,0 +1,61 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "064-giraffe-street-hoops",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "064",
+  "generation_turn_id": "01a1055c-fca8-7591-8301-13ced119c341",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "8f502b912ee10cb5ccdf987b5dc4bbe892f6d794",
+    "full_old_history_preserved": true,
+    "game_number": "064",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/8f502b912ee10cb5ccdf987b5dc4bbe892f6d794",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 45655,
+      "path": "game.js",
+      "sha256": "772a8a32727d7952712f383f568638fc967fc7cec8083cf8ce782358778e473c"
+    },
+    {
+      "bytes": 5587,
+      "path": "index.html",
+      "sha256": "a92d29615bd3c075a130ca4e336f19e2384fb9a8088ac6a99373b729e533377e"
+    },
+    {
+      "bytes": 18181,
+      "path": "style.css",
+      "sha256": "29f81122035b836a708992f160bf723cb5736bf68d8c10fe27bbe9ea475d6d6b"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE.three.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "b940f5d89dd521eedfcfad63a4a34d86637a09bb6a15c3afd96c3bbb1a7aba28",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1055c-dd91-745f-8e75-8edc0f2030a0",
+  "title": "高个子俱乐部 · WILD HOOPS",
+  "url": "https://qzemi.cn/sentence-to-game/games/064-giraffe-street-hoops/"
+}

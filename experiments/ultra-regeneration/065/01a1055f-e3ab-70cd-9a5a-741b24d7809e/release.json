@@ -1,0 +1,81 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "065-mech-assembly-arena",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "065",
+  "generation_turn_id": "01a10560-0989-7237-9b33-73b9924d999c",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "8f502b912ee10cb5ccdf987b5dc4bbe892f6d794",
+    "full_old_history_preserved": true,
+    "game_number": "065",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/8f502b912ee10cb5ccdf987b5dc4bbe892f6d794",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 7022,
+      "path": "data.js",
+      "sha256": "9117c14af0dea3e5f7ffb14ed96b5783a63f873d83c19911fa305ce1c3d484f1"
+    },
+    {
+      "bytes": 25440,
+      "path": "engine.js",
+      "sha256": "50edc526e309b276f874c3c4d747dcdbea16b3c594abb269168176164744129b"
+    },
+    {
+      "bytes": 204,
+      "path": "icon.svg",
+      "sha256": "7f0043994198b4ff820b708c01c6dd8b32b01bc09de59fd4e5cacf20c5908ba8"
+    },
+    {
+      "bytes": 7577,
+      "path": "index.html",
+      "sha256": "ee7dc98d427d76425e0b77a91fbdc0a445c5cac7598311f158e473e341fc9d47"
+    },
+    {
+      "bytes": 21768,
+      "path": "main.js",
+      "sha256": "3ed40518733440ad5e93222f46e37a1c7fc1709afb34ae1e9761124d106a3034"
+    },
+    {
+      "bytes": 11076,
+      "path": "mech-assets.js",
+      "sha256": "a3cdffdc80020f9195118578b0a5ebeab32991fb9367971dec863ac0249b2a75"
+    },
+    {
+      "bytes": 28290,
+      "path": "style.css",
+      "sha256": "b77e9fca455e1d48ed0e83a6cc8cebaa00f922c25b8a03184cf8de6ca2479e4b"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "69a28558d9e13587e2b462e9daebf799c4da35fe0ede9524b0989d7d69e82c55",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1055f-e3ab-70cd-9a5a-741b24d7809e",
+  "title": "IRON CIRCUIT — 铁环机甲擂台",
+  "url": "https://qzemi.cn/sentence-to-game/games/065-mech-assembly-arena/"
+}

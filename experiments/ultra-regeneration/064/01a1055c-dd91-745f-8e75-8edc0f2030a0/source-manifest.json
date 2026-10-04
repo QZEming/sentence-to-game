@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 60,
+      "path": ".gitignore",
+      "sha256": "c74a6fad66c9496a9fff5c39946ab96644ae1d1f45eae81779477cae2c5c8a43"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "bd4b9fa7fe9bdcaf1c46402fc3628ddcd8aceb72d91925c3d6d855e636d235ef"
+    },
+    {
+      "bytes": 1275,
+      "path": "QA.md",
+      "sha256": "87d763fe039a785027a611a0b97d5d78152a05b75d6813163120eddd271a0f8b"
+    },
+    {
+      "bytes": 1963,
+      "path": "README.md",
+      "sha256": "fafaba8014eb01ce4012ff792bc1f7b6c2d56be19d0deedd23d5ca35c3f44f52"
+    },
+    {
+      "bytes": 45655,
+      "path": "dist/game.js",
+      "sha256": "772a8a32727d7952712f383f568638fc967fc7cec8083cf8ce782358778e473c"
+    },
+    {
+      "bytes": 5587,
+      "path": "dist/index.html",
+      "sha256": "a92d29615bd3c075a130ca4e336f19e2384fb9a8088ac6a99373b729e533377e"
+    },
+    {
+      "bytes": 18181,
+      "path": "dist/style.css",
+      "sha256": "29f81122035b836a708992f160bf723cb5736bf68d8c10fe27bbe9ea475d6d6b"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.three.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 81329,
+      "path": "original-delivery/league-result.png",
+      "sha256": "04f72145c48f56c8e779ceedb13b0b147726ec6c87c7b8dc92aa06182079fc42"
+    },
+    {
+      "bytes": 867024,
+      "path": "original-delivery/menu.png",
+      "sha256": "8344256bb9f81a87883a3638ca3f02759529bff25cdd800c4b3fc78a537f0ce0"
+    },
+    {
+      "bytes": 148896,
+      "path": "original-delivery/mobile-game.png",
+      "sha256": "b7d65c460c1c8e17b45984a228d9c70cfab09dcc1bfbeb1da4d7df354c626792"
+    },
+    {
+      "bytes": 178306,
+      "path": "original-delivery/mobile-menu.png",
+      "sha256": "0248c702818c911bbcf11cc6ee82062125d0fd30b494cc7c37763b48e8a040d5"
+    },
+    {
+      "bytes": 404740,
+      "path": "original-delivery/practice.png",
+      "sha256": "63e5aafb508cfe4ad4ff4b8c4d8c2d0b01450c3889463a85837206a1e0a69d6b"
+    },
+    {
+      "bytes": 423100,
+      "path": "original-delivery/wild-hoops-deploy.tar.gz",
+      "sha256": "09b6d2f3511a33ec0238073871c7bdb1262cb3f3d7adfcb5b90fbcf3f08a80a8"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-33/giraffe-hoops",
+  "source_tree_sha256": "b940f5d89dd521eedfcfad63a4a34d86637a09bb6a15c3afd96c3bbb1a7aba28",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-064-original-20261004T060218Z",
+  "thread_id": "01a1055c-dd91-745f-8e75-8edc0f2030a0",
+  "turn_id": "01a1055c-fca8-7591-8301-13ced119c341"
+}
