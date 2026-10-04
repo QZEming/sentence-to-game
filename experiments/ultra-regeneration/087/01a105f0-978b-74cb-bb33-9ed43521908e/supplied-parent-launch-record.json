@@ -1,0 +1,14 @@
+{
+  "record_type": "parent_launch_attestation",
+  "candidate": "087",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a105f0-978b-74cb-bb33-9ed43521908e",
+  "turn_id": "01a105f0-b751-76f6-875d-d4f019c60379",
+  "model_raw": "Astra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "exact_prompt": "实现一个航天员规划轨道机动让航天器与空间站交会对接的 3D 航天飞行模拟游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_by_parent",
+  "independent_runtime_verified": false,
+  "provenance": "Explicit parent instructions in this delegated task; not authenticated historical runtime metadata."
+}

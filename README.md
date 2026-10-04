@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**85 / 100**。
+当前进度：**87 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -99,6 +99,8 @@
 | 083 | [纸境 Foldlight — 折一方天地，赴一场微光](games/083-paper-world/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/083-paper-world/) | [源码](games/083-paper-world/src/) |
 | 084 | [蜗牛骑士 · SHELLBOUND](games/084-shellbound/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/084-shellbound/) | [源码](games/084-shellbound/src/) |
 | 085 | [双生神殿 · EIDOLON](games/085-eidolon/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/085-eidolon/) | [源码](games/085-eidolon/src/) |
+| 086 | [AFTERHOURS · 浣熊夜场](games/086-raccoon-pool/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/086-raccoon-pool/) | [源码](games/086-raccoon-pool/src/) |
+| 087 | [ORBITAL — 轨道交会模拟](games/087-orbital/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/087-orbital/) | [源码](games/087-orbital/src/) |
 
 ## 生成记录
 

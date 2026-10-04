@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "e91dc7055f25688b00d8284ceb8be95bf432fad07435b23b5757b6a2da4cfe79"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/assets/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 2445285,
+      "path": "dist/assets/raccoon.png",
+      "sha256": "df478abaa70d05535282e2cf93ab04f906b0194380b2d271bcbf27858dac2619"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/assets/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 24765,
+      "path": "dist/game.js",
+      "sha256": "da4a3b649c9bef2cdf15c07f57624e60d4915bb1b45cda36cc710f8511647a17"
+    },
+    {
+      "bytes": 6710,
+      "path": "dist/index.html",
+      "sha256": "5426ba2db88183b6a9033341b4da136e4541d271b87471977f84a82c33096cde"
+    },
+    {
+      "bytes": 4357,
+      "path": "dist/physics.js",
+      "sha256": "9a421b305a716ca4c86ea83522646dad58db05518f9defc75f3f170b6e9c91b1"
+    },
+    {
+      "bytes": 16634,
+      "path": "dist/scene.js",
+      "sha256": "b3232505caf08b61480da5cbcc3d7c609afe28284bab603f4f8bfd1559c0c5cc"
+    },
+    {
+      "bytes": 20378,
+      "path": "dist/style.css",
+      "sha256": "06ce79bbb54812b2ba9579264eaabdb03ceb93e2041a4b96efd9b0e6c4ad1f77"
+    },
+    {
+      "bytes": 403719,
+      "path": "original-delivery/desktop.png",
+      "sha256": "4636f111ee5bf341e3cbcb5717e377775eb80e9d2b6027a452c3120ea09d0a73"
+    },
+    {
+      "bytes": 1708,
+      "path": "original-delivery/edge-cases.js",
+      "sha256": "9e85e331669a624b174968c6147c8dea3d7fd8b057dcfc7eee0e8da1c5c08dda"
+    },
+    {
+      "bytes": 191177,
+      "path": "original-delivery/mobile.png",
+      "sha256": "504ea91818dab7234ada140ee9909cc5a2b6fe44af34c982f7167bc401881773"
+    },
+    {
+      "bytes": 2728183,
+      "path": "original-delivery/raccoon-pool-deploy.tar.gz",
+      "sha256": "4fb3ebeef02d2867513690221b7f31acc58237ed26ee05644f865eeef2b03ad0"
+    },
+    {
+      "bytes": 6183,
+      "path": "original-delivery/regression.js",
+      "sha256": "0a03c25614e662866078a78374f05966d639bba157db87b4ec17c899e98719c7"
+    },
+    {
+      "bytes": 1000,
+      "path": "original-delivery/verification.json",
+      "sha256": "c4189241c79fbf6bf72f60ec656ac60c1aea50463668a6cc2cc1b20ea0665b0b"
+    },
+    {
+      "bytes": 111,
+      "path": "serve.sh",
+      "sha256": "f6ce07d688c678a8140f3555f61bcb1de8d05954422664da19556017573b813e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-55/raccoon-pool",
+  "source_tree_sha256": "d7d9387537cbd9e02c9d8c429ef45a9bd0716492b285755d36212d69f0e593c5",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-086-original-20261004T083907Z",
+  "thread_id": "01a105ec-8eb3-7667-ae91-b14fc6fcf08a",
+  "turn_id": "01a105ec-b6d6-77e2-93a3-ffb80a1d0fbe"
+}

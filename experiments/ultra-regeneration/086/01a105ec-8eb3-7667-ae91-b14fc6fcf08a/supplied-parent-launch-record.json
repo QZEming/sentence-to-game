@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-086",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105ec-8eb3-7667-ae91-b14fc6fcf08a",
+  "generation_turn_id": "01a105ec-b6d6-77e2-93a3-ffb80a1d0fbe",
+  "exact_prompt": "实现一个浣熊台球手通过走位和连杆挑战地下台球俱乐部的 3D 台球竞技游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_provided_verbatim",
+  "raw_model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_explicit_launch_attestation",
+  "scope": "Parent settings, not independent historical runtime model or effort authentication.",
+  "recorded_at": "2026-10-04T08:41:24.647779Z"
+}

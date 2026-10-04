@@ -1,0 +1,77 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "087-orbital",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "087",
+  "generation_turn_id": "01a105f0-b751-76f6-875d-d4f019c60379",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "50c4b1fdad8595aaf70a3605b223a3225ad38ced",
+    "full_old_history_preserved": true,
+    "game_number": "087",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/50c4b1fdad8595aaf70a3605b223a3225ad38ced",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 15434,
+      "path": "app.js",
+      "sha256": "d6feb0080c231bdc2ebb0dc482c900d50115d02c1a53a865e4cc4d7d2cb02423"
+    },
+    {
+      "bytes": 593729,
+      "path": "assets/earth.jpg",
+      "sha256": "fb67ac030214c1891994c8f976e7f6c9cd5b0f21586aba8567250781a4fe708e"
+    },
+    {
+      "bytes": 15616,
+      "path": "index.html",
+      "sha256": "60848132fe747626a32c4122f7d64862d7e8b808201e51f3360bc70c801be1bc"
+    },
+    {
+      "bytes": 10638,
+      "path": "scene.js",
+      "sha256": "6760327303c9cd23361287e3390f81be3ad4c7eea55fc182e57e84a076de2ee7"
+    },
+    {
+      "bytes": 5111,
+      "path": "sim.js",
+      "sha256": "8078cf6fa3fd9179c74dda39df6db13b97ccc19370633f7437c757ddb0760210"
+    },
+    {
+      "bytes": 26865,
+      "path": "style.css",
+      "sha256": "c72d76e3825f46593b9a461326cbbfc774cea0047677113c4d96a734e577295d"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 32134,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "06bba4cd76b144e5edd545dd07641d1d4d470cf24f1cc903a8c3e5e9c26a1f1a",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105f0-978b-74cb-bb33-9ed43521908e",
+  "title": "ORBITAL — 轨道交会模拟",
+  "url": "https://qzemi.cn/sentence-to-game/games/087-orbital/"
+}

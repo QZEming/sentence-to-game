@@ -1,0 +1,72 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "086-raccoon-pool",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "086",
+  "generation_turn_id": "01a105ec-b6d6-77e2-93a3-ffb80a1d0fbe",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "50c4b1fdad8595aaf70a3605b223a3225ad38ced",
+    "full_old_history_preserved": true,
+    "game_number": "086",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/50c4b1fdad8595aaf70a3605b223a3225ad38ced",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 1081,
+      "path": "assets/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 2445285,
+      "path": "assets/raccoon.png",
+      "sha256": "df478abaa70d05535282e2cf93ab04f906b0194380b2d271bcbf27858dac2619"
+    },
+    {
+      "bytes": 1314681,
+      "path": "assets/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 24765,
+      "path": "game.js",
+      "sha256": "da4a3b649c9bef2cdf15c07f57624e60d4915bb1b45cda36cc710f8511647a17"
+    },
+    {
+      "bytes": 6710,
+      "path": "index.html",
+      "sha256": "5426ba2db88183b6a9033341b4da136e4541d271b87471977f84a82c33096cde"
+    },
+    {
+      "bytes": 4357,
+      "path": "physics.js",
+      "sha256": "9a421b305a716ca4c86ea83522646dad58db05518f9defc75f3f170b6e9c91b1"
+    },
+    {
+      "bytes": 16634,
+      "path": "scene.js",
+      "sha256": "b3232505caf08b61480da5cbcc3d7c609afe28284bab603f4f8bfd1559c0c5cc"
+    },
+    {
+      "bytes": 20378,
+      "path": "style.css",
+      "sha256": "06ce79bbb54812b2ba9579264eaabdb03ceb93e2041a4b96efd9b0e6c4ad1f77"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "d7d9387537cbd9e02c9d8c429ef45a9bd0716492b285755d36212d69f0e593c5",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105ec-8eb3-7667-ae91-b14fc6fcf08a",
+  "title": "AFTERHOURS · 浣熊夜场",
+  "url": "https://qzemi.cn/sentence-to-game/games/086-raccoon-pool/"
+}

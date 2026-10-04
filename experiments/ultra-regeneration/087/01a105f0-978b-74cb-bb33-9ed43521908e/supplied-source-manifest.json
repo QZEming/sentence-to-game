@@ -1,0 +1,351 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-087-original-20261004T084543Z",
+  "candidate": "087",
+  "excluded_entries": [
+    ".git",
+    ".playwright-cli"
+  ],
+  "files": [
+    {
+      "archive_path": "original-package/orbital-game.tar.gz",
+      "copy_bytes": 886253,
+      "copy_sha256": "3163998e71a8800dc6a59b7477719d3b2c075f7144d04cd045e5384db2ca8861",
+      "original": {
+        "bytes": 886253,
+        "ctime_ns": "1791102693512377597",
+        "dev": "16777229",
+        "ino": "545927145",
+        "mode": 33188,
+        "mtime_ns": "1791102693512377597",
+        "mtime_utc": "2026-10-04T08:31:33.512377597Z",
+        "sha256": "3163998e71a8800dc6a59b7477719d3b2c075f7144d04cd045e5384db2ca8861"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital-game.tar.gz"
+    },
+    {
+      "archive_path": "source/.gitignore",
+      "copy_bytes": 65,
+      "copy_sha256": "bfb5f3301a6ed659af824efe9e53c3c565afd688fe80572a156834e2646f4093",
+      "original": {
+        "bytes": 65,
+        "ctime_ns": "1791102357630758113",
+        "dev": "16777229",
+        "ino": "545918185",
+        "mode": 33188,
+        "mtime_ns": "1791102357630758113",
+        "mtime_utc": "2026-10-04T08:25:57.630758113Z",
+        "sha256": "bfb5f3301a6ed659af824efe9e53c3c565afd688fe80572a156834e2646f4093"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/.gitignore"
+    },
+    {
+      "archive_path": "source/.openai/hosting.json",
+      "copy_bytes": 106,
+      "copy_sha256": "8a63fa489b5fb09afe57a032516e34eeb8274acb9bd1ec8457ab44acd038a733",
+      "original": {
+        "bytes": 106,
+        "ctime_ns": "1791101189455934459",
+        "dev": "16777229",
+        "ino": "545912190",
+        "mode": 33188,
+        "mtime_ns": "1791101189455699167",
+        "mtime_utc": "2026-10-04T08:06:29.455699167Z",
+        "sha256": "8a63fa489b5fb09afe57a032516e34eeb8274acb9bd1ec8457ab44acd038a733"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/.openai/hosting.json"
+    },
+    {
+      "archive_path": "source/README.md",
+      "copy_bytes": 1862,
+      "copy_sha256": "03266a500316fcad72dfc2543821a16d4f2617d6cc0e048bb860e939246a4f13",
+      "original": {
+        "bytes": 1862,
+        "ctime_ns": "1791102240479826379",
+        "dev": "16777229",
+        "ino": "545924335",
+        "mode": 33188,
+        "mtime_ns": "1791102240479826379",
+        "mtime_utc": "2026-10-04T08:24:00.479826379Z",
+        "sha256": "03266a500316fcad72dfc2543821a16d4f2617d6cc0e048bb860e939246a4f13"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/README.md"
+    },
+    {
+      "archive_path": "source/dist/app.js",
+      "copy_bytes": 15434,
+      "copy_sha256": "d6feb0080c231bdc2ebb0dc482c900d50115d02c1a53a865e4cc4d7d2cb02423",
+      "original": {
+        "bytes": 15434,
+        "ctime_ns": "1791102653302951758",
+        "dev": "16777229",
+        "ino": "545922576",
+        "mode": 33188,
+        "mtime_ns": "1791102653302951758",
+        "mtime_utc": "2026-10-04T08:30:53.302951758Z",
+        "sha256": "d6feb0080c231bdc2ebb0dc482c900d50115d02c1a53a865e4cc4d7d2cb02423"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/app.js"
+    },
+    {
+      "archive_path": "source/dist/assets/earth.jpg",
+      "copy_bytes": 593729,
+      "copy_sha256": "fb67ac030214c1891994c8f976e7f6c9cd5b0f21586aba8567250781a4fe708e",
+      "original": {
+        "bytes": 593729,
+        "ctime_ns": "1791102117339050091",
+        "dev": "16777229",
+        "ino": "545918184",
+        "mode": 33188,
+        "mtime_ns": "1791102117338868382",
+        "mtime_utc": "2026-10-04T08:21:57.338868382Z",
+        "sha256": "fb67ac030214c1891994c8f976e7f6c9cd5b0f21586aba8567250781a4fe708e"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/assets/earth.jpg"
+    },
+    {
+      "archive_path": "source/dist/index.html",
+      "copy_bytes": 15616,
+      "copy_sha256": "60848132fe747626a32c4122f7d64862d7e8b808201e51f3360bc70c801be1bc",
+      "original": {
+        "bytes": 15616,
+        "ctime_ns": "1791102559767770257",
+        "dev": "16777229",
+        "ino": "545918180",
+        "mode": 33188,
+        "mtime_ns": "1791102559767770257",
+        "mtime_utc": "2026-10-04T08:29:19.767770257Z",
+        "sha256": "60848132fe747626a32c4122f7d64862d7e8b808201e51f3360bc70c801be1bc"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/index.html"
+    },
+    {
+      "archive_path": "source/dist/scene.js",
+      "copy_bytes": 10638,
+      "copy_sha256": "6760327303c9cd23361287e3390f81be3ad4c7eea55fc182e57e84a076de2ee7",
+      "original": {
+        "bytes": 10638,
+        "ctime_ns": "1791102117234874786",
+        "dev": "16777229",
+        "ino": "545922574",
+        "mode": 33188,
+        "mtime_ns": "1791102117234874786",
+        "mtime_utc": "2026-10-04T08:21:57.234874786Z",
+        "sha256": "6760327303c9cd23361287e3390f81be3ad4c7eea55fc182e57e84a076de2ee7"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/scene.js"
+    },
+    {
+      "archive_path": "source/dist/sim.js",
+      "copy_bytes": 5111,
+      "copy_sha256": "8078cf6fa3fd9179c74dda39df6db13b97ccc19370633f7437c757ddb0760210",
+      "original": {
+        "bytes": 5111,
+        "ctime_ns": "1791102357624925892",
+        "dev": "16777229",
+        "ino": "545922572",
+        "mode": 33188,
+        "mtime_ns": "1791102357624925892",
+        "mtime_utc": "2026-10-04T08:25:57.624925892Z",
+        "sha256": "8078cf6fa3fd9179c74dda39df6db13b97ccc19370633f7437c757ddb0760210"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/sim.js"
+    },
+    {
+      "archive_path": "source/dist/style.css",
+      "copy_bytes": 26865,
+      "copy_sha256": "c72d76e3825f46593b9a461326cbbfc774cea0047677113c4d96a734e577295d",
+      "original": {
+        "bytes": 26865,
+        "ctime_ns": "1791102559769059218",
+        "dev": "16777229",
+        "ino": "545918182",
+        "mode": 33188,
+        "mtime_ns": "1791102559769059218",
+        "mtime_utc": "2026-10-04T08:29:19.769059218Z",
+        "sha256": "c72d76e3825f46593b9a461326cbbfc774cea0047677113c4d96a734e577295d"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/style.css"
+    },
+    {
+      "archive_path": "source/dist/vendor/LICENSE",
+      "copy_bytes": 1081,
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "original": {
+        "bytes": 1081,
+        "ctime_ns": "1791102241083751874",
+        "dev": "16777229",
+        "ino": "545924339",
+        "mode": 33188,
+        "mtime_ns": "1791102241083751874",
+        "mtime_utc": "2026-10-04T08:24:01.083751874Z",
+        "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/vendor/LICENSE"
+    },
+    {
+      "archive_path": "source/dist/vendor/OrbitControls.js",
+      "copy_bytes": 32134,
+      "copy_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "original": {
+        "bytes": 32134,
+        "ctime_ns": "1791101154244083268",
+        "dev": "16777229",
+        "ino": "545912114",
+        "mode": 33188,
+        "mtime_ns": "1791101154244083268",
+        "mtime_utc": "2026-10-04T08:05:54.244083268Z",
+        "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/vendor/OrbitControls.js"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.module.js",
+      "copy_bytes": 1304820,
+      "copy_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "original": {
+        "bytes": 1304820,
+        "ctime_ns": "1791101153623263611",
+        "dev": "16777229",
+        "ino": "545912111",
+        "mode": 33188,
+        "mtime_ns": "1791101153623263611",
+        "mtime_utc": "2026-10-04T08:05:53.623263611Z",
+        "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/dist/vendor/three.module.js"
+    },
+    {
+      "archive_path": "source/output/playwright/docking-complete-mobile.png",
+      "copy_bytes": 53019,
+      "copy_sha256": "2c55f65e0547041d6fd46f512a231c7f54f1d23af4eeda359581145ce4d9380a",
+      "original": {
+        "bytes": 53019,
+        "ctime_ns": "1791102716660135167",
+        "dev": "16777229",
+        "ino": "545927362",
+        "mode": 33188,
+        "mtime_ns": "1791102716659925375",
+        "mtime_utc": "2026-10-04T08:31:56.659925375Z",
+        "sha256": "2c55f65e0547041d6fd46f512a231c7f54f1d23af4eeda359581145ce4d9380a"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/output/playwright/docking-complete-mobile.png"
+    },
+    {
+      "archive_path": "source/output/playwright/orbital-desktop.png",
+      "copy_bytes": 655963,
+      "copy_sha256": "3cfbc32ac12a763635e19057a8ac75a1c422aeb13ed0500880093612cb02abaa",
+      "original": {
+        "bytes": 655963,
+        "ctime_ns": "1791102716651440565",
+        "dev": "16777229",
+        "ino": "545927361",
+        "mode": 33188,
+        "mtime_ns": "1791102716651250190",
+        "mtime_utc": "2026-10-04T08:31:56.651250190Z",
+        "sha256": "3cfbc32ac12a763635e19057a8ac75a1c422aeb13ed0500880093612cb02abaa"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/output/playwright/orbital-desktop.png"
+    },
+    {
+      "archive_path": "source/verify.mjs",
+      "copy_bytes": 2095,
+      "copy_sha256": "91ee8922fa7875cab5770097eb0fc89148c16a29e9aeec04b107d2a636fd0bcd",
+      "original": {
+        "bytes": 2095,
+        "ctime_ns": "1791102559737358942",
+        "dev": "16777229",
+        "ino": "545925259",
+        "mode": 33188,
+        "mtime_ns": "1791102559737358942",
+        "mtime_utc": "2026-10-04T08:29:19.737358942Z",
+        "sha256": "91ee8922fa7875cab5770097eb0fc89148c16a29e9aeec04b107d2a636fd0bcd"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital/verify.mjs"
+    }
+  ],
+  "final_verified_at": "2026-10-04T08:45:44.083978000Z",
+  "generated_records": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "integrity": {
+    "all_copy_sha256_match": true,
+    "baseline_elapsed_seconds": 0.2685265409963904,
+    "baseline_two_observations_stable": true,
+    "ns_dev_ino_encoding": "decimal strings",
+    "source_bytes_mtime_hash_unchanged": true,
+    "source_file_set_unchanged": true,
+    "source_full_record_including_ctime_dev_ino_unchanged": true
+  },
+  "original_file_count": 16,
+  "original_package_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital-game.tar.gz",
+  "original_package_sha256": "3163998e71a8800dc6a59b7477719d3b2c075f7144d04cd045e5384db2ca8861",
+  "original_screenshot_paths": [
+    "source/output/playwright/orbital-desktop.png",
+    "source/output/playwright/docking-complete-mobile.png"
+  ],
+  "original_total_bytes": 3604791,
+  "package_count": 1,
+  "parent_launch_record": "parent-launch-record.json",
+  "parent_process_observation": {
+    "dedicated_preview_browser_roots_or_descendants": false,
+    "methods": "Exact source/parent cwd, argv/name and descendant matching",
+    "observed_at": "2026-10-04T08:39:10.344384Z",
+    "observer": "root; parent-reported read-only ps/lsof observation",
+    "preview_port": 4278,
+    "preview_port_listening": false,
+    "protected_processes": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 1036,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2547,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2554,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2560,
+        "state": "S"
+      }
+    ],
+    "scope": "Process observation only; not gameplay verification. No repeated process inspection by this archive task.",
+    "signals": []
+  },
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-56/orbital",
+  "started_at": "2026-10-04T08:45:43.542636000Z",
+  "validation_evidence_and_limits": {
+    "audio_errors_webmcp": "Execution/verification scope unknown. Source implementations do not prove testing.",
+    "browser_completion": "Parent author claim only; actual browser input/autopilot/acceleration method unknown. README recommends autopilot and 20x. Do not infer completion of all three missions.",
+    "mobile": "Two original screenshots include docking-complete-mobile.png; viewport, touch input and physical device method unknown.",
+    "model_method": "verify.mjs imports real sim API; standard/resupply autopilot synchronous step(.025); other cases directly set fuel/paused/position/velocity/yaw fixtures; night only tests assistance expiry.",
+    "saved_browser_driver_or_results": false,
+    "saved_model_stdout_or_json": false,
+    "static_model_check_count": 8
+  }
+}
