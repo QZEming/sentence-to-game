@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1419"><meta name="description" content="在魔术师的悬浮剧场里，旋转视角，改变尺度，发现眼睛之外的答案。六幕原创 3D 视觉错觉解谜。">
+  <title>观相 PARALLAX · 视错觉剧场</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d171c'/%3E%3Cpath d='M32 9 54 32 32 55 10 32Z' fill='none' stroke='%23b8efd8' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23b8efd8'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="观相首页"><span class="brand-mark">◇<i></i></span><span class="brand-name">观相<span>PARALLAX</span></span></a>
+    <div class="header-divider"></div><span class="edition">一场关于视角的魔术</span>
+    <nav class="header-actions" aria-label="游戏菜单"><button id="chaptersBtn" class="text-button"><span class="grid-icon">▦</span> 章节 <span id="chapterCounter">01 / 06</span></button><span class="nav-separator"></span><button id="soundBtn" class="icon-button" title="开启声音" aria-label="开启声音">♪<span class="sound-off"></span></button><button id="helpBtn" class="icon-button help-button" title="操作指南" aria-label="操作指南">?</button></nav>
+  </header>
+
+  <main id="gameShell">
+    <div class="theatre-label"><span></span> THE THEATRE OF IMPOSSIBLE</div>
+    <section class="chapter-intro" aria-label="当前关卡">
+      <div class="eyebrow" id="actLabel">第一幕 · 尺度的秘密</div>
+      <h1 id="levelTitle">掌中星辰</h1>
+      <p id="levelPoem">渺小与巨大，<br>不过是一眼之隔。</p>
+      <div class="objective"><span class="objective-icon">◇</span><div><span class="small-label">本幕目标</span><p id="objectiveText">改变水晶的大小，<br>让它恰好填满金色轮廓。</p></div></div>
+      <button id="hintBtn" class="hint-button"><span>✧</span> 一点灵感 <span id="hintCount">0 / 3</span></button>
+      <p id="hintText" class="hint-text" aria-live="polite"></p>
+    </section>
+
+    <div id="canvasWrap"><canvas id="scene" aria-label="3D 魔术舞台。拖动旋转视角，滚轮改变魔法道具大小。" tabindex="0"></canvas><div class="vignette"></div></div>
+    <div id="loading" class="loading"><span class="loading-diamond">◇</span><p>正在点亮剧场…</p></div>
+
+    <aside class="field-notes">
+      <div class="notes-title"><span>✦</span> 魔术师手记 <span class="note-number" id="noteNumber">01</span></div>
+      <p id="noteText">别相信物体原本的大小。<br>在这里，你的目光<br>能重新定义它。</p>
+      <div class="note-line"></div>
+      <div class="skill-tags" id="skillTags"><span>透视缩放</span><span>自由观察</span></div>
+    </aside>
+
+    <div class="stage-meta"><span class="live-dot"></span><span id="stageStatus">魔术正在发生</span><span class="meta-rule"></span><span id="timeLabel">00:00</span></div>
+
+    <div class="orbit-readout" aria-label="视角数值"><div class="compass"><span>N</span><i id="compassNeedle"></i></div><div><span class="small-label">观察视角</span><strong id="angleLabel">035°</strong></div></div>
+
+    <section class="controls" aria-label="魔术控制台">
+      <div class="control-heading"><div><span class="mint-dot"></span><strong id="selectedObject">星光水晶</strong><span class="control-subtitle" id="objectState">正在施展透视魔术</span></div><button id="resetBtn" class="reset-button" title="重置本幕 (R)">↺ <span>重置</span></button></div>
+      <div class="control-body">
+        <div class="scale-control"><div class="control-label"><label for="scaleSlider" id="scaleLabel">感知尺度</label><output id="scaleOutput">0.55 ×</output></div><div class="slider-line"><span class="size-icon small">◇</span><input id="scaleSlider" type="range" min="0.35" max="2.5" step="0.01" value="0.55" aria-label="改变道具尺度"><span class="size-icon">◇</span></div><div class="scale-captions"><span id="scaleMinLabel">掌心之小</span><span id="scaleMaxLabel">世界之大</span></div></div>
+        <div class="resonance-control"><div class="control-label"><span>幻象共鸣</span><strong id="resonanceValue">0<span>%</span></strong></div><div class="resonance-track"><i id="resonanceBar"></i></div><p id="resonanceMessage">让真实与幻象相遇</p></div>
+        <button id="castBtn" class="cast-button"><span class="cast-icon">✧</span><span>施展魔术</span><kbd>SPACE</kbd></button>
+      </div>
+    </section>
+
+    <div class="interaction-guide"><span><i class="mouse-icon"></i> 拖动环绕观察</span><span><i class="wheel-icon"></i> 滚轮改变尺度</span><span><kbd>←</kbd><kbd>→</kbd> 旋转视角</span><button id="lensBtn" aria-pressed="false">◉ 魔术透镜 <kbd>V</kbd></button></div>
+    <footer class="bottom-bar"><div class="chapter-track" id="chapterTrack"></div><span class="footer-quote">换个角度，世界便不一样。</span><span class="footer-sign">EST. ∞</span></footer>
+    <div id="toast" role="status" class="toast"></div>
+  </main>
+
+  <dialog id="chaptersDialog" class="modal"><button class="close-dialog" aria-label="关闭">×</button><span class="eyebrow">THE SIX ACTS</span><h2>六幕，不可能。</h2><p class="modal-description">每一次改变目光，都是一次新的发现。</p><div id="chapterGrid" class="chapter-grid"></div><p class="save-note">演出进度会自动保存在当前设备</p></dialog>
+
+  <dialog id="helpDialog" class="modal help-modal"><button class="close-dialog" aria-label="关闭">×</button><span class="eyebrow">A MAGICIAN'S GUIDE</span><h2>相信你的视角。</h2><p class="modal-description">你是这座剧场的魔术师。看似分离的物体，可能从某个角度完美相连；看似渺小的水晶，也能填满整个世界。</p><div class="help-grid"><div><b>01</b><h3>改变目光</h3><p>拖动舞台或按方向键，环绕并俯仰观察。触屏可直接单指拖动。</p></div><div><b>02</b><h3>改变尺度</h3><p>滚轮、滑杆或 Q / E 键缩放发光道具。有些关卡只允许改变视角。</p></div><div><b>03</b><h3>完成幻象</h3><p>共鸣达到 94% 后，点击「施展魔术」或按空格，让幻象成为现实。</p></div><div><b>04</b><h3>借一点灵感</h3><p>H 查看逐级提示；V 开启魔术透镜；R 重置本幕。使用提示不会阻止通关。</p></div></div><p class="save-note">通关星级：完成本幕 1 星 · 不用提示再得 1 星 · 90 秒内再得 1 星</p><button id="helpCloseBtn" class="primary-button">走进剧场</button></dialog>
+
+  <dialog id="successDialog" class="modal success-modal"><div class="success-emblem">✧</div><span class="eyebrow" id="successEyebrow">THE IMPOSSIBLE, MADE POSSIBLE</span><h2 id="successTitle">你改变了真实。</h2><p id="successCopy">世界并没有改变，只是你找到了新的看法。</p><div class="success-stars" id="successStars">✦ ✦ ✦</div><div class="success-stats"><div><span>演出用时</span><strong id="successTime">00:00</strong></div><div><span>灵感提示</span><strong id="successHints">0 次</strong></div><div><span>幻象共鸣</span><strong id="successResonance">100%</strong></div></div><button id="nextBtn" class="primary-button">开启下一幕</button><button id="replayBtn" class="secondary-button">再演一次</button></dialog>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

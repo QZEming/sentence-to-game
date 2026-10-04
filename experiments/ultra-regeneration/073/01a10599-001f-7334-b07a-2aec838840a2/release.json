@@ -1,0 +1,57 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "073-parallax-theatre",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "073",
+  "generation_turn_id": "01a10599-20a4-7372-b4d5-8a1bd9764d1c",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "full_old_history_preserved": true,
+    "game_number": "073",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 36122,
+      "path": "game.js",
+      "sha256": "a74445361d5d50616d82fb0efeea7e6091517ae7770a868c363fe61cd3187312"
+    },
+    {
+      "bytes": 7733,
+      "path": "index.html",
+      "sha256": "0933ffb3e23d4ed34059741b0588d8228f4300590185a84da9214e5bbf395afa"
+    },
+    {
+      "bytes": 19810,
+      "path": "style.css",
+      "sha256": "478ce48958593681952ee72137aaadda35c2cca1c3124dea4532fb7050b694d4"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "b6f0443a67cb4a549eec2aad63d801d2012aa9042f81e50e6ddeafad68d6e18e",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10599-001f-7334-b07a-2aec838840a2",
+  "title": "观相 PARALLAX · 视错觉剧场",
+  "url": "https://qzemi.cn/sentence-to-game/games/073-parallax-theatre/"
+}

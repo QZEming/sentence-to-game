@@ -1,0 +1,337 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-071-original-20261004T070246Z",
+  "candidate": "ultra-071",
+  "completed_at": "2026-10-04T07:05:49.020778Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 13,
+  "files": [
+    {
+      "archive_relative_path": "archipelago/.gitignore",
+      "copied_sha256": "542e0ecc6e0cb11d78355450753d062a9b6bde4b9dfa62efaef159e98c79dd69",
+      "final_source_sha256": "542e0ecc6e0cb11d78355450753d062a9b6bde4b9dfa62efaef159e98c79dd69",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095062650815215,
+      "mtime_utc": "2026-10-04T06:24:22.650815Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/.gitignore",
+      "size_bytes": 34,
+      "source_sha256": "542e0ecc6e0cb11d78355450753d062a9b6bde4b9dfa62efaef159e98c79dd69",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/.openai/hosting.json",
+      "copied_sha256": "bab4c004f1a943311fac8d733fc7a23d667cd8da434b662ed7ec35b8c3bbf447",
+      "final_source_sha256": "bab4c004f1a943311fac8d733fc7a23d667cd8da434b662ed7ec35b8c3bbf447",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095094151769708,
+      "mtime_utc": "2026-10-04T06:24:54.151770Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "bab4c004f1a943311fac8d733fc7a23d667cd8da434b662ed7ec35b8c3bbf447",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/README.md",
+      "copied_sha256": "4b9aeba24745039cd7d75d00f6bd9129f16e5207581ec917a8a5436b60bf35dc",
+      "final_source_sha256": "4b9aeba24745039cd7d75d00f6bd9129f16e5207581ec917a8a5436b60bf35dc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096861167173040,
+      "mtime_utc": "2026-10-04T06:54:21.167173Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/README.md",
+      "size_bytes": 2491,
+      "source_sha256": "4b9aeba24745039cd7d75d00f6bd9129f16e5207581ec917a8a5436b60bf35dc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/app.mjs",
+      "copied_sha256": "54d64624503a8e7528b10c296afef076d9f37cecffd18da79cd9206b5df84474",
+      "final_source_sha256": "54d64624503a8e7528b10c296afef076d9f37cecffd18da79cd9206b5df84474",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096861123274405,
+      "mtime_utc": "2026-10-04T06:54:21.123274Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/app.mjs",
+      "size_bytes": 26771,
+      "source_sha256": "54d64624503a8e7528b10c296afef076d9f37cecffd18da79cd9206b5df84474",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/game.mjs",
+      "copied_sha256": "3fe2a5af82b60747115bf9454572734ba9b63f0630acc999cf0fb8e7c0f6a540",
+      "final_source_sha256": "3fe2a5af82b60747115bf9454572734ba9b63f0630acc999cf0fb8e7c0f6a540",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096861122691696,
+      "mtime_utc": "2026-10-04T06:54:21.122692Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/game.mjs",
+      "size_bytes": 12207,
+      "source_sha256": "3fe2a5af82b60747115bf9454572734ba9b63f0630acc999cf0fb8e7c0f6a540",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/index.html",
+      "copied_sha256": "b70518cd6e5f176aea2d6d0c342832c2f423b7a29e0b9a8e7af608c07421c0c2",
+      "final_source_sha256": "b70518cd6e5f176aea2d6d0c342832c2f423b7a29e0b9a8e7af608c07421c0c2",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095956234151099,
+      "mtime_utc": "2026-10-04T06:39:16.234151Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/index.html",
+      "size_bytes": 5803,
+      "source_sha256": "b70518cd6e5f176aea2d6d0c342832c2f423b7a29e0b9a8e7af608c07421c0c2",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/styles.css",
+      "copied_sha256": "e61d532617697d58bca2c6f1bbac58dac90ffe4f135a74eb1264702030257c7b",
+      "final_source_sha256": "e61d532617697d58bca2c6f1bbac58dac90ffe4f135a74eb1264702030257c7b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096687948330636,
+      "mtime_utc": "2026-10-04T06:51:27.948331Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/styles.css",
+      "size_bytes": 30624,
+      "source_sha256": "e61d532617697d58bca2c6f1bbac58dac90ffe4f135a74eb1264702030257c7b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/vendor/LICENSE-three.txt",
+      "copied_sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "final_source_sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096897276112601,
+      "mtime_utc": "2026-10-04T06:54:57.276113Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/vendor/LICENSE-three.txt",
+      "size_bytes": 1081,
+      "source_sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/vendor/OrbitControls.js",
+      "copied_sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5",
+      "final_source_sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095061376680334,
+      "mtime_utc": "2026-10-04T06:24:21.376680Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/vendor/OrbitControls.js",
+      "size_bytes": 30973,
+      "source_sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/vendor/three.module.js",
+      "copied_sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "final_source_sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095060570064990,
+      "mtime_utc": "2026-10-04T06:24:20.570065Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/vendor/three.module.js",
+      "size_bytes": 1272972,
+      "source_sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/dist/world.mjs",
+      "copied_sha256": "f4767c49bcb826ca6a8672a378f4894b3f1bc37434f6eabc370180745be304e4",
+      "final_source_sha256": "f4767c49bcb826ca6a8672a378f4894b3f1bc37434f6eabc370180745be304e4",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097088498073614,
+      "mtime_utc": "2026-10-04T06:58:08.498074Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/dist/world.mjs",
+      "size_bytes": 13378,
+      "source_sha256": "f4767c49bcb826ca6a8672a378f4894b3f1bc37434f6eabc370180745be304e4",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "archipelago/tests/game.test.mjs",
+      "copied_sha256": "a17ca75c885d828f8b4fb6ea5524533d28f4bad0f5f20e7b62cd60673c5112c6",
+      "final_source_sha256": "a17ca75c885d828f8b4fb6ea5524533d28f4bad0f5f20e7b62cd60673c5112c6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096861154811139,
+      "mtime_utc": "2026-10-04T06:54:21.154811Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago/tests/game.test.mjs",
+      "size_bytes": 3102,
+      "source_sha256": "a17ca75c885d828f8b4fb6ea5524533d28f4bad0f5f20e7b62cd60673c5112c6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/archipelago-deploy.tar.gz",
+      "copied_sha256": "60caa4abec248f69fbbb9d6f2b680494e8f3a9a9a2c32c26d48d811bbed73e89",
+      "final_source_sha256": "60caa4abec248f69fbbb9d6f2b680494e8f3a9a9a2c32c26d48d811bbed73e89",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097111101975026,
+      "mtime_utc": "2026-10-04T06:58:31.101975Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago-deploy.tar.gz",
+      "size_bytes": 298019,
+      "source_sha256": "60caa4abec248f69fbbb9d6f2b680494e8f3a9a9a2c32c26d48d811bbed73e89",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "a573939031f576894ce55c5de861e267e1e551d7842a408b9394af3828f538f6"
+  },
+  "inventory_fixed_at": "2026-10-04T07:05:48.730480Z",
+  "limitations": [
+    "Only fixed inventory, original-byte copying and SHA256 checks; no source modification/run/build/test/browser/gameplay/process/load sampling/remote action.",
+    "Original package not unpacked or rebuilt; eligible .gitignore/.openai retained.",
+    "Forbidden runtime/session/node_modules/.git/.codex/.agents/.aws/.playwright-cli/cache paths and symbolic-link ancestors excluded, no external output or unrelated directories read.",
+    "No verification coverage expansion; exact original request remains missing."
+  ],
+  "local_process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "method": "read-only ps/lsof actual command/cwd/descendants/listener ownership",
+    "observed_at_utc": "2026-10-04 07:05:57 UTC",
+    "other_4173_listener_preserved": 23851,
+    "preserved_idle_framework_contexts": [
+      {
+        "pcpu": "0.0",
+        "pid": 83670,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 83671,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 83672,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 83673,
+        "state": "S"
+      }
+    ],
+    "preview_listener_found": false,
+    "preview_port": 4277,
+    "protected_originals": {
+      "chrome_1036_alive": true,
+      "listeners": {
+        "4173": 2560,
+        "4827": 2554,
+        "5173": 2547
+      }
+    },
+    "signals_sent": []
+  },
+  "original_evidence_inventory": {
+    "documents": [
+      "archipelago/README.md"
+    ],
+    "preserved_browser_driver_qa_result_or_console_log_present": false,
+    "rule_checks": [
+      "archipelago/tests/game.test.mjs"
+    ],
+    "screenshots": []
+  },
+  "original_request": null,
+  "original_request_status": "Exact original sentence missing from available parent evidence; summary only, no fabrication.",
+  "original_request_summary": "群岛使者谈判联盟句",
+  "original_verification_scope": {
+    "expedition_test_method": "Full expedition case uses fixed seed32917 and act strategy through normal rules to test four alliances/victory/<=24turns, a deterministic rule simulation, not a real browser campaign. PASS is a console print without preserved execution output.",
+    "five_group_test_method": "game.test.mjs directly calls act/chance with fixture state sets including gold/supply/event/AP/storm/turn/relationships.",
+    "limitations": [
+      "No retained output/browser driver/QA result or console log establishes browser input implementation, module injection or time acceleration.",
+      "Rule campaign case and browser interaction checks do not establish physical-device complete campaign.",
+      "WebMCP conditionally registers read-state/select/action tools, but original support context/mock method is not preserved; author success/invalid-action rejection cannot be independently called verified native invocation.",
+      "Exact original request missing and remains null; no coverage expansion."
+    ],
+    "preview": {
+      "command": "python3 -m http.server 4277 --bind 127.0.0.1 --directory dist",
+      "host": "127.0.0.1",
+      "port": 4277
+    },
+    "provenance": "moonbloom_state static reading of original README/test/application source; no independent execution.",
+    "readme_browser_report": "README.md:36 reports sailing, commissions, negotiation successes/failures, events and refreshed save; mobile390x844 layout without overflow."
+  },
+  "parent_reported_author_results": {
+    "browser_interaction_checks_reported": true,
+    "provenance": "Parent/author report only, not independently executed validation.",
+    "rule_check_groups": 5
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not fetched, not user formal domain or GitHub delivery evidence.",
+    "url": "https://envoy-of-the-tides-oct04.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.mjs",
+    "dist/game.mjs",
+    "dist/index.html",
+    "dist/styles.css",
+    "dist/vendor/LICENSE-three.txt",
+    "dist/vendor/OrbitControls.js",
+    "dist/vendor/three.module.js",
+    "dist/world.mjs",
+    "tests/game.test.mjs"
+  ],
+  "source_inventory_observed_at": "2026-10-04T07:04:04.612328Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-40/archipelago",
+  "stage": "original",
+  "thread_id": "01a10593-9b95-70f4-9141-6eb5cbf6309f",
+  "title": "Archipelago",
+  "total_bytes": 1697561,
+  "turn_id": "01a10593-c0c5-7524-a59c-6c9ca24df301"
+}

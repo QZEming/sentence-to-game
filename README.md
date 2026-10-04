@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**70 / 100**。
+当前进度：**73 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -84,6 +84,9 @@
 | 068 | [深时档案 · Fossil Expedition](games/068-fossil-expedition/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/068-fossil-expedition/) | [源码](games/068-fossil-expedition/src/) |
 | 069 | [回响 · RESONANCE VAULT](games/069-resonance-vault/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/069-resonance-vault/) | [源码](games/069-resonance-vault/src/) |
 | 070 | [风屿 · 天气精灵](games/070-verdant-isle/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/070-verdant-isle/) | [源码](games/070-verdant-isle/src/) |
+| 071 | [群岛使者 · Envoy of the Tides](games/071-archipelago/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/071-archipelago/) | [源码](games/071-archipelago/src/) |
+| 072 | [深海静默 · ABYSS COMMAND](games/072-abyss-command/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/072-abyss-command/) | [源码](games/072-abyss-command/src/) |
+| 073 | [观相 PARALLAX · 视错觉剧场](games/073-parallax-theatre/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/073-parallax-theatre/) | [源码](games/073-parallax-theatre/src/) |
 
 ## 生成记录
 

@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 51,
+      "path": ".gitignore",
+      "sha256": "5dbaa990e2f6f2b177a9867bc78ec405ebf82ddb6fc615377b734bafbac9f995"
+    },
+    {
+      "bytes": 100,
+      "path": ".openai/hosting.json",
+      "sha256": "388f351c1e02ded0066f30ae4926e072e9e3c797755979e3f20d8dea6d6c910d"
+    },
+    {
+      "bytes": 2211,
+      "path": "README.md",
+      "sha256": "be9c2f0266c9364c4e309f57cd35ff7bd2a9391eaa22828845bcaeba2bcaeea8"
+    },
+    {
+      "bytes": 36122,
+      "path": "dist/game.js",
+      "sha256": "a74445361d5d50616d82fb0efeea7e6091517ae7770a868c363fe61cd3187312"
+    },
+    {
+      "bytes": 7733,
+      "path": "dist/index.html",
+      "sha256": "0933ffb3e23d4ed34059741b0588d8228f4300590185a84da9214e5bbf395afa"
+    },
+    {
+      "bytes": 19810,
+      "path": "dist/style.css",
+      "sha256": "478ce48958593681952ee72137aaadda35c2cca1c3124dea4532fb7050b694d4"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 287641,
+      "path": "original-delivery/parallax-theatre.tar.gz",
+      "sha256": "669c5bdbb0412921323d4e37145bc5c49c7b422e629c27e195e9d2cd108dd290"
+    },
+    {
+      "bytes": 424674,
+      "path": "output/playwright/act-3-solved.png",
+      "sha256": "bd5d6959e3190c6cb43f03183bdf755b6fa600965d51dab514dafa789faa5f01"
+    },
+    {
+      "bytes": 427832,
+      "path": "output/playwright/act-4-solved.png",
+      "sha256": "abbca5eb24a9fe11c1df57363c0ae646fc2ef5da917f3eb81d6b3a166443b6c1"
+    },
+    {
+      "bytes": 415111,
+      "path": "output/playwright/act-5-solved.png",
+      "sha256": "0f88924cfede71d8dddbdcbe3a74c4dce9c01f1d8e382df9dab3ddc5b5f9a928"
+    },
+    {
+      "bytes": 439212,
+      "path": "output/playwright/act-6-solved.png",
+      "sha256": "871518ee04a9f3ce6ec4a58ac7df4f464620a9ac70ab86f0d914c064eb031579"
+    },
+    {
+      "bytes": 428432,
+      "path": "output/playwright/desktop.png",
+      "sha256": "678958dac65831aae83c3de8636b21ed9588a481e2d620cffdb63f60b7f4f8e4"
+    },
+    {
+      "bytes": 121357,
+      "path": "output/playwright/mobile.png",
+      "sha256": "16648fa35a46b1ed6abd59d901da2eeb840d930a576c23a7d505f42f5e5fc919"
+    },
+    {
+      "bytes": 432539,
+      "path": "output/playwright/ring-aligned.png",
+      "sha256": "547c4acc03aaaa5fc980cd84319cdb3e5a35b0f5ea1f31db85095e0ab92ef203"
+    },
+    {
+      "bytes": 1305,
+      "path": "verify-puzzles.mjs",
+      "sha256": "dad089b24c6eba90cb20db0bd90b663e6d54d31bd66aaffcb7ec0a149a19fcd5"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-42/parallax-theatre",
+  "source_tree_sha256": "b6f0443a67cb4a549eec2aad63d801d2012aa9042f81e50e6ddeafad68d6e18e",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-073-original-20261004T065122Z",
+  "thread_id": "01a10599-001f-7334-b07a-2aec838840a2",
+  "turn_id": "01a10599-20a4-7372-b4d5-8a1bd9764d1c"
+}

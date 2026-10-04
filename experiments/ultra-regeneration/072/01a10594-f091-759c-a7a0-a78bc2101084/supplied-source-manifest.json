@@ -1,0 +1,352 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-072-original-20261004T070548Z",
+  "candidate": "ultra-072",
+  "completed_at": "2026-10-04T07:09:45.071455Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 14,
+  "files": [
+    {
+      "archive_relative_path": "abyss-command/.gitignore",
+      "copied_sha256": "d2f7db6f7fbca91e6170f29713fe3689bde38aebe4d46d3d608b086ab675a3bb",
+      "final_source_sha256": "d2f7db6f7fbca91e6170f29713fe3689bde38aebe4d46d3d608b086ab675a3bb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096929719496977,
+      "mtime_utc": "2026-10-04T06:55:29.719497Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/.gitignore",
+      "size_bytes": 57,
+      "source_sha256": "d2f7db6f7fbca91e6170f29713fe3689bde38aebe4d46d3d608b086ab675a3bb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/.openai/hosting.json",
+      "copied_sha256": "cba92b9f35b89f8d4ca7a9ec36799c89ce8370a7b0a61e2a1ca30aa232a9518b",
+      "final_source_sha256": "cba92b9f35b89f8d4ca7a9ec36799c89ce8370a7b0a61e2a1ca30aa232a9518b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095178075754064,
+      "mtime_utc": "2026-10-04T06:26:18.075754Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "cba92b9f35b89f8d4ca7a9ec36799c89ce8370a7b0a61e2a1ca30aa232a9518b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/README.md",
+      "copied_sha256": "ae68d53977ac2c3e99f5004db91f8deb5504e6a8b5fdf7c1cf36b07ce73aa49b",
+      "final_source_sha256": "ae68d53977ac2c3e99f5004db91f8deb5504e6a8b5fdf7c1cf36b07ce73aa49b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096929711759044,
+      "mtime_utc": "2026-10-04T06:55:29.711759Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/README.md",
+      "size_bytes": 2498,
+      "source_sha256": "ae68d53977ac2c3e99f5004db91f8deb5504e6a8b5fdf7c1cf36b07ce73aa49b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/app.js",
+      "copied_sha256": "204c787efba259e1f1b5ae5e29170621b880e4b8f7ac5cc6f6d5d4f1eb3a8b8b",
+      "final_source_sha256": "204c787efba259e1f1b5ae5e29170621b880e4b8f7ac5cc6f6d5d4f1eb3a8b8b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096929695977927,
+      "mtime_utc": "2026-10-04T06:55:29.695978Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/app.js",
+      "size_bytes": 33510,
+      "source_sha256": "204c787efba259e1f1b5ae5e29170621b880e4b8f7ac5cc6f6d5d4f1eb3a8b8b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/index.html",
+      "copied_sha256": "919363c90c365b88392b781bc534f7810459d8491b8f000f5c4ff624701d4631",
+      "final_source_sha256": "919363c90c365b88392b781bc534f7810459d8491b8f000f5c4ff624701d4631",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095143815124441,
+      "mtime_utc": "2026-10-04T06:25:43.815125Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/index.html",
+      "size_bytes": 946,
+      "source_sha256": "919363c90c365b88392b781bc534f7810459d8491b8f000f5c4ff624701d4631",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/scene.js",
+      "copied_sha256": "c13cdd67ad8b2e70dee6edae576ec1375b44fadb2030acb1e12dcb4a146b22f8",
+      "final_source_sha256": "c13cdd67ad8b2e70dee6edae576ec1375b44fadb2030acb1e12dcb4a146b22f8",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096846942260190,
+      "mtime_utc": "2026-10-04T06:54:06.942260Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/scene.js",
+      "size_bytes": 12013,
+      "source_sha256": "c13cdd67ad8b2e70dee6edae576ec1375b44fadb2030acb1e12dcb4a146b22f8",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/simulation.js",
+      "copied_sha256": "914c491c05c0aa39f4b0c5c2315cf95cfb25bf7e63fe22cc00a6ec96a3b1a744",
+      "final_source_sha256": "914c491c05c0aa39f4b0c5c2315cf95cfb25bf7e63fe22cc00a6ec96a3b1a744",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096686104947333,
+      "mtime_utc": "2026-10-04T06:51:26.104947Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/simulation.js",
+      "size_bytes": 14497,
+      "source_sha256": "914c491c05c0aa39f4b0c5c2315cf95cfb25bf7e63fe22cc00a6ec96a3b1a744",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/style.css",
+      "copied_sha256": "e32aa69107d65d3879b3bb22b6ea79272fb89a0e91408c9df8c234f1676acd64",
+      "final_source_sha256": "e32aa69107d65d3879b3bb22b6ea79272fb89a0e91408c9df8c234f1676acd64",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096846907708075,
+      "mtime_utc": "2026-10-04T06:54:06.907708Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/style.css",
+      "size_bytes": 28875,
+      "source_sha256": "e32aa69107d65d3879b3bb22b6ea79272fb89a0e91408c9df8c234f1676acd64",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/vendor/LICENSE.three.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096930519980349,
+      "mtime_utc": "2026-10-04T06:55:30.519980Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/vendor/LICENSE.three.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095123748158768,
+      "mtime_utc": "2026-10-04T06:25:23.748159Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/output/playwright/game-desktop.jpg",
+      "copied_sha256": "02bed1fc9144bb5f903cca1a7284a8dc6d1c49e0bd3a6ce742f9888bea075e84",
+      "final_source_sha256": "02bed1fc9144bb5f903cca1a7284a8dc6d1c49e0bd3a6ce742f9888bea075e84",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097106407671274,
+      "mtime_utc": "2026-10-04T06:58:26.407671Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/output/playwright/game-desktop.jpg",
+      "size_bytes": 97279,
+      "source_sha256": "02bed1fc9144bb5f903cca1a7284a8dc6d1c49e0bd3a6ce742f9888bea075e84",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/package.json",
+      "copied_sha256": "573202e07af19959083f2665ac8dd996c1b5710f0aef4a0131d022eea9c5e46c",
+      "final_source_sha256": "573202e07af19959083f2665ac8dd996c1b5710f0aef4a0131d022eea9c5e46c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096929698098140,
+      "mtime_utc": "2026-10-04T06:55:29.698098Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/package.json",
+      "size_bytes": 263,
+      "source_sha256": "573202e07af19959083f2665ac8dd996c1b5710f0aef4a0131d022eea9c5e46c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "abyss-command/tests/simulation.test.mjs",
+      "copied_sha256": "a947834297e15997c1617ddd279b35eb11a81ee6f2384dff7ba6ceb45f49200c",
+      "final_source_sha256": "a947834297e15997c1617ddd279b35eb11a81ee6f2384dff7ba6ceb45f49200c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096633662812930,
+      "mtime_utc": "2026-10-04T06:50:33.662813Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command/tests/simulation.test.mjs",
+      "size_bytes": 4160,
+      "source_sha256": "a947834297e15997c1617ddd279b35eb11a81ee6f2384dff7ba6ceb45f49200c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/abyss-command-deploy.tar.gz",
+      "copied_sha256": "eefd6d21546f6185a41f6ecc4067f37424db64a1f13755fd1e891d3b96e84d35",
+      "final_source_sha256": "eefd6d21546f6185a41f6ecc4067f37424db64a1f13755fd1e891d3b96e84d35",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097173461433226,
+      "mtime_utc": "2026-10-04T06:59:33.461433Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command-deploy.tar.gz",
+      "size_bytes": 298318,
+      "source_sha256": "eefd6d21546f6185a41f6ecc4067f37424db64a1f13755fd1e891d3b96e84d35",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "0c9d71ecb15e1ee40718821890a08976d77497ad859e4a24e1835689c355be7c"
+  },
+  "inventory_fixed_at": "2026-10-04T07:09:44.838868Z",
+  "limitations": [
+    "Only fixed inventory, raw-byte copying and SHA256 checks; no run/build/test/browser/gameplay/process/load sampling/source modification/remote action.",
+    "Original package not unpacked or rebuilt; required original image copied raw without viewing.",
+    "Forbidden runtime/session/node_modules/.git/.codex/.agents/.aws/.playwright-cli/cache and symbolic-link ancestors excluded, no unrelated directories read."
+  ],
+  "local_process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "method": "read-only ps/lsof actual command/cwd/descendants/listener ownership",
+    "observed_at_utc": "2026-10-04 07:08:59 UTC",
+    "preserved_idle_framework_contexts": [
+      {
+        "pcpu": "0.0",
+        "pid": 82646,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 82647,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 82648,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 82649,
+        "state": "S"
+      }
+    ],
+    "preview_listener_found": false,
+    "preview_port": 4187,
+    "protected_originals": {
+      "chrome_1036_alive": true,
+      "listeners": {
+        "4173": 2560,
+        "4827": 2554,
+        "5173": 2547
+      }
+    },
+    "signals_sent": []
+  },
+  "original_evidence_inventory": {
+    "documents": [
+      "abyss-command/README.md"
+    ],
+    "external_output_selected": false,
+    "preserved_browser_driver_pass_output_or_console_log_present": false,
+    "rule_checks": [
+      "abyss-command/tests/simulation.test.mjs"
+    ],
+    "screenshots": [
+      "abyss-command/output/playwright/game-desktop.jpg"
+    ]
+  },
+  "original_request": null,
+  "original_request_status": "Exact original sentence missing from available parent evidence; summary only, no fabrication.",
+  "original_request_summary": "潜艇声呐隐蔽战术句",
+  "original_verification_scope": {
+    "browser_report": "README.md:52 browser checks cover start, detection, selection, launch, view, save and mobile layout, not full completion of three browser missions.",
+    "execution_result_boundary": "PASS text is code printing, not preserved execution stdout.",
+    "hunter_method": "Hunter mission calls ping/select/fire and simulates70sec for two-submarine victory; additional boundaries directly set ammo/depth/incoming-torpedo fixtures.",
+    "limitations": [
+      "Coordinate/depth fixtures do not establish actual driving complete missions.",
+      "No browser driver/PASS result/console log independently establishes browser inputs, state hooks or acceleration.",
+      "Mobile sizes/physical-device touch, audio listening and full error monitoring coverage are unknown.",
+      "Conditional read-only WebMCP registration has no verified native invocation record.",
+      "Exact original request missing; Site URL not provided and none guessed or queried."
+    ],
+    "preview": {
+      "command": "npm start -> python3 -m http.server 4187 --directory dist",
+      "documented_url_host": "127.0.0.1",
+      "explicit_bind_present": false,
+      "port": 4187
+    },
+    "provenance": "moonbloom_state static reading of original README/package/test/application source plus fixed screenshot inventory; no independent execution/image viewing.",
+    "rule_method": "simulation.test.mjs performs 14 checks with direct Simulation API and synchronous step(.05). Default mission simulates torpedo hits then sets player.x/z to evacuation point; crossing mission directly sets each waypoint and depth."
+  },
+  "parent_reported_author_results": {
+    "core_checks": 14,
+    "partial_browser_interactions_reported": true,
+    "provenance": "Parent/author report only, not independently executed validation.",
+    "three_mission_real_playthrough_claimed": false
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "sites_url_provided": false,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/simulation.js",
+    "dist/style.css",
+    "dist/vendor/LICENSE.three.txt",
+    "dist/vendor/three.module.js",
+    "output/playwright/game-desktop.jpg",
+    "package.json",
+    "tests/simulation.test.mjs"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-41/abyss-command",
+  "stage": "original",
+  "thread_id": "01a10594-f091-759c-a7a0-a78bc2101084",
+  "title": "Abyss Command",
+  "total_bytes": 1808284,
+  "turn_id": "01a10595-118d-7097-81fc-9480d5f511da"
+}

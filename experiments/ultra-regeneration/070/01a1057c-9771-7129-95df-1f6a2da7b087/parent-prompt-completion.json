@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个天气精灵调节风雨与四季让荒芜岛屿恢复生机的 3D 生态调控游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个天气精灵调节风雨与四季让荒芜岛屿恢复生机的 3D 生态调控游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087",
+  "author_turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a",
+  "evidence": "explicit parent actual creation-input attestation; original null records retained, no full task export claim",
+  "received_at": "2026-10-04T07:48:03.689809+00:00",
+  "original_supplied_manifest_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

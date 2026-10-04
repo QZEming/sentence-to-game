@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "072-abyss-command",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "072",
+  "generation_turn_id": "01a10595-118d-7097-81fc-9480d5f511da",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "full_old_history_preserved": true,
+    "game_number": "072",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 33510,
+      "path": "app.js",
+      "sha256": "204c787efba259e1f1b5ae5e29170621b880e4b8f7ac5cc6f6d5d4f1eb3a8b8b"
+    },
+    {
+      "bytes": 946,
+      "path": "index.html",
+      "sha256": "919363c90c365b88392b781bc534f7810459d8491b8f000f5c4ff624701d4631"
+    },
+    {
+      "bytes": 12013,
+      "path": "scene.js",
+      "sha256": "c13cdd67ad8b2e70dee6edae576ec1375b44fadb2030acb1e12dcb4a146b22f8"
+    },
+    {
+      "bytes": 14497,
+      "path": "simulation.js",
+      "sha256": "914c491c05c0aa39f4b0c5c2315cf95cfb25bf7e63fe22cc00a6ec96a3b1a744"
+    },
+    {
+      "bytes": 28875,
+      "path": "style.css",
+      "sha256": "e32aa69107d65d3879b3bb22b6ea79272fb89a0e91408c9df8c234f1676acd64"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE.three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "8e8c275ef2227c194bdb082b645b60aa1a006ff0e05d12f178fde66169fadff7",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10594-f091-759c-a7a0-a78bc2101084",
+  "title": "深海静默 · ABYSS COMMAND",
+  "url": "https://qzemi.cn/sentence-to-game/games/072-abyss-command/"
+}

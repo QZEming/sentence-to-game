@@ -74,5 +74,8 @@
   "source_tree_sha256": "b9668170be21bfec8a0fcd0b4e26e155e18fd92b1ad3f05e613eed631d65e3c5",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-070-original-20261004T063554Z",
   "thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087",
-  "turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a"
+  "turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a",
+  "original_request": "实现一个天气精灵调节风雨与四季让荒芜岛屿恢复生机的 3D 生态调控游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }

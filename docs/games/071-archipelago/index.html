@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#0b202b"><meta name="description" content="在五个海上王国之间航行，以谈判、贸易和调停缔结联盟。一个可直接游玩的 3D 外交策略游戏。">
+ <title>群岛使者 · Envoy of the Tides</title>
+ <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c2632'/%3E%3Cpath d='M16 3 19 13 29 16 19 19 16 29 13 19 3 16 13 13Z' fill='%23d6b575'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%230c2632'/%3E%3C/svg%3E">
+ <link rel="stylesheet" href="./styles.css">
+ <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+ <div class="app-shell">
+  <header class="topbar">
+   <a class="brand" href="./" aria-label="群岛使者首页"><span class="brand-mark">✥</span><span><strong>群岛使者</strong><small>ENVOY OF THE TIDES</small></span></a>
+   <nav class="main-nav" aria-label="游戏视图"><button class="nav-button active" data-tab="map"><span data-icon="compass"></span>群岛海图</button><button class="nav-button" data-tab="council"><span data-icon="shield"></span>联盟议会<span id="nav-allies" class="tiny-count">0</span></button><button class="nav-button" data-tab="journal"><span data-icon="book"></span>航海日志</button></nav>
+   <div class="top-tools"><span class="save-state"><i></i>自动存档</span><button class="icon-button" id="help" aria-label="游戏指南" title="游戏指南"><span data-icon="help"></span></button><button class="icon-button" id="settings" aria-label="游戏设置" title="游戏设置"><span data-icon="settings"></span></button></div>
+  </header>
+  <div class="workspace">
+   <aside class="left-panel">
+    <section class="envoy"><span class="eyebrow">你的外交使命</span><h2>以盟约，连接群岛。</h2><div class="envoy-line"><span class="mini-seal">✥</span><div><b>自由港使者</b><small>中立外交官 · 首次远征</small></div></div></section>
+    <div class="section-label"><span>群岛诸国</span><small>5 个王国</small></div>
+    <div id="kingdom-list" class="kingdom-list"></div>
+    <section class="world-tension"><div class="section-label"><span data-icon="storm"></span><span>风暴危机</span><b id="storm-value">12<span>/ 100</span></b></div><div class="meter"><i id="storm-bar"></i></div><p id="storm-description">暗潮初起，外交窗口依然敞开。</p></section>
+    <button class="guide-link" id="guide-link"><span data-icon="book"></span>使者手册<span>?</span></button>
+   </aside>
+   <main class="map-area">
+    <div id="world" class="world"><div id="world-fallback" hidden><span>✥</span><h2>海图模式</h2><p>当前设备未启用 WebGL。你仍可从王国列表选择目的地，完成全部外交行动。</p></div></div>
+    <div class="map-vignette"></div>
+    <div class="map-heading"><div class="eyebrow"><span class="gold-rule"></span>THE SHATTERED SEA</div><h1>潮汐之间</h1><p>五个王国。一片海洋。一个共同的未来。</p></div>
+    <div class="weather-chip"><span data-icon="sun"></span><span>初夏 · 东南信风<small>航行条件良好</small></span></div>
+    <div id="map-overlay" class="map-overlay" hidden></div>
+    <div class="map-coordinate">北纬 24° 38′ <span>东经 121° 06′</span></div>
+    <div class="map-tools"><button id="zoom-in" aria-label="放大地图" title="放大地图">+</button><button id="zoom-out" aria-label="缩小地图" title="缩小地图">−</button><span></span><button id="reset-view" aria-label="重置视角" title="重置视角"><span data-icon="focus"></span></button><button id="toggle-routes" class="enabled" aria-label="显示或隐藏航线" title="显示或隐藏航线"><span data-icon="route"></span></button></div>
+    <div class="compass-rose" aria-hidden="true"><span>N</span><i>✥</i></div>
+    <div class="mission-card"><div class="mission-icon"><span data-icon="laurel"></span></div><div><span class="eyebrow">主线使命 · 群岛盟约</span><h3>让分散的旗帜，驶向同一片海。</h3><p>缔结 <b id="mission-count">0 / 4</b> 个联盟 <span>声望 <b id="mission-renown">24 / 65</b></span></p></div><div id="mission-pips" class="mission-pips"></div></div>
+    <div class="map-hint"><span data-icon="mouse"></span>拖动旋转 · 滚轮缩放 · 点击岛屿探索</div>
+   </main>
+   <aside class="right-panel" id="kingdom-detail" aria-label="王国详情"></aside>
+  </div>
+  <footer class="bottom-bar"><div class="turn-display"><span class="day-icon" data-icon="sun"></span><div><small>远征日历</small><strong>第 <b id="turn">01</b> 回合 <span>/ 24</span></strong></div></div><div class="resources"><div class="resource gold"><span data-icon="coins"></span><div><small>国库金币</small><b id="gold">160</b></div><em id="income">+18 / 回合</em></div><div class="resource"><span data-icon="box"></span><div><small>航行补给</small><b id="supply">16</b></div></div><div class="resource"><span data-icon="laurel"></span><div><small>外交声望</small><b id="renown">24</b></div></div></div><div class="turn-actions"><div class="ap-block"><span>剩余行动</span><div id="ap-pips"></div></div><button class="end-turn" id="end-turn">结束回合<span data-icon="hourglass"></span></button></div></footer>
+ </div>
+ <div class="toast-stack" id="toasts" aria-live="polite"></div>
+ <dialog id="game-dialog"><button class="dialog-close icon-button" aria-label="关闭对话框"><span data-icon="close"></span></button><div id="dialog-content"></div></dialog>
+ <script type="module" src="./app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "071-archipelago",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "071",
+  "generation_turn_id": "01a10593-c0c5-7524-a59c-6c9ca24df301",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "full_old_history_preserved": true,
+    "game_number": "071",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/a62a9754d678f762ad53e1b18847b54f4b4da5f5",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 26771,
+      "path": "app.mjs",
+      "sha256": "54d64624503a8e7528b10c296afef076d9f37cecffd18da79cd9206b5df84474"
+    },
+    {
+      "bytes": 12207,
+      "path": "game.mjs",
+      "sha256": "3fe2a5af82b60747115bf9454572734ba9b63f0630acc999cf0fb8e7c0f6a540"
+    },
+    {
+      "bytes": 5803,
+      "path": "index.html",
+      "sha256": "b70518cd6e5f176aea2d6d0c342832c2f423b7a29e0b9a8e7af608c07421c0c2"
+    },
+    {
+      "bytes": 30624,
+      "path": "styles.css",
+      "sha256": "e61d532617697d58bca2c6f1bbac58dac90ffe4f135a74eb1264702030257c7b"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "bytes": 30973,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "7aa4372a5ec60b49988edde81014c7361740a57962d032003ca33301c1f4edd5"
+    },
+    {
+      "bytes": 1272972,
+      "path": "vendor/three.module.js",
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "bytes": 13378,
+      "path": "world.mjs",
+      "sha256": "f4767c49bcb826ca6a8672a378f4894b3f1bc37434f6eabc370180745be304e4"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "499e708e217af001e48bd1b7d8cb246db06bd418e653dd27e60c9fa033c2296e",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10593-9b95-70f4-9141-6eb5cbf6309f",
+  "title": "群岛使者 · Envoy of the Tides",
+  "url": "https://qzemi.cn/sentence-to-game/games/071-archipelago/"
+}
