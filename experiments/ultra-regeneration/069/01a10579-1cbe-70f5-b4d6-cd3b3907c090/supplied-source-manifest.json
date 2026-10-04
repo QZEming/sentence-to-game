@@ -1,0 +1,437 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-069-original-20261004T063031Z",
+  "candidate": "ultra-069",
+  "completed_at": "2026-10-04T06:34:20.095942Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 18,
+  "files": [
+    {
+      "archive_relative_path": "resonance-vault/.gitignore",
+      "copied_sha256": "a80ddefa712d74364cf4864b10d568e9819077b714ce93fe1ce3f1db6f251b98",
+      "final_source_sha256": "a80ddefa712d74364cf4864b10d568e9819077b714ce93fe1ce3f1db6f251b98",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094783819748328,
+      "mtime_utc": "2026-10-04T06:19:43.819748Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/.gitignore",
+      "size_bytes": 74,
+      "source_sha256": "a80ddefa712d74364cf4864b10d568e9819077b714ce93fe1ce3f1db6f251b98",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/.openai/hosting.json",
+      "copied_sha256": "2b916c80168223c1c888b9b7a66d2c754c4068283d74cf9c485a29749b82e632",
+      "final_source_sha256": "2b916c80168223c1c888b9b7a66d2c754c4068283d74cf9c485a29749b82e632",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093326333069207,
+      "mtime_utc": "2026-10-04T05:55:26.333069Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "2b916c80168223c1c888b9b7a66d2c754c4068283d74cf9c485a29749b82e632",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/README.md",
+      "copied_sha256": "52b424aa0947f6efe943a05cad4fedf9a7c5de029e0bf58156c63ef8d9549f11",
+      "final_source_sha256": "52b424aa0947f6efe943a05cad4fedf9a7c5de029e0bf58156c63ef8d9549f11",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094985903277109,
+      "mtime_utc": "2026-10-04T06:23:05.903277Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/README.md",
+      "size_bytes": 2166,
+      "source_sha256": "52b424aa0947f6efe943a05cad4fedf9a7c5de029e0bf58156c63ef8d9549f11",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/game.js",
+      "copied_sha256": "7cd18d51b36748d4e6077b0080d9808fcbdcd0b1e1adfda45b4a5241bf6ebc73",
+      "final_source_sha256": "7cd18d51b36748d4e6077b0080d9808fcbdcd0b1e1adfda45b4a5241bf6ebc73",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094941651941949,
+      "mtime_utc": "2026-10-04T06:22:21.651942Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/game.js",
+      "size_bytes": 31185,
+      "source_sha256": "7cd18d51b36748d4e6077b0080d9808fcbdcd0b1e1adfda45b4a5241bf6ebc73",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/index.html",
+      "copied_sha256": "88351ca1ed54ab5b51c3561e164cfa904932416dea858936c708c7a91186e1d0",
+      "final_source_sha256": "88351ca1ed54ab5b51c3561e164cfa904932416dea858936c708c7a91186e1d0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094941651461281,
+      "mtime_utc": "2026-10-04T06:22:21.651461Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/index.html",
+      "size_bytes": 9374,
+      "source_sha256": "88351ca1ed54ab5b51c3561e164cfa904932416dea858936c708c7a91186e1d0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/puzzles.js",
+      "copied_sha256": "8662a9f2b2c48d467c1e42e394fa03f9bf8c775701673a35f61970ae1fad056d",
+      "final_source_sha256": "8662a9f2b2c48d467c1e42e394fa03f9bf8c775701673a35f61970ae1fad056d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094422617190018,
+      "mtime_utc": "2026-10-04T06:13:42.617190Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/puzzles.js",
+      "size_bytes": 2691,
+      "source_sha256": "8662a9f2b2c48d467c1e42e394fa03f9bf8c775701673a35f61970ae1fad056d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/scene.js",
+      "copied_sha256": "ee9b9e2c7a872180bd425dcfbfb03e39d269633c795373decdb9c84f8ac239c0",
+      "final_source_sha256": "ee9b9e2c7a872180bd425dcfbfb03e39d269633c795373decdb9c84f8ac239c0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094702185947519,
+      "mtime_utc": "2026-10-04T06:18:22.185947Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/scene.js",
+      "size_bytes": 14400,
+      "source_sha256": "ee9b9e2c7a872180bd425dcfbfb03e39d269633c795373decdb9c84f8ac239c0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/style.css",
+      "copied_sha256": "35d3f50eea25f67077e33eb770daa575a3483061a00bede3a4f14e0e1041bc71",
+      "final_source_sha256": "35d3f50eea25f67077e33eb770daa575a3483061a00bede3a4f14e0e1041bc71",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094941672016533,
+      "mtime_utc": "2026-10-04T06:22:21.672017Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/style.css",
+      "size_bytes": 26567,
+      "source_sha256": "35d3f50eea25f67077e33eb770daa575a3483061a00bede3a4f14e0e1041bc71",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094850378788352,
+      "mtime_utc": "2026-10-04T06:20:50.378788Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/dist/vendor/three.module.js",
+      "copied_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "final_source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093332065548045,
+      "mtime_utc": "2026-10-04T05:55:32.065548Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/dist/vendor/three.module.js",
+      "size_bytes": 1304820,
+      "source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/output/playwright/desktop.png",
+      "copied_sha256": "0e3284efd870dc577ea7c66aba90c51365f2d028b0d6c702f2538a230e398429",
+      "final_source_sha256": "0e3284efd870dc577ea7c66aba90c51365f2d028b0d6c702f2538a230e398429",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094620996852241,
+      "mtime_utc": "2026-10-04T06:17:00.996852Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/output/playwright/desktop.png",
+      "size_bytes": 269466,
+      "source_sha256": "0e3284efd870dc577ea7c66aba90c51365f2d028b0d6c702f2538a230e398429",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/output/playwright/mobile.png",
+      "copied_sha256": "b24417e71fbb2c0dbf239cb98876fa609e71dbbab0a784b7dfec66573bbae157",
+      "final_source_sha256": "b24417e71fbb2c0dbf239cb98876fa609e71dbbab0a784b7dfec66573bbae157",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094828913488199,
+      "mtime_utc": "2026-10-04T06:20:28.913488Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/output/playwright/mobile.png",
+      "size_bytes": 104453,
+      "source_sha256": "b24417e71fbb2c0dbf239cb98876fa609e71dbbab0a784b7dfec66573bbae157",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/output/playwright/open-vault.png",
+      "copied_sha256": "f47d060f83540f2ba4c71291f87522151f2dbf8c6b5917b79c4422d711c5eb37",
+      "final_source_sha256": "f47d060f83540f2ba4c71291f87522151f2dbf8c6b5917b79c4422d711c5eb37",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095073293496516,
+      "mtime_utc": "2026-10-04T06:24:33.293497Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/output/playwright/open-vault.png",
+      "size_bytes": 237035,
+      "source_sha256": "f47d060f83540f2ba4c71291f87522151f2dbf8c6b5917b79c4422d711c5eb37",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/output/playwright/qa-results.json",
+      "copied_sha256": "979aeffc8a8f0dd6660eff5cfab4da9383588aebeb098b3b046f885d57496ed6",
+      "final_source_sha256": "979aeffc8a8f0dd6660eff5cfab4da9383588aebeb098b3b046f885d57496ed6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095121942425337,
+      "mtime_utc": "2026-10-04T06:25:21.942425Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/output/playwright/qa-results.json",
+      "size_bytes": 878,
+      "source_sha256": "979aeffc8a8f0dd6660eff5cfab4da9383588aebeb098b3b046f885d57496ed6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/output/playwright/solved.png",
+      "copied_sha256": "d4e10cf924ef4f8ef8f2d860701b23d44fa89e5f71cd2e62c34992205405825f",
+      "final_source_sha256": "d4e10cf924ef4f8ef8f2d860701b23d44fa89e5f71cd2e62c34992205405825f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094826593965340,
+      "mtime_utc": "2026-10-04T06:20:26.593965Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/output/playwright/solved.png",
+      "size_bytes": 174827,
+      "source_sha256": "d4e10cf924ef4f8ef8f2d860701b23d44fa89e5f71cd2e62c34992205405825f",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/package.json",
+      "copied_sha256": "8cb436da0fc9ff9ef38b713bdb69711a4448344d9d73679844c17ac6bc846149",
+      "final_source_sha256": "8cb436da0fc9ff9ef38b713bdb69711a4448344d9d73679844c17ac6bc846149",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094422651692967,
+      "mtime_utc": "2026-10-04T06:13:42.651693Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/package.json",
+      "size_bytes": 238,
+      "source_sha256": "8cb436da0fc9ff9ef38b713bdb69711a4448344d9d73679844c17ac6bc846149",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "resonance-vault/tests/puzzles.test.mjs",
+      "copied_sha256": "0d4f6ad717e29c0b239a570cf63c98627593f12b6b1a0ac21f812d5cb8ea33da",
+      "final_source_sha256": "0d4f6ad717e29c0b239a570cf63c98627593f12b6b1a0ac21f812d5cb8ea33da",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094422662892408,
+      "mtime_utc": "2026-10-04T06:13:42.662892Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault/tests/puzzles.test.mjs",
+      "size_bytes": 1247,
+      "source_sha256": "0d4f6ad717e29c0b239a570cf63c98627593f12b6b1a0ac21f812d5cb8ea33da",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/resonance-vault.tar.gz",
+      "copied_sha256": "4ef6315558ef9c1263235c7e247f7871c65f5b70255b1bcd4aa37a27c22b2f5a",
+      "final_source_sha256": "4ef6315558ef9c1263235c7e247f7871c65f5b70255b1bcd4aa37a27c22b2f5a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095045002935822,
+      "mtime_utc": "2026-10-04T06:24:05.002936Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault.tar.gz",
+      "size_bytes": 294182,
+      "source_sha256": "4ef6315558ef9c1263235c7e247f7871c65f5b70255b1bcd4aa37a27c22b2f5a",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "ea1df661ef966b2d1e0081a0cc9bbada514caba81a67e5d2bf67901239253f77"
+  },
+  "inventory_fixed_at": "2026-10-04T06:34:19.890169Z",
+  "limitations": [
+    "Only fixed inventory, original-byte copying and SHA256 checks; no run/test/build/browser/gameplay/process/load sampling/source modification/remote action.",
+    "Original package not extracted or rebuilt; no external output read.",
+    "Forbidden runtime/session/node_modules/.git/.codex/.agents/.aws/.playwright-cli/cache paths and soft links excluded."
+  ],
+  "original_evidence_inventory": {
+    "browser_input_driver_present": false,
+    "documents": [
+      "resonance-vault/README.md"
+    ],
+    "reports": [
+      "resonance-vault/output/playwright/qa-results.json"
+    ],
+    "screenshots": [
+      "resonance-vault/output/playwright/desktop.png",
+      "resonance-vault/output/playwright/mobile.png",
+      "resonance-vault/output/playwright/open-vault.png",
+      "resonance-vault/output/playwright/solved.png"
+    ],
+    "test_sources": [
+      "resonance-vault/tests/puzzles.test.mjs"
+    ]
+  },
+  "original_request": "实现一个保险库专家聆听锁芯反馈破解奇异保险箱的 3D 声音推理解谜游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "limitations": [
+      "JSON is a summary without driver, input sequence, duration or hook/state/acceleration records; completedPhases does not independently establish natural real-control gameplay.",
+      "Audio records only melody playback, with no listening methodology, signal output analysis or sound quality verification.",
+      "Mobile is viewport testing, not physical-device full gameplay.",
+      "Final console counts do not independently establish full-session/network error coverage.",
+      "Conditional WebMCP and no explicit window debughook do not prove absence of runtime test injection.",
+      "No Site URL provided and none queried."
+    ],
+    "preview": {
+      "default_npm_start_port": 4173,
+      "documented_command": "python3 -m http.server 43138 --bind 127.0.0.1 -d dist",
+      "documented_host": "127.0.0.1",
+      "documented_port": 43138
+    },
+    "provenance": "Original retained JSON parsed during inventory plus moonbloom_state static reading of source; no independent test execution or image viewing.",
+    "retained_report": "qa-results.json records three rule passes, Chrome/CLI, 1440x1050 and 390x844, three vaults with completedPhases=3/S rank, melody playback/error retry/save restoration/vault opening/layout, final console 0 errors/0 warnings and native WebMCP unverified.",
+    "rule_method": "tests/puzzles.test.mjs performs three pure rule checks directly matching targets and range/rating boundaries, not actual nine-mechanism input flow."
+  },
+  "original_verification_summary": {
+    "browser": "Chrome via Playwright CLI",
+    "cases": [
+      {
+        "clues": 3,
+        "completedPhases": 3,
+        "name": "俄耳甫斯之匣",
+        "rank": "S"
+      },
+      {
+        "clues": 3,
+        "completedPhases": 3,
+        "name": "深海潮汐钟",
+        "rank": "S"
+      },
+      {
+        "clues": 3,
+        "completedPhases": 3,
+        "name": "月背来信",
+        "rank": "S"
+      }
+    ],
+    "checked": [
+      "mechanical pin confirmation",
+      "resonance frequency confirmation",
+      "melody playback",
+      "wrong melody reset",
+      "all three complete melodies",
+      "independent case switching",
+      "local storage reload recovery",
+      "victory report",
+      "opened vault inspection",
+      "desktop and mobile horizontal overflow"
+    ],
+    "desktopViewport": [
+      1440,
+      1050
+    ],
+    "finalConsole": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "syntaxAndRules": "3 tests passed",
+    "webmcp": "Feature detected as unavailable in local browser; optional registrations guarded. No supported-context validation was possible."
+  },
+  "parent_readonly_process_observation": {
+    "dedicated_task_or_preview_or_browser_present": false,
+    "default_npm_port": 4173,
+    "default_port_listener_is_protected_user_service": true,
+    "default_port_listener_pid": 2560,
+    "documented_preview_listener_present": false,
+    "documented_preview_port": 43138,
+    "observed_at": "2026-10-04T06:30:47Z",
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only ps/lsof observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "browser_errors_reported": 0,
+    "provenance": "Parent/author report only, not independently executed validation.",
+    "three_vaults_browser_completion_reported": true
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "sites_url_provided": false,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/game.js",
+    "dist/index.html",
+    "dist/puzzles.js",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.module.js",
+    "output/playwright/desktop.png",
+    "output/playwright/mobile.png",
+    "output/playwright/open-vault.png",
+    "output/playwright/qa-results.json",
+    "output/playwright/solved.png",
+    "package.json",
+    "tests/puzzles.test.mjs"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault",
+  "stage": "original",
+  "thread_id": "01a10579-1cbe-70f5-b4d6-cd3b3907c090",
+  "title": "Resonance Vault",
+  "total_bytes": 2474790,
+  "turn_id": "01a10579-41c7-740e-b5ff-531ce4a82085"
+}

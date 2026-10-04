@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {CASES,circularDistance,proximity,matchesPin,matchesFrequency,rating} from '../dist/puzzles.js';
+test('angular hints and tolerance handle wrap around zero',()=>{assert.equal(circularDistance(359,1),2);assert.equal(circularDistance(0,359),1);assert.ok(matchesPin(359,1,3));assert.ok(!matchesPin(359,10,3));assert.equal(proximity(0,0,80,true),1);assert.equal(proximity(180,0,80,true),0);});
+test('all nine stages are reachable within their visible input ranges',()=>{for(const c of CASES){assert.equal(c.pins.length,3);for(const target of c.pins){assert.ok(target>=0&&target<=359);assert.ok(matchesPin(target,target,c.tolerance));assert.ok(!matchesPin(target+c.tolerance+1,target,c.tolerance));}assert.ok(c.frequency>=200&&c.frequency<=800);assert.ok(matchesFrequency(c.frequency,c.frequency,c.freqTolerance));assert.ok(!matchesFrequency(c.frequency+c.freqTolerance+1,c.frequency,c.freqTolerance));assert.ok(c.pattern.length>=4);assert.ok(c.pattern.every(n=>Number.isInteger(n)&&n>=0&&n<=2));}});
+test('ratings respect documented boundaries',()=>{assert.equal(rating(0,2),'S');assert.equal(rating(3,0),'A');assert.equal(rating(3,3),'A');assert.equal(rating(7,0),'B');});

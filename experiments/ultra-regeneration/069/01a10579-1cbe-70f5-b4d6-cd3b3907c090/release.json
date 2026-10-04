@@ -1,0 +1,66 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "069-resonance-vault",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "069",
+  "generation_turn_id": "01a10579-41c7-740e-b5ff-531ce4a82085",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "2f17652c46864619d1d295a90b7075267aae5700",
+    "full_old_history_preserved": true,
+    "game_number": "069",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/2f17652c46864619d1d295a90b7075267aae5700",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 31185,
+      "path": "game.js",
+      "sha256": "7cd18d51b36748d4e6077b0080d9808fcbdcd0b1e1adfda45b4a5241bf6ebc73"
+    },
+    {
+      "bytes": 9374,
+      "path": "index.html",
+      "sha256": "88351ca1ed54ab5b51c3561e164cfa904932416dea858936c708c7a91186e1d0"
+    },
+    {
+      "bytes": 2691,
+      "path": "puzzles.js",
+      "sha256": "8662a9f2b2c48d467c1e42e394fa03f9bf8c775701673a35f61970ae1fad056d"
+    },
+    {
+      "bytes": 14400,
+      "path": "scene.js",
+      "sha256": "ee9b9e2c7a872180bd425dcfbfb03e39d269633c795373decdb9c84f8ac239c0"
+    },
+    {
+      "bytes": 26567,
+      "path": "style.css",
+      "sha256": "35d3f50eea25f67077e33eb770daa575a3483061a00bede3a4f14e0e1041bc71"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "d3d50a680b30c3b264e688c6a74b94c8517b758fe59a998e51e1d81134d144df",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10579-1cbe-70f5-b4d6-cd3b3907c090",
+  "title": "回响 · RESONANCE VAULT",
+  "url": "https://qzemi.cn/sentence-to-game/games/069-resonance-vault/"
+}

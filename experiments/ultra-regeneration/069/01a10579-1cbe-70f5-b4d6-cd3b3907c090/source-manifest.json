@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "bytes": 74,
+      "path": ".gitignore",
+      "sha256": "a80ddefa712d74364cf4864b10d568e9819077b714ce93fe1ce3f1db6f251b98"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "2b916c80168223c1c888b9b7a66d2c754c4068283d74cf9c485a29749b82e632"
+    },
+    {
+      "bytes": 2166,
+      "path": "README.md",
+      "sha256": "52b424aa0947f6efe943a05cad4fedf9a7c5de029e0bf58156c63ef8d9549f11"
+    },
+    {
+      "bytes": 31185,
+      "path": "dist/game.js",
+      "sha256": "7cd18d51b36748d4e6077b0080d9808fcbdcd0b1e1adfda45b4a5241bf6ebc73"
+    },
+    {
+      "bytes": 9374,
+      "path": "dist/index.html",
+      "sha256": "88351ca1ed54ab5b51c3561e164cfa904932416dea858936c708c7a91186e1d0"
+    },
+    {
+      "bytes": 2691,
+      "path": "dist/puzzles.js",
+      "sha256": "8662a9f2b2c48d467c1e42e394fa03f9bf8c775701673a35f61970ae1fad056d"
+    },
+    {
+      "bytes": 14400,
+      "path": "dist/scene.js",
+      "sha256": "ee9b9e2c7a872180bd425dcfbfb03e39d269633c795373decdb9c84f8ac239c0"
+    },
+    {
+      "bytes": 26567,
+      "path": "dist/style.css",
+      "sha256": "35d3f50eea25f67077e33eb770daa575a3483061a00bede3a4f14e0e1041bc71"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1304820,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 294182,
+      "path": "original-delivery/resonance-vault.tar.gz",
+      "sha256": "4ef6315558ef9c1263235c7e247f7871c65f5b70255b1bcd4aa37a27c22b2f5a"
+    },
+    {
+      "bytes": 269466,
+      "path": "output/playwright/desktop.png",
+      "sha256": "0e3284efd870dc577ea7c66aba90c51365f2d028b0d6c702f2538a230e398429"
+    },
+    {
+      "bytes": 104453,
+      "path": "output/playwright/mobile.png",
+      "sha256": "b24417e71fbb2c0dbf239cb98876fa609e71dbbab0a784b7dfec66573bbae157"
+    },
+    {
+      "bytes": 237035,
+      "path": "output/playwright/open-vault.png",
+      "sha256": "f47d060f83540f2ba4c71291f87522151f2dbf8c6b5917b79c4422d711c5eb37"
+    },
+    {
+      "bytes": 878,
+      "path": "output/playwright/qa-results.json",
+      "sha256": "979aeffc8a8f0dd6660eff5cfab4da9383588aebeb098b3b046f885d57496ed6"
+    },
+    {
+      "bytes": 174827,
+      "path": "output/playwright/solved.png",
+      "sha256": "d4e10cf924ef4f8ef8f2d860701b23d44fa89e5f71cd2e62c34992205405825f"
+    },
+    {
+      "bytes": 238,
+      "path": "package.json",
+      "sha256": "8cb436da0fc9ff9ef38b713bdb69711a4448344d9d73679844c17ac6bc846149"
+    },
+    {
+      "bytes": 1247,
+      "path": "tests/puzzles.test.mjs",
+      "sha256": "0d4f6ad717e29c0b239a570cf63c98627593f12b6b1a0ac21f812d5cb8ea33da"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-38/resonance-vault",
+  "source_tree_sha256": "d3d50a680b30c3b264e688c6a74b94c8517b758fe59a998e51e1d81134d144df",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-069-original-20261004T063031Z",
+  "thread_id": "01a10579-1cbe-70f5-b4d6-cd3b3907c090",
+  "turn_id": "01a10579-41c7-740e-b5ff-531ce4a82085"
+}
