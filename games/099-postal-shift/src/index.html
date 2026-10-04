@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202b29"><meta name="description" content="在立体邮局里检查地址、加固易碎件、核验疑难件，挑战你的分拣速度。">
+  <title>准点邮局 · Parcel Shift</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23fa6b3a'/%3E%3Cpath d='M7 10h18v13H7z M7 11l9 7 9-7' fill='none' stroke='%23fff6e5' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="准点邮局首页"><span class="brand-icon">✉</span><span>准点邮局<small>PARCEL SHIFT</small></span><span class="edition">3D</span></a>
+    <div class="station-id"><span class="live-dot"></span>第 07 号分拣站 <span class="separator">/</span> 今天也要准点送达</div>
+    <div class="header-actions"><button id="sound" class="icon-button" aria-label="开启音效" title="音效">♪<span>音效关</span></button><button id="help" class="icon-button" aria-label="分拣指南">?<span>指南</span></button></div>
+  </header>
+  <main>
+    <section class="shift-bar" aria-label="班次状态">
+      <div class="shift-title"><span class="eyebrow">ON THE CLOCK</span><h1>分拣进行时<span id="shift-label">早班 · 01 / 03</span></h1></div>
+      <div class="stats"><div><small>本班得分</small><strong id="score">00000</strong></div><div><small>连续正确</small><strong id="combo">0<span> COMBO</span></strong></div><div><small>邮局信誉</small><strong id="lives" class="lives" aria-label="剩余 5 次机会">●●●●●</strong></div><div class="clock-stat"><small>班次剩余</small><strong id="clock">01:30</strong></div></div>
+    </section>
+    <div class="workbench">
+      <section class="scene-panel" aria-label="3D 邮局工作台">
+        <div id="scene" role="img" aria-label="四条城区路线与传送带上的包裹，使用下方路线按钮分拣"></div>
+        <div class="scene-top"><div class="station-badge"><span></span> CENTRAL POST OFFICE <b>07</b></div><button id="pause" class="scene-button" disabled aria-label="暂停游戏">Ⅱ</button></div>
+        <div class="scene-caption"><span>晨间来信</span><small id="scene-subtitle">传送带已就绪 · 等你开工</small></div>
+        <div id="event-banner" class="event-banner" hidden></div>
+        <div id="float-score" class="float-score" aria-hidden="true"></div>
+        <div class="scene-bottom"><span class="camera-note">可拖动场景查看邮局</span><span class="belt-status"><i></i><span id="belt-label">设备待命</span></span></div>
+        <div id="loading-scene">正在点亮邮局…</div>
+        <div class="start-card" id="start-card"><span class="card-kicker">欢迎上班，分拣员。</span><h2>小小包裹，<br>由你送对方向。</h2><p>读地址、看标签，在传送带末端前完成分拣。</p><div class="mode-select" role="group" aria-label="游戏模式"><button data-mode="shift" class="selected">班次挑战</button><button data-mode="endless">无尽高峰</button><button data-mode="zen">轻松练习</button></div><p id="mode-description" class="mode-description">三个班次，逐步升级你的分拣站。</p><button class="primary-button" id="start">开始早班 <kbd>↵</kbd></button><small>键盘与点击均可操作 · 首件有路线引导</small></div>
+      </section>
+      <aside class="inspector">
+        <div class="inspector-title"><h2>待分拣包裹</h2><span id="parcel-count">NO. 001</span></div>
+        <div class="shipping-label" id="shipping-label"><div class="label-top"><strong>POST / 标准邮政</strong><span id="mail-type">普通包裹</span></div><div class="address-block"><span class="tiny-label">收件地址 / DELIVER TO</span><h3 id="address-district">东城区</h3><p id="address-street">梧桐路 28 号 · 302 室</p><div class="recipient"><span id="recipient">收件人：林小满</span><span id="weight">2.4 kg</span></div></div><div class="postal-row"><span>邮政编码</span><strong id="postcode">100128</strong></div><div class="parcel-tags" id="parcel-tags"><span class="tag plain">普通件</span></div><div class="barcode" aria-hidden="true"></div><div class="tracking"><span id="tracking">PS 2026 001 07</span><span>CN · 07</span></div></div>
+        <div class="deadline"><div><span>本件处理时间</span><strong id="parcel-time">等待开班</strong></div><div class="time-track"><i id="time-fill"></i></div></div>
+        <div class="handling-title"><span>特殊处理</span><small>按标签操作，再选路线</small></div>
+        <div class="handling-actions"><button id="wrap" disabled><span class="tool-symbol">▧</span><span>加固易碎<small>包装防护</small></span><kbd>Q</kbd></button><button id="scan" disabled><span class="tool-symbol">⌗</span><span>扫描核验<small>模糊 / 超重</small></span><kbd>E</kbd></button></div>
+        <button id="return" class="return-button" disabled><span>↶ 退回寄件人</span><kbd>R</kbd></button>
+        <div class="feedback" id="feedback" role="status" aria-live="polite">先看地址，再选择下方对应路线。</div>
+      </aside>
+    </div>
+    <section class="routes-section" aria-label="投递路线"><div class="section-caption"><h2>选择投递路线</h2><span>读取城区或邮编前四位 <span class="caption-line"></span> 点击路线 / 按快捷键</span></div><div class="routes">
+      <button class="route east" data-route="0" disabled><kbd>A</kbd><span class="route-symbol">↗</span><span class="route-text"><strong>东城线</strong><small>东城区 · 1001**</small></span><span class="route-number">01</span></button>
+      <button class="route south" data-route="1" disabled><kbd>S</kbd><span class="route-symbol">↘</span><span class="route-text"><strong>南城线</strong><small>南城区 · 1002**</small></span><span class="route-number">02</span></button>
+      <button class="route west" data-route="2" disabled><kbd>D</kbd><span class="route-symbol">↙</span><span class="route-text"><strong>西城线</strong><small>西城区 · 1003**</small></span><span class="route-number">03</span></button>
+      <button class="route north" data-route="3" disabled><kbd>F</kbd><span class="route-symbol">↖</span><span class="route-text"><strong>北城线</strong><small>北城区 · 1004**</small></span><span class="route-number">04</span></button>
+    </div></section>
+    <footer class="game-footer"><div class="mission"><span class="mission-icon">◎</span><span id="mission">本班目标：正确分拣 10 件</span><b id="progress-text">0 / 10</b><div class="mission-track"><i id="progress-fill"></i></div></div><div class="best"><span>本机最佳</span><strong id="best">0</strong><span class="footer-dot">·</span><span>空格 暂停</span></div></footer>
+  </main>
+  <dialog id="dialog"><button id="dialog-close" class="dialog-close" aria-label="关闭">×</button><div id="dialog-content"></div></dialog>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

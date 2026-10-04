@@ -1,0 +1,124 @@
+{
+  "additional_environment_recovery": false,
+  "files": [
+    {
+      "bytes": 34,
+      "path": ".gitignore",
+      "sha256": "4a1ff5eb00c392d31a2eb93eac0ef0f4559ee00b9f617693fe87a3a11220a6a9"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "381d7cd874b444992016560ee7c69615920b17c98a12bcc280ff070620642912"
+    },
+    {
+      "bytes": 1682,
+      "path": "QA.md",
+      "sha256": "c483d67743404603efbaf2c163e1893bbc7cff5c33b697d6ae87217c3f788784"
+    },
+    {
+      "bytes": 1997,
+      "path": "README.md",
+      "sha256": "7cfd3ade8c48fa78bd5465d762f06e5f42b8223fc7171193a9d8072587259acc"
+    },
+    {
+      "bytes": 221,
+      "path": "dist/favicon.svg",
+      "sha256": "c46a051aee20df25177eefb2b4f0a74f3f5c49d9c4df196a0afd083fad890264"
+    },
+    {
+      "bytes": 54174,
+      "path": "dist/game.js",
+      "sha256": "be4747aeccb51fd969b068dd9747d4c7994859b1b0727d723bb9cb9fd90da6de"
+    },
+    {
+      "bytes": 6565,
+      "path": "dist/index.html",
+      "sha256": "7f5c35699290617071ce793815c277441568aec6d31dea800222d5cf510f39c6"
+    },
+    {
+      "bytes": 16577,
+      "path": "dist/style.css",
+      "sha256": "2e5e6a9aef9867c79ef3a0ce610a4d108c818d46ba936cd9fd5e0d7d51154fc4"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.txt",
+      "sha256": "88685df55803045f259fcd16865fe600cdb740c90a3de625e3e11f8418c8e24f"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 295374,
+      "path": "original-delivery/kaiju-city-deploy.tar.gz",
+      "sha256": "e1a38a814e0bf98ad7641830e1f193cf9067c6daa4866db99e8eb4d2f2ea1351"
+    },
+    {
+      "bytes": 598452,
+      "path": "output/playwright/combat-v2.png",
+      "sha256": "432879003516871b3360b055d30beefddd1e95e2e71668168d9ca97d2663bde0"
+    },
+    {
+      "bytes": 635192,
+      "path": "output/playwright/combat.png",
+      "sha256": "1f5ad781d4209517f99b06686418b55fb67bbbb4f608f45a9add0c4fa008f39d"
+    },
+    {
+      "bytes": 447881,
+      "path": "output/playwright/destruction.png",
+      "sha256": "86ffa9e9a5988dfe99018253ec828fff068f94f60a49b7b3dbd0663d2a58aa4b"
+    },
+    {
+      "bytes": 456880,
+      "path": "output/playwright/final-game.png",
+      "sha256": "ee22cb8d31de7a4e324b61e740c76dc51e62d40a5a70d35c5a28703b4f190981"
+    },
+    {
+      "bytes": 1006595,
+      "path": "output/playwright/menu-v2.png",
+      "sha256": "161c9fcee86d533f9be98548063c2ef0b674ef428588517139ade7e3ca610dfc"
+    },
+    {
+      "bytes": 947295,
+      "path": "output/playwright/menu.png",
+      "sha256": "93b1a0b186b6305b330afafb771683cc9f78577a34fa48096d8718e042d02b8a"
+    },
+    {
+      "bytes": 103241,
+      "path": "output/playwright/mobile-help.png",
+      "sha256": "960c62f20982c7641f612d65e1155e2acd9744c0861b45163ede947830498b88"
+    },
+    {
+      "bytes": 200283,
+      "path": "output/playwright/mobile.png",
+      "sha256": "1c83d3ebaa48fc3b6e83d8ff61e08f58dfc9a06df0e23852d8c939d3af5d7f41"
+    },
+    {
+      "bytes": 195386,
+      "path": "output/playwright/touch-game.png",
+      "sha256": "987e5dec61f8cc4b19f4a614bb4661ce21bf638bcce680899da2647f84667bcf"
+    },
+    {
+      "bytes": 235,
+      "path": "package.json",
+      "sha256": "6a7cf586ef9384402ee988fa81c7d605e654747d291b73ca8b5fa2d340de1d92"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "historical_single_turn_status": "unknown; supplied turn is parent attestation, not full historical enumeration",
+  "initial_generation_turn_id": null,
+  "original_source_bytes_verified_unchanged": true,
+  "provided_generation_turn_count": 1,
+  "schema_version": 1,
+  "single_turn": null,
+  "single_turn_independently_verified": false,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-69/kaiju-city",
+  "source_tree_sha256": "852a48ea62fb0640a5f2319e40de45db0e99c4731d215bffcd111e1deda9294f",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-100-original-20261004T110306Z",
+  "thread_id": "01a10678-2e7d-77c5-9243-03f1d536908c",
+  "turn_id": "01a10678-530c-72a9-93f4-ae8dfcce3791"
+}

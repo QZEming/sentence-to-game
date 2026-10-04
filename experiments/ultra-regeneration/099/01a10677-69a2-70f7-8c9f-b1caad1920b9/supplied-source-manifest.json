@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "game_number": "099",
+  "title": "准点邮局 · Parcel Shift",
+  "archive_created_utc": "2026-10-04T10:58:20.928392+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-099-original-20261004T105820Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift",
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-68",
+  "fixed_original_file_count": 16,
+  "fixed_original_bytes": "1596149",
+  "source_file_count": 12,
+  "exclusive_screenshot_count": 3,
+  "original_package_count": 1,
+  "generated_records_excluded_from_original_count": 3,
+  "verification": {
+    "metadata_snapshots_interval_seconds": 1,
+    "metadata_stability_attempts": 1,
+    "metadata_stable": true,
+    "copy2_used": true,
+    "all_copy_hashes_match": true,
+    "final_source_evidence_package_bytes_mtime_hashes_and_file_sets_unchanged": true,
+    "final_copy_metadata_hashes_and_file_set_verified": true,
+    "final_originals_checked_utc": "2026-10-04T10:58:21.046833+00:00"
+  },
+  "prior_completion_check": {
+    "existing_099_archives_before_copy": []
+  },
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "local_preview": {
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift",
+    "command": "python3 -m http.server 4868 --directory dist",
+    "url": "http://localhost:4868",
+    "port": 4868,
+    "started_during_archive": false
+  },
+  "process_observation": {
+    "status": "not_performed_as_explicitly_requested",
+    "process_control": false,
+    "load_sampling": false,
+    "signals_sent": false
+  },
+  "validation_limits": {
+    "static_method_review_status": "completed",
+    "review_provenance": "Parallel read-only source-method review by /root/report_evidence; no execution or writes by reviewer.",
+    "core_rule_method": "core.test.mjs line 4 fixes RNG to ()=>.5; line 5 advances four synchronous tick(.2) calls. Lines 7-16 directly set route, tags, remaining=.01, coins, status, combo and upgrades as fixtures and call core APIs.",
+    "three_shift_rule_scope": "core.test.mjs line 17 completes all three shifts (42 correct) by reading internal current parcel fields, using a direct API strategy and synchronous tick simulation. This is not browser three-shift completion.",
+    "browser_method": "browser-check.mjs lines 6-9 use actual Playwright locator clicks and keyboard input, reading visible addresses and tags to complete the first shift; then buy an upgrade, enter the noon shift and actively end it, then switch to practice.",
+    "browser_state_and_time": "No page.route, addInitScript, direct state injection or timer acceleration found in browser driver. Controlled clean profile/history was not independently established.",
+    "browser_full_shift_limit": "Browser script covers the first shift, not complete noon/evening shifts; do not expand rule simulation to browser all-shift completion.",
+    "mobile_scope": "browser-check.mjs line 10 sets 390x844 viewport, clicks resume, screenshots and checks overflow. No touch/isMobile setup or physical-device validation.",
+    "errors_scope": "browser-check.mjs lines 4 and 10 concern pageerror collection only; no console errors/warnings, network failure or audio capture/functional assertions.",
+    "webgl_limit": "PASS description mentions WebGL, but script only waits for loading hidden and has no explicit renderer/WebGL support assertion. It does not independently prove 3D rendering.",
+    "native_webmcp": "README line 31 says author Chrome lacks the interface; game.js line 42 conditionally registers. Native registration/call verification not performed.",
+    "execution_record_limit": "Source PASS prints are not captured execution results. Output contains three PNGs only; no retained stdout/JSON result. Execution passing remains README/parent attestation.",
+    "screenshots_opened": false,
+    "source_unchanged": true,
+    "archive_originals_unchanged": true,
+    "original_package": "Copied byte for byte without member reading, extraction or repacking.",
+    "process_observation": {
+      "status": "not_performed_as_explicitly_requested",
+      "process_control": false,
+      "load_sampling": false,
+      "signals_sent": false
+    },
+    "remote_actions": false
+  },
+  "publication_provenance": {
+    "private_sites_is_formal_publication": false,
+    "remote_status_checked": false,
+    "remote_writes_performed": false
+  },
+  "files": [
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/.gitignore",
+      "archive_relative_path": "source/.gitignore",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "34",
+        "mtime_ns": "1791110956671507703",
+        "ctime_ns": "1791110956671507703",
+        "dev": "16777229",
+        "ino": "545987444",
+        "mode": "0o644"
+      },
+      "sha256": "4184ed29d54ece86b098eea2a0ea4e9a11671ec504beb94b012669a0748a69f5",
+      "copy_metadata": {
+        "bytes": "34",
+        "mtime_ns": "1791110956671507703",
+        "ctime_ns": "1791111500932668766",
+        "dev": "16777229",
+        "ino": "545989932",
+        "mode": "0o644"
+      },
+      "copy_sha256": "4184ed29d54ece86b098eea2a0ea4e9a11671ec504beb94b012669a0748a69f5"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/.openai/hosting.json",
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "106",
+        "mtime_ns": "1791109966270666417",
+        "ctime_ns": "1791109966270898499",
+        "dev": "16777229",
+        "ino": "545982125",
+        "mode": "0o644"
+      },
+      "sha256": "602aa085bccb508517d32d900fa8df70edce8cb1c55b766e12ef4c3bd1b97df3",
+      "copy_metadata": {
+        "bytes": "106",
+        "mtime_ns": "1791109966270666417",
+        "ctime_ns": "1791111500946672128",
+        "dev": "16777229",
+        "ino": "545989934",
+        "mode": "0o644"
+      },
+      "copy_sha256": "602aa085bccb508517d32d900fa8df70edce8cb1c55b766e12ef4c3bd1b97df3"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/README.md",
+      "archive_relative_path": "source/README.md",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "1622",
+        "mtime_ns": "1791111044252192228",
+        "ctime_ns": "1791111044252192228",
+        "dev": "16777229",
+        "ino": "545989115",
+        "mode": "0o644"
+      },
+      "sha256": "f0ad07ddc92f14832eb686626040bf1741d88ff639a44c954560477c3145e510",
+      "copy_metadata": {
+        "bytes": "1622",
+        "mtime_ns": "1791111044252192228",
+        "ctime_ns": "1791111500948736406",
+        "dev": "16777229",
+        "ino": "545989935",
+        "mode": "0o644"
+      },
+      "copy_sha256": "f0ad07ddc92f14832eb686626040bf1741d88ff639a44c954560477c3145e510"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/core.mjs",
+      "archive_relative_path": "source/dist/core.mjs",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "7465",
+        "mtime_ns": "1791110336124718377",
+        "ctime_ns": "1791110336124718377",
+        "dev": "16777229",
+        "ino": "545982967",
+        "mode": "0o644"
+      },
+      "sha256": "bffa9a6bff9e9c436a51fe014946d3eaae3d58188b38407cb8e66487b4863575",
+      "copy_metadata": {
+        "bytes": "7465",
+        "mtime_ns": "1791110336124718377",
+        "ctime_ns": "1791111500951210556",
+        "dev": "16777229",
+        "ino": "545989937",
+        "mode": "0o644"
+      },
+      "copy_sha256": "bffa9a6bff9e9c436a51fe014946d3eaae3d58188b38407cb8e66487b4863575"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/game.js",
+      "archive_relative_path": "source/dist/game.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "18409",
+        "mtime_ns": "1791110724546209830",
+        "ctime_ns": "1791110724546209830",
+        "dev": "16777229",
+        "ino": "545983701",
+        "mode": "0o644"
+      },
+      "sha256": "fdc9c7024f4158a37d63e7de56fa2cb45005de7994d068af8501cfafb7e2dcc0",
+      "copy_metadata": {
+        "bytes": "18409",
+        "mtime_ns": "1791110724546209830",
+        "ctime_ns": "1791111500955263653",
+        "dev": "16777229",
+        "ino": "545989938",
+        "mode": "0o644"
+      },
+      "copy_sha256": "fdc9c7024f4158a37d63e7de56fa2cb45005de7994d068af8501cfafb7e2dcc0"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/index.html",
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "7284",
+        "mtime_ns": "1791110332665950840",
+        "ctime_ns": "1791110332665950840",
+        "dev": "16777229",
+        "ino": "545982955",
+        "mode": "0o644"
+      },
+      "sha256": "4f06bdc010dc11155211f30eac5730026ba35e3300c77c8df43f33329a905201",
+      "copy_metadata": {
+        "bytes": "7284",
+        "mtime_ns": "1791110332665950840",
+        "ctime_ns": "1791111500971607042",
+        "dev": "16777229",
+        "ino": "545989939",
+        "mode": "0o644"
+      },
+      "copy_sha256": "4f06bdc010dc11155211f30eac5730026ba35e3300c77c8df43f33329a905201"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/scene.js",
+      "archive_relative_path": "source/dist/scene.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "12556",
+        "mtime_ns": "1791110956645797795",
+        "ctime_ns": "1791110956645797795",
+        "dev": "16777229",
+        "ino": "545983699",
+        "mode": "0o644"
+      },
+      "sha256": "d26be13812e246e32083b8d3de6ff8bfff321f8b7b3472b0c0daa19f766e1f84",
+      "copy_metadata": {
+        "bytes": "12556",
+        "mtime_ns": "1791110956645797795",
+        "ctime_ns": "1791111500974076650",
+        "dev": "16777229",
+        "ino": "545989940",
+        "mode": "0o644"
+      },
+      "copy_sha256": "d26be13812e246e32083b8d3de6ff8bfff321f8b7b3472b0c0daa19f766e1f84"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/style.css",
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "22678",
+        "mtime_ns": "1791110956645342256",
+        "ctime_ns": "1791110956645342256",
+        "dev": "16777229",
+        "ino": "545982956",
+        "mode": "0o644"
+      },
+      "sha256": "0688fd04bd758057e30aa4cc33c12d44e0c32ca0ab6d80eafdb94475f440e9f8",
+      "copy_metadata": {
+        "bytes": "22678",
+        "mtime_ns": "1791110956645342256",
+        "ctime_ns": "1791111500983596668",
+        "dev": "16777229",
+        "ino": "545989941",
+        "mode": "0o644"
+      },
+      "copy_sha256": "0688fd04bd758057e30aa4cc33c12d44e0c32ca0ab6d80eafdb94475f440e9f8"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/vendor/LICENSE-three.txt",
+      "archive_relative_path": "source/dist/vendor/LICENSE-three.txt",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "1081",
+        "mtime_ns": "1791110957569659911",
+        "ctime_ns": "1791110957569659911",
+        "dev": "16777229",
+        "ino": "545987446",
+        "mode": "0o644"
+      },
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "copy_metadata": {
+        "bytes": "1081",
+        "mtime_ns": "1791110957569659911",
+        "ctime_ns": "1791111500990185707",
+        "dev": "16777229",
+        "ino": "545989943",
+        "mode": "0o644"
+      },
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/dist/vendor/three.module.js",
+      "archive_relative_path": "source/dist/vendor/three.module.js",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "691648",
+        "mtime_ns": "1791109968778024067",
+        "ctime_ns": "1791109968778024067",
+        "dev": "16777229",
+        "ino": "545982127",
+        "mode": "0o644"
+      },
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7",
+      "copy_metadata": {
+        "bytes": "691648",
+        "mtime_ns": "1791109968778024067",
+        "ctime_ns": "1791111500991397948",
+        "dev": "16777229",
+        "ino": "545989944",
+        "mode": "0o644"
+      },
+      "copy_sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/tests/core.test.mjs",
+      "archive_relative_path": "source/tests/core.test.mjs",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "3618",
+        "mtime_ns": "1791110811312426618",
+        "ctime_ns": "1791110811312426618",
+        "dev": "16777229",
+        "ino": "545985601",
+        "mode": "0o644"
+      },
+      "sha256": "9112f70fdff3f6d0b70d581bc49cb1cdb060331b4b4e081d1de705b5ceecf634",
+      "copy_metadata": {
+        "bytes": "3618",
+        "mtime_ns": "1791110811312426618",
+        "ctime_ns": "1791111501014537582",
+        "dev": "16777229",
+        "ino": "545989946",
+        "mode": "0o644"
+      },
+      "copy_sha256": "9112f70fdff3f6d0b70d581bc49cb1cdb060331b4b4e081d1de705b5ceecf634"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/tests/browser-check.mjs",
+      "archive_relative_path": "source/tests/browser-check.mjs",
+      "category": "source_original",
+      "metadata": {
+        "bytes": "4262",
+        "mtime_ns": "1791110813762737617",
+        "ctime_ns": "1791110813762737617",
+        "dev": "16777229",
+        "ino": "545985605",
+        "mode": "0o644"
+      },
+      "sha256": "659c3bbf0afd1485e260a311fc552560fdfd68a2559a412ac6d3e7ed9d9c0b73",
+      "copy_metadata": {
+        "bytes": "4262",
+        "mtime_ns": "1791110813762737617",
+        "ctime_ns": "1791111501016474611",
+        "dev": "16777229",
+        "ino": "545989947",
+        "mode": "0o644"
+      },
+      "copy_sha256": "659c3bbf0afd1485e260a311fc552560fdfd68a2559a412ac6d3e7ed9d9c0b73"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/output/playwright/desktop-start.png",
+      "archive_relative_path": "evidence/source-output/playwright/desktop-start.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "256362",
+        "mtime_ns": "1791111002207990912",
+        "ctime_ns": "1791111002207990912",
+        "dev": "16777229",
+        "ino": "545987249",
+        "mode": "0o644"
+      },
+      "sha256": "74c2b6290894ed70a225c8a4f69b53f365b6fec6f966af631dcffa9e1fb42885",
+      "copy_metadata": {
+        "bytes": "256362",
+        "mtime_ns": "1791111002207990912",
+        "ctime_ns": "1791111501020124419",
+        "dev": "16777229",
+        "ino": "545989951",
+        "mode": "0o644"
+      },
+      "copy_sha256": "74c2b6290894ed70a225c8a4f69b53f365b6fec6f966af631dcffa9e1fb42885"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/output/playwright/desktop-playing.png",
+      "archive_relative_path": "evidence/source-output/playwright/desktop-playing.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "234727",
+        "mtime_ns": "1791111007712346166",
+        "ctime_ns": "1791111007712346166",
+        "dev": "16777229",
+        "ino": "545987261",
+        "mode": "0o644"
+      },
+      "sha256": "a75ec5a070c5ddc5e6d17ccb8168b60fedd30a081b61ca215461b107d4336954",
+      "copy_metadata": {
+        "bytes": "234727",
+        "mtime_ns": "1791111007712346166",
+        "ctime_ns": "1791111501024930095",
+        "dev": "16777229",
+        "ino": "545989952",
+        "mode": "0o644"
+      },
+      "copy_sha256": "a75ec5a070c5ddc5e6d17ccb8168b60fedd30a081b61ca215461b107d4336954"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift/output/playwright/mobile-playing.png",
+      "archive_relative_path": "evidence/source-output/playwright/mobile-playing.png",
+      "category": "existing_exclusive_screenshot",
+      "metadata": {
+        "bytes": "137512",
+        "mtime_ns": "1791111014553654261",
+        "ctime_ns": "1791111014553654261",
+        "dev": "16777229",
+        "ino": "545987270",
+        "mode": "0o644"
+      },
+      "sha256": "398af43f16529d5dbf7863fb0ee61f76c2b7a45892d2b3174f94c80ebf543456",
+      "copy_metadata": {
+        "bytes": "137512",
+        "mtime_ns": "1791111014553654261",
+        "ctime_ns": "1791111501027965157",
+        "dev": "16777229",
+        "ino": "545989953",
+        "mode": "0o644"
+      },
+      "copy_sha256": "398af43f16529d5dbf7863fb0ee61f76c2b7a45892d2b3174f94c80ebf543456"
+    },
+    {
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-68/postal-shift-release.tar.gz",
+      "archive_relative_path": "original-packages/postal-shift-release.tar.gz",
+      "category": "original_release_package",
+      "metadata": {
+        "bytes": "196785",
+        "mtime_ns": "1791111069210627689",
+        "ctime_ns": "1791111069210627689",
+        "dev": "16777229",
+        "ino": "545989272",
+        "mode": "0o644"
+      },
+      "sha256": "85584b185898e4754b0e449b1495218c70e0632a48a25d5040788a008d8a3e02",
+      "copy_metadata": {
+        "bytes": "196785",
+        "mtime_ns": "1791111069210627689",
+        "ctime_ns": "1791111501032704042",
+        "dev": "16777229",
+        "ino": "545989955",
+        "mode": "0o644"
+      },
+      "copy_sha256": "85584b185898e4754b0e449b1495218c70e0632a48a25d5040788a008d8a3e02"
+    }
+  ],
+  "validation_method_record_completed_utc": "2026-10-04T11:00:38.342453+00:00"
+}

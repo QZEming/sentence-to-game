@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**98 / 100**。
+当前进度：**100 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -112,6 +112,8 @@
 | 096 | [苔光奇兽诊所 · Mosslight](games/096-mosslight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/096-mosslight/) | [源码](games/096-mosslight/src/) |
 | 097 | [MARIONETTE · 午夜木偶剧场](games/097-marionette/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/097-marionette/) | [源码](games/097-marionette/src/) |
 | 098 | [星语 · 异星田野手记](games/098-xenolinguist/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/098-xenolinguist/) | [源码](games/098-xenolinguist/src/) |
+| 099 | [准点邮局 · Parcel Shift](games/099-postal-shift/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/099-postal-shift/) | [源码](games/099-postal-shift/src/) |
+| 100 | [巨兽禁区 · TITAN ZERO](games/100-kaiju-city/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/100-kaiju-city/) | [源码](games/100-kaiju-city/src/) |
 
 ## 生成记录
 

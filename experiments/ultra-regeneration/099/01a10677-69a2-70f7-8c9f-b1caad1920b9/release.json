@@ -1,0 +1,73 @@
+{
+  "additional_environment_recovery": false,
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "099-postal-shift",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "099",
+  "generation_turn_id": "01a10677-8b7f-728b-9e5a-51db303e3495",
+  "historical_single_turn_status": "unknown; supplied turn is parent attestation, not full historical enumeration",
+  "initial_generation_turn_id": null,
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "b34f605c19deaa6fa2ca1e10287f79edd942e087",
+    "full_old_history_preserved": true,
+    "game_number": "099",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/b34f605c19deaa6fa2ca1e10287f79edd942e087",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "provided_generation_turn_count": 1,
+  "published_files": [
+    {
+      "bytes": 7465,
+      "path": "core.mjs",
+      "sha256": "bffa9a6bff9e9c436a51fe014946d3eaae3d58188b38407cb8e66487b4863575"
+    },
+    {
+      "bytes": 18409,
+      "path": "game.js",
+      "sha256": "fdc9c7024f4158a37d63e7de56fa2cb45005de7994d068af8501cfafb7e2dcc0"
+    },
+    {
+      "bytes": 7284,
+      "path": "index.html",
+      "sha256": "4f06bdc010dc11155211f30eac5730026ba35e3300c77c8df43f33329a905201"
+    },
+    {
+      "bytes": 12556,
+      "path": "scene.js",
+      "sha256": "d26be13812e246e32083b8d3de6ff8bfff321f8b7b3472b0c0daa19f766e1f84"
+    },
+    {
+      "bytes": 22678,
+      "path": "style.css",
+      "sha256": "0688fd04bd758057e30aa4cc33c12d44e0c32ca0ab6d80eafdb94475f440e9f8"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 691648,
+      "path": "vendor/three.module.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "single_turn": null,
+  "single_turn_independently_verified": false,
+  "source_tree_sha256": "468bef82a07bfd0938afd963bb1480663bfdb35f8aadcf9d07f61be83c4006dd",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10677-69a2-70f7-8c9f-b1caad1920b9",
+  "title": "准点邮局 · Parcel Shift",
+  "url": "https://qzemi.cn/sentence-to-game/games/099-postal-shift/"
+}

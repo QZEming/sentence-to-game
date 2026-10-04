@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-100",
+  "parent_source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a10678-2e7d-77c5-9243-03f1d536908c",
+  "generation_turn_id": "01a10678-530c-72a9-93f4-ae8dfcce3791",
+  "provided_generation_turn_count": 1,
+  "single_turn_independently_verified": false,
+  "historical_single_turn_status": "unknown; only one turn supplied by parent, no historical enumeration",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "exact_prompt": "实现一个巨兽利用不同破坏方式拆毁城市并对抗阻拦自己的防卫队的 3D 破坏沙盒游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_provided_verbatim",
+  "provenance": "parent_explicit_launch_attestation",
+  "scope": "Parameters and supplied turn from parent, not independent historical runtime model/effort or single-turn authentication.",
+  "recorded_at": "2026-10-04T11:07:09.393875Z"
+}

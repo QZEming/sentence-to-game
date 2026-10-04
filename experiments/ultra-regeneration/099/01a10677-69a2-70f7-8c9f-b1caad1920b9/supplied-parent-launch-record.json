@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "game_number": "099",
+  "record_kind": "parent_launch_attestation",
+  "provenance": "Explicit parent values and one provided generation turn; not independent historical runtime verification",
+  "independently_verified": false,
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a10677-69a2-70f7-8c9f-b1caad1920b9",
+  "generation_turn_id": "01a10677-8b7f-728b-9e5a-51db303e3495",
+  "model": "gpt-6-astra",
+  "raw_model": "gpt-6-astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "fork_turns": "none",
+  "exact_prompt": "实现一个邮局分拣员根据地址和包裹特征把邮件送入正确路线的 3D 分类反应游戏，尽你所能丰富游戏玩法。",
+  "complete_parent_prompt": "实现一个邮局分拣员根据地址和包裹特征把邮件送入正确路线的 3D 分类反应游戏，尽你所能丰富游戏玩法。",
+  "single_turn": null,
+  "single_turn_status": "One provided turn is an attestation; full historical execution and single-turn completeness were not independently established."
+}
