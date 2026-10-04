@@ -1,0 +1,15 @@
+{
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a1060d-ca0c-7334-9829-ad2dc8401e31",
+  "input_scope": "one complete sentence only; no repository, templates, other games or repair context",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": "实现一个地质勘探员根据探测反馈判断矿藏和危险空洞的位置的 3D 扫雷推理游戏，尽你所能丰富游戏玩法。",
+  "server_execution_parameters_independently_authenticated": false,
+  "supplied_parent_launch_record": "supplied-parent-launch-record.json; parent attestation only, not full task export",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1060d-a764-7650-8ab8-abe671774089"
+}

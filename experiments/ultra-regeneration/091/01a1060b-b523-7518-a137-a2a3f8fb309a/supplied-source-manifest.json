@@ -1,0 +1,352 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-091-original-20261004T101110Z",
+  "candidate": "091",
+  "copy_method": "O_NOFOLLOW source byte stream then copystat (copy2-equivalent metadata preservation); independent destination SHA256 re-read",
+  "excluded_entries": [
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/.git"
+  ],
+  "files": [
+    {
+      "archive_path": "original-evidence/checks/results.json",
+      "copy_bytes": 902,
+      "copy_mtime_ns": "1791104332733432309",
+      "copy_sha256": "15a6a2e9468aefca01c46c43932fbb8451a735397a94777ac3be4e205d2cd9dd",
+      "original": {
+        "bytes": 902,
+        "ctime_ns": "1791104332733432309",
+        "dev": "16777229",
+        "ino": "545941225",
+        "mode": 33188,
+        "mtime_ns": "1791104332733432309",
+        "mtime_utc": "2026-10-04T08:58:52.733432309Z",
+        "sha256": "15a6a2e9468aefca01c46c43932fbb8451a735397a94777ac3be4e205d2cd9dd"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/output/checks/results.json"
+    },
+    {
+      "archive_path": "original-evidence/checks/runtime-check.mjs",
+      "copy_bytes": 7359,
+      "copy_mtime_ns": "1791104332659348776",
+      "copy_sha256": "7b18b31ce23b5386c72e2005bb74b9879ba4ddc1743c2ba036972a1196309caf",
+      "original": {
+        "bytes": 7359,
+        "ctime_ns": "1791104332659348776",
+        "dev": "16777229",
+        "ino": "545941030",
+        "mode": 33188,
+        "mtime_ns": "1791104332659348776",
+        "mtime_utc": "2026-10-04T08:58:52.659348776Z",
+        "sha256": "7b18b31ce23b5386c72e2005bb74b9879ba4ddc1743c2ba036972a1196309caf"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/output/checks/runtime-check.mjs"
+    },
+    {
+      "archive_path": "original-package/runeweaver-deploy.tar.gz",
+      "copy_bytes": 298054,
+      "copy_mtime_ns": "1791104272944480377",
+      "copy_sha256": "9b0e902ba38ae4c6216b724552741fe18469e925ce3442467d9336209f8bf85e",
+      "original": {
+        "bytes": 298054,
+        "ctime_ns": "1791104272944480377",
+        "dev": "16777229",
+        "ino": "545943612",
+        "mode": 33188,
+        "mtime_ns": "1791104272944480377",
+        "mtime_utc": "2026-10-04T08:57:52.944480377Z",
+        "sha256": "9b0e902ba38ae4c6216b724552741fe18469e925ce3442467d9336209f8bf85e"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/runeweaver-deploy.tar.gz"
+    },
+    {
+      "archive_path": "original-package/runeweaver-final.tar.gz",
+      "copy_bytes": 298068,
+      "copy_mtime_ns": "1791104395377526324",
+      "copy_sha256": "c94a7925e848aa7fd701b3e24e3c4b4bf2d181f323e891a9eaccdcc76424aea5",
+      "original": {
+        "bytes": 298068,
+        "ctime_ns": "1791104395377526324",
+        "dev": "16777229",
+        "ino": "545944087",
+        "mode": 33188,
+        "mtime_ns": "1791104395377526324",
+        "mtime_utc": "2026-10-04T08:59:55.377526324Z",
+        "sha256": "c94a7925e848aa7fd701b3e24e3c4b4bf2d181f323e891a9eaccdcc76424aea5"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/runeweaver-final.tar.gz"
+    },
+    {
+      "archive_path": "source/.openai/hosting.json",
+      "copy_bytes": 106,
+      "copy_mtime_ns": "1791102905339398888",
+      "copy_sha256": "c60698341845dcd316f13cad7799f5d67f1cd1c31b9b80874fc677a7ac171270",
+      "original": {
+        "bytes": 106,
+        "ctime_ns": "1791102905339680138",
+        "dev": "16777229",
+        "ino": "545929283",
+        "mode": 33188,
+        "mtime_ns": "1791102905339398888",
+        "mtime_utc": "2026-10-04T08:35:05.339398888Z",
+        "sha256": "c60698341845dcd316f13cad7799f5d67f1cd1c31b9b80874fc677a7ac171270"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/.openai/hosting.json"
+    },
+    {
+      "archive_path": "source/README.md",
+      "copy_bytes": 1706,
+      "copy_mtime_ns": "1791103778430258943",
+      "copy_sha256": "4ee2037d77d98c9794df9156dd71fa48af749820bd0dafbbb958967ccc0c10c1",
+      "original": {
+        "bytes": 1706,
+        "ctime_ns": "1791103778430258943",
+        "dev": "16777229",
+        "ino": "545935566",
+        "mode": 33188,
+        "mtime_ns": "1791103778430258943",
+        "mtime_utc": "2026-10-04T08:49:38.430258943Z",
+        "sha256": "4ee2037d77d98c9794df9156dd71fa48af749820bd0dafbbb958967ccc0c10c1"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/README.md"
+    },
+    {
+      "archive_path": "source/dist/game.js",
+      "copy_bytes": 31213,
+      "copy_mtime_ns": "1791104057829048288",
+      "copy_sha256": "1941474795189205e723462f451e7c73bf07f010682df89536a86644bb65c4e5",
+      "original": {
+        "bytes": 31213,
+        "ctime_ns": "1791104057829048288",
+        "dev": "16777229",
+        "ino": "545935564",
+        "mode": 33188,
+        "mtime_ns": "1791104057829048288",
+        "mtime_utc": "2026-10-04T08:54:17.829048288Z",
+        "sha256": "1941474795189205e723462f451e7c73bf07f010682df89536a86644bb65c4e5"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/game.js"
+    },
+    {
+      "archive_path": "source/dist/index.html",
+      "copy_bytes": 6703,
+      "copy_mtime_ns": "1791103227960688535",
+      "copy_sha256": "72e463a3346e4cbb1d95386f3c7ac97cecf7e6e78548eb6006a1c9c778f1c154",
+      "original": {
+        "bytes": 6703,
+        "ctime_ns": "1791103227960688535",
+        "dev": "16777229",
+        "ino": "545932765",
+        "mode": 33188,
+        "mtime_ns": "1791103227960688535",
+        "mtime_utc": "2026-10-04T08:40:27.960688535Z",
+        "sha256": "72e463a3346e4cbb1d95386f3c7ac97cecf7e6e78548eb6006a1c9c778f1c154"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/index.html"
+    },
+    {
+      "archive_path": "source/dist/scene.js",
+      "copy_bytes": 15397,
+      "copy_mtime_ns": "1791104332651430967",
+      "copy_sha256": "3641f11ab1f63d8d43545e29817e7ae7508a2a6f37535017cedb9b8ff7454cb6",
+      "original": {
+        "bytes": 15397,
+        "ctime_ns": "1791104332651430967",
+        "dev": "16777229",
+        "ino": "545933379",
+        "mode": 33188,
+        "mtime_ns": "1791104332651430967",
+        "mtime_utc": "2026-10-04T08:58:52.651430967Z",
+        "sha256": "3641f11ab1f63d8d43545e29817e7ae7508a2a6f37535017cedb9b8ff7454cb6"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/scene.js"
+    },
+    {
+      "archive_path": "source/dist/spells.js",
+      "copy_bytes": 6768,
+      "copy_mtime_ns": "1791104057829571081",
+      "copy_sha256": "ac03e303bee1d686d7881288421dc6f303b5c1e8f9677b26ef0d3c2fd995e27a",
+      "original": {
+        "bytes": 6768,
+        "ctime_ns": "1791104057829571081",
+        "dev": "16777229",
+        "ino": "545933377",
+        "mode": 33188,
+        "mtime_ns": "1791104057829571081",
+        "mtime_utc": "2026-10-04T08:54:17.829571081Z",
+        "sha256": "ac03e303bee1d686d7881288421dc6f303b5c1e8f9677b26ef0d3c2fd995e27a"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/spells.js"
+    },
+    {
+      "archive_path": "source/dist/style.css",
+      "copy_bytes": 26536,
+      "copy_mtime_ns": "1791104168594128375",
+      "copy_sha256": "2949dbda36330aa315e23dd52f278f779609d48200e0510446396da71be6c9e5",
+      "original": {
+        "bytes": 26536,
+        "ctime_ns": "1791104168594128375",
+        "dev": "16777229",
+        "ino": "545932767",
+        "mode": 33188,
+        "mtime_ns": "1791104168594128375",
+        "mtime_utc": "2026-10-04T08:56:08.594128375Z",
+        "sha256": "2949dbda36330aa315e23dd52f278f779609d48200e0510446396da71be6c9e5"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/style.css"
+    },
+    {
+      "archive_path": "source/dist/vendor/THREE-LICENSE.txt",
+      "copy_bytes": 1081,
+      "copy_mtime_ns": "1791102877204231775",
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "original": {
+        "bytes": 1081,
+        "ctime_ns": "1791102877204231775",
+        "dev": "16777229",
+        "ino": "545929246",
+        "mode": 33188,
+        "mtime_ns": "1791102877204231775",
+        "mtime_utc": "2026-10-04T08:34:37.204231775Z",
+        "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/vendor/THREE-LICENSE.txt"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.module.js",
+      "copy_bytes": 1314681,
+      "copy_mtime_ns": "1791102876228783821",
+      "copy_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "original": {
+        "bytes": 1314681,
+        "ctime_ns": "1791102876228783821",
+        "dev": "16777229",
+        "ino": "545929237",
+        "mode": 33188,
+        "mtime_ns": "1791102876228783821",
+        "mtime_utc": "2026-10-04T08:34:36.228783821Z",
+        "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/dist/vendor/three.module.js"
+    },
+    {
+      "archive_path": "source/package.json",
+      "copy_bytes": 232,
+      "copy_mtime_ns": "1791102876021167754",
+      "copy_sha256": "edad453e06ba99f61a936423a71b4b78a8b4a32835dc0a2c5d40437d57a6a4f2",
+      "original": {
+        "bytes": 232,
+        "ctime_ns": "1791102876021167754",
+        "dev": "16777229",
+        "ino": "545929241",
+        "mode": 33188,
+        "mtime_ns": "1791102876021167754",
+        "mtime_utc": "2026-10-04T08:34:36.021167754Z",
+        "sha256": "edad453e06ba99f61a936423a71b4b78a8b4a32835dc0a2c5d40437d57a6a4f2"
+      },
+      "sha256_match": true,
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel/package.json"
+    }
+  ],
+  "final_verified_at": "2026-10-04T10:11:11.083544000Z",
+  "generated_records": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "integrity": {
+    "all_copy_sha256_match": true,
+    "baseline_two_observations_stable": true,
+    "copy_mtime_matches_source": true,
+    "full_source_record_ctime_dev_ino_unchanged": true,
+    "metadata_baseline_attempts": [
+      {
+        "attempt": 1,
+        "interval_seconds": 1.0143002920085564,
+        "stable": true
+      }
+    ],
+    "ns_dev_ino_encoding": "decimal strings",
+    "source_bytes_mtime_hash_unchanged": true,
+    "source_evidence_package_file_set_unchanged": true
+  },
+  "original_file_count": 14,
+  "original_packages": [
+    {
+      "archive_path": "original-package/runeweaver-deploy.tar.gz",
+      "bytes": 298054,
+      "sha256": "9b0e902ba38ae4c6216b724552741fe18469e925ce3442467d9336209f8bf85e"
+    },
+    {
+      "archive_path": "original-package/runeweaver-final.tar.gz",
+      "bytes": 298068,
+      "sha256": "c94a7925e848aa7fd701b3e24e3c4b4bf2d181f323e891a9eaccdcc76424aea5"
+    }
+  ],
+  "original_total_bytes": 2008806,
+  "package_count": 2,
+  "parent_launch_record": "parent-launch-record.json",
+  "process_observation": {
+    "cwd_query_error": "",
+    "cwd_query_exit": 0,
+    "method": "One read-only ps pid/ppid/state/CPU/argv + lsof cwd and documented 4173 listener ownership query; no environment access",
+    "observed_at": "2026-10-04T10:08:51.076301+00:00",
+    "port4173_listener_record": "p2560\ncnode\nf14\nn127.0.0.1:4173",
+    "port4173_query_error": "",
+    "port4173_query_exit": 0,
+    "protected_processes": [
+      {
+        "cpu_percent": "0.0",
+        "pid": 1036,
+        "ppid": 1,
+        "state": "S"
+      },
+      {
+        "cpu_percent": "0.0",
+        "pid": 2547,
+        "ppid": 1,
+        "state": "S"
+      },
+      {
+        "cpu_percent": "0.0",
+        "pid": 2554,
+        "ppid": 1,
+        "state": "S"
+      },
+      {
+        "cpu_percent": "0.0",
+        "pid": 2560,
+        "ppid": 1,
+        "state": "S"
+      }
+    ],
+    "ps_error": "",
+    "ps_exit": 0,
+    "signals": [],
+    "target_processes": []
+  },
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel",
+  "started_at": "2026-10-04T10:11:09.795873000Z",
+  "validation_evidence_and_limits": {
+    "browser_desktop_mobile": "Parent author claims desktop/mobile post-battle reward checks; no original browser driver/screenshots/results found in authorized source or checks evidence, input method/viewport/physical device scope unknown.",
+    "logic_method": "Node vm mock DOM/localStorage/RAF and ArenaScene stub; real game functions exposed as qa; direct eval state fixtures, sync update(.025), takeDamage/hitEnemy. Campaign victory sets round=5 and hits boss directly; not six-opponent playthrough. Gesture detection uses synthetic coordinate arrays. Renderer check calls real prototype method with renderer stub.",
+    "not_independently_retested": true,
+    "pageerror_console_audio_webmcp": "No preserved testing method/log; unknown.",
+    "saved_logic_results": {
+      "file": "original-evidence/checks/results.json",
+      "passed": 14
+    }
+  }
+}

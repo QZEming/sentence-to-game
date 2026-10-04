@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "092-strata",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "092",
+  "generation_turn_id": "01a1060d-ca0c-7334-9829-ad2dc8401e31",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "444b054b12595f9522ea0e39ac950ef39be5819f",
+    "full_old_history_preserved": true,
+    "game_number": "092",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/444b054b12595f9522ea0e39ac950ef39be5819f",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 26495,
+      "path": "app.js",
+      "sha256": "8ef499e3a96e1aede66bd9296b2f50bf4dc1d61054ec73a12171413a9fb4b05d"
+    },
+    {
+      "bytes": 6293,
+      "path": "engine.js",
+      "sha256": "00f84d6decd808db07138a9e6f3be3fa9eaa034e947f908812ff8bbe2a954ef2"
+    },
+    {
+      "bytes": 6855,
+      "path": "index.html",
+      "sha256": "329745104553a7a0159290e575047583de205e0e9766c016596e9ac424a7d8df"
+    },
+    {
+      "bytes": 18021,
+      "path": "style.css",
+      "sha256": "fe7041f02264a35b69228b4d3d4cd6967a09e3ab62096f2b603b12493ae0d8b7"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "6cf0af77f38ab87f933d5fe8eb11f388af3dc9d1e67508301b6e0d5de8a15b9f",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1060d-a764-7650-8ab8-abe671774089",
+  "title": "STRATA · 深层勘探",
+  "url": "https://qzemi.cn/sentence-to-game/games/092-strata/"
+}

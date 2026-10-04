@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-092",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a1060d-a764-7650-8ab8-abe671774089",
+  "generation_turn_id": "01a1060d-ca0c-7334-9829-ad2dc8401e31",
+  "exact_prompt": "实现一个地质勘探员根据探测反馈判断矿藏和危险空洞的位置的 3D 扫雷推理游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_provided_verbatim",
+  "raw_model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_explicit_launch_attestation",
+  "scope": "Parent settings, not independently authenticated historical runtime model/effort.",
+  "recorded_at": "2026-10-04T10:14:09.391328Z"
+}

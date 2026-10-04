@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "bytes": 65,
+      "path": ".gitignore",
+      "sha256": "35e56bfa0ece208d83ff47fcc2547dd044d2a206cd13521a57d0ea1eaf7eea09"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "9fdbd2e872a188663161fe861492cc7e1a5bc6e04eb7f941e23b0b65ebc1f412"
+    },
+    {
+      "bytes": 1531,
+      "path": "README.md",
+      "sha256": "0dd81a8a135b4a4111f86834097f73690409b3e7446fdaffc604bf0a6ac755d1"
+    },
+    {
+      "bytes": 27065,
+      "path": "dist/game.js",
+      "sha256": "aa3321ba80a77b710e7d4a86479edaaf9bc55f8c55ed2fc0d59b867442af10ed"
+    },
+    {
+      "bytes": 8252,
+      "path": "dist/index.html",
+      "sha256": "0bf1745f76648d25a13f560fc5407f7ec498891d5c7c7060e6ab5f093fff4229"
+    },
+    {
+      "bytes": 8315,
+      "path": "dist/physics.js",
+      "sha256": "218e1cf7a093ef7ff991a053538863565b9ec5e5076beafe3897d5c915eba3b5"
+    },
+    {
+      "bytes": 17595,
+      "path": "dist/style.css",
+      "sha256": "6b85f336284c2af989326db94822fa0524b0fc606e11579d13e01d393d108588"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE-three.txt",
+      "sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 289804,
+      "path": "original-delivery/beetle-bounce-site.tar.gz",
+      "sha256": "3af38e27db4608ed234612944f505cc0c03bb849c12c52457f459f708fec1126"
+    },
+    {
+      "bytes": 460612,
+      "path": "output/playwright/desktop.png",
+      "sha256": "b8c13f2ff6f291c978ec32a5b542e06888b9b2f9b61ffd84413ca1b7b26011eb"
+    },
+    {
+      "bytes": 167889,
+      "path": "output/playwright/mobile.png",
+      "sha256": "a652da4fb0aa739365476273133a5e56df53373911a6e2076de2af7240be2622"
+    },
+    {
+      "bytes": 209,
+      "path": "package.json",
+      "sha256": "4c7f4a43901e843ad431e8e726811c2969a74096b935c2dca6e102e4761f402d"
+    },
+    {
+      "bytes": 3513,
+      "path": "verify.mjs",
+      "sha256": "54661afed7feafccda006c79bad04e330548d5561a62e95cb817258ce75b307e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce",
+  "source_tree_sha256": "d19b4ddf9346bc6d915fc28390e07f1f72a35d68bcb8f87a16a24f1908b4c0fb",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-093-original-20261004T101540Z",
+  "supplied_manifest_filename": "manifest.json",
+  "thread_id": "01a10611-d6d5-7375-85a8-9a2a707350b2",
+  "turn_id": "01a10611-f880-7207-af15-176b203f7693"
+}

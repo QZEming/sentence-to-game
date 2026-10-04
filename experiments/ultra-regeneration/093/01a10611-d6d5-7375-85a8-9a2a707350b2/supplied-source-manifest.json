@@ -1,0 +1,407 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-093-original-20261004T101540Z",
+  "archive_id": "093",
+  "created_at_utc": "2026-10-04T10:15:40.547749+00:00",
+  "excluded_directory_policy": [
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".codex-runtime",
+    ".git",
+    ".playwright-cli",
+    ".sessions",
+    ".sites-runtime",
+    ".vite",
+    "__pycache__",
+    "node_modules",
+    "sessions"
+  ],
+  "excluded_source_entries": [
+    {
+      "path": ".git",
+      "reason": "excluded runtime/repository directory; contents not read"
+    },
+    {
+      "path": ".playwright-cli",
+      "reason": "excluded runtime/repository directory; contents not read"
+    }
+  ],
+  "external_evidence_file_count": 0,
+  "generated_record_count": 3,
+  "generated_records": [
+    "manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "historical_execution_evidence": {
+    "audio_output": "unknown",
+    "author_verification_checks_statically_present": 11,
+    "author_verification_run_results": "unknown; no retained output among eligible originals",
+    "desktop_real_input": "unknown",
+    "mobile_real_device": "unknown",
+    "mobile_viewport": "unknown",
+    "pageerror_console": "unknown",
+    "screenshots_preserved_uninspected": [
+      "source/beetle-bounce/output/playwright/desktop.png",
+      "source/beetle-bounce/output/playwright/mobile.png"
+    ],
+    "webmcp_execution": "unknown"
+  },
+  "operations_not_performed": [
+    "game execution",
+    "build",
+    "tests",
+    "browser",
+    "image view",
+    "extra sampling",
+    "remote write",
+    "GitHub write",
+    "publisher",
+    "unpack/repack original package",
+    "process shutdown"
+  ],
+  "original_file_count": 14,
+  "original_total_bytes": 2300718,
+  "originals": [
+    {
+      "archive_relative_path": "packages/beetle-bounce-site.tar.gz",
+      "copy_sha256": "3af38e27db4608ed234612944f505cc0c03bb849c12c52457f459f708fec1126",
+      "copy_size_mtime_match": true,
+      "kind": "raw_original_package",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce-site.tar.gz",
+      "source_metadata": {
+        "ctime_ns": "1791104576842089131",
+        "dev": "16777229",
+        "ino": "545946244",
+        "mode": "33188",
+        "mtime_ns": "1791104576842089131",
+        "nlink": "1",
+        "size": "289804"
+      },
+      "source_sha256": "3af38e27db4608ed234612944f505cc0c03bb849c12c52457f459f708fec1126"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/.gitignore",
+      "copy_sha256": "35e56bfa0ece208d83ff47fcc2547dd044d2a206cd13521a57d0ea1eaf7eea09",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/.gitignore",
+      "source_metadata": {
+        "ctime_ns": "1791104333521768238",
+        "dev": "16777229",
+        "ino": "545943852",
+        "mode": "33188",
+        "mtime_ns": "1791104333521768238",
+        "nlink": "1",
+        "size": "65"
+      },
+      "source_sha256": "35e56bfa0ece208d83ff47fcc2547dd044d2a206cd13521a57d0ea1eaf7eea09"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/.openai/hosting.json",
+      "copy_sha256": "9fdbd2e872a188663161fe861492cc7e1a5bc6e04eb7f941e23b0b65ebc1f412",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/.openai/hosting.json",
+      "source_metadata": {
+        "ctime_ns": "1791103341406633751",
+        "dev": "16777229",
+        "ino": "545933014",
+        "mode": "33188",
+        "mtime_ns": "1791103341406441333",
+        "nlink": "1",
+        "size": "106"
+      },
+      "source_sha256": "9fdbd2e872a188663161fe861492cc7e1a5bc6e04eb7f941e23b0b65ebc1f412"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/README.md",
+      "copy_sha256": "0dd81a8a135b4a4111f86834097f73690409b3e7446fdaffc604bf0a6ac755d1",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/README.md",
+      "source_metadata": {
+        "ctime_ns": "1791104334791830153",
+        "dev": "16777229",
+        "ino": "545943858",
+        "mode": "33188",
+        "mtime_ns": "1791104334791830153",
+        "nlink": "1",
+        "size": "1531"
+      },
+      "source_sha256": "0dd81a8a135b4a4111f86834097f73690409b3e7446fdaffc604bf0a6ac755d1"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/game.js",
+      "copy_sha256": "aa3321ba80a77b710e7d4a86479edaaf9bc55f8c55ed2fc0d59b867442af10ed",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/game.js",
+      "source_metadata": {
+        "ctime_ns": "1791104463374324703",
+        "dev": "16777229",
+        "ino": "545940768",
+        "mode": "33188",
+        "mtime_ns": "1791104463374324703",
+        "nlink": "1",
+        "size": "27065"
+      },
+      "source_sha256": "aa3321ba80a77b710e7d4a86479edaaf9bc55f8c55ed2fc0d59b867442af10ed"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/index.html",
+      "copy_sha256": "0bf1745f76648d25a13f560fc5407f7ec498891d5c7c7060e6ab5f093fff4229",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/index.html",
+      "source_metadata": {
+        "ctime_ns": "1791104463374709370",
+        "dev": "16777229",
+        "ino": "545933709",
+        "mode": "33188",
+        "mtime_ns": "1791104463374709370",
+        "nlink": "1",
+        "size": "8252"
+      },
+      "source_sha256": "0bf1745f76648d25a13f560fc5407f7ec498891d5c7c7060e6ab5f093fff4229"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/physics.js",
+      "copy_sha256": "218e1cf7a093ef7ff991a053538863565b9ec5e5076beafe3897d5c915eba3b5",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/physics.js",
+      "source_metadata": {
+        "ctime_ns": "1791104256283643629",
+        "dev": "16777229",
+        "ino": "545933833",
+        "mode": "33188",
+        "mtime_ns": "1791104256283643629",
+        "nlink": "1",
+        "size": "8315"
+      },
+      "source_sha256": "218e1cf7a093ef7ff991a053538863565b9ec5e5076beafe3897d5c915eba3b5"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/style.css",
+      "copy_sha256": "6b85f336284c2af989326db94822fa0524b0fc606e11579d13e01d393d108588",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/style.css",
+      "source_metadata": {
+        "ctime_ns": "1791104463375031371",
+        "dev": "16777229",
+        "ino": "545933710",
+        "mode": "33188",
+        "mtime_ns": "1791104463375031371",
+        "nlink": "1",
+        "size": "17595"
+      },
+      "source_sha256": "6b85f336284c2af989326db94822fa0524b0fc606e11579d13e01d393d108588"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/vendor/LICENSE-three.txt",
+      "copy_sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/vendor/LICENSE-three.txt",
+      "source_metadata": {
+        "ctime_ns": "1791103307855450680",
+        "dev": "16777229",
+        "ino": "545932942",
+        "mode": "33188",
+        "mtime_ns": "1791103307855277555",
+        "nlink": "1",
+        "size": "1081"
+      },
+      "source_sha256": "fc665b1e77e4b39bc63130c8dd6bf42f287671b8856949486d3346aed0d8ffe3"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/dist/vendor/three.module.js",
+      "copy_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/dist/vendor/three.module.js",
+      "source_metadata": {
+        "ctime_ns": "1791103307848233707",
+        "dev": "16777229",
+        "ino": "545932941",
+        "mode": "33188",
+        "mtime_ns": "1791103307848096331",
+        "nlink": "1",
+        "size": "1314681"
+      },
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/output/playwright/desktop.png",
+      "copy_sha256": "b8c13f2ff6f291c978ec32a5b542e06888b9b2f9b61ffd84413ca1b7b26011eb",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/output/playwright/desktop.png",
+      "source_metadata": {
+        "ctime_ns": "1791104575261063096",
+        "dev": "16777229",
+        "ino": "545946231",
+        "mode": "33188",
+        "mtime_ns": "1791104575261063096",
+        "nlink": "1",
+        "size": "460612"
+      },
+      "source_sha256": "b8c13f2ff6f291c978ec32a5b542e06888b9b2f9b61ffd84413ca1b7b26011eb"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/output/playwright/mobile.png",
+      "copy_sha256": "a652da4fb0aa739365476273133a5e56df53373911a6e2076de2af7240be2622",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/output/playwright/mobile.png",
+      "source_metadata": {
+        "ctime_ns": "1791104575310438534",
+        "dev": "16777229",
+        "ino": "545944004",
+        "mode": "33188",
+        "mtime_ns": "1791104575310438534",
+        "nlink": "1",
+        "size": "167889"
+      },
+      "source_sha256": "a652da4fb0aa739365476273133a5e56df53373911a6e2076de2af7240be2622"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/package.json",
+      "copy_sha256": "4c7f4a43901e843ad431e8e726811c2969a74096b935c2dca6e102e4761f402d",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/package.json",
+      "source_metadata": {
+        "ctime_ns": "1791103309979905207",
+        "dev": "16777229",
+        "ino": "545932953",
+        "mode": "33188",
+        "mtime_ns": "1791103309979905207",
+        "nlink": "1",
+        "size": "209"
+      },
+      "source_sha256": "4c7f4a43901e843ad431e8e726811c2969a74096b935c2dca6e102e4761f402d"
+    },
+    {
+      "archive_relative_path": "source/beetle-bounce/verify.mjs",
+      "copy_sha256": "54661afed7feafccda006c79bad04e330548d5561a62e95cb817258ce75b307e",
+      "copy_size_mtime_match": true,
+      "kind": "source_original",
+      "source_absolute_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce/verify.mjs",
+      "source_metadata": {
+        "ctime_ns": "1791104336028511288",
+        "dev": "16777229",
+        "ino": "545943871",
+        "mode": "33188",
+        "mtime_ns": "1791104336028511288",
+        "nlink": "1",
+        "size": "3513"
+      },
+      "source_sha256": "54661afed7feafccda006c79bad04e330548d5561a62e95cb817258ce75b307e"
+    }
+  ],
+  "package_file_count": 1,
+  "parent_shallow_entries": [
+    "beetle-bounce",
+    "beetle-bounce-site.tar.gz"
+  ],
+  "process_observation": {
+    "escalated_ps_returncode": 0,
+    "initial_ps_error": "Operation not permitted in default sandbox",
+    "lsof_cwd_returncode": 0,
+    "lsof_listener_returncode": 0,
+    "protected_children_ppid": {
+      "13070": 1036,
+      "17746": 1036,
+      "1831": 1036,
+      "1832": 1036,
+      "1835": 1036,
+      "20308": 1036,
+      "23445": 1036,
+      "2704": 2554,
+      "28359": 1036,
+      "39198": 1036,
+      "4261": 1036,
+      "4263": 1036,
+      "4271": 1036,
+      "4286": 1036,
+      "4552": 1036,
+      "5628": 1036,
+      "59092": 1036,
+      "60670": 2560,
+      "60673": 60670,
+      "79514": 1036,
+      "94348": 1036
+    },
+    "protected_processes": [
+      {
+        "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "cwd": "/",
+        "listeners": [],
+        "pid": 1036
+      },
+      {
+        "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node /Users/bytedance/my-work/to-do-list/server.js",
+        "cwd": "/Users/bytedance/my-work/to-do-list",
+        "listeners": [
+          "127.0.0.1:5173"
+        ],
+        "pid": 2547
+      },
+      {
+        "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node src/server.js",
+        "cwd": "/Users/bytedance/my-work/code-review-system",
+        "listeners": [
+          "127.0.0.1:4827"
+        ],
+        "pid": 2554
+      },
+      {
+        "command": "/Users/bytedance/.nvm/versions/node/v22.21.1/bin/node /Users/bytedance/my-work/grill-me/server.mjs",
+        "cwd": "/Users/bytedance/my-work/grill-me",
+        "listeners": [
+          "127.0.0.1:4173"
+        ],
+        "pid": 2560
+      }
+    ],
+    "readme_port": 4173,
+    "readme_port_owner_observed": 2560,
+    "runtime_session_directories_read": false,
+    "scope": "one read-only metadata observation; blocked ps retried once with authorized escalation",
+    "signals_sent": [],
+    "source_argv_matches": [],
+    "source_cwd_matches": [],
+    "source_preview_identified": false
+  },
+  "provenance": "parent-launch-record.json is a parent attestation, not historical runtime verification",
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-62/beetle-bounce",
+  "source_file_count": 13,
+  "source_total_bytes": 2010914,
+  "status": "completed",
+  "symlinks_and_targets_excluded": true,
+  "verification": {
+    "algorithm": "SHA-256",
+    "all_copied_hashes_match": true,
+    "all_copied_size_mtime_ns_match": true,
+    "copy_method": "shutil.copy2; follow_symlinks=False",
+    "final_source_and_package_metadata_unchanged": true,
+    "final_source_and_package_set_unchanged": true,
+    "final_source_and_package_sha256_unchanged": true,
+    "fixed_eligible_set": true,
+    "maximum_attempts": 3,
+    "metadata_integer_encoding": "exact decimal strings including size, ns, dev, ino",
+    "same_python_process": true,
+    "stable_snapshot_attempts": [
+      {
+        "attempt": 1,
+        "interval_seconds": 1,
+        "same_fixed_set": true,
+        "same_metadata": true
+      }
+    ]
+  }
+}

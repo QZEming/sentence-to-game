@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#121b16"><meta name="description" content="操纵甲虫挡板，在发光蘑菇与萤火虫之间挑战高分。3D 森林弹珠街机。">
+  <title>Beetle Bounce — 森林弹珠</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23121b16'/%3E%3Cellipse cx='32' cy='35' rx='15' ry='19' fill='%23d0e99c'/%3E%3Cpath d='M32 18v35M16 26l-8-5m8 15H7m10 8-8 6m39-24 8-5m-8 15h9m-10 8 8 6M26 17l-4-8m16 8 4-8' stroke='%23d0e99c' stroke-width='4'/%3E%3Cpath d='M32 20v31' stroke='%23121b16' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="森林弹珠首页"><span class="brand-mark">✳</span><span>MOSSWOOD<span class="brand-sub">森林游乐社</span></span></a>
+    <div class="edition">小小甲虫，大大冒险。 <span>VOL. 01 / FOREST ARCADE</span></div>
+    <nav class="toolbar" aria-label="游戏选项">
+      <button id="sound" class="icon-btn" aria-label="开启声音" title="开启声音">♫<i class="mute-dot"></i></button>
+      <button id="pause" class="icon-btn" aria-label="暂停游戏" title="暂停 / P">Ⅱ</button>
+      <button id="help" class="icon-btn" aria-label="玩法说明" title="玩法说明">?</button>
+      <button id="fullscreen" class="icon-btn fullscreen-btn" aria-label="全屏" title="全屏">⛶</button>
+    </nav>
+  </header>
+  <main class="arcade">
+    <aside class="intro-rail">
+      <div class="eyebrow"><span></span> 一场微观森林冒险</div>
+      <h1>BEETLE<span class="title-space"> </span><br>BOUNCE<span>.</span></h1>
+      <p class="intro">森林弹珠台<span>让每一次碰撞，都唤醒一点森林。</span></p>
+      <div class="mode-switch" role="group" aria-label="游戏模式"><button class="selected" data-mode="classic">经典三球</button><button data-mode="sprint">90 秒竞速</button></div>
+      <section class="mission-card">
+        <div class="section-label"><span>森林任务</span><span class="micro">01 — 03</span></div>
+        <h2 id="mission-title">点亮萤火之森</h2>
+        <p>击中三座琥珀机关，唤醒多球狂欢。</p>
+        <div class="firefly-progress" aria-label="机关进度"><span id="target-0">Ⅰ</span><i></i><span id="target-1">Ⅱ</span><i></i><span id="target-2">Ⅲ</span></div>
+        <div class="mission-bottom"><span id="mission-progress">0 / 3 已点亮</span><b>多球奖励 ×3</b></div>
+      </section>
+      <section class="field-guide">
+        <div class="section-label">林间小机关 <span class="micro">FIELD GUIDE</span></div>
+        <div class="guide-row"><span class="guide-icon mushroom-icon">✽</span><div><strong>蘑菇碰碰乐</strong><small>连续命中 · 最高 5 倍积分</small></div><span class="guide-score">+100</span></div>
+        <div class="guide-row"><span class="guide-icon gate-icon">⌁</span><div><strong>古树回旋门</strong><small>穿越上方树门 · 多球时大奖</small></div><span class="guide-score">+500</span></div>
+        <div class="guide-row"><span class="guide-icon acorn-icon">✧</span><div><strong>琥珀之光</strong><small>集齐三个 · 释放额外弹珠</small></div><span class="guide-score">+250</span></div>
+      </section>
+      <div class="nature-note"><span>✳</span><p>保持好奇。<br>森林总藏着下一次惊喜。</p><span class="note-number">01</span></div>
+    </aside>
+    <section class="play-space" aria-label="3D 森林弹珠游戏">
+      <div class="table-heading"><span><i></i> THE MOSSWOOD TABLE</span><span id="state-label">等待发射</span></div>
+      <div id="stage" role="img" aria-label="立体木质森林弹珠台，蘑菇碰碰柱、琥珀机关和两只甲虫挡板"></div>
+      <div id="loading" class="loading">正在唤醒森林<span></span></div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <div id="combo-pop" class="combo-pop" aria-hidden="true"></div>
+      <div class="table-caption"><span class="table-no">N° 001</span><div>夜萤之森<small>THE FIREFLY GROVE</small></div><span id="save-status">发球后 5 秒保护</span></div>
+      <div class="mobile-flippers"><button id="touch-left" aria-label="左挡板">◀ 左挡板</button><button id="touch-nudge" aria-label="震台">震台</button><button id="touch-right" aria-label="右挡板">右挡板 ▶</button></div>
+      <div id="pause-overlay" class="game-overlay" hidden><span class="eyebrow">TAKE A BREATH</span><h2>森林小憩中</h2><p>准备好了，就继续这场冒险。</p><button id="resume" class="primary-btn">继续游戏</button></div>
+      <div id="end-overlay" class="game-overlay" hidden><span class="eyebrow">A LITTLE FOREST LEGEND</span><h2 id="end-title">这次冒险，很精彩。</h2><p>本局得分</p><strong id="end-score">0</strong><div id="end-stats"></div><button id="restart" class="primary-btn">再玩一局 <span>↻</span></button></div>
+    </section>
+    <aside class="score-rail">
+      <section class="score-card"><div class="section-label">本局得分 <span class="score-star">✧</span></div><div id="score" class="score" aria-live="off">000000</div><div class="best-row"><span>♜ 本机最高纪录</span><strong id="best">000000</strong></div></section>
+      <div class="ball-row"><div><span class="section-label" id="ball-label">剩余弹珠</span><div class="ball-indicators"><i class="active"></i><i class="active"></i><i class="active"></i></div></div><div class="ball-count"><b id="ball-current">01</b><span id="ball-total"> / 03</span></div></div>
+      <div class="multiplier-card"><div><span class="section-label">连击倍率</span><strong id="multiplier">×1</strong></div><div class="combo-meter"><span id="combo-fill"></span></div><p id="combo-label">让弹珠在不同蘑菇间跳跃</p></div>
+      <div class="control-guide"><div class="section-label">你的甲虫驾驶指南</div><div><span>左 / 右挡板</span><span><kbd>A</kbd><kbd>D</kbd><small>或 ← →</small></span></div><div><span>蓄力发射</span><kbd>SPACE</kbd></div><div><span>轻轻震台</span><kbd>X</kbd></div><div><span>暂停 / 继续</span><kbd>P</kbd></div><div class="nudge-meter"><i></i><i></i><i></i><small id="nudge-label">小心，过度震台会倾斜</small></div></div>
+      <div class="launch-area"><div class="charge-label"><span id="launch-hint">按住蓄力，松开发射</span><span id="charge-value">0%</span></div><button id="launch" class="launch-btn"><span id="launch-text">发射弹珠</span><span>↗</span><i id="charge-fill"></i></button><span class="launch-footnote" id="footnote">你的第一场森林冒险，从这里开始。</span></div>
+    </aside>
+  </main>
+  <footer><span><i></i> 为一点点纯粹的快乐而造</span><span>戴上耳机，听见森林的回应 <span class="footer-leaf">✳</span></span></footer>
+  <dialog id="help-dialog"><button id="close-help" class="dialog-close" aria-label="关闭说明">×</button><div class="eyebrow">WELCOME TO THE UNDERGROWTH</div><h2>做一只身手敏捷的甲虫。</h2><p>按住空格或「发射弹珠」蓄力，松开后发射。用 A / D 或方向键抬起左右挡板，把弹珠送回森林。</p><div class="help-grid"><div><b>01 · 连击</b><p>在 3 秒内击中不同蘑菇或机关，倍率逐步增长到 ×5。</p></div><div><b>02 · 萤火狂欢</b><p>点亮三个不同的琥珀机关，释放两颗额外弹珠。多球时穿越古树门可获 2,500 基础分。</p></div><div><b>03 · 拯救弹珠</b><p>X 轻震球台救球。连续三次震台会让挡板失灵 3 秒。每次发球有 5 秒保护。</p></div><div><b>04 · 两种冒险</b><p>经典模式有三次机会；竞速模式在 90 秒内无限补球，争夺更高积分。纪录仅保存于本机。</p></div></div><button id="help-play" class="primary-btn">知道了，去冒险</button></dialog>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

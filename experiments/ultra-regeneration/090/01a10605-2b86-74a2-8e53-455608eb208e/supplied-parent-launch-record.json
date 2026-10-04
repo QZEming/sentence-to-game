@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "game_number": "090",
+  "record_kind": "parent_launch_attestation",
+  "provenance": "Explicit parent task message; not independently verified runtime launch parameters",
+  "independently_verified": false,
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a10605-2b86-74a2-8e53-455608eb208e",
+  "generation_turn_id": "01a10605-5900-72e0-89f1-04e202aa2d84",
+  "model": "Astra",
+  "raw_model": "Astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "fork_turns": "none",
+  "explicit_parent_parameters": true,
+  "exact_prompt": "实现一个剧院导演安排演员走位与舞台演出应对现场突发状况的 3D 舞台调度游戏，尽你所能丰富游戏玩法。",
+  "complete_parent_prompt": "实现一个剧院导演安排演员走位与舞台演出应对现场突发状况的 3D 舞台调度游戏，尽你所能丰富游戏玩法。"
+}

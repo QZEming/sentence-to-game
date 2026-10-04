@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#141717" /><meta name="description" content="在幕间成为剧院导演。安排演员走位，调度舞台灯光与音效，应对每一场意外。" />
+  <title>幕间 · Curtain Call — 3D 舞台调度游戏</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d8f48e'/%3E%3Cpath d='M15 14h34v6H15zm0 10h8v26h-8zm13 0h8v26h-8zm13 0h8v26h-8z' fill='%23141717'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="幕间首页"><span class="brand-mark"><i></i><i></i><i></i></span><span>幕间 <b>CURTAIN CALL</b></span></a>
+    <nav class="topnav" aria-label="工作区"><button class="active" data-tab="stage">导演控制台</button><button data-tab="script">剧本与场次</button><button data-tab="records">演出档案</button></nav>
+    <div class="top-actions"><span class="saved-label" id="save-status">本地进度已保存</span><button class="icon-button" id="sound-button" aria-label="打开声音" title="声音">♪</button><button class="icon-button" id="help-button" aria-label="操作指南">?</button><button class="profile" id="settings-button" aria-label="演出设置">D<span></span></button></div>
+  </header>
+  <div class="workspace-heading"><div class="workspace-title"><span class="eyebrow">DIRECTOR'S WORKSPACE</span><h1>好戏，由你调度<span class="subtle-dot">.</span></h1></div><div class="show-selector"><span class="ticket-icon">▥</span><div><small>当前剧目</small><strong>仲夏夜之梦 <span>三幕剧</span></strong></div><button id="show-script" aria-label="查看剧本">⌄</button></div><div class="mode-switch" aria-label="演出模式"><button id="rehearsal-mode" class="active">自由排练</button><button id="performance-mode">正式演出</button></div></div>
+  <main class="dashboard">
+    <aside class="left-panel panel">
+      <div class="panel-heading"><h2>演员调度</h2><span class="mini-tag">4 位在场</span></div><p class="panel-hint">选中演员，再点击舞台安排走位</p>
+      <div class="cast-list" id="cast-list"></div>
+      <div class="section-divider"></div>
+      <div class="small-heading"><h3>当前演员</h3><span id="selected-key">快捷键 1</span></div>
+      <div class="selected-actor"><span id="actor-role">精灵王后 · 泰坦妮娅</span><strong id="actor-name">林  夏</strong><p id="actor-description">沉稳的主角，擅长独白与即兴表演。</p></div>
+      <div class="actor-stats"><div><span>体力</span><b id="stamina-label">100%</b></div><div class="meter"><i id="stamina-bar"></i></div></div>
+      <div class="movement-tools"><button id="walk-button" class="active">步行</button><button id="run-button">快跑</button><button id="hold-button">原地</button></div>
+      <button class="outline-button full-width" id="mark-button"><span>◎</span> 前往剧本标记点</button>
+      <div class="director-note"><span>导演手记</span><p id="director-note">让泰坦妮娅走到舞台中央 A 点，为开场独白做好准备。</p><div><span class="keycap">1–4</span> 切换演员 <span class="keycap">M</span> 走向标记</div></div>
+    </aside>
+    <section class="stage-column">
+      <div class="stage-viewport" id="stage-viewport">
+        <canvas id="stage-canvas" aria-label="可交互 3D 舞台，选择演员后点击地面安排走位"></canvas>
+        <div class="stage-top"><div class="scene-badge"><span id="mode-dot"></span><b id="mode-label">排练中</b><em></em><span id="scene-label">第一幕 · 林间初遇</span></div><div class="live-badge"><i></i> LIVE STAGE</div></div>
+        <div class="stage-labels" id="stage-labels"></div>
+        <div id="stage-loading" class="stage-loading"><div class="loader"></div><strong>正在布置舞台</strong></div>
+        <div class="stage-caption"><span>THE GLOBE THEATRE</span><h2 id="stage-act-title">林间初遇</h2><p id="stage-instruction">星光落下，故事即将开始。</p></div>
+        <div class="camera-controls"><button id="camera-orbit" class="active" title="导演视角" aria-label="导演视角">◇</button><button id="camera-front" title="观众视角" aria-label="观众视角">▱</button><button id="camera-top" title="俯视走位" aria-label="俯视走位">⊞</button><span></span><button id="grid-button" class="active" title="显示走位标记" aria-label="切换走位标记">⌖</button><button id="fullscreen-button" title="全屏舞台" aria-label="全屏舞台">⛶</button></div>
+        <div class="stage-bottom"><span><i class="small-lime-dot"></i><span id="stage-status">舞台就绪</span></span><span>拖动旋转视角 · 滚轮缩放</span></div>
+        <div id="incident-host" class="incident-host" aria-live="polite"></div>
+      </div>
+      <div class="stage-toolbar panel"><div class="transport"><button class="start-button" id="start-button"><span>▶</span> 开始排练</button><button class="icon-button" id="restart-button" title="重新排练" aria-label="重置演出">↻</button><span class="toolbar-divider"></span><button class="speed-button" id="speed-button" title="切换演出速度">1×</button></div><div class="act-progress"><div><strong id="timer">00:00</strong><span>/ <span id="duration">01:15</span></span></div><div class="thin-meter"><i id="act-progress-bar"></i></div></div><button class="next-act" id="next-act-button">下一幕 <span>›</span></button></div>
+      <div class="cue-panel panel"><div class="panel-heading"><h2>演出时间轴 <span>CUE SHEET</span></h2><div class="timeline-legend"><i></i> 走位 <i></i> 灯光 <i></i> 音效</div><button id="timeline-help" class="text-button">查看剧本 ↗</button></div><div class="timeline" id="timeline"></div><div class="timeline-footer"><span><i class="small-lime-dot"></i><span id="cue-status">等待导演发出第一个指令</span></span><span id="cue-count">0 / 5 提示已执行</span></div></div>
+      <section class="comms-panel panel"><div class="panel-heading"><h2>场务通讯 <span>BACKSTAGE COMMS</span></h2><span class="tiny-label">演出实时记录</span></div><div id="comms-log" class="comms-log" aria-live="polite"></div></section>
+    </section>
+    <aside class="right-panel">
+      <section class="audience-card panel"><div class="small-heading"><h2>观众状态</h2><span class="audience-icon">♧</span></div><div class="audience-score"><strong id="audience-score">86<span>%</span></strong><div><span id="audience-mood">满怀期待</span><small id="combo-label">好戏正在酝酿</small></div></div><div class="segmented-meter" id="audience-meter"></div><div class="audience-foot"><span>入座观众 <b>128</b></span><span>连击 <b id="combo-value">×0</b></span></div></section>
+      <section class="control-panel panel"><div class="panel-heading"><h2>舞台控制</h2><span class="tiny-label">FX DESK</span></div><div class="control-heading"><span><i class="control-symbol">☼</i> 灯光氛围</span><span id="light-value">月色</span></div><div class="light-presets"><button data-light="moon" class="active"><i></i>月色</button><button data-light="warm"><i></i>暖场</button><button data-light="rose"><i></i>梦境</button></div><label class="range-label" for="light-intensity"><span>亮度</span><b id="intensity-value">75%</b></label><input id="light-intensity" type="range" min="15" max="100" value="75" aria-label="灯光亮度" /><div class="toggle-row"><span>跟随演员的追光</span><button class="toggle active" id="spotlight-toggle" role="switch" aria-checked="true" aria-label="追光"><i></i></button></div><div class="section-divider"></div><div class="control-heading"><span><i class="control-symbol">≋</i> 音效调度</span><span id="sound-status">待命</span></div><div class="sound-controls"><button data-sound="forest"><span>♧</span>林间风声</button><button data-sound="chime"><span>✧</span>精灵铃声</button><button data-sound="thunder"><span>ϟ</span>雷雨音效</button></div><div class="section-divider"></div><div class="control-heading"><span><i class="control-symbol">▧</i> 舞台机关</span><span id="prop-status">已就位</span></div><div class="prop-controls"><button id="fog-button" aria-pressed="false">≋ 薄雾</button><button id="set-button">▥ 换景</button><button id="curtain-button">▤ 幕布</button></div></section>
+      <section class="rescue-panel panel"><div class="panel-heading"><h2>导演锦囊</h2><span id="rescue-count">3 次机会</span></div><p>演出有意外，导演有办法。</p><button id="rescue-button"><span>✦</span><div><strong>即兴救场</strong><small>化解当前突发状况</small></div><kbd>R</kbd></button></section>
+    </aside>
+  </main>
+  <footer class="bottom-bar"><div><span class="small-lime-dot"></span><span id="footer-tip">一切准备就绪，导演。</span></div><div><span class="keycap">SPACE</span> 开始 / 暂停 <span class="keycap">?</span> 操作指南 <span class="footer-edition">CURTAIN CALL / VOL. 01</span></div></footer>
+</div>
+<div id="toast-container" class="toast-container" aria-live="polite"></div>
+<dialog id="modal"><button class="modal-close icon-button" aria-label="关闭弹窗">×</button><div id="modal-content"></div></dialog>
+<script type="module" src="./main.js"></script>
+</body></html>

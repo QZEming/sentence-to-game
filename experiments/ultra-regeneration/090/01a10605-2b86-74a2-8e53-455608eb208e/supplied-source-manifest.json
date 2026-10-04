@@ -1,0 +1,472 @@
+{
+  "archive_created_utc": "2026-10-04T10:14:23.886187+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-090-original-20261004T101423Z",
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "external_evidence_file_count": 0,
+  "files": [
+    {
+      "archive_relative_path": "source/.gitignore",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "48",
+        "ctime_ns": "1791108863888373300",
+        "dev": "16777229",
+        "ino": "545960454",
+        "mode": "0o644",
+        "mtime_ns": "1791103489655132242"
+      },
+      "copy_sha256": "096b4975dc8d719c13d2f0b113192111d4122cb41e8ac0599ef5d4c08a54ab8c",
+      "metadata": {
+        "bytes": "48",
+        "ctime_ns": "1791103489655132242",
+        "dev": "16777229",
+        "ino": "545933425",
+        "mode": "0o644",
+        "mtime_ns": "1791103489655132242"
+      },
+      "sha256": "096b4975dc8d719c13d2f0b113192111d4122cb41e8ac0599ef5d4c08a54ab8c",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/.gitignore"
+    },
+    {
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791108863899031625",
+        "dev": "16777229",
+        "ino": "545960456",
+        "mode": "0o644",
+        "mtime_ns": "1791102506524174396"
+      },
+      "copy_sha256": "3af62789585e204953e4817ed24e6e01d0661693e810e51a4c9582fd7519ea6b",
+      "metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791102506524339021",
+        "dev": "16777229",
+        "ino": "545925132",
+        "mode": "0o644",
+        "mtime_ns": "1791102506524174396"
+      },
+      "sha256": "3af62789585e204953e4817ed24e6e01d0661693e810e51a4c9582fd7519ea6b",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/.openai/hosting.json"
+    },
+    {
+      "archive_relative_path": "source/README.md",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "1656",
+        "ctime_ns": "1791108863900996343",
+        "dev": "16777229",
+        "ino": "545960457",
+        "mode": "0o644",
+        "mtime_ns": "1791103859074614893"
+      },
+      "copy_sha256": "efae01a4a668ac42b7029c715fa776ef910d6c2b7c033fe18ac664ae9c9e5613",
+      "metadata": {
+        "bytes": "1656",
+        "ctime_ns": "1791103859074614893",
+        "dev": "16777229",
+        "ino": "545939082",
+        "mode": "0o644",
+        "mtime_ns": "1791103859074614893"
+      },
+      "sha256": "efae01a4a668ac42b7029c715fa776ef910d6c2b7c033fe18ac664ae9c9e5613",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/README.md"
+    },
+    {
+      "archive_relative_path": "source/package.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "368",
+        "ctime_ns": "1791108863902607942",
+        "dev": "16777229",
+        "ino": "545960458",
+        "mode": "0o644",
+        "mtime_ns": "1791103741785205447"
+      },
+      "copy_sha256": "5543d69bb976a2e11d887474eb52556ca3407142c4502022759d1499c7396467",
+      "metadata": {
+        "bytes": "368",
+        "ctime_ns": "1791103741785205447",
+        "dev": "16777229",
+        "ino": "545925059",
+        "mode": "0o644",
+        "mtime_ns": "1791103741785205447"
+      },
+      "sha256": "5543d69bb976a2e11d887474eb52556ca3407142c4502022759d1499c7396467",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/package.json"
+    },
+    {
+      "archive_relative_path": "source/package-lock.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "525",
+        "ctime_ns": "1791108863903951586",
+        "dev": "16777229",
+        "ino": "545960459",
+        "mode": "0o644",
+        "mtime_ns": "1791103224106510781"
+      },
+      "copy_sha256": "e16652ad8ef9f290c989885e3a7d2a3cd9debc59cd02164af26b22184b2bb489",
+      "metadata": {
+        "bytes": "525",
+        "ctime_ns": "1791103224106510781",
+        "dev": "16777229",
+        "ino": "545932752",
+        "mode": "0o644",
+        "mtime_ns": "1791103224106510781"
+      },
+      "sha256": "e16652ad8ef9f290c989885e3a7d2a3cd9debc59cd02164af26b22184b2bb489",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/package-lock.json"
+    },
+    {
+      "archive_relative_path": "source/dist/game.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "12887",
+        "ctime_ns": "1791108863905968261",
+        "dev": "16777229",
+        "ino": "545960461",
+        "mode": "0o644",
+        "mtime_ns": "1791103659684207267"
+      },
+      "copy_sha256": "2c791cc8156ad7701b46441ab65b61a56a012795fe802b1a48f5fec38d4ff50d",
+      "metadata": {
+        "bytes": "12887",
+        "ctime_ns": "1791103659684207267",
+        "dev": "16777229",
+        "ino": "545931392",
+        "mode": "0o644",
+        "mtime_ns": "1791103659684207267"
+      },
+      "sha256": "2c791cc8156ad7701b46441ab65b61a56a012795fe802b1a48f5fec38d4ff50d",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/game.js"
+    },
+    {
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "9694",
+        "ctime_ns": "1791108863913098269",
+        "dev": "16777229",
+        "ino": "545960462",
+        "mode": "0o644",
+        "mtime_ns": "1791103859054930518"
+      },
+      "copy_sha256": "18ccf09715d2f283e2939a95c1920b993f05707b4307398aa774131d0b484331",
+      "metadata": {
+        "bytes": "9694",
+        "ctime_ns": "1791103859054930518",
+        "dev": "16777229",
+        "ino": "545929154",
+        "mode": "0o644",
+        "mtime_ns": "1791103859054930518"
+      },
+      "sha256": "18ccf09715d2f283e2939a95c1920b993f05707b4307398aa774131d0b484331",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/index.html"
+    },
+    {
+      "archive_relative_path": "source/dist/main.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "26663",
+        "ctime_ns": "1791108863924824410",
+        "dev": "16777229",
+        "ino": "545960463",
+        "mode": "0o644",
+        "mtime_ns": "1791103859057232481"
+      },
+      "copy_sha256": "68b94f7328944930c5340dd864d969720fcb27304dcf8aaca9202d8f71dd06fe",
+      "metadata": {
+        "bytes": "26663",
+        "ctime_ns": "1791103859057232481",
+        "dev": "16777229",
+        "ino": "545933228",
+        "mode": "0o644",
+        "mtime_ns": "1791103859057232481"
+      },
+      "sha256": "68b94f7328944930c5340dd864d969720fcb27304dcf8aaca9202d8f71dd06fe",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/main.js"
+    },
+    {
+      "archive_relative_path": "source/dist/stage.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "16324",
+        "ctime_ns": "1791108863935294530",
+        "dev": "16777229",
+        "ino": "545960464",
+        "mode": "0o644",
+        "mtime_ns": "1791103659687156857"
+      },
+      "copy_sha256": "206141efa2912177f6a2d6baa478de15b0eb8e632728d9cd7d67c682235037fe",
+      "metadata": {
+        "bytes": "16324",
+        "ctime_ns": "1791103659687156857",
+        "dev": "16777229",
+        "ino": "545929645",
+        "mode": "0o644",
+        "mtime_ns": "1791103659687156857"
+      },
+      "sha256": "206141efa2912177f6a2d6baa478de15b0eb8e632728d9cd7d67c682235037fe",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/stage.js"
+    },
+    {
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "28608",
+        "ctime_ns": "1791108863944092595",
+        "dev": "16777229",
+        "ino": "545960465",
+        "mode": "0o644",
+        "mtime_ns": "1791103859055969937"
+      },
+      "copy_sha256": "4ebb3a558cc96b849543fa8759931ec5d85a642f1ac77de7b28325e704a5b120",
+      "metadata": {
+        "bytes": "28608",
+        "ctime_ns": "1791103859055969937",
+        "dev": "16777229",
+        "ino": "545929155",
+        "mode": "0o644",
+        "mtime_ns": "1791103859055969937"
+      },
+      "sha256": "4ebb3a558cc96b849543fa8759931ec5d85a642f1ac77de7b28325e704a5b120",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/style.css"
+    },
+    {
+      "archive_relative_path": "source/dist/vendor/THREE-LICENSE.txt",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "1081",
+        "ctime_ns": "1791108863949824459",
+        "dev": "16777229",
+        "ino": "545960467",
+        "mode": "0o644",
+        "mtime_ns": "1791103740143395449"
+      },
+      "copy_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "metadata": {
+        "bytes": "1081",
+        "ctime_ns": "1791103740143539283",
+        "dev": "16777229",
+        "ino": "545935481",
+        "mode": "0o644",
+        "mtime_ns": "1791103740143395449"
+      },
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/vendor/THREE-LICENSE.txt"
+    },
+    {
+      "archive_relative_path": "source/dist/vendor/three.core.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "1403455",
+        "ctime_ns": "1791108863951318476",
+        "dev": "16777229",
+        "ino": "545960468",
+        "mode": "0o644",
+        "mtime_ns": "1791103489645539930"
+      },
+      "copy_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "metadata": {
+        "bytes": "1403455",
+        "ctime_ns": "1791103489645664847",
+        "dev": "16777229",
+        "ino": "545933424",
+        "mode": "0o644",
+        "mtime_ns": "1791103489645539930"
+      },
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/vendor/three.core.js"
+    },
+    {
+      "archive_relative_path": "source/dist/vendor/three.module.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "603113",
+        "ctime_ns": "1791108864056460335",
+        "dev": "16777229",
+        "ino": "545960469",
+        "mode": "0o644",
+        "mtime_ns": "1791103489644200761"
+      },
+      "copy_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "metadata": {
+        "bytes": "603113",
+        "ctime_ns": "1791103489644312678",
+        "dev": "16777229",
+        "ino": "545933423",
+        "mode": "0o644",
+        "mtime_ns": "1791103489644200761"
+      },
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/dist/vendor/three.module.js"
+    },
+    {
+      "archive_relative_path": "source/tests/simulation.mjs",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "3301",
+        "ctime_ns": "1791108864086948252",
+        "dev": "16777229",
+        "ino": "545960471",
+        "mode": "0o644",
+        "mtime_ns": "1791103740176166561"
+      },
+      "copy_sha256": "5a65575691058429aa911484b0b99c71d3b530f07061758b16bf949e45bb3cc7",
+      "metadata": {
+        "bytes": "3301",
+        "ctime_ns": "1791103740176166561",
+        "dev": "16777229",
+        "ino": "545935482",
+        "mode": "0o644",
+        "mtime_ns": "1791103740176166561"
+      },
+      "sha256": "5a65575691058429aa911484b0b99c71d3b530f07061758b16bf949e45bb3cc7",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call/tests/simulation.mjs"
+    },
+    {
+      "archive_relative_path": "original-packages/curtain-call-deploy.tar.gz",
+      "category": "original_deployment_package",
+      "copy_metadata": {
+        "bytes": "428512",
+        "ctime_ns": "1791108864092842780",
+        "dev": "16777229",
+        "ino": "545960473",
+        "mode": "0o644",
+        "mtime_ns": "1791104032361568943"
+      },
+      "copy_sha256": "e2d3d36039b2d3f18d06f57f2639d3d860e5fe0903217cc3c5b7b99c1dabcf03",
+      "metadata": {
+        "bytes": "428512",
+        "ctime_ns": "1791104032361568943",
+        "dev": "16777229",
+        "ino": "545941182",
+        "mode": "0o644",
+        "mtime_ns": "1791104032361568943"
+      },
+      "sha256": "e2d3d36039b2d3f18d06f57f2639d3d860e5fe0903217cc3c5b7b99c1dabcf03",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call-deploy.tar.gz"
+    }
+  ],
+  "fixed_original_bytes": "2536341",
+  "fixed_original_file_count": 15,
+  "game_number": "090",
+  "local_preview": {
+    "command": "npm start",
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call",
+    "expanded_command": "python3 -m http.server 4319 --bind 127.0.0.1 -d dist",
+    "port": 4319,
+    "started_during_archive": false,
+    "url": "http://127.0.0.1:4319"
+  },
+  "original_package_file_count": 1,
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-59",
+  "prior_completion_check": {
+    "existing_090_archives_before_copy": [],
+    "pending_successful_result": false,
+    "previous_offline_request_failed_before_process_creation": true,
+    "subsequent_sandbox_ps_attempt_failed_before_copy": true
+  },
+  "process_observation": {
+    "cwd_lsof_exit_code": 0,
+    "cwd_lsof_stderr": "",
+    "descendants": [],
+    "limitations": "Point-in-time accessible process metadata; generic shared browser page ownership cannot be established from an unmatched process. No process, agent or CUA context was controlled. Copy verification does not depend on shutdown.",
+    "matched_processes": [],
+    "observed_at_utc": "2026-10-04T10:12:03.513184+00:00",
+    "port_4319": {
+      "listening_observed": false,
+      "lsof_exit_code": 1,
+      "ownership_inferred_by_port_alone": false,
+      "stderr": "",
+      "stdout": ""
+    },
+    "protected_original_processes": [
+      {
+        "action": "retained; no signals or shutdown",
+        "cpu": "0.0",
+        "label": "original Chrome",
+        "observed": true,
+        "pid": 1036,
+        "state": "S"
+      },
+      {
+        "action": "retained; no signals or shutdown",
+        "cpu": "0.0",
+        "label": "original port 5173 service",
+        "observed": true,
+        "pid": 2547,
+        "state": "S"
+      },
+      {
+        "action": "retained; no signals or shutdown",
+        "cpu": "0.0",
+        "label": "original port 4827 service",
+        "observed": true,
+        "pid": 2554,
+        "state": "S"
+      },
+      {
+        "action": "retained; no signals or shutdown",
+        "cpu": "0.0",
+        "label": "original port 4173 service",
+        "observed": true,
+        "pid": 2560,
+        "state": "S"
+      }
+    ],
+    "provenance": "Archive agent independently performed one read-only ps/lsof metadata observation after sandbox EPERM required approved escalation; no load sampling",
+    "ps_exit_code": 0,
+    "ps_stderr": "",
+    "roots": [],
+    "scope": "Source/parent cwd and target path/name argv matches, plus descendant relationships; observer and its ancestors excluded",
+    "signals": [],
+    "task_owned_preview_browser_observed": false
+  },
+  "schema_version": 1,
+  "source_file_count": 14,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-59/curtain-call",
+  "title": "幕间 · Curtain Call",
+  "validation_limits": {
+    "browser_desktop_mobile_claim": "Author interaction claim only; source and shallow parent have no exclusive browser driver/results/screenshots. Actual UI input vs API/state fixtures/time acceleration, mobile viewport dimensions/touch/physical device and clean-initial full browser three-act coverage are not independently established.",
+    "console_pageerror_audio_webmcp": "No captured console/pageerror/audio or native WebMCP validation evidence; source audio controls and WebGL error handling do not prove runtime coverage.",
+    "full_three_act_scope": "Script asserts 15 successful cues, 6 resolved incidents, 3 actResults, grade S and one finish callback; it was not independently executed here and does not verify browser history persistence.",
+    "method": "Prior read-only static review of README/package/lock/simulation and source controls; no original script, test, browser, game or build execution and no image viewing",
+    "original_package": "Copied byte for byte without tar-entry reading, unpacking or repacking",
+    "other_simulation_scope": "Paused clock/movement/incident; act transition pause; timeout at five frame steps; rehearsal audience preservation; rescue consumes once; reset; repeated end/advance does not duplicate finish/score.",
+    "remote_actions": false,
+    "source_bundled_runtime": "dist/vendor Three modules and license are shipped publish assets and preserved; node_modules and forbidden runtime/session/cache trees excluded.",
+    "source_unchanged": true,
+    "state_fixtures": "Explicit g.running=false, incident.left=.01, difficulty=easy and speed=2 occur in focused cases. Full three-act case starts a new TheatreGame, selects performance mode, uses cue-aware direct move/lightAction/soundAction/resolveIncident calls and update(1/60).",
+    "test_result_evidence": "README documents 7 simulations and parent attests testing; no dedicated captured test log/result in eligible source/parent. Script PASS statements are not execution evidence.",
+    "test_script": "Seven synchronous TheatreGame simulations. Direct game methods and g.update(dt) advance simulated time without wall-clock waiting; these are logical simulations, not keyboard/mouse/browser tests."
+  },
+  "verification": {
+    "all_copy_hashes_match": true,
+    "copy2_used": true,
+    "final_copy_metadata_hashes_and_file_set_verified": true,
+    "final_source_package_bytes_mtime_hashes_and_file_sets_unchanged": true,
+    "metadata_snapshots_interval_seconds": 1,
+    "metadata_stability_attempts": 1,
+    "metadata_stable": true
+  }
+}

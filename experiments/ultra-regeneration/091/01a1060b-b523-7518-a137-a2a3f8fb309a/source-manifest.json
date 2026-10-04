@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "c60698341845dcd316f13cad7799f5d67f1cd1c31b9b80874fc677a7ac171270"
+    },
+    {
+      "bytes": 1706,
+      "path": "README.md",
+      "sha256": "4ee2037d77d98c9794df9156dd71fa48af749820bd0dafbbb958967ccc0c10c1"
+    },
+    {
+      "bytes": 31213,
+      "path": "dist/game.js",
+      "sha256": "1941474795189205e723462f451e7c73bf07f010682df89536a86644bb65c4e5"
+    },
+    {
+      "bytes": 6703,
+      "path": "dist/index.html",
+      "sha256": "72e463a3346e4cbb1d95386f3c7ac97cecf7e6e78548eb6006a1c9c778f1c154"
+    },
+    {
+      "bytes": 15397,
+      "path": "dist/scene.js",
+      "sha256": "3641f11ab1f63d8d43545e29817e7ae7508a2a6f37535017cedb9b8ff7454cb6"
+    },
+    {
+      "bytes": 6768,
+      "path": "dist/spells.js",
+      "sha256": "ac03e303bee1d686d7881288421dc6f303b5c1e8f9677b26ef0d3c2fd995e27a"
+    },
+    {
+      "bytes": 26536,
+      "path": "dist/style.css",
+      "sha256": "2949dbda36330aa315e23dd52f278f779609d48200e0510446396da71be6c9e5"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 902,
+      "path": "original-delivery/results.json",
+      "sha256": "15a6a2e9468aefca01c46c43932fbb8451a735397a94777ac3be4e205d2cd9dd"
+    },
+    {
+      "bytes": 298054,
+      "path": "original-delivery/runeweaver-deploy.tar.gz",
+      "sha256": "9b0e902ba38ae4c6216b724552741fe18469e925ce3442467d9336209f8bf85e"
+    },
+    {
+      "bytes": 298068,
+      "path": "original-delivery/runeweaver-final.tar.gz",
+      "sha256": "c94a7925e848aa7fd701b3e24e3c4b4bf2d181f323e891a9eaccdcc76424aea5"
+    },
+    {
+      "bytes": 7359,
+      "path": "original-delivery/runtime-check.mjs",
+      "sha256": "7b18b31ce23b5386c72e2005bb74b9879ba4ddc1743c2ba036972a1196309caf"
+    },
+    {
+      "bytes": 232,
+      "path": "package.json",
+      "sha256": "edad453e06ba99f61a936423a71b4b78a8b4a32835dc0a2c5d40437d57a6a4f2"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-60/rune-duel",
+  "source_tree_sha256": "48fdec18f9d23e6f025c32039634a8739ae59b6295cc4be2f15851fd6aa66269",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-091-original-20261004T101110Z",
+  "thread_id": "01a1060b-b523-7518-a137-a2a3f8fb309a",
+  "turn_id": "01a1060b-d62d-7151-9adc-eb2025389364"
+}

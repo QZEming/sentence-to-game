@@ -1,0 +1,1 @@
+{"name":"beetle-bounce","version":"1.0.0","private":true,"type":"module","scripts":{"check":"node --check dist/game.js && node --check dist/physics.js","start":"python3 -m http.server 4173 --directory dist"}}

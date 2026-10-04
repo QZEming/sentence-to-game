@@ -1,0 +1,14 @@
+{
+  "record_type": "parent_launch_attestation",
+  "candidate": "091",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a1060b-b523-7518-a137-a2a3f8fb309a",
+  "turn_id": "01a1060b-d62d-7151-9adc-eb2025389364",
+  "model_raw": "Astra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "exact_prompt": "实现一个符文法师组合施法手势并反制对手法术的 3D 魔法决斗游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_by_parent",
+  "independent_runtime_verified": false,
+  "provenance": "Explicit parent launch parameters and exact prompt in delegated task; not authenticated historical runtime metadata."
+}

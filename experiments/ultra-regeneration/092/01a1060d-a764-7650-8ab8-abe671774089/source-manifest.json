@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "bytes": 48,
+      "path": ".gitignore",
+      "sha256": "41defb96b9f4f68f29455224e831d99d1737f378c806a1119daf53c5286c9b17"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "aa64248b05a2f91f2fd16f69856cd2ed134ba79676e91a1483a02a77cc44be51"
+    },
+    {
+      "bytes": 1791,
+      "path": "README.md",
+      "sha256": "48307e3f43137f3f22c70cec45f9b47c4d5def8d6726ffc3804a9159101360cd"
+    },
+    {
+      "bytes": 26495,
+      "path": "dist/app.js",
+      "sha256": "8ef499e3a96e1aede66bd9296b2f50bf4dc1d61054ec73a12171413a9fb4b05d"
+    },
+    {
+      "bytes": 6293,
+      "path": "dist/engine.js",
+      "sha256": "00f84d6decd808db07138a9e6f3be3fa9eaa034e947f908812ff8bbe2a954ef2"
+    },
+    {
+      "bytes": 6855,
+      "path": "dist/index.html",
+      "sha256": "329745104553a7a0159290e575047583de205e0e9766c016596e9ac424a7d8df"
+    },
+    {
+      "bytes": 18021,
+      "path": "dist/style.css",
+      "sha256": "fe7041f02264a35b69228b4d3d4cd6967a09e3ab62096f2b603b12493ae0d8b7"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 553393,
+      "path": "original-delivery/active.png",
+      "sha256": "ac9cf31a509aad8e48d6e6912b904ce23e6899fd427b9e1bb9e554afc66ac9f5"
+    },
+    {
+      "bytes": 530241,
+      "path": "original-delivery/desktop.png",
+      "sha256": "04f0825935f358d9033812fbf442c1e4e963892480d99e81da937492b602d2a1"
+    },
+    {
+      "bytes": 1617,
+      "path": "original-delivery/interactions.mjs",
+      "sha256": "08eb16838322605f82c40bb67409a678436d1665b8579f21f0090cdf93f3f085"
+    },
+    {
+      "bytes": 265056,
+      "path": "original-delivery/mobile.png",
+      "sha256": "5c4629b2e56ba246563c5f5af4f81ac47f4fc25a2a4222811eaadfcfecbc981c"
+    },
+    {
+      "bytes": 2443,
+      "path": "original-delivery/qa.mjs",
+      "sha256": "6ef4467c073e78a73a04fdc94d540ab8a888a99b5b5705ddaec18d16b67a4e76"
+    },
+    {
+      "bytes": 419338,
+      "path": "original-delivery/strata-deploy-final.tar.gz",
+      "sha256": "a9f98834aa808823cfdc62edcaec6e2e7aed8bffcf59395d3bb4eff0496e62f1"
+    },
+    {
+      "bytes": 419327,
+      "path": "original-delivery/strata-deploy.tar.gz",
+      "sha256": "be88f452c014cef0f379a30ec90056fd1b40bacadc77b2183ffeb20fcd9d0993"
+    },
+    {
+      "bytes": 181,
+      "path": "package.json",
+      "sha256": "dcbcd5d3f0f54d7408b033e0709fc42748ff722070ba5af1c7c2775c1b54be0e"
+    },
+    {
+      "bytes": 3789,
+      "path": "tests/engine.test.mjs",
+      "sha256": "13e94c40c148ebb5c6202fbf9f0e29312e2373b33d852a0b65ea685a80f19b26"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-61/strata",
+  "source_tree_sha256": "6cf0af77f38ab87f933d5fe8eb11f388af3dc9d1e67508301b6e0d5de8a15b9f",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-092-original-20261004T100810Z",
+  "thread_id": "01a1060d-a764-7650-8ab8-abe671774089",
+  "turn_id": "01a1060d-ca0c-7334-9829-ad2dc8401e31"
+}

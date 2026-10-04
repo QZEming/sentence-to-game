@@ -1,0 +1,14 @@
+{
+  "name": "curtain-call",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4319 --bind 127.0.0.1 -d dist",
+    "check": "node --check dist/main.js && node --check dist/stage.js && node --check dist/game.js",
+    "test": "node tests/simulation.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

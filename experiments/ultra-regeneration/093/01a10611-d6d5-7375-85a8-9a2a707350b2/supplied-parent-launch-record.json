@@ -1,0 +1,17 @@
+{
+  "record_type": "parent-launch-attestation",
+  "archive_id": "093",
+  "created_at_utc": "2026-10-04T10:15:40.547749+00:00",
+  "authorization_parent_thread_uuid": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_uuid": "01a10611-d6d5-7375-85a8-9a2a707350b2",
+  "generation_turn_uuid": "01a10611-f880-7207-af15-176b203f7693",
+  "original_prompt": "实现一个甲虫操纵森林弹珠台的挡板与机关冲击高分的 3D 弹珠街机游戏，尽你所能丰富游戏玩法。",
+  "parent_attested_raw_launch_config": {
+    "model": "Astra",
+    "reasoning_effort": "ultra",
+    "fork": "none"
+  },
+  "parent_attested_raw_config_phrase": "Astra/ultra/fork none",
+  "provenance_scope": "Parent attestation supplied for this archive; not independent verification of historical model execution, launch logs, or session records.",
+  "authorized_scope": "Read-only source and task-parent shallow inspection; copy original source, clearly dedicated original evidence and raw package; SHA-256 verification. No game/build/test/browser/image execution, extra sampling, remote write, publisher action, or runtime/session reads."
+}

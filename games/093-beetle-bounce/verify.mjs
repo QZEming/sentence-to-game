@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {Pinball,BUMPERS} from './dist/physics.js';
+let passed=0;const test=(name,fn)=>{fn();passed++;console.log('PASS',name);};
+const launch=(g,p=.65)=>{g.startCharge();g.charge=p;g.launch();};
+const advance=(g,t)=>{for(let i=0;i<t*120;i++)g.step(1/120);};
+test('all launch strengths exit the lane with distinct velocities',()=>{const speeds=[];for(const p of [0,.5,1]){const g=new Pinball();launch(g,p);for(let i=0;i<240&&g.balls[0].launchLane;i++)g.step(1/120);assert.equal(g.balls[0].launchLane,false);speeds.push(g.balls[0].vx);}assert.equal(new Set(speeds).size,3);});
+test('pause freezes physics, timers and charge; repeated pause is safe',()=>{const g=new Pinball();g.reset('sprint');launch(g);advance(g,.3);g.pause();g.pause();const before=g.snapshot(),time=g.time;advance(g,10);assert.deepEqual(g.snapshot(),before);assert.equal(g.time,time);g.resume();assert.equal(g.state,'playing');});
+test('three simultaneous drains consume one classic life',()=>{const g=new Pinball();launch(g);g.balls=[];for(let i=0;i<3;i++)g.addBall(0,10.1,0,2);g.multiball=true;g.step(1/120);assert.equal(g.lives,2);assert.equal(g.balls.length,1);assert(g.balls[0].waiting);});
+test('each protected multiball is restored once',()=>{const g=new Pinball();launch(g);g.balls=[];for(let i=0;i<3;i++){const b=g.addBall(i-1,10.1,0,2);b.saveUntil=4;}g.multiball=true;g.step(1/120);assert.equal(g.balls.length,3);assert.equal(g.lives,3);assert(g.balls.every(b=>b.saveUntil===0));});
+test('bumper contact cooldown does not score each physics step',()=>{const g=new Pinball();launch(g);const b=g.balls[0],m=BUMPERS[0];b.launchLane=false;for(let i=0;i<8;i++){b.x=m.x+m.r;b.z=m.z;b.vx=-1;b.vz=0;g.step(1/120);}assert.equal(g.hitCount,1);assert.equal(g.score,100);});
+test('three different targets activate exactly three balls',()=>{const g=new Pinball();launch(g);for(let i=0;i<3;i++)g.hitTarget(i,g.balls[0]);assert(g.multiball);assert.equal(g.balls.length,3);g.hitTarget(0,g.balls[0]);assert.equal(g.balls.length,3);});
+test('combo grows on different hits and expires',()=>{const g=new Pinball();for(let i=0;i<12;i++)g.award(100,'b'+i,0,0);assert.equal(g.multiplier,5);advance(g,3.2);assert.equal(g.multiplier,1);});
+test('classic ends on last unprotected ball and restart clears state',()=>{const g=new Pinball();launch(g);g.lives=1;const b=g.balls[0];b.saveUntil=0;b.z=11;g.step(1/120);assert.equal(g.state,'gameover');g.reset();assert.equal(g.score,0);assert.equal(g.lives,3);assert.equal(g.balls.length,1);assert.equal(g.state,'ready');});
+test('sprint timer starts on launch and finishes at zero',()=>{const g=new Pinball();g.reset('sprint');advance(g,3);assert.equal(g.remaining,90);launch(g);g.remaining=.015;advance(g,.04);assert.equal(g.state,'gameover');assert.equal(g.remaining,0);});
+test('three rapid nudges tilt; input clears safely',()=>{const g=new Pinball();launch(g);g.nudge();g.nudge();g.nudge();assert(g.tiltUntil>g.time);g.setFlipper(0,true);advance(g,.05);assert.equal(g.flippers[0],0);g.clearInput();assert.deepEqual(g.keys,[false,false]);});
+test('long simulation stays finite and supports repeated launches',()=>{const g=new Pinball();launch(g);for(let i=0;i<120*60;i++){g.setFlipper(0,i%60<15);g.setFlipper(1,i%77<15);g.step(1/120);if(g.balls.some(b=>b.waiting))launch(g,.8);for(const b of g.balls){assert(Number.isFinite(b.x)&&Number.isFinite(b.z));assert(Math.abs(b.x)<7.1);}if(g.state==='gameover')break;}assert(g.score>0);});
+console.log(`${passed} checks passed`);
