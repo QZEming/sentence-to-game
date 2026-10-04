@@ -37,7 +37,7 @@
 | 021 | [SNOWBOWL · 雪人保龄球俱乐部](games/021-snowman-snowball-bowling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/) | [源码](games/021-snowman-snowball-bowling/src/) |
 | 022 | [小熊奇鱼记 · Wonderlake](games/022-bear-strange-fishing/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/022-bear-strange-fishing/) | [源码](games/022-bear-strange-fishing/src/) |
 | 023 | [NEON ASSEMBLY · 机器人乐队](games/023-robot-band-rhythm/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/) | [源码](games/023-robot-band-rhythm/src/) |
-| 024 | [云朵蹦蹦 · Cloud Bunny](games/024-rabbit-cloud-dance/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/) | [源码](games/024-rabbit-cloud-dance/src/) |
+| 024 | [云端蹦迪 · Cloud Hop](games/024-rabbit-cloud-dance/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/) | [源码](games/024-rabbit-cloud-dance/src/) |
 | 025 | [松果节拍 · Pinebeat](games/025-squirrel-pinecone-beat/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/025-squirrel-pinecone-beat/) | [源码](games/025-squirrel-pinecone-beat/src/) |
 | 026 | [Dragonflight · 小龙飞行学院](games/026-dragon-canyon-flight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/) | [源码](games/026-dragon-canyon-flight/src/) |
 | 027 | [鲸落秘境 · WHALEFALL](games/027-whale-deepsea-ruins/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/027-whale-deepsea-ruins/) | [源码](games/027-whale-deepsea-ruins/src/) |

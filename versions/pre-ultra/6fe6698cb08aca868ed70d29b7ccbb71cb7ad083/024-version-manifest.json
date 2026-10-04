@@ -1,0 +1,34 @@
+{
+  "base_commit": "6fe6698cb08aca868ed70d29b7ccbb71cb7ad083",
+  "full_old_history_preserved": true,
+  "game_number": "024",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/018/manifest.json": "a44d78e6005213b22f79e2c3b5f2818c3460f912",
+    "experiments/page-857ec841-top50-gpt6astra/018/prompt.txt": "ca5ba9c4c746eefb01df3d0b5fc401f6c98571e7",
+    "experiments/page-857ec841-top50-gpt6astra/018/provenance.json": "6dece48e323c2c2bbc3a2b5a629de084dc406199",
+    "experiments/page-857ec841-top50-gpt6astra/018/release.json": "cb3fa88ebc264af2c05edb8adf9953ecdf1bfbb8"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/6fe6698cb08aca868ed70d29b7ccbb71cb7ad083",
+  "source_and_published_blobs": {
+    "docs/games/024-rabbit-cloud-dance/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "docs/games/024-rabbit-cloud-dance/game.js": "50cef45b5aa209f96c1905031a7e36e55e6deba3",
+    "docs/games/024-rabbit-cloud-dance/index.html": "45ada606895e0f559041885eccc7e705828151ac",
+    "docs/games/024-rabbit-cloud-dance/style.css": "25d97967e554ecae75cef05c1214fd2442e7369d",
+    "docs/games/024-rabbit-cloud-dance/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/024-rabbit-cloud-dance/README.md": "0930759b4e2bff46a5ec5cfe8d7c6efa0eff46ed",
+    "games/024-rabbit-cloud-dance/RELEASE.md": "efdbab0b250900058c3621670d7bf00b833d18cf",
+    "games/024-rabbit-cloud-dance/check-game.mjs": "7e4b820051302b0c4b4a9d04953c7a59944f0b91",
+    "games/024-rabbit-cloud-dance/dist/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/024-rabbit-cloud-dance/dist/game.js": "50cef45b5aa209f96c1905031a7e36e55e6deba3",
+    "games/024-rabbit-cloud-dance/dist/index.html": "45ada606895e0f559041885eccc7e705828151ac",
+    "games/024-rabbit-cloud-dance/dist/style.css": "25d97967e554ecae75cef05c1214fd2442e7369d",
+    "games/024-rabbit-cloud-dance/dist/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/024-rabbit-cloud-dance/package.json": "c635120f264bbff6001fd55d3d26f2788324731c",
+    "games/024-rabbit-cloud-dance/prompt.txt": "ca5ba9c4c746eefb01df3d0b5fc401f6c98571e7",
+    "games/024-rabbit-cloud-dance/src/THREE-LICENSE.txt": "d33709fbf00f10b928bae20baf72a5c6da92d03a",
+    "games/024-rabbit-cloud-dance/src/game.js": "50cef45b5aa209f96c1905031a7e36e55e6deba3",
+    "games/024-rabbit-cloud-dance/src/index.html": "45ada606895e0f559041885eccc7e705828151ac",
+    "games/024-rabbit-cloud-dance/src/style.css": "25d97967e554ecae75cef05c1214fd2442e7369d",
+    "games/024-rabbit-cloud-dance/src/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}

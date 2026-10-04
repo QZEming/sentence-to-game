@@ -1,0 +1,384 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-024-original-20261004T035101Z",
+  "candidate": "ultra-024",
+  "completed_at": "2026-10-04T03:53:43.162603Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "explicit_external_artifacts": [
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-desktop.png",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-mobile-playing.png",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-mobile.png",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-playing.png",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-result.png",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/verification.json",
+    "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop-deploy.tar.gz"
+  ],
+  "external_evidence_scope": "Only five cloud-hop*.png files and exact verification.json from explicitly authorized task-18/output/playwright, plus exact original package",
+  "file_count": 16,
+  "files": [
+    {
+      "archive_relative_path": "cloud-hop/.openai/hosting.json",
+      "copied_sha256": "1521185b31869f2a8f441fa5b4f3c9d5ab8b94f06e27e4ad3651837f51316262",
+      "final_source_sha256": "1521185b31869f2a8f441fa5b4f3c9d5ab8b94f06e27e4ad3651837f51316262",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791084101868920060,
+      "mtime_utc": "2026-10-04T03:21:41.868920Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "1521185b31869f2a8f441fa5b4f3c9d5ab8b94f06e27e4ad3651837f51316262",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/README.md",
+      "copied_sha256": "16843a47aee7016ce2b341c9d515a87ce0951c7ec2204be98cc71ae62aa07943",
+      "final_source_sha256": "16843a47aee7016ce2b341c9d515a87ce0951c7ec2204be98cc71ae62aa07943",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085180873285764,
+      "mtime_utc": "2026-10-04T03:39:40.873286Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/README.md",
+      "size_bytes": 1886,
+      "source_sha256": "16843a47aee7016ce2b341c9d515a87ce0951c7ec2204be98cc71ae62aa07943",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/audio.js",
+      "copied_sha256": "a9738e33a58dfafd19fe3e07bb3002ab2dbf484115e6d63c13f9130a80e10552",
+      "final_source_sha256": "a9738e33a58dfafd19fe3e07bb3002ab2dbf484115e6d63c13f9130a80e10552",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085395213458784,
+      "mtime_utc": "2026-10-04T03:43:15.213459Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/audio.js",
+      "size_bytes": 4404,
+      "source_sha256": "a9738e33a58dfafd19fe3e07bb3002ab2dbf484115e6d63c13f9130a80e10552",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/game.js",
+      "copied_sha256": "7ea84708ccb74d28178445284fe7c33da00e20c68921a74d40559bb1d6ec5316",
+      "final_source_sha256": "7ea84708ccb74d28178445284fe7c33da00e20c68921a74d40559bb1d6ec5316",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085395213796827,
+      "mtime_utc": "2026-10-04T03:43:15.213797Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/game.js",
+      "size_bytes": 23689,
+      "source_sha256": "7ea84708ccb74d28178445284fe7c33da00e20c68921a74d40559bb1d6ec5316",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/index.html",
+      "copied_sha256": "2e45c596adb191f0358c45ab24da4256055647b9b3ebb6d83abb98f655f01141",
+      "final_source_sha256": "2e45c596adb191f0358c45ab24da4256055647b9b3ebb6d83abb98f655f01141",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791084071136745997,
+      "mtime_utc": "2026-10-04T03:21:11.136746Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/index.html",
+      "size_bytes": 1133,
+      "source_sha256": "2e45c596adb191f0358c45ab24da4256055647b9b3ebb6d83abb98f655f01141",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/scene.js",
+      "copied_sha256": "a9cdcd6d4b889cc49a5730b9fb2a2e3cead2ea33b89e99236e1dcc1afc101135",
+      "final_source_sha256": "a9cdcd6d4b889cc49a5730b9fb2a2e3cead2ea33b89e99236e1dcc1afc101135",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085395213946452,
+      "mtime_utc": "2026-10-04T03:43:15.213946Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/scene.js",
+      "size_bytes": 10867,
+      "source_sha256": "a9cdcd6d4b889cc49a5730b9fb2a2e3cead2ea33b89e99236e1dcc1afc101135",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/style.css",
+      "copied_sha256": "14e473425e90ed0a4353b61c5bf1a09a71ab87f9c9930345d296f3f7dc3511e1",
+      "final_source_sha256": "14e473425e90ed0a4353b61c5bf1a09a71ab87f9c9930345d296f3f7dc3511e1",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085093077409992,
+      "mtime_utc": "2026-10-04T03:38:13.077410Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/style.css",
+      "size_bytes": 21869,
+      "source_sha256": "14e473425e90ed0a4353b61c5bf1a09a71ab87f9c9930345d296f3f7dc3511e1",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085193105477160,
+      "mtime_utc": "2026-10-04T03:39:53.105477Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "cloud-hop/dist/vendor/three.module.min.js",
+      "copied_sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "final_source_sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791084070706823539,
+      "mtime_utc": "2026-10-04T03:21:10.706823Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop/dist/vendor/three.module.min.js",
+      "size_bytes": 687458,
+      "source_sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/cloud-hop-desktop.png",
+      "copied_sha256": "b9291e75d0253ffe674e0887d583f292c8b927fa106d36ffd04f78f85da73313",
+      "final_source_sha256": "b9291e75d0253ffe674e0887d583f292c8b927fa106d36ffd04f78f85da73313",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085132919357298,
+      "mtime_utc": "2026-10-04T03:38:52.919357Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-desktop.png",
+      "size_bytes": 473127,
+      "source_sha256": "b9291e75d0253ffe674e0887d583f292c8b927fa106d36ffd04f78f85da73313",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/cloud-hop-mobile-playing.png",
+      "copied_sha256": "41511f740e1d1c8502cfb0143e473d660446d48b441cebb348e12a981f101383",
+      "final_source_sha256": "41511f740e1d1c8502cfb0143e473d660446d48b441cebb348e12a981f101383",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085443172174926,
+      "mtime_utc": "2026-10-04T03:44:03.172175Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-mobile-playing.png",
+      "size_bytes": 176456,
+      "source_sha256": "41511f740e1d1c8502cfb0143e473d660446d48b441cebb348e12a981f101383",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/cloud-hop-mobile.png",
+      "copied_sha256": "69bd3a2db8ee170a0752c6ae872a7d03d2319cf3eac92cbee824025b109e2fa3",
+      "final_source_sha256": "69bd3a2db8ee170a0752c6ae872a7d03d2319cf3eac92cbee824025b109e2fa3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085438869778259,
+      "mtime_utc": "2026-10-04T03:43:58.869778Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-mobile.png",
+      "size_bytes": 217929,
+      "source_sha256": "69bd3a2db8ee170a0752c6ae872a7d03d2319cf3eac92cbee824025b109e2fa3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/cloud-hop-playing.png",
+      "copied_sha256": "023705b0ac5d8168ccd3fffbb7f4f67e2c9bbc25405aca472f88e3a815200b2e",
+      "final_source_sha256": "023705b0ac5d8168ccd3fffbb7f4f67e2c9bbc25405aca472f88e3a815200b2e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085283495331375,
+      "mtime_utc": "2026-10-04T03:41:23.495331Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-playing.png",
+      "size_bytes": 259024,
+      "source_sha256": "023705b0ac5d8168ccd3fffbb7f4f67e2c9bbc25405aca472f88e3a815200b2e",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/cloud-hop-result.png",
+      "copied_sha256": "e8855ab0234c771f50a328eb3d2bf7bc43e415c83b262c5689c4104527b7a105",
+      "final_source_sha256": "e8855ab0234c771f50a328eb3d2bf7bc43e415c83b262c5689c4104527b7a105",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085438656811805,
+      "mtime_utc": "2026-10-04T03:43:58.656812Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/cloud-hop-result.png",
+      "size_bytes": 191505,
+      "source_sha256": "e8855ab0234c771f50a328eb3d2bf7bc43e415c83b262c5689c4104527b7a105",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/verification.json",
+      "copied_sha256": "1fa666d6ddc6e1b046ef77981b0653e22db7efab43c93ad5b879dbabbe413fcc",
+      "final_source_sha256": "1fa666d6ddc6e1b046ef77981b0653e22db7efab43c93ad5b879dbabbe413fcc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085659918329489,
+      "mtime_utc": "2026-10-04T03:47:39.918330Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/output/playwright/verification.json",
+      "size_bytes": 698,
+      "source_sha256": "1fa666d6ddc6e1b046ef77981b0653e22db7efab43c93ad5b879dbabbe413fcc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/cloud-hop-deploy.tar.gz",
+      "copied_sha256": "173357a34edb94ab7dcb93bbd3522a27fae1d5266a318956693c6f49c912540e",
+      "final_source_sha256": "173357a34edb94ab7dcb93bbd3522a27fae1d5266a318956693c6f49c912540e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791085639981704136,
+      "mtime_utc": "2026-10-04T03:47:19.981704Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop-deploy.tar.gz",
+      "size_bytes": 193888,
+      "source_sha256": "173357a34edb94ab7dcb93bbd3522a27fae1d5266a318956693c6f49c912540e",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_artifacts": {
+    "README.md": {
+      "scope": "archive guide only; not original author evidence",
+      "sha256": "0a9d3116950d0cc820096d68407f0d0f607af145edea94fe7e6e20629c842247",
+      "size_bytes": 2059
+    },
+    "source-manifest.json": {
+      "scope": "archive provenance and hash record; not original author evidence"
+    }
+  },
+  "inventory_fixed_at": "2026-10-04T03:53:43.087886Z",
+  "limitations": [
+    "No builds, tests, game play, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Original publication archive copied as bytes without unpacking or rebuilding.",
+    "Existing reports and screenshots preserved as original evidence only; no independent gameplay verification.",
+    "Only authorized source and exact external evidence scope read; candidate025/026 and publisher not accessed.",
+    "Parent-supplied Astra/ultra/fork-none parameters are not independent historical model or effort authentication.",
+    "One daydream/relax song settlement does not establish all three songs in every mode; savedBest does not establish restoration after refresh.",
+    "Mobile touchLeft/touchRight flags do not establish input implementation, actual device use, touchJump or full-song real-touch playthrough.",
+    "Third-song selection and challenge life-depletion ending do not establish their complete successful playthroughs; WebMCP test browser unsupported.",
+    "Root process observation is separately attributed and is not an author game test."
+  ],
+  "original_request": "实现一个小兔跟着音乐在云朵间跳舞的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_readonly_process_observation": {
+    "candidate025_026_and_publisher_untouched": true,
+    "inspection_scope": [
+      "actual browser roots and cached Chrome",
+      "daemon/node/python/shell cwd",
+      "http.server served_directory"
+    ],
+    "no_candidate024_related_process_roots_or_children": true,
+    "observed_at_utc": "2026-10-04T03:52:37Z",
+    "port4187_listener_present": false,
+    "previous_pid40990": "naturally exited per root observation",
+    "protected_services_alive": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547
+    },
+    "protected_user_chrome_pid": 1036,
+    "provenance": "Root-agent read-only process inspection; not author game testing or independent archival-agent process inspection",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "existing_verification_record": {
+      "full_three_songs_and_all_modes": "not established",
+      "line_17_webmcp": "test browser unsupported",
+      "line_4_full_song": {
+        "maxCombo": 47,
+        "mode": "relax",
+        "perfect": 62,
+        "resultVisible": true,
+        "savedBest": 46400,
+        "score": 46400,
+        "song": "daydream"
+      },
+      "lines_10_to_12_mobile": {
+        "input_implementation_or_real_device": "not documented",
+        "no_overflow_reported": true,
+        "real_device_touch_full_song": "not established",
+        "touchJump_result": "not present",
+        "touchLeft": true,
+        "touchRight": true,
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      "lines_6_to_9": [
+        "initial mute",
+        "pause freezes beat and suspends audio",
+        "resume audio and beat"
+      ],
+      "other_coverage": [
+        "third song selection only",
+        "challenge ends from depleted life",
+        "boost observed during successful play"
+      ],
+      "provenance": "Read-only helper summarized original report; archival agent did not execute gameplay or browser checks",
+      "refresh_best_value_restoration": "not documented",
+      "source_relative_path": "root-artifacts/output/playwright/verification.json"
+    },
+    "provenance": "Author report relayed by parent only; no checks rerun or independently verified; objective validation limits preserved",
+    "reported_passed": [
+      "full-song settlement",
+      "mute",
+      "pause and resume",
+      "touch input"
+    ]
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Parent/author report only; site not accessed; not formal delivery or GitHub publication evidence",
+    "url": "https://cloud-hop-bunny-dance.zemingqiu045.chatgpt.site",
+    "visibility": "private per parent report"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Launch parameters supplied by parent only; actual historical generation model and effort not independently authenticated",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop",
+  "stage": "original",
+  "thread_id": "01a104ec-06cb-756e-8f42-e2173ec7d09f",
+  "title": "Cloud Hop",
+  "total_bytes": 2265120,
+  "turn_id": "01a104ec-2a87-7042-83cd-a9f38e8cb09e"
+}

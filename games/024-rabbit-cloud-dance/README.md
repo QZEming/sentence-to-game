@@ -1,25 +1,35 @@
-# 云朵蹦蹦 · Cloud Bunny
+# 云端蹦迪 · Cloud Hop
 
-原生 JavaScript + Three.js 的 3D 云端音乐游戏。无需构建、无需 API key。
+一个中文 3D 云端节奏游戏。Three.js 渲染小兔与云岛，Web Audio 实时合成三首音乐，没有外部音频或模型依赖。
 
-## 运行
+## 本地启动
 
 ```sh
-python3 -m http.server 4173 --directory dist
+python3 -m http.server 4187 --bind 127.0.0.1 --directory dist
 ```
 
-打开 http://localhost:4173 。请使用支持 WebGL 的现代浏览器，点击开始后启动音乐。
+打开 http://127.0.0.1:4187 。需要支持 WebGL、Web Audio 的现代浏览器。字体网络不可用时自动回退系统字体。
 
 ## 玩法
 
-- ← → 或 A / D 切换三条云路。
-- 空格 / W / ↑ 跳跃；空中再次按下可二段跳。
-- Shift 触发两秒无敌冲刺、范围吸附，九秒冷却。
-- P / Esc 暂停，离开标签页自动暂停。
-- 跟节拍跳跃获得 Perfect 连击和最高五倍积分。
-- 金音符加分，胡萝卜提供一次护盾，雷云造成伤害。
-- 90 秒挑战、无限生命自由漫游、收集与连击任务、S/A/B/C 评级和本机最高纪录。
-- 三个曲目使用 Web Audio 实时合成，不使用受版权保护的录音；场景随选曲切换。
-- 支持触屏操作。最高纪录存储于本机 localStorage。
+- 左右方向键 / A D：在三条云路间换道。
+- 空格 / 点击游戏画布：跳跃。音符来到小兔光圈时踩点。
+- Shift：满能量后，在下一强拍启动 8 拍自动收集和免伤。
+- Esc / P：暂停或恢复；切到后台也会自动暂停。
+- 胡萝卜只需同路经过即可收集；雷云可以换道避开或起跳躲避。
+- 手机底部提供独立的左右与跳跃按钮。
 
-Three.js 0.170.0 随游戏一起存放，使用 MIT 许可，见 dist/THREE-LICENSE.txt。
+轻松模式不会因漏拍结束；挑战与无尽模式有 5 颗爱心。每 10 连击增加一倍得分，上限 4 倍。三首歌曲分别为 96 / 112 / 128 BPM，配有不同的音序与天空颜色。无尽模式持续延伸云路。
+
+本机存储保存各曲目各模式的最佳分数、胡萝卜、装扮和成就。没有远程排行榜或账号数据收集。
+
+## 实现与检查
+
+- `dist/game.js`：游戏状态、谱面、节拍判定、中文界面、键盘与触屏。
+- `dist/scene.js`：Three.js 场景、程序化小兔、粒子、跳跃与舞步。
+- `dist/audio.js`：音乐调度；所有位置与命中时间共用 AudioContext 时间轴。
+- `dist/vendor/three.module.min.js`：固定版本 Three.js 0.169.0，许可见同目录。
+- `window.cloudHop.getState()`：只读状态，方便验证节拍与分数。
+- 对支持 `document.modelContext` 的浏览器注册只读 `read_cloud_hop_game` 工具；不支持时不影响游戏。
+
+静态输出无需构建，直接从 `dist` 托管。站点身份保存在 `.openai/hosting.json`。
