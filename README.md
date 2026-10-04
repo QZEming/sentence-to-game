@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**75 / 100**。
+当前进度：**78 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -89,6 +89,9 @@
 | 073 | [观相 PARALLAX · 视错觉剧场](games/073-parallax-theatre/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/073-parallax-theatre/) | [源码](games/073-parallax-theatre/src/) |
 | 074 | [夜航电台 — FM 89.7](games/074-night-radio/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/074-night-radio/) | [源码](games/074-night-radio/src/) |
 | 075 | [牧野 Meadowbound · 把每一只羊带回家](games/075-meadowbound/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/075-meadowbound/) | [源码](games/075-meadowbound/src/) |
+| 076 | [重启乐园 · Park Revival](games/076-park-revive/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/076-park-revive/) | [源码](games/076-park-revive/src/) |
+| 077 | [异星潜伏 · XENOVOID](games/077-xenovoid/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/077-xenovoid/) | [源码](games/077-xenovoid/src/) |
+| 078 | [山岚邮航 · Skybound Courier](games/078-sky-courier/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/078-sky-courier/) | [源码](games/078-sky-courier/src/) |
 
 ## 生成记录
 

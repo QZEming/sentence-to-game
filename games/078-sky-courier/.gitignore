@@ -1,0 +1,6 @@
+.sites-runtime/
+node_modules/
+output/
+*.tar.gz
+
+.playwright-cli/

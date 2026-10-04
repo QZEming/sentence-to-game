@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-077",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105b8-802f-77a3-9e64-90ec88da7093",
+  "generation_turn_id": "01a105b8-a0fe-774b-903c-a5375ed8acc5",
+  "exact_prompt": "实现一个太空船员通过讨论和行为判断找出混入队伍的外星伪装者的 3D 社交推理游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_verbatim_by_parent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_supplied_explicit_launch_attestation",
+  "scope": "Parent launch parameters only; no independent verification of historical runtime model/effort metadata.",
+  "captured_at": "2026-10-04T07:47:43.803863Z"
+}

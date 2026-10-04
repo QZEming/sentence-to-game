@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "parent_supplied_launch_attestation",
+  "candidate": "ultra-076",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105ae-1238-76c1-ae3b-53cebe8630b2",
+  "generation_turn_id": "01a105ae-3614-719a-a433-876f018a9dfa",
+  "model": "Astra",
+  "effort": "ultra",
+  "fork": "none",
+  "available_original_summary": "原废弃游乐园清洁修复句",
+  "exact_prompt": null,
+  "exact_prompt_status": "not_supplied_by_parent",
+  "scope": "Parent-supplied parameters and summary only; no independent historical runtime or native session export verification.",
+  "independent_historical_runtime_verified": false,
+  "created_at_utc": "2026-10-04T07:43:02.208474Z",
+  "counted_as_original_file": false
+}

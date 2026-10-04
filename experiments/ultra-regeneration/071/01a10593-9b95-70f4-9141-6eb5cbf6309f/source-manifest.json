@@ -74,5 +74,8 @@
   "source_tree_sha256": "499e708e217af001e48bd1b7d8cb246db06bd418e653dd27e60c9fa033c2296e",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-071-original-20261004T070246Z",
   "thread_id": "01a10593-9b95-70f4-9141-6eb5cbf6309f",
-  "turn_id": "01a10593-c0c5-7524-a59c-6c9ca24df301"
+  "turn_id": "01a10593-c0c5-7524-a59c-6c9ca24df301",
+  "original_request": "实现一个群岛使者在不同王国之间谈判缔结联盟的 3D 外交策略游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }

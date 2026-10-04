@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "bytes": 65,
+      "path": ".gitignore",
+      "sha256": "2cceac0be70b26aae0d0df1747976031913360daf0c54d7b5f5e679e88448a7f"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "41ee0e70834bf6845682cae801d257297bc2192c35c905215873902ccbd9179c"
+    },
+    {
+      "bytes": 1828,
+      "path": "README.md",
+      "sha256": "dc2e7bfd76c32084a7a1c37dde551ea641b0b1fbfaf98596a15749bad873548f"
+    },
+    {
+      "bytes": 301,
+      "path": "dist/favicon.svg",
+      "sha256": "26ed6e629fe322455bd064074f2298d46e6e7fe1cb1420c736c9e85b86dd073e"
+    },
+    {
+      "bytes": 32462,
+      "path": "dist/game.js",
+      "sha256": "4cd7ba453e1034cccd7e1537e3fd4379aab9f7fd5bd5750dba34881ac0efa4f8"
+    },
+    {
+      "bytes": 8092,
+      "path": "dist/index.html",
+      "sha256": "fa7d4eb4b640751d130801cbf2ab9d50d6d25c089f2f647a2f06c3d23f99096c"
+    },
+    {
+      "bytes": 6248,
+      "path": "dist/simulation.js",
+      "sha256": "352a9b8939a73fc2c09112b9127f9928e53ce351c86b4b01ed6bf5bfbae8cc2b"
+    },
+    {
+      "bytes": 24304,
+      "path": "dist/style.css",
+      "sha256": "1f621ce64f186f2c46245b5acbb8c2a804436fba4ec55712fee5fabd3ec4def8"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 30248,
+      "path": "dist/world.js",
+      "sha256": "c0a194c9610b7fb8c499310383c1e713c97899b3f59f8283606da21e1fadf64b"
+    },
+    {
+      "bytes": 300816,
+      "path": "original-delivery/sky-courier.tar.gz",
+      "sha256": "cd0a43a4a7043f090b11079227089f0587176a0edc19e142928d63e8258d11c0"
+    },
+    {
+      "bytes": 726623,
+      "path": "output/playwright/desktop-flight.png",
+      "sha256": "20f0f1c5c74b1c5e40426307d0a2d003d6edbd46386ce6c140fe0069f4e57cc8"
+    },
+    {
+      "bytes": 200992,
+      "path": "output/playwright/mobile-settled.png",
+      "sha256": "2dca4d383e2128d735db7ef9d59222a51ee09aa2798a279938fc9facb4061e9c"
+    },
+    {
+      "bytes": 194810,
+      "path": "output/playwright/mobile.png",
+      "sha256": "ba0f029e8923899736b6e6d08c1e66e1536f6ed5777bc09a718b253b61698e4e"
+    },
+    {
+      "bytes": 263,
+      "path": "package.json",
+      "sha256": "f7d533b18e397d9d9e3f0fde64371443e1ebc5f267ef0a40298bb2139277c996"
+    },
+    {
+      "bytes": 954,
+      "path": "server.mjs",
+      "sha256": "a5cfae9313ca2d9702351cef222ed42289895d421794aa6d29827043e248753c"
+    },
+    {
+      "bytes": 3359,
+      "path": "tests/simulation.test.mjs",
+      "sha256": "a60ab4f0c59d2ae4758b3271a476526188d4a42826588900b7584052db62e572"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier",
+  "source_tree_sha256": "8356ba49ad123c4ade69dae5f11700611b681c212bf01a91ece48aec436804a1",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-078-original-20261004T074749Z",
+  "thread_id": "01a105ba-2b6d-7687-a915-a429c1e5c083",
+  "turn_id": "01a105ba-5130-74d6-b952-3501c0c4478a"
+}

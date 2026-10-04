@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {Game} from '../dist/game.js';
+const fresh=()=>{const g=new Game();g.start('normal');return g;};
+let g=fresh();assert.equal(g.crew.length,8);assert.equal(g.crew.filter(c=>c.impostor).length,1);assert.notEqual(g.impostor,0);
+assert.equal(g.completeTask('wires'),false);g.crew[0].room='electrical';assert.equal(g.completeTask('wires'),true);assert.equal(g.completeTask('wires'),false);
+g=fresh();g.vent();g.collectLogs();const ev=g.evidence.find(e=>e.id.startsWith('camera-'));assert.ok(ev);assert.equal(ev.suspect,g.impostor);assert.ok(g.events.find(e=>e.type==='vent'));g.beginMeeting();const t=g.elapsed;g.tick(10);assert.equal(g.elapsed,t);assert.equal(g.shareEvidence(ev.id),true);assert.equal(g.shareEvidence(ev.id),false);const vote=g.vote(g.impostor);assert.equal(vote.expelled,g.impostor);assert.equal(g.vote(1),null);g.resumeAfterVote();assert.equal(g.phase,'ended');assert.equal(g.result.win,true);g.resumeAfterVote();assert.equal(g.phase,'ended');
+g=fresh();g.beginMeeting();const skipped=g.vote(null);assert.equal(skipped.expelled,null);g.resumeAfterVote();assert.equal(g.phase,'explore');assert.ok(g.cooldown>0);assert.equal(g.beginMeeting(),false);
+g=fresh();g.triggerSabotage();assert.equal(g.repair(),false);g.crew[0].room=g.sabotage.room;assert.equal(g.repair(),true);assert.equal(g.sabotage,null);assert.equal(g.oxygen,100);assert.equal(g.repair(),false);
+g=fresh();g.npcTasks=4;for(const task of g.tasks){g.crew[0].room=task.room;g.completeTask(task.id);}assert.equal(g.result.win,true);
+g=fresh();g.triggerSabotage();g.oxygen=.1;g.tick(1);assert.equal(g.result.win,false);
+console.log('PASS: role allocation, task location/idempotence, event-grounded evidence, frozen meetings, evidence deduplication, voting, cooldown, repair, task victory and oxygen defeat');

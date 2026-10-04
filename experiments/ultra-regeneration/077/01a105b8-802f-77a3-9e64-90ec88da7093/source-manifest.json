@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 50,
+      "path": ".gitignore",
+      "sha256": "1d1a351429c51aaffd9ea641000d27bdc8f84b1de0fc906fc9b9f1ba58090091"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "2ec14615e488fbcff2f532eb8bb75b4ced4a51cb2ea7386861609204642ac8e2"
+    },
+    {
+      "bytes": 2184,
+      "path": "README.md",
+      "sha256": "263144d4546d677614f61c0ef9fbfda809411dbd40b369106bc530b37e72bfe7"
+    },
+    {
+      "bytes": 27448,
+      "path": "dist/app.js",
+      "sha256": "c86c5328c929704ad4a584a87f185d3785b4946d73bf8f1cff7123cfbd7652bb"
+    },
+    {
+      "bytes": 13761,
+      "path": "dist/game.js",
+      "sha256": "9f039187b130c0b81f7be13077e08373443f347cb54d6573678d97c045634155"
+    },
+    {
+      "bytes": 6238,
+      "path": "dist/index.html",
+      "sha256": "6d3cead01bc21f0fc4fb0ff0f64d71dbdcbac6297afce1c9fd842564ace63338"
+    },
+    {
+      "bytes": 26503,
+      "path": "dist/style.css",
+      "sha256": "cfd280f7689039cce6e130b845a175fdb52ad3c281dec6ca788699c75b58d204"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 20173,
+      "path": "dist/world.js",
+      "sha256": "0fa885448b57c650908c6f303e1326fcb4ea076c8dd8c498e5b848ab16e1111c"
+    },
+    {
+      "bytes": 215113,
+      "path": "original-delivery/xenovoid-deploy.tar.gz",
+      "sha256": "4e707a9b374e7449d991075e5ad59f33adfab47f48e469e8338c7b0ef485892a"
+    },
+    {
+      "bytes": 626371,
+      "path": "output/playwright/desktop-fixed.png",
+      "sha256": "ff80f32919941b82b0466fb5b5d8b1b7d7d793bba01778b5509062090f9e7a60"
+    },
+    {
+      "bytes": 679632,
+      "path": "output/playwright/desktop.png",
+      "sha256": "5ede8986ad161e2d039223c04960adbb4af77ecb2ceef717654ff9e236709299"
+    },
+    {
+      "bytes": 194835,
+      "path": "output/playwright/mobile.png",
+      "sha256": "afd6df32148afaa11389a36c8238ad78524a85a0bf99794d651af7db8a69f628"
+    },
+    {
+      "bytes": 1829,
+      "path": "tests/game.test.mjs",
+      "sha256": "1c37d7966e67d58c5b3010b73c659a47dfda2b6b1774a3139825334dd501c14e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-46/xenovoid",
+  "source_tree_sha256": "527cc6cebb1aa93f8dc655228b9177e7de4c9052c7af6de031dfd9d3e9b5529d",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-077-original-20261004T074504Z",
+  "thread_id": "01a105b8-802f-77a3-9e64-90ec88da7093",
+  "turn_id": "01a105b8-a0fe-774b-903c-a5375ed8acc5"
+}

@@ -79,5 +79,8 @@
   "source_tree_sha256": "8e8c275ef2227c194bdb082b645b60aa1a006ff0e05d12f178fde66169fadff7",
   "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-072-original-20261004T070548Z",
   "thread_id": "01a10594-f091-759c-a7a0-a78bc2101084",
-  "turn_id": "01a10595-118d-7097-81fc-9480d5f511da"
+  "turn_id": "01a10595-118d-7097-81fc-9480d5f511da",
+  "original_request": "实现一个潜艇艇长依靠声呐寻找敌舰并隐藏自身踪迹的 3D 潜艇战术游戏，尽你所能丰富游戏玩法。",
+  "original_request_evidence": "parent-prompt-completion.json; actual initial input attested by parent; not an author task export",
+  "original_supplied_manifest_original_request": null
 }

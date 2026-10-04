@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "bytes": 46,
+      "path": ".gitignore",
+      "sha256": "9a76dfddcf97d3a06c4227be49c3eb91f8c123bc88850b0dd2fa0766630682a2"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "48f9e2601af4bec01646476373570bbd34751bc80666cfc9efe00af6340a3948"
+    },
+    {
+      "bytes": 2641,
+      "path": "README.md",
+      "sha256": "b3a2869bcfbdde9e2168ceb87fcfe5cebc9f041577f3a1e54b7a88380b5c7c4f"
+    },
+    {
+      "bytes": 49376,
+      "path": "dist/game.js",
+      "sha256": "45b50dfa981d04100631d89a53511f03a2eb12d216371ee9f2bfa4eae349f2e1"
+    },
+    {
+      "bytes": 6189,
+      "path": "dist/index.html",
+      "sha256": "1fd95ebc6f4cd0ba498c1aa858b42f913832a65400b7cddcf689b43883baff2a"
+    },
+    {
+      "bytes": 17533,
+      "path": "dist/style.css",
+      "sha256": "ab6102aba7c2eb0862bf3a5c82d08d5a4fa242896c631ea9799eacd81561daa1"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 38703,
+      "path": "dist/vendor/OrbitControls.js",
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 2615,
+      "path": "original-delivery/edge-checks.cjs",
+      "sha256": "e0f4b08b67cb8cacc7a5ae95dfcb84463e3a97be988e4a61615ceb9606ac60ef"
+    },
+    {
+      "bytes": 780,
+      "path": "original-delivery/inspect.cjs",
+      "sha256": "19b9e9423b6d63902990b84a3adbf3d750b19ffaa942f10a55d8c8a3523be432"
+    },
+    {
+      "bytes": 246579,
+      "path": "original-delivery/mobile-final.png",
+      "sha256": "23348c8db98529e6d3b92e73dc484e4d0541a7a000d3f8ee69c67853978973ae"
+    },
+    {
+      "bytes": 168719,
+      "path": "original-delivery/mobile.png",
+      "sha256": "8df01cd38ef4e21e73a173eac0979cb84c340f30e792f2451ca7e00c6fb88f5a"
+    },
+    {
+      "bytes": 736043,
+      "path": "original-delivery/overview.png",
+      "sha256": "30062c6b093e053d053b7aa9c1bd65f5e9533f17e802214cf6931ad18f668959"
+    },
+    {
+      "bytes": 432156,
+      "path": "original-delivery/park-revival.tar.gz",
+      "sha256": "31ee9d98e7a9da1171b8d407574b2562e4d8073dff30642f74a1801c7c0d8bcf"
+    },
+    {
+      "bytes": 632501,
+      "path": "original-delivery/restored.png",
+      "sha256": "f3183e9bee9f21c8738534b0559771193abead2b0aedfe006c39f0e864b13b78"
+    },
+    {
+      "bytes": 4955,
+      "path": "original-delivery/verify.cjs",
+      "sha256": "ac0ff00c6acc26bf227c3a987d4354c5515885c6f0d993c5fa8d512b132fa8cc"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-45/park-revive",
+  "source_tree_sha256": "3e9d5ccc214707dac0ed9dc7786b9426f5ebb9bd6f122b60f43f8e5b8b5953df",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-076-original-20261004T074301Z",
+  "thread_id": "01a105ae-1238-76c1-ae3b-53cebe8630b2",
+  "turn_id": "01a105ae-3614-719a-a433-876f018a9dfa"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "game_number": "078",
+  "title": "山岚邮航 · Skybound Courier",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "thread_id": "01a105ba-2b6d-7687-a915-a429c1e5c083",
+  "turn_id": "01a105ba-5130-74d6-b952-3501c0c4478a",
+  "model": "Astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "fork": "none",
+  "provenance": "parent_launch_attestation",
+  "scope": "Parent provided original prompt and explicit launch parameters, not independent historical runtime or generation-turn metadata authentication.",
+  "exact_prompt": "实现一个热气球货运员调整载重与高度把货物送到山间村落的 3D 载具运输模拟游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "provided_by_parent",
+  "parent_parameter_statement": "父显式Astra ultra fork none",
+  "model_authenticated_by_read_thread": false,
+  "effort_independently_authenticated": false,
+  "created_at_utc": "2026-10-04T07:47:50.012585Z"
+}

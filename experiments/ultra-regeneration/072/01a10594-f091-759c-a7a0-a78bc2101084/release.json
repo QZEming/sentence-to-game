@@ -1,7 +1,7 @@
 {
   "browser_verification": "pending_separate_publisher_report",
   "deployment": "original_static_dist_byte_exact",
-  "exact_original_prompt_missing": true,
+  "exact_original_prompt_missing": false,
   "fork_turns_requested": "none",
   "full_task_export_status": "pending_supported_parent_export",
   "game_dir": "072-abyss-command",
@@ -63,5 +63,7 @@
   "thinking_requested": "ultra",
   "thread_id": "01a10594-f091-759c-a7a0-a78bc2101084",
   "title": "深海静默 · ABYSS COMMAND",
-  "url": "https://qzemi.cn/sentence-to-game/games/072-abyss-command/"
+  "url": "https://qzemi.cn/sentence-to-game/games/072-abyss-command/",
+  "original_request": "实现一个潜艇艇长依靠声呐寻找敌舰并隐藏自身踪迹的 3D 潜艇战术游戏，尽你所能丰富游戏玩法。",
+  "exact_original_prompt_evidence": "parent-prompt-completion.json"
 }

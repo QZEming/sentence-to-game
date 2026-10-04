@@ -1,0 +1,72 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "078-sky-courier",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "078",
+  "generation_turn_id": "01a105ba-5130-74d6-b952-3501c0c4478a",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "6b7dc0ec401639ed68a02c574251e4059bcc8f84",
+    "full_old_history_preserved": true,
+    "game_number": "078",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/6b7dc0ec401639ed68a02c574251e4059bcc8f84",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 301,
+      "path": "favicon.svg",
+      "sha256": "26ed6e629fe322455bd064074f2298d46e6e7fe1cb1420c736c9e85b86dd073e"
+    },
+    {
+      "bytes": 32462,
+      "path": "game.js",
+      "sha256": "4cd7ba453e1034cccd7e1537e3fd4379aab9f7fd5bd5750dba34881ac0efa4f8"
+    },
+    {
+      "bytes": 8092,
+      "path": "index.html",
+      "sha256": "fa7d4eb4b640751d130801cbf2ab9d50d6d25c089f2f647a2f06c3d23f99096c"
+    },
+    {
+      "bytes": 6248,
+      "path": "simulation.js",
+      "sha256": "352a9b8939a73fc2c09112b9127f9928e53ce351c86b4b01ed6bf5bfbae8cc2b"
+    },
+    {
+      "bytes": 24304,
+      "path": "style.css",
+      "sha256": "1f621ce64f186f2c46245b5acbb8c2a804436fba4ec55712fee5fabd3ec4def8"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 30248,
+      "path": "world.js",
+      "sha256": "c0a194c9610b7fb8c499310383c1e713c97899b3f59f8283606da21e1fadf64b"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "8356ba49ad123c4ade69dae5f11700611b681c212bf01a91ece48aec436804a1",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105ba-2b6d-7687-a915-a429c1e5c083",
+  "title": "山岚邮航 · Skybound Courier",
+  "url": "https://qzemi.cn/sentence-to-game/games/078-sky-courier/"
+}

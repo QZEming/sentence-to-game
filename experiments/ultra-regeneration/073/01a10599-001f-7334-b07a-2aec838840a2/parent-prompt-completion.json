@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个魔术师利用观看角度改变物体大小与空间关系的 3D 视觉错觉解谜游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个魔术师利用观看角度改变物体大小与空间关系的 3D 视觉错觉解谜游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a10599-001f-7334-b07a-2aec838840a2",
+  "author_turn_id": "01a10599-20a4-7372-b4d5-8a1bd9764d1c",
+  "evidence": "explicit parent actual initial creation input attestation; raw null records and full task export gap retained",
+  "received_at": "2026-10-04T08:10:15.374456+00:00",
+  "original_supplied_manifest_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

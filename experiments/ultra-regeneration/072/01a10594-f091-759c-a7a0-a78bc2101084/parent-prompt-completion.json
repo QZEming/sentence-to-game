@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个潜艇艇长依靠声呐寻找敌舰并隐藏自身踪迹的 3D 潜艇战术游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个潜艇艇长依靠声呐寻找敌舰并隐藏自身踪迹的 3D 潜艇战术游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a10594-f091-759c-a7a0-a78bc2101084",
+  "author_turn_id": "01a10595-118d-7097-81fc-9480d5f511da",
+  "evidence": "explicit parent actual initial creation input attestation; raw null records and full task export gap retained",
+  "received_at": "2026-10-04T08:10:15.357185+00:00",
+  "original_supplied_manifest_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

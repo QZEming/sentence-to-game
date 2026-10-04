@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_request": "实现一个群岛使者在不同王国之间谈判缔结联盟的 3D 外交策略游戏，尽你所能丰富游戏玩法。",
+  "prompt": "实现一个群岛使者在不同王国之间谈判缔结联盟的 3D 外交策略游戏，尽你所能丰富游戏玩法。",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a10593-9b95-70f4-9141-6eb5cbf6309f",
+  "author_turn_id": "01a10593-c0c5-7524-a59c-6c9ca24df301",
+  "evidence": "explicit parent actual initial creation input attestation; raw null records and full task export gap retained",
+  "received_at": "2026-10-04T08:10:15.333806+00:00",
+  "original_supplied_manifest_prompt_retained_null": true,
+  "original_launch_attestation_retained_unchanged": true,
+  "full_task_export_status": "pending_supported_parent_export",
+  "server_execution_parameters_independently_authenticated": false
+}

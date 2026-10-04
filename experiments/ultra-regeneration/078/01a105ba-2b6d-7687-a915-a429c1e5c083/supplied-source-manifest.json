@@ -1,0 +1,868 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-078-original-20261004T074749Z",
+  "archive_kind": "original_byte_copy",
+  "bytes": {
+    "evidence": 1122425,
+    "original_parent_tar": 300816,
+    "original_total": 2837372,
+    "source": 1414131
+  },
+  "counts": {
+    "evidence_files": 3,
+    "original_files": 18,
+    "original_parent_tar_files": 1,
+    "source_files": 14
+  },
+  "created_at_utc": "2026-10-04T07:47:49.733296Z",
+  "files": [
+    {
+      "archive_path": "source/.gitignore",
+      "bytes": 65,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 65,
+        "ctime_ns": "1791100069780151806",
+        "ctime_utc": "2026-10-04T07:47:49.780151806Z",
+        "dev": "16777229",
+        "ino": "545904794",
+        "mtime_ns": "1791099098557482374",
+        "mtime_utc": "2026-10-04T07:31:38.557482374Z"
+      },
+      "copy_sha256": "2cceac0be70b26aae0d0df1747976031913360daf0c54d7b5f5e679e88448a7f",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 65,
+        "ctime_ns": "1791099098557482374",
+        "ctime_utc": "2026-10-04T07:31:38.557482374Z",
+        "dev": "16777229",
+        "ino": "545882568",
+        "mtime_ns": "1791099098557482374",
+        "mtime_utc": "2026-10-04T07:31:38.557482374Z"
+      },
+      "source_metadata": {
+        "bytes": 65,
+        "ctime_ns": "1791099098557482374",
+        "ctime_utc": "2026-10-04T07:31:38.557482374Z",
+        "dev": "16777229",
+        "ino": "545882568",
+        "mtime_ns": "1791099098557482374",
+        "mtime_utc": "2026-10-04T07:31:38.557482374Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/.gitignore",
+      "source_sha256": "2cceac0be70b26aae0d0df1747976031913360daf0c54d7b5f5e679e88448a7f"
+    },
+    {
+      "archive_path": "source/.openai/hosting.json",
+      "bytes": 106,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791100069783702064",
+        "ctime_utc": "2026-10-04T07:47:49.783702064Z",
+        "dev": "16777229",
+        "ino": "545904796",
+        "mtime_ns": "1791097686467133269",
+        "mtime_utc": "2026-10-04T07:08:06.467133269Z"
+      },
+      "copy_sha256": "41ee0e70834bf6845682cae801d257297bc2192c35c905215873902ccbd9179c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791097686467393228",
+        "ctime_utc": "2026-10-04T07:08:06.467393228Z",
+        "dev": "16777229",
+        "ino": "545882627",
+        "mtime_ns": "1791097686467133269",
+        "mtime_utc": "2026-10-04T07:08:06.467133269Z"
+      },
+      "source_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791097686467393228",
+        "ctime_utc": "2026-10-04T07:08:06.467393228Z",
+        "dev": "16777229",
+        "ino": "545882627",
+        "mtime_ns": "1791097686467133269",
+        "mtime_utc": "2026-10-04T07:08:06.467133269Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/.openai/hosting.json",
+      "source_sha256": "41ee0e70834bf6845682cae801d257297bc2192c35c905215873902ccbd9179c"
+    },
+    {
+      "archive_path": "source/README.md",
+      "bytes": 1828,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 1828,
+        "ctime_ns": "1791100069785334776",
+        "ctime_utc": "2026-10-04T07:47:49.785334776Z",
+        "dev": "16777229",
+        "ino": "545904797",
+        "mtime_ns": "1791099098551089569",
+        "mtime_utc": "2026-10-04T07:31:38.551089569Z"
+      },
+      "copy_sha256": "dc2e7bfd76c32084a7a1c37dde551ea641b0b1fbfaf98596a15749bad873548f",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 1828,
+        "ctime_ns": "1791099098551089569",
+        "ctime_utc": "2026-10-04T07:31:38.551089569Z",
+        "dev": "16777229",
+        "ino": "545899227",
+        "mtime_ns": "1791099098551089569",
+        "mtime_utc": "2026-10-04T07:31:38.551089569Z"
+      },
+      "source_metadata": {
+        "bytes": 1828,
+        "ctime_ns": "1791099098551089569",
+        "ctime_utc": "2026-10-04T07:31:38.551089569Z",
+        "dev": "16777229",
+        "ino": "545899227",
+        "mtime_ns": "1791099098551089569",
+        "mtime_utc": "2026-10-04T07:31:38.551089569Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/README.md",
+      "source_sha256": "dc2e7bfd76c32084a7a1c37dde551ea641b0b1fbfaf98596a15749bad873548f"
+    },
+    {
+      "archive_path": "source/dist/favicon.svg",
+      "bytes": 301,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 301,
+        "ctime_ns": "1791100069786839446",
+        "ctime_utc": "2026-10-04T07:47:49.786839446Z",
+        "dev": "16777229",
+        "ino": "545904799",
+        "mtime_ns": "1791097903042083509",
+        "mtime_utc": "2026-10-04T07:11:43.042083509Z"
+      },
+      "copy_sha256": "26ed6e629fe322455bd064074f2298d46e6e7fe1cb1420c736c9e85b86dd073e",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 301,
+        "ctime_ns": "1791097903042083509",
+        "ctime_utc": "2026-10-04T07:11:43.042083509Z",
+        "dev": "16777229",
+        "ino": "545883048",
+        "mtime_ns": "1791097903042083509",
+        "mtime_utc": "2026-10-04T07:11:43.042083509Z"
+      },
+      "source_metadata": {
+        "bytes": 301,
+        "ctime_ns": "1791097903042083509",
+        "ctime_utc": "2026-10-04T07:11:43.042083509Z",
+        "dev": "16777229",
+        "ino": "545883048",
+        "mtime_ns": "1791097903042083509",
+        "mtime_utc": "2026-10-04T07:11:43.042083509Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/favicon.svg",
+      "source_sha256": "26ed6e629fe322455bd064074f2298d46e6e7fe1cb1420c736c9e85b86dd073e"
+    },
+    {
+      "archive_path": "source/dist/game.js",
+      "bytes": 32462,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 32462,
+        "ctime_ns": "1791100069790220453",
+        "ctime_utc": "2026-10-04T07:47:49.790220453Z",
+        "dev": "16777229",
+        "ino": "545904800",
+        "mtime_ns": "1791099004812749261",
+        "mtime_utc": "2026-10-04T07:30:04.812749261Z"
+      },
+      "copy_sha256": "4cd7ba453e1034cccd7e1537e3fd4379aab9f7fd5bd5750dba34881ac0efa4f8",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 32462,
+        "ctime_ns": "1791099004812749261",
+        "ctime_utc": "2026-10-04T07:30:04.812749261Z",
+        "dev": "16777229",
+        "ino": "545895350",
+        "mtime_ns": "1791099004812749261",
+        "mtime_utc": "2026-10-04T07:30:04.812749261Z"
+      },
+      "source_metadata": {
+        "bytes": 32462,
+        "ctime_ns": "1791099004812749261",
+        "ctime_utc": "2026-10-04T07:30:04.812749261Z",
+        "dev": "16777229",
+        "ino": "545895350",
+        "mtime_ns": "1791099004812749261",
+        "mtime_utc": "2026-10-04T07:30:04.812749261Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/game.js",
+      "source_sha256": "4cd7ba453e1034cccd7e1537e3fd4379aab9f7fd5bd5750dba34881ac0efa4f8"
+    },
+    {
+      "archive_path": "source/dist/index.html",
+      "bytes": 8092,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 8092,
+        "ctime_ns": "1791100069803809399",
+        "ctime_utc": "2026-10-04T07:47:49.803809399Z",
+        "dev": "16777229",
+        "ino": "545904801",
+        "mtime_ns": "1791097903034383742",
+        "mtime_utc": "2026-10-04T07:11:43.034383742Z"
+      },
+      "copy_sha256": "fa7d4eb4b640751d130801cbf2ab9d50d6d25c089f2f647a2f06c3d23f99096c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 8092,
+        "ctime_ns": "1791097903034383742",
+        "ctime_utc": "2026-10-04T07:11:43.034383742Z",
+        "dev": "16777229",
+        "ino": "545883044",
+        "mtime_ns": "1791097903034383742",
+        "mtime_utc": "2026-10-04T07:11:43.034383742Z"
+      },
+      "source_metadata": {
+        "bytes": 8092,
+        "ctime_ns": "1791097903034383742",
+        "ctime_utc": "2026-10-04T07:11:43.034383742Z",
+        "dev": "16777229",
+        "ino": "545883044",
+        "mtime_ns": "1791097903034383742",
+        "mtime_utc": "2026-10-04T07:11:43.034383742Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/index.html",
+      "source_sha256": "fa7d4eb4b640751d130801cbf2ab9d50d6d25c089f2f647a2f06c3d23f99096c"
+    },
+    {
+      "archive_path": "source/dist/simulation.js",
+      "bytes": 6248,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 6248,
+        "ctime_ns": "1791100069805492360",
+        "ctime_utc": "2026-10-04T07:47:49.805492360Z",
+        "dev": "16777229",
+        "ino": "545904802",
+        "mtime_ns": "1791098814463603566",
+        "mtime_utc": "2026-10-04T07:26:54.463603566Z"
+      },
+      "copy_sha256": "352a9b8939a73fc2c09112b9127f9928e53ce351c86b4b01ed6bf5bfbae8cc2b",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 6248,
+        "ctime_ns": "1791098814463603566",
+        "ctime_utc": "2026-10-04T07:26:54.463603566Z",
+        "dev": "16777229",
+        "ino": "545883042",
+        "mtime_ns": "1791098814463603566",
+        "mtime_utc": "2026-10-04T07:26:54.463603566Z"
+      },
+      "source_metadata": {
+        "bytes": 6248,
+        "ctime_ns": "1791098814463603566",
+        "ctime_utc": "2026-10-04T07:26:54.463603566Z",
+        "dev": "16777229",
+        "ino": "545883042",
+        "mtime_ns": "1791098814463603566",
+        "mtime_utc": "2026-10-04T07:26:54.463603566Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/simulation.js",
+      "source_sha256": "352a9b8939a73fc2c09112b9127f9928e53ce351c86b4b01ed6bf5bfbae8cc2b"
+    },
+    {
+      "archive_path": "source/dist/style.css",
+      "bytes": 24304,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 24304,
+        "ctime_ns": "1791100069807232031",
+        "ctime_utc": "2026-10-04T07:47:49.807232031Z",
+        "dev": "16777229",
+        "ino": "545904803",
+        "mtime_ns": "1791099098528956105",
+        "mtime_utc": "2026-10-04T07:31:38.528956105Z"
+      },
+      "copy_sha256": "1f621ce64f186f2c46245b5acbb8c2a804436fba4ec55712fee5fabd3ec4def8",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 24304,
+        "ctime_ns": "1791099098528956105",
+        "ctime_utc": "2026-10-04T07:31:38.528956105Z",
+        "dev": "16777229",
+        "ino": "545891134",
+        "mtime_ns": "1791099098528956105",
+        "mtime_utc": "2026-10-04T07:31:38.528956105Z"
+      },
+      "source_metadata": {
+        "bytes": 24304,
+        "ctime_ns": "1791099098528956105",
+        "ctime_utc": "2026-10-04T07:31:38.528956105Z",
+        "dev": "16777229",
+        "ino": "545891134",
+        "mtime_ns": "1791099098528956105",
+        "mtime_utc": "2026-10-04T07:31:38.528956105Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/style.css",
+      "source_sha256": "1f621ce64f186f2c46245b5acbb8c2a804436fba4ec55712fee5fabd3ec4def8"
+    },
+    {
+      "archive_path": "source/dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791100069811913166",
+        "ctime_utc": "2026-10-04T07:47:49.811913166Z",
+        "dev": "16777229",
+        "ino": "545904805",
+        "mtime_ns": "1791097609539461278",
+        "mtime_utc": "2026-10-04T07:06:49.539461278Z"
+      },
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791097609539461278",
+        "ctime_utc": "2026-10-04T07:06:49.539461278Z",
+        "dev": "16777229",
+        "ino": "545882467",
+        "mtime_ns": "1791097609539461278",
+        "mtime_utc": "2026-10-04T07:06:49.539461278Z"
+      },
+      "source_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791097609539461278",
+        "ctime_utc": "2026-10-04T07:06:49.539461278Z",
+        "dev": "16777229",
+        "ino": "545882467",
+        "mtime_ns": "1791097609539461278",
+        "mtime_utc": "2026-10-04T07:06:49.539461278Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/vendor/THREE-LICENSE.txt",
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.module.js",
+      "bytes": 1304820,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 1304820,
+        "ctime_ns": "1791100069813889211",
+        "ctime_utc": "2026-10-04T07:47:49.813889211Z",
+        "dev": "16777229",
+        "ino": "545904806",
+        "mtime_ns": "1791097609100977469",
+        "mtime_utc": "2026-10-04T07:06:49.100977469Z"
+      },
+      "copy_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 1304820,
+        "ctime_ns": "1791097609100977469",
+        "ctime_utc": "2026-10-04T07:06:49.100977469Z",
+        "dev": "16777229",
+        "ino": "545882366",
+        "mtime_ns": "1791097609100977469",
+        "mtime_utc": "2026-10-04T07:06:49.100977469Z"
+      },
+      "source_metadata": {
+        "bytes": 1304820,
+        "ctime_ns": "1791097609100977469",
+        "ctime_utc": "2026-10-04T07:06:49.100977469Z",
+        "dev": "16777229",
+        "ino": "545882366",
+        "mtime_ns": "1791097609100977469",
+        "mtime_utc": "2026-10-04T07:06:49.100977469Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/vendor/three.module.js",
+      "source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "archive_path": "source/dist/world.js",
+      "bytes": 30248,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 30248,
+        "ctime_ns": "1791100069963710781",
+        "ctime_utc": "2026-10-04T07:47:49.963710781Z",
+        "dev": "16777229",
+        "ino": "545904807",
+        "mtime_ns": "1791098340930355584",
+        "mtime_utc": "2026-10-04T07:19:00.930355584Z"
+      },
+      "copy_sha256": "c0a194c9610b7fb8c499310383c1e713c97899b3f59f8283606da21e1fadf64b",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 30248,
+        "ctime_ns": "1791098340930355584",
+        "ctime_utc": "2026-10-04T07:19:00.930355584Z",
+        "dev": "16777229",
+        "ino": "545889434",
+        "mtime_ns": "1791098340930355584",
+        "mtime_utc": "2026-10-04T07:19:00.930355584Z"
+      },
+      "source_metadata": {
+        "bytes": 30248,
+        "ctime_ns": "1791098340930355584",
+        "ctime_utc": "2026-10-04T07:19:00.930355584Z",
+        "dev": "16777229",
+        "ino": "545889434",
+        "mtime_ns": "1791098340930355584",
+        "mtime_utc": "2026-10-04T07:19:00.930355584Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/dist/world.js",
+      "source_sha256": "c0a194c9610b7fb8c499310383c1e713c97899b3f59f8283606da21e1fadf64b"
+    },
+    {
+      "archive_path": "source/output/playwright/desktop-flight.png",
+      "bytes": 726623,
+      "category": "evidence",
+      "copy_metadata": {
+        "bytes": 726623,
+        "ctime_ns": "1791100069972138632",
+        "ctime_utc": "2026-10-04T07:47:49.972138632Z",
+        "dev": "16777229",
+        "ino": "545904810",
+        "mtime_ns": "1791099330713301229",
+        "mtime_utc": "2026-10-04T07:35:30.713301229Z"
+      },
+      "copy_sha256": "20f0f1c5c74b1c5e40426307d0a2d003d6edbd46386ce6c140fe0069f4e57cc8",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 726623,
+        "ctime_ns": "1791099330713301229",
+        "ctime_utc": "2026-10-04T07:35:30.713301229Z",
+        "dev": "16777229",
+        "ino": "545902785",
+        "mtime_ns": "1791099330713301229",
+        "mtime_utc": "2026-10-04T07:35:30.713301229Z"
+      },
+      "source_metadata": {
+        "bytes": 726623,
+        "ctime_ns": "1791099330713301229",
+        "ctime_utc": "2026-10-04T07:35:30.713301229Z",
+        "dev": "16777229",
+        "ino": "545902785",
+        "mtime_ns": "1791099330713301229",
+        "mtime_utc": "2026-10-04T07:35:30.713301229Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/output/playwright/desktop-flight.png",
+      "source_sha256": "20f0f1c5c74b1c5e40426307d0a2d003d6edbd46386ce6c140fe0069f4e57cc8"
+    },
+    {
+      "archive_path": "source/output/playwright/mobile-settled.png",
+      "bytes": 200992,
+      "category": "evidence",
+      "copy_metadata": {
+        "bytes": 200992,
+        "ctime_ns": "1791100069975354722",
+        "ctime_utc": "2026-10-04T07:47:49.975354722Z",
+        "dev": "16777229",
+        "ino": "545904811",
+        "mtime_ns": "1791099254564618398",
+        "mtime_utc": "2026-10-04T07:34:14.564618398Z"
+      },
+      "copy_sha256": "2dca4d383e2128d735db7ef9d59222a51ee09aa2798a279938fc9facb4061e9c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 200992,
+        "ctime_ns": "1791099254564618398",
+        "ctime_utc": "2026-10-04T07:34:14.564618398Z",
+        "dev": "16777229",
+        "ino": "545901100",
+        "mtime_ns": "1791099254564618398",
+        "mtime_utc": "2026-10-04T07:34:14.564618398Z"
+      },
+      "source_metadata": {
+        "bytes": 200992,
+        "ctime_ns": "1791099254564618398",
+        "ctime_utc": "2026-10-04T07:34:14.564618398Z",
+        "dev": "16777229",
+        "ino": "545901100",
+        "mtime_ns": "1791099254564618398",
+        "mtime_utc": "2026-10-04T07:34:14.564618398Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/output/playwright/mobile-settled.png",
+      "source_sha256": "2dca4d383e2128d735db7ef9d59222a51ee09aa2798a279938fc9facb4061e9c"
+    },
+    {
+      "archive_path": "source/output/playwright/mobile.png",
+      "bytes": 194810,
+      "category": "evidence",
+      "copy_metadata": {
+        "bytes": 194810,
+        "ctime_ns": "1791100069978778521",
+        "ctime_utc": "2026-10-04T07:47:49.978778521Z",
+        "dev": "16777229",
+        "ino": "545904812",
+        "mtime_ns": "1791099180449698485",
+        "mtime_utc": "2026-10-04T07:33:00.449698485Z"
+      },
+      "copy_sha256": "ba0f029e8923899736b6e6d08c1e66e1536f6ed5777bc09a718b253b61698e4e",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 194810,
+        "ctime_ns": "1791099180449698485",
+        "ctime_utc": "2026-10-04T07:33:00.449698485Z",
+        "dev": "16777229",
+        "ino": "545900946",
+        "mtime_ns": "1791099180449698485",
+        "mtime_utc": "2026-10-04T07:33:00.449698485Z"
+      },
+      "source_metadata": {
+        "bytes": 194810,
+        "ctime_ns": "1791099180449698485",
+        "ctime_utc": "2026-10-04T07:33:00.449698485Z",
+        "dev": "16777229",
+        "ino": "545900946",
+        "mtime_ns": "1791099180449698485",
+        "mtime_utc": "2026-10-04T07:33:00.449698485Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/output/playwright/mobile.png",
+      "source_sha256": "ba0f029e8923899736b6e6d08c1e66e1536f6ed5777bc09a718b253b61698e4e"
+    },
+    {
+      "archive_path": "source/package.json",
+      "bytes": 263,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 263,
+        "ctime_ns": "1791100069981217277",
+        "ctime_utc": "2026-10-04T07:47:49.981217277Z",
+        "dev": "16777229",
+        "ino": "545904813",
+        "mtime_ns": "1791097650078023486",
+        "mtime_utc": "2026-10-04T07:07:30.078023486Z"
+      },
+      "copy_sha256": "f7d533b18e397d9d9e3f0fde64371443e1ebc5f267ef0a40298bb2139277c996",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 263,
+        "ctime_ns": "1791097650078023486",
+        "ctime_utc": "2026-10-04T07:07:30.078023486Z",
+        "dev": "16777229",
+        "ino": "545882544",
+        "mtime_ns": "1791097650078023486",
+        "mtime_utc": "2026-10-04T07:07:30.078023486Z"
+      },
+      "source_metadata": {
+        "bytes": 263,
+        "ctime_ns": "1791097650078023486",
+        "ctime_utc": "2026-10-04T07:07:30.078023486Z",
+        "dev": "16777229",
+        "ino": "545882544",
+        "mtime_ns": "1791097650078023486",
+        "mtime_utc": "2026-10-04T07:07:30.078023486Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/package.json",
+      "source_sha256": "f7d533b18e397d9d9e3f0fde64371443e1ebc5f267ef0a40298bb2139277c996"
+    },
+    {
+      "archive_path": "source/server.mjs",
+      "bytes": 954,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 954,
+        "ctime_ns": "1791100069981926861",
+        "ctime_utc": "2026-10-04T07:47:49.981926861Z",
+        "dev": "16777229",
+        "ino": "545904814",
+        "mtime_ns": "1791098830922777093",
+        "mtime_utc": "2026-10-04T07:27:10.922777093Z"
+      },
+      "copy_sha256": "a5cfae9313ca2d9702351cef222ed42289895d421794aa6d29827043e248753c",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 954,
+        "ctime_ns": "1791098830922777093",
+        "ctime_utc": "2026-10-04T07:27:10.922777093Z",
+        "dev": "16777229",
+        "ino": "545882564",
+        "mtime_ns": "1791098830922777093",
+        "mtime_utc": "2026-10-04T07:27:10.922777093Z"
+      },
+      "source_metadata": {
+        "bytes": 954,
+        "ctime_ns": "1791098830922777093",
+        "ctime_utc": "2026-10-04T07:27:10.922777093Z",
+        "dev": "16777229",
+        "ino": "545882564",
+        "mtime_ns": "1791098830922777093",
+        "mtime_utc": "2026-10-04T07:27:10.922777093Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/server.mjs",
+      "source_sha256": "a5cfae9313ca2d9702351cef222ed42289895d421794aa6d29827043e248753c"
+    },
+    {
+      "archive_path": "source/tests/simulation.test.mjs",
+      "bytes": 3359,
+      "category": "source",
+      "copy_metadata": {
+        "bytes": 3359,
+        "ctime_ns": "1791100069987357290",
+        "ctime_utc": "2026-10-04T07:47:49.987357290Z",
+        "dev": "16777229",
+        "ino": "545904816",
+        "mtime_ns": "1791098814484260568",
+        "mtime_utc": "2026-10-04T07:26:54.484260568Z"
+      },
+      "copy_sha256": "a60ab4f0c59d2ae4758b3271a476526188d4a42826588900b7584052db62e572",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 3359,
+        "ctime_ns": "1791098814484260568",
+        "ctime_utc": "2026-10-04T07:26:54.484260568Z",
+        "dev": "16777229",
+        "ino": "545897165",
+        "mtime_ns": "1791098814484260568",
+        "mtime_utc": "2026-10-04T07:26:54.484260568Z"
+      },
+      "source_metadata": {
+        "bytes": 3359,
+        "ctime_ns": "1791098814484260568",
+        "ctime_utc": "2026-10-04T07:26:54.484260568Z",
+        "dev": "16777229",
+        "ino": "545897165",
+        "mtime_ns": "1791098814484260568",
+        "mtime_utc": "2026-10-04T07:26:54.484260568Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier/tests/simulation.test.mjs",
+      "source_sha256": "a60ab4f0c59d2ae4758b3271a476526188d4a42826588900b7584052db62e572"
+    },
+    {
+      "archive_path": "original-parent/sky-courier.tar.gz",
+      "bytes": 300816,
+      "category": "original_parent_tar",
+      "copy_metadata": {
+        "bytes": 300816,
+        "ctime_ns": "1791100069988964335",
+        "ctime_utc": "2026-10-04T07:47:49.988964335Z",
+        "dev": "16777229",
+        "ino": "545904818",
+        "mtime_ns": "1791099388103085424",
+        "mtime_utc": "2026-10-04T07:36:28.103085424Z"
+      },
+      "copy_sha256": "cd0a43a4a7043f090b11079227089f0587176a0edc19e142928d63e8258d11c0",
+      "source_bytes_mtime_ctime_identity_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_final_metadata": {
+        "bytes": 300816,
+        "ctime_ns": "1791099388103085424",
+        "ctime_utc": "2026-10-04T07:36:28.103085424Z",
+        "dev": "16777229",
+        "ino": "545903004",
+        "mtime_ns": "1791099388103085424",
+        "mtime_utc": "2026-10-04T07:36:28.103085424Z"
+      },
+      "source_metadata": {
+        "bytes": 300816,
+        "ctime_ns": "1791099388103085424",
+        "ctime_utc": "2026-10-04T07:36:28.103085424Z",
+        "dev": "16777229",
+        "ino": "545903004",
+        "mtime_ns": "1791099388103085424",
+        "mtime_utc": "2026-10-04T07:36:28.103085424Z"
+      },
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier.tar.gz",
+      "source_sha256": "cd0a43a4a7043f090b11079227089f0587176a0edc19e142928d63e8258d11c0"
+    }
+  ],
+  "game_number": "078",
+  "generation_provenance": {
+    "canonical_model_name": "gpt-6-astra",
+    "created_at_utc": "2026-10-04T07:47:50.012585Z",
+    "effort": "ultra",
+    "effort_independently_authenticated": false,
+    "exact_prompt": "实现一个热气球货运员调整载重与高度把货物送到山间村落的 3D 载具运输模拟游戏，尽你所能丰富游戏玩法。",
+    "exact_prompt_status": "provided_by_parent",
+    "fork": "none",
+    "game_number": "078",
+    "model": "Astra",
+    "model_authenticated_by_read_thread": false,
+    "parent_parameter_statement": "父显式Astra ultra fork none",
+    "provenance": "parent_launch_attestation",
+    "schema_version": 1,
+    "scope": "Parent provided original prompt and explicit launch parameters, not independent historical runtime or generation-turn metadata authentication.",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "thread_id": "01a105ba-2b6d-7687-a915-a429c1e5c083",
+    "title": "山岚邮航 · Skybound Courier",
+    "turn_id": "01a105ba-5130-74d6-b952-3501c0c4478a"
+  },
+  "integrity": {
+    "all_original_bytes_mtime_hash_unchanged": true,
+    "all_original_ctime_dev_ino_unchanged": true,
+    "all_source_copy_sha256_match": true,
+    "final_verified_at_utc": "2026-10-04T07:47:50.032266Z",
+    "fixed_eligible_source_file_set_unchanged": true,
+    "fixed_parent_file_set_unchanged": true,
+    "metadata_integer_encoding": "mtime_ns, ctime_ns, dev, ino are decimal strings; baseline/copy/invariance compared entirely in Python as exact integers",
+    "original_parent_tar_sha256": "cd0a43a4a7043f090b11079227089f0587176a0edc19e142928d63e8258d11c0"
+  },
+  "metadata_updated_at_utc": "2026-10-04T07:48:30.580600Z",
+  "parent_launch_record": "parent-launch-record.json",
+  "parent_process_observation": {
+    "archivist_process_actions": false,
+    "dedicated_preview_or_browser_found": false,
+    "dedicated_roots_or_descendants_found": false,
+    "observed_at_utc": "2026-10-04T07:46:21.201553Z",
+    "port_4173_listener": {
+      "host": "127.0.0.1",
+      "ownership": "original user node; not game078",
+      "pid": 2560
+    },
+    "port_4187_has_listener": false,
+    "preserved_services": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 1036,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2547,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2554,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 2560,
+        "state": "S"
+      }
+    ],
+    "protected_listener_ports": [
+      5173,
+      4827,
+      4173
+    ],
+    "resource_sampling": false,
+    "scope_note": "Parent process observation, not browser/game validation.",
+    "signals_sent": false,
+    "source": "parent_read_only_ps_lsof_exact_task47_source_parent_cwd_argv_name_descendants; not independently repeated"
+  },
+  "schema_version": 1,
+  "selection": {
+    "excluded_names": [
+      ".DS_Store",
+      ".agents",
+      ".aws",
+      ".cache",
+      ".codex",
+      ".git",
+      ".npm",
+      ".openai-runtime",
+      ".playwright-cli",
+      ".pytest_cache",
+      ".sites-runtime",
+      ".vite",
+      "__pycache__",
+      "archive",
+      "archives",
+      "cache",
+      "caches",
+      "node_modules",
+      "playwright-report",
+      "runtime",
+      "session",
+      "sessions",
+      "test-results"
+    ],
+    "fixed_eligible_source_paths": [
+      ".gitignore",
+      ".openai/hosting.json",
+      "README.md",
+      "dist/favicon.svg",
+      "dist/game.js",
+      "dist/index.html",
+      "dist/simulation.js",
+      "dist/style.css",
+      "dist/vendor/THREE-LICENSE.txt",
+      "dist/vendor/three.module.js",
+      "dist/world.js",
+      "output/playwright/desktop-flight.png",
+      "output/playwright/mobile-settled.png",
+      "output/playwright/mobile.png",
+      "package.json",
+      "server.mjs",
+      "tests/simulation.test.mjs"
+    ],
+    "original_parent_tar": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier.tar.gz",
+    "source_png_names": [
+      "desktop-flight.png",
+      "mobile-settled.png",
+      "mobile.png"
+    ],
+    "symlinks_and_symlink_ancestors_excluded": true,
+    "tar_extracted_or_repacked": false
+  },
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-47/sky-courier",
+  "title": "山岚邮航 · Skybound Courier",
+  "validation_evidence": {
+    "author_claims_evidence": "parent_handoff; no saved stdout report",
+    "browser_test_hook": {
+      "details": "URL ?test exposes window.__game with mutable state, start, tick, setState and UI helpers. No saved driver identifies whether browser validation called this hook.",
+      "evidence": "dist/game.js:61"
+    },
+    "limits": [
+      "Six test pass, 20-route checks and desktop/mobile interaction claims are parent attestations; no preserved stdout or browser input driver found.",
+      "Direct fixture assertions and rule API simulated flights are not actual keyboard or pointer flight completion.",
+      "Three screenshots were copied without opening; they do not establish the input sequence.",
+      "Mobile viewport dimensions, synthetic touch versus physical device, complete gameplay, audio verification and error capture scope are unknown.",
+      "Actual preview port is not established from source docs; original user service on 4173 must be preserved."
+    ],
+    "method": "static read only; no test/build/game/browser execution",
+    "preview": {
+      "actual_preview_port": "unknown",
+      "alternative_command": "PORT=4187 npm start",
+      "command": "npm start -> node server.mjs",
+      "default_host": "127.0.0.1",
+      "default_port": 4173,
+      "evidence": "README.md:11; package.json:1; server.mjs:7"
+    },
+    "screenshots": [
+      {
+        "bytes": 726623,
+        "file": "desktop-flight.png",
+        "opened": false
+      },
+      {
+        "bytes": 200992,
+        "file": "mobile-settled.png",
+        "opened": false
+      },
+      {
+        "bytes": 194810,
+        "file": "mobile.png",
+        "opened": false
+      }
+    ],
+    "six_tests": {
+      "details": "Production rule API tests. Frame-rate/takeoff, load, delivery gates, damage, economics/rescue use targeted fixtures including direct coordinates/state. One route uses normal newState, assist and per-frame burn/vent controller, without teleporting that route; still an API strategy simulation.",
+      "evidence": "tests/simulation.test.mjs:8-13"
+    },
+    "test_script": "source/tests/simulation.test.mjs",
+    "twenty_routes": {
+      "claim": "20 routes checked",
+      "evidence": "parent_attestation_only",
+      "saved_driver_or_result_found": false
+    }
+  }
+}

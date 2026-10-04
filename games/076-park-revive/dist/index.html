@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d38"><meta name="description" content="用一束清水唤醒被遗忘的游乐园。3D 清洁、设施修复、探索与升级。"><title>重启乐园 · Park Revival</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%231a6157'/%3E%3Cpath d='M24 7C20 16 12 22 12 29a12 12 0 0024 0C36 22 28 16 24 7z' fill='%23dff9e9'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head>
+<body>
+<div id="world" aria-label="交互式三维游乐园"><div id="loading"><div class="loading-wheel">✳</div><h2>正在唤醒乐园</h2><p>擦去时光，让快乐重新转动。</p></div></div>
+<div class="vignette"></div>
+<header class="topbar"><a class="brand" href="#" aria-label="重启乐园首页"><span class="brand-mark">✳</span><span><b>重启乐园</b><small>PARK REVIVAL</small></span></a><div class="day-pill"><span class="sun">☀</span> 第 <span id="day">01</span> 天 <span class="divider"></span><span>夕阳湾游乐园</span></div><div class="top-actions"><span class="money"><span>✦</span><b id="coins">120</b><small>修复币</small></span><button class="icon-btn" id="sound-btn" title="开启环境音" aria-label="开启环境音">♫</button><button class="icon-btn" id="help-btn" title="操作指南" aria-label="操作指南">?</button><button class="icon-btn" id="pause-btn" title="暂停" aria-label="暂停">Ⅱ</button></div></header>
+<main class="interface">
+<aside class="mission panel">
+<div class="eyebrow"><span class="live-dot"></span> 乐园修复计划 <span class="chapter">CHAPTER 01</span></div>
+<h1>让快乐，<br>重新转动。</h1><p class="intro">一束清水，一点耐心。<br>找回这座乐园曾经的模样。</p>
+<div class="overall-title"><span>园区焕新进度</span><strong id="overall">0<small>%</small></strong></div><div class="progress"><i id="overall-bar"></i></div><div class="progress-caption"><span id="restored-count">0 / 5 设施已恢复</span><span id="save-state">本地自动保存</span></div>
+<button id="mission-toggle" class="mission-toggle" aria-expanded="false">展开修复清单 ▾</button><div class="section-label">修复清单 <span>点击设施前往</span></div>
+<div id="facility-list"></div>
+<button class="map-button" id="overview-btn"><span>⌘</span> 园区总览 <kbd>M</kbd></button>
+<div class="daily"><span class="daily-icon">✧</span><div><b>被遗忘的小惊喜</b><p>收集园区内的星星纪念章 <span id="collect-count">0/5</span></p></div></div>
+</aside>
+<div class="scene-label"><span class="scene-tag">清洁 · 修复 · 新生</span><span>EST. 1986</span></div>
+<aside class="right-panel"><div class="weather"><span>☀</span><div><b>适合焕新的好天气</b><small>24°C · 微风 · 日落时分</small></div></div><div class="mini-map" id="mini-map"><div class="map-cross"></div><span class="map-n">N</span><button data-map="0" style="left:29%;top:54%" title="旋转木马">①</button><button data-map="1" style="left:68%;top:28%" title="摩天轮">②</button><button data-map="2" style="left:25%;top:24%" title="海盗船">③</button><button data-map="3" style="left:77%;top:72%" title="售票亭">④</button><button data-map="4" style="left:49%;top:75%" title="许愿喷泉">⑤</button><span class="map-player">◆</span><span class="map-title">夕阳湾 · 园区地图</span></div><button id="view-btn" class="view-button">◉ 漫步模式 <kbd>V</kbd></button><button id="photo-btn" class="view-button">▣ 拍照留念 <kbd>P</kbd></button></aside>
+<div id="aim-label" class="aim-label hidden"></div><div id="crosshair" class="crosshair hidden"><i></i></div>
+<div id="target-card" class="target-card hidden"><span id="target-icon">✳</span><div><small id="target-state">当前清洁目标</small><b id="target-name">旋转木马</b><div class="progress"><i id="target-bar"></i></div></div><strong id="target-percent">0%</strong><button id="repair-btn" disabled>等待清洁</button></div>
+<div id="combo" class="combo hidden">干得漂亮 <b>×1</b></div>
+<div class="bottom-ui"><div class="hint-strip" id="hint-strip"><span><kbd>按住左键</kbd> 冲洗污垢</span><span><kbd>右键拖动</kbd> 环顾乐园</span><span><kbd>滚轮</kbd> 缩放</span><span><kbd>F</kbd> 显示污渍</span></div><div class="toolbar panel"><div class="tool-label"><small>清洁装备</small><b id="tool-name">标准水枪</b></div><div class="tools"><button class="tool active" data-tool="0"><kbd>1</kbd><span class="tool-symbol">◈</span><span>标准喷头<small>均衡 · 精准</small></span></button><button class="tool" data-tool="1"><kbd>2</kbd><span class="tool-symbol">≋</span><span>广角喷头<small>宽幅 · 高水耗</small></span></button><button class="tool" data-tool="2"><kbd>3</kbd><span class="tool-symbol">▥</span><span>清洁刷<small>近距 · 不耗水</small></span></button></div><div class="water-box"><div><span>◕ 水箱</span><b id="water-text">100%</b></div><div class="progress"><i id="water-bar"></i></div><button id="refill-btn">补充清水 <kbd>R</kbd></button></div><button class="upgrade-btn" id="upgrade-btn"><span>↟</span><b>装备升级</b><small id="upgrade-level">LV. 1</small></button></div></div>
+<div id="toast" role="status" class="toast hidden"></div>
+<div class="save-dot" aria-label="已自动保存"><i></i> 已自动保存</div>
+<div id="mobile-controls"><button id="mobile-move">前进</button><button id="mobile-spray">按住冲洗</button></div>
+</main>
+<dialog id="modal"><button class="modal-close" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+<div id="photo-overlay" class="hidden"><span>重启乐园 <small>PARK REVIVAL</small></span><button id="exit-photo">结束取景 <kbd>Esc</kbd></button><button id="capture-photo">保存照片</button></div>
+<script type="module" src="game.js"></script>
+</body></html>

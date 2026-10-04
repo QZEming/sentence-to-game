@@ -1,0 +1,1 @@
+{"name":"skybound-courier","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/game.js && node --check dist/world.js && node --check dist/simulation.js","test":"node --test tests/simulation.test.mjs"}}
