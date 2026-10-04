@@ -1,0 +1,436 @@
+{
+  "archive_created_utc": "2026-10-04T08:36:42.880335+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-085-original-20261004T083642Z",
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "files": [
+    {
+      "archive_relative_path": "source/.gitignore",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "40",
+        "ctime_ns": "1791103002883130679",
+        "dev": "16777229",
+        "ino": "545929533",
+        "mode": "0o644",
+        "mtime_ns": "1791100711895973398"
+      },
+      "copy_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "metadata": {
+        "bytes": "40",
+        "ctime_ns": "1791100711895973398",
+        "dev": "16777229",
+        "ino": "545909606",
+        "mode": "0o644",
+        "mtime_ns": "1791100711895973398"
+      },
+      "sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/.gitignore"
+    },
+    {
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791103002887982189",
+        "dev": "16777229",
+        "ino": "545929535",
+        "mode": "0o644",
+        "mtime_ns": "1791100175871995019"
+      },
+      "copy_sha256": "69790bc0c9e993816c03f95f58badad233a34571a96a275c244de0123047d67f",
+      "metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791100175872154644",
+        "dev": "16777229",
+        "ino": "545905188",
+        "mode": "0o644",
+        "mtime_ns": "1791100175871995019"
+      },
+      "sha256": "69790bc0c9e993816c03f95f58badad233a34571a96a275c244de0123047d67f",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/.openai/hosting.json"
+    },
+    {
+      "archive_relative_path": "source/README.md",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "2192",
+        "ctime_ns": "1791103002892437990",
+        "dev": "16777229",
+        "ino": "545929536",
+        "mode": "0o644",
+        "mtime_ns": "1791101759229350496"
+      },
+      "copy_sha256": "c47e3aaa8d856f2b61482121514f5e7004e9b6feefb7206e918cb3cea64bbdd1",
+      "metadata": {
+        "bytes": "2192",
+        "ctime_ns": "1791101759229350496",
+        "dev": "16777229",
+        "ino": "545918242",
+        "mode": "0o644",
+        "mtime_ns": "1791101759229350496"
+      },
+      "sha256": "c47e3aaa8d856f2b61482121514f5e7004e9b6feefb7206e918cb3cea64bbdd1",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/README.md"
+    },
+    {
+      "archive_relative_path": "source/package.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "163",
+        "ctime_ns": "1791103002893868535",
+        "dev": "16777229",
+        "ino": "545929537",
+        "mode": "0o644",
+        "mtime_ns": "1791100711888696590"
+      },
+      "copy_sha256": "8e93eb96a6c0be94da9c9f34130c75d1b45836168f0df1e78063f9b9b3b8e9ca",
+      "metadata": {
+        "bytes": "163",
+        "ctime_ns": "1791100711888696590",
+        "dev": "16777229",
+        "ino": "545909604",
+        "mode": "0o644",
+        "mtime_ns": "1791100711888696590"
+      },
+      "sha256": "8e93eb96a6c0be94da9c9f34130c75d1b45836168f0df1e78063f9b9b3b8e9ca",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/package.json"
+    },
+    {
+      "archive_relative_path": "source/dist/game.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "40636",
+        "ctime_ns": "1791103002895747497",
+        "dev": "16777229",
+        "ino": "545929539",
+        "mode": "0o644",
+        "mtime_ns": "1791101939050048967"
+      },
+      "copy_sha256": "769c15d749cc14e448a62d56ff017acd893a79dc5820fd1c1d18aa146d1a3d36",
+      "metadata": {
+        "bytes": "40636",
+        "ctime_ns": "1791101939050048967",
+        "dev": "16777229",
+        "ino": "545912249",
+        "mode": "0o644",
+        "mtime_ns": "1791101939050048967"
+      },
+      "sha256": "769c15d749cc14e448a62d56ff017acd893a79dc5820fd1c1d18aa146d1a3d36",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/game.js"
+    },
+    {
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "7425",
+        "ctime_ns": "1791103002917507877",
+        "dev": "16777229",
+        "ino": "545929540",
+        "mode": "0o644",
+        "mtime_ns": "1791100560263784154"
+      },
+      "copy_sha256": "5d1fc3c4c681419bebb552672671f07732a277fe3ec70d24c5fd443463c1b146",
+      "metadata": {
+        "bytes": "7425",
+        "ctime_ns": "1791100560263784154",
+        "dev": "16777229",
+        "ino": "545907779",
+        "mode": "0o644",
+        "mtime_ns": "1791100560263784154"
+      },
+      "sha256": "5d1fc3c4c681419bebb552672671f07732a277fe3ec70d24c5fd443463c1b146",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/index.html"
+    },
+    {
+      "archive_relative_path": "source/dist/logic.mjs",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "6602",
+        "ctime_ns": "1791103002919458923",
+        "dev": "16777229",
+        "ino": "545929541",
+        "mode": "0o644",
+        "mtime_ns": "1791101578660587931"
+      },
+      "copy_sha256": "7685df98a2d894f705848a9f52128d639044ae8201a580943b0792ff16d239a7",
+      "metadata": {
+        "bytes": "6602",
+        "ctime_ns": "1791101578660587931",
+        "dev": "16777229",
+        "ino": "545909602",
+        "mode": "0o644",
+        "mtime_ns": "1791101578660587931"
+      },
+      "sha256": "7685df98a2d894f705848a9f52128d639044ae8201a580943b0792ff16d239a7",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/logic.mjs"
+    },
+    {
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "18244",
+        "ctime_ns": "1791103002923193306",
+        "dev": "16777229",
+        "ino": "545929542",
+        "mode": "0o644",
+        "mtime_ns": "1791101939050649426"
+      },
+      "copy_sha256": "9b678ccabfba0c08c7b25f35af8dce557e88b8ab8240794c46e2b488e9f5bbc0",
+      "metadata": {
+        "bytes": "18244",
+        "ctime_ns": "1791101939050649426",
+        "dev": "16777229",
+        "ino": "545907781",
+        "mode": "0o644",
+        "mtime_ns": "1791101939050649426"
+      },
+      "sha256": "9b678ccabfba0c08c7b25f35af8dce557e88b8ab8240794c46e2b488e9f5bbc0",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/style.css"
+    },
+    {
+      "archive_relative_path": "source/dist/vendor/LICENSE.txt",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "1081",
+        "ctime_ns": "1791103002929777778",
+        "dev": "16777229",
+        "ino": "545929544",
+        "mode": "0o644",
+        "mtime_ns": "1791101830674273638"
+      },
+      "copy_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "metadata": {
+        "bytes": "1081",
+        "ctime_ns": "1791101830674273638",
+        "dev": "16777229",
+        "ino": "545918439",
+        "mode": "0o644",
+        "mtime_ns": "1791101830674273638"
+      },
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/vendor/LICENSE.txt"
+    },
+    {
+      "archive_relative_path": "source/dist/vendor/three.module.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "1314681",
+        "ctime_ns": "1791103002932085741",
+        "dev": "16777229",
+        "ino": "545929545",
+        "mode": "0o644",
+        "mtime_ns": "1791100148974626293"
+      },
+      "copy_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "metadata": {
+        "bytes": "1314681",
+        "ctime_ns": "1791100148974626293",
+        "dev": "16777229",
+        "ino": "545905078",
+        "mode": "0o644",
+        "mtime_ns": "1791100148974626293"
+      },
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/dist/vendor/three.module.js"
+    },
+    {
+      "archive_relative_path": "source/test/logic.test.mjs",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "2869",
+        "ctime_ns": "1791103003093129126",
+        "dev": "16777229",
+        "ino": "545929547",
+        "mode": "0o644",
+        "mtime_ns": "1791101759215704300"
+      },
+      "copy_sha256": "5751a8007b37066f6639bb867911233b19cb7c2ef4fcee2a75c2a6b0a9bff651",
+      "metadata": {
+        "bytes": "2869",
+        "ctime_ns": "1791101759215704300",
+        "dev": "16777229",
+        "ino": "545912456",
+        "mode": "0o644",
+        "mtime_ns": "1791101759215704300"
+      },
+      "sha256": "5751a8007b37066f6639bb867911233b19cb7c2ef4fcee2a75c2a6b0a9bff651",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon/test/logic.test.mjs"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/eidolon-desktop.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "612403",
+        "ctime_ns": "1791103003096608884",
+        "dev": "16777229",
+        "ino": "545929551",
+        "mode": "0o644",
+        "mtime_ns": "1791102161149442769"
+      },
+      "copy_sha256": "3ae3d987238f851a3461879cdc61c50055d39d323ca815d61d2a1e4545411ddf",
+      "metadata": {
+        "bytes": "612403",
+        "ctime_ns": "1791102161149442769",
+        "dev": "16777229",
+        "ino": "545922624",
+        "mode": "0o644",
+        "mtime_ns": "1791102161149442769"
+      },
+      "sha256": "3ae3d987238f851a3461879cdc61c50055d39d323ca815d61d2a1e4545411ddf",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/output/playwright/eidolon-desktop.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/eidolon-mobile.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "173594",
+        "ctime_ns": "1791103003100770851",
+        "dev": "16777229",
+        "ino": "545929552",
+        "mode": "0o644",
+        "mtime_ns": "1791102195999302356"
+      },
+      "copy_sha256": "c409034be4983203df5e68a6aa92623389336096bc493d9e678e384f209f586f",
+      "metadata": {
+        "bytes": "173594",
+        "ctime_ns": "1791102195999425398",
+        "dev": "16777229",
+        "ino": "545922666",
+        "mode": "0o644",
+        "mtime_ns": "1791102195999302356"
+      },
+      "sha256": "c409034be4983203df5e68a6aa92623389336096bc493d9e678e384f209f586f",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/output/playwright/eidolon-mobile.png"
+    },
+    {
+      "archive_relative_path": "original-packages/eidolon-deploy.tar.gz",
+      "category": "original_deployment_package",
+      "copy_metadata": {
+        "bytes": "293642",
+        "ctime_ns": "1791103003103975983",
+        "dev": "16777229",
+        "ino": "545929554",
+        "mode": "0o644",
+        "mtime_ns": "1791102078573643911"
+      },
+      "copy_sha256": "9416ce53aa62e0241d6c6f51c5a74bd5b8dd075aa62d15da0155308731c4a3c3",
+      "metadata": {
+        "bytes": "293642",
+        "ctime_ns": "1791102078573643911",
+        "dev": "16777229",
+        "ino": "545922514",
+        "mode": "0o644",
+        "mtime_ns": "1791102078573643911"
+      },
+      "sha256": "9416ce53aa62e0241d6c6f51c5a74bd5b8dd075aa62d15da0155308731c4a3c3",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon-deploy.tar.gz"
+    }
+  ],
+  "fixed_original_bytes": "2473678",
+  "fixed_original_file_count": 14,
+  "game_number": "085",
+  "local_preview": {
+    "command": "npm start",
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon",
+    "expanded_command": "python3 -m http.server 4173 --directory dist",
+    "port": 4173,
+    "requires_npm_install": false,
+    "started_during_archive": false,
+    "url": "http://localhost:4173"
+  },
+  "original_package_file_count": 1,
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-54",
+  "process_observation": {
+    "descendants_observed": [],
+    "documented_port": 4173,
+    "documented_port_note": "4173 is the default documented port. Root did not infer ownership by port alone or claim the port was idle; original node PID 2560 was preserved.",
+    "note": "Point-in-time root observation; copy verification did not depend on shutting down processes.",
+    "observed_at_utc": "2026-10-04T08:28:25.489039Z",
+    "preserved_original_processes": [
+      {
+        "cpu": "0",
+        "name": "Chrome",
+        "pid": 1036,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2547,
+        "port": 5173,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2554,
+        "port": 4827,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2560,
+        "port": 4173,
+        "state": "S"
+      }
+    ],
+    "provenance": "Root-supplied ps/lsof metadata observation; archive agent did not repeat process checks",
+    "ps_lsof_status": "normal",
+    "roots_observed": [],
+    "scope": "Exact task-54/eidolon source and parent cwd, argv, and eidolon game name matching",
+    "signals": [],
+    "status": "checked_by_root_no_task_owned_process_observed",
+    "task_owned_preview_browser_observed": false
+  },
+  "schema_version": 1,
+  "screenshot_file_count": 2,
+  "source_file_count": 11,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon",
+  "title": "双生神殿 · EIDOLON",
+  "validation_limits": {
+    "audio": "Manual AudioContext enable/resume and generated tones present in source; no audio execution evidence.",
+    "author_browser_claim": "Parent reports author desktop and mobile three-level completion; no readable driver or results file supports independent reconstruction of that claim.",
+    "browser_input_method": "Unknown: actual keyboard/mouse, app API, state/hook, fixtures or time acceleration cannot be independently determined without driver/results.",
+    "driver_results_console_pageerror_audio_logs_in_allowed_output": "None found; error absence and coverage are not established.",
+    "initial_state_browser_three_level_completion_independently_verified": false,
+    "logic_script_PASS_text": "A print statement in the script, not an actual captured test-run result.",
+    "logic_test_limits": {
+      "gate": "canEnter before and after activation plus traversal; no separate repeated permanence assertion",
+      "memories": "All nine positions checked for valid placement; one first-level memory collected and duplicate traversal count asserted; not all nine collected",
+      "reset": "createState reconstruction assertions; no browser R-reset test"
+    },
+    "logic_test_method": "Each level starts from createState(0/1/2); direct pathTo, step-by-step moveTo, swapSouls and activate calls; completion and 2/1/3 swaps asserted; no manual state mutation or fixtures found in test.",
+    "logic_tests_executed_during_archive": false,
+    "method": "Read-only static inspection of source README/package/ordinary config/game and logic-test code, plus exclusive output and shallow original package metadata. No source scripts or games were executed and screenshots were not opened.",
+    "mobile_evidence": "Existing mobile PNG and author claim; viewport dimensions, synthetic touch and physical device execution are not independently established.",
+    "no_browser_tests_build_game_or_remote_execution": true,
+    "original_package": "Only prior shallow metadata inspected; copied and hashed byte for byte without reading tar entries, extraction or repacking.",
+    "screenshot_count": 2,
+    "source_bundled_runtime": "dist/vendor Three.js and LICENSE are shipped runtime originals, retained; dependency/cache/runtime/session directories are excluded.",
+    "source_unchanged": true,
+    "webmcp": "Optional read_temple_state/control_temple registration present, shares visible control actions and waits for movement; native registration and use are not independently verified."
+  },
+  "verification": {
+    "all_copy_hashes_match": true,
+    "copy2_used": true,
+    "final_copy_file_set_and_hashes_verified": true,
+    "final_source_evidence_package_bytes_mtime_hashes_and_file_sets_unchanged": true,
+    "metadata_snapshots_interval_seconds": 1,
+    "metadata_stable": true
+  }
+}

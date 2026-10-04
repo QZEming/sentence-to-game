@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "f15b2bd9c5d4089842bf94709fe34427080592a9cc2fb1b5e005cc8a034ee113"
+    },
+    {
+      "bytes": 2073,
+      "path": "README.md",
+      "sha256": "d5f8a6fd3e3e963d462b61a5abee49ea1b7a6e75f55fd24225e73dafd92dbf1d"
+    },
+    {
+      "bytes": 4576,
+      "path": "dist/data.js",
+      "sha256": "beea265b02dfc4124ede582c936c9b70bff0a51a23567b40c2b53620e9407b98"
+    },
+    {
+      "bytes": 52483,
+      "path": "dist/game.js",
+      "sha256": "08c1de8262ab98f9faa5dfd461f71c60ca16c75b5eb962ca3699a5f37cebd513"
+    },
+    {
+      "bytes": 5527,
+      "path": "dist/index.html",
+      "sha256": "9931d0382689e089fb38e0980f8f244ffc7942fd2b804e2825fae1dcbe226b9f"
+    },
+    {
+      "bytes": 18295,
+      "path": "dist/style.css",
+      "sha256": "691eb3bb878098a78349f3a82271589ce8a72ab7ce3f30ed82c7171b12bde0d9"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "bytes": 670681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "3e690ac7d180b0aadf0891bea39eec643e29e2d3e75c99b18689518665f69ba6"
+    },
+    {
+      "bytes": 1272,
+      "path": "original-delivery/README.md",
+      "sha256": "fa41ee39056678bd3e660cbaaf275d12f28f009e91d74aad7dff08365d39cc1c"
+    },
+    {
+      "bytes": 6514,
+      "path": "original-delivery/layout.cjs",
+      "sha256": "52ff7028dc27065705e5b732e91c9cf1c04d803f1e02b1360da5927bac434f4b"
+    },
+    {
+      "bytes": 504343,
+      "path": "original-delivery/layout.json",
+      "sha256": "b1bfa9b782039f8ead06f8e59b0565d567cdd87be90b2cb55c23bec839da8ea4"
+    },
+    {
+      "bytes": 12602,
+      "path": "original-delivery/progression.cjs",
+      "sha256": "8ee148ab559008b9101956fe3b42de7f297db133548b6b12be0fe78c079fc3dc"
+    },
+    {
+      "bytes": 22362,
+      "path": "original-delivery/progression.json",
+      "sha256": "95b22e15231f2421939d324776c6d3162a1d6d12de0cf0771b155aaee55a3e6f"
+    },
+    {
+      "bytes": 198041,
+      "path": "original-delivery/shellbound-deploy.tar.gz",
+      "sha256": "4ccd2b59092111007f112061fb79b640967c933d33ff09b6a6a573b2b17635a6"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-53/shellbound",
+  "source_tree_sha256": "9d41431a3e4fb48f676d7fe7f7296de9d5aa1f40ba7c13930213b1270ce91b5a",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-084-original-20261004T082652Z",
+  "thread_id": "01a105df-8d2c-7292-a8c9-bc681e12b090",
+  "turn_id": "01a105df-b108-74cd-8639-573614813653"
+}

@@ -1,0 +1,62 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "085-eidolon",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "085",
+  "generation_turn_id": "01a105e1-d205-73d6-b3f9-b2d01121031a",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "2fd9be643fe442d3f3344f67a52acd62d2c012e5",
+    "full_old_history_preserved": true,
+    "game_number": "085",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/2fd9be643fe442d3f3344f67a52acd62d2c012e5",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 40636,
+      "path": "game.js",
+      "sha256": "769c15d749cc14e448a62d56ff017acd893a79dc5820fd1c1d18aa146d1a3d36"
+    },
+    {
+      "bytes": 7425,
+      "path": "index.html",
+      "sha256": "5d1fc3c4c681419bebb552672671f07732a277fe3ec70d24c5fd443463c1b146"
+    },
+    {
+      "bytes": 6602,
+      "path": "logic.mjs",
+      "sha256": "7685df98a2d894f705848a9f52128d639044ae8201a580943b0792ff16d239a7"
+    },
+    {
+      "bytes": 18244,
+      "path": "style.css",
+      "sha256": "9b678ccabfba0c08c7b25f35af8dce557e88b8ab8240794c46e2b488e9f5bbc0"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "60bf63634750337ef9c528926256cef2b65e239f0b630346f829ae7f9dc91071",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105e1-b113-7425-85d9-ea7f442ef0b2",
+  "title": "双生神殿 · EIDOLON",
+  "url": "https://qzemi.cn/sentence-to-game/games/085-eidolon/"
+}

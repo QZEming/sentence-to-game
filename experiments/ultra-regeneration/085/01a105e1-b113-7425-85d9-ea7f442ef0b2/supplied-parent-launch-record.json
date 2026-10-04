@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "game_number": "085",
+  "record_kind": "parent_launch_attestation",
+  "provenance": "Parent task message; launch parameters are attested, not independently verified runtime evidence",
+  "independently_verified": false,
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105e1-b113-7425-85d9-ea7f442ef0b2",
+  "generation_turn_id": "01a105e1-d205-73d6-b3f9-b2d01121031a",
+  "model": "Astra",
+  "raw_model": "Astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "fork_turns": "none",
+  "explicit_parent_parameters": true,
+  "exact_prompt": "实现一个双生精灵交换身体并利用彼此不同的能力突破神殿试炼的 3D 双角色协作解谜游戏，尽你所能丰富游戏玩法。",
+  "complete_parent_prompt": "实现一个双生精灵交换身体并利用彼此不同的能力突破神殿试炼的 3D 双角色协作解谜游戏，尽你所能丰富游戏玩法。"
+}

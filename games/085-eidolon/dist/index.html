@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#071c24"><meta name="description" content="双生精灵，两个身体，一段灵魂羁绊。交换光与影，在浮空神殿中完成三重协作试炼。"><title>双生神殿 · EIDOLON</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23091d26'/%3E%3Cpath d='M25 8L9 32l16 24 9-24z' fill='%23e6bd72'/%3E%3Cpath d='M41 8L25 32l16 24 14-24z' fill='%2372d8d4'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="game-shell">
+<canvas id="world" aria-label="浮空神殿三维游戏场景，使用 WASD 移动，Tab 切换角色，Q 交换灵魂，E 互动"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<header class="topbar">
+ <a class="brand" href="#" aria-label="双生神殿" id="brand"><span class="brand-mark">◇<i>◇</i></span><span><strong>双生神殿</strong><small>E I D O L O N</small></span></a>
+ <nav class="chapters" aria-label="神殿试炼"><button class="chapter active" data-level="0"><span>01</span> 初醒之庭</button><i></i><button class="chapter" data-level="1"><span>02</span> 交错回廊<svg class="lock" viewBox="0 0 16 16"><path d="M5 7V5a3 3 0 016 0v2M4 7h8v7H4z"/></svg></button><i></i><button class="chapter" data-level="2"><span>03</span> 永恒之心<svg class="lock" viewBox="0 0 16 16"><path d="M5 7V5a3 3 0 016 0v2M4 7h8v7H4z"/></svg></button></nav>
+ <div class="top-actions"><span class="memory-count" title="本次旅程收集的记忆碎片"><svg viewBox="0 0 20 24"><path d="M10 2L3 9l7 13 7-13zM3 9h14M10 2v20"/></svg><span id="memory-count">0 <em>/ 9</em></span></span><span class="separator"></span><button class="icon-button" id="sound-button" aria-label="开启声音" title="开启声音"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H3v6h3l5 4V5zM15 8a7 7 0 010 8M18 5a11 11 0 010 14"/><path id="sound-slash" d="M3 3l18 18"/></svg></button><button class="icon-button" id="help-button" aria-label="操作指南" title="操作指南"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 2-2.5 2-2.5 4M12 17h.01"/></svg></button><button class="icon-button" id="pause-button" aria-label="暂停游戏" title="暂停游戏"><svg viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg></button></div>
+</header>
+<section class="quest-panel" aria-label="当前试炼">
+ <div class="eyebrow"><span class="short-line"></span> 第一章 · 光影初醒</div>
+ <h1 id="level-title">初醒之庭</h1><p class="level-description" id="level-description">两个身体，同一个命运。<br>让光与影，再次相遇。</p>
+ <div class="quest-rule"></div><div class="quest-title"><svg viewBox="0 0 20 20"><path d="M10 2l7 8-7 8-7-8zM6 10h8M10 6v8"/></svg>神殿试炼<span id="quest-progress">0 / 3</span></div>
+ <ul id="objectives"></ul>
+ <button class="hint-button" id="hint-button"><svg viewBox="0 0 20 20"><path d="M7 14c0-2-3-3-3-6a6 6 0 1112 0c0 3-3 4-3 6M7 14h6M8 17h4"/></svg>聆听神殿的低语<span>H</span></button>
+ <div class="hint-content" id="hint-content" hidden></div>
+</section>
+<div class="scene-heading" aria-hidden="true"><span>THE SANCTUARY OF AWAKENING</span><i></i></div>
+<div class="scene-label" id="portal-label"><span class="diamond-small"></span><span id="portal-label-text">唤醒双生祭坛</span></div>
+<div class="character-label" id="character-label"><span class="label-dot"></span><span id="character-label-text">曦 · 光之灵</span><span class="control-tag">操控中</span></div>
+<div id="interaction-prompt" class="interaction-prompt" hidden><kbd>E</kbd><span></span></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="camera-tools"><button class="icon-button" id="zoom-in" aria-label="放大视角" title="放大视角">＋</button><span></span><button class="icon-button" id="zoom-out" aria-label="缩小视角" title="缩小视角">−</button><span></span><button class="icon-button" id="camera-reset" aria-label="还原视角" title="还原视角"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5M8 12h8M12 8v8"/></svg></button></div>
+<div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 70 70"><path d="M35 8l8 27-8 27-8-27z"/><path class="compass-dim" d="M8 35l27-8 27 8-27 8z"/><circle cx="35" cy="35" r="22"/></svg></div>
+<footer class="bottom-ui">
+ <div class="spirit-dock">
+  <button class="spirit-card selected sun" id="spirit-0" aria-label="控制第一具身体"><span class="spirit-portrait"><svg viewBox="0 0 52 62"><path class="hood" d="M26 6C13 9 8 22 12 35l-5 20q19 8 38 0l-5-20C45 21 36 8 26 6z"/><path class="face" d="M15 27q11-13 22 0v13q-11 9-22 0z"/><path class="eyes" d="M20 31v5M32 31v5"/><path class="gem" d="M26 8l3 7-3 4-3-4z"/></svg></span><span class="spirit-info"><span class="spirit-name">曦 <em>光之灵</em></span><span class="spirit-ability">凝聚光芒 · 点亮晶柱</span><span class="spirit-status"><i></i> 当前操控</span></span><kbd>1</kbd></button>
+  <button class="swap-link" id="swap-button" title="交换灵魂 (Q)" aria-label="交换两个身体中的灵魂"><svg viewBox="0 0 36 30"><path d="M5 9h25l-6-6M31 21H6l6 6"/></svg><kbd>Q</kbd></button>
+  <button class="spirit-card moon" id="spirit-1" aria-label="控制第二具身体"><span class="spirit-portrait"><svg viewBox="0 0 52 62"><path class="hood" d="M26 6C13 9 8 22 12 35l-5 20q19 8 38 0l-5-20C45 21 36 8 26 6z"/><path class="face" d="M15 27q11-13 22 0v13q-11 9-22 0z"/><path class="eyes" d="M20 31v5M32 31v5"/><path class="gem" d="M26 8l3 7-3 4-3-4z"/></svg></span><span class="spirit-info"><span class="spirit-name">晦 <em>影之灵</em></span><span class="spirit-ability">化身暗影 · 穿越结界</span><span class="spirit-status"><i></i> 等待呼唤</span></span><kbd>2</kbd></button>
+ </div>
+ <div class="bottom-tip"><span class="tip-line"></span><span id="bottom-tip">灵魂可以交换，羁绊从未改变。</span><span class="tip-line"></span></div>
+ <div class="controls-bar"><span><span class="keys"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span>移动</span><span><kbd>Tab</kbd>切换角色</span><span><kbd>Q</kbd>交换灵魂</span><span><kbd>E</kbd>共鸣 / 互动</span><span class="mouse-control"><svg viewBox="0 0 20 25"><rect x="4" y="2" width="12" height="20" rx="6"/><path d="M10 3v6"/></svg>点击地面移动</span><span class="reset-control"><button id="reset-button"><svg viewBox="0 0 20 20"><path d="M4 8a7 7 0 117 9M4 3v5h5"/></svg>重置试炼</button></span></div>
+</footer>
+<div class="mobile-controls"><button data-move="up" aria-label="向上移动">↑</button><button data-move="left" aria-label="向左移动">←</button><button data-move="down" aria-label="向下移动">↓</button><button data-move="right" aria-label="向右移动">→</button><button id="mobile-interact">共鸣 E</button></div>
+<dialog id="game-dialog"><div class="dialog-inner" id="dialog-content"></div></dialog>
+<div id="loading-screen"><span class="loading-sigil">◇</span><h2>双生神殿</h2><p>光与影，正在苏醒</p><span class="loading-line"></span></div>
+</main><script type="module" src="game.js"></script>
+</body></html>

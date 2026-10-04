@@ -1,0 +1,15 @@
+{
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a105df-b108-74cd-8639-573614813653",
+  "input_scope": "one complete sentence only; no repository, templates, other games or repair context",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": "实现一个蜗牛骑士携带不同武器探索不断变化的地下城的 3D 肉鸽动作游戏，尽你所能丰富游戏玩法。",
+  "server_execution_parameters_independently_authenticated": false,
+  "supplied_parent_launch_record": "supplied-parent-launch-record.json; parent attestation only, not full task export",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105df-8d2c-7292-a8c9-bc681e12b090"
+}

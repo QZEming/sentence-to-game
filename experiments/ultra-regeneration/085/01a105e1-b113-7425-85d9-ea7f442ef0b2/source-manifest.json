@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "69790bc0c9e993816c03f95f58badad233a34571a96a275c244de0123047d67f"
+    },
+    {
+      "bytes": 2192,
+      "path": "README.md",
+      "sha256": "c47e3aaa8d856f2b61482121514f5e7004e9b6feefb7206e918cb3cea64bbdd1"
+    },
+    {
+      "bytes": 40636,
+      "path": "dist/game.js",
+      "sha256": "769c15d749cc14e448a62d56ff017acd893a79dc5820fd1c1d18aa146d1a3d36"
+    },
+    {
+      "bytes": 7425,
+      "path": "dist/index.html",
+      "sha256": "5d1fc3c4c681419bebb552672671f07732a277fe3ec70d24c5fd443463c1b146"
+    },
+    {
+      "bytes": 6602,
+      "path": "dist/logic.mjs",
+      "sha256": "7685df98a2d894f705848a9f52128d639044ae8201a580943b0792ff16d239a7"
+    },
+    {
+      "bytes": 18244,
+      "path": "dist/style.css",
+      "sha256": "9b678ccabfba0c08c7b25f35af8dce557e88b8ab8240794c46e2b488e9f5bbc0"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 293642,
+      "path": "original-delivery/eidolon-deploy.tar.gz",
+      "sha256": "9416ce53aa62e0241d6c6f51c5a74bd5b8dd075aa62d15da0155308731c4a3c3"
+    },
+    {
+      "bytes": 612403,
+      "path": "original-delivery/eidolon-desktop.png",
+      "sha256": "3ae3d987238f851a3461879cdc61c50055d39d323ca815d61d2a1e4545411ddf"
+    },
+    {
+      "bytes": 173594,
+      "path": "original-delivery/eidolon-mobile.png",
+      "sha256": "c409034be4983203df5e68a6aa92623389336096bc493d9e678e384f209f586f"
+    },
+    {
+      "bytes": 163,
+      "path": "package.json",
+      "sha256": "8e93eb96a6c0be94da9c9f34130c75d1b45836168f0df1e78063f9b9b3b8e9ca"
+    },
+    {
+      "bytes": 2869,
+      "path": "test/logic.test.mjs",
+      "sha256": "5751a8007b37066f6639bb867911233b19cb7c2ef4fcee2a75c2a6b0a9bff651"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-54/eidolon",
+  "source_tree_sha256": "60bf63634750337ef9c528926256cef2b65e239f0b630346f829ae7f9dc91071",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-085-original-20261004T083642Z",
+  "thread_id": "01a105e1-b113-7425-85d9-ea7f442ef0b2",
+  "turn_id": "01a105e1-d205-73d6-b3f9-b2d01121031a"
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101d1c"><meta name="description" content="蜗牛骑士 Shellbound：四种武器、随机地下城、祝福与首领战的 3D 动作肉鸽游戏。">
+<title>蜗牛骑士 · SHELLBOUND</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23172724'/%3E%3Cpath d='M26 24H8C1 24 2 9 13 8C25 6 25 22 16 22C8 22 9 13 15 13C20 13 19 18 16 18' fill='none' stroke='%23cbe3a2' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='m25 24 3-9m-3 9-3-8' stroke='%23cbe3a2' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header><a class="brand" href="./" aria-label="蜗牛骑士首页"><span class="brand-icon" data-icon="shell"></span><span>SHELLBOUND<small>蜗 牛 骑 士</small></span></a><div class="header-center"><span class="tiny-star">✧</span> 一只小蜗牛，一场大冒险 <span class="tiny-star">✧</span></div><nav><button id="audioBtn" class="icon-button" title="开启音效" aria-label="开启音效" data-icon="sound"></button><button id="helpBtn" class="icon-button" title="游玩指南" aria-label="游玩指南" data-icon="help"></button><span class="nav-divider"></span><button id="pauseBtn" class="icon-button" title="暂停 Escape" aria-label="暂停" data-icon="pause"></button></nav></header>
+<main id="gameWrap"><canvas id="game" aria-label="3D 蜗牛骑士地下城游戏"></canvas><div class="vignette"></div>
+<section class="hud hud-left" aria-label="骑士状态"><div class="knight-line"><span class="avatar" data-icon="shell"></span><div><strong>苔苔 <span>初生骑士</span></strong><div class="health"><div id="healthFill"></div><span id="healthText">100 / 100</span></div></div></div><div class="mini-stats"><span><i data-icon="coin"></i><b id="gold">0</b> 琥珀</span><span><i data-icon="gem"></i><b id="shards">0</b> 星屑</span><span id="timer">00:00</span></div><div class="blessings" id="blessings"></div></section>
+<section class="hud hud-right"><div class="region-heading"><span id="areaKicker">第一章 · THE OVERGROWTH</span><strong id="areaName">苔光遗迹</strong></div><div class="map-box"><canvas id="minimap" width="180" height="108" aria-label="房间小地图"></canvas><span id="roomLabel">入口营地</span></div><div id="routeProgress" class="route-progress"></div></section>
+<div class="center-message" id="centerMessage"></div><div id="bossHud" class="boss-hud hidden"><span id="bossName"></span><div><i id="bossFill"></i></div></div>
+<div class="room-objective" id="objective"><span class="objective-mark">◇</span><div><span>新的旅途</span><strong>准备好，向未知出发。</strong></div></div>
+<div id="intro" class="intro-panel"><div class="eyebrow"><span></span> A LITTLE KNIGHT. A BIG ADVENTURE.</div><h1>背上勇气。<br>深入<span>未知。</span></h1><p>古老地下城正在苏醒。<br>握紧武器，让小小的身躯走得更远。</p><button id="startBtn" class="primary"><span data-icon="sword"></span>进入地牢 <kbd>ENTER</kbd></button><div class="intro-meta"><span>随机地下城</span><i>·</i><span>四种武器</span><i>·</i><span>无限种可能</span></div><button id="campBtn" class="text-button">营地 · 永久成长 <span id="campShards">0 星屑</span></button></div>
+<div id="interaction" class="interaction hidden"><kbd>E</kbd><span></span></div>
+<section class="bottom-hud"><div class="weapon-selection"><div class="section-label"><span>随身武器</span><span>1 — 4 切换</span></div><div id="weapons" class="weapon-bar"></div></div><div class="skill-bar"><button id="dashBtn" class="skill" title="空格 · 翻滚"><span data-icon="dash"></span><strong>翻滚</strong><kbd>SPACE</kbd><i id="dashCooldown"></i></button><button id="guardBtn" class="skill" title="Shift · 缩壳防御"><span data-icon="shield"></span><strong>缩壳</strong><kbd>SHIFT</kbd><i id="guardCooldown"></i></button><button id="ultimateBtn" class="skill ultimate" title="Q · 螺旋风暴"><span data-icon="storm"></span><strong>螺旋风暴</strong><kbd>Q</kbd><i id="ultCooldown"></i></button></div><div class="weapon-info"><span id="weaponType">均衡 · 近战</span><strong id="weaponName">露锋短剑</strong><span id="weaponDesc">轻快连斩，第三击释放剑气</span></div></section>
+<div class="controls-strip"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移动</span><span><span data-icon="mouse"></span> 瞄准 / 按住攻击</span><span><kbd>E</kbd> 交互</span><span><kbd>ESC</kbd> 暂停</span><span class="seed-label" id="seedLabel">每一步，都是新的冒险。</span></div>
+<div id="damageLayer" aria-hidden="true"></div><div class="toast" id="toast" role="status"></div><div id="touchControls"><div id="joystick"><i></i></div><button id="touchAttack">攻击</button><button id="touchInteract">E</button></div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card" id="modalCard"></div></div>
+<div id="error" class="error hidden"><h2>无法启动 3D 场景</h2><p>请在支持 WebGL 的浏览器中打开，并开启硬件加速。</p><button onclick="location.reload()">重新加载</button></div>
+</main><script type="module" src="./game.js"></script>
+</body></html>

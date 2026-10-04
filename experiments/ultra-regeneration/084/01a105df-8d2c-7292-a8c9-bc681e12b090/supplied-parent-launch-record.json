@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-084",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105df-8d2c-7292-a8c9-bc681e12b090",
+  "generation_turn_id": "01a105df-b108-74cd-8639-573614813653",
+  "exact_prompt": "实现一个蜗牛骑士携带不同武器探索不断变化的地下城的 3D 肉鸽动作游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_provided_verbatim",
+  "raw_model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "provenance": "parent_explicit_launch_attestation",
+  "scope": "Parent launch settings only, not independent historical runtime model/effort verification.",
+  "recorded_at": "2026-10-04T08:30:10.496346Z"
+}
