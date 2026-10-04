@@ -1,0 +1,5 @@
+.playwright-cli/
+output/
+.sites-runtime/
+*.tar.gz
+.DS_Store

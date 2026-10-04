@@ -1,0 +1,290 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-059-original-20261004T053146Z",
+  "candidate": "ultra-059",
+  "completed_at": "2026-10-04T05:35:02.273085Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 11,
+  "files": [
+    {
+      "archive_relative_path": "pottery-studio/.gitignore",
+      "copied_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "final_source_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089443261903730,
+      "mtime_utc": "2026-10-04T04:50:43.261904Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/.gitignore",
+      "size_bytes": 40,
+      "source_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/.openai/hosting.json",
+      "copied_sha256": "33cf5dcdc3a2b5e392fe4ff88864ec1c22ab1937fc5fe8139e1dab34249ccec0",
+      "final_source_sha256": "33cf5dcdc3a2b5e392fe4ff88864ec1c22ab1937fc5fe8139e1dab34249ccec0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089476013931513,
+      "mtime_utc": "2026-10-04T04:51:16.013932Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "33cf5dcdc3a2b5e392fe4ff88864ec1c22ab1937fc5fe8139e1dab34249ccec0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/README.md",
+      "copied_sha256": "50284569423a2179432ac1107290a48461ff705c07d2b2bbaee9ce6bc75d4b10",
+      "final_source_sha256": "50284569423a2179432ac1107290a48461ff705c07d2b2bbaee9ce6bc75d4b10",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091050959239025,
+      "mtime_utc": "2026-10-04T05:17:30.959239Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/README.md",
+      "size_bytes": 2208,
+      "source_sha256": "50284569423a2179432ac1107290a48461ff705c07d2b2bbaee9ce6bc75d4b10",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/app.js",
+      "copied_sha256": "8e012252832499fef8fd7225cabb8d578dfa61b758a62aade75899125fb12607",
+      "final_source_sha256": "8e012252832499fef8fd7225cabb8d578dfa61b758a62aade75899125fb12607",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090711485317595,
+      "mtime_utc": "2026-10-04T05:11:51.485318Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/app.js",
+      "size_bytes": 36101,
+      "source_sha256": "8e012252832499fef8fd7225cabb8d578dfa61b758a62aade75899125fb12607",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/game.js",
+      "copied_sha256": "fa84d92b738d8cdd56c1133455052ab56315a5028fb7e7ee695b389f538ef43b",
+      "final_source_sha256": "fa84d92b738d8cdd56c1133455052ab56315a5028fb7e7ee695b389f538ef43b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090887479217621,
+      "mtime_utc": "2026-10-04T05:14:47.479218Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/game.js",
+      "size_bytes": 4839,
+      "source_sha256": "fa84d92b738d8cdd56c1133455052ab56315a5028fb7e7ee695b389f538ef43b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/index.html",
+      "copied_sha256": "836db25c663eb1479d7171b5e5553c5d6be55946c17024c28f97445612c289c4",
+      "final_source_sha256": "836db25c663eb1479d7171b5e5553c5d6be55946c17024c28f97445612c289c4",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089902346759927,
+      "mtime_utc": "2026-10-04T04:58:22.346760Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/index.html",
+      "size_bytes": 11025,
+      "source_sha256": "836db25c663eb1479d7171b5e5553c5d6be55946c17024c28f97445612c289c4",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/style.css",
+      "copied_sha256": "77da0cbb770acae9bdbf4b4843f1417e6c444cb09139969e65e2c1d740c2b8dc",
+      "final_source_sha256": "77da0cbb770acae9bdbf4b4843f1417e6c444cb09139969e65e2c1d740c2b8dc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091050947258583,
+      "mtime_utc": "2026-10-04T05:17:30.947258Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/style.css",
+      "size_bytes": 27269,
+      "source_sha256": "77da0cbb770acae9bdbf4b4843f1417e6c444cb09139969e65e2c1d740c2b8dc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090598456759478,
+      "mtime_utc": "2026-10-04T05:09:58.456759Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/vendor/three.core.min.js",
+      "copied_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "final_source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090598449079129,
+      "mtime_utc": "2026-10-04T05:09:58.449079Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/vendor/three.core.min.js",
+      "size_bytes": 381124,
+      "source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "pottery-studio/dist/vendor/three.module.min.js",
+      "copied_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "final_source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090598441469779,
+      "mtime_utc": "2026-10-04T05:09:58.441470Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio/dist/vendor/three.module.min.js",
+      "size_bytes": 338908,
+      "source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/pottery-studio.tar.gz",
+      "copied_sha256": "72c1c7ff5f81eaf84de66c446dea38871a061a79a9cf5e30f32d53aab8489306",
+      "final_source_sha256": "72c1c7ff5f81eaf84de66c446dea38871a061a79a9cf5e30f32d53aab8489306",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091253169463951,
+      "mtime_utc": "2026-10-04T05:20:53.169464Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio.tar.gz",
+      "size_bytes": 208132,
+      "source_sha256": "72c1c7ff5f81eaf84de66c446dea38871a061a79a9cf5e30f32d53aab8489306",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "852ede8bd1c497bc69f00f5adefa10fe9c9a3a223bfdfcd22b962513a736d67b"
+  },
+  "inventory_fixed_at": "2026-10-04T05:35:02.100537Z",
+  "limitations": [
+    "Only inventory, original-byte copying and SHA256 checks; no build/test/browser/gameplay/source modification/process/remote action or load sampling.",
+    "Original package not extracted or repacked.",
+    "No forbidden runtime/session paths or unrelated task content read."
+  ],
+  "original_evidence_inventory": {
+    "external_output_observation": {
+      "directory_present": true,
+      "files": [],
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/output/playwright",
+      "provenance": "Initial archive-agent shallow rg file listing returned empty; moonbloom_state separately confirmed authorized output contains only empty playwright directory."
+    },
+    "preserved_driver_or_execution_result_present": false,
+    "screenshots": [],
+    "source_documents": [
+      "pottery-studio/README.md"
+    ],
+    "tests_or_checks": []
+  },
+  "original_request": "实现一个陶艺师拉坯塑形并烧制陶器的 3D 手工创作游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "limitations": [
+      "No retained tests/checks/validation document/browser driver/results or image evidence in the fixed original inventory and authorized external empty output.",
+      "Author real mouse/keyboard method statement cannot be independently checked for additional state hooks or complete operation sequence.",
+      "README does not record mobile viewport sizes or touch method; mobile layout pass is only parent report.",
+      "No independent full workflow, mobile complete process or physical-device verification was executed."
+    ],
+    "preview": {
+      "command": "python3 -m http.server 8000 --directory dist",
+      "port": 8000
+    },
+    "provenance": "moonbloom_state static reading of original README, not independently executed validation.",
+    "readme_report": "README.md:38 reports rule checks for deformation/radius/illegal drafts/four full-score orders/temperature-time, and browser real mouse/keyboard shaping, order taking, glazing, firing, naming, collection reward and persistence."
+  },
+  "parent_readonly_process_observation": {
+    "dedicated_preview_or_browser_present": false,
+    "framework_contexts_preserved": true,
+    "framework_pcpu": 0,
+    "framework_states": "S",
+    "idle_framework_contexts": [
+      11213,
+      11214,
+      11215,
+      11216
+    ],
+    "observed_at": "2026-10-04T05:31:46Z",
+    "preview_listener_present": false,
+    "preview_port": 8000,
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only process/listener observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "complete_creation_workflow_reported": true,
+    "mobile_layout_pass_reported": true,
+    "provenance": "Parent/author report only, not independently executed validation."
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Private Sites URL report only; not fetched, not user formal domain or GitHub delivery evidence.",
+    "url": "https://clay-and-time-studio.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/game.js",
+    "dist/index.html",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.core.min.js",
+    "dist/vendor/three.module.min.js"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-28/pottery-studio",
+  "stage": "original",
+  "thread_id": "01a1053e-63db-73fb-a882-5a61a06a30b3",
+  "title": "泥间3D陶艺工坊 Pottery Studio",
+  "total_bytes": 1010833,
+  "turn_id": "01a1053e-84ac-76ad-a038-c260eced86ee"
+}

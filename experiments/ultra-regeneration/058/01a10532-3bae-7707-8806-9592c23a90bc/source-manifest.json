@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 60,
+      "path": ".gitignore",
+      "sha256": "8949db87761868c9adcfe565b312cbcb03a80ea117a2747513fce252134f5e12"
+    },
+    {
+      "bytes": 88,
+      "path": ".openai/hosting.json",
+      "sha256": "8a59807165824d9680c38ee611b23aa0f5b86270e98798fe671988399bc45675"
+    },
+    {
+      "bytes": 2134,
+      "path": "README.md",
+      "sha256": "59fa65bad8a911ad2ab9dd704b311f1141aaf7419e02775c053c05a1be1140ff"
+    },
+    {
+      "bytes": 1276,
+      "path": "VALIDATION.md",
+      "sha256": "cb2ab5827c71210a1ebf517e515f50f6a6883c6e81ce1987f737edc4a37845be"
+    },
+    {
+      "bytes": 34203,
+      "path": "dist/app.js",
+      "sha256": "85d01f0ee3e40b96957510f8bde97bf05d9e697a3027b058cbdf05f35bca27a7"
+    },
+    {
+      "bytes": 17208,
+      "path": "dist/engine.mjs",
+      "sha256": "af25aa3fdb367cc729e30a98c7e9c7aee8027bf3c9d52d508f4bc643f88574ca"
+    },
+    {
+      "bytes": 868,
+      "path": "dist/index.html",
+      "sha256": "8dc469ab7f3a7910b0fd4b98a7140f80e475ced943975d0e5856a56b634eb38d"
+    },
+    {
+      "bytes": 14511,
+      "path": "dist/scene.js",
+      "sha256": "5abc4730997e54250a8078f86cf6abb4ebc60f527ba19a8f1a60963f9117aece"
+    },
+    {
+      "bytes": 23960,
+      "path": "dist/style.css",
+      "sha256": "7c3ea181897de3ad6f103f79f785a4fc4e1063dfc5c0ed3d79e579df8fcd8b32"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE.three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 306805,
+      "path": "output/playwright/desktop-final-viewport.png",
+      "sha256": "0a5d6ac0458f12f976d9542383cd5b269152d0c24775e1e39550f027574d7efa"
+    },
+    {
+      "bytes": 352256,
+      "path": "output/playwright/desktop-final.png",
+      "sha256": "89fb19643bdec5ba006ca215d222cf5951679e0297c9b9bd945307884559b0f5"
+    },
+    {
+      "bytes": 306957,
+      "path": "output/playwright/desktop.png",
+      "sha256": "32cbd669fd7679ebb4fa3710a7a3cb323d125db1f0877b45f1108871e590e4a2"
+    },
+    {
+      "bytes": 196409,
+      "path": "output/playwright/mobile.png",
+      "sha256": "ccf450599012a99131c83447886abcb7388201b0321d1f8faedd80b99b1e925d"
+    },
+    {
+      "bytes": 4445,
+      "path": "tests/engine.test.mjs",
+      "sha256": "4267e868e05e5908ac173f2e3b646900f2d589304dc53fcfe4d86dab450b6e23"
+    },
+    {
+      "bytes": 2452,
+      "path": "tests/random-regression.mjs",
+      "sha256": "cd610ab610e5229cc838c24cdddc97cd721df8771bd8be36948bf2ac2b7de0cb"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian",
+  "source_tree_sha256": "6a8249c9ed14a808be4564c12f4ad0dc1ef4f4fbfa2d21d94d1360a99f9c8bc2",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-058-original-20261004T052820Z",
+  "thread_id": "01a10532-3bae-7707-8806-9592c23a90bc",
+  "turn_id": "01a10532-5cc3-7009-b4f6-34267c723ab2"
+}

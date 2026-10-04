@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "458625a71179522b128bdff0a0c854dbbfc9218a2693e0838089d968eeb4871d"
+    },
+    {
+      "bytes": 2238,
+      "path": "README.md",
+      "sha256": "efe315b9473dead46c98fdae46c4dd73cc90bf60e144f8f35afe7df6d72a98f1"
+    },
+    {
+      "bytes": 2632,
+      "path": "checks/edge-cases.mjs",
+      "sha256": "151708c07e9c3a8b5a0d47e1851253bb9880e189649cbce940b91bbd81984d2a"
+    },
+    {
+      "bytes": 3132,
+      "path": "checks/solutions.mjs",
+      "sha256": "11e1ac674ed1a7d2757a6b12fffa7375d5bb046383fa2be587b2007a31116df1"
+    },
+    {
+      "bytes": 8956,
+      "path": "dist/engine.js",
+      "sha256": "bbeeb6ad9a6de2b96af02838b30404d99519063fb8764a6a5ada8f5d49a5c142"
+    },
+    {
+      "bytes": 30428,
+      "path": "dist/game.js",
+      "sha256": "116756a851db2696fefb25c075406e36f8efcfca9e3fcaa362802d0fc7d7c236"
+    },
+    {
+      "bytes": 5315,
+      "path": "dist/index.html",
+      "sha256": "fb7ddfa0a0ee6a712f6a5d673ecf27a99ef28921bf7012271fb3e6d21cfc2470"
+    },
+    {
+      "bytes": 17868,
+      "path": "dist/style.css",
+      "sha256": "af31512b273bf649b86d1c5fb5c213637e9cd3469d24eeb769a93a5551733697"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 420771,
+      "path": "original-delivery/palimpsest-deploy.tar.gz",
+      "sha256": "b5d5f40e752d0058372c3706bada809e717517192c4ec0fefc9ee47cce700f99"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest",
+  "source_tree_sha256": "c18fad7b8930e984457333848006b91f24d896d0b63dfb6fcd8ba98e60d8c7b1",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-060-original-20261004T052124Z",
+  "thread_id": "01a1053e-f140-7036-96b7-5c304d06c09a",
+  "turn_id": "01a1053f-1554-76a1-9817-4f68b0b18b46"
+}

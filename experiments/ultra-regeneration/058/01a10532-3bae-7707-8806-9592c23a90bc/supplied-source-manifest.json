@@ -1,0 +1,375 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-058-original-20261004T052820Z",
+  "candidate": "ultra-058",
+  "completed_at": "2026-10-04T05:30:27.420447Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "external_package_or_image_included": false,
+  "file_count": 17,
+  "files": [
+    {
+      "archive_relative_path": "antiquarian/.gitignore",
+      "copied_sha256": "8949db87761868c9adcfe565b312cbcb03a80ea117a2747513fce252134f5e12",
+      "final_source_sha256": "8949db87761868c9adcfe565b312cbcb03a80ea117a2747513fce252134f5e12",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090735473326830,
+      "mtime_utc": "2026-10-04T05:12:15.473327Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/.gitignore",
+      "size_bytes": 60,
+      "source_sha256": "8949db87761868c9adcfe565b312cbcb03a80ea117a2747513fce252134f5e12",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/.openai/hosting.json",
+      "copied_sha256": "8a59807165824d9680c38ee611b23aa0f5b86270e98798fe671988399bc45675",
+      "final_source_sha256": "8a59807165824d9680c38ee611b23aa0f5b86270e98798fe671988399bc45675",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089316130913023,
+      "mtime_utc": "2026-10-04T04:48:36.130913Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/.openai/hosting.json",
+      "size_bytes": 88,
+      "source_sha256": "8a59807165824d9680c38ee611b23aa0f5b86270e98798fe671988399bc45675",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/README.md",
+      "copied_sha256": "59fa65bad8a911ad2ab9dd704b311f1141aaf7419e02775c053c05a1be1140ff",
+      "final_source_sha256": "59fa65bad8a911ad2ab9dd704b311f1141aaf7419e02775c053c05a1be1140ff",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090735495393836,
+      "mtime_utc": "2026-10-04T05:12:15.495394Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/README.md",
+      "size_bytes": 2134,
+      "source_sha256": "59fa65bad8a911ad2ab9dd704b311f1141aaf7419e02775c053c05a1be1140ff",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/VALIDATION.md",
+      "copied_sha256": "cb2ab5827c71210a1ebf517e515f50f6a6883c6e81ce1987f737edc4a37845be",
+      "final_source_sha256": "cb2ab5827c71210a1ebf517e515f50f6a6883c6e81ce1987f737edc4a37845be",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090920083642507,
+      "mtime_utc": "2026-10-04T05:15:20.083642Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/VALIDATION.md",
+      "size_bytes": 1276,
+      "source_sha256": "cb2ab5827c71210a1ebf517e515f50f6a6883c6e81ce1987f737edc4a37845be",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/app.js",
+      "copied_sha256": "85d01f0ee3e40b96957510f8bde97bf05d9e697a3027b058cbdf05f35bca27a7",
+      "final_source_sha256": "85d01f0ee3e40b96957510f8bde97bf05d9e697a3027b058cbdf05f35bca27a7",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090429639454993,
+      "mtime_utc": "2026-10-04T05:07:09.639455Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/app.js",
+      "size_bytes": 34203,
+      "source_sha256": "85d01f0ee3e40b96957510f8bde97bf05d9e697a3027b058cbdf05f35bca27a7",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/engine.mjs",
+      "copied_sha256": "af25aa3fdb367cc729e30a98c7e9c7aee8027bf3c9d52d508f4bc643f88574ca",
+      "final_source_sha256": "af25aa3fdb367cc729e30a98c7e9c7aee8027bf3c9d52d508f4bc643f88574ca",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090506593939874,
+      "mtime_utc": "2026-10-04T05:08:26.593940Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/engine.mjs",
+      "size_bytes": 17208,
+      "source_sha256": "af25aa3fdb367cc729e30a98c7e9c7aee8027bf3c9d52d508f4bc643f88574ca",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/index.html",
+      "copied_sha256": "8dc469ab7f3a7910b0fd4b98a7140f80e475ced943975d0e5856a56b634eb38d",
+      "final_source_sha256": "8dc469ab7f3a7910b0fd4b98a7140f80e475ced943975d0e5856a56b634eb38d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089316122473339,
+      "mtime_utc": "2026-10-04T04:48:36.122473Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/index.html",
+      "size_bytes": 868,
+      "source_sha256": "8dc469ab7f3a7910b0fd4b98a7140f80e475ced943975d0e5856a56b634eb38d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/scene.js",
+      "copied_sha256": "5abc4730997e54250a8078f86cf6abb4ebc60f527ba19a8f1a60963f9117aece",
+      "final_source_sha256": "5abc4730997e54250a8078f86cf6abb4ebc60f527ba19a8f1a60963f9117aece",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090735447247484,
+      "mtime_utc": "2026-10-04T05:12:15.447248Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/scene.js",
+      "size_bytes": 14511,
+      "source_sha256": "5abc4730997e54250a8078f86cf6abb4ebc60f527ba19a8f1a60963f9117aece",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/style.css",
+      "copied_sha256": "7c3ea181897de3ad6f103f79f785a4fc4e1063dfc5c0ed3d79e579df8fcd8b32",
+      "final_source_sha256": "7c3ea181897de3ad6f103f79f785a4fc4e1063dfc5c0ed3d79e579df8fcd8b32",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090920071146147,
+      "mtime_utc": "2026-10-04T05:15:20.071146Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/style.css",
+      "size_bytes": 23960,
+      "source_sha256": "7c3ea181897de3ad6f103f79f785a4fc4e1063dfc5c0ed3d79e579df8fcd8b32",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/vendor/LICENSE.three.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090807619920259,
+      "mtime_utc": "2026-10-04T05:13:27.619920Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/vendor/LICENSE.three.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088665194448388,
+      "mtime_utc": "2026-10-04T04:37:45.194448Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/output/playwright/desktop-final-viewport.png",
+      "copied_sha256": "0a5d6ac0458f12f976d9542383cd5b269152d0c24775e1e39550f027574d7efa",
+      "final_source_sha256": "0a5d6ac0458f12f976d9542383cd5b269152d0c24775e1e39550f027574d7efa",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091112915790242,
+      "mtime_utc": "2026-10-04T05:18:32.915790Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/output/playwright/desktop-final-viewport.png",
+      "size_bytes": 306805,
+      "source_sha256": "0a5d6ac0458f12f976d9542383cd5b269152d0c24775e1e39550f027574d7efa",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/output/playwright/desktop-final.png",
+      "copied_sha256": "89fb19643bdec5ba006ca215d222cf5951679e0297c9b9bd945307884559b0f5",
+      "final_source_sha256": "89fb19643bdec5ba006ca215d222cf5951679e0297c9b9bd945307884559b0f5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090932738686428,
+      "mtime_utc": "2026-10-04T05:15:32.738686Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/output/playwright/desktop-final.png",
+      "size_bytes": 352256,
+      "source_sha256": "89fb19643bdec5ba006ca215d222cf5951679e0297c9b9bd945307884559b0f5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/output/playwright/desktop.png",
+      "copied_sha256": "32cbd669fd7679ebb4fa3710a7a3cb323d125db1f0877b45f1108871e590e4a2",
+      "final_source_sha256": "32cbd669fd7679ebb4fa3710a7a3cb323d125db1f0877b45f1108871e590e4a2",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090505672554994,
+      "mtime_utc": "2026-10-04T05:08:25.672555Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/output/playwright/desktop.png",
+      "size_bytes": 306957,
+      "source_sha256": "32cbd669fd7679ebb4fa3710a7a3cb323d125db1f0877b45f1108871e590e4a2",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/output/playwright/mobile.png",
+      "copied_sha256": "ccf450599012a99131c83447886abcb7388201b0321d1f8faedd80b99b1e925d",
+      "final_source_sha256": "ccf450599012a99131c83447886abcb7388201b0321d1f8faedd80b99b1e925d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090841255877635,
+      "mtime_utc": "2026-10-04T05:14:01.255878Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/output/playwright/mobile.png",
+      "size_bytes": 196409,
+      "source_sha256": "ccf450599012a99131c83447886abcb7388201b0321d1f8faedd80b99b1e925d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/tests/engine.test.mjs",
+      "copied_sha256": "4267e868e05e5908ac173f2e3b646900f2d589304dc53fcfe4d86dab450b6e23",
+      "final_source_sha256": "4267e868e05e5908ac173f2e3b646900f2d589304dc53fcfe4d86dab450b6e23",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090735443368684,
+      "mtime_utc": "2026-10-04T05:12:15.443369Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/tests/engine.test.mjs",
+      "size_bytes": 4445,
+      "source_sha256": "4267e868e05e5908ac173f2e3b646900f2d589304dc53fcfe4d86dab450b6e23",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "antiquarian/tests/random-regression.mjs",
+      "copied_sha256": "cd610ab610e5229cc838c24cdddc97cd721df8771bd8be36948bf2ac2b7de0cb",
+      "final_source_sha256": "cd610ab610e5229cc838c24cdddc97cd721df8771bd8be36948bf2ac2b7de0cb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090735446096398,
+      "mtime_utc": "2026-10-04T05:12:15.446096Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian/tests/random-regression.mjs",
+      "size_bytes": 2452,
+      "source_sha256": "cd610ab610e5229cc838c24cdddc97cd721df8771bd8be36948bf2ac2b7de0cb",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "22de23ac4124de360b093aff48a251a80f85aff73c7d2f19d610e160b55f9deb"
+  },
+  "inventory_fixed_at": "2026-10-04T05:30:27.225151Z",
+  "limitations": [
+    "Only inventory, raw-byte copying and SHA256 checks; no build/test/browser/gameplay/source modification/process/remote action.",
+    "No other task or forbidden runtime/session path read.",
+    "Source author validation and launch configuration remain provenance-limited reports."
+  ],
+  "local_process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "documented_port_listener_found": false,
+    "documented_preview_port": 4187,
+    "method": "read-only ps/lsof command/cwd/listeners; no forbidden runtime/session contents read",
+    "observed_at_utc": "2026-10-04 05:31:46 UTC",
+    "protected_originals": {
+      "chrome_1036_alive": true,
+      "listeners": {
+        "4173": 2560,
+        "4827": 2554,
+        "5173": 2547
+      }
+    },
+    "selected_task_processes": [],
+    "signals_sent": []
+  },
+  "original_evidence_inventory": {
+    "documents": [
+      "antiquarian/README.md",
+      "antiquarian/VALIDATION.md"
+    ],
+    "preserved_browser_driver_or_independent_result_json_present": false,
+    "screenshots": [
+      "antiquarian/output/playwright/desktop-final-viewport.png",
+      "antiquarian/output/playwright/desktop-final.png",
+      "antiquarian/output/playwright/desktop.png",
+      "antiquarian/output/playwright/mobile.png"
+    ],
+    "test_sources": [
+      "antiquarian/tests/engine.test.mjs",
+      "antiquarian/tests/random-regression.mjs"
+    ]
+  },
+  "original_request": "实现一个古董商鉴别宝物并参与拍卖竞价的 3D 商业博弈游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "limitations": [
+      "1000 simulated seasons are rule-engine tests, not 1000 browser seasons.",
+      "No retained browser driver or independent JSON result confirms browser input steps or whether state hooks were used.",
+      "Mobile layout/some buttons do not establish physical-device validation or a complete 14-day mobile season.",
+      "WebMCP native invocation was not verified (VALIDATION.md:14).",
+      "Screenshots preserved without viewing; no independent visual inspection."
+    ],
+    "preview": {
+      "command": "python3 -m http.server 4187 --directory dist",
+      "port": 4187
+    },
+    "provenance": "moonbloom_state static reading of original README, VALIDATION and tests; not independently executed validation.",
+    "simulation_method": "engine.test.mjs:30-46 simulates 400 seasons; random-regression.mjs:7-40 simulates 600. Both directly call Game methods/tick and set seed/cash/selected/auction-paused/caps states.",
+    "validation_report": "VALIDATION.md:6-13 reports 1000 simulated seasons, 31851 auctions, 6118 exits, 4264 restores; Chrome actual-click acquisition -> appraisal -> restoration -> commissioned delivery, no application errors; 390px no horizontal overflow and some usable buttons, plus 1440px interface."
+  },
+  "parent_reported_author_results": {
+    "browser_actual_checks_reported": true,
+    "provenance": "Parent/author report only, not independent test execution.",
+    "simulated_seasons": 1000
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not fetched, not user formal domain or GitHub delivery evidence.",
+    "url": "https://the-patina-room.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters; not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "VALIDATION.md",
+    "dist/app.js",
+    "dist/engine.mjs",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/LICENSE.three.txt",
+    "dist/vendor/three.module.js",
+    "output/playwright/desktop-final-viewport.png",
+    "output/playwright/desktop-final.png",
+    "output/playwright/desktop.png",
+    "output/playwright/mobile.png",
+    "tests/engine.test.mjs",
+    "tests/random-regression.mjs"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-27/antiquarian",
+  "stage": "original",
+  "thread_id": "01a10532-3bae-7707-8806-9592c23a90bc",
+  "title": "拾珍阁 Antiquarian",
+  "total_bytes": 2579394,
+  "turn_id": "01a10532-5cc3-7009-b4f6-34267c723ab2"
+}

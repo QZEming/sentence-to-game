@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f0e9"><meta name="description" content="一间安静的 3D 陶艺工坊。用指尖拉坯，调配釉色，点燃窑火，收藏你的手作。">
+  <title>泥间 · Clay & Time — 3D 陶艺工坊</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ad5c3c'/%3E%3Cpath d='M22 13h20l-3 13c18 21 10 28-7 28S7 47 25 26z' fill='%23f4eadb'/%3E%3Cellipse cx='32' cy='14' rx='10' ry='3' fill='%23743d2b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="泥间首页"><span class="brand-mark" data-icon="vase"></span><span class="brand-cn">泥间</span><span class="brand-en">CLAY & TIME</span></a>
+    <nav class="nav" aria-label="工坊导航"><button class="nav-link active" id="studioTab">创作工坊</button><button class="nav-link" id="galleryBtn">我的收藏 <span id="galleryCount">0</span></button><button class="nav-link" id="ordersBtn">委托手记</button></nav>
+    <div class="header-end"><span class="wallet"><span data-icon="sparkles"></span><b id="coins">0</b> 陶币</span><button class="avatar" id="profileBtn" title="工坊成就">陶</button></div>
+  </header>
+  <main>
+    <section class="workspace-heading"><div><p class="eyebrow">A LITTLE CLAY. A LITTLE QUIET.</p><h1>让灵感，在指尖成形<span>。</span></h1></div><div class="session-label"><span class="tiny-leaf" data-icon="leaf"></span><span>慢一点，也没关系<br><small>你的私人陶艺时光</small></span></div></section>
+    <section class="workbench" aria-label="陶艺工作台">
+      <aside class="left-panel panel">
+        <div class="panel-heading"><h2 id="toolTitle">塑形工具</h2><span class="label-small" id="toolSubtitle">01 / THROWING</span></div>
+        <div id="shapePanel">
+          <div class="tool-list" role="group" aria-label="塑形工具">
+            <button class="tool active" data-tool="shape"><span class="tool-icon" data-icon="hand"></span><span><b>指尖拉坯</b><small>向外舒展，向内收拢</small></span><kbd>1</kbd></button>
+            <button class="tool" data-tool="smooth"><span class="tool-icon" data-icon="smooth"></span><span><b>海绵修整</b><small>抚平起伏，让曲线柔和</small></span><kbd>2</kbd></button>
+            <button class="tool" data-tool="carve"><span class="tool-icon" data-icon="carve"></span><span><b>刻线刀</b><small>留下细腻的手作纹路</small></span><kbd>3</kbd></button>
+          </div>
+          <div class="control-block"><label for="brush">触点大小 <output id="brushValue">适中</output></label><input id="brush" type="range" min="3" max="20" value="10"><div class="range-labels"><span>细节</span><span>整体</span></div></div>
+          <div class="control-block"><label for="height">器物高度 <output id="heightValue">22 cm</output></label><input id="height" type="range" min="12" max="32" value="22"></div>
+          <div class="panel-divider"></div>
+          <div class="subheading"><h3>选择陶土</h3><span>天然的开始</span></div>
+          <div class="clay-options"><button class="clay-option active" data-clay="stone"><i style="background:#cbb295"></i><span>原矿陶土</span></button><button class="clay-option" data-clay="red"><i style="background:#a85c42"></i><span>赤陶土</span></button><button class="clay-option" data-clay="white"><i style="background:#e7e2d8"></i><span>白瓷土</span></button></div>
+          <div class="moisture"><div><span data-icon="drop"></span>含水量 <b id="moistureValue">86%</b></div><div class="thin-track"><i id="moistureBar" style="width:86%"></i></div><button id="waterBtn">给陶土补一点水 <span>+</span></button></div>
+        </div>
+        <div id="glazePanel" hidden><p class="panel-description">选一抹颜色，让器物有自己的性格。</p><h3>釉色 <span id="glazeName">青苔绿</span></h3><div id="swatches" class="swatches"></div><div class="control-block"><label for="gloss">釉面光泽 <output id="glossValue">温润</output></label><input id="gloss" type="range" min="0" max="100" value="65"></div><div class="panel-divider"></div><h3>施釉方式</h3><div class="pattern-options"><button data-pattern="plain" class="active">纯色釉</button><button data-pattern="dip">半浸釉</button><button data-pattern="speckle">细砂斑点</button><button data-pattern="rings">环线彩绘</button></div><p class="glaze-tip"><span data-icon="sparkles"></span>烧制后，釉色会变得更加鲜活。</p></div>
+        <div id="firePanel" hidden><p class="panel-description">泥与火的相遇，也是一次等待。</p><div class="kiln-tag"><span data-icon="fire"></span>电窑 · 氧化烧成</div><div class="control-block"><label for="temperature">目标温度 <output id="temperatureValue">1,180°C</output></label><input id="temperature" type="range" min="850" max="1300" step="10" value="1180"><div class="range-labels"><span>850°C</span><span>1300°C</span></div></div><div class="control-block"><label for="duration">保温时间 <output id="durationValue">60 分钟</output></label><input id="duration" type="range" min="20" max="100" step="5" value="60"></div><div class="firing-advice" id="firingAdvice"></div><p class="subtle">游戏中的窑火将在约 12 秒内完成。温度参数仅用于游戏。</p><button class="fire-button" id="igniteBtn"><span data-icon="fire"></span>点燃窑火</button><div id="firingProgress" hidden><div class="thin-track"><i id="firingBar"></i></div><p id="firingStatus">正在升温…</p></div></div>
+        <div class="panel-footer"><span data-icon="info"></span><span id="toolHelp">在陶坯上左右拖动，改变形状</span></div>
+      </aside>
+      <div class="stage-wrap">
+        <div class="steps" aria-label="创作进度"><button class="step active" data-step="0"><span>01</span> 拉坯塑形</button><i></i><button class="step" data-step="1"><span>02</span> 施釉绘色</button><i></i><button class="step" data-step="2"><span>03</span> 入窑烧制</button></div>
+        <div id="scene" tabindex="0" role="application" aria-label="3D 陶坯。鼠标左右拖动塑形，右键拖动旋转视角。键盘上下选择高度、左右调整宽度。"><div id="sceneLoader"><span class="loader-wheel"></span><p>正在揉一团好泥…</p></div></div>
+        <div class="scene-top"><span class="studio-badge"><i></i><span id="sceneState">自由创作</span></span><div><button class="icon-button" id="soundBtn" title="开启环境音" aria-label="开启环境音" data-icon="soundOff"></button><button class="icon-button" id="fullscreenBtn" title="全屏工作台" aria-label="全屏工作台" data-icon="expand"></button></div></div>
+        <div class="object-label"><span id="objectType">无名之器</span><small id="objectMaterial">原矿陶土 · 未烧制</small></div>
+        <div class="interaction-hint" id="interactionHint"><span data-icon="hand"></span><span>触碰陶土，左右拖动，慢慢找到它的形状。</span></div>
+        <div class="stage-toolbar"><div class="history-buttons"><button class="icon-button" id="undoBtn" title="撤销 Ctrl+Z" aria-label="撤销" disabled data-icon="undo"></button><button class="icon-button" id="redoBtn" title="重做 Ctrl+Shift+Z" aria-label="重做" disabled data-icon="redo"></button><span></span><button class="icon-button" id="resetViewBtn" title="重置视角" aria-label="重置视角" data-icon="camera"></button></div><button class="wheel-toggle" id="wheelBtn"><span data-icon="pause"></span><span id="wheelLabel">转盘转动中</span></button><button class="icon-button" id="helpBtn" title="操作指南" aria-label="操作指南" data-icon="help"></button></div>
+      </div>
+      <aside class="right-panel panel">
+        <div class="panel-heading"><h2>今日灵感</h2><span data-icon="sparkles"></span></div>
+        <p class="inspiration-text">一只器物，盛放一种日常。</p>
+        <div class="order-illustration" id="orderPreview"><span class="order-edition">委托 / 001</span><canvas id="previewCanvas" width="400" height="280" aria-label="订单目标器型"></canvas><span class="order-difficulty">入门练习</span></div>
+        <div class="order-heading"><h3 id="orderName">一枝春 · 花器</h3><span class="reward"><span data-icon="sparkles"></span><b id="orderReward">120</b></span></div>
+        <p id="orderDescription" class="order-description">为窗边的一枝野花，做一个圆润而安静的家。</p>
+        <div class="order-specs"><span id="orderShape">圆润腹部 · 收口瓶颈</span><span id="orderGlaze">推荐青苔绿釉</span></div>
+        <button id="acceptOrder" class="outline-button">接受这份委托 <span data-icon="plus"></span></button>
+        <div class="match-block" id="matchBlock" hidden><div><span>器型吻合度</span><b id="matchValue">0%</b></div><div class="thin-track"><i id="matchBar"></i></div><label class="toggle-label"><input type="checkbox" id="guideToggle"><span>显示参考轮廓</span></label></div>
+        <div class="order-pagination"><button id="prevOrder" aria-label="上一个委托" data-icon="left"></button><div id="orderDots"></div><button id="nextOrder" aria-label="下一个委托" data-icon="right"></button></div>
+        <div class="tip-card"><span data-icon="leaf"></span><div><h3>手作小记</h3><p id="dailyTip">不必追求完美的对称。指尖留下的痕迹，是器物独有的温度。</p></div></div>
+      </aside>
+    </section>
+    <section class="bottom-bar"><div class="preset-area"><span class="preset-label">从一个器型开始</span><div class="presets"><button data-preset="vase" class="active"><span data-icon="vase"></span>花瓶</button><button data-preset="bowl"><span data-icon="bowl"></span>茶碗</button><button data-preset="cup"><span data-icon="cup"></span>水杯</button><button data-preset="jar"><span data-icon="jar"></span>陶罐</button></div></div><div class="next-actions"><button id="newBtn" class="text-button"><span data-icon="refresh"></span>重新揉泥</button><button id="nextStepBtn" class="primary-button">完成塑形，去施釉 <span data-icon="brush"></span></button></div></section>
+    <footer><span><i></i> 本机自动保存</span><p>泥土有记忆，手作有温度。</p><button id="footerHelp">操作指南 <kbd>H</kbd></button></footer>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal"><div class="modal-top"><div><p class="eyebrow" id="modalEyebrow">CLAY & TIME</p><h2 id="modalTitle"></h2></div><button id="closeModal" class="icon-button" aria-label="关闭" data-icon="close"></button></div><div id="modalContent"></div></dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

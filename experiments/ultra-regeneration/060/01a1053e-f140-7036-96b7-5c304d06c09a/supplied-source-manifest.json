@@ -1,0 +1,321 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-060-original-20261004T052124Z",
+  "candidate": "ultra-060",
+  "completed_at": "2026-10-04T05:24:33.044018Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 12,
+  "files": [
+    {
+      "archive_relative_path": "palimpsest/.openai/hosting.json",
+      "copied_sha256": "458625a71179522b128bdff0a0c854dbbfc9218a2693e0838089d968eeb4871d",
+      "final_source_sha256": "458625a71179522b128bdff0a0c854dbbfc9218a2693e0838089d968eeb4871d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089527231932142,
+      "mtime_utc": "2026-10-04T04:52:07.231932Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "458625a71179522b128bdff0a0c854dbbfc9218a2693e0838089d968eeb4871d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/README.md",
+      "copied_sha256": "efe315b9473dead46c98fdae46c4dd73cc90bf60e144f8f35afe7df6d72a98f1",
+      "final_source_sha256": "efe315b9473dead46c98fdae46c4dd73cc90bf60e144f8f35afe7df6d72a98f1",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090759860836459,
+      "mtime_utc": "2026-10-04T05:12:39.860837Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/README.md",
+      "size_bytes": 2238,
+      "source_sha256": "efe315b9473dead46c98fdae46c4dd73cc90bf60e144f8f35afe7df6d72a98f1",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/checks/edge-cases.mjs",
+      "copied_sha256": "151708c07e9c3a8b5a0d47e1851253bb9880e189649cbce940b91bbd81984d2a",
+      "final_source_sha256": "151708c07e9c3a8b5a0d47e1851253bb9880e189649cbce940b91bbd81984d2a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090817702249991,
+      "mtime_utc": "2026-10-04T05:13:37.702250Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/checks/edge-cases.mjs",
+      "size_bytes": 2632,
+      "source_sha256": "151708c07e9c3a8b5a0d47e1851253bb9880e189649cbce940b91bbd81984d2a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/checks/solutions.mjs",
+      "copied_sha256": "11e1ac674ed1a7d2757a6b12fffa7375d5bb046383fa2be587b2007a31116df1",
+      "final_source_sha256": "11e1ac674ed1a7d2757a6b12fffa7375d5bb046383fa2be587b2007a31116df1",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090512348901011,
+      "mtime_utc": "2026-10-04T05:08:32.348901Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/checks/solutions.mjs",
+      "size_bytes": 3132,
+      "source_sha256": "11e1ac674ed1a7d2757a6b12fffa7375d5bb046383fa2be587b2007a31116df1",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/engine.js",
+      "copied_sha256": "bbeeb6ad9a6de2b96af02838b30404d99519063fb8764a6a5ada8f5d49a5c142",
+      "final_source_sha256": "bbeeb6ad9a6de2b96af02838b30404d99519063fb8764a6a5ada8f5d49a5c142",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090481945936483,
+      "mtime_utc": "2026-10-04T05:08:01.945936Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/engine.js",
+      "size_bytes": 8956,
+      "source_sha256": "bbeeb6ad9a6de2b96af02838b30404d99519063fb8764a6a5ada8f5d49a5c142",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/game.js",
+      "copied_sha256": "116756a851db2696fefb25c075406e36f8efcfca9e3fcaa362802d0fc7d7c236",
+      "final_source_sha256": "116756a851db2696fefb25c075406e36f8efcfca9e3fcaa362802d0fc7d7c236",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090630810738830,
+      "mtime_utc": "2026-10-04T05:10:30.810739Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/game.js",
+      "size_bytes": 30428,
+      "source_sha256": "116756a851db2696fefb25c075406e36f8efcfca9e3fcaa362802d0fc7d7c236",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/index.html",
+      "copied_sha256": "fb7ddfa0a0ee6a712f6a5d673ecf27a99ef28921bf7012271fb3e6d21cfc2470",
+      "final_source_sha256": "fb7ddfa0a0ee6a712f6a5d673ecf27a99ef28921bf7012271fb3e6d21cfc2470",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090002987729401,
+      "mtime_utc": "2026-10-04T05:00:02.987729Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/index.html",
+      "size_bytes": 5315,
+      "source_sha256": "fb7ddfa0a0ee6a712f6a5d673ecf27a99ef28921bf7012271fb3e6d21cfc2470",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/style.css",
+      "copied_sha256": "af31512b273bf649b86d1c5fb5c213637e9cd3469d24eeb769a93a5551733697",
+      "final_source_sha256": "af31512b273bf649b86d1c5fb5c213637e9cd3469d24eeb769a93a5551733697",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090630811254873,
+      "mtime_utc": "2026-10-04T05:10:30.811255Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/style.css",
+      "size_bytes": 17868,
+      "source_sha256": "af31512b273bf649b86d1c5fb5c213637e9cd3469d24eeb769a93a5551733697",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089497039394062,
+      "mtime_utc": "2026-10-04T04:51:37.039394Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/vendor/three.core.js",
+      "copied_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "final_source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089496375493106,
+      "mtime_utc": "2026-10-04T04:51:36.375493Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/vendor/three.core.js",
+      "size_bytes": 1403455,
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "palimpsest/dist/vendor/three.module.js",
+      "copied_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "final_source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089494776753574,
+      "mtime_utc": "2026-10-04T04:51:34.776754Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest/dist/vendor/three.module.js",
+      "size_bytes": 603113,
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/palimpsest-deploy.tar.gz",
+      "copied_sha256": "b5d5f40e752d0058372c3706bada809e717517192c4ec0fefc9ee47cce700f99",
+      "final_source_sha256": "b5d5f40e752d0058372c3706bada809e717517192c4ec0fefc9ee47cce700f99",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090937524258041,
+      "mtime_utc": "2026-10-04T05:15:37.524258Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest-deploy.tar.gz",
+      "size_bytes": 420771,
+      "source_sha256": "b5d5f40e752d0058372c3706bada809e717517192c4ec0fefc9ee47cce700f99",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "be8d35d286dc7507ff3eda5ab84c3620cd9c4aefc93a5ea48d39aaba297cd592"
+  },
+  "inventory_fixed_at": "2026-10-04T05:24:32.836751Z",
+  "limitations": [
+    "Only inventory, raw byte copying and hash checks; no build/test/browser/gameplay/source modification/process/remote action or load sampling.",
+    "Original package not extracted or rebuilt; no other task or runtime/session paths read.",
+    "Validation and launch configuration remain provenance-limited original or parent reports."
+  ],
+  "local_process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "documented_port_listener_found": false,
+    "documented_preview_port": 4317,
+    "method": "read-only ps/lsof command, cwd and listeners; no source or forbidden runtime/session contents read",
+    "observed_at_utc": "2026-10-04 05:29:12 UTC",
+    "preserved_idle_framework_contexts": [
+      {
+        "pcpu": "0.0",
+        "pid": 4183,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 4184,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 4185,
+        "state": "S"
+      },
+      {
+        "pcpu": "0.0",
+        "pid": 4186,
+        "state": "S"
+      }
+    ],
+    "protected_originals": {
+      "chrome_1036_alive": true,
+      "listeners": {
+        "4173": 2560,
+        "4827": 2554,
+        "5173": 2547
+      }
+    },
+    "signals_sent": []
+  },
+  "original_evidence_inventory": {
+    "check_sources": [
+      "palimpsest/checks/solutions.mjs",
+      "palimpsest/checks/edge-cases.mjs"
+    ],
+    "images": [],
+    "preserved_execution_result_present": false,
+    "provenance": "Fixed original inventory and moonbloom_state static reading; no check execution.",
+    "source_documents": [
+      "palimpsest/README.md"
+    ]
+  },
+  "original_request": "实现一个时间旅行者与过去的自己协作改变事件结果的 3D 时间循环解谜游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "browser_report": "README.md:39 separately reports rendering, click pathfinding, pressure plates, echoes, pause and help UI checks.",
+    "edge_case_method": "checks/edge-cases.mjs:29 targeted geometry tests directly set player/cubes/echoes; comments do not guarantee those geometric states are reachable by normal solutions. Other boundaries use engine per-frame methods.",
+    "limitations": [
+      "Only two check scripts are retained; no saved execution results, screenshots or browser input driver.",
+      "Parent/author zero browser-error claim has no retained original error log and is not independently established.",
+      "Rule-engine solution and geometric boundary methods do not establish full three-level browser gameplay or real-device mobile completion."
+    ],
+    "preview": {
+      "command": "python3 -m http.server 4317 --directory dist",
+      "port": 4317
+    },
+    "provenance": "moonbloom_state static reading of README/check source, not independently executed validation.",
+    "solution_boundary": "README.md:39 three-level real per-frame movement/interactions describes this rule-engine input simulation, not a complete browser keyboard/touch walkthrough.",
+    "solution_method": "checks/solutions.mjs:4-26 uses Node TimeEngine rule-engine per-frame inputs update(1/60,{x,z}), rewind and interact; no solution teleport or elapsed modification was found in that static script."
+  },
+  "parent_reported_author_results": {
+    "boundary_checks_reported": true,
+    "browser_errors_reported": 0,
+    "provenance": "Parent/author report only; no independently executed validation.",
+    "three_levels_completion_reported": true
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Reported Sites URL only; not queried, not user formal domain or GitHub delivery evidence.",
+    "url": "https://palimpsest-time-lab.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters; not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".openai/hosting.json",
+    "README.md",
+    "checks/edge-cases.mjs",
+    "checks/solutions.mjs",
+    "dist/engine.js",
+    "dist/game.js",
+    "dist/index.html",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.core.js",
+    "dist/vendor/three.module.js"
+  ],
+  "source_inventory_observed_at": "2026-10-04T05:22:46.048937Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-29/palimpsest",
+  "stage": "original",
+  "thread_id": "01a1053e-f140-7036-96b7-5c304d06c09a",
+  "title": "Palimpsest",
+  "total_bytes": 2499095,
+  "turn_id": "01a1053f-1554-76a1-9817-4f68b0b18b46"
+}

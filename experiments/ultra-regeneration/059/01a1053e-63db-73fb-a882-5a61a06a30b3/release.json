@@ -1,0 +1,66 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "059-pottery-studio",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "059",
+  "generation_turn_id": "01a1053e-84ac-76ad-a038-c260eced86ee",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "c9d1eee47cd8536c736a4558e3964fc6a9d8751a",
+    "full_old_history_preserved": true,
+    "game_number": "059",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/c9d1eee47cd8536c736a4558e3964fc6a9d8751a",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 36101,
+      "path": "app.js",
+      "sha256": "8e012252832499fef8fd7225cabb8d578dfa61b758a62aade75899125fb12607"
+    },
+    {
+      "bytes": 4839,
+      "path": "game.js",
+      "sha256": "fa84d92b738d8cdd56c1133455052ab56315a5028fb7e7ee695b389f538ef43b"
+    },
+    {
+      "bytes": 11025,
+      "path": "index.html",
+      "sha256": "836db25c663eb1479d7171b5e5553c5d6be55946c17024c28f97445612c289c4"
+    },
+    {
+      "bytes": 27269,
+      "path": "style.css",
+      "sha256": "77da0cbb770acae9bdbf4b4843f1417e6c444cb09139969e65e2c1d740c2b8dc"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "11283f06689f13e21573ac5f79204713b35ea1c6a1ceada1da217760e301236c",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1053e-63db-73fb-a882-5a61a06a30b3",
+  "title": "泥间 · Clay & Time — 3D 陶艺工坊",
+  "url": "https://qzemi.cn/sentence-to-game/games/059-pottery-studio/"
+}

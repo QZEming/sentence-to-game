@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**57 / 100**。
+当前进度：**60 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -71,6 +71,9 @@
 | 055 | [怪怪街区 · LITTLE IMPOSTORS](games/055-monster-city-hide-seek/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/055-monster-city-hide-seek/) | [源码](games/055-monster-city-hide-seek/src/) |
 | 056 | [ONEIRA · 梦境旅人](games/056-dream-changing-rooms/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/) | [源码](games/056-dream-changing-rooms/src/) |
 | 057 | [山谷调度局 · Valley Rail](games/057-rail-dispatch/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/057-rail-dispatch/) | [源码](games/057-rail-dispatch/src/) |
+| 058 | [拾珍阁 · THE PATINA ROOM](games/058-antiquarian-auction/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/058-antiquarian-auction/) | [源码](games/058-antiquarian-auction/src/) |
+| 059 | [泥间 · Clay & Time — 3D 陶艺工坊](games/059-pottery-studio/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/059-pottery-studio/) | [源码](games/059-pottery-studio/src/) |
+| 060 | [PALIMPSEST · 时间回响](games/060-time-loop-palimpsest/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/060-time-loop-palimpsest/) | [源码](games/060-time-loop-palimpsest/src/) |
 
 ## 生成记录
 

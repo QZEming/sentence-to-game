@@ -1,0 +1,66 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "058-antiquarian-auction",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "058",
+  "generation_turn_id": "01a10532-5cc3-7009-b4f6-34267c723ab2",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "c9d1eee47cd8536c736a4558e3964fc6a9d8751a",
+    "full_old_history_preserved": true,
+    "game_number": "058",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/c9d1eee47cd8536c736a4558e3964fc6a9d8751a",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 34203,
+      "path": "app.js",
+      "sha256": "85d01f0ee3e40b96957510f8bde97bf05d9e697a3027b058cbdf05f35bca27a7"
+    },
+    {
+      "bytes": 17208,
+      "path": "engine.mjs",
+      "sha256": "af25aa3fdb367cc729e30a98c7e9c7aee8027bf3c9d52d508f4bc643f88574ca"
+    },
+    {
+      "bytes": 868,
+      "path": "index.html",
+      "sha256": "8dc469ab7f3a7910b0fd4b98a7140f80e475ced943975d0e5856a56b634eb38d"
+    },
+    {
+      "bytes": 14511,
+      "path": "scene.js",
+      "sha256": "5abc4730997e54250a8078f86cf6abb4ebc60f527ba19a8f1a60963f9117aece"
+    },
+    {
+      "bytes": 23960,
+      "path": "style.css",
+      "sha256": "7c3ea181897de3ad6f103f79f785a4fc4e1063dfc5c0ed3d79e579df8fcd8b32"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE.three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "6a8249c9ed14a808be4564c12f4ad0dc1ef4f4fbfa2d21d94d1360a99f9c8bc2",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10532-3bae-7707-8806-9592c23a90bc",
+  "title": "拾珍阁 · THE PATINA ROOM",
+  "url": "https://qzemi.cn/sentence-to-game/games/058-antiquarian-auction/"
+}
