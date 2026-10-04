@@ -1,0 +1,85 @@
+{
+  "candidate": 50,
+  "files": [
+    {
+      "bytes": 178,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/package.json",
+      "path": "package.json",
+      "sha256": "de7db510a8d7751c7fbba52fe7319139aa3e299c2ddd01973259aedfeb500e44"
+    },
+    {
+      "bytes": 1541,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/check-game.mjs",
+      "path": "check-game.mjs",
+      "sha256": "8e97973a4ae553db994ed5bd5eabdcf4c57d812c11aea8fd94a73a2e3b4dcced"
+    },
+    {
+      "bytes": 105,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/.openai/hosting.json",
+      "path": ".openai/hosting.json",
+      "sha256": "6fc294d6e59e29efe710ac31d05baebee8e2a3732201d9bb13472c53288de270"
+    },
+    {
+      "bytes": 7381,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/dist/index.html",
+      "path": "dist/index.html",
+      "sha256": "da0f80a8ba8ade17a86353f01a6574ead10f6309c1da72f74aaabfc13fba0c5c"
+    },
+    {
+      "bytes": 24221,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/dist/game.js",
+      "path": "dist/game.js",
+      "sha256": "179dbb7591149a5fe819211e2e80f1c0c06b3c4796edcf5b35492d76efead420"
+    },
+    {
+      "bytes": 4630,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/dist/engine.js",
+      "path": "dist/engine.js",
+      "sha256": "f8aa2d0cf10e0da13a4b2b65e9bcc29afae3fdb1eaf875a24ceaf4d2e1f9bffc"
+    },
+    {
+      "bytes": 13147,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/dist/style.css",
+      "path": "dist/style.css",
+      "sha256": "d7d1dd77e7f9b54ac0513fd9a353ce87ad853669bfb378f335a2343ff9edde1d"
+    },
+    {
+      "bytes": 691648,
+      "kind": "source",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler/dist/vendor/three.module.min.js",
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 190618,
+      "kind": "original_delivery",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/oneira-site.tar.gz",
+      "path": "oneira-site.tar.gz",
+      "sha256": "21fa96825c2cd7f81d4965c5831c379380eeb3d5cfe0fd6518192bbc1afc4cd9"
+    },
+    {
+      "bytes": 70609,
+      "kind": "original_delivery",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-03/task/oneira-preview.jpg",
+      "path": "oneira-preview.jpg",
+      "sha256": "b1853c7a75ac4a80ebe1b0a2bcef85b48c43aaed30d107ae386ce42b0a3001b5"
+    }
+  ],
+  "full_task_transcript": "not available",
+  "intended_old_game_number": "056",
+  "model_evidence": "not supplied; no ultra claim",
+  "original_tar_code_files_byte_match": "five static code files matched during read-only inspection; AppleDouble and original hosting metadata retained in raw tar",
+  "root_game_source_edits": false,
+  "schema_version": 1,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler",
+  "status": "unpublished_original_preserved_after_user_cancelled_old_release",
+  "thread_id": null,
+  "turn_id": null
+}

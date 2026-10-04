@@ -1,0 +1,104 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/archive/050-unpublished-before-ultra",
+  "effort": "unknown",
+  "game_dir": "056-dream-changing-rooms",
+  "game_logic_edits": false,
+  "game_number": "056",
+  "path_adaptations": [],
+  "pending_ultra_regeneration": true,
+  "provenance": {
+    "candidate": 50,
+    "effort_evidence": "unknown",
+    "full_task_transcript": "not available",
+    "game_number": "056",
+    "hosting_metadata": "original .openai/hosting.json retained in private source archive and raw tar, excluded from public game directory; not runtime code",
+    "model": null,
+    "model_evidence": "not supplied",
+    "original_tar_sha256": "21fa96825c2cd7f81d4965c5831c379380eeb3d5cfe0fd6518192bbc1afc4cd9",
+    "pending_ultra_regeneration": true,
+    "private_archive": "/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/archive/050-unpublished-before-ultra",
+    "prompt_evidence": "approved candidate registration; actual original task input not independently available",
+    "publication_authorization": "Parent relayed user priority to complete100 first and restore old055056 publication",
+    "publisher_game_logic_edits": false,
+    "reasoning_effort": null,
+    "release_class": "legacy_pending_ultra",
+    "schema_version": 1,
+    "source_directory": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler",
+    "thread_id": null,
+    "turn_id": null,
+    "ultra": false
+  },
+  "published_files": [
+    {
+      "bytes": 4630,
+      "path": "engine.js",
+      "sha256": "f8aa2d0cf10e0da13a4b2b65e9bcc29afae3fdb1eaf875a24ceaf4d2e1f9bffc"
+    },
+    {
+      "bytes": 24221,
+      "path": "game.js",
+      "sha256": "179dbb7591149a5fe819211e2e80f1c0c06b3c4796edcf5b35492d76efead420"
+    },
+    {
+      "bytes": 7381,
+      "path": "index.html",
+      "sha256": "da0f80a8ba8ade17a86353f01a6574ead10f6309c1da72f74aaabfc13fba0c5c"
+    },
+    {
+      "bytes": 13147,
+      "path": "style.css",
+      "sha256": "d7d1dd77e7f9b54ac0513fd9a353ce87ad853669bfb378f335a2343ff9edde1d"
+    },
+    {
+      "bytes": 691648,
+      "path": "vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    }
+  ],
+  "release_class": "legacy_pending_ultra",
+  "source_files": [
+    {
+      "bytes": 105,
+      "path": ".openai/hosting.json",
+      "sha256": "6fc294d6e59e29efe710ac31d05baebee8e2a3732201d9bb13472c53288de270"
+    },
+    {
+      "bytes": 1541,
+      "path": "check-game.mjs",
+      "sha256": "8e97973a4ae553db994ed5bd5eabdcf4c57d812c11aea8fd94a73a2e3b4dcced"
+    },
+    {
+      "bytes": 4630,
+      "path": "dist/engine.js",
+      "sha256": "f8aa2d0cf10e0da13a4b2b65e9bcc29afae3fdb1eaf875a24ceaf4d2e1f9bffc"
+    },
+    {
+      "bytes": 24221,
+      "path": "dist/game.js",
+      "sha256": "179dbb7591149a5fe819211e2e80f1c0c06b3c4796edcf5b35492d76efead420"
+    },
+    {
+      "bytes": 7381,
+      "path": "dist/index.html",
+      "sha256": "da0f80a8ba8ade17a86353f01a6574ead10f6309c1da72f74aaabfc13fba0c5c"
+    },
+    {
+      "bytes": 13147,
+      "path": "dist/style.css",
+      "sha256": "d7d1dd77e7f9b54ac0513fd9a353ce87ad853669bfb378f335a2343ff9edde1d"
+    },
+    {
+      "bytes": 691648,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 178,
+      "path": "package.json",
+      "sha256": "de7db510a8d7751c7fbba52fe7319139aa3e299c2ddd01973259aedfeb500e44"
+    }
+  ],
+  "title": "ONEIRA · 梦境旅人",
+  "ultra": false,
+  "url": "https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/"
+}

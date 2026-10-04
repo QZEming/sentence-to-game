@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="theme-color" content="#11141b"/><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect x=%276%27 y=%274%27 width=%2752%27 height=%2756%27 rx=%2720%27 fill=%27%23d9ff79%27/%3E%3Cpath d=%27M24 27v10m16-10v10%27 stroke=%27%23263333%27 stroke-width=%276%27 stroke-linecap=%27round%27/%3E%3C/svg%3E"/><title>怪怪街区 · LITTLE IMPOSTORS</title>  <script type="module" crossorigin src="./assets/index-BX8ylwDp.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-sXTM6eMc.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+<a class="brand" href="./" aria-label="怪怪街区首页"><span class="brand-mark"><i></i><i></i></span><span>怪怪街区<small>LITTLE IMPOSTORS</small></span><span class="alpha">PLAYGROUND / 01</span></a>
+<div class="server"><span class="status-dot"></span> 单人游乐场 <span class="slash">/</span> AI 已就位</div>
+<div class="top-actions"><button id="sound" class="icon-button" title="开启音效" aria-label="开启音效"></button><button id="help" class="icon-button" title="玩法指南" aria-label="玩法指南"></button><button id="settings" class="icon-button" title="游戏设置" aria-label="游戏设置"></button><span class="avatar">怪</span></div>
+</header>
+<main id="playground">
+<div id="scene"></div><div class="vignette"></div>
+<div class="map-caption"><span class="live-dot"></span> 城市微缩现场 <span>LIVE DIORAMA</span></div>
+<section class="round-hud"><div><span class="eyebrow" id="phase-label">等待你的恶作剧</span><div class="timer" id="timer">02<span>:</span>00</div></div><span class="hud-separator"></span><div class="round-goal"><span class="eyebrow">本局目标</span><b id="round-goal">藏好，别露馅。</b><span id="round-sub">1 位玩家 · 2 位 AI 搜捕者</span></div><button id="pause" class="icon-button" aria-label="暂停游戏" title="暂停游戏"></button></section>
+<aside class="left-panel">
+<div class="section-kicker"><span>01</span> CHOOSE YOUR SIDE</div><h1>整座城市，<br/>都是你的<span>藏身处。</span></h1><p class="intro">一点小伪装，一场大捉迷藏。<br/>嘘……那个路锥好像动了。</p>
+<div class="role-switch"><button class="role active" data-role="hider"><span class="role-icon">◉</span> 躲藏者</button><button class="role" data-role="seeker"><span class="role-icon">⌕</span> 搜捕者</button></div>
+<div class="role-info"><div class="role-heading"><span class="mint-dot"></span><b id="role-title">小怪兽 · 伪装大师</b><span id="role-tag">潜行</span></div><p id="role-description">变成街边的小物件，收集星糖，<br/>在搜捕者眼皮底下溜走。</p><div class="rule-line"><span id="rule-icon">✧</span><span id="rule-text">生存 120 秒，或收集 8 颗星糖逃离</span></div></div>
+<div class="team-heading"><span>街区里的小伙伴</span><span id="team-count">3 ONLINE</span></div><div id="roster" class="roster"></div>
+<div id="event-feed" class="event-feed"><span>✦</span> 夜幕降临，怪事即将发生。</div>
+</aside>
+<aside class="right-panel"><div class="minimap-card"><div class="map-heading"><b>薄荷街区</b><span>SECTOR 04</span></div><canvas id="minimap" width="220" height="184"></canvas><div class="map-footer"><span><i></i>你的位置</span><span><i></i>搜捕者</span><span> N ↑</span></div></div><div class="environment"><span>☾</span><div><b>蓝调时刻</b><small>微风 · 适合躲猫猫</small></div><span class="weather-temp">18°</span></div><div class="mission"><div class="eyebrow">街区挑战 <span>可选</span></div><div><span class="candy-symbol">✦</span><b>今天也要甜一点</b><span id="candy-count">0 / 8</span></div><div class="progress-track"><i id="candy-progress"></i></div><small id="mission-text">收集星糖，开启传送门</small></div></aside>
+<div id="world-label" class="world-label"><span>你</span><b id="form-label">薄荷 · 小怪兽</b></div>
+<div id="interaction" class="interaction"><kbd>Q</kbd><span>靠近城市物品，即可伪装</span></div>
+<div class="bottom-area"><div class="player-status"><div class="portrait"><span class="mini-monster">••</span></div><div class="status-details"><div><b id="player-name">薄荷</b><span id="health-text">100 HP</span></div><div class="health-track"><i id="health-bar"></i></div><div class="energy-track"><i id="energy-bar"></i></div><small id="stealth-state">自在闲逛 · 未被发现</small></div></div><div class="skills"><button class="skill" id="skill-q"><kbd>Q</kbd><span class="skill-glyph">◇</span><b id="q-name">物品伪装</b><small id="q-status">靠近物品</small></button><button class="skill" id="skill-e"><kbd>E</kbd><span class="skill-glyph">◎</span><b id="e-name">烟雾溜走</b><small id="e-status">就绪</small></button><button class="skill" id="skill-space"><kbd>SPACE</kbd><span class="skill-glyph">♧</span><b id="space-name">分身诱饵</b><small id="space-status">就绪</small></button><button class="skill" id="skill-shift"><kbd>SHIFT</kbd><span class="skill-glyph">ϟ</span><b>怪兽冲刺</b><small>消耗体力</small></button></div><button id="start" class="start-button"><span>开始躲猫猫</span><span>↗</span></button></div>
+<footer class="game-footer"><div><span class="key-group"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span> 移动 <span class="footer-divider"></span><span>鼠标拖动</span> 环顾街区 <span class="footer-divider"></span><kbd>ESC</kbd> 暂停</div><span><i class="status-dot"></i> 一切看起来都很正常。大概吧。</span></footer>
+<div id="toast" class="toast" role="status"></div><div id="countdown" class="countdown"></div><div id="mobile-pad"><button data-key="w">↑</button><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div>
+</main>
+<div id="modal" class="modal-backdrop" hidden><div class="modal"><button id="close-modal" class="close-modal" aria-label="关闭">×</button><div id="modal-content"></div></div></div>
+</div>
+</body></html>

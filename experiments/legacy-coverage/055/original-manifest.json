@@ -1,0 +1,241 @@
+{
+  "binding_sha256": "f551c523067a7e7a831d1a59490ec5f4ac8f2589092a3579894c49ba29369eba",
+  "candidate": 49,
+  "files": [
+    {
+      "bytes": 5461,
+      "path": "interrupted-source-manifest.json",
+      "sha256": "612ad543302b1e0d67eb725ff473e3a95d3635aaeefe3e5cb6abead8356a2451"
+    },
+    {
+      "bytes": 5856,
+      "path": "interrupted-source-tree/index.html",
+      "sha256": "7c67eb8b0e8acacd3f68de952b424918b36e14ef780c0592ecf9a6bab477beec"
+    },
+    {
+      "bytes": 33874,
+      "path": "interrupted-source-tree/package-lock.json",
+      "sha256": "e6b0f09b385598e473ebd7131307982d88436813d9143d2edfcf35e6ee324b67"
+    },
+    {
+      "bytes": 230,
+      "path": "interrupted-source-tree/package.json",
+      "sha256": "beddef3039d15a3e419f5fb9cf5effd69039479bef81b5fac5b464aa8b708f2b"
+    },
+    {
+      "bytes": 16624,
+      "path": "interrupted-source-tree/src/style.css",
+      "sha256": "268af5585a58ac99c7eb2e4eb7e5872a161ce1ae021011e826cd51212b671848"
+    },
+    {
+      "bytes": 2081,
+      "path": "parent-handoff.json",
+      "sha256": "74e4ef2247b3eb7ae29f4489e74dc0b67726c58c340651f414528a442b519727"
+    },
+    {
+      "bytes": 118,
+      "path": "prompt.txt",
+      "sha256": "1c061575ec83c347107780a5125fa79d3eccc288793b24216c9039abd6f6ad22"
+    },
+    {
+      "bytes": 2170,
+      "path": "provenance.json",
+      "sha256": "b2a5e8f04896ef34b27c6fd0af7bbc32e3b799360788af8dc91c9c8de7e0064b"
+    },
+    {
+      "bytes": 36972,
+      "path": "source-manifest.json",
+      "sha256": "22cda15b8a970151149513caf70ae9ffdff4fa154309bc96a6d3fa7705b6acd0"
+    },
+    {
+      "bytes": 2168,
+      "path": "source-tree/README.md",
+      "sha256": "b7c907ef621ef70180aa8cd21f4c9585187feaf2e4a049829480feb6706d29ea"
+    },
+    {
+      "bytes": 5495,
+      "path": "source-tree/VERIFICATION.md",
+      "sha256": "58c364a0e4cb06dc974324c97cf8a188d211e640896d0edd387b3a4e221deb7e"
+    },
+    {
+      "bytes": 546279,
+      "path": "source-tree/dist/assets/index-BX8ylwDp.js",
+      "sha256": "ef2e5c16d569c3fb0becbc1e3064aa9e21cc856c3235e4bc978677717b3f3342"
+    },
+    {
+      "bytes": 16949,
+      "path": "source-tree/dist/assets/index-sXTM6eMc.css",
+      "sha256": "514ee01639ac92248f1ba5006a89086b3ac3bfe6b8b4e76a05c924a34ff2475b"
+    },
+    {
+      "bytes": 6241,
+      "path": "source-tree/dist/index.html",
+      "sha256": "f023ada717834c39ac4ad051ce2d071063fbe5cae30783008b925d0d7c12177c"
+    },
+    {
+      "bytes": 6187,
+      "path": "source-tree/index.html",
+      "sha256": "e01a2631caea5e48e243f89074e9fc1437a752fd9028982fc1f159ef86b50a2d"
+    },
+    {
+      "bytes": 2280,
+      "path": "source-tree/output/delivery-manifest.json",
+      "sha256": "1b9f389188778391a329e406b14a23aa57f2e8074948ec057043384ea265ae9b"
+    },
+    {
+      "bytes": 572622,
+      "path": "source-tree/output/playwright/compact-desktop-final.png",
+      "sha256": "c6d42225f306262c4146e07d45914b17389aecb44b7a8778aba15265d74a433a"
+    },
+    {
+      "bytes": 821938,
+      "path": "source-tree/output/playwright/desktop-final.png",
+      "sha256": "6cc0a75ddd9fd22b9a6491ebfb6a4b6f5912e2b7677fbe849a786ba49e867ecf"
+    },
+    {
+      "bytes": 850879,
+      "path": "source-tree/output/playwright/lobby-initial.png",
+      "sha256": "d2d34cc50ba0d0442e583c142234bee9fd8b2bbcb74b5d0088427a73e886d5d0"
+    },
+    {
+      "bytes": 248122,
+      "path": "source-tree/output/playwright/mobile-final.png",
+      "sha256": "44f820dbea5d14ce9ac4b2a3922d84a05ee0e44561ffa67e5d1684c29517a61b"
+    },
+    {
+      "bytes": 280264,
+      "path": "source-tree/output/playwright/natural-survival-victory.png",
+      "sha256": "fef2a7e57c2eb381f462d9467cc0f14c8cc15c37bb3ac7bd1c588eb9a0d644d6"
+    },
+    {
+      "bytes": 828517,
+      "path": "source-tree/output/playwright/playing-final.png",
+      "sha256": "64a92d5a183d3645ddd561d61a5db2ba96af9a53b3ef2ca479809e24ce6f8796"
+    },
+    {
+      "bytes": 264869,
+      "path": "source-tree/output/playwright/portal-victory.png",
+      "sha256": "9c514477a18fe1a42ea35d381a665e9e418b566207201c9e5b4c666cbdb79212"
+    },
+    {
+      "bytes": 777,
+      "path": "source-tree/output/verification/archive-integrity.json",
+      "sha256": "e51be87f156871041085b50515fcf936f6ca86ec9dac21d01b4b2b2bb3002412"
+    },
+    {
+      "bytes": 32,
+      "path": "source-tree/output/verification/browser-cleanup.log",
+      "sha256": "ad8e8daa1f5ada45f13ce0fd616d1f6aeb2c496b9603dd93d4a5184fae454e4b"
+    },
+    {
+      "bytes": 727,
+      "path": "source-tree/output/verification/build-final.log",
+      "sha256": "b20419cb24a1b378ea8b2426b0220bd7006b2937d406f1997f606fb6e48dc60d"
+    },
+    {
+      "bytes": 727,
+      "path": "source-tree/output/verification/build-initial.log",
+      "sha256": "7f27b7f52d2915434346cf8009ee6e89a99ede903d2ba041a845698aa167a11a"
+    },
+    {
+      "bytes": 234,
+      "path": "source-tree/output/verification/cleanup.json",
+      "sha256": "06bf9f18e790591a2f1facc0f7dd4b87ab3a5ce5f15dc55e8f1d549a9df709be"
+    },
+    {
+      "bytes": 1671,
+      "path": "source-tree/output/verification/final-check.js",
+      "sha256": "74ada2d44a3da9c084eabf2f7b52d9ddb865c7a693a66f6c3f33f148b275b23c"
+    },
+    {
+      "bytes": 2456,
+      "path": "source-tree/output/verification/final-check.log",
+      "sha256": "6f2b49e0317e7b90ea846e2286948f669b32fc60e6d2d07505eeac1d10b3df77"
+    },
+    {
+      "bytes": 5981,
+      "path": "source-tree/output/verification/integration-diagnostic.log",
+      "sha256": "c089f810fdaa9d25377b6009644836f457e1c1678f938f1437b45af31a984829"
+    },
+    {
+      "bytes": 7511,
+      "path": "source-tree/output/verification/integration-final.log",
+      "sha256": "31c0858657b242527e35ee570dec58370ff075826303674985b196b28238e9cb"
+    },
+    {
+      "bytes": 5624,
+      "path": "source-tree/output/verification/integration.js",
+      "sha256": "dd27f7517370546d74d49a38cd21e04767ca74e565197bb98f2ef5609ffd40d4"
+    },
+    {
+      "bytes": 72,
+      "path": "source-tree/output/verification/integration.log",
+      "sha256": "cc06f20f025de33687465fd913baeaabc70a9dcc654fa2011e480ca3bd05d953"
+    },
+    {
+      "bytes": 39385,
+      "path": "source-tree/output/verification/main.recovered-original.js",
+      "sha256": "2a5fb42556d0af67b406396fd6025fd092f878547a88503c422a6547a57e6295"
+    },
+    {
+      "bytes": 2437,
+      "path": "source-tree/output/verification/production-visual.js",
+      "sha256": "40fd8b8967e33c9d4a366b682431f8004944d91d3e62a2d6a0cbb3857e0f8d7f"
+    },
+    {
+      "bytes": 3393,
+      "path": "source-tree/output/verification/production-visual.log",
+      "sha256": "9d3b99dd4b56c1a0ea15b6c9a9c3c68b215a046c276bc804bf26f63228d93eac"
+    },
+    {
+      "bytes": 63231,
+      "path": "source-tree/output/verification/resume-changes.patch",
+      "sha256": "b7c9b9b6aa4ce748e77502cdf68f5111932529de38ef9c9fe831d6c8d285bdba"
+    },
+    {
+      "bytes": 5021,
+      "path": "source-tree/output/verification/smoke-ui-final.log",
+      "sha256": "dc0f299f029b29243292dbe522aa842fb9312aa4c8c886b1672a4b3b819eace3"
+    },
+    {
+      "bytes": 3342,
+      "path": "source-tree/output/verification/smoke-ui-initial-rerun.log",
+      "sha256": "f3d38928646b1e97c8346ca06bbcd27415001f9ea3f28607fa628cf406dad375"
+    },
+    {
+      "bytes": 42,
+      "path": "source-tree/output/verification/smoke-ui-initial.log",
+      "sha256": "72cd7019dde7a39bada0cf2ad41004e241a296ea11c19a2f5d8de6db7f1b8afb"
+    },
+    {
+      "bytes": 3173,
+      "path": "source-tree/output/verification/smoke-ui.js",
+      "sha256": "2c81fd33ee2ff686d4d58806e722b84ca837fa8ca04f95ef1609b868dc6bfc1f"
+    },
+    {
+      "bytes": 33874,
+      "path": "source-tree/package-lock.json",
+      "sha256": "e6b0f09b385598e473ebd7131307982d88436813d9143d2edfcf35e6ee324b67"
+    },
+    {
+      "bytes": 230,
+      "path": "source-tree/package.json",
+      "sha256": "beddef3039d15a3e419f5fb9cf5effd69039479bef81b5fac5b464aa8b708f2b"
+    },
+    {
+      "bytes": 40126,
+      "path": "source-tree/src/main.js",
+      "sha256": "5fb06ed57e0f90a29e3836eeae0ada62ac167c5c279e3fc20e013ce035aa505c"
+    },
+    {
+      "bytes": 16952,
+      "path": "source-tree/src/style.css",
+      "sha256": "7b6896275e8cae623d9eddd60bb7b901909e21f685f36cb3227bceb73fd9e5ba"
+    }
+  ],
+  "game_dir": "055-monster-city-hide-seek",
+  "mode": "codex_single_requirement_task",
+  "model": "gpt-6-astra",
+  "schema_version": 1,
+  "thread_id": "01a0fab0-dc09-70d8-8368-b5df9f631082"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate": 50,
+  "effort_evidence": "unknown",
+  "full_task_transcript": "not available",
+  "game_number": "056",
+  "hosting_metadata": "original .openai/hosting.json retained in private source archive and raw tar, excluded from public game directory; not runtime code",
+  "model": null,
+  "model_evidence": "not supplied",
+  "original_tar_sha256": "21fa96825c2cd7f81d4965c5831c379380eeb3d5cfe0fd6518192bbc1afc4cd9",
+  "pending_ultra_regeneration": true,
+  "private_archive": "/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/archive/050-unpublished-before-ultra",
+  "prompt_evidence": "approved candidate registration; actual original task input not independently available",
+  "publication_authorization": "Parent relayed user priority to complete100 first and restore old055056 publication",
+  "publisher_game_logic_edits": false,
+  "reasoning_effort": null,
+  "release_class": "legacy_pending_ultra",
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-03/task/dream-traveler",
+  "thread_id": null,
+  "turn_id": null,
+  "ultra": false
+}

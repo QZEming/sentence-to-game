@@ -2,11 +2,11 @@
 
 **一句话，100 个游戏。**
 
-记录用一句话做出 100 个游戏的过程。每个游戏由 **GPT6 Astra** 在独立的一次性任务中完成。
+记录用一句话做出 100 个游戏的过程。项目收录一句话任务产物及已保存的历史稿；各款模型、生成参数和过程以对应发布记录为准。
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**53 / 100**。
+当前进度：**55 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -67,10 +67,12 @@
 | 051 | [MAGNET WORKS · 磁力工坊](games/051-robot-magnetic-factory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/051-robot-magnetic-factory/) | [源码](games/051-robot-magnetic-factory/src/) |
 | 053 | [MYCELIUM · 林间共生](games/053-mushroom-forest-territory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/053-mushroom-forest-territory/) | [源码](games/053-mushroom-forest-territory/src/) |
 | 054 | [爪爪奇旅 · TOYBOUND](games/054-cat-card-toy-adventure/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/054-cat-card-toy-adventure/) | [源码](games/054-cat-card-toy-adventure/src/) |
+| 055 | [怪怪街区 · LITTLE IMPOSTORS（旧版，待重生成）](games/055-monster-city-hide-seek/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/055-monster-city-hide-seek/) | [源码](games/055-monster-city-hide-seek/src/) |
+| 056 | [ONEIRA · 梦境旅人（旧版，待重生成）](games/056-dream-changing-rooms/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/) | [源码](games/056-dream-changing-rooms/src/) |
 
 ## 生成记录
 
-游戏由 GPT6 Astra 在彼此独立的一次性任务中完成，任务内允许使用工具开发。已完成的游戏分批发布，并保留原始编号，不因尚未完成的候选重排。
+新生成游戏使用独立任务，任务内允许使用工具开发。055、056先发布历史稿以补充覆盖，历史 effort 未知，均待 Ultra 重生成；055有中断后续接修复，056模型及任务ID缺证据。已完成的游戏分批发布，并保留原始编号，不因尚未完成的候选重排。
 
 - 完整提示词保存在各游戏的 `prompt.txt` 中。
 - 原始源码、构建结果和任务记录另存于不可变的本机档案。
