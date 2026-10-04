@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**69 / 100**。
+当前进度：**70 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -83,6 +83,7 @@
 | 067 | [铁火围城 · IRON SIEGE](games/067-iron-siege/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/067-iron-siege/) | [源码](games/067-iron-siege/src/) |
 | 068 | [深时档案 · Fossil Expedition](games/068-fossil-expedition/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/068-fossil-expedition/) | [源码](games/068-fossil-expedition/src/) |
 | 069 | [回响 · RESONANCE VAULT](games/069-resonance-vault/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/069-resonance-vault/) | [源码](games/069-resonance-vault/src/) |
+| 070 | [风屿 · 天气精灵](games/070-verdant-isle/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/070-verdant-isle/) | [源码](games/070-verdant-isle/src/) |
 
 ## 生成记录
 

@@ -1,0 +1,323 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-070-original-20261004T063554Z",
+  "candidate": "ultra-070",
+  "completed_at": "2026-10-04T06:40:08.401446Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 13,
+  "files": [
+    {
+      "archive_relative_path": "verdant-isle/.gitignore",
+      "copied_sha256": "53c041a2675c96074ee9043b1ad41efa0e4c33b05c1aef2c92f64a62a0b57280",
+      "final_source_sha256": "53c041a2675c96074ee9043b1ad41efa0e4c33b05c1aef2c92f64a62a0b57280",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093558606126768,
+      "mtime_utc": "2026-10-04T05:59:18.606127Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/.gitignore",
+      "size_bytes": 39,
+      "source_sha256": "53c041a2675c96074ee9043b1ad41efa0e4c33b05c1aef2c92f64a62a0b57280",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/.openai/hosting.json",
+      "copied_sha256": "ee69e22b38148dd9aaa653e9f57179d83d1bf77b9ca87f9d42387534ebde89e1",
+      "final_source_sha256": "ee69e22b38148dd9aaa653e9f57179d83d1bf77b9ca87f9d42387534ebde89e1",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093591345766693,
+      "mtime_utc": "2026-10-04T05:59:51.345767Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "ee69e22b38148dd9aaa653e9f57179d83d1bf77b9ca87f9d42387534ebde89e1",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/README.md",
+      "copied_sha256": "6c09c047f0c8bcf1f32d9fd4fd31064861a0be485fa7ada411119a1a4cd6ffe6",
+      "final_source_sha256": "6c09c047f0c8bcf1f32d9fd4fd31064861a0be485fa7ada411119a1a4cd6ffe6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095239936629201,
+      "mtime_utc": "2026-10-04T06:27:19.936629Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/README.md",
+      "size_bytes": 2263,
+      "source_sha256": "6c09c047f0c8bcf1f32d9fd4fd31064861a0be485fa7ada411119a1a4cd6ffe6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/app.js",
+      "copied_sha256": "3bdae75708f671d1d0efc162e647a70aa35e61accf78e830afbfb40d2359984f",
+      "final_source_sha256": "3bdae75708f671d1d0efc162e647a70aa35e61accf78e830afbfb40d2359984f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094999323744829,
+      "mtime_utc": "2026-10-04T06:23:19.323745Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/app.js",
+      "size_bytes": 20328,
+      "source_sha256": "3bdae75708f671d1d0efc162e647a70aa35e61accf78e830afbfb40d2359984f",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/engine.js",
+      "copied_sha256": "cd24cf73451bba0949ca271af4ee441541ee298f5ed90ead03a158c061126fbb",
+      "final_source_sha256": "cd24cf73451bba0949ca271af4ee441541ee298f5ed90ead03a158c061126fbb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094999323472495,
+      "mtime_utc": "2026-10-04T06:23:19.323472Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/engine.js",
+      "size_bytes": 13142,
+      "source_sha256": "cd24cf73451bba0949ca271af4ee441541ee298f5ed90ead03a158c061126fbb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/index.html",
+      "copied_sha256": "257ca1dc14ed60d115f92f2331a94f0b20685462f8f6287dc818e4f5413ee73a",
+      "final_source_sha256": "257ca1dc14ed60d115f92f2331a94f0b20685462f8f6287dc818e4f5413ee73a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094108164293026,
+      "mtime_utc": "2026-10-04T06:08:28.164293Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/index.html",
+      "size_bytes": 5767,
+      "source_sha256": "257ca1dc14ed60d115f92f2331a94f0b20685462f8f6287dc818e4f5413ee73a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/scene.js",
+      "copied_sha256": "6fb38b33894686d2b2bb5e19dc18b63d663c1f769fedecfa1e93d456f3a3e438",
+      "final_source_sha256": "6fb38b33894686d2b2bb5e19dc18b63d663c1f769fedecfa1e93d456f3a3e438",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791094999323212619,
+      "mtime_utc": "2026-10-04T06:23:19.323213Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/scene.js",
+      "size_bytes": 20088,
+      "source_sha256": "6fb38b33894686d2b2bb5e19dc18b63d663c1f769fedecfa1e93d456f3a3e438",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/style.css",
+      "copied_sha256": "1e90c91d3ded04e854b5999aea627549ffcc6d15532b55ce2350dc5b9f3fe458",
+      "final_source_sha256": "1e90c91d3ded04e854b5999aea627549ffcc6d15532b55ce2350dc5b9f3fe458",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095149917763235,
+      "mtime_utc": "2026-10-04T06:25:49.917763Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/style.css",
+      "size_bytes": 21821,
+      "source_sha256": "1e90c91d3ded04e854b5999aea627549ffcc6d15532b55ce2350dc5b9f3fe458",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/vendor/OrbitControls.js",
+      "copied_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "final_source_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093559337126243,
+      "mtime_utc": "2026-10-04T05:59:19.337126Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/vendor/OrbitControls.js",
+      "size_bytes": 32134,
+      "source_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093560300595088,
+      "mtime_utc": "2026-10-04T05:59:20.300595Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/dist/vendor/three.module.js",
+      "copied_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "final_source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791093558844094067,
+      "mtime_utc": "2026-10-04T05:59:18.844094Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/dist/vendor/three.module.js",
+      "size_bytes": 1304820,
+      "source_sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "verdant-isle/tests/ecology.mjs",
+      "copied_sha256": "85e91194ce2e499d4899048df95b0c3146a9c3dfa1cf4b72d3b4ef5c5c4da00f",
+      "final_source_sha256": "85e91194ce2e499d4899048df95b0c3146a9c3dfa1cf4b72d3b4ef5c5c4da00f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095149889914426,
+      "mtime_utc": "2026-10-04T06:25:49.889915Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle/tests/ecology.mjs",
+      "size_bytes": 1664,
+      "source_sha256": "85e91194ce2e499d4899048df95b0c3146a9c3dfa1cf4b72d3b4ef5c5c4da00f",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/verdant-isle-release.tar.gz",
+      "copied_sha256": "11e16d1c34787359b6d54159defe6edb0b9d0ea970e4881ef6a8f9162232dc1f",
+      "final_source_sha256": "11e16d1c34787359b6d54159defe6edb0b9d0ea970e4881ef6a8f9162232dc1f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095275445545693,
+      "mtime_utc": "2026-10-04T06:27:55.445546Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle-release.tar.gz",
+      "size_bytes": 301685,
+      "source_sha256": "11e16d1c34787359b6d54159defe6edb0b9d0ea970e4881ef6a8f9162232dc1f",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "e2eda9d6523c8af60ddb8db795381a88522ebb0f8dc2efabb944afd1080829ac"
+  },
+  "inventory_fixed_at": "2026-10-04T06:40:08.204119Z",
+  "limitations": [
+    "Only fixed inventory, raw-byte copying and SHA256 checks; no run/test/build/browser/gameplay/process/load sampling/source modification/remote action.",
+    "Original package not extracted or rebuilt; eligible .gitignore/.openai preserved.",
+    "Forbidden runtime/session/node_modules/.git/.codex/.agents/.aws/.playwright-cli/cache paths and symbolic-link ancestors excluded."
+  ],
+  "original_evidence_inventory": {
+    "documents": [
+      "verdant-isle/README.md"
+    ],
+    "external_output_read": false,
+    "preserved_execution_result_or_browser_driver_present": false,
+    "screenshots": [],
+    "test_sources": [
+      "verdant-isle/tests/ecology.mjs"
+    ]
+  },
+  "original_request": null,
+  "original_request_status": "Exact original sentence missing from available parent evidence; summary only, no fabrication.",
+  "original_request_summary": "天气精灵生态调控句",
+  "original_verification_scope": {
+    "browser_report": "README.md:36 reports Chrome real clicks for rainfall task progress, planting/growth, season switching and encyclopedia; desktop and 390x844 mobile layout.",
+    "limitations": [
+      "Target-state victory test does not establish natural complete ecology gameplay.",
+      "PASS is a script print, not preserved independently executed result.",
+      "No retained browser driver determines whether browser checks use extra hooks or exact input sequences.",
+      "README reports no blocking error in main flow, not a zero-console-error count; no original error log retained.",
+      "Mobile is viewport layout, not actual physical-device touch complete gameplay.",
+      "README.md:38 says WebMCP calls were not verified.",
+      "Exact original request missing and remains null, separate summary only."
+    ],
+    "logic_method": "tests/ecology.mjs imports production Ecosystem, calls cast/tick/save and directly sets energy/paused/weather.",
+    "preview": {
+      "command": "python3 -m http.server 4189 --bind 127.0.0.1 --directory dist",
+      "host": "127.0.0.1",
+      "port": 4189
+    },
+    "provenance": "moonbloom_state static reading of original README/test source and parent report; no independent test execution.",
+    "win_test_method": "The complete victory test directly sets stats.rains=3 and all plots with mature plants (growth=1) and water55, then ticks30sec to check five animals/quest6/won/save."
+  },
+  "parent_readonly_process_observation": {
+    "dedicated_preview_or_browser_present": false,
+    "framework_contexts_preserved": true,
+    "framework_pcpu": 0,
+    "framework_state": "S",
+    "idle_framework_contexts": [
+      43248,
+      43249,
+      43250,
+      43251
+    ],
+    "observed_at": "2026-10-04T06:36:09Z",
+    "preview_listener_present": false,
+    "preview_port": 4189,
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only ps/lsof observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "desktop_mobile_checks_reported": true,
+    "ecology_logic_and_win_tests_reported": true,
+    "provenance": "Parent/author report only, not independently executed validation."
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not fetched, not formal user domain or GitHub delivery evidence.",
+    "url": "https://weather-spirit-verdant-isle.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/engine.js",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/OrbitControls.js",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.module.js",
+    "tests/ecology.mjs"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle",
+  "stage": "original",
+  "thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087",
+  "title": "风屿天气精灵 Verdant Isle",
+  "total_bytes": 1724938,
+  "turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a"
+}

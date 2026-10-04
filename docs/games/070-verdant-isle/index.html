@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#dce9e5">
+<title>风屿 · 天气精灵</title><meta name="description" content="以风雨滋养荒土，让四季与生命在一座 3D 岛屿上重新流动。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23284f46'/%3E%3Cpath d='M9 23C6 14 12 6 25 7c0 12-8 20-16 16Z' fill='%23bbd59c'/%3E%3Cpath d='m9 25 11-13' stroke='%23284f46' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div id="app">
+ <div id="world" aria-label="可旋转的三维生态岛屿"></div>
+ <div id="vignette"></div>
+ <header class="topbar">
+  <a class="brand" href="./" aria-label="风屿首页"><span class="brand-symbol" data-icon="leaf"></span><div><h1>风屿<span>VERDANT ISLE</span></h1><p>一座岛屿，万物新生</p></div></a>
+  <div class="season-clock panel"><span id="season-icon" data-icon="sprout"></span><div><strong id="season-name">春 · 万物初醒</strong><span id="day-label">第 1 日 · 晨光</span></div><div class="clock-separator"></div><span id="temperature">18°</span></div>
+  <nav class="top-actions" aria-label="游戏菜单"><button id="journal-btn" class="pill-button" title="生态图鉴"><span data-icon="book"></span><span>生态图鉴</span><small id="discovery-badge">0 / 5</small></button><button id="sound-btn" class="icon-button" aria-label="开启自然音效" title="自然音效"><span data-icon="volume-off"></span></button><button id="help-btn" class="icon-button" aria-label="玩法说明" title="玩法说明"><span data-icon="help"></span></button></nav>
+ </header>
+ <aside class="left-panel">
+  <section class="ecosystem panel"><div class="eyebrow"><span data-icon="leaf"></span> 岛屿生态 <span class="live">实时</span></div><div class="vigor-row"><div><span class="big-number" id="vigor">0</span><span class="out-of">/ 100</span></div><span class="health-chip" id="health-label">等待苏醒</span></div><div class="meter"><div id="vigor-bar"></div></div><p id="ecosystem-hint">让第一场雨，唤醒沉睡的土地。</p><div class="eco-stats"><div><span data-icon="sprout"></span><strong id="cover-value">0%</strong><small>植被覆盖</small></div><div><span data-icon="droplet"></span><strong id="water-value">30%</strong><small>土壤水分</small></div><div><span data-icon="bird"></span><strong id="animal-value">0</strong><small>归来物种</small></div></div></section>
+  <section class="mission panel"><div class="eyebrow"><span data-icon="sparkles"></span> 复苏之旅 <span id="quest-index">01 / 06</span></div><h2 id="quest-name">唤醒沉睡的土地</h2><p id="quest-desc">在岛屿上施放 3 次唤雨</p><div class="quest-bottom"><div class="quest-dots" id="quest-dots"></div><span id="quest-count">0 / 3</span></div><div class="quest-reward"><span data-icon="sparkles"></span><span id="quest-reward">奖励 20 精灵能量</span></div></section>
+  <button class="field-notes" id="log-btn"><span data-icon="history"></span><span>岛屿手记</span><span data-icon="chevron-right"></span></button>
+ </aside>
+ <aside class="right-panel"><div class="season-picker panel"><div class="eyebrow">四季之轮</div><div id="season-buttons"></div><p><span data-icon="sparkles"></span> 20 能量 / 切换</p></div><div id="weather-event" class="weather-event panel" hidden></div></aside>
+ <div class="island-caption"><span class="caption-line"></span><span>初生之岛</span><span class="caption-line"></span><small>THE AWAKENING</small></div>
+ <div class="camera-tools panel"><button id="zoom-in" aria-label="放大" title="放大"><span data-icon="plus"></span></button><button id="zoom-out" aria-label="缩小" title="缩小"><span data-icon="minus"></span></button><span></span><button id="reset-view" aria-label="重置视角" title="重置视角"><span data-icon="focus"></span></button></div>
+ <div id="tile-info" class="tile-info panel" hidden></div>
+ <div id="notice" class="notice" role="status" aria-live="polite"></div>
+ <div id="combo-label" class="combo-label" aria-live="polite"></div>
+ <section class="bottom-controls">
+  <div id="seed-picker" class="seed-picker panel" hidden></div>
+  <div class="power-hint" id="power-hint"><span data-icon="mouse"></span> 选择天气，再点击岛屿施放 <span class="hint-divider">·</span> 拖动旋转，滚轮缩放</div>
+  <div class="toolbar panel"><div class="spirit-energy"><span class="energy-orb" data-icon="sparkles"></span><div><span>精灵能量</span><strong><span id="energy-value">90</span><small>/100</small></strong><div class="energy-meter"><div id="energy-bar"></div></div></div></div><div class="tool-divider"></div><div id="power-buttons" class="powers"></div></div>
+  <footer><span class="save-indicator"><span></span><span id="save-status">旅程自动保存在本机</span></span><div class="time-controls"><button id="pause-btn" aria-label="暂停"><span data-icon="pause"></span></button><button id="speed-btn" title="切换时间速度">1×</button><span>时光流动</span></div><button id="reset-btn">开启新旅程</button></footer>
+ </section>
+ <div id="loading"><div class="loading-leaf" data-icon="leaf"></div><h2>风正吹向岛屿</h2><p>正在唤醒山丘与海洋…</p></div>
+ <dialog id="modal"><button class="modal-close icon-button" aria-label="关闭"><span data-icon="x"></span></button><div id="modal-content"></div></dialog>
+</div>
+<script type="module" src="./app.js"></script>
+</body></html>

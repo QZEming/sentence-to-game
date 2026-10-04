@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {Ecosystem} from '../dist/engine.js';
+const g=new Ecosystem();const events=[];g.onEvent=e=>events.push(e);
+assert.equal(g.tiles.length,61);
+const t=g.tiles.find(t=>!t.plant);const before=t.water;
+assert(g.cast('rain',t.id).ok);assert(t.water>before);
+assert(g.cast('seed',t.id,'flower').ok);
+const energy=g.energy;assert(!g.cast('seed',t.id,'flower').ok);assert.equal(g.energy,energy);
+assert(g.cast('seed',t.id,'pine').ok);assert.equal(t.plant,'pine');
+g.energy=100;g.cast('rain',t.id);const growth=t.growth;g.cast('sun',t.id);assert(t.growth>growth);assert(events.some(e=>e.type==='combo'));
+g.paused=true;let time=g.time;g.tick(1);assert.equal(g.time,time);g.paused=false;
+g.energy=100;assert(g.changeSeason(2).ok);assert(!g.changeSeason(3).ok);
+g.energy=100;g.weather={id:'heat',strength:3,remaining:35};for(let i=0;i<3;i++)assert(g.cast('rain',t.id).ok);assert.equal(g.weather,null);
+assert(!g.cast('rain',999).ok);assert(!g.cast('seed',2,'invalid').ok);
+const restored=new Ecosystem(JSON.parse(JSON.stringify(g.save())));assert.equal(restored.tiles[t.id].plant,'pine');assert.equal(restored.season,2);
+const win=new Ecosystem();win.stats.rains=3;win.tiles.forEach((tile,i)=>{tile.plant=i<10?'flower':i<26?'pine':'grass';tile.growth=1;tile.water=55});
+for(let i=0;i<30;i++)win.tick(1);assert.equal(win.animals.length,5);assert.equal(win.quest,6);assert(win.won);assert(win.metrics().vigor>=75);assert.equal(new Ecosystem(JSON.parse(JSON.stringify(win.save()))).won,true);
+console.log('PASS: terrain, spells, replanting, combo, pause, season cooldown, weather mitigation, save/load, all animals, and victory.');

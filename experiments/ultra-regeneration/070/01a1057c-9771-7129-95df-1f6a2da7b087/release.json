@@ -1,0 +1,72 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": true,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "070-verdant-isle",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "070",
+  "generation_turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "17462078b956e2e915681f7f6489c3d419d0892e",
+    "full_old_history_preserved": true,
+    "game_number": "070",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/17462078b956e2e915681f7f6489c3d419d0892e",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 20328,
+      "path": "app.js",
+      "sha256": "3bdae75708f671d1d0efc162e647a70aa35e61accf78e830afbfb40d2359984f"
+    },
+    {
+      "bytes": 13142,
+      "path": "engine.js",
+      "sha256": "cd24cf73451bba0949ca271af4ee441541ee298f5ed90ead03a158c061126fbb"
+    },
+    {
+      "bytes": 5767,
+      "path": "index.html",
+      "sha256": "257ca1dc14ed60d115f92f2331a94f0b20685462f8f6287dc818e4f5413ee73a"
+    },
+    {
+      "bytes": 20088,
+      "path": "scene.js",
+      "sha256": "6fb38b33894686d2b2bb5e19dc18b63d663c1f769fedecfa1e93d456f3a3e438"
+    },
+    {
+      "bytes": 21821,
+      "path": "style.css",
+      "sha256": "1e90c91d3ded04e854b5999aea627549ffcc6d15532b55ce2350dc5b9f3fe458"
+    },
+    {
+      "bytes": 32134,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "b9668170be21bfec8a0fcd0b4e26e155e18fd92b1ad3f05e613eed631d65e3c5",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087",
+  "title": "风屿 · 天气精灵",
+  "url": "https://qzemi.cn/sentence-to-game/games/070-verdant-isle/"
+}

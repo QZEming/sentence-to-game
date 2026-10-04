@@ -1,0 +1,78 @@
+{
+  "files": [
+    {
+      "bytes": 39,
+      "path": ".gitignore",
+      "sha256": "53c041a2675c96074ee9043b1ad41efa0e4c33b05c1aef2c92f64a62a0b57280"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "ee69e22b38148dd9aaa653e9f57179d83d1bf77b9ca87f9d42387534ebde89e1"
+    },
+    {
+      "bytes": 2263,
+      "path": "README.md",
+      "sha256": "6c09c047f0c8bcf1f32d9fd4fd31064861a0be485fa7ada411119a1a4cd6ffe6"
+    },
+    {
+      "bytes": 20328,
+      "path": "dist/app.js",
+      "sha256": "3bdae75708f671d1d0efc162e647a70aa35e61accf78e830afbfb40d2359984f"
+    },
+    {
+      "bytes": 13142,
+      "path": "dist/engine.js",
+      "sha256": "cd24cf73451bba0949ca271af4ee441541ee298f5ed90ead03a158c061126fbb"
+    },
+    {
+      "bytes": 5767,
+      "path": "dist/index.html",
+      "sha256": "257ca1dc14ed60d115f92f2331a94f0b20685462f8f6287dc818e4f5413ee73a"
+    },
+    {
+      "bytes": 20088,
+      "path": "dist/scene.js",
+      "sha256": "6fb38b33894686d2b2bb5e19dc18b63d663c1f769fedecfa1e93d456f3a3e438"
+    },
+    {
+      "bytes": 21821,
+      "path": "dist/style.css",
+      "sha256": "1e90c91d3ded04e854b5999aea627549ffcc6d15532b55ce2350dc5b9f3fe458"
+    },
+    {
+      "bytes": 32134,
+      "path": "dist/vendor/OrbitControls.js",
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1304820,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
+    },
+    {
+      "bytes": 301685,
+      "path": "original-delivery/verdant-isle-release.tar.gz",
+      "sha256": "11e16d1c34787359b6d54159defe6edb0b9d0ea970e4881ef6a8f9162232dc1f"
+    },
+    {
+      "bytes": 1664,
+      "path": "tests/ecology.mjs",
+      "sha256": "85e91194ce2e499d4899048df95b0c3146a9c3dfa1cf4b72d3b4ef5c5c4da00f"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-39/verdant-isle",
+  "source_tree_sha256": "b9668170be21bfec8a0fcd0b4e26e155e18fd92b1ad3f05e613eed631d65e3c5",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-070-original-20261004T063554Z",
+  "thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087",
+  "turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a"
+}

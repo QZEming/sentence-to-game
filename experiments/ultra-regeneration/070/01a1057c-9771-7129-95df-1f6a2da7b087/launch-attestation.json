@@ -1,0 +1,15 @@
+{
+  "exact_prompt_status": "missing/null in original supplied manifest; not reconstructed from summary",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a1057c-be91-703c-beee-df4bf5391d0a",
+  "input_scope": "parent attests isolated one-sentence author task; exact sentence unavailable in supplied evidence",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": null,
+  "server_execution_parameters_independently_authenticated": false,
+  "thinking_requested": "ultra",
+  "thread_id": "01a1057c-9771-7129-95df-1f6a2da7b087"
+}
