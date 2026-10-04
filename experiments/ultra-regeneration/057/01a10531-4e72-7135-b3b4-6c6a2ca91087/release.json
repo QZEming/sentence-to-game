@@ -1,0 +1,71 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "057-rail-dispatch",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "057",
+  "generation_turn_id": "01a10531-718e-7078-9eed-837c2f5b0190",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "ca2e7e10bff7fe4bb365a9fdc33213fcbd14f3bc",
+    "full_old_history_preserved": true,
+    "game_number": "057",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/ca2e7e10bff7fe4bb365a9fdc33213fcbd14f3bc",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 19786,
+      "path": "app.js",
+      "sha256": "168ac250d1f769de52a28944823d2d9e90a8754123043cc2fda504908c72b60f"
+    },
+    {
+      "bytes": 8243,
+      "path": "engine.js",
+      "sha256": "b6150d01fe051706e79c2ecc80dcdb48e8ec5e53c8b8d5b69aa32ce560ed9079"
+    },
+    {
+      "bytes": 9351,
+      "path": "index.html",
+      "sha256": "5e528f5a2c40349317631b97da96acd03afa250fc4fa5df7da3742385b31f617"
+    },
+    {
+      "bytes": 14886,
+      "path": "scene.js",
+      "sha256": "161513307f2d405979157e8259efcf11692bd64a6386b1febe729b0d21a2fa09"
+    },
+    {
+      "bytes": 25950,
+      "path": "style.css",
+      "sha256": "138b0f1cb61007b277d962e23a5e5beaf86743faac6dd2eaae3b30593c615d18"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 32134,
+      "path": "vendor/OrbitControls.js",
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "c5d99c572040f628979ef8baf86357585e41b2421415bcf49806b0ea134fcd57",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10531-4e72-7135-b3b4-6c6a2ca91087",
+  "title": "山谷调度局 · Valley Rail",
+  "url": "https://qzemi.cn/sentence-to-game/games/057-rail-dispatch/"
+}

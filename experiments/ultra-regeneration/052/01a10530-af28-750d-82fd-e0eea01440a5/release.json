@@ -1,0 +1,66 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "052-wizard-board-adventure",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "052",
+  "generation_turn_id": "01a10530-d4a3-740c-8ebe-bfbcef51f53a",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "ca2e7e10bff7fe4bb365a9fdc33213fcbd14f3bc",
+    "full_old_history_preserved": true,
+    "game_number": "052",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/ca2e7e10bff7fe4bb365a9fdc33213fcbd14f3bc",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 22116,
+      "path": "app.js",
+      "sha256": "b3be8e8e69ceb9519795f4cf1915b841b5f833a39b8feabb46922762f5fd2856"
+    },
+    {
+      "bytes": 14089,
+      "path": "engine.js",
+      "sha256": "f340cd20aaa2a37d86975b1d663535564a64551d72f3f60a9c67b03a3b6d94c3"
+    },
+    {
+      "bytes": 6045,
+      "path": "index.html",
+      "sha256": "8799c774e5bc3429da1ba5976b191686b7816e201ec5027798e4dec2471e40d3"
+    },
+    {
+      "bytes": 21452,
+      "path": "scene.js",
+      "sha256": "8c825b01379909b3c562443e20a666eed0f745191a22a37906586026dff8e471"
+    },
+    {
+      "bytes": 24133,
+      "path": "style.css",
+      "sha256": "fff1bb951409996e733d9905eb8a1b94caad0ad1c9573e6509b183f52607ba2c"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "2db966e78656523405b9d5fd691de3386e7cd89cfabd6007af5af102801d5318",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10530-af28-750d-82fd-e0eea01440a5",
+  "title": "星棋秘境 · Astral Gambit",
+  "url": "https://qzemi.cn/sentence-to-game/games/052-wizard-board-adventure/"
+}

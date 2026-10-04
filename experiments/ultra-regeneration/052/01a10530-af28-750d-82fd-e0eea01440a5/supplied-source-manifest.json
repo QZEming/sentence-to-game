@@ -1,0 +1,345 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-052-original-20261004T051124Z",
+  "candidate": "ultra-052",
+  "completed_at": "2026-10-04T05:14:07.434097Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 14,
+  "files": [
+    {
+      "archive_relative_path": "wizard-chess/.openai/hosting.json",
+      "copied_sha256": "3513401ff179fffac85e0f82070b2eca927d50dcbd7390e69fa60f0716794d7a",
+      "final_source_sha256": "3513401ff179fffac85e0f82070b2eca927d50dcbd7390e69fa60f0716794d7a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089883945930929,
+      "mtime_utc": "2026-10-04T04:58:03.945931Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "3513401ff179fffac85e0f82070b2eca927d50dcbd7390e69fa60f0716794d7a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/README.md",
+      "copied_sha256": "b45220c2e478a79376daedb928d60400b2c1525b30e3f420ea8b561ee91d2a7a",
+      "final_source_sha256": "b45220c2e478a79376daedb928d60400b2c1525b30e3f420ea8b561ee91d2a7a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090285411336692,
+      "mtime_utc": "2026-10-04T05:04:45.411337Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/README.md",
+      "size_bytes": 2022,
+      "source_sha256": "b45220c2e478a79376daedb928d60400b2c1525b30e3f420ea8b561ee91d2a7a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/app.js",
+      "copied_sha256": "b3be8e8e69ceb9519795f4cf1915b841b5f833a39b8feabb46922762f5fd2856",
+      "final_source_sha256": "b3be8e8e69ceb9519795f4cf1915b841b5f833a39b8feabb46922762f5fd2856",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089857941389022,
+      "mtime_utc": "2026-10-04T04:57:37.941389Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/app.js",
+      "size_bytes": 22116,
+      "source_sha256": "b3be8e8e69ceb9519795f4cf1915b841b5f833a39b8feabb46922762f5fd2856",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/engine.js",
+      "copied_sha256": "f340cd20aaa2a37d86975b1d663535564a64551d72f3f60a9c67b03a3b6d94c3",
+      "final_source_sha256": "f340cd20aaa2a37d86975b1d663535564a64551d72f3f60a9c67b03a3b6d94c3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090120249809580,
+      "mtime_utc": "2026-10-04T05:02:00.249810Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/engine.js",
+      "size_bytes": 14089,
+      "source_sha256": "f340cd20aaa2a37d86975b1d663535564a64551d72f3f60a9c67b03a3b6d94c3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/index.html",
+      "copied_sha256": "8799c774e5bc3429da1ba5976b191686b7816e201ec5027798e4dec2471e40d3",
+      "final_source_sha256": "8799c774e5bc3429da1ba5976b191686b7816e201ec5027798e4dec2471e40d3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089213316429335,
+      "mtime_utc": "2026-10-04T04:46:53.316429Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/index.html",
+      "size_bytes": 6045,
+      "source_sha256": "8799c774e5bc3429da1ba5976b191686b7816e201ec5027798e4dec2471e40d3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/scene.js",
+      "copied_sha256": "8c825b01379909b3c562443e20a666eed0f745191a22a37906586026dff8e471",
+      "final_source_sha256": "8c825b01379909b3c562443e20a666eed0f745191a22a37906586026dff8e471",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090278344855011,
+      "mtime_utc": "2026-10-04T05:04:38.344855Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/scene.js",
+      "size_bytes": 21452,
+      "source_sha256": "8c825b01379909b3c562443e20a666eed0f745191a22a37906586026dff8e471",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/style.css",
+      "copied_sha256": "fff1bb951409996e733d9905eb8a1b94caad0ad1c9573e6509b183f52607ba2c",
+      "final_source_sha256": "fff1bb951409996e733d9905eb8a1b94caad0ad1c9573e6509b183f52607ba2c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090284328625219,
+      "mtime_utc": "2026-10-04T05:04:44.328625Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/style.css",
+      "size_bytes": 24133,
+      "source_sha256": "fff1bb951409996e733d9905eb8a1b94caad0ad1c9573e6509b183f52607ba2c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088557635547424,
+      "mtime_utc": "2026-10-04T04:35:57.635547Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088557207534430,
+      "mtime_utc": "2026-10-04T04:35:57.207534Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/package.json",
+      "copied_sha256": "2e78263893213c9dc15bdeed169ef3f1f30d199ebe0c65be96922fe1fea7b991",
+      "final_source_sha256": "2e78263893213c9dc15bdeed169ef3f1f30d199ebe0c65be96922fe1fea7b991",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088820568269104,
+      "mtime_utc": "2026-10-04T04:40:20.568269Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/package.json",
+      "size_bytes": 155,
+      "source_sha256": "2e78263893213c9dc15bdeed169ef3f1f30d199ebe0c65be96922fe1fea7b991",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/server.mjs",
+      "copied_sha256": "72513186f149b589d3b81bc8afa66377e673b64fcd43fb7ba04cda360f560263",
+      "final_source_sha256": "72513186f149b589d3b81bc8afa66377e673b64fcd43fb7ba04cda360f560263",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791089940566241401,
+      "mtime_utc": "2026-10-04T04:59:00.566242Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/server.mjs",
+      "size_bytes": 843,
+      "source_sha256": "72513186f149b589d3b81bc8afa66377e673b64fcd43fb7ba04cda360f560263",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "wizard-chess/tests/engine.test.mjs",
+      "copied_sha256": "e6070d06873e120d29af66ea73625d3d5687c108a6cdbaa41ab00e7443ad73d5",
+      "final_source_sha256": "e6070d06873e120d29af66ea73625d3d5687c108a6cdbaa41ab00e7443ad73d5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090122552241402,
+      "mtime_utc": "2026-10-04T05:02:02.552241Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess/tests/engine.test.mjs",
+      "size_bytes": 4325,
+      "source_sha256": "e6070d06873e120d29af66ea73625d3d5687c108a6cdbaa41ab00e7443ad73d5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/astral-gambit.tar.gz",
+      "copied_sha256": "3d6d3bfc355e8677d3ca11e8c2e8fd26064aebbcc7b2a10ba8439aad921a643a",
+      "final_source_sha256": "3d6d3bfc355e8677d3ca11e8c2e8fd26064aebbcc7b2a10ba8439aad921a643a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090444159171222,
+      "mtime_utc": "2026-10-04T05:07:24.159171Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/astral-gambit.tar.gz",
+      "size_bytes": 299616,
+      "source_sha256": "3d6d3bfc355e8677d3ca11e8c2e8fd26064aebbcc7b2a10ba8439aad921a643a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/astral-gambit-desktop.jpg",
+      "copied_sha256": "ef51624bc38f5dd935b66e3519dae40b4f1635f27300585581f325a21438cfad",
+      "final_source_sha256": "ef51624bc38f5dd935b66e3519dae40b4f1635f27300585581f325a21438cfad",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090510776634244,
+      "mtime_utc": "2026-10-04T05:08:30.776634Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/output/playwright/astral-gambit-desktop.jpg",
+      "size_bytes": 113513,
+      "source_sha256": "ef51624bc38f5dd935b66e3519dae40b4f1635f27300585581f325a21438cfad",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "e9c933c39c237c3d3a03a579e49e69259f5ae678316dffb48e4b1b505eb4e8c1"
+  },
+  "inventory_fixed_at": "2026-10-04T05:14:07.178805Z",
+  "limitations": [
+    "Only raw byte copying and hash verification; no build/test/game/browser/source modification/process or remote action.",
+    "Package not unpacked or rebuilt; external image not opened.",
+    "Validation results and launch configuration remain provenance-limited parent/author reports."
+  ],
+  "original_evidence_inventory": {
+    "external_images": [
+      "root-artifacts/output/playwright/astral-gambit-desktop.jpg"
+    ],
+    "independent_execution_result_present": false,
+    "provenance": "Original inventory and static evidence helper; no test execution or image inspection.",
+    "source_documents": [
+      "wizard-chess/README.md"
+    ],
+    "test_sources": [
+      "wizard-chess/tests/engine.test.mjs"
+    ]
+  },
+  "original_request": "实现一个巫师在棋盘世界冒险的 3D 回合制战棋游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "completion_test_boundary": "The won case clears enemies and calls check three times to advance; this does not establish actual complete three-act gameplay.",
+    "limitations": [
+      "No retained independent test execution result or browser input driver establishes these original claims.",
+      "Original README contains no full-playthrough statement; the parent-supplied full-playthrough claim is recorded separately and is not corroborated by these original files.",
+      "Desktop/mobile checks do not establish mobile complete playthrough or physical-device verification.",
+      "WebMCP real invocation was not verified."
+    ],
+    "preview": {
+      "command": "npm start -> node server.mjs",
+      "host": "127.0.0.1",
+      "port": 43125,
+      "served_directory": "dist"
+    },
+    "provenance": "moonbloom_state static reading of original README and test source; not independently executed validation.",
+    "readme_report": "README.md:31-33 reports 14 rule regressions, desktop/mobile layout, and browser interaction for spellcasting, kills, enemy turn and resource restoration.",
+    "rule_test_source": "tests/engine.test.mjs declares 14 node:test cases; directly creates Game and calls rule functions, including direct hero/enemy/round state settings."
+  },
+  "parent_readonly_process_observation": {
+    "idle_context_cpu_percent": 0.0,
+    "idle_contexts_preserved": true,
+    "idle_task_tool_context_pids": [
+      83323,
+      83325,
+      83339,
+      83340
+    ],
+    "no_dedicated_preview_or_browser_processes_matched": true,
+    "no_resource_sampling_this_round": true,
+    "observed_at_utc": "2026-10-04T05:13:33Z",
+    "other_generation_tasks_and_publisher_untouched": true,
+    "preview_port": 43125,
+    "preview_port_has_no_listener": true,
+    "protected_original_listeners": [
+      {
+        "pid": 2547,
+        "port": 5173
+      },
+      {
+        "pid": 2554,
+        "port": 4827
+      },
+      {
+        "pid": 2560,
+        "port": 4173
+      }
+    ],
+    "signals_sent": false,
+    "user_chrome_1036_alive": true
+  },
+  "parent_reported_author_results": {
+    "complete_playthrough_reported": true,
+    "desktop_and_mobile_checks_reported": true,
+    "provenance": "Parent/author report only, not independently executed verification.",
+    "rule_tests": 14
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Private Sites report only; not fetched, not formal domain or GitHub delivery evidence.",
+    "url": "https://astral-wizard-chess.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation model/effort metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/engine.js",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.module.js",
+    "package.json",
+    "server.mjs",
+    "tests/engine.test.mjs"
+  ],
+  "source_inventory_observed_at": "2026-10-04T05:12:37.933005Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess",
+  "stage": "original",
+  "thread_id": "01a10530-af28-750d-82fd-e0eea01440a5",
+  "title": "Astral Gambit",
+  "total_bytes": 1824177,
+  "turn_id": "01a10530-d4a3-740c-8ebe-bfbcef51f53a"
+}

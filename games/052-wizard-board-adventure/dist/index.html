@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0b151c"><meta name="description" content="在漂浮于星海的棋盘世界，以法术、智慧和一点勇气，开启你的回合制冒险。"><title>星棋秘境 · Astral Gambit</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b151c'/%3E%3Cpath d='M16 3 20 12 29 16 20 20 16 29 12 20 3 16 12 12Z' fill='%23d3bd85'/%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header class="topbar">
+ <a class="brand" href="./" aria-label="星棋秘境首页"><span class="brand-mark">✧</span><span><b>星棋秘境</b><small>ASTRAL GAMBIT</small></span></a>
+ <nav aria-label="游戏菜单"><button class="nav-button active" data-modal="journey"><span data-icon="map"></span>冒险旅程</button><button class="nav-button" data-modal="spells"><span data-icon="book"></span>法术之书</button><button class="nav-button" data-modal="relics"><span data-icon="diamond"></span>我的遗物 <i id="relic-count">0</i></button></nav>
+ <div class="header-actions"><button id="sound" class="icon-button" aria-label="开启音效" title="音效"><span data-icon="muted"></span></button><button data-modal="help" class="icon-button" aria-label="查看玩法" title="玩法说明"><span data-icon="help"></span></button><button data-modal="settings" class="icon-button" aria-label="游戏设置" title="设置"><span data-icon="settings"></span></button></div>
+</header>
+<main class="game-shell">
+ <section class="battle-area" aria-label="3D 战场">
+  <div class="chapter-heading"><div class="eyebrow"><span class="line"></span> CHAPTER <span id="chapter-num">01</span> <span class="chapter-divider">/</span> 03</div><h1 id="chapter-name">微光林地</h1><p id="chapter-subtitle">古老的棋局，在此苏醒。</p></div>
+  <div class="scene-top-right"><span class="live-mark"></span><span id="phase-label">你的回合</span><span class="round-label">ROUND <b id="round-num">01</b></span></div>
+  <div id="scene" aria-label="可交互的三维棋盘，点击格子移动或施法" tabindex="0"><div id="scene-loading">正在唤醒星光…</div></div>
+  <div class="objective"><span class="objective-icon" data-icon="diamond"></span><div><small>当前目标</small><span id="objective-text">击败所有守卫，唤醒星门</span></div><b id="enemy-progress">0 / 3</b></div>
+  <div id="tile-tooltip" class="tile-tooltip" hidden></div>
+  <div id="floating-labels" aria-hidden="true"></div>
+  <div class="scene-bottom"><div class="camera-controls"><button id="rotate-left" class="icon-button" aria-label="向左旋转视角" title="旋转视角 Q"><span data-icon="rotateLeft"></span></button><button id="reset-camera" class="icon-button" aria-label="重置视角" title="重置视角 R"><span data-icon="focus"></span></button><button id="rotate-right" class="icon-button" aria-label="向右旋转视角" title="旋转视角 E"><span data-icon="rotateRight"></span></button><span>拖动旋转 · 滚轮缩放</span></div><button id="grid-toggle" class="quiet-button"><span data-icon="grid"></span>坐标 <span id="grid-state">关</span></button></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+ </section>
+ <aside class="sidebar">
+  <section class="hero-card"><div class="section-label">你的巫师 <span class="tiny-diamond">✧</span></div><div class="hero-identity"><div class="hero-emblem"><span data-icon="hat"></span></div><div><h2>星行者</h2><p>星辰学派 · 旅法师</p></div><span class="level-tag" id="hero-level">LV. 1</span></div><div class="stat-label"><span><i class="health-dot"></i>生命</span><b id="hp-text">28 <em>/ 28</em></b></div><div class="bar health"><div id="hp-fill"></div></div><div class="stat-label"><span><i class="mana-dot"></i>法力</span><b id="mana-text">12 <em>/ 12</em></b></div><div class="bar mana"><div id="mana-fill"></div></div><div class="hero-extra"><span><span data-icon="shield"></span>护盾 <b id="shield-text">0</b></span><span><span data-icon="diamond"></span>星尘 <b id="gold-text">0</b></span></div><div class="ap-block"><div><b>行动点</b><small>每回合恢复</small></div><div id="ap-dots" class="ap-dots"></div></div></section>
+  <section class="enemies-card"><div class="section-label">战场敌人 <span id="enemy-count">3</span></div><div id="enemy-list"></div></section>
+  <section class="journal-card"><div class="section-label">冒险手记 <span data-icon="feather"></span></div><div id="journal" role="log" aria-live="polite"></div></section>
+  <div class="save-status"><span data-icon="check"></span><span id="save-label">进度自动保存在此设备</span></div>
+ </aside>
+ <section class="action-dock" aria-label="法术与回合操作"><div class="action-intro"><span class="eyebrow">YOUR MOVE</span><h2 id="action-title">轮到你了</h2><p id="action-instruction">选择行动，再点击棋盘目标</p></div><div id="spell-bar" class="spell-bar"></div><div class="end-turn-wrap"><button id="end-turn"><span>结束回合</span><span data-icon="hourglass"></span></button><small><kbd>SPACE</kbd> 跳过剩余行动</small></div></section>
+ <footer class="bottom-strip"><span><i></i>一步一世界，一念一星河。</span><span><kbd>1</kbd> – <kbd>7</kbd> 选择行动 <span class="footer-gap"></span><kbd>ESC</kbd> 取消选择</span><button data-modal="help">第一次冒险？查看玩法 <span data-icon="help"></span></button></footer>
+</main>
+<div id="modal-backdrop" class="modal-backdrop" hidden><section id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button id="close-modal" class="icon-button close-modal" aria-label="关闭"><span data-icon="close"></span></button><div id="modal-content"></div></section></div>
+<script type="module" src="./app.js"></script>
+</body></html>

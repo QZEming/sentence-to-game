@@ -1,0 +1,346 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-057-original-20261004T051502Z",
+  "candidate": "ultra-057",
+  "completed_at": "2026-10-04T05:17:37.453382Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 14,
+  "files": [
+    {
+      "archive_relative_path": "rail-dispatch/.openai/hosting.json",
+      "copied_sha256": "cd0c7eedf8e1e556fb39bfd834d5ada52385e03c960e90ea2f3b92b042c3852d",
+      "final_source_sha256": "cd0c7eedf8e1e556fb39bfd834d5ada52385e03c960e90ea2f3b92b042c3852d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088642850098738,
+      "mtime_utc": "2026-10-04T04:37:22.850099Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "cd0c7eedf8e1e556fb39bfd834d5ada52385e03c960e90ea2f3b92b042c3852d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/README.md",
+      "copied_sha256": "300174fc591aad21cac79d8f9cbc70308e64b8274cc08e3957620142511a68cc",
+      "final_source_sha256": "300174fc591aad21cac79d8f9cbc70308e64b8274cc08e3957620142511a68cc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090190787633914,
+      "mtime_utc": "2026-10-04T05:03:10.787634Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/README.md",
+      "size_bytes": 1843,
+      "source_sha256": "300174fc591aad21cac79d8f9cbc70308e64b8274cc08e3957620142511a68cc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/app.js",
+      "copied_sha256": "168ac250d1f769de52a28944823d2d9e90a8754123043cc2fda504908c72b60f",
+      "final_source_sha256": "168ac250d1f769de52a28944823d2d9e90a8754123043cc2fda504908c72b60f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090190759178228,
+      "mtime_utc": "2026-10-04T05:03:10.759178Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/app.js",
+      "size_bytes": 19786,
+      "source_sha256": "168ac250d1f769de52a28944823d2d9e90a8754123043cc2fda504908c72b60f",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/engine.js",
+      "copied_sha256": "b6150d01fe051706e79c2ecc80dcdb48e8ec5e53c8b8d5b69aa32ce560ed9079",
+      "final_source_sha256": "b6150d01fe051706e79c2ecc80dcdb48e8ec5e53c8b8d5b69aa32ce560ed9079",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090396716867555,
+      "mtime_utc": "2026-10-04T05:06:36.716867Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/engine.js",
+      "size_bytes": 8243,
+      "source_sha256": "b6150d01fe051706e79c2ecc80dcdb48e8ec5e53c8b8d5b69aa32ce560ed9079",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/index.html",
+      "copied_sha256": "5e528f5a2c40349317631b97da96acd03afa250fc4fa5df7da3742385b31f617",
+      "final_source_sha256": "5e528f5a2c40349317631b97da96acd03afa250fc4fa5df7da3742385b31f617",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090190758921269,
+      "mtime_utc": "2026-10-04T05:03:10.758921Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/index.html",
+      "size_bytes": 9351,
+      "source_sha256": "5e528f5a2c40349317631b97da96acd03afa250fc4fa5df7da3742385b31f617",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/scene.js",
+      "copied_sha256": "161513307f2d405979157e8259efcf11692bd64a6386b1febe729b0d21a2fa09",
+      "final_source_sha256": "161513307f2d405979157e8259efcf11692bd64a6386b1febe729b0d21a2fa09",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090190759360103,
+      "mtime_utc": "2026-10-04T05:03:10.759360Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/scene.js",
+      "size_bytes": 14886,
+      "source_sha256": "161513307f2d405979157e8259efcf11692bd64a6386b1febe729b0d21a2fa09",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/style.css",
+      "copied_sha256": "138b0f1cb61007b277d962e23a5e5beaf86743faac6dd2eaae3b30593c615d18",
+      "final_source_sha256": "138b0f1cb61007b277d962e23a5e5beaf86743faac6dd2eaae3b30593c615d18",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090190775492846,
+      "mtime_utc": "2026-10-04T05:03:10.775493Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/style.css",
+      "size_bytes": 25950,
+      "source_sha256": "138b0f1cb61007b277d962e23a5e5beaf86743faac6dd2eaae3b30593c615d18",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/vendor/LICENSE-three.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090322262246084,
+      "mtime_utc": "2026-10-04T05:05:22.262246Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/vendor/LICENSE-three.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/vendor/OrbitControls.js",
+      "copied_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "final_source_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088609511060662,
+      "mtime_utc": "2026-10-04T04:36:49.511061Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/vendor/OrbitControls.js",
+      "size_bytes": 32134,
+      "source_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088609024994335,
+      "mtime_utc": "2026-10-04T04:36:49.024994Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/package.json",
+      "copied_sha256": "a630e38be33136aba47fea1a74c6d60a5d7d20ec732d296ddd98a1d90bd270c7",
+      "final_source_sha256": "a630e38be33136aba47fea1a74c6d60a5d7d20ec732d296ddd98a1d90bd270c7",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088609057665571,
+      "mtime_utc": "2026-10-04T04:36:49.057666Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/package.json",
+      "size_bytes": 177,
+      "source_sha256": "a630e38be33136aba47fea1a74c6d60a5d7d20ec732d296ddd98a1d90bd270c7",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "rail-dispatch/tests/engine.test.mjs",
+      "copied_sha256": "e9f6a295d55cfdeef1cab214f2fa6ed10877f865b34aa34b3337ba28bf4c62e3",
+      "final_source_sha256": "e9f6a295d55cfdeef1cab214f2fa6ed10877f865b34aa34b3337ba28bf4c62e3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090396733052839,
+      "mtime_utc": "2026-10-04T05:06:36.733053Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch/tests/engine.test.mjs",
+      "size_bytes": 4424,
+      "source_sha256": "e9f6a295d55cfdeef1cab214f2fa6ed10877f865b34aa34b3337ba28bf4c62e3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/rail-dispatch-preview.jpg",
+      "copied_sha256": "f78416fe7f1be1b9f6496a4f37efa468c4cb32d9d93aa0ec7809cdf17c6974c7",
+      "final_source_sha256": "f78416fe7f1be1b9f6496a4f37efa468c4cb32d9d93aa0ec7809cdf17c6974c7",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090347821296041,
+      "mtime_utc": "2026-10-04T05:05:47.821296Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch-preview.jpg",
+      "size_bytes": 104684,
+      "source_sha256": "f78416fe7f1be1b9f6496a4f37efa468c4cb32d9d93aa0ec7809cdf17c6974c7",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/rail-dispatch-deploy.tar.gz",
+      "copied_sha256": "70aab6b7126bdfae28a8e8f02267aae4babe0391f71ec7415b70c72ca7b8f3a4",
+      "final_source_sha256": "70aab6b7126bdfae28a8e8f02267aae4babe0391f71ec7415b70c72ca7b8f3a4",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090469139649655,
+      "mtime_utc": "2026-10-04T05:07:49.139650Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch-deploy.tar.gz",
+      "size_bytes": 302157,
+      "source_sha256": "70aab6b7126bdfae28a8e8f02267aae4babe0391f71ec7415b70c72ca7b8f3a4",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "bc4dfeee521f3387dc1a783a4f80546841c9be9d21c3fbc5b43d14410cefb0dc"
+  },
+  "inventory_fixed_at": "2026-10-04T05:17:37.205474Z",
+  "limitations": [
+    "Only raw byte copying and hash checks; no build/test/game/browser/source modification/process or remote actions.",
+    "Package not unpacked or rebuilt; image not opened.",
+    "No Sites URL was supplied; none was queried."
+  ],
+  "original_evidence_inventory": {
+    "external_images": [
+      "root-artifacts/rail-dispatch-preview.jpg"
+    ],
+    "preserved_execution_result_present": false,
+    "provenance": "Original fixed inventory and static evidence helper; no tests executed or image content inspected.",
+    "source_documents": [
+      "rail-dispatch/README.md"
+    ],
+    "test_sources": [
+      "rail-dispatch/tests/engine.test.mjs"
+    ]
+  },
+  "original_request": "实现一个铁路调度员安排列车会车与货运班次的 3D 交通调度游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "limitations": [
+      "No retained test execution results were found in the fixed original inventory.",
+      "Parent/author reported 14 passed rules and train-meeting/interface checks remain separate assertions.",
+      "Original screenshot file is preserved without viewing; filename cannot establish an operation sequence.",
+      "No all-schedules actual-browser walkthrough is asserted or independently verified."
+    ],
+    "preview": {
+      "command": "python3 -m http.server 4173 -d dist",
+      "explicit_bind_present": false,
+      "port": 4173
+    },
+    "provenance": "moonbloom_state static reading of original README/package/test source, not independent execution validation.",
+    "readme_boundary": "README.md:32 describes test coverage, not a retained PASS execution log; real browser train-meeting/interface input steps are not preserved.",
+    "simulation_boundaries": [
+      "Standard-mode 14-schedule completion uses 3000 ticks and an automated dispatch policy.",
+      "Rush/night scenarios directly set signals/loading upgrades true before simulation.",
+      "Reward case directly sets meets/money.",
+      "These simulations do not establish actual browser completion of all schedules."
+    ],
+    "test_source": "tests/engine.test.mjs:3-18 declares 14 node:test cases (12 single cases and rush/night cases), directly calls rules and tick(.1)."
+  },
+  "parent_readonly_process_observation": {
+    "idle_context_cpu_percent": 0.0,
+    "idle_contexts_preserved": true,
+    "idle_task_tool_context_pids": [
+      78910,
+      78911,
+      78923,
+      78924
+    ],
+    "no_dedicated_preview_or_browser_processes_matched": true,
+    "no_resource_sampling_this_round": true,
+    "observed_at_utc": "2026-10-04T05:17:52Z",
+    "other_generation_tasks_and_publisher_untouched": true,
+    "preview_port": 4173,
+    "preview_port_current_owner": "original user service PID2560 only",
+    "protected_original_listeners": [
+      {
+        "pid": 2547,
+        "port": 5173
+      },
+      {
+        "pid": 2554,
+        "port": 4827
+      },
+      {
+        "pid": 2560,
+        "port": 4173
+      }
+    ],
+    "signals_sent": false,
+    "user_chrome_1036_alive": true
+  },
+  "parent_reported_author_results": {
+    "all_schedules_complete_playthrough_claimed": false,
+    "provenance": "Parent/author report only, not independently executed validation.",
+    "rule_tests": 14,
+    "train_meeting_and_interface_checks_reported": true
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "sites_url_provided": false,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/engine.js",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/LICENSE-three.txt",
+    "dist/vendor/OrbitControls.js",
+    "dist/vendor/three.module.js",
+    "package.json",
+    "tests/engine.test.mjs"
+  ],
+  "source_inventory_observed_at": "2026-10-04T05:16:16.060761Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-26/rail-dispatch",
+  "stage": "original",
+  "thread_id": "01a10531-4e72-7135-b3b4-6c6a2ca91087",
+  "title": "山谷调度局 Rail Dispatch",
+  "total_bytes": 1839503,
+  "turn_id": "01a10531-718e-7078-9eed-837c2f5b0190"
+}

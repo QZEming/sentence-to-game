@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**55 / 100**。
+当前进度：**57 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -65,10 +65,12 @@
 | 049 | [烈焰指挥 · FIRE COMMAND](games/049-firefighter-building-rescue/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/049-firefighter-building-rescue/) | [源码](games/049-firefighter-building-rescue/src/) |
 | 050 | [雪迹 ALPINE](games/050-rescue-dog-snow-mountain/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/050-rescue-dog-snow-mountain/) | [源码](games/050-rescue-dog-snow-mountain/src/) |
 | 051 | [MAGNET WORKS · 磁力工坊](games/051-robot-magnetic-factory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/051-robot-magnetic-factory/) | [源码](games/051-robot-magnetic-factory/src/) |
+| 052 | [星棋秘境 · Astral Gambit](games/052-wizard-board-adventure/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/052-wizard-board-adventure/) | [源码](games/052-wizard-board-adventure/src/) |
 | 053 | [MYCELIUM · 林间共生](games/053-mushroom-forest-territory/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/053-mushroom-forest-territory/) | [源码](games/053-mushroom-forest-territory/src/) |
 | 054 | [爪爪奇旅 · TOYBOUND](games/054-cat-card-toy-adventure/RELEASE.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/054-cat-card-toy-adventure/) | [源码](games/054-cat-card-toy-adventure/src/) |
 | 055 | [怪怪街区 · LITTLE IMPOSTORS](games/055-monster-city-hide-seek/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/055-monster-city-hide-seek/) | [源码](games/055-monster-city-hide-seek/src/) |
 | 056 | [ONEIRA · 梦境旅人](games/056-dream-changing-rooms/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/) | [源码](games/056-dream-changing-rooms/src/) |
+| 057 | [山谷调度局 · Valley Rail](games/057-rail-dispatch/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/057-rail-dispatch/) | [源码](games/057-rail-dispatch/src/) |
 
 ## 生成记录
 

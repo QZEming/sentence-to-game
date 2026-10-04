@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "3513401ff179fffac85e0f82070b2eca927d50dcbd7390e69fa60f0716794d7a"
+    },
+    {
+      "bytes": 2022,
+      "path": "README.md",
+      "sha256": "b45220c2e478a79376daedb928d60400b2c1525b30e3f420ea8b561ee91d2a7a"
+    },
+    {
+      "bytes": 22116,
+      "path": "dist/app.js",
+      "sha256": "b3be8e8e69ceb9519795f4cf1915b841b5f833a39b8feabb46922762f5fd2856"
+    },
+    {
+      "bytes": 14089,
+      "path": "dist/engine.js",
+      "sha256": "f340cd20aaa2a37d86975b1d663535564a64551d72f3f60a9c67b03a3b6d94c3"
+    },
+    {
+      "bytes": 6045,
+      "path": "dist/index.html",
+      "sha256": "8799c774e5bc3429da1ba5976b191686b7816e201ec5027798e4dec2471e40d3"
+    },
+    {
+      "bytes": 21452,
+      "path": "dist/scene.js",
+      "sha256": "8c825b01379909b3c562443e20a666eed0f745191a22a37906586026dff8e471"
+    },
+    {
+      "bytes": 24133,
+      "path": "dist/style.css",
+      "sha256": "fff1bb951409996e733d9905eb8a1b94caad0ad1c9573e6509b183f52607ba2c"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 113513,
+      "path": "original-delivery/astral-gambit-desktop.jpg",
+      "sha256": "ef51624bc38f5dd935b66e3519dae40b4f1635f27300585581f325a21438cfad"
+    },
+    {
+      "bytes": 299616,
+      "path": "original-delivery/astral-gambit.tar.gz",
+      "sha256": "3d6d3bfc355e8677d3ca11e8c2e8fd26064aebbcc7b2a10ba8439aad921a643a"
+    },
+    {
+      "bytes": 155,
+      "path": "package.json",
+      "sha256": "2e78263893213c9dc15bdeed169ef3f1f30d199ebe0c65be96922fe1fea7b991"
+    },
+    {
+      "bytes": 843,
+      "path": "server.mjs",
+      "sha256": "72513186f149b589d3b81bc8afa66377e673b64fcd43fb7ba04cda360f560263"
+    },
+    {
+      "bytes": 4325,
+      "path": "tests/engine.test.mjs",
+      "sha256": "e6070d06873e120d29af66ea73625d3d5687c108a6cdbaa41ab00e7443ad73d5"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-25/wizard-chess",
+  "source_tree_sha256": "2db966e78656523405b9d5fd691de3386e7cd89cfabd6007af5af102801d5318",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-052-original-20261004T051124Z",
+  "thread_id": "01a10530-af28-750d-82fd-e0eea01440a5",
+  "turn_id": "01a10530-d4a3-740c-8ebe-bfbcef51f53a"
+}
