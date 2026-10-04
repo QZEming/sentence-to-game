@@ -1,0 +1,51 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "062-crab-clash",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "062",
+  "generation_turn_id": "01a10554-443c-77df-bf7c-2f180a9f6921",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "full_old_history_preserved": true,
+    "game_number": "062",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 44929,
+      "path": "game.js",
+      "sha256": "3f462a3168608cf247b54c2bca7c161b43e851e81be3afbbd9c61b8e1e7d1932"
+    },
+    {
+      "bytes": 6005,
+      "path": "index.html",
+      "sha256": "dd82cfac63f3a6810db99e1264060d74c23677248a1fd0ec33610c16304cbf7e"
+    },
+    {
+      "bytes": 14774,
+      "path": "style.css",
+      "sha256": "0a4f43fdc3d487a99d70be1fa024ec192b27bf5c53ba8f57d51c78eba8c8d835"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "c74599c483a359a4846b36c2289da21ee433de665eeb7b9aa8d988bb907f3620",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10554-2096-7262-ab52-7b1f0d4b3084",
+  "title": "钳王争霸 · CRAB CLASH",
+  "url": "https://qzemi.cn/sentence-to-game/games/062-crab-clash/"
+}

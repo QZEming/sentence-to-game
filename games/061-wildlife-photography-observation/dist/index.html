@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WILDFRAME 野境 · 野生动物摄影观察游戏</title>
+  <meta name="description" content="走进三维草原，安静地观察野生动物，等待自然发生，记录属于你的野外摄影手记。">
+  <meta name="theme-color" content="#f4f2eb">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23c5663d'/%3E%3Cpath d='M12 17h6l3-5h6l3 5h6v19H12z' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Ccircle cx='24' cy='26' r='6' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 6h4l2-3h4l2 3h4a2 2 0 0 1 2 2v11H2V8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="12.5" r="4"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5Z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h6a3 3 0 0 1 3 3v14a3 3 0 0 0-3-3H3Zm18 0h-6a3 3 0 0 0-3 3v14a3 3 0 0 1 3-3h6Z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C5 2 1 8 6 15s16 3 14-12ZM4 21l12-13M8 17l-1-6m5 2 6-1"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></symbol>
+<symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 1 1 5 2c-2 1-2 2-2 3m0 3v.2"/></symbol>
+<symbol id="i-wind" viewBox="0 0 24 24"><path d="M2 8h13a3 3 0 1 0-3-3M2 12h17a3 3 0 1 1-3 3M2 16h7a3 3 0 1 1-3 3"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 6-7 12-7 12S5 16 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+</defs></svg>
+<header class="topbar">
+ <a class="brand" href="./" aria-label="野境首页"><span class="brand-icon"><svg><use href="#i-camera"/></svg></span><span>WILDFRAME<small>野 境 · 摄 影 观 察</small></span></a>
+ <nav aria-label="主导航"><button class="nav-button active" data-tab="observe"><svg><use href="#i-compass"/></svg>野外观察</button><button class="nav-button" data-tab="journal"><svg><use href="#i-book"/></svg>摄影手记<span id="nav-count">0</span></button><button class="nav-button" data-tab="guide"><svg><use href="#i-leaf"/></svg>自然图鉴</button></nav>
+ <div class="top-actions"><span class="expedition"><span></span>第 01 次远征</span><button class="icon-button" id="sound-btn" aria-label="开启自然音效" title="开启自然音效"><svg><use href="#i-sound"/></svg></button><button class="icon-button" id="help-btn" aria-label="玩法指南"><svg><use href="#i-help"/></svg></button></div>
+</header>
+<main>
+ <section class="intro"><div><div class="eyebrow">THE ART OF WAITING</div><h1>等待，自然发生<span>。</span></h1><p>放轻脚步，留住那些不期而遇的瞬间。</p></div><div class="reserve-info"><svg><use href="#i-pin"/></svg><span>塞伦盖蒂 · 金色草原<small>SERENGETI NATIONAL PARK</small></span><span class="reserve-tag">自由探索</span></div></section>
+ <div class="workspace">
+ <section class="field" id="field" aria-label="3D 草原观察场景">
+  <div id="scene"></div><div class="scene-vignette"></div><div class="flash" id="flash"></div>
+  <div class="scene-top"><div class="live-label"><i></i>LIVE OBSERVATION <span>野外实况</span></div><div class="weather"><svg><use href="#i-sun"/></svg><b id="clock">16:40</b><span id="weather-label">晴朗 · 26°C</span></div></div>
+  <div class="compass"><span>W</span><i></i><i></i><span id="bearing">N 003°</span><i></i><i></i><span>E</span></div>
+  <div class="scene-caption"><span class="tiny-label">观察点 01</span><h2>金合欢水塘</h2><span>每一次等待，都有它的回响。</span></div>
+  <div class="camera-frame" id="camera-frame"><i></i><i></i><i></i><i></i><div class="thirds"><span></span><span></span></div><div class="focus-reticle" id="focus-reticle"></div><span class="camera-mode-label">AF-C &nbsp; RAW &nbsp; ● REC</span></div>
+  <div class="animal-tag" id="animal-tag"><span class="tag-dot"></span><div><b>汤氏瞪羚</b><small>正在觅食 · 18 m</small></div><span class="tag-corner"></span></div>
+  <div class="view-hint" id="view-hint"><span class="mouse-icon"></span>拖动环顾 · WASD 移动 · 滚轮变焦</div>
+  <div class="scene-bottom"><div class="stealth-indicator"><svg><use href="#i-eye"/></svg><div><span id="stealth-text">保持安静</span><div class="meter"><i id="noise-meter"></i></div></div><span id="stance-label">站立</span></div><div class="wind"><svg><use href="#i-wind"/></svg><span>东南风 <b>2.4 m/s</b></span></div></div>
+  <div class="scene-loading" id="scene-loading"><svg><use href="#i-compass"/></svg><p>正在走进金色草原…</p></div>
+  <div class="mobile-move"><button data-move="w" aria-label="向前">↑</button><div><button data-move="a" aria-label="向左">←</button><button data-move="s" aria-label="向后">↓</button><button data-move="d" aria-label="向右">→</button></div></div>
+ </section>
+ <aside class="sidebar">
+  <section class="mission-panel"><div class="panel-heading"><div><span class="eyebrow">YOUR FIELD ASSIGNMENT</span><h2>今日观察计划</h2></div><span class="mission-number" id="mission-count">0<span>/ 3</span></span></div><div class="mission-list" id="mission-list"></div><div class="reward-line"><span>完成计划，获得探索徽章</span><span class="badge-icon">✧</span></div></section>
+  <section class="sighting-panel"><div class="panel-label"><span><i></i>镜头里的生命</span><button id="next-animal" title="寻找下一只动物">寻找 <svg><use href="#i-arrow"/></svg></button></div><div class="species-heading"><div><h2 id="species-name">汤氏瞪羚</h2><i id="species-latin">Eudorcas thomsonii</i></div><span class="species-index" id="species-index">01</span></div><div class="behavior-row"><span class="behavior-pill" id="behavior-pill">正在觅食</span><span id="subject-distance">18 m</span></div><p id="species-tip">草原上最敏锐的观察者。保持距离，耐心等待它抬起头的那一刻。</p><div class="observation-progress"><div><span>观察耐心</span><b id="patience-label">0%</b></div><div class="progress-track"><i id="patience-bar"></i></div><small id="patience-tip">静止观察，提高精彩行为出现的机会</small></div></section>
+  <div class="field-note"><svg><use href="#i-leaf"/></svg><p>好的摄影师，<br>是自然最安静的访客。</p><span>FIELD NOTE / 001</span></div>
+ </aside>
+ <section class="camera-toolbar"><div class="lens-control"><svg><use href="#i-camera"/></svg><div><span class="control-label">镜头焦距</span><div class="lens-slider"><span>35</span><input id="zoom" type="range" min="35" max="200" value="50" aria-label="镜头焦距"><b id="focal-value">50<span> mm</span></b></div></div></div><div class="camera-settings"><div><span>光圈</span><b>f / 4.0</b></div><div><span>快门</span><select id="shutter-speed" aria-label="快门速度"><option value="1000">1/1000</option><option value="250">1/250</option><option value="60">1/60</option></select></div><div><span>ISO</span><b>AUTO</b></div></div><div class="camera-actions"><button id="crouch-btn" class="secondary-action"><svg><use href="#i-eye"/></svg><span>蹲伏隐蔽</span><kbd>C</kbd></button><button id="wait-btn" class="secondary-action"><svg><use href="#i-clock"/></svg><span>耐心等待</span><kbd>T</kbd></button><button id="camera-btn" class="camera-toggle" aria-label="切换取景模式" title="取景模式 F"><svg><use href="#i-camera"/></svg></button><button id="shoot-btn" class="shoot-button"><svg><use href="#i-camera"/></svg>按下快门<kbd>空格</kbd></button></div></section>
+ </div>
+ <section class="photo-section"><div class="photo-heading"><div><h2>光影收藏</h2><span id="photo-subtitle">你的每一次快门，都是一段野外故事。</span></div><button id="view-album">查看摄影手记 <span id="album-count">00</span><svg><use href="#i-arrow"/></svg></button></div><div class="photo-strip" id="photo-strip"><div class="empty-photo"><span><svg><use href="#i-camera"/></svg></span><div><b>第一张照片，正在等待发生。</b><p>将动物放进画面，按下空格或快门按钮。</p></div><span class="film-number">01 / ∞</span></div></div></section>
+ <footer><span>WILDFRAME <i>·</i> 走近自然，不打扰自然。</span><span>W A S D 移动 <i>·</i> C 蹲伏 <i>·</i> F 取景 <i>·</i> 空格拍摄</span></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="modal"><button class="modal-close icon-button" id="modal-close" aria-label="关闭"><svg><use href="#i-close"/></svg></button><div id="modal-content"></div></dialog>
+<script type="module" src="./game.js"></script>
+</body></html>

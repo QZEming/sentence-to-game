@@ -1,0 +1,71 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "063-otter-curling",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "063",
+  "generation_turn_id": "01a10559-fb83-75d2-bc95-41b27136d879",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "full_old_history_preserved": true,
+    "game_number": "063",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 31640,
+      "path": "app.js",
+      "sha256": "4fd644cf1e194998f3753d46c919854a73f7f1a15b34531804c63ec77d93306d"
+    },
+    {
+      "bytes": 1720443,
+      "path": "aurora.png",
+      "sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357"
+    },
+    {
+      "bytes": 9520,
+      "path": "index.html",
+      "sha256": "47d044b1a696cfa5d27f084fec44adcfaa928795608a3a34b1678fab87690038"
+    },
+    {
+      "bytes": 4661,
+      "path": "physics.js",
+      "sha256": "843fd24dcbda733270815c741dac65e7026914822c9f4764ce3b180d6b98d4b8"
+    },
+    {
+      "bytes": 16402,
+      "path": "style.css",
+      "sha256": "1b6fd7ff1b31d36563af63cabd0a12c8896d0a5180326b598ee74744a3dac3e9"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "4963b65dfc8c3b85cab65e6181495f8dfc1ecfe36551722d5ccfbdc3c5934fb5",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10559-d31b-762e-b8be-37d4287a00af",
+  "title": "水獭冰壶俱乐部 · Otter Curling Club",
+  "url": "https://qzemi.cn/sentence-to-game/games/063-otter-curling/"
+}

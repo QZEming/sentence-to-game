@@ -1,0 +1,509 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_selected_generated_file_set_unchanged": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-063-original-20261004T055424Z",
+  "candidate": "ultra-063",
+  "completed_at": "2026-10-04T05:58:18.995996Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 19,
+  "files": [
+    {
+      "archive_relative_path": "otter-curling/.gitignore",
+      "copied_sha256": "113165f691ba83c9e7fcdf97213d460c6a2497381e75a8f7fb37c1da1de37439",
+      "final_source_sha256": "113165f691ba83c9e7fcdf97213d460c6a2497381e75a8f7fb37c1da1de37439",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092375600914057,
+      "mtime_utc": "2026-10-04T05:39:35.600914Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/.gitignore",
+      "size_bytes": 51,
+      "source_sha256": "113165f691ba83c9e7fcdf97213d460c6a2497381e75a8f7fb37c1da1de37439",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/.openai/hosting.json",
+      "copied_sha256": "3b744175e83712a04db8e887de61516622a007e06cb0c525e642471a4fbbf08a",
+      "final_source_sha256": "3b744175e83712a04db8e887de61516622a007e06cb0c525e642471a4fbbf08a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091296371862834,
+      "mtime_utc": "2026-10-04T05:21:36.371863Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "3b744175e83712a04db8e887de61516622a007e06cb0c525e642471a4fbbf08a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/QA.md",
+      "copied_sha256": "82723ae8b3ee3e2e915e2b594cfeed7a49a54567e1609f433f4521d2bd9050f5",
+      "final_source_sha256": "82723ae8b3ee3e2e915e2b594cfeed7a49a54567e1609f433f4521d2bd9050f5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092881246175084,
+      "mtime_utc": "2026-10-04T05:48:01.246175Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/QA.md",
+      "size_bytes": 2025,
+      "source_sha256": "82723ae8b3ee3e2e915e2b594cfeed7a49a54567e1609f433f4521d2bd9050f5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/README.md",
+      "copied_sha256": "042a954ceb4d3231a908735723942cd36a0153f3de86b43f5e69f4c7db94355b",
+      "final_source_sha256": "042a954ceb4d3231a908735723942cd36a0153f3de86b43f5e69f4c7db94355b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092696290584298,
+      "mtime_utc": "2026-10-04T05:44:56.290584Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/README.md",
+      "size_bytes": 1925,
+      "source_sha256": "042a954ceb4d3231a908735723942cd36a0153f3de86b43f5e69f4c7db94355b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/app.js",
+      "copied_sha256": "4fd644cf1e194998f3753d46c919854a73f7f1a15b34531804c63ec77d93306d",
+      "final_source_sha256": "4fd644cf1e194998f3753d46c919854a73f7f1a15b34531804c63ec77d93306d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092423522504995,
+      "mtime_utc": "2026-10-04T05:40:23.522505Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/app.js",
+      "size_bytes": 31640,
+      "source_sha256": "4fd644cf1e194998f3753d46c919854a73f7f1a15b34531804c63ec77d93306d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/aurora.png",
+      "copied_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "final_source_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091724680348956,
+      "mtime_utc": "2026-10-04T05:28:44.680349Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/aurora.png",
+      "size_bytes": 1720443,
+      "source_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/index.html",
+      "copied_sha256": "47d044b1a696cfa5d27f084fec44adcfaa928795608a3a34b1678fab87690038",
+      "final_source_sha256": "47d044b1a696cfa5d27f084fec44adcfaa928795608a3a34b1678fab87690038",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091727068635587,
+      "mtime_utc": "2026-10-04T05:28:47.068636Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/index.html",
+      "size_bytes": 9520,
+      "source_sha256": "47d044b1a696cfa5d27f084fec44adcfaa928795608a3a34b1678fab87690038",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/physics.js",
+      "copied_sha256": "843fd24dcbda733270815c741dac65e7026914822c9f4764ce3b180d6b98d4b8",
+      "final_source_sha256": "843fd24dcbda733270815c741dac65e7026914822c9f4764ce3b180d6b98d4b8",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092423521672035,
+      "mtime_utc": "2026-10-04T05:40:23.521672Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/physics.js",
+      "size_bytes": 4661,
+      "source_sha256": "843fd24dcbda733270815c741dac65e7026914822c9f4764ce3b180d6b98d4b8",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/style.css",
+      "copied_sha256": "1b6fd7ff1b31d36563af63cabd0a12c8896d0a5180326b598ee74744a3dac3e9",
+      "final_source_sha256": "1b6fd7ff1b31d36563af63cabd0a12c8896d0a5180326b598ee74744a3dac3e9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092696288142334,
+      "mtime_utc": "2026-10-04T05:44:56.288142Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/style.css",
+      "size_bytes": 16402,
+      "source_sha256": "1b6fd7ff1b31d36563af63cabd0a12c8896d0a5180326b598ee74744a3dac3e9",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091251763143996,
+      "mtime_utc": "2026-10-04T05:20:51.763144Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/vendor/three.core.min.js",
+      "copied_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "final_source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091251757031191,
+      "mtime_utc": "2026-10-04T05:20:51.757031Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/vendor/three.core.min.js",
+      "size_bytes": 381124,
+      "source_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/dist/vendor/three.module.js",
+      "copied_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "final_source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091251751011303,
+      "mtime_utc": "2026-10-04T05:20:51.751011Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/dist/vendor/three.module.js",
+      "size_bytes": 338908,
+      "source_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/output/playwright/desktop.png",
+      "copied_sha256": "1fe07eb10e6f46fd38cc34c046352e5f4be1d74a1f189e0bd402ceeae14c96ab",
+      "final_source_sha256": "1fe07eb10e6f46fd38cc34c046352e5f4be1d74a1f189e0bd402ceeae14c96ab",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092870340127347,
+      "mtime_utc": "2026-10-04T05:47:50.340127Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/output/playwright/desktop.png",
+      "size_bytes": 807646,
+      "source_sha256": "1fe07eb10e6f46fd38cc34c046352e5f4be1d74a1f189e0bd402ceeae14c96ab",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/output/playwright/match-complete.png",
+      "copied_sha256": "3a5701e806a7764655a151c36850578660fafa50d89d13f6bc1519576d5faf3d",
+      "final_source_sha256": "3a5701e806a7764655a151c36850578660fafa50d89d13f6bc1519576d5faf3d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092739894202286,
+      "mtime_utc": "2026-10-04T05:45:39.894202Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/output/playwright/match-complete.png",
+      "size_bytes": 237555,
+      "source_sha256": "3a5701e806a7764655a151c36850578660fafa50d89d13f6bc1519576d5faf3d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/output/playwright/mobile.png",
+      "copied_sha256": "02ffb562c9f4729dfb3226c42fca283a7bd8d97b033423769d564dcc992395df",
+      "final_source_sha256": "02ffb562c9f4729dfb3226c42fca283a7bd8d97b033423769d564dcc992395df",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092885582101822,
+      "mtime_utc": "2026-10-04T05:48:05.582102Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/output/playwright/mobile.png",
+      "size_bytes": 215581,
+      "source_sha256": "02ffb562c9f4729dfb3226c42fca283a7bd8d97b033423769d564dcc992395df",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/package.json",
+      "copied_sha256": "8365bb0a80bcb6b649d5846d863b691a83d75af833fa4778156fa9eb5e6ef627",
+      "final_source_sha256": "8365bb0a80bcb6b649d5846d863b691a83d75af833fa4778156fa9eb5e6ef627",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091253568498550,
+      "mtime_utc": "2026-10-04T05:20:53.568499Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/package.json",
+      "size_bytes": 178,
+      "source_sha256": "8365bb0a80bcb6b649d5846d863b691a83d75af833fa4778156fa9eb5e6ef627",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "otter-curling/tests/physics.test.js",
+      "copied_sha256": "65a27ff9f45ae00305d9fdd893ed9575caa3264024a479506bf99a03e71a018a",
+      "final_source_sha256": "65a27ff9f45ae00305d9fdd893ed9575caa3264024a479506bf99a03e71a018a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092423534475146,
+      "mtime_utc": "2026-10-04T05:40:23.534475Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling/tests/physics.test.js",
+      "size_bytes": 2643,
+      "source_sha256": "65a27ff9f45ae00305d9fdd893ed9575caa3264024a479506bf99a03e71a018a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/otter-curling.zip",
+      "copied_sha256": "1dc09d91792dd539a6e969d66a6cdfa6e03790e77e611f1771a093684efd7cc5",
+      "final_source_sha256": "1dc09d91792dd539a6e969d66a6cdfa6e03790e77e611f1771a093684efd7cc5",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092885841720459,
+      "mtime_utc": "2026-10-04T05:48:05.841720Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling.zip",
+      "size_bytes": 1916745,
+      "source_sha256": "1dc09d91792dd539a6e969d66a6cdfa6e03790e77e611f1771a093684efd7cc5",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/generated_images/exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png",
+      "copied_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "final_source_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091296000398084,
+      "mtime_utc": "2026-10-04T05:21:36.000398Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/generated_images/exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png",
+      "provenance": "Original generated artifact exactly SHA256-matches source asset(s): otter-curling/dist/aurora.png",
+      "size_bytes": 1720443,
+      "source_sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "3d33fb0e26d06617f0f4cc0ec0c482e577138812062d032fccd6727869352dea"
+  },
+  "generated_artifact_inventory": [
+    {
+      "matching_source_paths": [
+        "otter-curling/dist/aurora.png"
+      ],
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/generated_images/exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png",
+      "relative": "exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png",
+      "sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357",
+      "size_bytes": 1720443
+    }
+  ],
+  "generated_artifacts_excluded": [],
+  "inventory_fixed_at": "2026-10-04T05:58:18.843271Z",
+  "limitations": [
+    "Only fixed inventory, raw-byte copying and SHA256 checks; no build/test/browser/gameplay/process/load sampling/source modification/remote action.",
+    "Original ZIP not unpacked or rebuilt.",
+    "No forbidden runtime/session or unrelated task directories read."
+  ],
+  "local_process_cleanup": {
+    "4179_listener_after": false,
+    "completed_at_utc": "2026-10-04 05:58:10 UTC",
+    "forbidden_runtime_contents_read": false,
+    "ownership_observed_at_utc": "2026-10-04 05:56:58 UTC",
+    "ownership_rechecked_before_signals": {
+      "4179_listener_owner": 62389,
+      "cwd": true,
+      "exact_commands": true,
+      "protected_descendant_intersection": [],
+      "served_dist_directory": true
+    },
+    "protected_originals": {
+      "chrome_1036_alive": true,
+      "listeners": {
+        "4173": 2560,
+        "4827": 2554,
+        "5173": 2547
+      }
+    },
+    "recorded_owned_pids": [
+      59377,
+      59384,
+      59399,
+      59400,
+      59401,
+      59403,
+      59404,
+      59405,
+      62389,
+      91899,
+      91904,
+      91908,
+      91909,
+      91910,
+      91933,
+      91947,
+      91948
+    ],
+    "remaining_non_zombie_owned": [],
+    "signals_sent": [
+      {
+        "kind": "Playwright otter daemon",
+        "pid": 59377,
+        "signal": "SIGTERM"
+      },
+      {
+        "kind": "Playwright otter-mobile daemon",
+        "pid": 91899,
+        "signal": "SIGTERM"
+      },
+      {
+        "kind": "Python preview",
+        "pid": 62389,
+        "signal": "SIGINT"
+      }
+    ],
+    "source_cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling",
+    "source_or_remote_writes": false
+  },
+  "original_evidence_inventory": {
+    "documents": [
+      "otter-curling/QA.md",
+      "otter-curling/README.md"
+    ],
+    "preserved_browser_driver_or_original_json_log_present": false,
+    "screenshots": [
+      "otter-curling/output/playwright/desktop.png",
+      "otter-curling/output/playwright/match-complete.png",
+      "otter-curling/output/playwright/mobile.png"
+    ],
+    "tests": [
+      "otter-curling/tests/physics.test.js"
+    ]
+  },
+  "original_request": "实现一个水獭冰壶队利用碰撞和落点争夺得分区的 3D 冰壶竞技游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "actual_preview_report": {
+      "command": "python3 -m http.server 4179 --directory dist",
+      "host": "127.0.0.1",
+      "port": 4179,
+      "source": "QA.md:20"
+    },
+    "default_preview_report": {
+      "port": 4173,
+      "source": "README.md:11/package.json npm start"
+    },
+    "limitations": [
+      "No retained browser driver, input sequence or original JSON log independently establishes complete match inputs or absence of state hooks/time acceleration.",
+      "QA.md:14 only records 1440x1000 and 390x844 rendering/mobile no-overflow, not real-device touch complete match.",
+      "QA.md:16 states native WebMCP was not verified.",
+      "Three screenshot originals are preserved without viewing; filenames do not prove complete input sequence."
+    ],
+    "physics_test_method": "tests/physics.test.js:3-13 directly calls physical functions, sets board conditions and steps simulation for 8 tests.",
+    "provenance": "moonbloom_state static reading of original QA, README and test source; no independent execution or image viewing.",
+    "qa_browser_report": "QA.md:10-13 reports one human/AI turn, full local-two-player match of 3 games/24 stones, ice surface rotation, final score [1,2], restart and practice Space sweeping. QA.md:15 reports zero errors/warnings.",
+    "qa_simulation_report": "QA.md:5-9 records 8 passes and simulations of 2205 parameters, 270 AI cases and 20000 collisions, not browser sessions."
+  },
+  "parent_process_cleanup_observation": {
+    "guarded_actions_at": "2026-10-04T05:58:10Z",
+    "initial_observed_at": "2026-10-04T05:56:58Z",
+    "killall_or_sigkill_used": false,
+    "pre_signal_guards": [
+      "Exact command",
+      "cwd",
+      "listener",
+      "served_directory",
+      "Descendant tree has no protected PID intersection"
+    ],
+    "preview_listener_present_after_cleanup": false,
+    "preview_port": 4179,
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only attribution and guarded cleanup report, not author gameplay testing or archive-agent process actions.",
+    "recorded_process_count": 17,
+    "remaining_non_zombie_pids": [],
+    "runtime_content_read": false,
+    "source_cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling",
+    "source_modified": false,
+    "verified_roots": [
+      {
+        "command": "cliDaemon.js otter",
+        "pid": 59377,
+        "signal": "SIGTERM"
+      },
+      {
+        "command": "cliDaemon.js otter-mobile",
+        "pid": 91899,
+        "signal": "SIGTERM"
+      },
+      {
+        "command": "Python serve4179 --directory dist --bind 127.0.0.1",
+        "pid": 62389,
+        "signal": "SIGINT"
+      }
+    ]
+  },
+  "parent_reported_author_results": {
+    "physics_tests": 8,
+    "provenance": "Parent/author report only; no independent execution validation.",
+    "three_games_twentyfour_stones_reported": true
+  },
+  "parent_reported_sites_workflow": {
+    "github_route": "User-authorized GitHub publication handled by publisher; archive agent performs no remote actions.",
+    "publication_completed": false,
+    "reason": "Upload rejected for disclosure authorization, per parent workflow report; no retry, bypass or remote action by archive agent.",
+    "site_url": null
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "selected_generated_file_set": [
+    "exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png"
+  ],
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "QA.md",
+    "README.md",
+    "dist/app.js",
+    "dist/aurora.png",
+    "dist/index.html",
+    "dist/physics.js",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.core.min.js",
+    "dist/vendor/three.module.js",
+    "output/playwright/desktop.png",
+    "output/playwright/match-complete.png",
+    "output/playwright/mobile.png",
+    "package.json",
+    "tests/physics.test.js"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling",
+  "stage": "original",
+  "thread_id": "01a10559-d31b-762e-b8be-37d4287a00af",
+  "title": "Otter Curling",
+  "total_bytes": 7408677,
+  "turn_id": "01a10559-fb83-75d2-bc95-41b27136d879"
+}

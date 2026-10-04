@@ -1,0 +1,289 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_selected_external_file_set_unchanged": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-062-original-20261004T054648Z",
+  "candidate": "ultra-062",
+  "completed_at": "2026-10-04T05:50:00.068741Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "external_selected_file_set": [
+    "physics-check.mjs"
+  ],
+  "external_verification_shallow_inventory": [
+    {
+      "bytes": 4452,
+      "path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/verification/physics-check.mjs",
+      "relative": "physics-check.mjs"
+    }
+  ],
+  "file_count": 10,
+  "files": [
+    {
+      "archive_relative_path": "crab-clash/.gitignore",
+      "copied_sha256": "83b05558a18a0f6fb8ade2c953e4327ba59276828b35a81cba4de37731c8d980",
+      "final_source_sha256": "83b05558a18a0f6fb8ade2c953e4327ba59276828b35a81cba4de37731c8d980",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091170115426157,
+      "mtime_utc": "2026-10-04T05:19:30.115426Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/.gitignore",
+      "size_bytes": 35,
+      "source_sha256": "83b05558a18a0f6fb8ade2c953e4327ba59276828b35a81cba4de37731c8d980",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/.openai/hosting.json",
+      "copied_sha256": "99576bbb36ceca6f05db278fd293dffecd9da8610d8c3dee9836877c5dcf2c7a",
+      "final_source_sha256": "99576bbb36ceca6f05db278fd293dffecd9da8610d8c3dee9836877c5dcf2c7a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091213181408083,
+      "mtime_utc": "2026-10-04T05:20:13.181408Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "99576bbb36ceca6f05db278fd293dffecd9da8610d8c3dee9836877c5dcf2c7a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/README.md",
+      "copied_sha256": "5409482af95fbc244845fad25b5662952f6035605333ae7619d698e2ef7afb02",
+      "final_source_sha256": "5409482af95fbc244845fad25b5662952f6035605333ae7619d698e2ef7afb02",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092523311114320,
+      "mtime_utc": "2026-10-04T05:42:03.311114Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/README.md",
+      "size_bytes": 1852,
+      "source_sha256": "5409482af95fbc244845fad25b5662952f6035605333ae7619d698e2ef7afb02",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/dist/game.js",
+      "copied_sha256": "3f462a3168608cf247b54c2bca7c161b43e851e81be3afbbd9c61b8e1e7d1932",
+      "final_source_sha256": "3f462a3168608cf247b54c2bca7c161b43e851e81be3afbbd9c61b8e1e7d1932",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092313384282620,
+      "mtime_utc": "2026-10-04T05:38:33.384283Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/dist/game.js",
+      "size_bytes": 44929,
+      "source_sha256": "3f462a3168608cf247b54c2bca7c161b43e851e81be3afbbd9c61b8e1e7d1932",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/dist/index.html",
+      "copied_sha256": "dd82cfac63f3a6810db99e1264060d74c23677248a1fd0ec33610c16304cbf7e",
+      "final_source_sha256": "dd82cfac63f3a6810db99e1264060d74c23677248a1fd0ec33610c16304cbf7e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091170094215153,
+      "mtime_utc": "2026-10-04T05:19:30.094215Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/dist/index.html",
+      "size_bytes": 6005,
+      "source_sha256": "dd82cfac63f3a6810db99e1264060d74c23677248a1fd0ec33610c16304cbf7e",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/dist/style.css",
+      "copied_sha256": "0a4f43fdc3d487a99d70be1fa024ec192b27bf5c53ba8f57d51c78eba8c8d835",
+      "final_source_sha256": "0a4f43fdc3d487a99d70be1fa024ec192b27bf5c53ba8f57d51c78eba8c8d835",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791091170101692294,
+      "mtime_utc": "2026-10-04T05:19:30.101692Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/dist/style.css",
+      "size_bytes": 14774,
+      "source_sha256": "0a4f43fdc3d487a99d70be1fa024ec192b27bf5c53ba8f57d51c78eba8c8d835",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791090886370108467,
+      "mtime_utc": "2026-10-04T05:14:46.370108Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "crab-clash/tests/physics-check.mjs",
+      "copied_sha256": "afb3f6b0eb35c0dbdff22931c94f0da8893727c564773a84efb409bb1066cd9b",
+      "final_source_sha256": "afb3f6b0eb35c0dbdff22931c94f0da8893727c564773a84efb409bb1066cd9b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092523309121566,
+      "mtime_utc": "2026-10-04T05:42:03.309122Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash/tests/physics-check.mjs",
+      "size_bytes": 4469,
+      "source_sha256": "afb3f6b0eb35c0dbdff22931c94f0da8893727c564773a84efb409bb1066cd9b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/crab-clash-site.tar.gz",
+      "copied_sha256": "630786228b2b1e78e62c50f72a2db6da30224d17f4e0d678d168e3cfa6bcf245",
+      "final_source_sha256": "630786228b2b1e78e62c50f72a2db6da30224d17f4e0d678d168e3cfa6bcf245",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092555401721736,
+      "mtime_utc": "2026-10-04T05:42:35.401722Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash-site.tar.gz",
+      "size_bytes": 291310,
+      "source_sha256": "630786228b2b1e78e62c50f72a2db6da30224d17f4e0d678d168e3cfa6bcf245",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/verification/physics-check.mjs",
+      "copied_sha256": "75ff42d7c96e156c1259e93c92cf00e57fea6cf5c5df30cfd711b7c14524bd94",
+      "final_source_sha256": "75ff42d7c96e156c1259e93c92cf00e57fea6cf5c5df30cfd711b7c14524bd94",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791092178009225431,
+      "mtime_utc": "2026-10-04T05:36:18.009225Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/verification/physics-check.mjs",
+      "provenance": "Explicitly authorized isolated task-31 verification script; moonbloom_state statically confirmed extraction of Crab Clash production game.js core.",
+      "size_bytes": 4452,
+      "source_sha256": "75ff42d7c96e156c1259e93c92cf00e57fea6cf5c5df30cfd711b7c14524bd94",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "9d3432a7c5f6a0d52e57bb00fd978f975cacb54cf9da0203f536b950a4c7e6e5"
+  },
+  "inventory_fixed_at": "2026-10-04T05:49:59.802909Z",
+  "limitations": [
+    "Only fixed inventory, original-byte copy and hash checks; no build/test/browser/gameplay/load sample/process/source modification/remote action.",
+    "Package not extracted or repacked; no image viewing.",
+    "No forbidden runtime/session or unrelated task content read.",
+    "No all-five-rounds browser completion is inferred."
+  ],
+  "original_evidence_inventory": {
+    "documents": [
+      "crab-clash/README.md"
+    ],
+    "preserved_execution_result_or_browser_driver_present": false,
+    "screenshots": [],
+    "test_sources": [
+      "crab-clash/tests/physics-check.mjs",
+      "root-artifacts/verification/physics-check.mjs"
+    ]
+  },
+  "original_request": "实现一个螃蟹力士在海滩擂台上把对手推出场外的 3D 物理格斗游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "limitations": [
+      "Logic checks are simulations, not actual browser completion of five rounds.",
+      "No retained execution result, screenshots or browser input driver.",
+      "Mobile viewport size or physical-device touch method is not preserved.",
+      "Browser zero-error and tool success are only README author reports; monitoring scope and supported native WebMCP environment are not independently established."
+    ],
+    "logic_method": "Source tests/physics-check.mjs (4469 bytes) and external verification/physics-check.mjs (4452 bytes) extract production game.js core in Node VM with mock DOM/scene; 13 checks directly set position/mode/round/elapsed/rage and call attack/dash/step.",
+    "preview": {
+      "command": "python3 -m http.server 5317 --bind 127.0.0.1 --directory dist",
+      "host": "127.0.0.1",
+      "port": 5317
+    },
+    "provenance": "moonbloom_state static reading of README and both scripts; not independently executed validation.",
+    "readme_report": "README.md:31-34 reports syntax/13 logical passes, rendering without console errors, mode selection, hit +12%, dash -27 stamina, desktop/mobile UI, and WebMCP state/practice/invalid-mode checks."
+  },
+  "parent_readonly_process_observation": {
+    "dedicated_preview_or_browser_present": false,
+    "framework_contexts_preserved": true,
+    "framework_pcpu": 0,
+    "framework_state": "S",
+    "idle_framework_contexts": [
+      47160,
+      47161,
+      47162,
+      47163
+    ],
+    "observed_at": "2026-10-04T05:48:26Z",
+    "preview_listener_present": false,
+    "preview_port": 5317,
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only ps/lsof observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "all_five_rounds_complete_playthrough_claimed": false,
+    "core_logic_checks": 13,
+    "desktop_mobile_checks_reported": true,
+    "provenance": "Parent/author report only, not independent execution validation."
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not queried, not formal user domain or GitHub delivery evidence.",
+    "url": "https://crab-clash-sunset-bay.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters, not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/game.js",
+    "dist/index.html",
+    "dist/style.css",
+    "dist/vendor/three.module.js",
+    "tests/physics-check.mjs"
+  ],
+  "source_inventory_observed_at": "2026-10-04T05:48:09.041575Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash",
+  "stage": "original",
+  "thread_id": "01a10554-2096-7262-ab52-7b1f0d4b3084",
+  "title": "Crab Clash",
+  "total_bytes": 1682613,
+  "turn_id": "01a10554-443c-77df-bf7c-2f180a9f6921"
+}

@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "d133bdf80cb87bcabd05aa26844abc3ebc97a09831708f1421673fe08bcce34d"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "9f52b1cccfca2b723d8bfb664cb15e85a1e747d9a15451d793fea760aa60f370"
+    },
+    {
+      "bytes": 2092,
+      "path": "README.md",
+      "sha256": "451e6af7a92b0db0e2aa9e8281db675e4c26a376de4a237c6b87741d3e259237"
+    },
+    {
+      "bytes": 47381,
+      "path": "dist/game.js",
+      "sha256": "e7a94cb590fc78e4d17308e2eeabf4c26fb437f38e1505909bd77330e46fdd50"
+    },
+    {
+      "bytes": 9788,
+      "path": "dist/index.html",
+      "sha256": "ac0755f2335943829208ae796aee584c9668754f5eea19d9b2418cc3632d4a53"
+    },
+    {
+      "bytes": 25782,
+      "path": "dist/style.css",
+      "sha256": "1a96908dcd488a2ee47aba5d0c0b26ee110d03467261f813cbb06a3761fb7c23"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 507667,
+      "path": "original-delivery/desktop-final.png",
+      "sha256": "9c5f0b2be74745a43a6804e63f794a84c1612c31f022bd988ffbc07ce710ef12"
+    },
+    {
+      "bytes": 412478,
+      "path": "original-delivery/desktop-initial.png",
+      "sha256": "d187f9885384ee35fa74739948334507f30792b2ba0379ffba0c3145ff0de983"
+    },
+    {
+      "bytes": 511444,
+      "path": "original-delivery/desktop-verified.png",
+      "sha256": "a55641ff9352b0a9b23e5f8a32e755200821c4e49c0b61d5379987feabd818a2"
+    },
+    {
+      "bytes": 5439,
+      "path": "original-delivery/fix-game.py",
+      "sha256": "04915abb1cdf87357e8664af01e14cea08bf18cd76ac6ef487c7b36d07604672"
+    },
+    {
+      "bytes": 545641,
+      "path": "original-delivery/gameplay-verified.png",
+      "sha256": "58d148459a24516de38c963a3682ead7187620ac482b86f10cdbe87289410b98"
+    },
+    {
+      "bytes": 148291,
+      "path": "original-delivery/mobile.png",
+      "sha256": "9f528abbe1d7fbf1f8ca6d0f3279b277a9c21558c681b03e99029dc482f0f862"
+    },
+    {
+      "bytes": 208905,
+      "path": "original-delivery/wildframe-deploy.tar.gz",
+      "sha256": "e37136d838425ad87483ffd49b8cfed401eeeeb6cca59edeb96fed816df9e109"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-30/wildframe",
+  "source_tree_sha256": "c8735f1c224c5b2d9216bf82bdbc5ece30d59dcd546526d345629fc26e4c0fe4",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-061-original-20261004T054847Z",
+  "thread_id": "01a10552-bd29-73f4-bae5-63cf12b8409e",
+  "turn_id": "01a10552-dfa4-758a-96e8-7bc79eee1b22"
+}

@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**60 / 100**。
+当前进度：**63 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -74,6 +74,9 @@
 | 058 | [拾珍阁 · THE PATINA ROOM](games/058-antiquarian-auction/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/058-antiquarian-auction/) | [源码](games/058-antiquarian-auction/src/) |
 | 059 | [泥间 · Clay & Time — 3D 陶艺工坊](games/059-pottery-studio/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/059-pottery-studio/) | [源码](games/059-pottery-studio/src/) |
 | 060 | [PALIMPSEST · 时间回响](games/060-time-loop-palimpsest/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/060-time-loop-palimpsest/) | [源码](games/060-time-loop-palimpsest/src/) |
+| 061 | [WILDFRAME 野境 · 野生动物摄影观察游戏](games/061-wildlife-photography-observation/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/061-wildlife-photography-observation/) | [源码](games/061-wildlife-photography-observation/src/) |
+| 062 | [钳王争霸 · CRAB CLASH](games/062-crab-clash/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/062-crab-clash/) | [源码](games/062-crab-clash/src/) |
+| 063 | [水獭冰壶俱乐部 · Otter Curling Club](games/063-otter-curling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/063-otter-curling/) | [源码](games/063-otter-curling/src/) |
 
 ## 生成记录
 

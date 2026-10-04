@@ -1,0 +1,61 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "061-wildlife-photography-observation",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "061",
+  "generation_turn_id": "01a10552-dfa4-758a-96e8-7bc79eee1b22",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "full_old_history_preserved": true,
+    "game_number": "061",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/cf09ca7e4896a9a3e085a7a91496f83d4fc5fdde",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 47381,
+      "path": "game.js",
+      "sha256": "e7a94cb590fc78e4d17308e2eeabf4c26fb437f38e1505909bd77330e46fdd50"
+    },
+    {
+      "bytes": 9788,
+      "path": "index.html",
+      "sha256": "ac0755f2335943829208ae796aee584c9668754f5eea19d9b2418cc3632d4a53"
+    },
+    {
+      "bytes": 25782,
+      "path": "style.css",
+      "sha256": "1a96908dcd488a2ee47aba5d0c0b26ee110d03467261f813cbb06a3761fb7c23"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "c8735f1c224c5b2d9216bf82bdbc5ece30d59dcd546526d345629fc26e4c0fe4",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10552-bd29-73f4-bae5-63cf12b8409e",
+  "title": "WILDFRAME 野境 · 野生动物摄影观察游戏",
+  "url": "https://qzemi.cn/sentence-to-game/games/061-wildlife-photography-observation/"
+}

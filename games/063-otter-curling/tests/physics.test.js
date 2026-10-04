@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createStone,stepPhysics,scoreHouse,simulateShot,chooseAI,FIELD} from '../dist/physics.js';
+const resting=(team,x,z,type='normal')=>({...createStone(team,type),x,z,vx:0,vz:0});
+test('only stones closer than the nearest opponent score',()=>{const r=scoreHouse([resting(0,0,-9),resting(0,1,-9),resting(1,2,-9),resting(0,3,-9)]);assert.equal(r.team,0);assert.equal(r.points,2);});
+test('house edge contact counts, inactive and fully outside stones do not',()=>{const a=resting(1,4.08,-9);assert.equal(scoreHouse([a]).points,1);a.x=4.1;assert.equal(scoreHouse([a]).points,0);a.x=0;a.active=false;assert.equal(scoreHouse([a]).points,0);});
+test('equal nearest distances produce a blank end',()=>{assert.equal(scoreHouse([resting(0,1,-9),resting(1,-1,-9)]).points,0);assert.equal(scoreHouse([]).team,null);});
+test('a center draw reaches the house and preview does not mutate live stones',()=>{const input=[resting(1,2,-9)];const before=JSON.stringify(input);const r=simulateShot(input,createStone(0,'normal',0,50,0));assert.equal(JSON.stringify(input),before);assert.equal(r.score.team,0);assert.ok(Math.abs(r.stones.at(-1).z-FIELD.targetZ)<1);});
+test('impact wakes a resting stone and preserves collision direction',()=>{const a=resting(0,0,0),b=resting(1,0,-.95);a.vz=-7;let hits=0;stepPhysics([a,b],1/120,'normal',-1,()=>hits++);assert.ok(b.vz< -5);assert.ok(hits>0);});
+test('sweeping increases distance, maximum shots leave the rink and terminate',()=>{const plain=simulateShot([],createStone(0,'normal',0,35,0)).stones[0];const swept=[createStone(0,'normal',0,35,0)];for(let n=0;n<2000;n++){if(!stepPhysics(swept,1/120,'normal',0))break;}assert.ok(swept[0].z<plain.z-3);for(const ice of ['normal','fast','wind'])for(const type of ['normal','light','heavy']){const stones=[createStone(0,type,22,100,1)];for(let n=0;n<2400;n++)stepPhysics(stones,1/120,ice,0);assert.equal(stones[0].active,false);assert.equal(stones[0].vx,0);assert.equal(stones[0].vz,0);}});
+test('AI produces a legal shot with the same physics',()=>{const board=[resting(0,0,-9)];for(const ice of ['normal','fast','wind']){const c=chooseAI(board,1,ice,'hard');assert.ok(c.angle>=-22&&c.angle<=22);assert.ok(c.power>=8&&c.power<=100);assert.ok(c.spin>=-1&&c.spin<=1);const r=simulateShot(board,createStone(1,c.type,c.angle,c.power,c.spin),ice);assert.equal(r.stones.length,2);}});
+
+test("scoring tolerance boundary remains a blank end",()=>{for(const d of [1.011999,1.012,1.0120000001]){const r=scoreHouse([resting(0,1,-9),resting(1,-d,-9)]);assert.equal(r.points,0);assert.equal(r.team,null);}});

@@ -1,0 +1,63 @@
+{
+  "files": [
+    {
+      "bytes": 35,
+      "path": ".gitignore",
+      "sha256": "83b05558a18a0f6fb8ade2c953e4327ba59276828b35a81cba4de37731c8d980"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "99576bbb36ceca6f05db278fd293dffecd9da8610d8c3dee9836877c5dcf2c7a"
+    },
+    {
+      "bytes": 1852,
+      "path": "README.md",
+      "sha256": "5409482af95fbc244845fad25b5662952f6035605333ae7619d698e2ef7afb02"
+    },
+    {
+      "bytes": 44929,
+      "path": "dist/game.js",
+      "sha256": "3f462a3168608cf247b54c2bca7c161b43e851e81be3afbbd9c61b8e1e7d1932"
+    },
+    {
+      "bytes": 6005,
+      "path": "dist/index.html",
+      "sha256": "dd82cfac63f3a6810db99e1264060d74c23677248a1fd0ec33610c16304cbf7e"
+    },
+    {
+      "bytes": 14774,
+      "path": "dist/style.css",
+      "sha256": "0a4f43fdc3d487a99d70be1fa024ec192b27bf5c53ba8f57d51c78eba8c8d835"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 291310,
+      "path": "original-delivery/crab-clash-site.tar.gz",
+      "sha256": "630786228b2b1e78e62c50f72a2db6da30224d17f4e0d678d168e3cfa6bcf245"
+    },
+    {
+      "bytes": 4452,
+      "path": "original-delivery/physics-check.mjs",
+      "sha256": "75ff42d7c96e156c1259e93c92cf00e57fea6cf5c5df30cfd711b7c14524bd94"
+    },
+    {
+      "bytes": 4469,
+      "path": "tests/physics-check.mjs",
+      "sha256": "afb3f6b0eb35c0dbdff22931c94f0da8893727c564773a84efb409bb1066cd9b"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-31/crab-clash",
+  "source_tree_sha256": "c74599c483a359a4846b36c2289da21ee433de665eeb7b9aa8d988bb907f3620",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-062-original-20261004T054648Z",
+  "thread_id": "01a10554-2096-7262-ab52-7b1f0d4b3084",
+  "turn_id": "01a10554-443c-77df-bf7c-2f180a9f6921"
+}

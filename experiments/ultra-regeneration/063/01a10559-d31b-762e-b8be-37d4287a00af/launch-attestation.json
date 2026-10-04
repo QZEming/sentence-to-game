@@ -1,0 +1,14 @@
+{
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a10559-fb83-75d2-bc95-41b27136d879",
+  "input_scope": "one complete sentence only; no repository, templates, other games or repair context",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": "实现一个水獭冰壶队利用碰撞和落点争夺得分区的 3D 冰壶竞技游戏，尽你所能丰富游戏玩法。",
+  "server_execution_parameters_independently_authenticated": false,
+  "thinking_requested": "ultra",
+  "thread_id": "01a10559-d31b-762e-b8be-37d4287a00af"
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#132e38"><meta name="description" content="在阳光海滩上展开螃蟹相扑！用钳击、冲刺、防御与潮汐大招把对手推出擂台。">
+<title>钳王争霸 · CRAB CLASH</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23132e38'/%3E%3Cellipse cx='32' cy='37' rx='17' ry='12' fill='%23ff795b'/%3E%3Cpath d='M18 35L9 19M46 35L55 19M8 17L7 8M10 18L18 11M54 18L46 11M56 17L57 8' fill='none' stroke='%23ff795b' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='29' r='3' fill='white'/%3E%3Ccircle cx='39' cy='29' r='3' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./" aria-label="钳王争霸首页"><span class="brand-icon">✺</span><div>CRAB CLASH <span>钳王争霸</span></div></a><div class="header-center"><span class="sun-icon">☀</span> 日落湾 · SUMMER TOURNAMENT</div><div class="header-actions"><button id="sound" class="icon-btn" title="开启声音" aria-label="开启声音">♫</button><button id="help" class="icon-btn" title="玩法说明" aria-label="玩法说明">?</button><button id="pause" class="icon-btn" title="暂停 · Esc" aria-label="暂停游戏">Ⅱ</button></div></header>
+<main id="game-shell">
+<div id="canvas-host" aria-label="3D 海滩螃蟹相扑擂台"></div>
+<div class="vignette"></div>
+<div id="loading"><span class="loading-mark">✺</span><p>阳光、沙滩，还有一场硬仗。</p><small>正在准备擂台…</small></div>
+<div id="hud" class="hidden">
+ <section class="fighter player"><div class="fighter-label"><span class="tiny-badge">你</span><strong>赤钳小子</strong><span id="lives">● ● ●</span></div><div class="damage"><b id="player-damage">0</b><span>%</span><small>击飞系数</small></div><div class="meter"><i id="stamina-bar"></i></div><div class="meter-caption"><span>耐力</span><span id="stamina-text">100 / 100</span></div></section>
+ <section class="round-info"><div id="round-label">冠军之路 · 01 / 05</div><strong id="timer">90</strong><span id="weather-label">☀ 晴朗沙滩</span></section>
+ <section class="fighter enemy"><div class="fighter-label"><span class="tiny-badge rival">对手</span><strong id="enemy-name">泡泡拳手</strong><span id="enemy-count"></span></div><div class="damage"><b id="enemy-damage">0</b><span>%</span><small>击飞系数</small></div><div class="meter enemy-meter"><i id="enemy-stamina"></i></div><div class="meter-caption"><span id="enemy-title">灵活型 · 初出茅庐</span><span>CPU</span></div></section>
+</div>
+<div id="menu" class="menu-layer">
+ <div class="menu-content"><div class="eyebrow"><span></span> 海滩相扑锦标赛 · VOL. 01</div><h1>钳王<span>争霸<span class="title-dot">.</span></span></h1><p class="intro">这片沙滩，只能有一个钳王。<br>站稳脚跟，把所有对手顶出圈外。</p>
+ <div class="mode-picker" role="group" aria-label="游戏模式"><button class="mode selected" data-mode="tournament"><b>冠军之路</b><small>五位劲敌 · 一顶王冠</small></button><button class="mode" data-mode="survival"><b>潮汐乱斗</b><small>多蟹混战 · 极限生存</small></button><button class="mode" data-mode="practice"><b>自由练习</b><small>熟悉招式 · 轻松开钳</small></button></div>
+ <button id="start" class="primary"><span>开始对战</span><span class="key-hint">ENTER</span></button><div class="menu-note"><span>W A S D 移动</span><span>·</span><span>J 出钳</span><span>·</span><span>空格 冲刺</span></div>
+ <div class="best"><span>个人最佳</span><b id="best-score">尚未登场</b><span class="local-note">本机记录</span></div>
+ </div><div class="scene-label"><span class="location-mark">◉</span><div><b>日落湾竞技场</b><span>24° N · 一场钳所未有的较量</span></div></div><div class="menu-stamp">NO GUTS.<br>NO GLORY.<br><span>JUST CRABS.</span></div>
+</div>
+<div id="center-message" class="hidden"><span id="message-kicker"></span><strong id="message-title"></strong><small id="message-sub"></small></div>
+<div id="toast" role="status"></div>
+<div id="battle-footer" class="hidden"><div class="tip"><span id="tip-icon">✦</span><span id="tip-text">钳击积累伤害，冲刺完成最后一推。</span></div><div class="rage"><div><b>潮汐巨钳</b><span id="rage-number">0%</span></div><div class="rage-track"><i id="rage-bar"></i></div><kbd>E</kbd></div></div>
+<div id="mobile-controls" class="hidden"><div id="joystick"><div id="stick"></div></div><div class="touch-actions"><button data-action="block" class="touch-button">防御</button><button data-action="ult" class="touch-button ult-touch">大招</button><button data-action="dash" class="touch-button">冲刺</button><button data-action="attack" class="touch-button attack-touch">钳击</button></div></div>
+<div id="dialog" class="dialog-backdrop hidden"><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div id="dialog-content"></div></section></div>
+<div id="water-warning" class="hidden">≈ 涨潮了！擂台正在缩小</div>
+</main>
+<footer class="control-bar"><div class="control"><span class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><span>横行霸道</span></div><div class="control"><kbd>J</kbd><span>钳击</span></div><div class="control"><kbd>SPACE</kbd><span>冲刺</span></div><div class="control"><kbd>K</kbd><span>防御</span></div><div class="control"><kbd>E</kbd><span>潮汐巨钳</span></div><span class="footer-rule">推出圈外，即刻获胜</span><span class="version">3D PHYSICS · v1.0</span></footer>
+<script type="module" src="game.js"></script>
+</body></html>

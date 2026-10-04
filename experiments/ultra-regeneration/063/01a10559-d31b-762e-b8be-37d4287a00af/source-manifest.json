@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "bytes": 51,
+      "path": ".gitignore",
+      "sha256": "113165f691ba83c9e7fcdf97213d460c6a2497381e75a8f7fb37c1da1de37439"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "3b744175e83712a04db8e887de61516622a007e06cb0c525e642471a4fbbf08a"
+    },
+    {
+      "bytes": 2025,
+      "path": "QA.md",
+      "sha256": "82723ae8b3ee3e2e915e2b594cfeed7a49a54567e1609f433f4521d2bd9050f5"
+    },
+    {
+      "bytes": 1925,
+      "path": "README.md",
+      "sha256": "042a954ceb4d3231a908735723942cd36a0153f3de86b43f5e69f4c7db94355b"
+    },
+    {
+      "bytes": 31640,
+      "path": "dist/app.js",
+      "sha256": "4fd644cf1e194998f3753d46c919854a73f7f1a15b34531804c63ec77d93306d"
+    },
+    {
+      "bytes": 1720443,
+      "path": "dist/aurora.png",
+      "sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357"
+    },
+    {
+      "bytes": 9520,
+      "path": "dist/index.html",
+      "sha256": "47d044b1a696cfa5d27f084fec44adcfaa928795608a3a34b1678fab87690038"
+    },
+    {
+      "bytes": 4661,
+      "path": "dist/physics.js",
+      "sha256": "843fd24dcbda733270815c741dac65e7026914822c9f4764ce3b180d6b98d4b8"
+    },
+    {
+      "bytes": 16402,
+      "path": "dist/style.css",
+      "sha256": "1b6fd7ff1b31d36563af63cabd0a12c8896d0a5180326b598ee74744a3dac3e9"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 1720443,
+      "path": "original-delivery/exec-9e0e9b4d-9eaf-4a05-9084-1ad9a14596ff.png",
+      "sha256": "962a2f7e35ceccaa37534027f6b800b27ccf3d6b6e39f6088371eb7530b3c357"
+    },
+    {
+      "bytes": 1916745,
+      "path": "original-delivery/otter-curling.zip",
+      "sha256": "1dc09d91792dd539a6e969d66a6cdfa6e03790e77e611f1771a093684efd7cc5"
+    },
+    {
+      "bytes": 807646,
+      "path": "output/playwright/desktop.png",
+      "sha256": "1fe07eb10e6f46fd38cc34c046352e5f4be1d74a1f189e0bd402ceeae14c96ab"
+    },
+    {
+      "bytes": 237555,
+      "path": "output/playwright/match-complete.png",
+      "sha256": "3a5701e806a7764655a151c36850578660fafa50d89d13f6bc1519576d5faf3d"
+    },
+    {
+      "bytes": 215581,
+      "path": "output/playwright/mobile.png",
+      "sha256": "02ffb562c9f4729dfb3226c42fca283a7bd8d97b033423769d564dcc992395df"
+    },
+    {
+      "bytes": 178,
+      "path": "package.json",
+      "sha256": "8365bb0a80bcb6b649d5846d863b691a83d75af833fa4778156fa9eb5e6ef627"
+    },
+    {
+      "bytes": 2643,
+      "path": "tests/physics.test.js",
+      "sha256": "65a27ff9f45ae00305d9fdd893ed9575caa3264024a479506bf99a03e71a018a"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-32/otter-curling",
+  "source_tree_sha256": "4963b65dfc8c3b85cab65e6181495f8dfc1ecfe36551722d5ccfbdc3c5934fb5",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-063-original-20261004T055424Z",
+  "thread_id": "01a10559-d31b-762e-b8be-37d4287a00af",
+  "turn_id": "01a10559-fb83-75d2-bc95-41b27136d879"
+}
