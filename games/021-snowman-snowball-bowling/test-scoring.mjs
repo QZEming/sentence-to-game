@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {scoreFrames,frameComplete,frameMarks} from './dist/scoring.js';
+assert.equal(scoreFrames(Array.from({length:10},()=>[0,0])).total,0);
+assert.equal(scoreFrames([...Array.from({length:9},()=>[10]),[10,10,10]]).total,300);
+assert.equal(scoreFrames([...Array.from({length:9},()=>[5,5]),[5,5,5]]).total,150);
+assert.equal(scoreFrames(Array.from({length:10},()=>[9,0])).total,90);
+assert.deepEqual(scoreFrames([[10],[7,3],[9,0]]),{total:48,totals:[20,39,48]});
+assert.deepEqual(scoreFrames([[10]]),{total:0,totals:[null]});
+assert.equal(frameComplete([10,3],9),false);
+assert.equal(frameComplete([7,3],9),false);
+assert.equal(frameComplete([10,3,7],9),true);
+assert.equal(frameComplete([5,4],9),true);
+assert.equal(frameMarks([10,3,7],9),'X 3 /');
+assert.equal(frameMarks([5,5,10],9),'5 / X');
+console.log('12 bowling scoring assertions passed.');

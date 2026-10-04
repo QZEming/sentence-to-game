@@ -1,16 +1,75 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#f7f5ef"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ctext y=%2752%27 font-size=%2752%27%3E☃%3C/text%3E%3C/svg%3E"><title>Snowball Social · 雪球保龄球俱乐部</title>  <script type="module" crossorigin src="/assets/index-BXuLpJpY.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CIHJdR7I.css">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ea6943" />
+  <meta name="description" content="在落日雪山中，和雪人一起打保龄球。体验物理碰撞、旋转雪球、冰雪挑战和十轮经典赛。" />
+  <title>SNOWBOWL · 雪人保龄球俱乐部</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-<header class="header"><a class="brand" href="/" aria-label="Snowball Social 首页"><span class="brand-icon">✳</span><span>snowball<span class="brand-second">social</span><sup>®</sup></span></a><nav><button class="nav-active" id="playNav">开始游戏 <span>PLAY</span></button><button id="howNav">玩法指南 <span>HOW TO PLAY ↗</span></button></nav><div class="header-right"><span class="open-dot"></span><span>山间俱乐部 · 营业中</span><button class="icon-button" id="soundBtn" title="切换音效" aria-label="开启音效">♪</button></div></header>
-<main><section class="intro"><div><div class="eyebrow"><span></span> THE COOLEST GAME ON THE MOUNTAIN</div><h1>好球，<span>雪上加分。</span><i>✳</i></h1><p>滚一个雪球，把快乐一击全中。欢迎来到你的山间保龄球俱乐部。</p></div><div class="club-stamp"><span>SNOWBALL SOCIAL CLUB</span><strong>LET'S<br>ROLL.</strong><small>EST. WINTER 2026</small></div></section>
-<section class="game-shell" aria-label="3D 雪球保龄球游戏"><div id="scene"></div><div class="scene-vignette"></div><div class="top-hud"><div class="location"><span class="location-icon">⌁</span><div><b id="locationName">松林雪谷</b><span id="locationWeather">PINE VALLEY · −4°C · 微风</span></div></div><div class="scene-tools"><button id="pauseBtn" title="暂停" aria-label="暂停游戏">Ⅱ</button><button id="viewBtn" title="切换视角" aria-label="切换视角">◈</button><button id="fullBtn" title="全屏" aria-label="全屏">⛶</button></div></div>
-<div class="mode-panel"><span class="tiny-label">选择你的冒险</span><div class="modes"><button class="mode active" data-mode="classic"><span>01</span><b>经典雪道</b><small>JUST ROLL</small></button><button class="mode" data-mode="wind"><span>02</span><b>暴风雪</b><small>FEEL THE WIND</small></button><button class="mode" data-mode="trick"><span>03</span><b>极限挑战</b><small>FIND YOUR LINE</small></button></div><div class="wind-card" id="windCard">↗ <span>风速 0.0 m/s</span></div></div>
-<aside class="score-panel"><div class="score-heading"><span>本场成绩</span><span class="live-dot">LIVE</span></div><div class="total-score"><strong id="totalScore">0</strong><span>POINTS</span></div><div class="score-meta"><span>第 <b id="frameNo">01</b> / 10 局</span><span id="rollNo">第一球</span></div><div class="pin-diagram" id="pinDiagram"></div><div class="score-foot"><span>个人最佳</span><b id="bestScore">000</b><span>↗</span></div></aside>
-<div class="scene-caption"><span class="caption-dot"></span><span id="sceneCaption">深呼吸，瞄准，然后让雪球飞一会儿。</span></div><div class="toast" id="toast"><small id="toastSmall">NICE SHOT</small><strong id="toastTitle">好球！</strong><span id="toastDetail"></span></div><div id="pauseOverlay" class="pause-overlay hidden"><span>TAKE A SNOW BREAK</span><h2>歇一会儿，再来好球。</h2><button id="resumeBtn" class="orange-button">继续游戏 ↗</button></div>
-<div class="scene-bottom"><div class="player-chip"><span>☃</span><div><b>雪球选手</b><small>SNOW MUCH TALENT</small></div></div><div class="ready-badge" id="readyBadge"><span></span>准备就绪</div><span class="altitude">ALT. 2,460 M ↗</span></div></section>
-<section class="controls"><div class="aim-control"><div class="control-title"><span><em>01</em> 瞄准方向</span><b id="aimValue">0°</b></div><input type="range" id="aim" min="-18" max="18" step="0.2" value="0" aria-label="瞄准方向"><div class="range-label"><span>← 向左</span><span>向右 →</span></div></div><div class="spin-control"><div class="control-title"><span><em>02</em> 雪球旋转</span><b id="spinValue">直球</b></div><div class="spin-options"><button data-spin="-1" aria-label="左旋">↶ <span>左旋</span></button><button data-spin="0" class="selected">↑ <span>直球</span></button><button data-spin="1" aria-label="右旋">↷ <span>右旋</span></button></div></div><div class="launch-control"><button id="launchBtn"><span id="launchLabel">按住蓄力，松开发射</span><span>↗</span><i id="powerFill"></i></button><div class="launch-hint"><span id="powerLabel">长按按钮 / SPACE</span><span>最佳力度 <b>65–85%</b></span></div></div></section>
-<section class="scoreboard"><div class="scoreboard-label"><span>你的记分卡</span><small>EVERY ROLL COUNTS.</small></div><div class="frames" id="frames"></div><button id="restartBtn" aria-label="重新开始">↻ <span>再来一场</span></button></section><footer><span>一点技巧，一点运气，一整个冬天的快乐。</span><div><span>← → 瞄准</span><span>A / D 旋转</span><span>SPACE 发球</span><span>P 暂停</span><button id="helpBtn">游戏说明 ↗</button></div></footer></main>
-<dialog id="helpDialog"><button class="close-dialog" aria-label="关闭">×</button><span class="eyebrow">A LITTLE KNOW-HOW</span><h2>把快乐，一击全中。</h2><p>用方向键或滑杆瞄准，选择旋转方向，按住发球按钮或空格键蓄力，松开即可投球。也可以在雪道上左右拖动瞄准。</p><div class="help-grid"><div><b>✳ 经典雪道</b><p>十局标准保龄球。全中（X）加后两球，补中（/）加下一球；第十局可赢得奖励球。</p></div><div><b>↗ 暴风雪</b><p>每一球风向都会改变，观察风速，用反向瞄准或旋转抵消侧风。</p></div><div><b>◆ 极限挑战</b><p>雪球会被冰晶弹开。尝试曲线球，绕过障碍找到完美入射角。</p></div><div><b>♪ 山间小贴士</b><p>65–85% 力量更容易控制。点击右上角音符开启音效，◈ 切换俯瞰视角，P 暂停。</p></div></div><button class="orange-button close-help">知道了，开球 ↗</button></dialog>
-<dialog id="resultDialog"><button class="close-dialog" aria-label="关闭">×</button><span class="eyebrow">THAT'S HOW WE ROLL</span><h2 id="resultTitle">漂亮收官！</h2><div class="result-score" id="resultScore">0</div><p id="resultText"></p><button id="playAgain" class="orange-button">再来一场 ↗</button></dialog></body></html>
+  <main id="app">
+    <div id="world" aria-label="3D 雪地保龄球场景"></div>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Snowbowl 首页"><span class="brand-icon">✳</span><span>SNOWBOWL<small>THE WINTER BOWLING CLUB</small></span></a>
+      <nav class="mode-tabs" aria-label="游戏模式">
+        <button class="active" data-mode="classic"><span>01</span> 经典赛</button>
+        <button data-mode="challenge"><span>02</span> 冰雪挑战</button>
+        <button data-mode="zen"><span>03</span> 自由练习</button>
+      </nav>
+      <div class="top-actions"><button class="icon-button" id="sound" title="打开声音" aria-label="打开声音">♫<span class="muted-slash"></span></button><button class="icon-button" id="help" title="玩法说明" aria-label="玩法说明">?</button><button class="icon-button" id="pause" title="暂停" aria-label="暂停">Ⅱ</button></div>
+    </header>
+    <section class="intro">
+      <div class="eyebrow"><span></span> ALPINE VALLEY · 雪山球场</div>
+      <h1>好球，<br>就要趁雪打。</h1>
+      <p id="mode-description">一颗雪球，十个球瓶。<br>来点旋转，让冬天热闹起来。</p>
+      <div class="conditions"><span>☀ <b>−6°</b> 晴雪</span><i></i><span id="wind-label">微风 · 适合全倒</span></div>
+    </section>
+    <aside class="score-panel">
+      <div class="panel-caption"><span id="score-label">本场得分</span><span class="live-tag">LIVE</span></div>
+      <div class="score-line"><strong id="score">0</strong><span>PTS</span><div class="best">个人最佳<b id="best">—</b></div></div>
+      <div class="round-info"><span id="round-label">第 <b>01</b> / 10 轮</span><span id="throw-label">第 1 球</span></div>
+      <div class="pin-map" id="pin-map" aria-label="剩余球瓶"></div>
+      <div class="remaining"><b id="remaining">10</b> 个球瓶等你击倒</div>
+      <div class="score-frames" id="frames"></div>
+    </aside>
+    <div class="scene-label"><span class="tiny-ball"></span> 一起把烦恼，全部击倒。</div>
+    <div class="feedback" id="feedback" role="status" aria-live="polite"><span id="feedback-kicker"></span><strong id="feedback-title"></strong><span id="feedback-sub"></span></div>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="shot-summary hidden" id="shot-summary"><span id="shot-result"></span><button id="next-shot">继续投球 <kbd>↵</kbd></button></div>
+    <footer class="control-dock">
+      <section class="ball-section">
+        <div class="control-label">选择你的雪球 <span id="ball-hint">平衡 · 精准</span></div>
+        <div class="ball-options">
+          <button class="ball-option selected" data-ball="snow" aria-label="选择经典雪球"><span class="ball-preview snow"></span><span>经典雪球</span><small>CLASSIC</small></button>
+          <button class="ball-option" data-ball="heavy" aria-label="选择巨型雪球"><span class="ball-preview heavy"></span><span>巨型雪球</span><small>HEAVY</small></button>
+          <button class="ball-option" data-ball="burst" aria-label="选择爆裂雪球"><span class="ball-preview burst"></span><span>爆裂雪球</span><small>BURST</small></button>
+        </div>
+      </section>
+      <section class="aim-section">
+        <div class="slider-label"><label for="aim">瞄准方向</label><output id="aim-value">0°</output></div>
+        <input id="aim" type="range" min="-14" max="14" value="0" step="0.2" aria-label="瞄准角度" />
+        <div class="slider-label spin-label"><label for="spin">弧线旋转</label><output id="spin-value">直球</output></div>
+        <input id="spin" type="range" min="-1" max="1" value="0" step="0.05" aria-label="雪球旋转" />
+        <div class="range-ends"><span>左旋 <kbd>Q</kbd></span><span><kbd>E</kbd> 右旋</span></div>
+      </section>
+      <section class="throw-section">
+        <div class="power-caption"><span>投球力度</span><b id="power-value">准备好了吗？</b></div>
+        <div class="power-track"><div id="power-fill"></div><i></i><i></i><i></i><span class="sweet-spot"></span></div>
+        <button id="throw-button"><span class="throw-symbol">✳</span><span id="throw-text">按住蓄力 · 松开投球</span><kbd>SPACE</kbd></button>
+        <div class="keyboard-hint"><span><kbd>←</kbd><kbd>→</kbd> 瞄准</span><span><kbd>A</kbd><kbd>D</kbd> 移动</span><button id="reset">↻ 重新开始</button></div>
+      </section>
+    </footer>
+    <div class="bottom-meta"><span>EST. 2026 &nbsp; / &nbsp; MADE FOR SNOW DAYS</span><span>放轻松，好球就在下一次。</span></div>
+    <div id="loading"><div class="loading-flake">✳</div><b>正在准备雪道…</b><span>给雪球一点时间。</span></div>
+    <dialog id="help-dialog"><button class="modal-close" data-close="help-dialog" aria-label="关闭">×</button><div class="modal-eyebrow">WELCOME TO THE CLUB</div><h2>今天，打个好球。</h2><p>调整方向，按住投球按钮或空格蓄力，松开就出手。橙色区域的力度最容易打出漂亮一击。</p><div class="help-grid"><div><b>01 / 瞄准</b><p>拖动方向滑杆或按 ← →。A / D 调整出球位置。</p></div><div><b>02 / 加点旋转</b><p>拖动旋转滑杆或按 Q / E，雪球会沿弧线前进。</p></div><div><b>03 / 换颗雪球</b><p>巨型球更重，爆裂球撞瓶时会炸开雪花。经典赛使用标准球。</p></div><div><b>04 / 再来一次</b><p>经典赛共 10 轮，遵循全倒、补中加分规则。挑战模式共 5 关，每关两次机会。</p></div></div><p class="help-note">挑战模式：每瓶 10 分，全倒 +50，补中 +20；穿过金色光环 +25。自由练习没有终点。</p><button class="primary-button" data-close="help-dialog">去打保龄球</button></dialog>
+    <dialog id="pause-dialog"><div class="modal-eyebrow">TAKE A SNOW BREAK</div><h2>雪人也要歇一会。</h2><p>你的比赛已经暂停，回来再打一个好球。</p><button class="primary-button" id="resume">继续比赛</button></dialog>
+    <dialog id="finish-dialog"><div class="modal-eyebrow">WHAT A SNOW DAY</div><h2 id="finish-title">漂亮的一场！</h2><div class="final-score" id="final-score">0</div><p id="finish-details"></p><div class="finish-stats"><span>全倒 <b id="stat-strikes">0</b></span><span>补中 <b id="stat-spares">0</b></span><span>击倒 <b id="stat-pins">0</b></span></div><button class="primary-button" id="play-again">再来一场</button></dialog>
+    <dialog id="confirm-dialog"><h2>开启新的一场？</h2><p>当前比赛进度将被重置，个人最佳会保留。</p><div class="confirm-buttons"><button data-close="confirm-dialog">继续当前比赛</button><button class="primary-button" id="confirm-reset">开启新比赛</button></div></dialog>
+  </main>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

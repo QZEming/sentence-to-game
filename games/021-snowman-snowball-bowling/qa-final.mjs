@@ -1,0 +1,16 @@
+import { chromium } from '/Users/bytedance/.npm/_npx/31e32ef8478fbf80/node_modules/playwright/index.mjs';
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:960},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:4267',{waitUntil:'networkidle'});
+await page.waitForTimeout(1800);console.log('initial dots',await page.locator('.pin-dot:not(.down)').count());
+await page.screenshot({path:'output/playwright/desktop.png'});
+await page.keyboard.down('Space');await page.waitForTimeout(740);await page.keyboard.up('Space');await page.waitForFunction(()=>window.snowbowl.snapshot().phase==='result',null,{timeout:25000});
+const before=await page.evaluate(()=>window.snowbowl.snapshot());await page.waitForTimeout(2500);const after=await page.evaluate(()=>window.snowbowl.snapshot());console.log('result frozen',JSON.stringify(before)===JSON.stringify(after),after);
+await page.locator('#next-shot').click();await page.keyboard.down('Space');await page.waitForTimeout(740);await page.keyboard.up('Space');await page.waitForFunction(()=>window.snowbowl.snapshot().phase==='result',null,{timeout:25000});console.log('second shot',await page.evaluate(()=>window.snowbowl.snapshot()));
+await page.locator('[data-mode="challenge"]').click();await page.locator('#confirm-reset').click();await page.locator('[data-ball="heavy"]').click();console.log('heavy enabled',await page.locator('[data-ball="heavy"]').getAttribute('class'));
+await page.locator('[data-ball="burst"]').click();await page.keyboard.down('Space');await page.waitForTimeout(740);await page.keyboard.up('Space');await page.waitForFunction(()=>window.snowbowl.snapshot().phase==='result',null,{timeout:25000});console.log('burst',await page.evaluate(()=>window.snowbowl.snapshot()));
+await page.locator('#next-shot').click();console.log('level2',await page.evaluate(()=>window.snowbowl.snapshot()));
+await page.locator('[data-mode="zen"]').click();await page.locator('#confirm-reset').click();console.log('zen',await page.evaluate(()=>window.snowbowl.snapshot()));
+await page.locator('#pause').click();console.log('pause visible',await page.locator('#pause-dialog').isVisible());await page.locator('#resume').click();await page.locator('#sound').click();
+await page.setViewportSize({width:390,height:844});await page.waitForTimeout(1200);await page.screenshot({path:'output/playwright/mobile.png'});console.log('mobile overflow',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+const button=await page.locator('#throw-button').boundingBox();await page.mouse.move(button.x+button.width/2,button.y+button.height/2);await page.mouse.down();await page.waitForTimeout(650);await page.mouse.up();await page.waitForFunction(()=>window.snowbowl.snapshot().phase==='result',null,{timeout:25000});console.log('mobile pointer shot',await page.evaluate(()=>window.snowbowl.snapshot()));console.log('errors',errors);await browser.close();

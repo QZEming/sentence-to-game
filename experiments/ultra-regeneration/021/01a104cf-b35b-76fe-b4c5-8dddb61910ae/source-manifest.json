@@ -1,0 +1,128 @@
+{
+  "files": [
+    {
+      "bytes": 26,
+      "path": ".gitignore",
+      "sha256": "f1ba305d95f4f1b4113f2be86aa9a85c1fa0f3ee79999eb7a01b6c065e293b25"
+    },
+    {
+      "bytes": 100,
+      "path": ".openai/hosting.json",
+      "sha256": "8c872928d293832c86baa4073da284e6d7261ae015f20d47339e3244161b5ab3"
+    },
+    {
+      "bytes": 1252,
+      "path": "README.md",
+      "sha256": "dec3d8ca76a8db7a05ed9f355f33f580fa7f12605755045c6465d928f145980e"
+    },
+    {
+      "bytes": 238,
+      "path": "dist/favicon.svg",
+      "sha256": "b99bfb16f2e2007c2b288ca51da5f0718297d9e3f51b29c3b3058c048e527da6"
+    },
+    {
+      "bytes": 17806,
+      "path": "dist/game.js",
+      "sha256": "c6a1258f930f25ba2e74b2ed254497ab53f5571f6e35f6cb28b8b63bbad03fd7"
+    },
+    {
+      "bytes": 7469,
+      "path": "dist/index.html",
+      "sha256": "fd552d6b930f8ed8df7890f282019b03f6b8fdc1e78de83dd67aa4fb3ccf3e80"
+    },
+    {
+      "bytes": 20711,
+      "path": "dist/scene.js",
+      "sha256": "caddbc010c39ddfd78b696e384e24a1bb87c5c64823927778ac5cfc10efced25"
+    },
+    {
+      "bytes": 1238,
+      "path": "dist/scoring.js",
+      "sha256": "0f0c76bd60bceb135436be9d8580dc9ea9a01e7a4214f313222a5a70e9027f9b"
+    },
+    {
+      "bytes": 17742,
+      "path": "dist/style.css",
+      "sha256": "c2d999bed3387ebe840004dfcf0f0034b58d98054c55bb63ccc1214197b37847"
+    },
+    {
+      "bytes": 1125,
+      "path": "dist/vendor/CANNON-LICENSE.txt",
+      "sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 346256,
+      "path": "dist/vendor/cannon-es.js",
+      "sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c"
+    },
+    {
+      "bytes": 691648,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 271485,
+      "path": "original-delivery/snowbowl-final.tar.gz",
+      "sha256": "ac29f9548218951163fe2319b2ef6f3a9806107410202c82d7497f835cafe5ec"
+    },
+    {
+      "bytes": 271430,
+      "path": "original-delivery/snowbowl.tar.gz",
+      "sha256": "70d3a4765895c83b1bdcf00f5b050af82430cc2043275960a37b92c2da06b8fb"
+    },
+    {
+      "bytes": 682485,
+      "path": "output/playwright/desktop.png",
+      "sha256": "30d6c26ca3837d44f129b438c4a38834002005a9513b920cf6ac4d7932e9926e"
+    },
+    {
+      "bytes": 169580,
+      "path": "output/playwright/mobile.png",
+      "sha256": "03bfbbca02e18f5e11a0d7033d954a99463a0057074630c1b9add77bb95c7202"
+    },
+    {
+      "bytes": 18,
+      "path": "output/playwright/qa-result.json",
+      "sha256": "861f18bcf433cba1e778ffc114e58f280b62a2f21198feeb33e135018efc7ce8"
+    },
+    {
+      "bytes": 700877,
+      "path": "output/playwright/shot.png",
+      "sha256": "a698a0ae16a6947cca51be1018ae924a5b3e40ee5a60a1be481d50cbfbf83cee"
+    },
+    {
+      "bytes": 3160,
+      "path": "qa-final.mjs",
+      "sha256": "d12049f4658e0a0064fa8394cdbaa568a3736808589a380cfe87b66ebfd7fe90"
+    },
+    {
+      "bytes": 957,
+      "path": "qa-stability.mjs",
+      "sha256": "fe4df3e5d23825c5b065c9598c1c901c16d748340c0bf392435352fcc9986e53"
+    },
+    {
+      "bytes": 2306,
+      "path": "qa.mjs",
+      "sha256": "fde0fa62e481f7f8d39ca4f2f6277edf20489527cbf64fdd699b0e96c79fe351"
+    },
+    {
+      "bytes": 891,
+      "path": "test-scoring.mjs",
+      "sha256": "73fb9eebbaf05393cd64dcb6f7a5c2c42106c6d15171e97f4ac8d5c2d3b2e254"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-15/snowbowl",
+  "source_tree_sha256": "ff7d93ffbcbd530f3132ba2a34b8a30ff2f4741cd283ada748c7e70fc5917bf4",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-021-original-20261004T031831Z",
+  "thread_id": "01a104cf-b35b-76fe-b4c5-8dddb61910ae",
+  "turn_id": "01a104cf-d4a6-7546-ab55-15b53bd8b6e7"
+}

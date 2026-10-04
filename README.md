@@ -34,7 +34,7 @@
 | 018 | [猫猫叠叠乐 · Cat Stack](games/018-kitten-block-tower/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/018-kitten-block-tower/) | [源码](games/018-kitten-block-tower/src/) |
 | 019 | [小小弹珠 · 玩具屋大冒险](games/019-marble-toy-house/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/019-marble-toy-house/) | [源码](games/019-marble-toy-house/src/) |
 | 020 | [星际汪汪高尔夫 · Cosmic Pup](games/020-puppy-alien-minigolf/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/020-puppy-alien-minigolf/) | [源码](games/020-puppy-alien-minigolf/src/) |
-| 021 | [Snowball Social · 雪球保龄球](games/021-snowman-snowball-bowling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/) | [源码](games/021-snowman-snowball-bowling/src/) |
+| 021 | [SNOWBOWL · 雪人保龄球俱乐部](games/021-snowman-snowball-bowling/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/) | [源码](games/021-snowman-snowball-bowling/src/) |
 | 022 | [熊与奇鱼](games/022-bear-strange-fishing/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/022-bear-strange-fishing/) | [源码](games/022-bear-strange-fishing/src/) |
 | 023 | [BOT//BEAT](games/023-robot-band-rhythm/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/) | [源码](games/023-robot-band-rhythm/src/) |
 | 024 | [云朵蹦蹦 · Cloud Bunny](games/024-rabbit-cloud-dance/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/) | [源码](games/024-rabbit-cloud-dance/src/) |

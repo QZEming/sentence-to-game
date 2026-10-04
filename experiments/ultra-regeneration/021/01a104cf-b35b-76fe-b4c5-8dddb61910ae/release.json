@@ -1,0 +1,101 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "021-snowman-snowball-bowling",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "021",
+  "generation_turn_id": "01a104cf-d4a6-7546-ab55-15b53bd8b6e7",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "c8806280e4630012bbb17cca0a473df8e33906af",
+    "full_old_history_preserved": true,
+    "game_number": "021",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/015/manifest.json": "c0c8958400e44d01c1ed4490dcb7ae9c67cd2fa7",
+      "experiments/page-857ec841-top50-gpt6astra/015/prompt.txt": "269cb2b94ca1b358b6e58ac5ff7357223a75cb8d",
+      "experiments/page-857ec841-top50-gpt6astra/015/provenance.json": "5834391e375a0d177030713bedb82084e3c33a2a",
+      "experiments/page-857ec841-top50-gpt6astra/015/release.json": "6a0e332f3d13ac406cc5dffb2b32cd537e6bc100"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/c8806280e4630012bbb17cca0a473df8e33906af",
+    "source_and_published_blobs": {
+      "docs/games/021-snowman-snowball-bowling/assets/index-BXuLpJpY.js": "a58df743265eba177c03cba4956cf5d8f46375a2",
+      "docs/games/021-snowman-snowball-bowling/assets/index-CIHJdR7I.css": "cdc2b92833d38d0f1c0dcab85de78ad52ee44055",
+      "docs/games/021-snowman-snowball-bowling/index.html": "4053e9b62c14b618e6f2ade2881f6998078b360c",
+      "games/021-snowman-snowball-bowling/.gitignore": "11c9fcdaa580b2baaf11f6d171d13141786f38da",
+      "games/021-snowman-snowball-bowling/README.md": "ba5b1f8d1eceb5ed2b728048ab0af7214e67a99f",
+      "games/021-snowman-snowball-bowling/RELEASE.md": "f1952d7c2aef700e4197f1b6904c477f3682b865",
+      "games/021-snowman-snowball-bowling/dist/assets/index-BXuLpJpY.js": "a58df743265eba177c03cba4956cf5d8f46375a2",
+      "games/021-snowman-snowball-bowling/dist/assets/index-CIHJdR7I.css": "cdc2b92833d38d0f1c0dcab85de78ad52ee44055",
+      "games/021-snowman-snowball-bowling/dist/index.html": "48c5ac066ff3dcd92e1544d9a0e05ee219e6a874",
+      "games/021-snowman-snowball-bowling/index.html": "08ea77dbb4ad238fc40802b8706a9a1d50444efc",
+      "games/021-snowman-snowball-bowling/package.json": "243116c7dba52a4e49540c3fdabb09aa74f6bbc8",
+      "games/021-snowman-snowball-bowling/prompt.txt": "269cb2b94ca1b358b6e58ac5ff7357223a75cb8d",
+      "games/021-snowman-snowball-bowling/src/main.js": "c8757e9a8fe5afaf54a3020dcee252c204409d55",
+      "games/021-snowman-snowball-bowling/src/scoring.js": "e60394b6c77b3eb922891b69460039666be9131c",
+      "games/021-snowman-snowball-bowling/src/style.css": "11147b36a8142181e9b9a1b0c051c5d5c2499414"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 238,
+      "path": "favicon.svg",
+      "sha256": "b99bfb16f2e2007c2b288ca51da5f0718297d9e3f51b29c3b3058c048e527da6"
+    },
+    {
+      "bytes": 17806,
+      "path": "game.js",
+      "sha256": "c6a1258f930f25ba2e74b2ed254497ab53f5571f6e35f6cb28b8b63bbad03fd7"
+    },
+    {
+      "bytes": 7469,
+      "path": "index.html",
+      "sha256": "fd552d6b930f8ed8df7890f282019b03f6b8fdc1e78de83dd67aa4fb3ccf3e80"
+    },
+    {
+      "bytes": 20711,
+      "path": "scene.js",
+      "sha256": "caddbc010c39ddfd78b696e384e24a1bb87c5c64823927778ac5cfc10efced25"
+    },
+    {
+      "bytes": 1238,
+      "path": "scoring.js",
+      "sha256": "0f0c76bd60bceb135436be9d8580dc9ea9a01e7a4214f313222a5a70e9027f9b"
+    },
+    {
+      "bytes": 17742,
+      "path": "style.css",
+      "sha256": "c2d999bed3387ebe840004dfcf0f0034b58d98054c55bb63ccc1214197b37847"
+    },
+    {
+      "bytes": 1125,
+      "path": "vendor/CANNON-LICENSE.txt",
+      "sha256": "4714d0272f50cb21fe46fe29333c7c600d3c85b5ebd2a80f4db07e8cfccbf5b2"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 346256,
+      "path": "vendor/cannon-es.js",
+      "sha256": "f0700cbd3a482954949b9d58c1b0f76dcc74767750297647a39d8c40dd63d37c"
+    },
+    {
+      "bytes": 691648,
+      "path": "vendor/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "ff7d93ffbcbd530f3132ba2a34b8a30ff2f4741cd283ada748c7e70fc5917bf4",
+  "thinking_requested": "ultra",
+  "thread_id": "01a104cf-b35b-76fe-b4c5-8dddb61910ae",
+  "title": "SNOWBOWL · 雪人保龄球俱乐部",
+  "url": "https://qzemi.cn/sentence-to-game/games/021-snowman-snowball-bowling/"
+}
