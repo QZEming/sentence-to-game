@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "6d1fd7a1b9d84ce770b13db12a958329fd65d81eac46175c261b4db1675a03d2"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "2a3cc4b421704dc921da5f5656220e016725c3137801d7410eead98d993218e9"
+    },
+    {
+      "bytes": 2439,
+      "path": "README.md",
+      "sha256": "d9128942b64a21084d8e9de3824c48c43242ebd636b031c06c67a1d7f1be08b0"
+    },
+    {
+      "bytes": 43176,
+      "path": "dist/game.js",
+      "sha256": "69580efa0028a755713e5dd3dde9c868372fccb3d3b235e4e327d3ba3c006ade"
+    },
+    {
+      "bytes": 6668,
+      "path": "dist/index.html",
+      "sha256": "01bb1813c748706ae877d933d1d7980270e9ed9f5119bc7319de007c00120a0d"
+    },
+    {
+      "bytes": 21186,
+      "path": "dist/style.css",
+      "sha256": "369014d9cd412f2868ebf5b8c9380d6cec30e4f3df0314d32a972d6230fa6712"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 687458,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee"
+    },
+    {
+      "bytes": 580699,
+      "path": "original-delivery/camp-desktop.png",
+      "sha256": "54a2573a49053807ede4f19908725e2a894dbadca9ecd799974dc6f6cbb0ce2c"
+    },
+    {
+      "bytes": 454341,
+      "path": "original-delivery/camp-laptop.png",
+      "sha256": "6972bb9005eabf88af1eeb72807d3c99c9daea4a75d7ba568dbd8bf1ef058da5"
+    },
+    {
+      "bytes": 118969,
+      "path": "original-delivery/camp-mobile.png",
+      "sha256": "db980e531b13e271ea5589e6c41f6c603e6ea0b5f2ba30fbe28f81f76af39ae9"
+    },
+    {
+      "bytes": 257941,
+      "path": "original-delivery/flight-desktop.png",
+      "sha256": "4a5749a9b4101396d4e5c87cd66562f67c5f12f57b996066c0b1a95359db16c7"
+    },
+    {
+      "bytes": 119587,
+      "path": "original-delivery/flight-mobile.png",
+      "sha256": "826f434ed61f1c0352d4695448f409ebdb686a59cffdba7b9f2d73e7038f831f"
+    },
+    {
+      "bytes": 8122,
+      "path": "original-delivery/qa-regression.mjs",
+      "sha256": "85398c18d26c41ea58c26ef7450c2eb6db38a8902a32fac05a016b762388a72d"
+    },
+    {
+      "bytes": 196213,
+      "path": "original-delivery/skybound-site.tar.gz",
+      "sha256": "c6ddda786f69516ad83ae686300ed86d91a645b3ebe39571f5247a0b3ad8e298"
+    },
+    {
+      "bytes": 304366,
+      "path": "original-delivery/trial-result.png",
+      "sha256": "473825a7488dbc9d1d0f80887c11d53c9fe1f4f21b04094f4c4d971c84ca57f4"
+    },
+    {
+      "bytes": 188,
+      "path": "package.json",
+      "sha256": "0572c433a6dd73da00bb0ff7ae19b35be3bb855124750d6d1edcb8588db4ce45"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-20/dragon-canyon",
+  "source_tree_sha256": "6b7e51bda27e87133c12f132f9dea7da7b9f6c5625ed01cdccaf162644037a15",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-026-original-20261004T040513Z",
+  "thread_id": "01a104f4-c268-7189-a186-59ac8a1100bd",
+  "turn_id": "01a104f4-e5c2-7718-89ca-08460600bac6"
+}

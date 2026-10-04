@@ -1,0 +1,28 @@
+{
+  "base_commit": "9fa9771895d0f8312140945331eb20656680888d",
+  "full_old_history_preserved": true,
+  "game_number": "026",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/020/manifest.json": "997d6875b0de00c96b737c5556e5f3280867e0d7",
+    "experiments/page-857ec841-top50-gpt6astra/020/prompt.txt": "02ab3170a66a2105734a286f32be3fd3c89970ed",
+    "experiments/page-857ec841-top50-gpt6astra/020/provenance.json": "7cae4e70e2b57d34f433abf5cf92846e82b71485",
+    "experiments/page-857ec841-top50-gpt6astra/020/release.json": "f9c674fcb078e3f9acce9b3835dd305fd45415f6"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/9fa9771895d0f8312140945331eb20656680888d",
+  "source_and_published_blobs": {
+    "docs/games/026-dragon-canyon-flight/assets/index-B8348Xlg.js": "6399a0ab7c81038c40e1ef5198fb12497c6c24a1",
+    "docs/games/026-dragon-canyon-flight/assets/index-D-64FOab.css": "3857f20dc1c2a5d8295aa1e250b1740b0ec07648",
+    "docs/games/026-dragon-canyon-flight/index.html": "f7ae6ac97464de71a7606a60454682dffc9b245f",
+    "games/026-dragon-canyon-flight/.gitignore": "11c9fcdaa580b2baaf11f6d171d13141786f38da",
+    "games/026-dragon-canyon-flight/README.md": "0d4bd4e9e8e76c1679c381809e5c65443c394635",
+    "games/026-dragon-canyon-flight/RELEASE.md": "1740693abb9e50a99a40fee118c01de86fa1528c",
+    "games/026-dragon-canyon-flight/dist/assets/index-QwNNVE8L.css": "941b4a004983b5fcd5f0e67b8cddb498ce3479dd",
+    "games/026-dragon-canyon-flight/dist/assets/index-i-oMkrZ3.js": "d1ee725efd4fe6d0a1319165954a6a8129c531e4",
+    "games/026-dragon-canyon-flight/dist/index.html": "e6c24d48b3a1b893d861cbc3212c6ec0ceb9a886",
+    "games/026-dragon-canyon-flight/index.html": "b680bdd21734955f0841db309e194690da02ce8b",
+    "games/026-dragon-canyon-flight/package.json": "f61c930840a82d1e888638ed341b4b18b32b4728",
+    "games/026-dragon-canyon-flight/prompt.txt": "02ab3170a66a2105734a286f32be3fd3c89970ed",
+    "games/026-dragon-canyon-flight/src/main.js": "cf84b3e41f2f894813880ee40d4809182a31f395",
+    "games/026-dragon-canyon-flight/src/style.css": "0d1bc67840f1d82ca33156f5e81f35111219511e"
+  }
+}

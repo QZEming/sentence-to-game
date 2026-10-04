@@ -39,7 +39,7 @@
 | 023 | [NEON ASSEMBLY · 机器人乐队](games/023-robot-band-rhythm/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/) | [源码](games/023-robot-band-rhythm/src/) |
 | 024 | [云端蹦迪 · Cloud Hop](games/024-rabbit-cloud-dance/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/024-rabbit-cloud-dance/) | [源码](games/024-rabbit-cloud-dance/src/) |
 | 025 | [松果节拍 · Pinebeat](games/025-squirrel-pinecone-beat/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/025-squirrel-pinecone-beat/) | [源码](games/025-squirrel-pinecone-beat/src/) |
-| 026 | [Dragonflight · 小龙飞行学院](games/026-dragon-canyon-flight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/) | [源码](games/026-dragon-canyon-flight/src/) |
+| 026 | [御风幼龙 · SKYBOUND](games/026-dragon-canyon-flight/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/) | [源码](games/026-dragon-canyon-flight/src/) |
 | 027 | [鲸落秘境 · WHALEFALL](games/027-whale-deepsea-ruins/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/027-whale-deepsea-ruins/) | [源码](games/027-whale-deepsea-ruins/src/) |
 | 028 | [幽蓝 · 水母远行](games/028-jellyfish-survival/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/028-jellyfish-survival/) | [源码](games/028-jellyfish-survival/src/) |
 | 029 | [寻壳记 · Shellbound](games/029-hermit-crab-homes/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/029-hermit-crab-homes/) | [源码](games/029-hermit-crab-homes/src/) |

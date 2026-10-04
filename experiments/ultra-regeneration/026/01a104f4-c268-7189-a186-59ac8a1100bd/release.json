@@ -1,0 +1,75 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "026-dragon-canyon-flight",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "026",
+  "generation_turn_id": "01a104f4-e5c2-7718-89ca-08460600bac6",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "9fa9771895d0f8312140945331eb20656680888d",
+    "full_old_history_preserved": true,
+    "game_number": "026",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/020/manifest.json": "997d6875b0de00c96b737c5556e5f3280867e0d7",
+      "experiments/page-857ec841-top50-gpt6astra/020/prompt.txt": "02ab3170a66a2105734a286f32be3fd3c89970ed",
+      "experiments/page-857ec841-top50-gpt6astra/020/provenance.json": "7cae4e70e2b57d34f433abf5cf92846e82b71485",
+      "experiments/page-857ec841-top50-gpt6astra/020/release.json": "f9c674fcb078e3f9acce9b3835dd305fd45415f6"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/9fa9771895d0f8312140945331eb20656680888d",
+    "source_and_published_blobs": {
+      "docs/games/026-dragon-canyon-flight/assets/index-B8348Xlg.js": "6399a0ab7c81038c40e1ef5198fb12497c6c24a1",
+      "docs/games/026-dragon-canyon-flight/assets/index-D-64FOab.css": "3857f20dc1c2a5d8295aa1e250b1740b0ec07648",
+      "docs/games/026-dragon-canyon-flight/index.html": "f7ae6ac97464de71a7606a60454682dffc9b245f",
+      "games/026-dragon-canyon-flight/.gitignore": "11c9fcdaa580b2baaf11f6d171d13141786f38da",
+      "games/026-dragon-canyon-flight/README.md": "0d4bd4e9e8e76c1679c381809e5c65443c394635",
+      "games/026-dragon-canyon-flight/RELEASE.md": "1740693abb9e50a99a40fee118c01de86fa1528c",
+      "games/026-dragon-canyon-flight/dist/assets/index-QwNNVE8L.css": "941b4a004983b5fcd5f0e67b8cddb498ce3479dd",
+      "games/026-dragon-canyon-flight/dist/assets/index-i-oMkrZ3.js": "d1ee725efd4fe6d0a1319165954a6a8129c531e4",
+      "games/026-dragon-canyon-flight/dist/index.html": "e6c24d48b3a1b893d861cbc3212c6ec0ceb9a886",
+      "games/026-dragon-canyon-flight/index.html": "b680bdd21734955f0841db309e194690da02ce8b",
+      "games/026-dragon-canyon-flight/package.json": "f61c930840a82d1e888638ed341b4b18b32b4728",
+      "games/026-dragon-canyon-flight/prompt.txt": "02ab3170a66a2105734a286f32be3fd3c89970ed",
+      "games/026-dragon-canyon-flight/src/main.js": "cf84b3e41f2f894813880ee40d4809182a31f395",
+      "games/026-dragon-canyon-flight/src/style.css": "0d1bc67840f1d82ca33156f5e81f35111219511e"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 43176,
+      "path": "game.js",
+      "sha256": "69580efa0028a755713e5dd3dde9c868372fccb3d3b235e4e327d3ba3c006ade"
+    },
+    {
+      "bytes": 6668,
+      "path": "index.html",
+      "sha256": "01bb1813c748706ae877d933d1d7980270e9ed9f5119bc7319de007c00120a0d"
+    },
+    {
+      "bytes": 21186,
+      "path": "style.css",
+      "sha256": "369014d9cd412f2868ebf5b8c9380d6cec30e4f3df0314d32a972d6230fa6712"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 687458,
+      "path": "vendor/three.module.min.js",
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "6b7e51bda27e87133c12f132f9dea7da7b9f6c5625ed01cdccaf162644037a15",
+  "thinking_requested": "ultra",
+  "thread_id": "01a104f4-c268-7189-a186-59ac8a1100bd",
+  "title": "御风幼龙 · SKYBOUND",
+  "url": "https://qzemi.cn/sentence-to-game/games/026-dragon-canyon-flight/"
+}
