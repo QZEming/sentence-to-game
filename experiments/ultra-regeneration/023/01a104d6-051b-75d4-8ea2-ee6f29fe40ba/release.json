@@ -1,0 +1,94 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "023-robot-band-rhythm",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "023",
+  "generation_turn_id": "01a104d6-24c5-7431-880f-d4fdafe8285e",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "7afba634c79119e68349fdad6fce00de0decd174",
+    "full_old_history_preserved": true,
+    "game_number": "023",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/017/manifest.json": "b479d5cc586ee9d671e4cf54abdc6c4ae05b3e2f",
+      "experiments/page-857ec841-top50-gpt6astra/017/prompt.txt": "51ca04a4797b1ef0da56c23efc072b69bb4b2494",
+      "experiments/page-857ec841-top50-gpt6astra/017/provenance.json": "1faa7eb53726ebc977e5c1f595a4f431d07b6fd3",
+      "experiments/page-857ec841-top50-gpt6astra/017/release.json": "cc36306241a47261ba542038f89e6c7b0c87ff0f"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/7afba634c79119e68349fdad6fce00de0decd174",
+    "source_and_published_blobs": {
+      "docs/games/023-robot-band-rhythm/assets/index-BkMAZDOz.css": "a3239b40ec6da2953a41a0c6315a05002373770b",
+      "docs/games/023-robot-band-rhythm/assets/index-D05X0r5a.js": "36adc01d860a48b81faaf03e3e6ce9eb58820d63",
+      "docs/games/023-robot-band-rhythm/index.html": "a527f6d39ac95dc769b87bbe54bc1e444f052100",
+      "games/023-robot-band-rhythm/README.md": "31f38b34598544d27de7317d752440fd67ea8189",
+      "games/023-robot-band-rhythm/RELEASE.md": "1e62224a4e31a75c70cc0fdaf27a06528b1c947f",
+      "games/023-robot-band-rhythm/index.html": "14ce7df9d5ff0f083f28c87d891803c7b18eb46b",
+      "games/023-robot-band-rhythm/main.js": "96f002fa803d3e68213c3c004d77114c9a8b7570",
+      "games/023-robot-band-rhythm/package.json": "467d36159cda77948e785264b2331f28496d091e",
+      "games/023-robot-band-rhythm/prompt.txt": "51ca04a4797b1ef0da56c23efc072b69bb4b2494",
+      "games/023-robot-band-rhythm/src/index.html": "14ce7df9d5ff0f083f28c87d891803c7b18eb46b",
+      "games/023-robot-band-rhythm/src/main.js": "96f002fa803d3e68213c3c004d77114c9a8b7570",
+      "games/023-robot-band-rhythm/src/style.css": "db288e6db3ca5e1b891ab6e86707a6b10668d397",
+      "games/023-robot-band-rhythm/style.css": "db288e6db3ca5e1b891ab6e86707a6b10668d397"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 22988,
+      "path": "app.js",
+      "sha256": "5e33ca328bec0e50d559d5238fc188eb062431c8d78029bc8d36b0efb9d5d1b0"
+    },
+    {
+      "bytes": 11250,
+      "path": "audio.js",
+      "sha256": "1605c3445c681611a64219976786cdbdd23d26d0291d9f8b55aaf6e2ef9f8834"
+    },
+    {
+      "bytes": 1953,
+      "path": "game-core.js",
+      "sha256": "ab58cf9384438ac78c2fc1f4cf407e0d5ef7b2e6fa849cf4f1b3c322c04ecf54"
+    },
+    {
+      "bytes": 6665,
+      "path": "index.html",
+      "sha256": "a21c6b2a738fdc4ef2f67d9c4eeea3b969e2295fee889c222760747ab94272b9"
+    },
+    {
+      "bytes": 11618,
+      "path": "stage.js",
+      "sha256": "7c657ab3185dca1d0e7f6eabfa9a6c20df636b49f8d7f1541942339498c2cad9"
+    },
+    {
+      "bytes": 23881,
+      "path": "style.css",
+      "sha256": "3f0833912714571bae302354fd1966ed21114cd19da182267a0685c2a0eadfb7"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "bytes": 1458113,
+      "path": "vendor/three.core.js",
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "bytes": 662772,
+      "path": "vendor/three.module.js",
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "591679d1247369dae053bd679def28225eb00d65e12fdf2c9c588e9c1332598c",
+  "thinking_requested": "ultra",
+  "thread_id": "01a104d6-051b-75d4-8ea2-ee6f29fe40ba",
+  "title": "NEON ASSEMBLY · 机器人乐队",
+  "url": "https://qzemi.cn/sentence-to-game/games/023-robot-band-rhythm/"
+}

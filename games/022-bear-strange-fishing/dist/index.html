@@ -1,3 +1,45 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f3e9"><title>熊与奇鱼 · Bear & the Curious Lake</title>  <script type="module" crossorigin src="/assets/index-DJ9foJLQ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BBTF8oZp.css">
-</head><body><div id="app"></div></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173f3c">
+<title>小熊奇鱼记 · Wonderlake</title><meta name="description" content="和小熊一起在奇妙湖畔抛竿，收集12种奇异的鱼。免费的3D休闲钓鱼游戏。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23173f3c'/%3E%3Ccircle cx='19' cy='19' r='9' fill='%23d6a169'/%3E%3Ccircle cx='45' cy='19' r='9' fill='%23d6a169'/%3E%3Ccircle cx='32' cy='34' r='22' fill='%23d6a169'/%3E%3Cellipse cx='32' cy='41' rx='11' ry='8' fill='%23f4dfb4'/%3E%3Ccircle cx='24' cy='31' r='3' fill='%232d2724'/%3E%3Ccircle cx='40' cy='31' r='3' fill='%232d2724'/%3E%3Cpath d='M28 38h8l-4 5z' fill='%232d2724'/%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main id="app">
+ <div id="world" aria-label="小熊钓鱼的3D湖畔，拖动画面旋转视角，滚轮缩放"></div>
+ <div id="vignette"></div>
+ <header class="topbar">
+  <div class="brand"><span class="brand-emblem">W</span><div><h1>小熊奇鱼记</h1><span>WONDERLAKE</span></div></div>
+  <div class="world-info"><span id="day-icon">☀</span><div><b id="world-time">第 1 天 · 清晨</b><small id="weather-text">晴朗 · 宜垂钓</small></div></div>
+  <div class="wallet"><span class="coin">✦</span><b id="coins">0</b><span class="wallet-label">湖畔币</span></div>
+  <button id="sound-toggle" class="icon-button" aria-label="开启声音" title="环境音效">♫</button>
+  <button id="help-button" class="icon-button" aria-label="游戏帮助" title="游戏帮助">?</button>
+ </header>
+ <aside class="left-panel">
+  <div class="location-label"><span>你的湖畔时光</span><span>01—03</span></div>
+  <h2 id="spot-name">芦苇浅滩</h2><p id="spot-description">微风、木栈桥，还有一点点惊喜。</p>
+  <div class="location-switch" role="group" aria-label="选择钓点">
+   <button data-spot="0" class="selected"><span>01</span>芦苇浅滩<i>☷</i></button>
+   <button data-spot="1"><span>02</span>月影深潭<i>☾</i></button>
+   <button data-spot="2"><span>03</span>瀑布回湾<i>≋</i></button>
+  </div>
+  <button class="task-card" id="task-button"><div><span class="tiny-label">湖畔小心愿</span><span id="task-counter">0 / 3</span></div><b id="task-title">今天也要吃饱</b><p id="task-description">钓到任意 3 条鱼</p><div class="mini-track"><span id="task-progress"></span></div><small>完成奖励 <strong>✦ 60</strong></small></button>
+ </aside>
+ <nav class="side-tools" aria-label="背包与装备"><button id="journal-button"><span>▤</span>鱼类图鉴<small id="collection-count">0 / 12</small></button><button id="shop-button"><span>⚒</span>装备工坊<small>升级你的幸运</small></button><button id="camp-button"><span>☕</span>休息一下<small>推进时光</small></button><button id="mobile-task-button"><span>✧</span>湖畔小心愿</button></nav>
+ <div class="scene-caption"><span class="location-dot"></span><span id="scene-caption">一片湖，一只熊，一整天的好心情。</span></div>
+ <section class="fishing-panel" aria-label="钓鱼操作">
+  <div class="fishing-heading"><div><span id="state-kicker" class="tiny-label">今天，会遇见谁呢？</span><h3 id="state-title">让好运落进湖里</h3></div><span id="rod-level" class="level-chip">初学者鱼竿 · Lv.1</span></div>
+  <p id="state-hint">按住蓄力，松开抛竿。金色区域能带来好运。</p>
+  <div id="cast-meter" class="cast-meter"><span class="sweet-spot"></span><span id="power-fill"></span><i id="power-needle"></i></div>
+  <div id="fight-meters" hidden><div class="meter-label"><span>收线进度</span><b id="progress-text">0%</b></div><div class="fight-track"><span id="progress-fill"></span></div><div class="meter-label"><span>鱼线张力 <b id="tension-warning"></b></span><b id="tension-text">20%</b></div><div class="tension-track"><span id="tension-fill"></span><i></i></div></div>
+  <button id="action-button" class="primary-button"><span id="action-icon">⌁</span><span id="action-label">按住 · 蓄力抛竿</span><kbd>空格</kbd></button>
+  <button id="cancel-button" class="text-button" hidden>收回鱼线</button>
+ </section>
+ <footer class="bottom-line"><span><i></i>进度自动保存在此浏览器</span><span class="camera-tip">拖动旋转 · 滚轮缩放 · C 图鉴 · E 工坊</span><button id="camera-reset">重置视角 ⤾</button></footer>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <dialog id="modal"><div class="modal-top"><span id="modal-eyebrow">WONDERLAKE</span><button id="modal-close" class="icon-button" aria-label="关闭">×</button></div><div id="modal-content"></div></dialog>
+ <div id="loading"><span class="loading-icon">W</span><h2>湖边的风，已经到了。</h2><p>正在唤醒小熊的奇妙世界…</p></div>
+</main>
+<script type="module" src="./game.js"></script>
+</body></html>

@@ -1,0 +1,78 @@
+{
+  "perfectRuns": [
+    {
+      "song": 0,
+      "difficulty": "easy",
+      "notes": 104,
+      "score": 46750,
+      "perfect": 104
+    },
+    {
+      "song": 0,
+      "difficulty": "normal",
+      "notes": 182,
+      "score": 102900,
+      "perfect": 182
+    },
+    {
+      "song": 0,
+      "difficulty": "hard",
+      "notes": 234,
+      "score": 147700,
+      "perfect": 234
+    },
+    {
+      "song": 1,
+      "difficulty": "easy",
+      "notes": 120,
+      "score": 54050,
+      "perfect": 120
+    },
+    {
+      "song": 1,
+      "difficulty": "normal",
+      "notes": 210,
+      "score": 122250,
+      "perfect": 210
+    },
+    {
+      "song": 1,
+      "difficulty": "hard",
+      "notes": 270,
+      "score": 173100,
+      "perfect": 270
+    },
+    {
+      "song": 2,
+      "difficulty": "easy",
+      "notes": 136,
+      "score": 64600,
+      "perfect": 136
+    },
+    {
+      "song": 2,
+      "difficulty": "normal",
+      "notes": 238,
+      "score": 139200,
+      "perfect": 238
+    },
+    {
+      "song": 2,
+      "difficulty": "hard",
+      "notes": 306,
+      "score": 195400,
+      "perfect": 306
+    }
+  ],
+  "checks": [
+    "nine complete perfect runs",
+    "hold completion",
+    "early hold release",
+    "overdrive scoring",
+    "pause and resume",
+    "endless jam without miss penalties",
+    "configuration input validation"
+  ],
+  "result": "PASS",
+  "limitations": "AudioContext and DOM are mocked; browser rendering and actual audio startup checked separately."
+}

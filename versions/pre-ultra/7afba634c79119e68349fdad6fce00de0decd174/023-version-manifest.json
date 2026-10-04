@@ -1,0 +1,27 @@
+{
+  "base_commit": "7afba634c79119e68349fdad6fce00de0decd174",
+  "full_old_history_preserved": true,
+  "game_number": "023",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/017/manifest.json": "b479d5cc586ee9d671e4cf54abdc6c4ae05b3e2f",
+    "experiments/page-857ec841-top50-gpt6astra/017/prompt.txt": "51ca04a4797b1ef0da56c23efc072b69bb4b2494",
+    "experiments/page-857ec841-top50-gpt6astra/017/provenance.json": "1faa7eb53726ebc977e5c1f595a4f431d07b6fd3",
+    "experiments/page-857ec841-top50-gpt6astra/017/release.json": "cc36306241a47261ba542038f89e6c7b0c87ff0f"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/7afba634c79119e68349fdad6fce00de0decd174",
+  "source_and_published_blobs": {
+    "docs/games/023-robot-band-rhythm/assets/index-BkMAZDOz.css": "a3239b40ec6da2953a41a0c6315a05002373770b",
+    "docs/games/023-robot-band-rhythm/assets/index-D05X0r5a.js": "36adc01d860a48b81faaf03e3e6ce9eb58820d63",
+    "docs/games/023-robot-band-rhythm/index.html": "a527f6d39ac95dc769b87bbe54bc1e444f052100",
+    "games/023-robot-band-rhythm/README.md": "31f38b34598544d27de7317d752440fd67ea8189",
+    "games/023-robot-band-rhythm/RELEASE.md": "1e62224a4e31a75c70cc0fdaf27a06528b1c947f",
+    "games/023-robot-band-rhythm/index.html": "14ce7df9d5ff0f083f28c87d891803c7b18eb46b",
+    "games/023-robot-band-rhythm/main.js": "96f002fa803d3e68213c3c004d77114c9a8b7570",
+    "games/023-robot-band-rhythm/package.json": "467d36159cda77948e785264b2331f28496d091e",
+    "games/023-robot-band-rhythm/prompt.txt": "51ca04a4797b1ef0da56c23efc072b69bb4b2494",
+    "games/023-robot-band-rhythm/src/index.html": "14ce7df9d5ff0f083f28c87d891803c7b18eb46b",
+    "games/023-robot-band-rhythm/src/main.js": "96f002fa803d3e68213c3c004d77114c9a8b7570",
+    "games/023-robot-band-rhythm/src/style.css": "db288e6db3ca5e1b891ab6e86707a6b10668d397",
+    "games/023-robot-band-rhythm/style.css": "db288e6db3ca5e1b891ab6e86707a6b10668d397"
+  }
+}

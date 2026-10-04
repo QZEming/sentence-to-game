@@ -1,0 +1,345 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-023-original-20261004T033652Z",
+  "candidate": "ultra-023",
+  "completed_at": "2026-10-04T03:38:33.027862Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "file_count": 13,
+  "files": [
+    {
+      "archive_relative_path": ".openai/hosting.json",
+      "copied_sha256": "b33e6d04d4a1d4307cc96f4e4670fb324527b2a3fae02b1519f18b85ae79921b",
+      "final_source_sha256": "b33e6d04d4a1d4307cc96f4e4670fb324527b2a3fae02b1519f18b85ae79921b",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791082630825301136,
+      "mtime_utc": "2026-10-04T02:57:10.825301Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "b33e6d04d4a1d4307cc96f4e4670fb324527b2a3fae02b1519f18b85ae79921b",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "README.md",
+      "copied_sha256": "f2b12c988d2a08203341920a11819a2c2e5825fcc551f458e77c7c3ceb680068",
+      "final_source_sha256": "f2b12c988d2a08203341920a11819a2c2e5825fcc551f458e77c7c3ceb680068",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791084132937802549,
+      "mtime_utc": "2026-10-04T03:22:12.937803Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/README.md",
+      "size_bytes": 1114,
+      "source_sha256": "f2b12c988d2a08203341920a11819a2c2e5825fcc551f458e77c7c3ceb680068",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/app.js",
+      "copied_sha256": "5e33ca328bec0e50d559d5238fc188eb062431c8d78029bc8d36b0efb9d5d1b0",
+      "final_source_sha256": "5e33ca328bec0e50d559d5238fc188eb062431c8d78029bc8d36b0efb9d5d1b0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791084132974662419,
+      "mtime_utc": "2026-10-04T03:22:12.974662Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/app.js",
+      "size_bytes": 22988,
+      "source_sha256": "5e33ca328bec0e50d559d5238fc188eb062431c8d78029bc8d36b0efb9d5d1b0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/audio.js",
+      "copied_sha256": "1605c3445c681611a64219976786cdbdd23d26d0291d9f8b55aaf6e2ef9f8834",
+      "final_source_sha256": "1605c3445c681611a64219976786cdbdd23d26d0291d9f8b55aaf6e2ef9f8834",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083180004531377,
+      "mtime_utc": "2026-10-04T03:06:20.004531Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/audio.js",
+      "size_bytes": 11250,
+      "source_sha256": "1605c3445c681611a64219976786cdbdd23d26d0291d9f8b55aaf6e2ef9f8834",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/game-core.js",
+      "copied_sha256": "ab58cf9384438ac78c2fc1f4cf407e0d5ef7b2e6fa849cf4f1b3c322c04ecf54",
+      "final_source_sha256": "ab58cf9384438ac78c2fc1f4cf407e0d5ef7b2e6fa849cf4f1b3c322c04ecf54",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083500637805497,
+      "mtime_utc": "2026-10-04T03:11:40.637805Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/game-core.js",
+      "size_bytes": 1953,
+      "source_sha256": "ab58cf9384438ac78c2fc1f4cf407e0d5ef7b2e6fa849cf4f1b3c322c04ecf54",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/index.html",
+      "copied_sha256": "a21c6b2a738fdc4ef2f67d9c4eeea3b969e2295fee889c222760747ab94272b9",
+      "final_source_sha256": "a21c6b2a738fdc4ef2f67d9c4eeea3b969e2295fee889c222760747ab94272b9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791082972816513596,
+      "mtime_utc": "2026-10-04T03:02:52.816514Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/index.html",
+      "size_bytes": 6665,
+      "source_sha256": "a21c6b2a738fdc4ef2f67d9c4eeea3b969e2295fee889c222760747ab94272b9",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/stage.js",
+      "copied_sha256": "7c657ab3185dca1d0e7f6eabfa9a6c20df636b49f8d7f1541942339498c2cad9",
+      "final_source_sha256": "7c657ab3185dca1d0e7f6eabfa9a6c20df636b49f8d7f1541942339498c2cad9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083782308296976,
+      "mtime_utc": "2026-10-04T03:16:22.308297Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/stage.js",
+      "size_bytes": 11618,
+      "source_sha256": "7c657ab3185dca1d0e7f6eabfa9a6c20df636b49f8d7f1541942339498c2cad9",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/style.css",
+      "copied_sha256": "3f0833912714571bae302354fd1966ed21114cd19da182267a0685c2a0eadfb7",
+      "final_source_sha256": "3f0833912714571bae302354fd1966ed21114cd19da182267a0685c2a0eadfb7",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083782330942441,
+      "mtime_utc": "2026-10-04T03:16:22.330942Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/style.css",
+      "size_bytes": 23881,
+      "source_sha256": "3f0833912714571bae302354fd1966ed21114cd19da182267a0685c2a0eadfb7",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "final_source_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083595927887612,
+      "mtime_utc": "2026-10-04T03:13:15.927888Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/three.core.js",
+      "copied_sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "final_source_sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083595922666017,
+      "mtime_utc": "2026-10-04T03:13:15.922666Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/vendor/three.core.js",
+      "size_bytes": 1458113,
+      "source_sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "dist/vendor/three.module.js",
+      "copied_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "final_source_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083595921452848,
+      "mtime_utc": "2026-10-04T03:13:15.921453Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/dist/vendor/three.module.js",
+      "size_bytes": 662772,
+      "source_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "tests/game-qa.mjs",
+      "copied_sha256": "941cfc173312b68549187739e321f24b6a4db40866e8eaff78dbbdaee967435e",
+      "final_source_sha256": "941cfc173312b68549187739e321f24b6a4db40866e8eaff78dbbdaee967435e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083963827452773,
+      "mtime_utc": "2026-10-04T03:19:23.827453Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/tests/game-qa.mjs",
+      "size_bytes": 5574,
+      "source_sha256": "941cfc173312b68549187739e321f24b6a4db40866e8eaff78dbbdaee967435e",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "tests/qa-results.json",
+      "copied_sha256": "160555641563281851e969054631eb313163d4e2f432f1a570be2185ce1dd74e",
+      "final_source_sha256": "160555641563281851e969054631eb313163d4e2f432f1a570be2185ce1dd74e",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791083964142186319,
+      "mtime_utc": "2026-10-04T03:19:24.142186Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band/tests/qa-results.json",
+      "size_bytes": 1493,
+      "source_sha256": "160555641563281851e969054631eb313163d4e2f432f1a570be2185ce1dd74e",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "inventory_fixed_at": "2026-10-04T03:38:32.918255Z",
+  "limitations": [
+    "No builds, tests, game play, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Existing original reports, tests and screenshots preserved as bytes only; no independent gameplay verification.",
+    "Nine chart simulations and desktop/mobile layout checks do not establish actual complete performance of every song.",
+    "Only exact authorized source root read; concurrent candidates, publisher and parent-directory contents not scanned.",
+    "Parent reported no original delivery tar; no additional package search performed.",
+    "Nine perfect full-song QA runs use mocked AudioContext and DOM, not actual desktop/mobile full-song performances or nine human-performed songs.",
+    "Separate browser rendering and actual-audio-startup claims have no independent browser result table in the preserved source records.",
+    "WebMCP was not playtested in a supported environment per original report; no source screenshots were found.",
+    "Root process observation is recorded separately and is not an author game test."
+  ],
+  "original_request": "实现一个机器人乐队进行节奏演奏的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_readonly_process_observation": {
+    "concurrent_candidate024_and_publisher_untouched": true,
+    "idle_task_tool_contexts": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 12758,
+        "role": "wrapper",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12759,
+        "role": "wrapper",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12767,
+        "role": "CUA node",
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 12768,
+        "role": "CUA node",
+        "state": "S"
+      }
+    ],
+    "no_browser_child_processes_matched": true,
+    "no_dedicated_preview_browser_build_test_processes_matched": true,
+    "observed_at_utc": "2026-10-04T03:38:02Z",
+    "preview_port_current_owner": {
+      "command": "Python -m http.server 4187 --bind 127.0.0.1 --directory dist",
+      "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-18/cloud-hop",
+      "finding": "No 023 dedicated listener remained; this listener belongs to concurrent 024 and was not operated.",
+      "pid": 40990,
+      "port": 4187,
+      "preserved": true,
+      "scope": "concurrent candidate 024"
+    },
+    "protected_original_listeners": [
+      {
+        "pid": 2547,
+        "port": 5173
+      },
+      {
+        "pid": 2554,
+        "port": 4827
+      },
+      {
+        "pid": 2560,
+        "port": 4173
+      }
+    ],
+    "provenance": "Root-agent read-only process observation only; not author gameplay testing or independent archival-agent inspection",
+    "signals_sent": false,
+    "tool_contexts_preserved": true,
+    "user_chrome_1036_alive": true
+  },
+  "parent_reported_author_results": {
+    "actual_full_song_performances": "not established",
+    "desktop_and_mobile_layout_passed_reported": true,
+    "existing_static_qa_record": {
+      "actual_full_song_performances": "not established",
+      "browser_checks_reported_separately": [
+        "3D rendering",
+        "startup",
+        "settlement",
+        "pause and resume",
+        "390px layout"
+      ],
+      "independent_browser_result_table": "not present",
+      "preview_port_from_readme_lines_8_and_11": 4187,
+      "provenance": "Read-only helper summarized original README and QA records; archival agent did not execute tests or browser checks",
+      "qa_result_line_76": "PASS",
+      "qa_result_line_77": "AudioContext and DOM mocked",
+      "qa_result_lines_2_to_66": "three songs times three difficulties: nine perfectRuns",
+      "qa_result_path": "tests/qa-results.json",
+      "qa_script_path": "tests/game-qa.mjs",
+      "readme_line_27": "test doubles explicitly documented",
+      "source_output_and_evidence_directories": "absent per read-only helper",
+      "source_screenshots": "none found",
+      "webmcp_supported_environment_playtest": "not performed per original report"
+    },
+    "nine_chart_simulations_reported": true,
+    "provenance": "Author report relayed by parent only; no checks rerun or independently verified; simulation and layout coverage do not establish actual full-song performances"
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Parent/author report only; site not accessed; not GitHub deployment evidence",
+    "url": "https://neon-assembly-robot-band.zemingqiu045.chatgpt.site",
+    "visibility": "private per parent report"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Launch parameters supplied by parent only; actual historical generation model and effort not independently authenticated",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band",
+  "stage": "original",
+  "thread_id": "01a104d6-051b-75d4-8ea2-ee6f29fe40ba",
+  "title": "NEON ASSEMBLY",
+  "total_bytes": 2208608,
+  "turn_id": "01a104d6-24c5-7431-880f-d4fdafe8285e"
+}

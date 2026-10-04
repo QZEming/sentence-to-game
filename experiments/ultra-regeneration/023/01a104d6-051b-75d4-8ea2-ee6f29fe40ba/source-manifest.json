@@ -1,0 +1,78 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "b33e6d04d4a1d4307cc96f4e4670fb324527b2a3fae02b1519f18b85ae79921b"
+    },
+    {
+      "bytes": 1114,
+      "path": "README.md",
+      "sha256": "f2b12c988d2a08203341920a11819a2c2e5825fcc551f458e77c7c3ceb680068"
+    },
+    {
+      "bytes": 22988,
+      "path": "dist/app.js",
+      "sha256": "5e33ca328bec0e50d559d5238fc188eb062431c8d78029bc8d36b0efb9d5d1b0"
+    },
+    {
+      "bytes": 11250,
+      "path": "dist/audio.js",
+      "sha256": "1605c3445c681611a64219976786cdbdd23d26d0291d9f8b55aaf6e2ef9f8834"
+    },
+    {
+      "bytes": 1953,
+      "path": "dist/game-core.js",
+      "sha256": "ab58cf9384438ac78c2fc1f4cf407e0d5ef7b2e6fa849cf4f1b3c322c04ecf54"
+    },
+    {
+      "bytes": 6665,
+      "path": "dist/index.html",
+      "sha256": "a21c6b2a738fdc4ef2f67d9c4eeea3b969e2295fee889c222760747ab94272b9"
+    },
+    {
+      "bytes": 11618,
+      "path": "dist/stage.js",
+      "sha256": "7c657ab3185dca1d0e7f6eabfa9a6c20df636b49f8d7f1541942339498c2cad9"
+    },
+    {
+      "bytes": 23881,
+      "path": "dist/style.css",
+      "sha256": "3f0833912714571bae302354fd1966ed21114cd19da182267a0685c2a0eadfb7"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "bytes": 1458113,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "bytes": 662772,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    {
+      "bytes": 5574,
+      "path": "tests/game-qa.mjs",
+      "sha256": "941cfc173312b68549187739e321f24b6a4db40866e8eaff78dbbdaee967435e"
+    },
+    {
+      "bytes": 1493,
+      "path": "tests/qa-results.json",
+      "sha256": "160555641563281851e969054631eb313163d4e2f432f1a570be2185ce1dd74e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-17/robot-band",
+  "source_tree_sha256": "591679d1247369dae053bd679def28225eb00d65e12fdf2c9c588e9c1332598c",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-023-original-20261004T033652Z",
+  "thread_id": "01a104d6-051b-75d4-8ea2-ee6f29fe40ba",
+  "turn_id": "01a104d6-24c5-7431-880f-d4fdafe8285e"
+}

@@ -1,0 +1,90 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "022-bear-strange-fishing",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "022",
+  "generation_turn_id": "01a104d5-904f-76a0-9a5f-70e0a1932e50",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "7afba634c79119e68349fdad6fce00de0decd174",
+    "full_old_history_preserved": true,
+    "game_number": "022",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/016/manifest.json": "e1bf9be56c40cc608a0aa0fd23f07a928a14925b",
+      "experiments/page-857ec841-top50-gpt6astra/016/prompt.txt": "522a36225a7522baaff5ff46ec9c5c9838df0ae5",
+      "experiments/page-857ec841-top50-gpt6astra/016/provenance.json": "ab34b26a6a2fe8a08c10f203daf20220fcb1ba02",
+      "experiments/page-857ec841-top50-gpt6astra/016/release.json": "94b0fc24b1e876f8059f98ae8cdee49c3cc45ae4"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/7afba634c79119e68349fdad6fce00de0decd174",
+    "source_and_published_blobs": {
+      "docs/games/022-bear-strange-fishing/assets/index-BBTF8oZp.css": "d786e1c2a779a505204b78e44a35ef199f079e5f",
+      "docs/games/022-bear-strange-fishing/assets/index-DJ9foJLQ.js": "dd673b7c73ba58f5914d85b9d80302231bb86a05",
+      "docs/games/022-bear-strange-fishing/index.html": "eaf99dc1ba105d01287fd862986560009a6fa717",
+      "games/022-bear-strange-fishing/README.md": "7e1cd3bf11398dd2a7649357a8f4f601193de4ed",
+      "games/022-bear-strange-fishing/RELEASE.md": "85248039bdc7d2aba26436ae5f2839cbe0fd6229",
+      "games/022-bear-strange-fishing/dist/assets/index-BBTF8oZp.css": "d786e1c2a779a505204b78e44a35ef199f079e5f",
+      "games/022-bear-strange-fishing/dist/assets/index-DJ9foJLQ.js": "dd673b7c73ba58f5914d85b9d80302231bb86a05",
+      "games/022-bear-strange-fishing/dist/index.html": "189bfd3a6eaee642b46829c46c46e636bc510c27",
+      "games/022-bear-strange-fishing/index.html": "ebac85eb978e09c05c7fdb6c4c65f9ecdf7c56f1",
+      "games/022-bear-strange-fishing/package-lock.json": "faac5404e013867d7ab2b6e83a12474a63a7049f",
+      "games/022-bear-strange-fishing/package.json": "01c92b72cb6c67740d957031e95a81e482ee20af",
+      "games/022-bear-strange-fishing/prompt.txt": "522a36225a7522baaff5ff46ec9c5c9838df0ae5",
+      "games/022-bear-strange-fishing/src/main.js": "8d3dcfc1e8de0e8a2a716f7a823a5c71e12b8dd2",
+      "games/022-bear-strange-fishing/src/style.css": "2ad1cfac48e1600b2b3b860ef8e139bc2e9b9acc"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 5530,
+      "path": "data.js",
+      "sha256": "b01a092aedad1ad0eb6186ff8efc99f4ec1fc3ebc12a763f514f31790995c1aa"
+    },
+    {
+      "bytes": 19928,
+      "path": "game.js",
+      "sha256": "45e56b814d4265ee359b64990315f44b78e8b7192e81f3c5598814301b29e18c"
+    },
+    {
+      "bytes": 5128,
+      "path": "index.html",
+      "sha256": "9c724e423d045080f611ce7229e40357c79b186911f96eff944e5d0f84bd9334"
+    },
+    {
+      "bytes": 18620,
+      "path": "scene.js",
+      "sha256": "18a9952b537c0c1e5a4c94f7c2a55d03f0f1ddf9841137abeb7aadd962bf716a"
+    },
+    {
+      "bytes": 15628,
+      "path": "style.css",
+      "sha256": "bd105875b9f32bcbe269d34e17e3b2db076526eacaf76eeaeaea4ffe96e175e1"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "250a9d2df1da50683d510ecc0bab768f54b28a8550e14fa00fddbff2a4beb09f",
+  "thinking_requested": "ultra",
+  "thread_id": "01a104d5-6fac-741a-822b-12e64a9d90b3",
+  "title": "小熊奇鱼记 · Wonderlake",
+  "url": "https://qzemi.cn/sentence-to-game/games/022-bear-strange-fishing/"
+}
