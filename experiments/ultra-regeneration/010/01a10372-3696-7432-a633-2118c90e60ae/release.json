@@ -1,0 +1,89 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "010-frog-lily-jump",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "010",
+  "generation_turn_id": "01a10372-5904-72ea-9478-96794162720f",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+    "full_old_history_preserved": true,
+    "game_number": "010",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/004/manifest.json": "fd0b932a5f580169d7ccf6781a4afbda4c9e6860",
+      "experiments/page-857ec841-top50-gpt6astra/004/prompt.txt": "9868b84a24cb429e64536f9a4c3b3006b0e1add4",
+      "experiments/page-857ec841-top50-gpt6astra/004/provenance.json": "04288b0f5ee22eb7e22ac6845a76b8dc1038dffe",
+      "experiments/page-857ec841-top50-gpt6astra/004/release.json": "51ae414d1b6e1bef3a200b80407fe2b741c7b5f3"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+    "source_and_published_blobs": {
+      "docs/games/010-frog-lily-jump/assets/index-BEoK1iR1.js": "f0da484dcfcd2ef9a5b13147b6a949e6260cd540",
+      "docs/games/010-frog-lily-jump/assets/index-Dzp5nC4Z.css": "62b65091184ef3b89f831acc228f265091a3cb1a",
+      "docs/games/010-frog-lily-jump/index.html": "1ba950018844fd6cf4f9f0da75f0f3b236844090",
+      "games/010-frog-lily-jump/.gitignore": "e6d806523ea319a168db6631cf09c13f96517f77",
+      "games/010-frog-lily-jump/README.md": "df71dbcf4ddbef437be8685e0d5b9d381210b14b",
+      "games/010-frog-lily-jump/RELEASE.md": "8caa0301eb2fa4f5a1b5c3c5afe58e53684f4878",
+      "games/010-frog-lily-jump/dist/assets/index-BEoK1iR1.js": "f0da484dcfcd2ef9a5b13147b6a949e6260cd540",
+      "games/010-frog-lily-jump/dist/assets/index-Dzp5nC4Z.css": "62b65091184ef3b89f831acc228f265091a3cb1a",
+      "games/010-frog-lily-jump/dist/index.html": "a816a71538478d15acb36fa9102a90d9152c9b0e",
+      "games/010-frog-lily-jump/index.html": "1e5db568cedaa59cea16b18b907c978dfa791a64",
+      "games/010-frog-lily-jump/output/playwright/desktop.png": "decd0eb20505e67ccc6e78b764bd2ceb4fa20b09",
+      "games/010-frog-lily-jump/output/playwright/mobile.png": "4822803a931f6bbd8a305361a6d071cf64b6d173",
+      "games/010-frog-lily-jump/output/playwright/verification.json": "ec24963b4d59cab521ba7b6f7bd736c83c05fee6",
+      "games/010-frog-lily-jump/package-lock.json": "a44874e2f14e64bc23d239f26f65939093a7aa82",
+      "games/010-frog-lily-jump/package.json": "71beaff4ebf67647df339f5132abb696102cd715",
+      "games/010-frog-lily-jump/prompt.txt": "9868b84a24cb429e64536f9a4c3b3006b0e1add4",
+      "games/010-frog-lily-jump/src/main.js": "8bc31c70135a6bb65fb2a7311725012ea3bfc46a",
+      "games/010-frog-lily-jump/src/style.css": "6b7b1c3cffed7f31fd88bf5e43bbf47aa02e41d7"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 36296,
+      "path": "game.js",
+      "sha256": "a411cefe1df0da0061f7ee9a2c546e2d2eed0ae80220913f11060346f8d2b2e9"
+    },
+    {
+      "bytes": 5263,
+      "path": "index.html",
+      "sha256": "415ed8ef9518d7ec0e7eca57fac62945594ddc7c369d760f5bb02e9efcd6a840"
+    },
+    {
+      "bytes": 1661,
+      "path": "mechanics.js",
+      "sha256": "7e8161ad86f7b6c2bcbfec0f4bf13eda73cb32d182b40ad029f51424136fde1d"
+    },
+    {
+      "bytes": 14033,
+      "path": "style.css",
+      "sha256": "d6e44bf71835427d2395b11f96db92ced27ed13a0228fce4c775b53776600983"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "21f813d8346fa78e891198c197471709daa46df50a4af66f25b8a6213953ffc3",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10372-3696-7432-a633-2118c90e60ae",
+  "title": "荷塘奇跃 · LILYBOUND",
+  "url": "https://qzemi.cn/sentence-to-game/games/010-frog-lily-jump/"
+}

@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 35,
+      "path": ".gitignore",
+      "sha256": "3e1bb31e06893ff0c821907976596666ba3e57861591fe8d29e48068dbc98821"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "ae25100389f8a6274d743f0091582aa7f981ad50b65e9fa2c2e7ec1f6572f6ac"
+    },
+    {
+      "bytes": 1484,
+      "path": "README.md",
+      "sha256": "e8594f8aa6eddd8baabf725490a3082d445bbcc56854e8918a2ec0b48dc18df0"
+    },
+    {
+      "bytes": 36296,
+      "path": "dist/game.js",
+      "sha256": "a411cefe1df0da0061f7ee9a2c546e2d2eed0ae80220913f11060346f8d2b2e9"
+    },
+    {
+      "bytes": 5263,
+      "path": "dist/index.html",
+      "sha256": "415ed8ef9518d7ec0e7eca57fac62945594ddc7c369d760f5bb02e9efcd6a840"
+    },
+    {
+      "bytes": 1661,
+      "path": "dist/mechanics.js",
+      "sha256": "7e8161ad86f7b6c2bcbfec0f4bf13eda73cb32d182b40ad029f51424136fde1d"
+    },
+    {
+      "bytes": 14033,
+      "path": "dist/style.css",
+      "sha256": "d6e44bf71835427d2395b11f96db92ced27ed13a0228fce4c775b53776600983"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 418229,
+      "path": "original-delivery/lilybound-static.tar.gz",
+      "sha256": "f0f0ec76769c44208253f4701d790e5bb73b039a417288d0d407cc3bcd0133a1"
+    },
+    {
+      "bytes": 236332,
+      "path": "output/playwright/completed.png",
+      "sha256": "28e45a29b4d0ea8f60c9dba5cad308b9a4c0fb5fde5b1590ee6b24325568a72a"
+    },
+    {
+      "bytes": 334692,
+      "path": "output/playwright/gameplay.png",
+      "sha256": "d90a057997f969882258779d47135408bcace3d7ae314f5b8d67efd35a439bf8"
+    },
+    {
+      "bytes": 114638,
+      "path": "output/playwright/mobile-game.png",
+      "sha256": "6a32bd4c0f8751ef477771b5089226d7ffb88a5c0d76d9d2a0580979914e8649"
+    },
+    {
+      "bytes": 228444,
+      "path": "output/playwright/mobile-start.png",
+      "sha256": "d0592190650dcbc9d04437f74d2f2bf7a4696651cac69c3373086dd278bc2b08"
+    },
+    {
+      "bytes": 173,
+      "path": "package.json",
+      "sha256": "8d490a851fe7db406cb74aa6e838a7d2c88aea2abdba0cd3b13b3f4be72ca359"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-4/lilybound",
+  "source_tree_sha256": "21f813d8346fa78e891198c197471709daa46df50a4af66f25b8a6213953ffc3",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-010-original-20261003T205319Z",
+  "thread_id": "01a10372-3696-7432-a633-2118c90e60ae",
+  "turn_id": "01a10372-5904-72ea-9478-96794162720f"
+}

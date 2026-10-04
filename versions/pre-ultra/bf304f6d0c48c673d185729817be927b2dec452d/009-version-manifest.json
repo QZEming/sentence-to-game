@@ -1,0 +1,33 @@
+{
+  "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+  "full_old_history_preserved": true,
+  "game_number": "009",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/003/manifest.json": "2f728f97cb2920c31ddfcba66e23c5f98755ae1a",
+    "experiments/page-857ec841-top50-gpt6astra/003/prompt.txt": "fe514243ccfa18638e084b6732fc74e59a5f0f3a",
+    "experiments/page-857ec841-top50-gpt6astra/003/provenance.json": "9c79eedb8dab352b7fb852cbeed188dba855f27f",
+    "experiments/page-857ec841-top50-gpt6astra/003/release.json": "97484bd28ce74a179e82cdf9f2a7bb4ee7eb1f40"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+  "source_and_published_blobs": {
+    "docs/games/009-robot-space-parkour/assets/index-Bgk10mOK.css": "677e7115faf0cb39ecd109fb352230026c9f4f77",
+    "docs/games/009-robot-space-parkour/assets/index-D0_DdxD1.js": "5ab63d3e78a05089f9667177a336914760d7705e",
+    "docs/games/009-robot-space-parkour/assets/three-CA5ctLEx.js": "81e38ab840abf2a5703a9132a7d9bba4bdd14959",
+    "docs/games/009-robot-space-parkour/index.html": "2f9e808aab89df7049e420e9acbcd50115475361",
+    "games/009-robot-space-parkour/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+    "games/009-robot-space-parkour/README.md": "f3721fbcbfdd74671740933117aadaf7d8c0d319",
+    "games/009-robot-space-parkour/RELEASE.md": "6c2c0147bc9419aedbeff239504b0867d2b30dba",
+    "games/009-robot-space-parkour/dist/assets/index-Bgk10mOK.css": "677e7115faf0cb39ecd109fb352230026c9f4f77",
+    "games/009-robot-space-parkour/dist/assets/index-D0_DdxD1.js": "5ab63d3e78a05089f9667177a336914760d7705e",
+    "games/009-robot-space-parkour/dist/assets/three-CA5ctLEx.js": "81e38ab840abf2a5703a9132a7d9bba4bdd14959",
+    "games/009-robot-space-parkour/dist/index.html": "2f9e808aab89df7049e420e9acbcd50115475361",
+    "games/009-robot-space-parkour/index.html": "0398fac07de13b8f93799b1d51aac6d5046d5c80",
+    "games/009-robot-space-parkour/output/playwright/orbit-zero.jpg": "ef15e08e76b5b631478367adf6f0d0ccdbe223de",
+    "games/009-robot-space-parkour/package-lock.json": "1ef596506aed21862ef5fafcd8f3509da9608b49",
+    "games/009-robot-space-parkour/package.json": "ac8f87b013d5567432523c00ad5a41c745a8a05c",
+    "games/009-robot-space-parkour/prompt.txt": "fe514243ccfa18638e084b6732fc74e59a5f0f3a",
+    "games/009-robot-space-parkour/src/main.js": "7fbc6933913550deb3b56c83176c8c7442ce4015",
+    "games/009-robot-space-parkour/src/style.css": "409376e0d62839e27e2fa87c7cbc4610389f77ff",
+    "games/009-robot-space-parkour/vite.config.js": "be86a143b10e4c5377582c4dc455508b4d103d19"
+  }
+}

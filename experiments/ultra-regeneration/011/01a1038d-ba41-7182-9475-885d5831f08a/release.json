@@ -1,0 +1,81 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "existing_dist_with_recorded_path_adaptation",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "011-mole-underground-maze",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "011",
+  "generation_turn_id": "01a1038d-dbad-752f-a553-30764c3a2168",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+    "full_old_history_preserved": true,
+    "game_number": "011",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/005/manifest.json": "9ce7595bc1fa1595ae4e24a50cb6826cc39a24fd",
+      "experiments/page-857ec841-top50-gpt6astra/005/prompt.txt": "6e61b64eff20f43a1856aba0d0195f7e2f04c65e",
+      "experiments/page-857ec841-top50-gpt6astra/005/provenance.json": "8b18007a60b969c2531d007e0fa9f42a2a5b152b",
+      "experiments/page-857ec841-top50-gpt6astra/005/release.json": "dff9190d3f9d63a7b242c2be72286fb9c1d19b8d"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+    "source_and_published_blobs": {
+      "docs/games/011-mole-underground-maze/assets/index-Bh_buy7N.js": "f03ce833b0f187453130cc898fc674dd23ad405c",
+      "docs/games/011-mole-underground-maze/assets/index-BjHmP4pX.css": "686106231d61c64c970a8e783fae7b0eb07328ac",
+      "docs/games/011-mole-underground-maze/index.html": "0bd56e3afaafc354f3ca3af6a91b6d67ea8f823a",
+      "games/011-mole-underground-maze/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+      "games/011-mole-underground-maze/README.md": "c9b7fa242c98a31db0216fdcc551be84dd731ce0",
+      "games/011-mole-underground-maze/RELEASE.md": "39f873703ee05a469c3fdbef4837afa3044308ce",
+      "games/011-mole-underground-maze/dist/assets/index-Bh_buy7N.js": "f03ce833b0f187453130cc898fc674dd23ad405c",
+      "games/011-mole-underground-maze/dist/assets/index-BjHmP4pX.css": "686106231d61c64c970a8e783fae7b0eb07328ac",
+      "games/011-mole-underground-maze/dist/index.html": "86c49b03e7a14708825829a8b19914d75bb082aa",
+      "games/011-mole-underground-maze/index.html": "551814e5241ad22b7154418e8911f4c2ba6a1024",
+      "games/011-mole-underground-maze/output/playwright/game.jpg": "8125f5a6d13a8a6d5130d2b1a53d9dd90e8136b5",
+      "games/011-mole-underground-maze/package-lock.json": "3610fee96cad9bd464717bc4f20b0578358dc152",
+      "games/011-mole-underground-maze/package.json": "7eae9c92a6e0c2cf5b857f793e55eb7c68b4d408",
+      "games/011-mole-underground-maze/prompt.txt": "6e61b64eff20f43a1856aba0d0195f7e2f04c65e",
+      "games/011-mole-underground-maze/src/main.js": "84a4aebc102263d062034918bed8a14527d6a914",
+      "games/011-mole-underground-maze/src/maze.js": "394929d018de304f6d7024589a83f60b5cd61029",
+      "games/011-mole-underground-maze/src/style.css": "03dd6aea8dedbec711f8f43fa971ba556f639eff",
+      "games/011-mole-underground-maze/tests/maze.test.js": "a58ee63e2e3e4d114d86ce30c260c98a682d9c98"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [
+    {
+      "kind": "mechanical_subdirectory_resource_path_adaptation",
+      "original_sha256": "de84156dfa97dd2116cdbf848ed402c61cfc17441b3b6f6ee36bdf683eb9f4fc",
+      "path": "index.html",
+      "published_sha256": "6815846b8768522313d093127f9f6dc40a4654c9ce6c5154c4e1c5c0746c9d0a"
+    }
+  ],
+  "published_files": [
+    {
+      "bytes": 31761,
+      "path": "assets/index-D1QKabdM.css",
+      "sha256": "79c307ca8cf3f9f5469cea2cd5caa7ead399dab2c7826ef0b7c90a9cbebdc5c9"
+    },
+    {
+      "bytes": 649105,
+      "path": "assets/index-RL7r3CWL.js",
+      "sha256": "2f215517ed7032de715b0b70c2e78482b4b9a61849083e9206c23aaf51163183"
+    },
+    {
+      "bytes": 419,
+      "path": "favicon.svg",
+      "sha256": "3eaf099a39c8892a9bc6a1c19677db31d3c49dc2d5bc34c8b742c3478b3e220e"
+    },
+    {
+      "bytes": 997,
+      "path": "index.html",
+      "sha256": "6815846b8768522313d093127f9f6dc40a4654c9ce6c5154c4e1c5c0746c9d0a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "f484e25c0c3b7ae7f638789b2ad028bca9129c336a33a5a8c1756ab64ad0dc57",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1038d-ba41-7182-9475-885d5831f08a",
+  "title": "BENEATH · 地心漫游",
+  "url": "https://qzemi.cn/sentence-to-game/games/011-mole-underground-maze/"
+}

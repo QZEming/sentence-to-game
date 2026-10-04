@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 75,
+      "path": ".gitignore",
+      "sha256": "1010b97b898f82f7fdf589c316bf9bda752e5fc4488d76b37717ab0e2fe69f1a"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "2ccf6cd876992c487842547c0b5a3088106169a9e502a516e6498194ff502160"
+    },
+    {
+      "bytes": 2149,
+      "path": "README.md",
+      "sha256": "96ada01eaf472a23771386062e37e2f5c2f1482e8b16c5368c722214b78b1346"
+    },
+    {
+      "bytes": 6011,
+      "path": "dist/engine.js",
+      "sha256": "a3fd616f791c09631c8fa440241ccab714e852b9d07d16ee09c78b68e08b1701"
+    },
+    {
+      "bytes": 33336,
+      "path": "dist/game.js",
+      "sha256": "58a92c466370924eecea914c470370ffd5b962c8deaae81b7e724f239503d034"
+    },
+    {
+      "bytes": 8828,
+      "path": "dist/index.html",
+      "sha256": "cf8e70ee54c6f29db1a7c388cfba5dfe6dbde07f0b77eed7d19a598c4a34caad"
+    },
+    {
+      "bytes": 19757,
+      "path": "dist/style.css",
+      "sha256": "80e0c3efe7c9d2879f77f42a6c0ddbe3f89f7b950d8580f9085bfbb2c6372dc0"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 422493,
+      "path": "original-delivery/rooftop-rascal-deploy.tar.gz",
+      "sha256": "8a696d0b8039013c1ad337d16ef04b728d9d9570c3aae9769d6b1ccb742c3633"
+    },
+    {
+      "bytes": 1208155,
+      "path": "output/playwright/desktop.png",
+      "sha256": "d7c1022ba9208866f0a2696d569c4b117c19d6bbf4059f1cfd337d24aeb9c9c6"
+    },
+    {
+      "bytes": 1040235,
+      "path": "output/playwright/gameplay.png",
+      "sha256": "9b7818ffacd37fe346cf54dbc1257b27e83e38899770dabdcd3a80abc06941a1"
+    },
+    {
+      "bytes": 340914,
+      "path": "output/playwright/mobile-gameplay.png",
+      "sha256": "824487bfeeb7908c33bd1dacb47d5b0b0084233d856bc13191c994048d5290ff"
+    },
+    {
+      "bytes": 368683,
+      "path": "output/playwright/mobile.png",
+      "sha256": "3bb90b2dc4d074ecbacd6617dbd358725d6d157d177d4ad05d5accb4dcf0b014"
+    },
+    {
+      "bytes": 251,
+      "path": "package.json",
+      "sha256": "93cfe0aeb3386b631afa2e86742ef269a0a78fdb24834103da68f49f710f3df1"
+    },
+    {
+      "bytes": 3093,
+      "path": "tests/engine.test.js",
+      "sha256": "87f2bc97392b7ac42ed3883f002b66954ca6b8cad0ad415dda6024c62377a4fe"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-2/rooftop-rascal",
+  "source_tree_sha256": "3c097a833847dcc4cdc138c78664020f9ec1dbbc3e4efb6913f33611c3988b0b",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-008-original-20261003T194641Z",
+  "thread_id": "01a1032e-532d-7657-b8e7-1d502129309c",
+  "turn_id": "01a1032e-726a-75fc-bed2-0d30c39c07f5"
+}

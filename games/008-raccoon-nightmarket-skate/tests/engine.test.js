@@ -1,0 +1,17 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {Game,entitiesForChunk} from '../dist/engine.js';
+const step=(g,n)=>{for(let i=0;i<n;i++)g.update(1/60);};
+const emptyGame=()=>{const g=new Game();g.reset('practice');g.entities=[];g.fill=()=>{};return g;};
+test('lane movement clamps at the roof bounds',()=>{const g=emptyGame();for(let i=0;i<7;i++)g.action('left');assert.equal(g.lane,-1);step(g,30);assert.ok(Math.abs(g.x+3.55)<.01);for(let i=0;i<7;i++)g.action('right');assert.equal(g.lane,1);});
+test('one airborne flip is banked exactly once on landing',()=>{const g=emptyGame();g.action('jump');step(g,8);g.action('jump');for(let i=0;i<7;i++)g.action('jump');step(g,60);assert.equal(g.tricks,1);assert.equal(g.y,0);assert.equal(g.trickPending,false);});
+test('pause freezes the whole simulation',()=>{const g=emptyGame();g.action('jump');step(g,8);g.status='paused';const before=[g.distance,g.y,g.energy,g.time];step(g,90);assert.deepEqual([g.distance,g.y,g.energy,g.time],before);});
+test('boost spends 50 energy once and protects from collisions',()=>{const g=emptyGame();g.energy=100;g.action('boost');g.action('boost');assert.equal(g.energy,50);assert.equal(g.boosts,1);g.hit('crate');assert.equal(g.lives,3);assert.equal(g.boost,4);});
+test('collectibles cannot be scored repeatedly',()=>{const g=emptyGame();g.entities=[{id:'test',kind:'ramen',lane:0,d:1,y:1,hit:false}];step(g,40);assert.equal(g.ramen,1);assert.equal(g.energy,55);});
+test('cruise run ends after three separate hits',()=>{const g=new Game();g.reset('cruise');for(let i=0;i<3;i++){g.invincible=0;g.hit('crate');}assert.equal(g.lives,0);assert.equal(g.status,'over');});
+test('practice mode gives unlimited retries',()=>{const g=emptyGame();for(let i=0;i<9;i++){g.invincible=0;g.hit('crate');}assert.equal(g.lives,3);assert.equal(g.status,'running');});
+test('a fresh run clears powers, missions and movement',()=>{const g=emptyGame();g.ramen=12;g.grindTime=10;g.x=3.55;g.energy=100;g.action('boost');step(g,1);g.reset('timed');assert.equal(g.distance,0);assert.equal(g.energy,35);assert.equal(g.missionDone,0);assert.equal(g.boost,0);assert.equal(g.x,0);});
+test('timed mode ends at 120 seconds',()=>{const g=emptyGame();g.mode='timed';g.time=119.99;g.update(.02);assert.equal(g.status,'over');});
+test('all procedural obstacle waves retain a clear lane',()=>{for(let c=0;c<200;c++){const danger=entitiesForChunk(c).filter(e=>['crate','gate'].includes(e.kind));const occupied=new Set(danger.map(e=>e.lane));assert.ok(occupied.size<3);}});
+test('landing on a rail enters grind and counts time',()=>{const g=emptyGame();g.entities=[{id:'rail',kind:'rail',lane:0,d:0,y:.7,length:10}];g.y=.8;g.vy=-1;step(g,8);assert.equal(g.railId,'rail');assert.ok(g.grindTime>0);g.action('jump');assert.equal(g.railId,null);assert.ok(g.vy>0);});
+test('bridge supports the player while a missed gap costs a life',()=>{for(const bridge of [true,false]){const g=emptyGame();g.mode='cruise';g.distance=129.9;g.invincible=0;g.lane=bridge?1:0;g.x=bridge?3.55:0;step(g,40);assert.equal(g.lives,bridge?3:2);}});

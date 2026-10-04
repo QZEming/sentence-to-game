@@ -1,0 +1,28 @@
+{
+  "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+  "full_old_history_preserved": true,
+  "game_number": "008",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/002/manifest.json": "9cfb9cefd8b0b36c04a5f8a733b47c09aec4a448",
+    "experiments/page-857ec841-top50-gpt6astra/002/prompt.txt": "d7080f5cf684996d6b9f881809bb3c79fa680261",
+    "experiments/page-857ec841-top50-gpt6astra/002/provenance.json": "4ef3a3b859d3a26e57efa96ef25615bf92140a59",
+    "experiments/page-857ec841-top50-gpt6astra/002/release.json": "046a528bc21dba87079ad5e40034fc4a341f3584"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+  "source_and_published_blobs": {
+    "docs/games/008-raccoon-nightmarket-skate/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+    "docs/games/008-raccoon-nightmarket-skate/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+    "docs/games/008-raccoon-nightmarket-skate/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+    "docs/games/008-raccoon-nightmarket-skate/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/008-raccoon-nightmarket-skate/RELEASE.md": "8f5c093321d24f8d1e9dc14ab67e12eec538df61",
+    "games/008-raccoon-nightmarket-skate/dist/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+    "games/008-raccoon-nightmarket-skate/dist/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+    "games/008-raccoon-nightmarket-skate/dist/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+    "games/008-raccoon-nightmarket-skate/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/008-raccoon-nightmarket-skate/prompt.txt": "d7080f5cf684996d6b9f881809bb3c79fa680261",
+    "games/008-raccoon-nightmarket-skate/src/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+    "games/008-raccoon-nightmarket-skate/src/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+    "games/008-raccoon-nightmarket-skate/src/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+    "games/008-raccoon-nightmarket-skate/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+  "full_old_history_preserved": true,
+  "game_number": "012",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/006/manifest.json": "ba64b3e3f6223db94419f2a1959f5617ced9783f",
+    "experiments/page-857ec841-top50-gpt6astra/006/prompt.txt": "dfa071e0d4c8c37008544ed196b031e2a6b675c9",
+    "experiments/page-857ec841-top50-gpt6astra/006/provenance.json": "71ab395a07654e3e2f59713fc424ec00ec064096",
+    "experiments/page-857ec841-top50-gpt6astra/006/release.json": "ddf920426e656f3e8646d7bc13019b1b9f9c0bf3"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+  "source_and_published_blobs": {
+    "docs/games/012-ghost-clocktower-escape/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+    "docs/games/012-ghost-clocktower-escape/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+    "docs/games/012-ghost-clocktower-escape/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+    "docs/games/012-ghost-clocktower-escape/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+    "games/012-ghost-clocktower-escape/.gitignore": "9e58de6406e26a5bd58c79be1311f7b89e70a804",
+    "games/012-ghost-clocktower-escape/README.md": "f4445227c25d0b280f6460445277fa55e9e853a9",
+    "games/012-ghost-clocktower-escape/RELEASE.md": "d991c34622db0416df9397b362b209b6ad6c90bb",
+    "games/012-ghost-clocktower-escape/dist/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+    "games/012-ghost-clocktower-escape/dist/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+    "games/012-ghost-clocktower-escape/dist/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+    "games/012-ghost-clocktower-escape/dist/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+    "games/012-ghost-clocktower-escape/prompt.txt": "dfa071e0d4c8c37008544ed196b031e2a6b675c9",
+    "games/012-ghost-clocktower-escape/src/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+    "games/012-ghost-clocktower-escape/src/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+    "games/012-ghost-clocktower-escape/src/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+    "games/012-ghost-clocktower-escape/src/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+    "games/012-ghost-clocktower-escape/verify.mjs": "54a8e15fb7b18ef477a7c284fcf774d0aba9dbf4"
+  }
+}

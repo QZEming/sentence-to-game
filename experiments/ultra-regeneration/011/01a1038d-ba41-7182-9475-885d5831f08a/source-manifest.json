@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "ca1645fc04d3f12072d578493c73040051d5c406acfda7c3b9bc77c418f0a49f"
+    },
+    {
+      "bytes": 2608,
+      "path": "README.md",
+      "sha256": "2a165b6c925add7f59d1913731f65691368bc80a82dd4a3c63e033a7bee349c0"
+    },
+    {
+      "bytes": 31761,
+      "path": "dist/assets/index-D1QKabdM.css",
+      "sha256": "79c307ca8cf3f9f5469cea2cd5caa7ead399dab2c7826ef0b7c90a9cbebdc5c9"
+    },
+    {
+      "bytes": 649105,
+      "path": "dist/assets/index-RL7r3CWL.js",
+      "sha256": "2f215517ed7032de715b0b70c2e78482b4b9a61849083e9206c23aaf51163183"
+    },
+    {
+      "bytes": 419,
+      "path": "dist/favicon.svg",
+      "sha256": "3eaf099a39c8892a9bc6a1c19677db31d3c49dc2d5bc34c8b742c3478b3e220e"
+    },
+    {
+      "bytes": 994,
+      "path": "dist/index.html",
+      "sha256": "de84156dfa97dd2116cdbf848ed402c61cfc17441b3b6f6ee36bdf683eb9f4fc"
+    },
+    {
+      "bytes": 895,
+      "path": "index.html",
+      "sha256": "9ef3c51fa7cf9e4096dccc55dddd76f72ac49632815b58b3bcff8f22daead5e2"
+    },
+    {
+      "bytes": 136504,
+      "path": "output/playwright/beneath-desktop.jpg",
+      "sha256": "e2370ae37b90efe05b9b76c59ccf0563efa8b0766e2cd9a109ff35b2bd282a02"
+    },
+    {
+      "bytes": 24556,
+      "path": "package-lock.json",
+      "sha256": "c2961e94de5eecebd70836b7f92e2f89cfc01f75d37d8a125a723f2d7595e85f"
+    },
+    {
+      "bytes": 461,
+      "path": "package.json",
+      "sha256": "91b4f573308976a4d036924abd7664965a681098d01d81e78d21fbe51713cf05"
+    },
+    {
+      "bytes": 419,
+      "path": "public/favicon.svg",
+      "sha256": "3eaf099a39c8892a9bc6a1c19677db31d3c49dc2d5bc34c8b742c3478b3e220e"
+    },
+    {
+      "bytes": 6410,
+      "path": "scripts/verify-world.mjs",
+      "sha256": "5d647cdb058315def01c1a031cdf4849d9a9a53df75379b150e1a5eabe279437"
+    },
+    {
+      "bytes": 1737,
+      "path": "src/audio.js",
+      "sha256": "011e57e98a4bef4350fdbae71c7138ef11e609bbf6d2b4993d2df08d5ad94dae"
+    },
+    {
+      "bytes": 25394,
+      "path": "src/main.js",
+      "sha256": "2f79ddc0a357c746e918122c0794f5307e58f6c11b44aa0363a24f9bffd25020"
+    },
+    {
+      "bytes": 31983,
+      "path": "src/style.css",
+      "sha256": "ffcc0b5c3b2ef97845c4a8b32e057333308e02fc8040f10a0883c983bb9e236d"
+    },
+    {
+      "bytes": 27889,
+      "path": "src/ui.js",
+      "sha256": "5d77d2f6cc936f2a55989bb77dc15b0b50f37ee991ed55fffdeea2da03386d98"
+    },
+    {
+      "bytes": 33966,
+      "path": "src/world.js",
+      "sha256": "069ef19a6bae0df259ed1d33c3828263e52f566bb1454cb3d4e3d9dfe67d8a04"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-5",
+  "source_tree_sha256": "f484e25c0c3b7ae7f638789b2ad028bca9129c336a33a5a8c1756ab64ad0dc57",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-011-original-20261003T212156Z",
+  "thread_id": "01a1038d-ba41-7182-9475-885d5831f08a",
+  "turn_id": "01a1038d-dbad-752f-a553-30764c3a2168"
+}

@@ -1,18 +1,17 @@
 {
-  "name": "underburrow",
+  "name": "beneath-mole-explorer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "BENEATH · 地心漫游 — a cozy 3D underground maze adventure",
+  "type": "module",
   "scripts": {
+    "test": "node scripts/verify-world.mjs",
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "test": "node --test"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "three": "^0.186.1",
     "vite": "^8.3.2"

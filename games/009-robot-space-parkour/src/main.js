@@ -1,70 +1,307 @@
 import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { createWorld } from './world.js';
+import { createRobot } from './robot.js';
+import { createUI } from './ui.js';
+import { AudioSystem } from './audio.js';
+import { Controller, intersectsHazard } from './physics.js';
+import { createParticles } from './particles.js';
 import './style.css';
-const $=id=>document.getElementById(id);
-const scene=new THREE.Scene();scene.background=new THREE.Color('#172b34');scene.fog=new THREE.FogExp2('#233d43',.0075);
-const renderer=new THREE.WebGLRenderer({canvas:$('world'),antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
-const camera=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,1800);
-scene.add(new THREE.HemisphereLight(0xb8e4e5,0x162529,2.3));const sun=new THREE.DirectionalLight(0xffc194,3.7);sun.position.set(-35,65,-75);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-32;sun.shadow.camera.right=32;sun.shadow.camera.top=36;sun.shadow.camera.bottom=-36;sun.shadow.camera.far=180;sun.shadow.bias=-.0006;scene.add(sun);scene.add(sun.target);
-const fill=new THREE.DirectionalLight(0x78c8cf,2);fill.position.set(20,10,12);scene.add(fill);
-const mat=(c,metal=.5,rough=.65,emissive=0)=>new THREE.MeshStandardMaterial({color:c,metalness:metal,roughness:rough,emissive,emissiveIntensity:emissive?1.8:0});
-const metal=mat('#314649'),dark=mat('#13292e'),edge=mat('#70817b'),cream=mat('#d5d5bb',.6,.4),orange=mat('#e67b45',.55,.45),glow=mat('#b6f6d7',.1,.4,0x6de3d2),red=mat('#ff6b48',.2,.5,0xff3513),black=mat('#0a1b20',.6,.2);
-function box(w,h,d,m,x=0,y=0,z=0,parent=scene){const a=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);a.position.set(x,y,z);a.castShadow=true;a.receiveShadow=true;parent.add(a);return a}
-function cylinder(r1,r2,h,m,x,y,z,parent=scene){const a=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,12),m);a.position.set(x,y,z);a.castShadow=true;parent.add(a);return a}
-function line(points,color,parent=scene){const g=new THREE.BufferGeometry().setFromPoints(points.map(p=>new THREE.Vector3(...p)));const l=new THREE.Line(g,new THREE.LineBasicMaterial({color,transparent:true,opacity:.5}));parent.add(l);return l}
-let seed=79;function random(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
-// A star field, distant orbital debris, and a hand-shaded gas giant.
-const stars=new Float32Array(2400);for(let i=0;i<800;i++){stars[i*3]=(random()-.5)*1400;stars[i*3+1]=random()*650-50;stars[i*3+2]=(random()-.5)*1400}const starGeo=new THREE.BufferGeometry();starGeo.setAttribute('position',new THREE.BufferAttribute(stars,3));scene.add(new THREE.Points(starGeo,new THREE.PointsMaterial({color:0xd3e6df,size:.65,transparent:true,opacity:.8,fog:false})));
-const planetMaterial=new THREE.ShaderMaterial({uniforms:{},vertexShader:'varying vec3 n;varying vec3 p;void main(){n=normalize(normalMatrix*normal);p=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',fragmentShader:'varying vec3 n;varying vec3 p;void main(){float stripe=sin(p.y*.09+sin(p.x*.04)*.7)*.04+sin(p.y*.35)*.012;float light=pow(max(0.,dot(normalize(n),normalize(vec3(-.7,.4,1.)))),.8);vec3 c=mix(vec3(.16,.27,.29),vec3(.77,.59,.43),light)+stripe;float rim=pow(1.-max(0.,n.z),3.);gl_FragColor=vec4(c+rim*vec3(.09,.16,.17),1.);}'});
-const planet=new THREE.Mesh(new THREE.SphereGeometry(155,64,48),planetMaterial);planet.position.set(170,105,-490);scene.add(planet);
-const ring=new THREE.Mesh(new THREE.RingGeometry(195,243,160),new THREE.MeshBasicMaterial({color:0x9ea397,side:THREE.DoubleSide,transparent:true,opacity:.18}));ring.position.copy(planet.position);ring.rotation.set(1.15,.2,-.4);scene.add(ring);
-const halo=new THREE.Mesh(new THREE.SphereGeometry(157,48,32),new THREE.MeshBasicMaterial({color:0x80c5c7,transparent:true,opacity:.06,side:THREE.BackSide}));halo.position.copy(planet.position);scene.add(halo);
-const structures=new THREE.Group();scene.add(structures);
-for(let i=0;i<28;i++){const x=(i%2?1:-1)*(24+random()*60),z=50-i*33;const g=new THREE.Group();g.position.set(x,-14-random()*15,z);g.rotation.z=(random()-.5)*.24;structures.add(g);box(12,7,29,metal,0,0,0,g);box(13,1,31,edge,0,4,0,g);for(let j=0;j<4;j++){box(.3,8,30,dark,-5+j*3,0,0,g);box(1.5,.15,3,glow,-4+j*2.6,3.6,13,g)}box(2,22,2,edge,0,13,-8,g);box(26,.35,9,mat('#294956'),0,18,-8,g);for(let k=-12;k<13;k+=3)box(.1,.08,9,edge,k,18.3,-8,g)}
-for(let i=0;i<5;i++){const arch=new THREE.Mesh(new THREE.TorusGeometry(48+i*2,1.2,8,80,Math.PI*1.55),metal);arch.position.set(-10,-22,-110-i*165);arch.rotation.z=.2+i*.15;scene.add(arch);const arch2=new THREE.Mesh(new THREE.TorusGeometry(48+i*2,.1,6,80,Math.PI*1.55),glow);arch2.position.copy(arch.position);arch2.position.z+=1.1;arch2.rotation.copy(arch.rotation);scene.add(arch2)}
-for(let i=0;i<75;i++){const a=box(random()*2+.3,random()*2+.4,random()*3+.5,i%3?metal:orange,(random()-.5)*160,-8-random()*35,40-random()*900);a.rotation.set(random()*3,random()*3,random()*3)}
-// Robot R-07: articulated limbs, ceramic shell, illuminated visor and jet pack.
-const robot=new THREE.Group();scene.add(robot);const body=new THREE.Group();robot.add(body);
-box(.95,.85,.63,cream,0,1.08,0,body);box(.73,.28,.05,orange,0,1.25,.34,body);box(.4,.24,.08,dark,0,1.04,-.34,body);box(.16,.06,.03,glow,0,1.1,-.395,body);
-const head=new THREE.Group();head.position.y=1.85;body.add(head);box(1.12,.69,.76,cream,0,0,0,head);box(.95,.4,.05,black,0,-.01,-.405,head);box(.25,.095,.025,glow,-.23,.005,-.44,head);box(.25,.095,.025,glow,.23,.005,-.44,head);box(.4,.09,.8,orange,0,.38,0,head);cylinder(.035,.035,.36,edge,.36,.52,0,head);const antenna=new THREE.Mesh(new THREE.SphereGeometry(.065,8,8),glow);antenna.position.set(.36,.72,0);head.add(antenna);
-const limbs=[];for(const sign of[-1,1]){const arm=new THREE.Group();arm.position.set(sign*.7,1.35,0);body.add(arm);cylinder(.18,.18,.15,dark,0,0,0,arm);box(.25,.5,.28,cream,0,-.3,0,arm);box(.26,.17,.29,orange,0,-.58,0,arm);limbs.push(arm);const leg=new THREE.Group();leg.position.set(sign*.28,.69,0);robot.add(leg);box(.26,.41,.3,dark,0,-.16,0,leg);box(.32,.3,.37,cream,0,-.36,0,leg);box(.4,.17,.6,edge,0,-.55,-.1,leg);limbs.push(leg);cylinder(.16,.2,.65,metal,sign*.31,1.04,.46,body)}
-const jets=[];for(const x of[-.31,.31]){const jet=new THREE.Mesh(new THREE.ConeGeometry(.14,.7,12),new THREE.MeshBasicMaterial({color:0x9fffe1,transparent:true,opacity:.8}));jet.position.set(x,.36,.46);jet.rotation.z=Math.PI;body.add(jet);jets.push(jet)}
-const platforms=[],hazards=[],pickups=[],particles=[];const track=new THREE.Group();scene.add(track);
-function platform(z,len,index){const g=new THREE.Group();g.position.z=z;track.add(g);box(10,.8,len,metal,0,-.45,0,g);box(10.3,.16,len,edge,0,-.08,0,g);box(9.6,.06,len-.3,dark,0,.035,0,g);for(let lane=-1;lane<=1;lane++)box(2.92,.07,len-.5,metal,lane*3.05,.075,0,g);for(let s of[-1,1]){box(.12,.09,len-.2,glow,s*4.85,.13,0,g);box(.5,.45,len,edge,s*5,-.26,0,g);for(let zz=-len/2+1;zz<len/2;zz+=4){box(.6,.08,.5,orange,s*4.4,.13,zz,g);box(.16,.6,.6,dark,s*5.16,-.25,zz,g)}}for(let zz=-len/2;zz<len/2;zz+=3){box(9.3,.025,.035,edge,0,.12,zz,g)}if(index%4===0){for(let s of[-1,1]){box(.4,6,.5,metal,s*5.3,2.6,0,g);box(.13,2,.55,glow,s*5.3,3,0,g)}box(11.1,.55,.6,metal,0,5.55,0,g);box(3,.06,.66,orange,0,5.88,0,g)}platforms.push({z,len,g,moving:index>5&&index%9===6,base:z});return g}
-platform(5,32,0);
-for(let i=1;i<=32;i++){const z=-20-(i-1)*25;const len=i<4?23:18+(i%3);platform(z,len,i);const lane=(i*7)%3-1;if(i>1){const type=i%5===0?'laser':i%4===0?'drone':'crate';const g=new THREE.Group();g.position.set(lane*3,0,z);track.add(g);if(type==='crate'){box(1.6,1.05,1.5,orange,0,.55,0,g);box(1.7,.12,1.6,edge,0,1.12,0,g);for(let x of[-.6,.6])box(.12,1,1.54,dark,x,.56,0,g)}else if(type==='laser'){box(.22,2.7,.4,edge,-1.25,1.35,0,g);box(.22,2.7,.4,edge,1.25,1.35,0,g);box(2.5,.18,.15,red,0,1.5,0,g);box(2.5,.18,.15,red,0,2.1,0,g)}else{box(1,.45,1,metal,0,1.2,0,g);box(.6,.17,.05,red,0,1.2,.53,g);for(let s of[-1,1]){box(.8,.1,.15,edge,s*.65,1.25,0,g);cylinder(.35,.35,.07,dark,s*.9,1.25,0,g)}}hazards.push({g,type,z,lane,hit:false,index:i})}
-const coinLane=i%4===0?lane:((i+1)%3-1);for(let j=0;j<3;j++){const c=new THREE.Mesh(new THREE.OctahedronGeometry(.29),mat('#ffbf78',.7,.25,0xd47c26));c.position.set(coinLane*3,1.25,z+6-j*3);track.add(c);pickups.push({mesh:c,z:c.position.z,x:c.position.x,taken:false})}
-if(i===11||i===22){const cp=new THREE.Mesh(new THREE.TorusGeometry(3.4,.09,8,48),glow);cp.position.set(0,3.4,z+6);track.add(cp)} }
-const finish=new THREE.Group();finish.position.set(0,0,-806);scene.add(finish);platform(-815,30,33);for(const x of[-4,4])box(.8,10,.8,cream,x,5,0,finish);box(8.8,.8,.8,orange,0,10,0,finish);const portal=new THREE.Mesh(new THREE.TorusGeometry(3.4,.18,12,64),glow);portal.position.y=4;finish.add(portal);
-const powerups=[];for(const [index,type,color] of[[6,'shield',0x77ddff],[10,'magnet',0xcb9aff],[15,'shield',0x77ddff],[19,'magnet',0xcb9aff],[25,'shield',0x77ddff],[29,'magnet',0xcb9aff]]){const g=new THREE.Group();g.position.set(0,1.35,-20-(index-1)*25+4);const orb=new THREE.Mesh(new THREE.IcosahedronGeometry(.4,1),new THREE.MeshStandardMaterial({color,emissive:color,emissiveIntensity:1.4,metalness:.5,roughness:.3}));g.add(orb);const ring=new THREE.Mesh(new THREE.TorusGeometry(.6,.04,6,24),new THREE.MeshBasicMaterial({color}));ring.rotation.x=Math.PI/2;g.add(ring);track.add(g);powerups.push({g,type,taken:false})}
-const shieldShell=new THREE.Mesh(new THREE.SphereGeometry(1.5,24,16),new THREE.MeshBasicMaterial({color:0x80e6ff,transparent:true,opacity:.12,wireframe:true}));shieldShell.position.y=1;robot.add(shieldShell);shieldShell.visible=false;
-let shield=0,magnet=0,lastSector=0;
-let mode='intro' ,prevMode='intro',time=0,elapsed=0,z=5,x=0,y=.18,vy=0,lane=0,jumps=0,grounded=true,slide=0,dash=0,dashCd=0,health=3,cells=0,combo=0,invincible=0,checkpoint=5,best=0,toastTimer=0,muted=false,audio;
-try{best=Number(localStorage.getItem('orbit-zero-best')||0)}catch{}
-const keys={};function beep(freq=440,duration=.08,type='sine',volume=.035){if(muted)return;try{audio??=new(window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume();const o=audio.createOscillator(),g=audio.createGain();o.type=type;o.frequency.setValueAtTime(freq,audio.currentTime);o.frequency.exponentialRampToValueAtTime(freq*.6,audio.currentTime+duration);g.gain.setValueAtTime(volume,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+duration);o.connect(g).connect(audio.destination);o.start();o.stop(audio.currentTime+duration)}catch{}}
-function toast(t){$('toast').textContent=t;$('toast').style.opacity=1;toastTimer=3}
-function emit(px,py,pz,color,n=10){for(let i=0;i<n;i++){const mesh=new THREE.Mesh(new THREE.BoxGeometry(.08,.08,.08),new THREE.MeshBasicMaterial({color}));mesh.position.set(px,py,pz);scene.add(mesh);particles.push({mesh,v:new THREE.Vector3((Math.random()-.5)*5,Math.random()*4,(Math.random()-.5)*5),life:.6})}}
-function start(){mode='running';document.body.classList.add('playing');$('modal').classList.add('hidden');$('status').textContent='UPLINK SEARCH';toast('A / D 移动 · 空格二段跳 · 收集能量，寻找信号');beep(550,.2)}
-function reset(fromCheckpoint=false){shield=0;magnet=0;for(const h of hazards)h.hit=false;if(!fromCheckpoint){checkpoint=5;elapsed=0;cells=0;lastSector=0;for(const p of powerups){p.taken=false;p.g.visible=true}for(const c of pickups){c.taken=false;c.mesh.visible=true}for(const h of hazards)h.hit=false}z=checkpoint;x=0;lane=0;y=.18;vy=0;health=3;jumps=0;grounded=true;slide=dash=dashCd=0;invincible=2;combo=0;start();if(fromCheckpoint)toast('检查点恢复 · 机体修复完成')}
-function action(a){if(a==='start'){if(mode==='intro')start();return}if(mode!=='running')return;if(a==='left')lane=Math.max(-1,lane-1);if(a==='right')lane=Math.min(1,lane+1);if(a==='jump'&&jumps<2){vy=jumps===0?8.8:8.1;grounded=false;jumps++;slide=0;beep(jumps===2?700:440);emit(x,y+.3,z,0xa0ffe0,8)}if(a==='slide'&&grounded){slide=.85;beep(160,.15,'triangle')}if(a==='dash'&&dashCd<=0){dash=.38;dashCd=3;invincible=Math.max(invincible,.5);beep(180,.3,'sawtooth',.02);toast('离子冲刺 · 短暂无敌')}}
-function pause(help=false){if(mode==='paused'){resume();return}if(mode==='over'||mode==='won')return;prevMode=mode;mode='paused';$('modal').classList.remove('hidden');$('modal-kicker').textContent=help?'EXPLORER FIELD MANUAL':'SYSTEM PAUSED';$('modal-title').textContent=help?'出发前，了解自己。':'短暂休眠。';$('modal-text').textContent=help?'A / D 或 ← / →：切换跑道\n空格 / W / ↑：跳跃，再按一次二段跳\nShift：离子冲刺，短暂无敌，3 秒冷却\nS / ↓：滑铲穿过激光门\n避开货箱、巡逻无人机和断桥。冲刺可穿越危险。\n蓝色球：护盾；紫色球：10 秒磁力收集。\n反应堆区域为低重力，跳跃滞空更久。\n每 800 米激活检查点并修复机体；抵达 2400 米完成任务。':'信号会等你。准备好了就继续前进。';$('result').innerHTML='';$('resume').innerHTML='继续任务 <span>↗</span>';$('restart').textContent='重新出发'}
-function resume(){mode=prevMode;$('modal').classList.add('hidden')}
-function end(won){mode=won?'won':'over';const distance=Math.min(2400,Math.floor((5-z)*3));best=Math.max(best,distance);try{localStorage.setItem('orbit-zero-best',String(best))}catch{}$('modal').classList.remove('hidden');$('modal-kicker').textContent=won?'TRANSMISSION RESTORED':'SIGNAL INTERRUPTED';$('modal-title').textContent=won?'地球，收到。':'还有下一次启程。';$('modal-text').textContent=won?'你穿越了寂静的空间站。R-07 的信号，终于抵达了家。':`机体离线。${checkpoint<5?'最近的检查点已经保存。':'调整节奏，二段跳和冲刺可以帮你越过断桥。'}`;$('result').innerHTML=`<div class="result-grid"><div><b>${distance}</b><span>航行距离 / M</span></div><div><b>${cells}</b><span>能量收集</span></div><div><b>${Math.floor(elapsed)}s</b><span>任务时间</span></div></div><span class="tiny">BEST DISTANCE — ${best} M</span>`;$('resume').innerHTML=won?'再次启程 <span>↗</span>':'从检查点继续 <span>↗</span>';$('restart').textContent='从头开始';beep(won?880:110,.6,'triangle')}
-function damage(fall=false){if(invincible>0&&!fall)return;if(shield>0&&!fall){shield=0;invincible=1.7;toast('能量护盾已抵挡一次撞击');beep(800,.2);return}health--;combo=0;invincible=1.7;$('damage-flash').style.opacity=.65;setTimeout(()=>$('damage-flash').style.opacity=0,180);beep(90,.22,'sawtooth');emit(x,y+1,z,0xff9458,15);if(health<=0){end(false);return}if(fall){z=checkpoint;x=0;lane=0;y=.18;vy=0;jumps=0;grounded=true;toast('坠落保护已触发 · 返回检查点')}else toast('机体受损 · 冲刺可以抵御碰撞')}
-$('start').onclick=start;$('pause').onclick=()=>pause();$('help').onclick=()=>pause(true);$('sound').onclick=()=>{muted=!muted;$('sound').textContent=muted?'♪̸':'♫';$('sound').setAttribute('aria-label',muted?'开启声音':'关闭声音');if(!muted)beep(550)};$('resume').onclick=()=>{if(mode==='over')reset(true);else if(mode==='won')reset();else resume()};$('restart').onclick=()=>reset();
-window.addEventListener('keydown',e=>{if(['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(e.code==='Escape'){pause();return}if(mode==='intro'&&e.code==='Space'){start();return}const map={KeyA:'left',ArrowLeft:'left',KeyD:'right',ArrowRight:'right',Space:'jump',KeyW:'jump',ArrowUp:'jump',KeyS:'slide',ArrowDown:'slide',ShiftLeft:'dash',ShiftRight:'dash'};action(map[e.code])});window.addEventListener('keyup',e=>keys[e.code]=false);window.addEventListener('blur',()=>{if(mode==='running')pause()});document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('pointerdown',e=>{e.preventDefault();action(b.dataset.action)}));
-let touchX=0,touchY=0;$('world').addEventListener('touchstart',e=>{touchX=e.touches[0].clientX;touchY=e.touches[0].clientY},{passive:true});$('world').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>25)action(dx>0?'right':'left');else if(Math.abs(dy)>25)action(dy>0?'slide':'jump')},{passive:true});
-const camTarget=new THREE.Vector3(),lookTarget=new THREE.Vector3();const clock=new THREE.Clock();
-function tick(){requestAnimationFrame(tick);const dt=Math.min(clock.getDelta(),.035);if(mode!=='paused'){time+=dt;toastTimer-=dt;if(toastTimer<0)$('toast').style.opacity=0;}
-if(mode==='running'){elapsed+=dt;magnet=Math.max(0,magnet-dt);dash=Math.max(0,dash-dt);dashCd=Math.max(0,dashCd-dt);slide=Math.max(0,slide-dt);invincible=Math.max(0,invincible-dt);const speed=dash>0?38:13+Math.min(6,(5-z)/130);const oldZ=z;z-=speed*dt;x=THREE.MathUtils.damp(x,lane*3,13,dt);const oldY=y;vy-=(z<-262&&z>-528?12:19)*dt;y+=vy*dt;let support=false;for(const p of platforms){if(z>=p.z-p.len/2&&z<=p.z+p.len/2&&Math.abs(x-p.g.position.x)<5){support=true;break}}if(support&&y<=.18&&oldY>=.05&&vy<=0){y=.18;vy=0;grounded=true;jumps=0}else if(!support||y>.2){grounded=false;if(jumps===0)jumps=1}if(y<-9){damage(true)}
-for(const h of hazards){if(h.type==='drone'){h.g.position.x=Math.sin(time*1.3+h.index)*3;h.g.position.y=Math.sin(time*3+h.index)*.15}if(!h.hit&&Math.abs(z-h.z)<1.1&&Math.abs(x-h.g.position.x)<1.05){const hit=h.type==='laser'?(slide<=0&&y<2.2&&y+2>1.4):h.type==='crate'?y<1.12:y<1.7&&y+1.7>.9;if(hit){h.hit=true;if(dash>0){emit(h.g.position.x,1,h.z,0xa7f6db,20);toast('穿越成功 · 完美冲刺');combo+=1}else damage()}}}
-for(const c of pickups){if(!c.taken&&Math.abs(z-c.z)<1.2&&Math.abs(x-c.x)<(magnet>0?7:1)&&Math.abs(y+.95-c.mesh.position.y)<1.6){c.taken=true;c.mesh.visible=false;cells++;combo++;beep(600+Math.min(combo,12)*40,.08);emit(c.x,1.3,c.z,0xffc580,7);if(cells%15===0){health=Math.min(3,health+1);toast('15 枚能量补给 · 机体修复 +1')}}}
-for(const p of powerups){if(!p.taken&&Math.abs(z-p.g.position.z)<1.3&&Math.abs(x)<1&&Math.abs(y)<2.5){p.taken=true;p.g.visible=false;if(p.type==='shield'){shield=1;toast('能量护盾 · 抵挡下一次碰撞')}else{magnet=10;toast('磁力场启动 · 10 秒跨跑道收集')}beep(950,.2)}}
-for(const cp of[-262,-528]){if(oldZ>cp&&z<=cp){checkpoint=cp===-528?-540:cp-1;health=3;toast('检查点已激活 · 机体完整修复');beep(1000,.3);}}
-if(z<=-795&&mode==='running')end(true);const dist=Math.min(2400,Math.max(0,Math.floor((5-z)*3)));$('distance').textContent=String(dist).padStart(4,'0');$('cells').textContent=String(cells).padStart(2,'0');$('hearts').textContent='▰ '.repeat(health)+'▱ '.repeat(3-health);$('progress-fill').style.width=`${dist/24}%`;$('progress-text').textContent=`${dist} / 2400 M`;$('dash-fill').style.width=`${(1-dashCd/3)*100}%`;$('dash-status').textContent=dashCd>0?dashCd.toFixed(1)+' S':'READY';$('combo').textContent=combo>=3?`◇ ${combo} CHAIN`:'';const sec=dist<800?0:dist<1600?1:2;$('sector').textContent=['01 — THE OUTER RING','02 — REACTOR GARDEN','03 — THE LAST UPLINK'][sec];$('checkpoint-label').textContent=['前往外环检查点','穿越反应堆废墟','抵达最后的通讯塔'][sec];if(sec!==lastSector){lastSector=sec;toast(sec===1?'进入反应堆 · 低重力区域，跳跃滞空更久':'最后的通讯塔 · 全速前进！')}scene.fog.color.set(['#233d43','#253f40','#414844'][sec]);}
-shieldShell.visible=shield>0;shieldShell.rotation.y=time*.5;for(const p of powerups)p.g.rotation.y=time;
-if(mode!=='paused'){for(const c of pickups){if(!c.taken){c.mesh.rotation.y=time*1.6;c.mesh.position.y=1.3+Math.sin(time*2+c.z)*.14}}for(const p of platforms){if(p.moving){p.g.position.x=Math.sin(time*.8+p.z)*.8;p.g.children[0].material=metal}}portal.rotation.z=time*.4;for(let i=particles.length-1;i>=0;i--){const p=particles[i];p.life-=dt;p.mesh.position.addScaledVector(p.v,dt);p.mesh.scale.setScalar(Math.max(0,p.life/.6));if(p.life<=0){scene.remove(p.mesh);p.mesh.geometry.dispose();p.mesh.material.dispose();particles.splice(i,1)}}}
-const running=mode!=='intro'&&!(mode==='paused'&&prevMode==='intro');robot.position.set(x,y,z);if(mode!=='paused'){robot.rotation.y=running?(lane*3-x)*-.07:Math.PI*.95;const stride=running&&grounded?Math.sin(time*17)*.58:Math.sin(time*2)*.04;limbs[0].rotation.x=stride;limbs[2].rotation.x=-stride;limbs[1].rotation.x=-stride;limbs[3].rotation.x=stride;body.position.y=grounded?Math.sin(time*(running?34:2))*.035:0;body.rotation.x=slide>0?-1.05:dash>0?-.3:0;robot.scale.setScalar(running?1:1.35);robot.scale.y*=slide>0?.5:1;robot.visible=invincible<=0||Math.floor(time*15)%2===0||dash>0;head.rotation.y=running?Math.sin(time*.8)*.05:Math.sin(time*.6)*.16;jets.forEach(j=>{j.visible=!grounded||dash>0;j.scale.y=.7+Math.random()*.6})}
-if(!running){camTarget.set(11,6.5,18);lookTarget.set(-9,1,5)}else{camTarget.set(x*.45+3,6.2,z+12.5);lookTarget.set(x*.4,.9,z-12)}camera.position.lerp(camTarget,running?.065:.03);camera.lookAt(lookTarget);if(dash>0)camera.fov=THREE.MathUtils.lerp(camera.fov,64,.1);else camera.fov=THREE.MathUtils.lerp(camera.fov,55,.06);camera.updateProjectionMatrix();sun.position.set(x-35,65,z-65);sun.target.position.set(x,0,z-10);planet.position.set(running?170:-380,105,z-490);halo.position.copy(planet.position);ring.position.copy(planet.position);renderer.render(scene,camera)}
-camera.position.set(11,6.5,18);tick();window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
-// Read-only telemetry for verification and troubleshooting.
-window.__orbit={get state(){return{mode,z,x,y,health,cells,checkpoint,distance:Math.max(0,Math.floor((5-z)*3)),platforms:platforms.length,hazards:hazards.length,renderer:renderer.info.render}}};
+
+const gameContainer = document.querySelector('#game');
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+} catch (error) {
+  gameContainer.innerHTML = '<div style="padding:10vw;color:white;background:#071016;font:20px sans-serif"><h1>ORBIT RUNNER</h1><p>此浏览器未能启动 3D 渲染。请在 Chrome / Edge 中开启硬件加速后重试。</p><button onclick="location.reload()">重新连接空间站</button></div>';
+  throw error;
+}
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.23;
+gameContainer.append(renderer.domElement);
+renderer.domElement.setAttribute('aria-label', '废弃太空站 3D 跑酷场景');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x060d17);
+scene.fog = new THREE.FogExp2(0x0a1727, 0.009);
+const camera = new THREE.PerspectiveCamera(57, innerWidth / innerHeight, 0.1, 650);
+scene.add(new THREE.HemisphereLight(0xc0efff, 0x212844, 2.6));
+const sunlight = new THREE.DirectionalLight(0xdcecff, 3.2);
+sunlight.position.set(15, 25, 8); sunlight.castShadow = true;
+sunlight.shadow.mapSize.set(1024, 1024);
+Object.assign(sunlight.shadow.camera, { left: -22, right: 22, top: 22, bottom: -22, near: 1, far: 70 });
+sunlight.shadow.bias = -0.001;
+scene.add(sunlight, sunlight.target);
+const rim = new THREE.DirectionalLight(0x4084ff, 2.6); rim.position.set(-15, 9, -25); scene.add(rim);
+const robotLight = new THREE.PointLight(0x80dcff, 4, 9, 2); scene.add(robotLight);
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.38, 0.42, 1.05);
+composer.addPass(bloom); composer.addPass(new OutputPass());
+let highQuality = true;
+const world = createWorld(THREE, scene);
+const robot = createRobot(THREE, scene);
+const particles = createParticles(THREE, scene);
+const audio = new AudioSystem();
+const keys = new Set();
+let mode = 'menu', challenge = false, time = 0, worldTime = 0;
+let cells = 0, cores = 0, health = 3, checkpoint = 0, deaths = 0;
+let pulseCooldown = 0, invulnerable = 0, respawnTimer = 0, lastZone = '', goalWarning = 0;
+let cameraYaw = 0, cameraDistance = 9.5, drag = null, muted = false;
+let best = null, winTime = 0, cameraShake = 0;
+const readStorage = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
+const saveStorage = (key, value) => { try { localStorage.setItem(key, value); } catch { /* private browsing */ } };
+muted = readStorage('orbit-muted') === '1'; audio.setMuted(muted);
+const controller = new Controller(world.platforms, onAction);
+controller.reset({ x: 4.2, y: 0, z: 4.8 });
+const ui = createUI({ start, resume, restart: () => start(challenge ? 'challenge' : 'explore'), mute: toggleMute, quality: setQuality, menu, pause });
+ui.setMuted(muted);
+ui.showScreen('menu');
+
+const pulseRing = new THREE.Mesh(new THREE.TorusGeometry(1, 0.04, 8, 80), new THREE.MeshBasicMaterial({ color: 0x82eaff, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false }));
+pulseRing.rotation.x = Math.PI / 2; scene.add(pulseRing);
+let pulseAge = 10;
+const shadow = new THREE.Mesh(new THREE.CircleGeometry(0.64, 32), new THREE.MeshBasicMaterial({ color: 0x01060a, transparent: true, opacity: 0.28, depthWrite: false }));
+shadow.rotation.x = -Math.PI / 2; scene.add(shadow);
+
+function onAction(name) {
+  audio.play(name);
+  if (name === 'jump' || name === 'doubleJump' || name === 'dash') {
+    particles.burst(controller.position, name === 'dash' ? 0x7effea : 0x89caff, name === 'doubleJump' ? 26 : 13, 3);
+  }
+  if (name === 'land') particles.burst(controller.position, 0x889fac, 8, 1.4);
+}
+function start(selectedMode = 'explore') {
+  audio.unlock(); audio.play('start');
+  mode = 'playing'; challenge = selectedMode === 'challenge';
+  time = 0; cells = 0; cores = 0; health = 3; checkpoint = 0; deaths = 0;
+  pulseCooldown = 0; invulnerable = 1; respawnTimer = 0; cameraYaw = 0; lastZone = ''; goalWarning = 0;
+  best = Number(readStorage(`orbit-best-${selectedMode}`)) || null;
+  keys.clear();
+  for (const item of world.pickups) { item.collected = false; item.mesh.visible = true; }
+  for (const hazard of world.hazards) hazard.disabledUntil = 0;
+  controller.reset(world.checkpoints[0]?.spawn || { x: 0, y: 0.05, z: 4 });
+  robot.group.position.copy(controller.position);
+  camera.position.set(controller.position.x, controller.position.y + 5.3, controller.position.z + cameraDistance);
+  ui.showScreen('playing');
+  document.activeElement?.blur();
+  ui.toast(challenge ? '计时挑战已开始 · 收集 3 枚核心，抵达逃生舱' : '欢迎回来，R-07 · 跟随青色航灯寻找 3 枚反应堆核心');
+}
+function pause() {
+  if (mode !== 'playing') return;
+  mode = 'paused'; keys.clear(); ui.showScreen('paused'); audio.update(0, false, false);
+}
+function resume() {
+  if (mode !== 'paused') return;
+  mode = 'playing'; keys.clear(); ui.showScreen('playing'); document.activeElement?.blur();
+}
+function menu() {
+  mode = 'menu'; keys.clear();
+  respawnTimer = 0; invulnerable = 0; cameraShake = 0;
+  controller.reset({ x: 4.2, y: 0, z: 4.8 });
+  ui.showScreen('menu'); audio.update(0, false, false);
+}
+function toggleMute() { muted = !muted; audio.setMuted(muted); ui.setMuted(muted); saveStorage('orbit-muted', muted ? '1' : '0'); }
+function setQuality(value) {
+  highQuality = value === 'high'; renderer.shadowMap.enabled = highQuality;
+  renderer.setPixelRatio(Math.min(devicePixelRatio, highQuality ? 1.5 : 1)); resize();
+}
+function doPulse() {
+  if (pulseCooldown > 0) { ui.toast(`能量脉冲充能中 · ${Math.ceil(pulseCooldown)} 秒`); return; }
+  pulseCooldown = 6; pulseAge = 0;
+  pulseRing.position.set(controller.position.x, controller.position.y + 0.8, controller.position.z);
+  particles.burst(controller.position, 0x75ffdd, 45, 10); audio.play('pulse');
+  let disabled = 0;
+  for (const hazard of world.hazards) {
+    if (hazard.mesh.position.distanceTo(new THREE.Vector3(controller.position.x, controller.position.y, controller.position.z)) < 13) {
+      hazard.disabledUntil = worldTime + 3.2; disabled++;
+    }
+  }
+  ui.toast(disabled ? `EMP 脉冲 · ${disabled} 处机关暂时失效` : 'EMP 脉冲已释放 · 靠近机关时可使其短暂失效');
+}
+function respawn(reason = 'fall') {
+  if (respawnTimer > 0 || mode !== 'playing') return;
+  deaths++; health = reason === 'hazard' ? health - 1 : health;
+  if (health <= 0) health = 3;
+  if (challenge) time += 5;
+  respawnTimer = 0.48; cameraShake = 0.28;
+  particles.burst(controller.position, 0xff9861, 34, 5);
+  audio.play(reason === 'hazard' ? 'hurt' : 'death');
+  ui.toast(reason === 'manual' ? '导航重置 · 返回最近检查点' : `信号恢复 · 返回最近检查点${challenge ? '（+5 秒）' : ''}`);
+}
+function complete() {
+  mode = 'won'; winTime = time; keys.clear(); audio.play('win');
+  if (!best || time < best) { best = time; saveStorage(`orbit-best-${challenge ? 'challenge' : 'explore'}`, time); }
+  particles.burst(controller.position, 0xffd488, 90, 9);
+  ui.showScreen('won', { time, cells, cores, deaths, best, challenge });
+}
+function inputKey(code, down, repeat = false) {
+  if (down) {
+    if ((code === 'Escape' || code === 'KeyP') && !repeat) { mode === 'playing' ? pause() : resume(); return; }
+    if (mode !== 'playing') return;
+    keys.add(code);
+    if (!repeat && code === 'Space') controller.jump();
+    if (!repeat && (code === 'ShiftLeft' || code === 'ShiftRight')) controller.dash();
+    if (!repeat && code === 'KeyE') doPulse();
+    if (!repeat && code === 'KeyR') respawn('manual');
+    if (!repeat && code === 'KeyM') toggleMute();
+  } else keys.delete(code);
+}
+window.addEventListener('keydown', event => {
+  if (!document.querySelector('[data-role="help"]').classList.contains('is-hidden')) return;
+  if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.code) && mode === 'playing') event.preventDefault();
+  inputKey(event.code, true, event.repeat);
+});
+window.addEventListener('keyup', event => inputKey(event.code, false));
+window.addEventListener('orbit-control', event => inputKey(event.detail.key, event.detail.down));
+window.addEventListener('orbit-pause', pause);
+window.addEventListener('blur', () => { keys.clear(); pause(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
+renderer.domElement.addEventListener('pointerdown', event => {
+  if (mode === 'playing') { drag = { x: event.clientX, id: event.pointerId }; renderer.domElement.setPointerCapture(event.pointerId); }
+});
+renderer.domElement.addEventListener('pointermove', event => {
+  if (!drag) return;
+  cameraYaw -= (event.clientX - drag.x) * 0.005; drag.x = event.clientX;
+});
+renderer.domElement.addEventListener('pointerup', () => { drag = null; });
+renderer.domElement.addEventListener('pointercancel', () => { drag = null; });
+renderer.domElement.addEventListener('wheel', event => { if (mode === 'playing') { cameraDistance = THREE.MathUtils.clamp(cameraDistance + event.deltaY * 0.008, 5.5, 15); event.preventDefault(); } }, { passive: false });
+
+const tmpPosition = new THREE.Vector3(), cameraTarget = new THREE.Vector3();
+const uiState = {};
+let hudTimer = 0;
+function simulate(dt) {
+  worldTime += dt; world.update(worldTime, dt);
+  if (mode !== 'playing') return;
+  time += dt;
+  invulnerable = Math.max(0, invulnerable - dt);
+  pulseCooldown = Math.max(0, pulseCooldown - dt);
+  goalWarning = Math.max(0, goalWarning - dt);
+  if (respawnTimer > 0) {
+    respawnTimer -= dt;
+    if (respawnTimer <= 0) {
+      controller.reset(world.checkpoints[checkpoint].spawn);
+      invulnerable = 1.8;
+      particles.burst(controller.position, 0x72f7ff, 24, 3);
+    }
+    return;
+  }
+  const horizontal = (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0);
+  const forward = (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0) - (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0);
+  const lowGravity = controller.position.z < -143;
+  controller.step(dt, { x: horizontal * Math.cos(cameraYaw) - forward * Math.sin(cameraYaw), z: -forward * Math.cos(cameraYaw) - horizontal * Math.sin(cameraYaw), sprint: keys.has('ControlLeft') || keys.has('ControlRight') }, lowGravity);
+  const p = controller.position;
+  tmpPosition.set(p.x, p.y + 0.9, p.z);
+  if (p.y < -15) { respawn(); return; }
+  for (const hazard of world.hazards) {
+    const disabled = hazard.disabledUntil > worldTime;
+    if (disabled) { hazard.mesh.visible = false; hazard.pulseWasHidden = true; }
+    else if (hazard.pulseWasHidden) { hazard.mesh.visible = hazard.type === 'crusher' || hazard.active; hazard.pulseWasHidden = false; }
+    if (invulnerable <= 0 && !disabled && intersectsHazard(p, hazard)) { respawn('hazard'); break; }
+  }
+  for (const pickup of world.pickups) {
+    if (pickup.collected || pickup.mesh.position.distanceTo(tmpPosition) > (pickup.type === 'core' ? 1.7 : 1.25)) continue;
+    pickup.collected = true; pickup.mesh.visible = false;
+    if (pickup.type === 'core') {
+      cores++; audio.play('core'); particles.burst(p, 0xffba60, 50, 6);
+      ui.toast(`反应堆核心 ${cores} / 3 已回收${cores === 3 ? ' · 逃生舱已解锁！' : ' · 继续向信号源前进'}`);
+    } else if (pickup.type === 'log') {
+      audio.play('checkpoint'); ui.toast(pickup.label || '航行日志：即使星光熄灭，也请继续向前。');
+    } else {
+      cells++; audio.play('cell'); particles.burst(pickup.mesh.position, 0x75f4ff, 10, 2);
+      if (cells % 10 === 0 && health < 3) { health++; ui.toast('收集 10 枚能量晶体 · 装甲修复 +1'); }
+    }
+  }
+  for (const point of world.checkpoints) {
+    if (point.index > checkpoint && point.spawn.distanceTo(new THREE.Vector3(p.x, p.y, p.z)) < 5) {
+      checkpoint = point.index; health = 3; audio.play('checkpoint');
+      particles.burst(p, 0x77ffd0, 38, 4); ui.toast(`检查点已保存 · ${point.name} · 装甲修复完成`);
+    }
+  }
+  if (world.goal.position.distanceTo(new THREE.Vector3(p.x, p.y, p.z)) < 3.2) {
+    if (cores >= world.totalCores) complete();
+    else if (goalWarning <= 0) { goalWarning = 5; ui.toast(`逃生舱等待供能 · 还需 ${world.totalCores - cores} 枚反应堆核心`); }
+  }
+  const zone = p.z < -143 ? '03 / 失重遗迹' : p.z < -70 ? '02 / 反应堆长廊' : '01 / 遗弃停泊港';
+  if (zone !== lastZone) {
+    if (lastZone && lowGravity) ui.toast('进入失重遗迹 · 重力减弱，空中滑行距离增加');
+    lastZone = zone;
+  }
+}
+function render(dt, elapsed) {
+  const p = controller.position;
+  robot.group.position.set(p.x, p.y, p.z);
+  robot.group.scale.setScalar(mode === 'menu' ? 1.35 : 1);
+  const speed = Math.hypot(controller.velocity.x, controller.velocity.z);
+  if (mode === 'menu') {
+    robot.group.rotation.y = Math.PI + 0.48;
+    camera.position.set(7.6 + Math.sin(elapsed * 0.12) * 0.8, 4.2, 11.8);
+    camera.lookAt(-3.7, 1.6, -3);
+  } else {
+    const angle = Math.atan2(-controller.facing.x, -controller.facing.z);
+    robot.group.rotation.y += Math.atan2(Math.sin(angle - robot.group.rotation.y), Math.cos(angle - robot.group.rotation.y)) * Math.min(1, dt * 14);
+    const distance = controller.dashRemaining > 0 ? cameraDistance + 1.4 : cameraDistance;
+    cameraTarget.set(p.x + Math.sin(cameraYaw) * distance, p.y + distance * 0.48 + 1.3, p.z + Math.cos(cameraYaw) * distance);
+    camera.position.lerp(cameraTarget, 1 - Math.exp(-dt * 6));
+    camera.lookAt(p.x - Math.sin(cameraYaw) * 2, p.y + 1.1, p.z - Math.cos(cameraYaw) * 2);
+    if (cameraShake > 0) {
+      cameraShake -= dt; camera.position.x += (Math.random() - 0.5) * cameraShake;
+      camera.position.y += (Math.random() - 0.5) * cameraShake;
+    }
+  }
+  robot.update(dt, { speed: mode === 'playing' ? speed : 0, grounded: mode === 'menu' || controller.grounded, jumps: controller.jumps, dashing: controller.dashRemaining > 0, time: elapsed, lowGravity: p.z < -143, invulnerable });
+  robot.group.visible = respawnTimer <= 0;
+  if (mode === 'playing' && controller.dashRemaining > 0) particles.burst(p, 0x73ffff, 3, 1.8);
+  robotLight.position.set(p.x, p.y + 2, p.z + 1);
+  sunlight.position.set(p.x + 15, p.y + 25, p.z + 8); sunlight.target.position.set(p.x, p.y, p.z - 5);
+  let shadowTop = -100;
+  for (const platform of world.platforms) {
+    const q = platform.mesh.position, top = q.y + platform.h / 2;
+    if (Math.abs(p.x - q.x) < platform.w / 2 && Math.abs(p.z - q.z) < platform.d / 2 && top <= p.y + 0.1) shadowTop = Math.max(shadowTop, top);
+  }
+  shadow.visible = shadowTop > -20; shadow.position.set(p.x, shadowTop + 0.03, p.z);
+  shadow.material.opacity = Math.max(0.06, 0.25 - (p.y - shadowTop) * 0.025);
+  shadow.scale.setScalar(1 + Math.min(8, p.y - shadowTop) * 0.1);
+  pulseAge += dt; pulseRing.visible = pulseAge < 0.8;
+  if (pulseRing.visible) { pulseRing.scale.setScalar(1 + pulseAge * 18); pulseRing.material.opacity = (1 - pulseAge / 0.8) * 0.8; }
+  particles.update(dt);
+  if (mode === 'playing') audio.update(speed, !controller.grounded, p.z < -143);
+  hudTimer += dt;
+  if (hudTimer > 0.06) {
+    hudTimer = 0;
+    Object.assign(uiState, { mode, zone: lastZone || '01 / 遗弃停泊港', progress: THREE.MathUtils.clamp((4 - p.z) / 225, 0, 1), time: mode === 'won' ? winTime : time, cells, cores, health, dash: 1 - controller.dashCooldown / 1.05, pulse: 1 - pulseCooldown / 6, checkpoint, speed, jumps: controller.jumps, lowGravity: p.z < -143, challenge, best });
+    ui.update(uiState);
+  }
+  if (highQuality) composer.render(); else renderer.render(scene, camera);
+}
+function resize() {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight);
+}
+window.addEventListener('resize', resize);
+const clock = new THREE.Clock(); let accumulator = 0, elapsed = 0;
+function frame() {
+  requestAnimationFrame(frame);
+  const dt = Math.min(clock.getDelta(), 0.05); elapsed += dt;
+  if (mode !== 'paused') {
+    accumulator += dt;
+    while (accumulator >= 1 / 120) { simulate(1 / 120); accumulator -= 1 / 120; }
+  }
+  render(mode === 'paused' ? 0 : dt, elapsed);
+}
+frame();
+
+// Development-only read-only inspection for reproducible browser verification.
+if (import.meta.env.DEV) {
+  window.__orbit = {
+    getState: () => ({ mode, position: { ...controller.position }, velocity: { ...controller.velocity }, grounded: controller.grounded, jumps: controller.jumps, time, cells, cores, checkpoint, deaths, health, pulseCooldown, dashCooldown: controller.dashCooldown, platforms: world.platforms.length, hazards: world.hazards.length, pickups: world.pickups.length, robotVisible: robot.group.visible }),
+    getRoute: () => world.platforms.filter(platform => platform.type !== 'bounce').map(platform => ({ x: platform.mesh.position.x, y: platform.mesh.position.y + platform.h / 2, z: platform.mesh.position.z, w: platform.w, d: platform.d })),
+  };
+}

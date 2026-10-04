@@ -1,0 +1,85 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "008-raccoon-nightmarket-skate",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "008",
+  "generation_turn_id": "01a1032e-726a-75fc-bed2-0d30c39c07f5",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+    "full_old_history_preserved": true,
+    "game_number": "008",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/002/manifest.json": "9cfb9cefd8b0b36c04a5f8a733b47c09aec4a448",
+      "experiments/page-857ec841-top50-gpt6astra/002/prompt.txt": "d7080f5cf684996d6b9f881809bb3c79fa680261",
+      "experiments/page-857ec841-top50-gpt6astra/002/provenance.json": "4ef3a3b859d3a26e57efa96ef25615bf92140a59",
+      "experiments/page-857ec841-top50-gpt6astra/002/release.json": "046a528bc21dba87079ad5e40034fc4a341f3584"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+    "source_and_published_blobs": {
+      "docs/games/008-raccoon-nightmarket-skate/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+      "docs/games/008-raccoon-nightmarket-skate/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+      "docs/games/008-raccoon-nightmarket-skate/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+      "docs/games/008-raccoon-nightmarket-skate/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/008-raccoon-nightmarket-skate/RELEASE.md": "8f5c093321d24f8d1e9dc14ab67e12eec538df61",
+      "games/008-raccoon-nightmarket-skate/dist/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+      "games/008-raccoon-nightmarket-skate/dist/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+      "games/008-raccoon-nightmarket-skate/dist/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+      "games/008-raccoon-nightmarket-skate/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/008-raccoon-nightmarket-skate/prompt.txt": "d7080f5cf684996d6b9f881809bb3c79fa680261",
+      "games/008-raccoon-nightmarket-skate/src/game.js": "2330495d7e715f15751ea5d0d7babe58bc668e40",
+      "games/008-raccoon-nightmarket-skate/src/index.html": "098458e19e15b6ac2e5e37bef93b205b5b844a77",
+      "games/008-raccoon-nightmarket-skate/src/style.css": "1422ca5c0254183f007fc511b87cb49bf6c4e4a9",
+      "games/008-raccoon-nightmarket-skate/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 6011,
+      "path": "engine.js",
+      "sha256": "a3fd616f791c09631c8fa440241ccab714e852b9d07d16ee09c78b68e08b1701"
+    },
+    {
+      "bytes": 33336,
+      "path": "game.js",
+      "sha256": "58a92c466370924eecea914c470370ffd5b962c8deaae81b7e724f239503d034"
+    },
+    {
+      "bytes": 8828,
+      "path": "index.html",
+      "sha256": "cf8e70ee54c6f29db1a7c388cfba5dfe6dbde07f0b77eed7d19a598c4a34caad"
+    },
+    {
+      "bytes": 19757,
+      "path": "style.css",
+      "sha256": "80e0c3efe7c9d2879f77f42a6c0ddbe3f89f7b950d8580f9085bfbb2c6372dc0"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "3c097a833847dcc4cdc138c78664020f9ec1dbbc3e4efb6913f33611c3988b0b",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1032e-532d-7657-b8e7-1d502129309c",
+  "title": "Rooftop Rascal — 浣熊夜行",
+  "url": "https://qzemi.cn/sentence-to-game/games/008-raccoon-nightmarket-skate/"
+}

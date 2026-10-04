@@ -1,0 +1,78 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "012-ghost-clocktower-escape",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "012",
+  "generation_turn_id": "01a103a8-c320-7705-94f5-71da6fda81e4",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "bf304f6d0c48c673d185729817be927b2dec452d",
+    "full_old_history_preserved": true,
+    "game_number": "012",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/006/manifest.json": "ba64b3e3f6223db94419f2a1959f5617ced9783f",
+      "experiments/page-857ec841-top50-gpt6astra/006/prompt.txt": "dfa071e0d4c8c37008544ed196b031e2a6b675c9",
+      "experiments/page-857ec841-top50-gpt6astra/006/provenance.json": "71ab395a07654e3e2f59713fc424ec00ec064096",
+      "experiments/page-857ec841-top50-gpt6astra/006/release.json": "ddf920426e656f3e8646d7bc13019b1b9f9c0bf3"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/bf304f6d0c48c673d185729817be927b2dec452d",
+    "source_and_published_blobs": {
+      "docs/games/012-ghost-clocktower-escape/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+      "docs/games/012-ghost-clocktower-escape/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+      "docs/games/012-ghost-clocktower-escape/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+      "docs/games/012-ghost-clocktower-escape/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+      "games/012-ghost-clocktower-escape/.gitignore": "9e58de6406e26a5bd58c79be1311f7b89e70a804",
+      "games/012-ghost-clocktower-escape/README.md": "f4445227c25d0b280f6460445277fa55e9e853a9",
+      "games/012-ghost-clocktower-escape/RELEASE.md": "d991c34622db0416df9397b362b209b6ad6c90bb",
+      "games/012-ghost-clocktower-escape/dist/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+      "games/012-ghost-clocktower-escape/dist/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+      "games/012-ghost-clocktower-escape/dist/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+      "games/012-ghost-clocktower-escape/dist/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+      "games/012-ghost-clocktower-escape/prompt.txt": "dfa071e0d4c8c37008544ed196b031e2a6b675c9",
+      "games/012-ghost-clocktower-escape/src/game.js": "5c2d971d2e5f07e0d45db5db42f1c45c5f4708a3",
+      "games/012-ghost-clocktower-escape/src/index.html": "21da107fed88ef45601324d96230dc8057c6a159",
+      "games/012-ghost-clocktower-escape/src/style.css": "848a5e5a4a7301cca825a182130fd469c75ba414",
+      "games/012-ghost-clocktower-escape/src/three.module.js": "f0f4a90230d0fdf77cde7da1a17ca79411bc7b94",
+      "games/012-ghost-clocktower-escape/verify.mjs": "54a8e15fb7b18ef477a7c284fcf774d0aba9dbf4"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 49248,
+      "path": "game.js",
+      "sha256": "a4088883227e1b0e8e3f8a72f5411a225715d628084ecc21d00964dcd21838e0"
+    },
+    {
+      "bytes": 5415,
+      "path": "index.html",
+      "sha256": "03248c8b852511231ab29fc99f2e5e01212a5ccf9c292dfeacb2666ee5513768"
+    },
+    {
+      "bytes": 18228,
+      "path": "style.css",
+      "sha256": "46746ab623b4dc650822b2781c407477a82e3411de7c89e7985386b7e75a7b9e"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "c4b8949928038679946f009174a844377273dcaede7803ca204f516089f4590c",
+  "thinking_requested": "ultra",
+  "thread_id": "01a103a8-a44b-7354-8355-96c6ba72c0bf",
+  "title": "幽时 · Hollow Hour — 钟楼逃脱",
+  "url": "https://qzemi.cn/sentence-to-game/games/012-ghost-clocktower-escape/"
+}

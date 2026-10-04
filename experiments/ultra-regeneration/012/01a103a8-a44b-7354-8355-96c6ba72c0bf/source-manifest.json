@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "bytes": 74,
+      "path": ".gitignore",
+      "sha256": "c146009891058637d72fefc12348a709babe97f45fa7ed2fbddc87086ea630c2"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "4ef8a4475cea1193a83bf650dbf03245dc5a5b58fa2a414556c1ffc61b9465af"
+    },
+    {
+      "bytes": 1267,
+      "path": "QA.md",
+      "sha256": "3c89a1f333b6a8e66bfb934fbff509349d8c69748778a134d86c1cb0b49d30de"
+    },
+    {
+      "bytes": 1422,
+      "path": "README.md",
+      "sha256": "c4966f97849372bcf30d6039c6104f06bfc42058faf133acd778bc757eacbd0b"
+    },
+    {
+      "bytes": 49248,
+      "path": "dist/game.js",
+      "sha256": "a4088883227e1b0e8e3f8a72f5411a225715d628084ecc21d00964dcd21838e0"
+    },
+    {
+      "bytes": 5415,
+      "path": "dist/index.html",
+      "sha256": "03248c8b852511231ab29fc99f2e5e01212a5ccf9c292dfeacb2666ee5513768"
+    },
+    {
+      "bytes": 18228,
+      "path": "dist/style.css",
+      "sha256": "46746ab623b4dc650822b2781c407477a82e3411de7c89e7985386b7e75a7b9e"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 294294,
+      "path": "original-delivery/hollow-hour-release.tar.gz",
+      "sha256": "eb1e57434c40605e47420ee1388a6248e2ab2205817498b72e404c96887c58a5"
+    },
+    {
+      "bytes": 655285,
+      "path": "output/playwright/chapter-one.png",
+      "sha256": "4aab210b7be068ec033b1609934b412d817a7dde32ead799ab319a1d2818c2d5"
+    },
+    {
+      "bytes": 657775,
+      "path": "output/playwright/chapter-three.png",
+      "sha256": "39cde5e5753dac258e3f1e0540be723b5b8e5248d0ab50202fb79bb8c6a46479"
+    },
+    {
+      "bytes": 748902,
+      "path": "output/playwright/chapter-two.png",
+      "sha256": "e8c8af095c84e54c0455192e13bdbaff8892d73653165dfbb19c556a71d23562"
+    },
+    {
+      "bytes": 230298,
+      "path": "output/playwright/ending.png",
+      "sha256": "fa2a194a995a4905d9008fe88e584453f594fefd960b06a3cdb0920b772e796d"
+    },
+    {
+      "bytes": 262372,
+      "path": "output/playwright/mobile.png",
+      "sha256": "d3ace05fa06fa5968a992b1c9182fb16f12364254ee0c59217168d48266f8ee8"
+    },
+    {
+      "bytes": 2961,
+      "path": "output/playwright/qa-ending.js",
+      "sha256": "ddf0e01ff52523497bf92d379cefdcda9fa2e23fecafdbfdad2d6a5aa8eff680"
+    },
+    {
+      "bytes": 2327,
+      "path": "output/playwright/qa-first.js",
+      "sha256": "051ebc317041d9877f7e399b919cd19413910468dc915d1d976807be1e8dfaff"
+    },
+    {
+      "bytes": 1371,
+      "path": "output/playwright/qa-mobile.js",
+      "sha256": "0215183829a0d0ae6fc103a5a77985415fce63c2f0bdde1710b9067747e8c283"
+    },
+    {
+      "bytes": 2635,
+      "path": "output/playwright/qa-second.js",
+      "sha256": "4d32561386418f07a551d0bc111a3c90f67e27812fc19ef0bb9f9bc5494f7ff8"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-6/hollow-hour",
+  "source_tree_sha256": "c4b8949928038679946f009174a844377273dcaede7803ca204f516089f4590c",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-012-original-20261003T215955Z",
+  "thread_id": "01a103a8-a44b-7354-8355-96c6ba72c0bf",
+  "turn_id": "01a103a8-c320-7705-94f5-71da6fda81e4"
+}

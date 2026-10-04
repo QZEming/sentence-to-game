@@ -1,3 +1,6 @@
 .DS_Store
-.sites-runtime/
+.playwright-cli/
 output/
+.sites-runtime/
+node_modules/
+*.tar.gz

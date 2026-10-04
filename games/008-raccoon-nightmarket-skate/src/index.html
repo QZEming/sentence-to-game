@@ -1,11 +1,60 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#151729"><meta name="description" content="踏上滑板，和浣熊一起穿越霓虹夜市的屋顶。跳跃、翻板、收集拉面，挑战你的最高连击。"><title>月下夜滑 · Rooftop Raccoon</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23191a31'/%3E%3Cpath d='M7 9L11 3L16 9L22 3L26 10V21L16 28L6 21Z' fill='%23b4b8c9'/%3E%3Cpath d='M6 13L16 16L26 13V20L16 23L6 20Z' fill='%232c2941'/%3E%3Ccircle cx='11' cy='17' r='2' fill='%23ffdb8c'/%3E%3Ccircle cx='21' cy='17' r='2' fill='%23ffdb8c'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
-<canvas id="world" aria-label="浣熊夜市屋顶滑板 3D 游戏"></canvas><div class="grain"></div>
-<header><a class="brand" href="#" aria-label="月下夜滑主页"><span class="brand-icon">◈</span><span>月下夜滑<small>ROOFTOP RACCOON</small></span></a><div class="top-right"><span class="district">台北 · 不眠夜市 <i></i> 02:17 AM</span><button id="sound" aria-label="打开音效">声音 OFF</button><button id="pause" aria-label="暂停游戏">Ⅱ</button></div></header>
-<div class="hud hidden" id="hud"><div class="score"><label>本次得分</label><strong id="score">00000</strong><span id="combo">自由滑行 · ×1</span></div><div class="run-stats"><span>◉ <b id="coins">0</b> 拉面</span><span>↗ <b id="distance">0</b> m</span><span id="hearts">♥ ♥ ♥</span></div><div class="boost"><span>疾风能量 <b>SHIFT</b></span><div><i id="energy"></i></div></div></div>
-<section id="intro" class="intro"><div class="eyebrow"><span></span> THE CITY SLEEPS. YOU DON'T.</div><h1>今夜，<br>屋顶是你的<span>游乐场。</span></h1><p>一只浣熊，一块滑板。<br>越过霓虹，追着月亮，把夜市踩在脚下。</p><div class="start-row"><button class="primary" id="start">开始夜滑 <span>↗</span></button><button class="round" id="help" aria-label="查看玩法">?</button></div><div class="best">个人最佳 <strong id="best">00000</strong><span>在这台设备上保存</span></div><div class="mini-tags"><span>01 / 屋顶跑酷</span><span>02 / 空中特技</span><span>03 / 深夜拉面</span></div></section>
-<div class="scene-note" id="sceneNote"><span>MEET YOUR NIGHT RIDER</span><strong>阿栗 / THE NIGHT BANDIT</strong><p>白天翻垃圾桶，夜里翻整个城市。</p></div>
-<div class="mission hidden" id="mission"><div><span>夜行清单</span><b id="missionCount">0 / 3</b></div><p id="m1">○ 收集 12 碗拉面</p><p id="m2">○ 完成 5 次空中特技</p><p id="m3">○ 滑行 800 米</p></div><div class="trick" id="trick" aria-live="polite"></div><div class="hint hidden" id="hint">灯笼为你指路 · 小心屋顶间的缝隙</div>
-<footer id="footer"><span><kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd> 换道</span><span><kbd>SPACE</kbd> 跳跃 / 二段跳</span><span><kbd>J</kbd> 翻板 <kbd>K</kbd> 转体</span><span><kbd>SHIFT</kbd> 冲刺</span><span><kbd>ESC</kbd> 暂停</span></footer>
-<div class="touch hidden" id="touch"><div><button data-action="left">◀</button><button data-action="right">▶</button></div><div><button data-action="flip">翻板</button><button data-action="boost">冲刺</button><button class="jump" data-action="jump">跳跃</button></div></div>
-<div class="overlay hidden" id="overlay"><section class="panel"><span class="eyebrow" id="modalEyebrow">NIGHT SHIFT</span><h2 id="modalTitle">夜滑指南</h2><div id="modalBody"></div><button class="primary" id="resume">出发</button></section></div>
-<div id="error" class="hidden">3D 场景加载失败。请启用浏览器硬件加速后刷新重试。</div><script type="module" src="game.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111d29"><meta name="description" content="做一只不按常理出牌的浣熊。在灯火通明的夜市屋顶滑板、翻板、滑杆，收集属于你的午夜宵夜。">
+  <title>Rooftop Rascal — 浣熊夜行</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23b6f18a'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='72'%3E🦝%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app">
+    <canvas id="world" aria-label="夜市屋顶 3D 滑板场景"></canvas>
+    <div class="vignette"></div><div class="grain"></div><div id="flash"></div>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="浣熊夜行主页"><span class="brand-mark">RR<span>✦</span></span><span class="brand-name">ROOFTOP<br>RASCAL<span>浣熊夜行</span></span></a>
+      <div class="location"><span class="live-dot"></span> 林间夜市 <span class="divider">/</span> AFTER HOURS <span class="time">23:48</span></div>
+      <nav class="toolbar" aria-label="游戏设置">
+        <button id="sound" class="icon-btn" title="开启声音" aria-label="开启声音"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path id="sound-wave" d="m16 9 5 6m0-6-5 6"/></svg></button>
+        <button id="help" class="icon-btn" title="操作说明" aria-label="操作说明"><span>?</span></button>
+        <button id="pause" class="icon-btn hidden" title="暂停（P）" aria-label="暂停游戏"><svg viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg></button>
+        <button id="fullscreen" class="icon-btn" title="全屏" aria-label="切换全屏"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/></svg></button>
+      </nav>
+    </header>
+    <section id="intro" class="intro">
+      <div class="edition"><span>✦</span> MIDNIGHT SKATE CLUB <span class="edition-line"></span> VOL. 01</div>
+      <h1>ROOFTOP<br><span>RASCAL<span class="title-star">✳</span></span></h1>
+      <div class="intro-chinese">夜市打烊，<br>我们的主场才刚开始。</div>
+      <p class="intro-copy">踏上滑板，掠过灯笼。<br>和小浣熊一起，把屋顶滑成游乐场。</p>
+      <div class="mode-picker" role="group" aria-label="选择游戏模式">
+        <button class="mode active" data-mode="cruise" aria-pressed="true"><span>01</span> 夜市漫游</button>
+        <button class="mode" data-mode="timed" aria-pressed="false"><span>02</span> 限时挑战</button>
+        <button class="mode" data-mode="practice" aria-pressed="false"><span>03</span> 自由练习</button>
+      </div>
+      <p id="mode-description" class="mode-description">3 次机会 · 无限街区 · 越滑越快</p>
+      <button id="start" class="start-btn"><svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></svg><span>开 滑</span><kbd>SPACE</kbd></button>
+      <div class="personal-best"><span>♜</span> 个人最佳 <strong id="intro-best">0</strong><span class="best-unit">PTS</span></div>
+    </section>
+    <div id="character-tag" class="character-tag"><span class="tag-line"></span><span>你的深夜搭子<strong>MOCHI <span>麻薯</span></strong><small>宵夜第一，比赛第二。</small></span></div>
+    <aside id="intro-note" class="intro-note"><span>今晚的路线</span><strong>灯笼巷 <i>→</i> 拉面街 <i>→</i> 霓虹天台</strong><div class="route-dots"><b></b><em></em><b></b><em></em><b></b></div></aside>
+    <section id="hud" class="hud hidden" aria-label="游戏状态">
+      <div class="score-panel"><div class="micro-label">本局得分 <span id="mode-label">NIGHT CRUISE</span></div><div id="score">000000</div><div class="score-sub"><span id="distance">0 m</span><span class="heart-wrap" id="hearts">♥ ♥ ♥</span></div></div>
+      <div class="mission-panel"><div class="micro-label">今晚的小目标 <span id="mission-total">0 / 3</span></div><div class="mission" id="mission-ramen"><i></i><span>收集宵夜</span><b>0 / 12</b></div><div class="mission" id="mission-trick"><i></i><span>翻板落地</span><b>0 / 5</b></div><div class="mission" id="mission-grind"><i></i><span>屋顶滑杆</span><b>0 / 8s</b></div></div>
+      <div id="run-zone" class="run-zone"><span>01</span> 灯笼巷 <small>LANTERN LANE</small></div>
+      <div class="energy-panel"><div><span>✦ 夜行能量</span><b id="energy-label">35%</b></div><div class="energy-track"><i id="energy-bar"></i></div><button id="boost-btn">冲刺 <kbd>SHIFT</kbd></button></div>
+      <div id="timer" class="timer hidden">02:00</div><div id="combo" class="combo hidden"><small>连招倍率</small><strong>×<span>1</span></strong><div><i></i></div></div>
+    </section>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="trick-label" class="trick-label"></div>
+    <div id="mobile-controls" class="mobile-controls hidden"><button data-action="left" aria-label="向左换道">◀</button><button data-action="right" aria-label="向右换道">▶</button><button data-action="duck" aria-label="俯身">↓</button><button data-action="jump" class="jump-touch" aria-label="跳跃或翻板">跳跃<span>空中再按翻板</span></button></div>
+    <footer class="bottom-bar"><div class="controls"><span><kbd>A</kbd><kbd>D</kbd> 换道</span><span><kbd>SPACE</kbd> 跳跃 / 空中翻板</span><span><kbd>↓</kbd> 俯身</span><span><kbd>SHIFT</kbd> 冲刺</span></div><div class="footer-note"><span class="live-dot"></span> 小心屋顶间的缝隙 <span>✦</span></div></footer>
+    <div id="dialog-backdrop" class="dialog-backdrop hidden">
+      <section id="help-dialog" class="dialog hidden" role="dialog" aria-modal="true" aria-labelledby="help-title"><button class="close-dialog" aria-label="关闭说明">×</button><div class="edition">THE ROOFTOP HANDBOOK</div><h2 id="help-title">第一晚就能上手。</h2><p>麻薯会自动向前滑行，你负责让这一趟更精彩。</p><div class="help-grid"><div><kbd>A / D</kbd><b>左右换道</b><span>方向键、左右滑动也可以。</span></div><div><kbd>SPACE</kbd><b>跳跃与翻板</b><span>空中再按一次翻板，安全落地加分。</span></div><div><kbd>↓ / S</kbd><b>俯身通过</b><span>按住躲过横梁，松开起身。</span></div><div><kbd>SHIFT</kbd><b>夜行冲刺</b><span>消耗 50 能量，4 秒无敌加速。</span></div></div><div class="help-tips"><p><span>✦</span> 跃上青色栏杆自动滑行，再跳即可离轨。</p><p><span>✦</span> 拉面补充能量；磁铁吸引附近金币。</p><p><span>✦</span> 衔接翻板、滑杆与收集，让连招倍率达到 ×8。</p><p><span>✦</span> 屋顶缺口要跳过，薄荷色桥面可以直接通过。</p></div><button class="primary close-dialog">知道了，去兜风</button></section>
+      <section id="pause-dialog" class="dialog compact hidden" role="dialog" aria-modal="true" aria-labelledby="pause-title"><div class="edition">TAKE A LITTLE BREATHER</div><h2 id="pause-title">夜还很长。</h2><p>麻薯在等你。准备好就继续出发。</p><button id="resume" class="primary">继续滑行 <kbd>P</kbd></button><button id="restart-pause" class="secondary">重新开始</button><button id="home-pause" class="text-btn">回到屋顶</button></section>
+      <section id="result-dialog" class="dialog compact hidden" role="dialog" aria-modal="true" aria-labelledby="result-title"><div class="edition">ONE MORE NIGHT, ONE MORE RIDE</div><div class="result-stamp">✦</div><h2 id="result-title">漂亮的一趟。</h2><div id="new-best" class="new-best hidden">NEW PERSONAL BEST</div><div class="result-score" id="result-score">0</div><div class="micro-label">本局得分</div><div class="result-stats"><div><strong id="result-distance">0m</strong><span>屋顶里程</span></div><div><strong id="result-ramen">0</strong><span>碗宵夜</span></div><div><strong id="result-tricks">0</strong><span>次翻板</span></div></div><p id="result-missions"></p><button id="again" class="primary">再滑一局 <kbd>SPACE</kbd></button><button id="home" class="text-btn">回到屋顶</button></section>
+    </div>
+    <div id="loading" class="loading"><div class="brand-mark">RR<span>✦</span></div><p>正在点亮夜市…</p></div>
+    <div id="error" class="error hidden"><h2>夜市暂时没能亮起来</h2><p>请在支持 WebGL 2 的现代浏览器中打开，并启用硬件加速。</p><button class="primary" onclick="location.reload()">重新试试</button></div>
+  </main>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
