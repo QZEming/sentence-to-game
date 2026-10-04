@@ -1,0 +1,94 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "030-bee-garden-nectar",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "030",
+  "generation_turn_id": "01a10523-770d-74a0-836b-f42038e2d0c7",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "77661f909e453ab087254a9ff69f20be467a410d",
+    "full_old_history_preserved": true,
+    "game_number": "030",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/024/manifest.json": "7afa2b25006627034149e3b7ed1a6f18cb1aff14",
+      "experiments/page-857ec841-top50-gpt6astra/024/prompt.txt": "82606c72080cad183aa6a4177115951e18c3488d",
+      "experiments/page-857ec841-top50-gpt6astra/024/provenance.json": "2eeee4cda850d4a4dc9115e7f4a5a2cdebda84bd",
+      "experiments/page-857ec841-top50-gpt6astra/024/release.json": "beaaa9aea1a37b74c193e8c4a28fbf698db2adc1"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/77661f909e453ab087254a9ff69f20be467a410d",
+    "source_and_published_blobs": {
+      "docs/games/030-bee-garden-nectar/assets/index-BNILl3jP.css": "85d7f43c694ebaad82ea67037140c8caa9c0906e",
+      "docs/games/030-bee-garden-nectar/assets/index-Vi7by08l.js": "22df9ad95ae8edbea06567752f9309804733aa69",
+      "docs/games/030-bee-garden-nectar/index.html": "76991d694425c3609361f6c871fd906ef0ede83c",
+      "games/030-bee-garden-nectar/.gitignore": "3bdd52eb2e05a5bd79dbb843a3f85f68274d73d9",
+      "games/030-bee-garden-nectar/README.md": "32c0678f81afe6a0337875908a5fff78b82ab41f",
+      "games/030-bee-garden-nectar/RELEASE.md": "9ba530e5413e23d783bfb54ef5b114c721bc1081",
+      "games/030-bee-garden-nectar/dist/assets/index-BNILl3jP.css": "85d7f43c694ebaad82ea67037140c8caa9c0906e",
+      "games/030-bee-garden-nectar/dist/assets/index-Cz6_hmY6.js": "0186d67ff9ae3e4bd6538f211add804ee1068b48",
+      "games/030-bee-garden-nectar/dist/assets/three-Cv2WH-of.js": "048d46adeefe5354cbd5dbdb536b4bc9ebdd1961",
+      "games/030-bee-garden-nectar/dist/index.html": "3f165d3a506714cafd40da346c1386dfef02f323",
+      "games/030-bee-garden-nectar/index.html": "618633fd161d1eb0d2e72787c1135304465eb8e3",
+      "games/030-bee-garden-nectar/package-lock.json": "9dd3daf9571b694dcd2ddfa2a6d11987970b49c9",
+      "games/030-bee-garden-nectar/package.json": "41df68cc59e70e669c462c475acc3466dff4276f",
+      "games/030-bee-garden-nectar/prompt.txt": "82606c72080cad183aa6a4177115951e18c3488d",
+      "games/030-bee-garden-nectar/scripts/smoke.mjs": "8a3acc64d9c69c1ffc1aefaf98daf4ac35e66073",
+      "games/030-bee-garden-nectar/src/main.js": "005f9ca59052b5cda5f8b662e345bd6565b159d6",
+      "games/030-bee-garden-nectar/src/style.css": "b125a23229199b09b563cf993211ecff45b4b684",
+      "games/030-bee-garden-nectar/vite.config.js": "7ae17d9870c0e720db965291ad5242bac9324052"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 3752,
+      "path": "core.js",
+      "sha256": "aeaf1d2525c6717dd4c5889eee537e987ca5364d56db8a5ed0e1a85a6ee95fe4"
+    },
+    {
+      "bytes": 31272,
+      "path": "game.js",
+      "sha256": "10dba612f7dba4a58678fc49fde07d11b4b9baa9126cfc9520dbadf506fbd3da"
+    },
+    {
+      "bytes": 5920,
+      "path": "index.html",
+      "sha256": "8a559ee3f170e0999fea10bc4abe52b7e04fa1008992533f117e71e314603605"
+    },
+    {
+      "bytes": 33,
+      "path": "package.json",
+      "sha256": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035"
+    },
+    {
+      "bytes": 19261,
+      "path": "style.css",
+      "sha256": "34bf4fe3aea898b00c0a33829b7fe99bb4611cc793eeaed1ffa8700eb090c639"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 16401,
+      "path": "world.js",
+      "sha256": "c136195af49552d1fe3145476cea3b341742615f411535714fe6681e308c3cc6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "a9bf14387b10fd31e498fbd7174f1efb60b6d9e3652d19e380ae290c76e3f32a",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10523-552d-70cf-86bc-bb294dee40ad",
+  "title": "蜜境 · Honey Garden",
+  "url": "https://qzemi.cn/sentence-to-game/games/030-bee-garden-nectar/"
+}

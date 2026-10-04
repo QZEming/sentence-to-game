@@ -1,0 +1,345 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-029-original-20261004T044854Z",
+  "candidate": "ultra-029",
+  "completed_at": "2026-10-04T04:51:21.349718Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 16,
+  "files": [
+    {
+      "archive_relative_path": "shellbound/.gitignore",
+      "copied_sha256": "8e6c5747c8e502167ebec24db05b0245c92a87d8082672a6615f50aa925877c6",
+      "final_source_sha256": "8e6c5747c8e502167ebec24db05b0245c92a87d8082672a6615f50aa925877c6",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088125139060629,
+      "mtime_utc": "2026-10-04T04:28:45.139061Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/.gitignore",
+      "size_bytes": 79,
+      "source_sha256": "8e6c5747c8e502167ebec24db05b0245c92a87d8082672a6615f50aa925877c6",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/.openai/hosting.json",
+      "copied_sha256": "20264acdf9c06362495ce7e8d4c6cd7a7cf52a8ea5a7bba1329c3ef19a3d7779",
+      "final_source_sha256": "20264acdf9c06362495ce7e8d4c6cd7a7cf52a8ea5a7bba1329c3ef19a3d7779",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087920455698017,
+      "mtime_utc": "2026-10-04T04:25:20.455698Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "20264acdf9c06362495ce7e8d4c6cd7a7cf52a8ea5a7bba1329c3ef19a3d7779",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/README.md",
+      "copied_sha256": "4554a66f26311959657fe13f501bf90d6e490dfa5d310ea31b636e45625011d0",
+      "final_source_sha256": "4554a66f26311959657fe13f501bf90d6e490dfa5d310ea31b636e45625011d0",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088468353612903,
+      "mtime_utc": "2026-10-04T04:34:28.353613Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/README.md",
+      "size_bytes": 2417,
+      "source_sha256": "4554a66f26311959657fe13f501bf90d6e490dfa5d310ea31b636e45625011d0",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/game.js",
+      "copied_sha256": "dc289e62cc7a716a82144bfc3c231618e82a23d8a4a74da38c9f25f91a2d1b57",
+      "final_source_sha256": "dc289e62cc7a716a82144bfc3c231618e82a23d8a4a74da38c9f25f91a2d1b57",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088188736057132,
+      "mtime_utc": "2026-10-04T04:29:48.736057Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/game.js",
+      "size_bytes": 46759,
+      "source_sha256": "dc289e62cc7a716a82144bfc3c231618e82a23d8a4a74da38c9f25f91a2d1b57",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/index.html",
+      "copied_sha256": "14e78f3b0009e9b75583cb6e8c5f2dd5ca29939a0c52e7ac0b2895eebf3e33ae",
+      "final_source_sha256": "14e78f3b0009e9b75583cb6e8c5f2dd5ca29939a0c52e7ac0b2895eebf3e33ae",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088188735571214,
+      "mtime_utc": "2026-10-04T04:29:48.735571Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/index.html",
+      "size_bytes": 6193,
+      "source_sha256": "14e78f3b0009e9b75583cb6e8c5f2dd5ca29939a0c52e7ac0b2895eebf3e33ae",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/style.css",
+      "copied_sha256": "5877aa95d74e8cb1ac5f7ec57ea5528d8b279d04037eafeaf6867f23f6bc7176",
+      "final_source_sha256": "5877aa95d74e8cb1ac5f7ec57ea5528d8b279d04037eafeaf6867f23f6bc7176",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088468343242173,
+      "mtime_utc": "2026-10-04T04:34:28.343242Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/style.css",
+      "size_bytes": 19427,
+      "source_sha256": "5877aa95d74e8cb1ac5f7ec57ea5528d8b279d04037eafeaf6867f23f6bc7176",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088287472006130,
+      "mtime_utc": "2026-10-04T04:31:27.472006Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/vendor/three.core.js",
+      "copied_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "final_source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791086889625486831,
+      "mtime_utc": "2026-10-04T04:08:09.625487Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/vendor/three.core.js",
+      "size_bytes": 1403455,
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/dist/vendor/three.module.js",
+      "copied_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "final_source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791086879285621467,
+      "mtime_utc": "2026-10-04T04:07:59.285621Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/dist/vendor/three.module.js",
+      "size_bytes": 603113,
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/desktop.png",
+      "copied_sha256": "c7c201721aefc681858f64da2b63a6117030c06316af077dce3a0468ac025605",
+      "final_source_sha256": "c7c201721aefc681858f64da2b63a6117030c06316af077dce3a0468ac025605",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088010978780850,
+      "mtime_utc": "2026-10-04T04:26:50.978781Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/desktop.png",
+      "size_bytes": 412924,
+      "source_sha256": "c7c201721aefc681858f64da2b63a6117030c06316af077dce3a0468ac025605",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/gameplay-final.png",
+      "copied_sha256": "5f00a9d82dd3130db70e89ae5eb50b12c19b2dbe1d4b4ce400f4a0ca7c713216",
+      "final_source_sha256": "5f00a9d82dd3130db70e89ae5eb50b12c19b2dbe1d4b4ce400f4a0ca7c713216",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088651708845821,
+      "mtime_utc": "2026-10-04T04:37:31.708846Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/gameplay-final.png",
+      "size_bytes": 427002,
+      "source_sha256": "5f00a9d82dd3130db70e89ae5eb50b12c19b2dbe1d4b4ce400f4a0ca7c713216",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/landscape.png",
+      "copied_sha256": "54dd5f40d0d05bfd1f57357b180af22ca837d2ef35397f39bd2682364631a96d",
+      "final_source_sha256": "54dd5f40d0d05bfd1f57357b180af22ca837d2ef35397f39bd2682364631a96d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088371682778805,
+      "mtime_utc": "2026-10-04T04:32:51.682779Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/landscape.png",
+      "size_bytes": 212370,
+      "source_sha256": "54dd5f40d0d05bfd1f57357b180af22ca837d2ef35397f39bd2682364631a96d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/mobile-intro.png",
+      "copied_sha256": "d11b0b9805f30825f1d0888787e7228303d2570887d559b087e12a407d3acd40",
+      "final_source_sha256": "d11b0b9805f30825f1d0888787e7228303d2570887d559b087e12a407d3acd40",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088369829539773,
+      "mtime_utc": "2026-10-04T04:32:49.829540Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/mobile-intro.png",
+      "size_bytes": 197025,
+      "source_sha256": "d11b0b9805f30825f1d0888787e7228303d2570887d559b087e12a407d3acd40",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/mobile-shell.png",
+      "copied_sha256": "55e29cc3b083c0d1b9142a27efe68ef2a10c77a3f8cd6688c98fc0822bfeaba8",
+      "final_source_sha256": "55e29cc3b083c0d1b9142a27efe68ef2a10c77a3f8cd6688c98fc0822bfeaba8",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088371509343727,
+      "mtime_utc": "2026-10-04T04:32:51.509344Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/mobile-shell.png",
+      "size_bytes": 104381,
+      "source_sha256": "55e29cc3b083c0d1b9142a27efe68ef2a10c77a3f8cd6688c98fc0822bfeaba8",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "shellbound/output/playwright/victory.png",
+      "copied_sha256": "5d9d7aa5e6a06e674e93a810d0e265394397e1a0caf41216abaf8d587f3f3e98",
+      "final_source_sha256": "5d9d7aa5e6a06e674e93a810d0e265394397e1a0caf41216abaf8d587f3f3e98",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088334561608920,
+      "mtime_utc": "2026-10-04T04:32:14.561609Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound/output/playwright/victory.png",
+      "size_bytes": 265702,
+      "source_sha256": "5d9d7aa5e6a06e674e93a810d0e265394397e1a0caf41216abaf8d587f3f3e98",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/shellbound-game.tar.gz",
+      "copied_sha256": "3a207816b4c6c8bc1e2b7e50c3e77acbff012a172efb39e8dad47b077bfa8c52",
+      "final_source_sha256": "3a207816b4c6c8bc1e2b7e50c3e77acbff012a172efb39e8dad47b077bfa8c52",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791088568089299656,
+      "mtime_utc": "2026-10-04T04:36:08.089300Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound-game.tar.gz",
+      "size_bytes": 423907,
+      "source_sha256": "3a207816b4c6c8bc1e2b7e50c3e77acbff012a172efb39e8dad47b077bfa8c52",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "3c495f253ac9d034d468bfd36e67416405af5c9594a0cbdc8812c4e0ae8e9ceb"
+  },
+  "inventory_fixed_at": "2026-10-04T04:51:21.141921Z",
+  "limitations": [
+    "Archive agent only reads original files and copies bytes/hashes; no build, test, gameplay, browser, source modification, process action or remote action.",
+    "Original package copied byte-for-byte without unpacking or repacking.",
+    "Author results and launch configuration remain attributed reports."
+  ],
+  "original_evidence_inventory": {
+    "preserved_result_json_or_verification_script_present": false,
+    "provenance": "Source file inventory and static README reading; screenshots preserved without image inspection.",
+    "screenshots": [
+      "shellbound/output/playwright/desktop.png",
+      "shellbound/output/playwright/gameplay-final.png",
+      "shellbound/output/playwright/landscape.png",
+      "shellbound/output/playwright/mobile-intro.png",
+      "shellbound/output/playwright/mobile-shell.png",
+      "shellbound/output/playwright/victory.png"
+    ],
+    "source_documents": [
+      "shellbound/README.md"
+    ]
+  },
+  "original_request": "实现一个寄居蟹寻找并更换自己的家的 3D 游戏，尽你所能丰富游戏玩法。",
+  "original_verification_scope": {
+    "author_report": "JavaScript syntax check and Chrome actual-input checks for shell exchange, three pearl collection, return-home ending, completed-game save restoration, restart, 390x844 touch joystick/interaction, and 844x390 landscape sizing without horizontal overflow. Final load reported no browser errors/warnings.",
+    "limitations": [
+      "No retained small result JSON, verification driver, input trace or execution log independently establishes this report.",
+      "README calls input actual but does not preserve implementation details sufficient to distinguish native browser input, synthetic events, automation or state interventions. No state intervention is claimed or inferred from the absent record.",
+      "Mobile joystick and interaction checks do not establish a mobile full walkthrough or physical-device validation.",
+      "Final-load no-error/no-warning claim does not define full-session, network or monitoring coverage.",
+      "Optional WebMCP was not verified because the test browser did not support document.modelContext."
+    ],
+    "preview_port": 4377,
+    "provenance": "Static reading of original README.md; author assertions not independently executed validation.",
+    "source_document": "shellbound/README.md:31-35"
+  },
+  "parent_readonly_process_observation": {
+    "no_dedicated_preview_browser_or_task_processes_matched": true,
+    "no_resource_sampling_this_round": true,
+    "observed_at_utc": "2026-10-04T04:51:24Z",
+    "other_generation_tasks_and_publisher_untouched": true,
+    "preview_port": 4377,
+    "preview_port_has_no_listener": true,
+    "protected_original_listeners": [
+      {
+        "pid": 2547,
+        "port": 5173
+      },
+      {
+        "pid": 2554,
+        "port": 4827
+      },
+      {
+        "pid": 2560,
+        "port": 4173
+      }
+    ],
+    "provenance": "Root-agent process command/cwd/served-directory and descendant checks; not author gameplay verification",
+    "signals_sent": false,
+    "user_chrome_1036_alive": true
+  },
+  "parent_reported_author_results": {
+    "complete_playthrough": true,
+    "provenance": "Parent/author report only; not independently executed validation.",
+    "save_restart_and_mobile_checks": true
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Private Sites URL reported by parent/author, not fetched, not formal or GitHub delivery evidence.",
+    "url": "https://shellbound-crab-journey-oct04.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent supplied launch parameters; not independently authenticated historical generation metadata.",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_inventory_observed_at": "2026-10-04T04:50:08.814374Z",
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound",
+  "stage": "original",
+  "thread_id": "01a10516-7527-76bf-8b64-222f1ad35080",
+  "title": "Shellbound",
+  "total_bytes": 4125941,
+  "turn_id": "01a10516-ba92-72a9-b205-50b58f9248bc"
+}

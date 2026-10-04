@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "2a6d9602c9a662f34b35d96504d3e755ea121f9ee159a1486a9a1da9d18ae148"
+    },
+    {
+      "bytes": 1513,
+      "path": "README.md",
+      "sha256": "b1fe7f3f7735a1bfddbe1842bc7c21fde09134ca1109ab0a9e3ea0c15a9922cc"
+    },
+    {
+      "bytes": 1808,
+      "path": "check.mjs",
+      "sha256": "cb7fff6e8afb7bda06a88dcb93af35d15977517400440533436f1c54d5719c76"
+    },
+    {
+      "bytes": 3752,
+      "path": "dist/core.js",
+      "sha256": "aeaf1d2525c6717dd4c5889eee537e987ca5364d56db8a5ed0e1a85a6ee95fe4"
+    },
+    {
+      "bytes": 31272,
+      "path": "dist/game.js",
+      "sha256": "10dba612f7dba4a58678fc49fde07d11b4b9baa9126cfc9520dbadf506fbd3da"
+    },
+    {
+      "bytes": 5920,
+      "path": "dist/index.html",
+      "sha256": "8a559ee3f170e0999fea10bc4abe52b7e04fa1008992533f117e71e314603605"
+    },
+    {
+      "bytes": 33,
+      "path": "dist/package.json",
+      "sha256": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035"
+    },
+    {
+      "bytes": 19261,
+      "path": "dist/style.css",
+      "sha256": "34bf4fe3aea898b00c0a33829b7fe99bb4611cc793eeaed1ffa8700eb090c639"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/LICENSE-three.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 16401,
+      "path": "dist/world.js",
+      "sha256": "c136195af49552d1fe3145476cea3b341742615f411535714fe6681e308c3cc6"
+    },
+    {
+      "bytes": 296045,
+      "path": "original-delivery/honey-garden-deploy.tar.gz",
+      "sha256": "3dbc7343599c6d4250f00736ba631cd3d3d3a94bc2d494969fbcf24b80f43e48"
+    },
+    {
+      "bytes": 394077,
+      "path": "original-delivery/honey-garden-desktop.png",
+      "sha256": "19553409552ac92dc020acfec60e10833ff19a6580297b72ca051797a4879c44"
+    },
+    {
+      "bytes": 168348,
+      "path": "original-delivery/honey-garden-mobile.png",
+      "sha256": "94acbe40d2bc7b01eaf97c71e7aa3b38fbc147058acfebf84c3da0992232b40a"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-24/honey-garden",
+  "source_tree_sha256": "a9bf14387b10fd31e498fbd7174f1efb60b6d9e3652d19e380ae290c76e3f32a",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-030-original-20261004T044854Z",
+  "thread_id": "01a10523-552d-70cf-86bc-bb294dee40ad",
+  "turn_id": "01a10523-770d-74a0-836b-f42038e2d0c7"
+}

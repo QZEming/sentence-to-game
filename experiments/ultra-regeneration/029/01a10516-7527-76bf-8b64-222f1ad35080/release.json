@@ -1,0 +1,81 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "029-hermit-crab-homes",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "029",
+  "generation_turn_id": "01a10516-ba92-72a9-b205-50b58f9248bc",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "77661f909e453ab087254a9ff69f20be467a410d",
+    "full_old_history_preserved": true,
+    "game_number": "029",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/023/manifest.json": "43d54c28f5a73de1bdfe863c557acc337a274659",
+      "experiments/page-857ec841-top50-gpt6astra/023/prompt.txt": "120ab5f24af351749b174d679473411268657d21",
+      "experiments/page-857ec841-top50-gpt6astra/023/provenance.json": "985b54a23e44df3c4c0add9e4d657cfdbec1d2e8",
+      "experiments/page-857ec841-top50-gpt6astra/023/release.json": "0717f19cbe6902ee42041f15adff3403ef510f5b"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/77661f909e453ab087254a9ff69f20be467a410d",
+    "source_and_published_blobs": {
+      "docs/games/029-hermit-crab-homes/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+      "docs/games/029-hermit-crab-homes/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+      "docs/games/029-hermit-crab-homes/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+      "docs/games/029-hermit-crab-homes/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/029-hermit-crab-homes/README.md": "fbdc62b4b415fffdf9097610300b557b41f814dc",
+      "games/029-hermit-crab-homes/RELEASE.md": "6b98eb79fc7d7b794ebca6af1500755b26e8bec7",
+      "games/029-hermit-crab-homes/dist/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+      "games/029-hermit-crab-homes/dist/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+      "games/029-hermit-crab-homes/dist/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+      "games/029-hermit-crab-homes/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/029-hermit-crab-homes/prompt.txt": "120ab5f24af351749b174d679473411268657d21",
+      "games/029-hermit-crab-homes/src/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+      "games/029-hermit-crab-homes/src/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+      "games/029-hermit-crab-homes/src/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+      "games/029-hermit-crab-homes/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 46759,
+      "path": "game.js",
+      "sha256": "dc289e62cc7a716a82144bfc3c231618e82a23d8a4a74da38c9f25f91a2d1b57"
+    },
+    {
+      "bytes": 6193,
+      "path": "index.html",
+      "sha256": "14e78f3b0009e9b75583cb6e8c5f2dd5ca29939a0c52e7ac0b2895eebf3e33ae"
+    },
+    {
+      "bytes": 19427,
+      "path": "style.css",
+      "sha256": "5877aa95d74e8cb1ac5f7ec57ea5528d8b279d04037eafeaf6867f23f6bc7176"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "d42bfc314fda82aae8e87b9a20e2b1a4ddc5d3b83f9c63007bf5c4cb1c104b24",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10516-7527-76bf-8b64-222f1ad35080",
+  "title": "寄居日记 · SHELLBOUND",
+  "url": "https://qzemi.cn/sentence-to-game/games/029-hermit-crab-homes/"
+}

@@ -1,16 +1,45 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#f6f4e9"><title>蜜野 Honey Meadow · 3D 花园冒险</title>  <script type="module" crossorigin src="/assets/index-Cz6_hmY6.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/three-Cv2WH-of.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-BNILl3jP.css">
-</head><body><div id="app">
-<canvas id="world" aria-label="3D 蜜蜂花园，使用 WASD 飞行"></canvas>
-<header><a class="brand" href="#"><span class="brand-icon">✿</span><span>蜜野<small>HONEY MEADOW</small></span></a><nav><span class="pill"><i></i> 悠然花园</span><button id="sound" title="开关音效">♫</button><button id="help" title="操作指南">?</button><button id="pause" title="暂停">Ⅱ</button></nav></header>
-<div class="scene-label"><span>一场小小的花园冒险</span><h1>把日子，酿成蜜。</h1><p>飞过花海，收集每一份甜。</p></div>
-<section class="resources"><div class="resource"><span class="resource-icon">⬡</span><div><small>蜂蜜储备</small><strong id="honey">0 <em>g</em></strong></div></div><div class="resource"><span class="resource-icon purple">✿</span><div><small>今日采花</small><strong id="count">0 <em>朵</em></strong></div></div><div class="resource weather"><span id="weather-icon">☀</span><div><small id="day">第 1 天 · 上午</small><strong id="weather">晴朗 <em>采蜜好时光</em></strong></div></div></section>
-<aside class="quests panel"><div class="eyebrow">A LITTLE PURPOSE <span>✧</span></div><h2>花园手记</h2><div id="quests"></div><div class="tip">每一朵花，都值得停留。</div></aside>
-<aside class="map panel"><div class="map-heading"><span>花园地图</span><span class="north">N ↑</span></div><canvas id="minimap" width="220" height="170"></canvas><div class="map-legend"><span><i class="yellow"></i>蜂巢</span><span><i class="pink"></i>花朵</span><span><i class="green"></i>你</span></div></aside>
-<div id="toast" role="status"></div><div id="prompt"></div>
-<div class="bottom"><section class="bee-status panel"><div class="bee-avatar">🐝</div><div class="status-main"><div class="status-title"><strong>小蜜的采蜜之旅</strong><span id="level">Lv. 1</span></div><div class="meter-label"><span>花蜜背包</span><b id="bag-text">0 / 30</b></div><div class="meter"><i id="bag-bar"></i></div><div class="energy"><span>ϟ 飞行能量</span><div><i id="energy-bar"></i></div></div></div></section><div class="controls"><span><kbd>W A S D</kbd> 飞行</span><span><kbd>Shift</kbd> 冲刺</span><span><kbd>E</kbd> 采蜜 / 酿蜜</span><span><kbd>Space</kbd> 升高</span></div><button id="shop" class="shop-btn">⬡ <span>蜂巢工坊<small>让每次出发，都更远一点</small></span><b>↗</b></button></div>
-<div class="mobile-controls"><button data-key="w">↑</button><div><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div><button id="mobile-action">采蜜 E</button></div>
-<div id="modal" class="overlay hidden"><section class="modal panel"><button class="close" id="close">×</button><div id="modal-body"></div></section></div>
-<div class="corner-note">慢慢飞，花园一直在这里。 <span>✦</span></div>
-</div></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
+  <meta name="theme-color" content="#e7eddb"><meta name="description" content="飞进蜜境，在一座有昼夜与天气的 3D 花园中采蜜、授粉、探索，建造自己的甜蜜生活。">
+  <title>蜜境 · Honey Garden</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23edbd40'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-size='47' fill='%23354a3b'%3E✿%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="game" aria-label="蜜境 3D 游戏"><canvas id="world" aria-label="3D 花园，用 WASD 或方向键飞行，也可点击花朵导航"></canvas></main>
+  <div id="loading"><div class="loader-bee">✦</div><strong>花园正在苏醒</strong><span>给花朵一点绽放的时间…</span></div>
+  <div class="hud" id="hud">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">✿</div><div><h1>蜜境<span>®</span></h1><p>HONEY GARDEN</p></div></div>
+      <div class="season"><span class="sun" id="weather-icon">☀</span><div><strong id="weather-label">晴日微风</strong><span id="day-label">第 1 天 · 09:00</span></div><span class="season-tag">春日花园</span></div>
+      <div class="top-actions"><div class="honey-counter"><span class="honey-icon">⬡</span><div><small>我的蜂蜜</small><strong id="honey">0 <em>g</em></strong></div></div><button class="icon-button" id="sound" aria-label="开启声音" title="开启声音">♪<span class="mute-slash"></span></button><button class="icon-button" id="pause" aria-label="暂停游戏" title="暂停 · Esc">Ⅱ</button></div>
+    </header>
+    <aside class="journal panel">
+      <div class="eyebrow"><span>YOUR LITTLE ADVENTURE</span><span>01</span></div>
+      <div class="panel-heading"><h2>花园手记</h2><span class="tiny-flower">✿</span></div>
+      <p class="journal-sub">每一滴甜蜜，都有小小的意义。</p>
+      <div id="quest-list"></div>
+      <div class="journal-footer"><span>✧</span><span id="quest-foot">慢慢来，花园一直都在。</span></div>
+    </aside>
+    <div class="location-badge"><span class="location-dot"></span><span id="location">雏菊花田</span><span class="location-line"></span><span id="season-number">SPRING / 01</span></div>
+    <div id="world-label" class="world-label" hidden></div>
+    <div id="interaction" class="interaction" hidden><span id="interaction-icon">✿</span><div><strong id="interaction-name">正在采集雏菊花蜜</strong><span id="interaction-detail">让甜蜜慢慢装满</span></div><div class="collect-ring">✦</div></div>
+    <aside class="bee-status panel">
+      <div class="bee-profile"><span class="avatar">✦</span><div><strong id="rank">见习采蜜师</strong><span id="level">Lv. 1 · 今天也要快乐飞行</span></div><span id="xp-label">0 XP</span></div>
+      <div class="resource-label"><span>花蜜背包</span><strong id="nectar-text">0 / 20</strong></div><div class="meter nectar-meter"><i id="nectar-bar"></i></div>
+      <div class="resource-label energy-label"><span>飞行体力 <span>ϟ</span></span><strong id="energy-text">100%</strong></div><div class="meter energy-meter"><i id="energy-bar"></i></div>
+      <div class="status-bottom"><span id="status-message">花朵旁停留，即可自动采蜜</span><kbd>H</kbd></div>
+    </aside>
+    <section class="bottom-center">
+      <div class="welcome" id="welcome"><span class="welcome-tag">A LITTLE BEE, A BIG WORLD</span><h2>把日子，酿成甜的。</h2><p>飞过花田，带着一袋花蜜回家。</p><button class="primary" id="start">开始今天的冒险 <span>✦</span></button><div>W A S D 飞行 <span>·</span> 点击花朵也可以出发</div></div>
+      <div class="controls-hint" id="controls-hint" hidden><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 飞行</span><span><kbd>Shift</kbd> 冲刺</span><span><kbd>Space</kbd> 升高</span><span>靠近花朵自动采蜜</span></div>
+      <nav class="dock" aria-label="游戏菜单"><button id="home"><span>⌂</span>回到蜂巢<kbd>H</kbd></button><span class="dock-divider"></span><button id="shop"><span>⬡</span>蜂巢升级</button><button id="book"><span>❀</span>花朵图鉴<span class="count" id="book-count">0/4</span></button><button id="photo" aria-label="拍照模式"><span>▣</span></button><button id="help" aria-label="游戏帮助"><span>?</span></button></nav>
+    </section>
+    <aside class="map-panel"><div class="map-top"><span>花园一角</span><span>N ↑</span></div><canvas id="minimap" width="200" height="160" aria-label="花园小地图，点击导航"></canvas><div class="map-bottom"><span><i class="map-flower"></i>花田</span><span><i class="map-hive"></i>蜂巢</span><span><i class="map-player"></i>你</span></div></aside>
+    <div class="camera-controls"><button id="zoom-in" aria-label="放大">＋</button><button id="zoom-out" aria-label="缩小">−</button><button id="rotate" aria-label="旋转视角">⟳</button></div>
+    <div class="mobile-controls" id="mobile-controls"><div id="joystick"><div id="joystick-knob"></div></div><button id="mobile-boost">ϟ</button></div>
+  </div>
+  <div id="toasts" role="status" aria-live="polite"></div><div id="combo" hidden></div><div id="photo-hint" hidden>摄影模式 · 拖动旋转视角 · 滚轮缩放 · 按 Esc 或点击这里返回</div>
+  <div class="modal-backdrop" id="modal" hidden><section class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="close-modal" aria-label="关闭">×</button><div id="modal-content"></div></section></div>
+  <script type="module" src="./game.js"></script>
+</body></html>

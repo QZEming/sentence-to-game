@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {freshState,sanitizeSave,capacity,collect,deposit,purchase,completeQuests} from './dist/core.js';
+let s=freshState();
+assert.equal(collect(s,3,25,25),20);assert.equal(s.nectar,20);assert.equal(s.nectarValue,60);
+assert.equal(collect(s,0,1,1),0);assert.equal(s.nectar,capacity(s));
+assert.equal(deposit(s),60);assert.equal(deposit(s),0);assert.equal(s.honey,60);assert.equal(s.totalHoney,60);
+assert.equal(completeQuests(s).length,1);assert.equal(s.honey,70);assert.equal(completeQuests(s).length,0);
+assert.equal(purchase(s,'bag'),true);assert.equal(capacity(s),32);assert.equal(s.honey,55);assert.equal(s.totalHoney,60);
+assert.equal(purchase(s,'bag'),true);assert.equal(purchase(s,'bag'),false);assert.equal(s.honey,20);
+assert.equal(purchase(s,'invalid'),false);
+s=freshState();assert.equal(collect(s,1,10,2,1.25),2);assert.equal(s.nectarValue,3.75);assert.equal(deposit(s),4);
+s.discovered=[0,1,2,3];s.totalHoney=100;s.upgrades.wings=1;assert.equal(completeQuests(s).length,3);assert.deepEqual(s.quests,[true,true,true]);assert.equal(completeQuests(s).length,0);
+const bad=sanitizeSave({version:1,honey:-99,nectar:999,nectarValue:1e20,energy:NaN,upgrades:{bag:100,skill:-2,wings:'oops'},discovered:[0,0,4,'x'],quests:[true]});
+assert.equal(bad.honey,0);assert.equal(bad.nectar,56);assert.equal(bad.nectarValue,315);assert.equal(bad.energy,100);assert.deepEqual(bad.discovered,[0]);assert.equal(bad.upgrades.skill,0);
+const bonus=freshState();collect(bonus,3,10,10,1.25*1.5);assert.equal(bonus.nectarValue,56.25);assert.equal(sanitizeSave(bonus).nectarValue,56.25);
+assert.deepEqual(sanitizeSave(null),freshState());
+console.log('PASS: capacity, stock, weighted nectar, single deposit, quest rewards, spending, upgrade limits, and invalid save recovery.');

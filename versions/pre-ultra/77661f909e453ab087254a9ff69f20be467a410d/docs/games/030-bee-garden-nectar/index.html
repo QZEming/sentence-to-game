@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#f6f4e9"><title>蜜野 Honey Meadow · 3D 花园冒险</title>  <script type="module" crossorigin src="./assets/index-Vi7by08l.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BNILl3jP.css">
+</head><body><div id="app">
+<canvas id="world" aria-label="3D 蜜蜂花园，使用 WASD 飞行"></canvas>
+<header><a class="brand" href="#"><span class="brand-icon">✿</span><span>蜜野<small>HONEY MEADOW</small></span></a><nav><span class="pill"><i></i> 悠然花园</span><button id="sound" title="开关音效">♫</button><button id="help" title="操作指南">?</button><button id="pause" title="暂停">Ⅱ</button></nav></header>
+<div class="scene-label"><span>一场小小的花园冒险</span><h1>把日子，酿成蜜。</h1><p>飞过花海，收集每一份甜。</p></div>
+<section class="resources"><div class="resource"><span class="resource-icon">⬡</span><div><small>蜂蜜储备</small><strong id="honey">0 <em>g</em></strong></div></div><div class="resource"><span class="resource-icon purple">✿</span><div><small>今日采花</small><strong id="count">0 <em>朵</em></strong></div></div><div class="resource weather"><span id="weather-icon">☀</span><div><small id="day">第 1 天 · 上午</small><strong id="weather">晴朗 <em>采蜜好时光</em></strong></div></div></section>
+<aside class="quests panel"><div class="eyebrow">A LITTLE PURPOSE <span>✧</span></div><h2>花园手记</h2><div id="quests"></div><div class="tip">每一朵花，都值得停留。</div></aside>
+<aside class="map panel"><div class="map-heading"><span>花园地图</span><span class="north">N ↑</span></div><canvas id="minimap" width="220" height="170"></canvas><div class="map-legend"><span><i class="yellow"></i>蜂巢</span><span><i class="pink"></i>花朵</span><span><i class="green"></i>你</span></div></aside>
+<div id="toast" role="status"></div><div id="prompt"></div>
+<div class="bottom"><section class="bee-status panel"><div class="bee-avatar">🐝</div><div class="status-main"><div class="status-title"><strong>小蜜的采蜜之旅</strong><span id="level">Lv. 1</span></div><div class="meter-label"><span>花蜜背包</span><b id="bag-text">0 / 30</b></div><div class="meter"><i id="bag-bar"></i></div><div class="energy"><span>ϟ 飞行能量</span><div><i id="energy-bar"></i></div></div></div></section><div class="controls"><span><kbd>W A S D</kbd> 飞行</span><span><kbd>Shift</kbd> 冲刺</span><span><kbd>E</kbd> 采蜜 / 酿蜜</span><span><kbd>Space</kbd> 升高</span></div><button id="shop" class="shop-btn">⬡ <span>蜂巢工坊<small>让每次出发，都更远一点</small></span><b>↗</b></button></div>
+<div class="mobile-controls"><button data-key="w">↑</button><div><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div><button id="mobile-action">采蜜 E</button></div>
+<div id="modal" class="overlay hidden"><section class="modal panel"><button class="close" id="close">×</button><div id="modal-body"></div></section></div>
+<div class="corner-note">慢慢飞，花园一直在这里。 <span>✦</span></div>
+</div></body></html>

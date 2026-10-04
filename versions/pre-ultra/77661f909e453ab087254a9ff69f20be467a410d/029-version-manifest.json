@@ -1,0 +1,29 @@
+{
+  "base_commit": "77661f909e453ab087254a9ff69f20be467a410d",
+  "full_old_history_preserved": true,
+  "game_number": "029",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/023/manifest.json": "43d54c28f5a73de1bdfe863c557acc337a274659",
+    "experiments/page-857ec841-top50-gpt6astra/023/prompt.txt": "120ab5f24af351749b174d679473411268657d21",
+    "experiments/page-857ec841-top50-gpt6astra/023/provenance.json": "985b54a23e44df3c4c0add9e4d657cfdbec1d2e8",
+    "experiments/page-857ec841-top50-gpt6astra/023/release.json": "0717f19cbe6902ee42041f15adff3403ef510f5b"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/77661f909e453ab087254a9ff69f20be467a410d",
+  "source_and_published_blobs": {
+    "docs/games/029-hermit-crab-homes/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+    "docs/games/029-hermit-crab-homes/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+    "docs/games/029-hermit-crab-homes/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+    "docs/games/029-hermit-crab-homes/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/029-hermit-crab-homes/README.md": "fbdc62b4b415fffdf9097610300b557b41f814dc",
+    "games/029-hermit-crab-homes/RELEASE.md": "6b98eb79fc7d7b794ebca6af1500755b26e8bec7",
+    "games/029-hermit-crab-homes/dist/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+    "games/029-hermit-crab-homes/dist/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+    "games/029-hermit-crab-homes/dist/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+    "games/029-hermit-crab-homes/dist/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/029-hermit-crab-homes/prompt.txt": "120ab5f24af351749b174d679473411268657d21",
+    "games/029-hermit-crab-homes/src/game.js": "d17c695164580263887ca7bd544837a3c0b31d55",
+    "games/029-hermit-crab-homes/src/index.html": "03d99f906767d1cbb9639d8a69709750313fd51f",
+    "games/029-hermit-crab-homes/src/style.css": "99775ad6da1588e4545e29f76ec502ec950e5bbd",
+    "games/029-hermit-crab-homes/src/vendor/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}

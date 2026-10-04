@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 79,
+      "path": ".gitignore",
+      "sha256": "8e6c5747c8e502167ebec24db05b0245c92a87d8082672a6615f50aa925877c6"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "20264acdf9c06362495ce7e8d4c6cd7a7cf52a8ea5a7bba1329c3ef19a3d7779"
+    },
+    {
+      "bytes": 2417,
+      "path": "README.md",
+      "sha256": "4554a66f26311959657fe13f501bf90d6e490dfa5d310ea31b636e45625011d0"
+    },
+    {
+      "bytes": 46759,
+      "path": "dist/game.js",
+      "sha256": "dc289e62cc7a716a82144bfc3c231618e82a23d8a4a74da38c9f25f91a2d1b57"
+    },
+    {
+      "bytes": 6193,
+      "path": "dist/index.html",
+      "sha256": "14e78f3b0009e9b75583cb6e8c5f2dd5ca29939a0c52e7ac0b2895eebf3e33ae"
+    },
+    {
+      "bytes": 19427,
+      "path": "dist/style.css",
+      "sha256": "5877aa95d74e8cb1ac5f7ec57ea5528d8b279d04037eafeaf6867f23f6bc7176"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 423907,
+      "path": "original-delivery/shellbound-game.tar.gz",
+      "sha256": "3a207816b4c6c8bc1e2b7e50c3e77acbff012a172efb39e8dad47b077bfa8c52"
+    },
+    {
+      "bytes": 412924,
+      "path": "output/playwright/desktop.png",
+      "sha256": "c7c201721aefc681858f64da2b63a6117030c06316af077dce3a0468ac025605"
+    },
+    {
+      "bytes": 427002,
+      "path": "output/playwright/gameplay-final.png",
+      "sha256": "5f00a9d82dd3130db70e89ae5eb50b12c19b2dbe1d4b4ce400f4a0ca7c713216"
+    },
+    {
+      "bytes": 212370,
+      "path": "output/playwright/landscape.png",
+      "sha256": "54dd5f40d0d05bfd1f57357b180af22ca837d2ef35397f39bd2682364631a96d"
+    },
+    {
+      "bytes": 197025,
+      "path": "output/playwright/mobile-intro.png",
+      "sha256": "d11b0b9805f30825f1d0888787e7228303d2570887d559b087e12a407d3acd40"
+    },
+    {
+      "bytes": 104381,
+      "path": "output/playwright/mobile-shell.png",
+      "sha256": "55e29cc3b083c0d1b9142a27efe68ef2a10c77a3f8cd6688c98fc0822bfeaba8"
+    },
+    {
+      "bytes": 265702,
+      "path": "output/playwright/victory.png",
+      "sha256": "5d9d7aa5e6a06e674e93a810d0e265394397e1a0caf41216abaf8d587f3f3e98"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-23/shellbound",
+  "source_tree_sha256": "d42bfc314fda82aae8e87b9a20e2b1a4ddc5d3b83f9c63007bf5c4cb1c104b24",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-029-original-20261004T044854Z",
+  "thread_id": "01a10516-7527-76bf-8b64-222f1ad35080",
+  "turn_id": "01a10516-ba92-72a9-b205-50b58f9248bc"
+}

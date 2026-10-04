@@ -1,11 +1,39 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>寻壳记 · Shellbound</title><meta name="description" content="成为一只寄居蟹，在会呼吸的海岛上寻找下一间家。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23173c36'/%3E%3Ctext x='4' y='31' font-size='30'%3E🐚%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
-<main id="game"><canvas id="world" aria-label="寄居蟹三维海岛"></canvas><div class="vignette"></div>
-<header><div class="brand"><span class="brand-icon">◉</span><div><h1>寻壳记<span>SHELLBOUND</span></h1><p>每一只小蟹，都值得一个好家。</p></div></div><div class="top-actions"><div class="day"><span id="day">第 1 天</span><b id="tide">☀ 退潮时分</b></div><button id="sound" title="开启声音" aria-label="开启声音">♫</button><button id="help" title="玩法与操作" aria-label="玩法与操作">?</button><button id="pause" title="暂停" aria-label="暂停">Ⅱ</button></div></header>
-<section class="quest panel"><div class="eyebrow">ISLAND JOURNAL <span>01 / 探索</span></div><h2>把海岛变成家</h2><div id="quests"></div><div class="journal-note">海浪会带来礼物，也会带走足迹。</div></section>
-<section class="map panel"><div class="eyebrow">潮汐岛 <span id="region">浅滩</span></div><canvas id="minimap" width="180" height="140" aria-label="海岛地图"></canvas><div class="map-key"><i></i> 你 <i></i> 贝壳 <i></i> 珍珠</div></section>
-<div id="toast" role="status"></div><div id="danger"></div><div id="interact" class="panel hidden"><div id="nearTitle"></div><p id="nearDesc"></p><button id="action" class="primary">E · 换上新家</button></div>
-<footer><section class="crab-card panel"><div class="portrait">🐚</div><div class="crab-info"><div class="eyebrow">你的移动小屋 <span id="level">幼年蟹</span></div><h3 id="shellName">漂流小螺</h3><div id="shellStats" class="small"></div></div><button id="collection" title="贝壳图鉴">图鉴 <span id="found">1/6</span></button></section><section class="vitals panel"><div class="meter-row"><span>活力</span><div class="meter"><i id="health"></i></div><b id="healthNum">100</b></div><div class="meter-row"><span>饱腹</span><div class="meter hunger"><i id="hunger"></i></div><b id="hungerNum">100</b></div><div class="progress-row"><span id="growth">成长 0 / 5</span><span id="pearls">◈ 0 珍珠</span></div></section></footer>
-<div class="controls"><span><kbd>W A S D</kbd> 移动</span><span><kbd>Shift</kbd> 疾行</span><span><kbd>空格</kbd> 缩壳</span><span><kbd>E</kbd> 互动</span><span><kbd>Q</kbd> 寻壳声呐</span></div>
-<div id="mobile"><div class="dpad"><button data-key="w">↑</button><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div><button data-key=" ">缩壳</button><button id="touchE">互动</button></div>
-<div id="modal" class="overlay"><div class="modal"><div class="eyebrow">A LITTLE CRAB. A BIG WORLD.</div><h2 id="modalTitle">下一间家，<br><em>就在海浪那边。</em></h2><div id="modalBody"><p>带着一只旧螺壳出发，探索浅滩、椰林与珊瑚湾。<br>收集食物慢慢长大，找到真正属于你的家。</p><div class="intro-grid"><div>🐚<b>六种奇妙的家</b><span>挑选适合自己的壳</span></div><div>🌊<b>会呼吸的海岛</b><span>跟随潮汐寻找宝藏</span></div><div>🦀<b>小小生存冒险</b><span>成长、躲藏与发现</span></div></div></div><button id="start" class="primary">开启海岛生活 <span>↗</span></button><p class="hint">WASD 移动 · E 互动 · 空格缩壳<br>本机自动保存 · 支持触屏</p></div></div>
-</main><script type="module" src="game.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#183e3d" />
+  <meta name="description" content="化身一只小寄居蟹，探索潮汐海岛，寻找贝壳、收集珍珠，为自己找到更好的家。" />
+  <title>寄居日记 · SHELLBOUND</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23183e3d'/%3E%3Cpath d='M42 45C18 52 10 28 25 18c13-9 30 2 24 15-4 10-19 8-19 0 0-6 8-7 9-2' fill='none' stroke='%23f4bd6a' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <main id="game" aria-label="寄居日记 3D 游戏">
+    <canvas id="world" aria-label="3D 海岛。使用 WASD 或方向键移动，E 互动，空格冲刺，Shift 躲进壳中。"></canvas>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-symbol">◉</span><div><h1>寄居日记</h1><span>S H E L L B O U N D</span></div><span class="edition">海岛漫游</span></div>
+      <div class="tide-pill"><span class="tide-icon">≋</span><div><strong id="tide-name">温柔的低潮</strong><span id="tide-time">潮水正在退去</span></div><div class="tide-orbit"><i id="tide-dot"></i></div></div>
+      <nav class="top-actions" aria-label="游戏选项"><button class="icon-button" id="sound-button" title="打开声音" aria-label="打开声音">♪<span class="sound-dot"></span></button><button class="icon-button" id="help-button" title="玩法指南" aria-label="玩法指南">?</button><button class="icon-button" id="pause-button" title="暂停" aria-label="暂停">Ⅱ</button></nav>
+    </header>
+    <section class="journey-card glass" id="journey"><div class="eyebrow"><span class="tiny-line"></span>今天的冒险<span id="quest-count">01 / 04</span></div><h2 id="quest-title">家，要刚刚好</h2><p id="quest-desc">找到沙滩上的贝壳，试着换一个新家。</p><div class="quest-progress"><i id="quest-progress"></i></div><div class="quest-reward"><span id="quest-detail">靠近贝壳，按 E 查看</span><span>✧ <b id="pearls-count">0</b> / 3</span></div></section>
+    <aside class="map-wrap" id="map-wrap"><div class="map-label"><span>贝壳湾</span><span id="region-name">暖沙海岸</span></div><canvas id="minimap" width="280" height="210" aria-label="海岛地图，青绿色为自己，金色为珍珠，白色为贝壳"></canvas><div class="map-legend"><span><i class="you"></i>你</span><span><i class="shell"></i>贝壳</span><span><i class="pearl"></i>珍珠</span></div></aside>
+    <div class="location-label"><span id="area-kicker">01 — THE SHORE</span><strong id="area-name">暖沙海岸</strong></div>
+    <section class="home-card glass"><div class="shell-picture" id="equipped-art"></div><div class="home-copy"><div class="eyebrow">我的小小的家 <span id="shell-rarity">初始</span></div><h2 id="equipped-name">小小螺壳</h2><div class="home-stats"><span>轻盈 <b id="speed-stat">●●●</b></span><span>守护 <b id="defense-stat">●○○</b></span></div></div><button id="journal-button" class="round-button" aria-label="打开贝壳图鉴" title="贝壳图鉴">▤</button></section>
+    <div class="vitals"><div class="vital-row"><span>活力</span><div class="meter"><i id="health-meter"></i></div><b id="health-value">100</b></div><div class="vital-row stamina"><span>体力</span><div class="meter"><i id="stamina-meter"></i></div><b id="stamina-value">100</b></div></div>
+    <button id="interaction" class="interaction hidden" aria-label="与附近的物品互动"><kbd>E</kbd><span id="interaction-text">看看这个贝壳</span></button>
+    <div id="toast" role="status" class="toast"></div>
+    <div class="controls"><span><kbd>W A S D</kbd> 漫游</span><span><kbd>E</kbd> 互动</span><span><kbd>空格</kbd> 冲刺</span><span><kbd>Shift</kbd> 躲藏</span><span class="click-tip">也可以点击沙滩移动</span></div>
+    <div class="explore-counter"><span>足迹</span><strong id="distance-count">0</strong><span>m</span><i></i><span id="discovered-count">1 / 5 种家</span></div>
+    <div id="danger" class="danger hidden">海鸥盯上你了！按住 Shift 躲进家里</div>
+    <div id="touch-controls"><div id="joystick" aria-label="拖动移动"><div id="joystick-knob"></div></div><div class="touch-actions"><button id="touch-hide" aria-label="按住躲藏">躲藏</button><button id="touch-dash" aria-label="按住冲刺">冲刺</button><button id="touch-interact" aria-label="互动">互动</button></div></div>
+    <section id="welcome" class="welcome glass"><div class="welcome-tag"><span></span>一场关于家的海岸冒险</div><p class="welcome-en">A little shell.<br>A whole new world.</p><h2>小小的你，<br>大大的世界。</h2><p class="welcome-desc">背上你的家，沿着海浪出发。<br>下一枚贝壳，也许藏着新的可能。</p><button id="start-button" class="primary-button">出发，寻找新家 <span>✦</span></button><div class="welcome-footer"><span>自由探索 · 换壳成长 · 潮汐宝藏</span><span>01</span></div></section>
+    <div class="dialog-backdrop hidden" id="modal-backdrop"><section id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"></section></div>
+    <div id="loading"><div class="loading-shell">◉</div><strong>海风正把你带到贝壳湾…</strong><span>正在准备你的海岛</span></div>
+  </main>
+  <script type="module">import('./game.js').catch(error=>{console.error(error);const loading=document.getElementById('loading');loading.innerHTML='<strong>小岛暂时没能准备好</strong><span>请使用支持 WebGL 的现代浏览器，开启硬件加速后重试。</span><button class="secondary-button" onclick="location.reload()">重新加载</button>';loading.classList.remove('hidden');});</script>
+</body>
+</html>
