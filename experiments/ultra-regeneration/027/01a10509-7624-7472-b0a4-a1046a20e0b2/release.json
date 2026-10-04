@@ -1,0 +1,92 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "027-whale-deepsea-ruins",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "027",
+  "generation_turn_id": "01a10509-9745-7721-a993-6d03c164123a",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+    "full_old_history_preserved": true,
+    "game_number": "027",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/021/manifest.json": "96a92f7cfa5c76cd6f1aff0ed6adc14407ee154b",
+      "experiments/page-857ec841-top50-gpt6astra/021/prompt.txt": "ed640afcc887d6da2d8c767d9b7da2430d9d4045",
+      "experiments/page-857ec841-top50-gpt6astra/021/provenance.json": "d404c967eed45aae3328f940bfa8d3fe8b48f0d3",
+      "experiments/page-857ec841-top50-gpt6astra/021/release.json": "ae88a560023727fa248588774f34ba636faccf73"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+    "source_and_published_blobs": {
+      "docs/games/027-whale-deepsea-ruins/assets/index-DBN_pqJz.css": "dac111f89e53c5e30fe0f4f73707c4e3e42b2e0b",
+      "docs/games/027-whale-deepsea-ruins/assets/index-DPEM8HKQ.js": "6ccff8e1f33372cc5a2fba011203c1e11e8d8fbf",
+      "docs/games/027-whale-deepsea-ruins/index.html": "9957855a46e8bea0f9659cece963a446037fb7ea",
+      "games/027-whale-deepsea-ruins/.gitignore": "11c9fcdaa580b2baaf11f6d171d13141786f38da",
+      "games/027-whale-deepsea-ruins/README.md": "4165edaca9512ba822349506f57b029273da1e35",
+      "games/027-whale-deepsea-ruins/RELEASE.md": "b5c807902635c72071de8600396eaa7f5fb59c8e",
+      "games/027-whale-deepsea-ruins/dist/assets/index-DBN_pqJz.css": "dac111f89e53c5e30fe0f4f73707c4e3e42b2e0b",
+      "games/027-whale-deepsea-ruins/dist/assets/index-DPEM8HKQ.js": "6ccff8e1f33372cc5a2fba011203c1e11e8d8fbf",
+      "games/027-whale-deepsea-ruins/dist/index.html": "4ecb1d4c20a8f4e9ec837763366850375e5b0c61",
+      "games/027-whale-deepsea-ruins/index.html": "696994bccbc522640b13ae6c36fb5f6d43187ad2",
+      "games/027-whale-deepsea-ruins/package-lock.json": "703514c2583b04f3d2951e8e02990dcd81fc353e",
+      "games/027-whale-deepsea-ruins/package.json": "f19dc1198665d5e3bf504660d398351893ae2e08",
+      "games/027-whale-deepsea-ruins/prompt.txt": "ed640afcc887d6da2d8c767d9b7da2430d9d4045",
+      "games/027-whale-deepsea-ruins/src/main.js": "490f01229e5d9a4dc3782c530e90f2621bc2df72",
+      "games/027-whale-deepsea-ruins/src/style.css": "b51c0eac5bf7b7aac061394e16c428720816aa06",
+      "games/027-whale-deepsea-ruins/src/world.js": "2c3dd5f4d7d29f52bf70342f8475dcaf6c6ee179"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 12572,
+      "path": "animals.js",
+      "sha256": "66d2103a5767e4a62c20ac67216a7bf68f98b3d84b249c6a90f0b184a4e1fe32"
+    },
+    {
+      "bytes": 37257,
+      "path": "game.js",
+      "sha256": "afa679213aa9e60623160602b1fafe2f73cbdd76bdcd5b648fa31f91cc71a413"
+    },
+    {
+      "bytes": 5565,
+      "path": "index.html",
+      "sha256": "b3ba463a2b1421de373af5943372676000b344343475f1d742566e2701bb81a9"
+    },
+    {
+      "bytes": 17049,
+      "path": "style.css",
+      "sha256": "f1428ac93e2daadf4a042c23a0345bb912aaa78bfa3c09d110ee4903a631cfcf"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 16234,
+      "path": "world.js",
+      "sha256": "88545f34a6ecb8b99473767c3407402375fbad11bd5b507cea2250cb2e4d3889"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "7fa04cbfee5b7616dc57aaf734598ebb58b69513ef732af4b34667754879a636",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10509-7624-7472-b0a4-a1046a20e0b2",
+  "title": "鲸落之境 · ABYSSAL",
+  "url": "https://qzemi.cn/sentence-to-game/games/027-whale-deepsea-ruins/"
+}

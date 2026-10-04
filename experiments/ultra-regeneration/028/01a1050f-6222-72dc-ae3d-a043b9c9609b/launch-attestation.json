@@ -1,0 +1,14 @@
+{
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "generation_interface": "isolated author task permitting development tools; not represented as a single raw inference answer",
+  "generation_turn_id": "01a1050f-8322-7446-8905-acc0da3b4173",
+  "input_scope": "one complete sentence only; no repository, templates, other games or repair context",
+  "kind": "parent_actual_create_request_parameter_attestation",
+  "model_requested": "gpt-6-astra",
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "prompt": "实现一个小水母在海底躲避捕食者的 3D 游戏，尽你所能丰富游戏玩法。",
+  "server_execution_parameters_independently_authenticated": false,
+  "thinking_requested": "ultra",
+  "thread_id": "01a1050f-6222-72dc-ae3d-a043b9c9609b"
+}

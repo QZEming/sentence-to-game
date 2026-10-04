@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "376f663bb0a1b0c15d111a44591a3b01a1a3ea5f6a94cd1806e4648676e5857c"
+    },
+    {
+      "bytes": 1724,
+      "path": "QA.md",
+      "sha256": "10d33ef6f9e206eee55027411a03f1886c8a4f9f9c3b6d9f0b834c3f19c0876a"
+    },
+    {
+      "bytes": 2183,
+      "path": "README.md",
+      "sha256": "43fa12410dc3a01f3463ac8c26fcd9e58d05c98655e4ff184817f9628a93d7a8"
+    },
+    {
+      "bytes": 12572,
+      "path": "dist/animals.js",
+      "sha256": "66d2103a5767e4a62c20ac67216a7bf68f98b3d84b249c6a90f0b184a4e1fe32"
+    },
+    {
+      "bytes": 37257,
+      "path": "dist/game.js",
+      "sha256": "afa679213aa9e60623160602b1fafe2f73cbdd76bdcd5b648fa31f91cc71a413"
+    },
+    {
+      "bytes": 5565,
+      "path": "dist/index.html",
+      "sha256": "b3ba463a2b1421de373af5943372676000b344343475f1d742566e2701bb81a9"
+    },
+    {
+      "bytes": 17049,
+      "path": "dist/style.css",
+      "sha256": "f1428ac93e2daadf4a042c23a0345bb912aaa78bfa3c09d110ee4903a631cfcf"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 16234,
+      "path": "dist/world.js",
+      "sha256": "88545f34a6ecb8b99473767c3407402375fbad11bd5b507cea2250cb2e4d3889"
+    },
+    {
+      "bytes": 429373,
+      "path": "original-delivery/abyssal-deploy.tar.gz",
+      "sha256": "075fe5089099acd3e5fc515933e9826ef5a8ab8c3c067581a649a28691fa0df4"
+    },
+    {
+      "bytes": 380567,
+      "path": "original-delivery/ending.png",
+      "sha256": "ad04324ee929aa0203b9a4aca87b83de2987b78a2f23eb8c3d2fa3b8c2e717c1"
+    },
+    {
+      "bytes": 894660,
+      "path": "original-delivery/gameplay.png",
+      "sha256": "2314b7eca014e4ec5e91d786e6d16e5036639bd8e02c28b8fcc7c5ed1312e1db"
+    },
+    {
+      "bytes": 292241,
+      "path": "original-delivery/mobile-final.png",
+      "sha256": "8ee2b58aeb6bfd3d05e182d4e79402079e3c02f5872ea843a5fe5248c8bbd592"
+    },
+    {
+      "bytes": 310541,
+      "path": "original-delivery/mobile-sonar.png",
+      "sha256": "159208e3c5f421166d582f189741233c87465ad47fdfc8c438f98077a0f239e0"
+    },
+    {
+      "bytes": 406046,
+      "path": "original-delivery/mobile.png",
+      "sha256": "eee367760c94986b5d3fb9abf69fe74c106744445562e4357d24bc2a3c9c1919"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-21/abyssal",
+  "source_tree_sha256": "7fa04cbfee5b7616dc57aaf734598ebb58b69513ef732af4b34667754879a636",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-027-original-20261004T043901Z",
+  "thread_id": "01a10509-7624-7472-b0a4-a1046a20e0b2",
+  "turn_id": "01a10509-9745-7721-a993-6d03c164123a"
+}

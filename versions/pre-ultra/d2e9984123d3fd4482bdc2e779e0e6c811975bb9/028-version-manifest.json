@@ -1,0 +1,31 @@
+{
+  "base_commit": "d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+  "full_old_history_preserved": true,
+  "game_number": "028",
+  "old_experiment_files_unchanged": {
+    "experiments/page-857ec841-top50-gpt6astra/022/manifest.json": "60b89492762fe83e26f0e8d0146b2f58d4010c9e",
+    "experiments/page-857ec841-top50-gpt6astra/022/prompt.txt": "33e9e68127434b26a1c48243a3b6f2ea5bdb34b5",
+    "experiments/page-857ec841-top50-gpt6astra/022/provenance.json": "0cae6f585d692dfafa1e612fcacc9de48769f575",
+    "experiments/page-857ec841-top50-gpt6astra/022/release.json": "b386b0fbb0dfca400a46bd678acb57a2c53cb8c1"
+  },
+  "preserved_version_prefix": "versions/pre-ultra/d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+  "source_and_published_blobs": {
+    "docs/games/028-jellyfish-survival/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+    "docs/games/028-jellyfish-survival/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+    "docs/games/028-jellyfish-survival/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+    "docs/games/028-jellyfish-survival/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/028-jellyfish-survival/README.md": "9de18765972713b11462798bad931f45bd6e0bb6",
+    "games/028-jellyfish-survival/RELEASE.md": "200e555dccb05ca949e4baa08d14a1389026f49f",
+    "games/028-jellyfish-survival/dist/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+    "games/028-jellyfish-survival/dist/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+    "games/028-jellyfish-survival/dist/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+    "games/028-jellyfish-survival/dist/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+    "games/028-jellyfish-survival/package.json": "4e1845cf0efd4e76e8488837ee7dd3acb3205404",
+    "games/028-jellyfish-survival/prompt.txt": "33e9e68127434b26a1c48243a3b6f2ea5bdb34b5",
+    "games/028-jellyfish-survival/server.mjs": "e692bf915a8edb58cf5a9759bf843f52f06d5b17",
+    "games/028-jellyfish-survival/src/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+    "games/028-jellyfish-survival/src/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+    "games/028-jellyfish-survival/src/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+    "games/028-jellyfish-survival/src/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+  }
+}

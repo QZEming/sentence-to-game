@@ -1,0 +1,405 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-028-original-20261004T043356Z",
+  "candidate": "ultra-028",
+  "completed_at": "2026-10-04T04:38:38.833267Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn",
+    ".next/cache",
+    ".angular/cache"
+  ],
+  "excluded_files": [
+    "*.tsbuildinfo",
+    ".eslintcache",
+    ".stylelintcache",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "external_evidence_selection": {
+    "authorization": "Parent explicitly authorized all eight original game evidence artifacts",
+    "directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright",
+    "exact_names": [
+      "gameplay-mobile.png",
+      "menu-final.png",
+      "menu-mobile.png",
+      "gameplay-desktop.png",
+      "menu.png",
+      "verify.js",
+      "verification.json",
+      "verification-result.txt"
+    ],
+    "images_opened": false,
+    "marker_confirmed": true,
+    "qa_hook_marker": "__qa",
+    "screenshot_attribution": "Four PNGs referenced by original verify.js; menu.png by isolated task-22 parent authorization/context only; no image opened",
+    "shared_function_references": [
+      "damage",
+      "pulse",
+      "collect",
+      "chooseUpgrade"
+    ],
+    "static_marker_matches": [],
+    "static_marker_method": "Original __qa response-injected hook and game-function references statically correlated with assigned source; helper also matched survival/beacon/predator check context"
+  },
+  "file_count": 17,
+  "files": [
+    {
+      "archive_relative_path": "jellyfish/.gitignore",
+      "copied_sha256": "c03573ee5f58c7925edb68ecf4cf455cf813707965d230c07e740fb1fd9fee04",
+      "final_source_sha256": "c03573ee5f58c7925edb68ecf4cf455cf813707965d230c07e740fb1fd9fee04",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087490721202939,
+      "mtime_utc": "2026-10-04T04:18:10.721203Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/.gitignore",
+      "size_bytes": 35,
+      "source_sha256": "c03573ee5f58c7925edb68ecf4cf455cf813707965d230c07e740fb1fd9fee04",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/.openai/hosting.json",
+      "copied_sha256": "dac416adfcf69f7bce296404d017c1ce03f8dc8dd940254a952a8b49aea267f7",
+      "final_source_sha256": "dac416adfcf69f7bce296404d017c1ce03f8dc8dd940254a952a8b49aea267f7",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791086408338142537,
+      "mtime_utc": "2026-10-04T04:00:08.338142Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "dac416adfcf69f7bce296404d017c1ce03f8dc8dd940254a952a8b49aea267f7",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/README.md",
+      "copied_sha256": "eb1eaad70bb2c68b3f287cd2be7a6d0c11ee193e1b89969f4c7f30e0e54e9621",
+      "final_source_sha256": "eb1eaad70bb2c68b3f287cd2be7a6d0c11ee193e1b89969f4c7f30e0e54e9621",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087490708216744,
+      "mtime_utc": "2026-10-04T04:18:10.708217Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/README.md",
+      "size_bytes": 1576,
+      "source_sha256": "eb1eaad70bb2c68b3f287cd2be7a6d0c11ee193e1b89969f4c7f30e0e54e9621",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/dist/game.js",
+      "copied_sha256": "7361dc865829b9e880228b451313ddf75ff916097a4793da89f0462ade5783dc",
+      "final_source_sha256": "7361dc865829b9e880228b451313ddf75ff916097a4793da89f0462ade5783dc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087625450941961,
+      "mtime_utc": "2026-10-04T04:20:25.450942Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/dist/game.js",
+      "size_bytes": 44435,
+      "source_sha256": "7361dc865829b9e880228b451313ddf75ff916097a4793da89f0462ade5783dc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/dist/index.html",
+      "copied_sha256": "ad8c4b0848cfa6ae5e89b3f543d0e4562dec21cc6f40a7d51a490acf2e7a38f3",
+      "final_source_sha256": "ad8c4b0848cfa6ae5e89b3f543d0e4562dec21cc6f40a7d51a490acf2e7a38f3",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791086742614794976,
+      "mtime_utc": "2026-10-04T04:05:42.614795Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/dist/index.html",
+      "size_bytes": 8605,
+      "source_sha256": "ad8c4b0848cfa6ae5e89b3f543d0e4562dec21cc6f40a7d51a490acf2e7a38f3",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/dist/style.css",
+      "copied_sha256": "fe180192578041de0a89a4d50b2ba593adfc540892b40742eb96fb73cf44db5d",
+      "final_source_sha256": "fe180192578041de0a89a4d50b2ba593adfc540892b40742eb96fb73cf44db5d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087327121269863,
+      "mtime_utc": "2026-10-04T04:15:27.121270Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/dist/style.css",
+      "size_bytes": 16079,
+      "source_sha256": "fe180192578041de0a89a4d50b2ba593adfc540892b40742eb96fb73cf44db5d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "final_source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087327712916831,
+      "mtime_utc": "2026-10-04T04:15:27.712917Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "jellyfish/dist/vendor/three.module.js",
+      "copied_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "final_source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791086372445922021,
+      "mtime_utc": "2026-10-04T03:59:32.445922Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish/dist/vendor/three.module.js",
+      "size_bytes": 1314681,
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/gameplay-mobile.png",
+      "copied_sha256": "027b62cbf2d4706ab2e8ba506f581e2e54229e23ef00db239005499a6202300d",
+      "final_source_sha256": "027b62cbf2d4706ab2e8ba506f581e2e54229e23ef00db239005499a6202300d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087827862064398,
+      "mtime_utc": "2026-10-04T04:23:47.862064Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/gameplay-mobile.png",
+      "size_bytes": 236497,
+      "source_sha256": "027b62cbf2d4706ab2e8ba506f581e2e54229e23ef00db239005499a6202300d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/menu-final.png",
+      "copied_sha256": "e1a1e5cf6b615dc23debfe526f8b3d3f0e7011ff379f4b06d5fa50121e7ec028",
+      "final_source_sha256": "e1a1e5cf6b615dc23debfe526f8b3d3f0e7011ff379f4b06d5fa50121e7ec028",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087826395337440,
+      "mtime_utc": "2026-10-04T04:23:46.395338Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/menu-final.png",
+      "size_bytes": 609455,
+      "source_sha256": "e1a1e5cf6b615dc23debfe526f8b3d3f0e7011ff379f4b06d5fa50121e7ec028",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/menu-mobile.png",
+      "copied_sha256": "2571573857ab32d00b546189532c5f345c3629b89aa40d8284353dbdd3b7cdba",
+      "final_source_sha256": "2571573857ab32d00b546189532c5f345c3629b89aa40d8284353dbdd3b7cdba",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087828314300570,
+      "mtime_utc": "2026-10-04T04:23:48.314301Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/menu-mobile.png",
+      "size_bytes": 263457,
+      "source_sha256": "2571573857ab32d00b546189532c5f345c3629b89aa40d8284353dbdd3b7cdba",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/gameplay-desktop.png",
+      "copied_sha256": "28533b174b9fec57b129f26cc691095cdf1b95ba6b82d6e2df7fe35c4c23598c",
+      "final_source_sha256": "28533b174b9fec57b129f26cc691095cdf1b95ba6b82d6e2df7fe35c4c23598c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087827545049014,
+      "mtime_utc": "2026-10-04T04:23:47.545049Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/gameplay-desktop.png",
+      "size_bytes": 624117,
+      "source_sha256": "28533b174b9fec57b129f26cc691095cdf1b95ba6b82d6e2df7fe35c4c23598c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/menu.png",
+      "copied_sha256": "5f8d22fdb5622beb4d1a99fa2e9ccaefa615160cc7485a0389d44dde8ebdb1f9",
+      "final_source_sha256": "5f8d22fdb5622beb4d1a99fa2e9ccaefa615160cc7485a0389d44dde8ebdb1f9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087558168374563,
+      "mtime_utc": "2026-10-04T04:19:18.168375Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/menu.png",
+      "size_bytes": 588300,
+      "source_sha256": "5f8d22fdb5622beb4d1a99fa2e9ccaefa615160cc7485a0389d44dde8ebdb1f9",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/verify.js",
+      "copied_sha256": "1d74bce4c3e04428c26c28ed547c769fc9de098428c758e49ea1272be88ede64",
+      "final_source_sha256": "1d74bce4c3e04428c26c28ed547c769fc9de098428c758e49ea1272be88ede64",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087825457104481,
+      "mtime_utc": "2026-10-04T04:23:45.457104Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/verify.js",
+      "size_bytes": 5222,
+      "source_sha256": "1d74bce4c3e04428c26c28ed547c769fc9de098428c758e49ea1272be88ede64",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/verification.json",
+      "copied_sha256": "d3a8fa9fa87d1bedc0a0c24e10a15e32b50d0df5b7110c3afb081f76dcf36f0c",
+      "final_source_sha256": "d3a8fa9fa87d1bedc0a0c24e10a15e32b50d0df5b7110c3afb081f76dcf36f0c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087902104698834,
+      "mtime_utc": "2026-10-04T04:25:02.104699Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/verification.json",
+      "size_bytes": 2409,
+      "source_sha256": "d3a8fa9fa87d1bedc0a0c24e10a15e32b50d0df5b7110c3afb081f76dcf36f0c",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/output/playwright/verification-result.txt",
+      "copied_sha256": "2caae92ad3194d87bdcf759535a8d23d7cbf39216cfda5058122e1a35cba0f6d",
+      "final_source_sha256": "2caae92ad3194d87bdcf759535a8d23d7cbf39216cfda5058122e1a35cba0f6d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087828846661996,
+      "mtime_utc": "2026-10-04T04:23:48.846662Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/output/playwright/verification-result.txt",
+      "size_bytes": 6677,
+      "source_sha256": "2caae92ad3194d87bdcf759535a8d23d7cbf39216cfda5058122e1a35cba0f6d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/jellyfish.tar.gz",
+      "copied_sha256": "87aef79948bbff424f5fa3dba3dd79a66d3388260f7cec76af39f3dd538cb60c",
+      "final_source_sha256": "87aef79948bbff424f5fa3dba3dd79a66d3388260f7cec76af39f3dd538cb60c",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791087872590474615,
+      "mtime_utc": "2026-10-04T04:24:32.590475Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish.tar.gz",
+      "size_bytes": 292413,
+      "source_sha256": "87aef79948bbff424f5fa3dba3dd79a66d3388260f7cec76af39f3dd538cb60c",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "inventory_fixed_at": "2026-10-04T04:38:38.620438Z",
+  "limitations": [
+    "No builds, tests, game play, image viewing, browser actions, remote writes, source modifications, process actions, or publisher directory writes.",
+    "Original delivery archive copied as bytes without unpacking or rebuilding.",
+    "Reports and screenshots preserved as original evidence only; no independent gameplay verification.",
+    "Only exact authorized source, eight external artifacts and original package read; other candidates and all session/runtime paths excluded.",
+    "Thirteen passing checks use a response-injected test hook and direct state/function manipulation; they are not thirteen natural gameplay complete runs.",
+    "Victory check sets elapsed to 179.99 and steps 0.02; it does not establish actual 180-second survival.",
+    "Mobile checks cover viewport overflow and visible joystick size only; no touchscreen operation or real-device full gameplay was performed.",
+    "Error capture covers pageerror, console errors and GL_INVALID-related warnings, not all warnings or network errors.",
+    "menu.png attribution is parent isolated-task evidence context only; no images opened.",
+    "Root process and port observations are separately attributed and are not author game tests."
+  ],
+  "original_request": "实现一个小水母在海底躲避捕食者的 3D 游戏，尽你所能丰富游戏玩法。",
+  "parent_readonly_process_observation": {
+    "candidate027_029_030_052_057_and_publisher_untouched": true,
+    "inspection_scope": [
+      "actual browser roots and cached Chrome",
+      "daemon/node/python/shell cwd",
+      "http.server served_directory"
+    ],
+    "no_candidate028_related_process_roots_or_children": true,
+    "observed_at_utc": "2026-10-04T04:35:04Z",
+    "port4182_listener_present": false,
+    "port_check_time": "Later root confirmation; exact timestamp not supplied",
+    "protected_services_alive": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547
+    },
+    "protected_user_chrome_pid": 1036,
+    "provenance": "Root-agent read-only process inspection and later lsof port confirmation; not author game testing or independent archival-agent process inspection",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "browser_errors_reported": 0,
+    "existing_verification_record": {
+      "actual_ui_input_scope": [
+        "start button click",
+        "Esc pause and resume",
+        "menu buttons"
+      ],
+      "all_warnings_or_network_errors_covered": false,
+      "browser_hosted_logic_methods": [
+        "keys.add plus step for movement",
+        "direct enemy/player position setup",
+        "direct damage/pulse/collect/chooseUpgrade calls"
+      ],
+      "error_capture_scope": [
+        "pageerror",
+        "console error",
+        "GL_INVALID-related warnings"
+      ],
+      "preview_port_from_readme_lines_8_and_11": 4182,
+      "provenance": "Read-only helper summarized original report, result text and verify.js; archival agent only statically correlated symbols, copied bytes and hashed files",
+      "report_path": "root-artifacts/output/playwright/verification.json",
+      "report_result": {
+        "all_pass_true": true,
+        "checks": 13,
+        "errors": [],
+        "webmcpAvailable": false
+      },
+      "result_text_line_2": "complete returned report value",
+      "result_text_lines_5_to_34": "original executed Playwright code, same as verify.js",
+      "result_text_path": "root-artifacts/output/playwright/verification-result.txt",
+      "verify_line_19_victory": "elapsed set to 179.99 plus step 0.02; not an actual 180-second complete survival run",
+      "verify_lines_24_to_25_mobile": {
+        "checks": [
+          "no overflow",
+          "joystick width greater than zero"
+        ],
+        "touch_input_or_real_device_complete_play": "not performed",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      "verify_lines_3_to_4_method": "Append __qa testing hook to browser response without changing original source"
+    },
+    "gameplay_checks_passed_reported": 13,
+    "provenance": "Author report relayed by parent only; no checks rerun or independently verified; method and coverage limits retained"
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Parent/author report only; site not accessed; not formal delivery or GitHub publication evidence",
+    "url": "https://jellyfish-deep-blue-20261004.zemingqiu045.chatgpt.site",
+    "visibility": "private per parent report"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Launch parameters supplied by parent only; actual historical generation model and effort not independently authenticated",
+    "reasoning_effort": "ultra"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish",
+  "stage": "original",
+  "thread_id": "01a1050f-6222-72dc-ae3d-a043b9c9609b",
+  "title": "Jellyfish",
+  "total_bytes": 4015145,
+  "turn_id": "01a1050f-8322-7446-8905-acc0da3b4173"
+}

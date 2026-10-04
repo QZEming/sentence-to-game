@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "bytes": 35,
+      "path": ".gitignore",
+      "sha256": "c03573ee5f58c7925edb68ecf4cf455cf813707965d230c07e740fb1fd9fee04"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "dac416adfcf69f7bce296404d017c1ce03f8dc8dd940254a952a8b49aea267f7"
+    },
+    {
+      "bytes": 1576,
+      "path": "README.md",
+      "sha256": "eb1eaad70bb2c68b3f287cd2be7a6d0c11ee193e1b89969f4c7f30e0e54e9621"
+    },
+    {
+      "bytes": 44435,
+      "path": "dist/game.js",
+      "sha256": "7361dc865829b9e880228b451313ddf75ff916097a4793da89f0462ade5783dc"
+    },
+    {
+      "bytes": 8605,
+      "path": "dist/index.html",
+      "sha256": "ad8c4b0848cfa6ae5e89b3f543d0e4562dec21cc6f40a7d51a490acf2e7a38f3"
+    },
+    {
+      "bytes": 16079,
+      "path": "dist/style.css",
+      "sha256": "fe180192578041de0a89a4d50b2ba593adfc540892b40742eb96fb73cf44db5d"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 624117,
+      "path": "original-delivery/gameplay-desktop.png",
+      "sha256": "28533b174b9fec57b129f26cc691095cdf1b95ba6b82d6e2df7fe35c4c23598c"
+    },
+    {
+      "bytes": 236497,
+      "path": "original-delivery/gameplay-mobile.png",
+      "sha256": "027b62cbf2d4706ab2e8ba506f581e2e54229e23ef00db239005499a6202300d"
+    },
+    {
+      "bytes": 292413,
+      "path": "original-delivery/jellyfish.tar.gz",
+      "sha256": "87aef79948bbff424f5fa3dba3dd79a66d3388260f7cec76af39f3dd538cb60c"
+    },
+    {
+      "bytes": 609455,
+      "path": "original-delivery/menu-final.png",
+      "sha256": "e1a1e5cf6b615dc23debfe526f8b3d3f0e7011ff379f4b06d5fa50121e7ec028"
+    },
+    {
+      "bytes": 263457,
+      "path": "original-delivery/menu-mobile.png",
+      "sha256": "2571573857ab32d00b546189532c5f345c3629b89aa40d8284353dbdd3b7cdba"
+    },
+    {
+      "bytes": 588300,
+      "path": "original-delivery/menu.png",
+      "sha256": "5f8d22fdb5622beb4d1a99fa2e9ccaefa615160cc7485a0389d44dde8ebdb1f9"
+    },
+    {
+      "bytes": 6677,
+      "path": "original-delivery/verification-result.txt",
+      "sha256": "2caae92ad3194d87bdcf759535a8d23d7cbf39216cfda5058122e1a35cba0f6d"
+    },
+    {
+      "bytes": 2409,
+      "path": "original-delivery/verification.json",
+      "sha256": "d3a8fa9fa87d1bedc0a0c24e10a15e32b50d0df5b7110c3afb081f76dcf36f0c"
+    },
+    {
+      "bytes": 5222,
+      "path": "original-delivery/verify.js",
+      "sha256": "1d74bce4c3e04428c26c28ed547c769fc9de098428c758e49ea1272be88ede64"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-22/jellyfish",
+  "source_tree_sha256": "e08f6e47faf7ae8848035758ba877e1d98149343eca34bfe975e0a343f15511b",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-028-original-20261004T043356Z",
+  "thread_id": "01a1050f-6222-72dc-ae3d-a043b9c9609b",
+  "turn_id": "01a1050f-8322-7446-8905-acc0da3b4173"
+}

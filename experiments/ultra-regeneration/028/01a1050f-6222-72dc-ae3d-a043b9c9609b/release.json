@@ -1,0 +1,78 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "028-jellyfish-survival",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "028",
+  "generation_turn_id": "01a1050f-8322-7446-8905-acc0da3b4173",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+    "full_old_history_preserved": true,
+    "game_number": "028",
+    "old_experiment_files_unchanged": {
+      "experiments/page-857ec841-top50-gpt6astra/022/manifest.json": "60b89492762fe83e26f0e8d0146b2f58d4010c9e",
+      "experiments/page-857ec841-top50-gpt6astra/022/prompt.txt": "33e9e68127434b26a1c48243a3b6f2ea5bdb34b5",
+      "experiments/page-857ec841-top50-gpt6astra/022/provenance.json": "0cae6f585d692dfafa1e612fcacc9de48769f575",
+      "experiments/page-857ec841-top50-gpt6astra/022/release.json": "b386b0fbb0dfca400a46bd678acb57a2c53cb8c1"
+    },
+    "preserved_version_prefix": "versions/pre-ultra/d2e9984123d3fd4482bdc2e779e0e6c811975bb9",
+    "source_and_published_blobs": {
+      "docs/games/028-jellyfish-survival/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+      "docs/games/028-jellyfish-survival/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+      "docs/games/028-jellyfish-survival/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+      "docs/games/028-jellyfish-survival/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/028-jellyfish-survival/README.md": "9de18765972713b11462798bad931f45bd6e0bb6",
+      "games/028-jellyfish-survival/RELEASE.md": "200e555dccb05ca949e4baa08d14a1389026f49f",
+      "games/028-jellyfish-survival/dist/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+      "games/028-jellyfish-survival/dist/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+      "games/028-jellyfish-survival/dist/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+      "games/028-jellyfish-survival/dist/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "games/028-jellyfish-survival/package.json": "4e1845cf0efd4e76e8488837ee7dd3acb3205404",
+      "games/028-jellyfish-survival/prompt.txt": "33e9e68127434b26a1c48243a3b6f2ea5bdb34b5",
+      "games/028-jellyfish-survival/server.mjs": "e692bf915a8edb58cf5a9759bf843f52f06d5b17",
+      "games/028-jellyfish-survival/src/game.js": "feb1d4bd09bc65711744d03a6a05ffa98b58a198",
+      "games/028-jellyfish-survival/src/index.html": "a14e6980d6e7ee96f726d4a859ce33f90e56f02b",
+      "games/028-jellyfish-survival/src/style.css": "e4586b4fb2548dc325e3611da1db86c1fee266ac",
+      "games/028-jellyfish-survival/src/three.module.js": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7"
+    }
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 44435,
+      "path": "game.js",
+      "sha256": "7361dc865829b9e880228b451313ddf75ff916097a4793da89f0462ade5783dc"
+    },
+    {
+      "bytes": 8605,
+      "path": "index.html",
+      "sha256": "ad8c4b0848cfa6ae5e89b3f543d0e4562dec21cc6f40a7d51a490acf2e7a38f3"
+    },
+    {
+      "bytes": 16079,
+      "path": "style.css",
+      "sha256": "fe180192578041de0a89a4d50b2ba593adfc540892b40742eb96fb73cf44db5d"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "e08f6e47faf7ae8848035758ba877e1d98149343eca34bfe975e0a343f15511b",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1050f-6222-72dc-ae3d-a043b9c9609b",
+  "title": "浮光 LUMEN · 深海漫游",
+  "url": "https://qzemi.cn/sentence-to-game/games/028-jellyfish-survival/"
+}

@@ -1,14 +1,50 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#041f2a"><meta name="description" content="一场属于小水母的深海冒险。收集浮游生物，躲开捕食者，找到海洋之心。"><title>幽蓝 · 水母远行</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%238eece4' d='M3 19a13 13 0 0 1 26 0ZM8 21h3v9H8zm7 0h3v7h-3zm7 0h3v9h-3z'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body>
-<canvas id="world" aria-label="海底 3D 游戏场景"></canvas><div class="vignette"></div>
-<header><a class="brand" href="./"><span class="brand-icon">◡</span><div>幽蓝<span class="brand-en">JELLYFISH ODYSSEY</span></div></a><div class="location"><i></i><span id="zone">珊瑚浅海</span><span class="divider">/</span><span id="depth">深度 28 m</span></div><div class="top-buttons"><button id="sound" title="开启声音" aria-label="开启声音">♫</button><button id="help" title="操作指南" aria-label="操作指南">?</button><button id="pause" title="暂停游戏" aria-label="暂停游戏">Ⅱ</button></div></header>
-<aside id="stats" class="glass"><div class="status-heading"><span>生命状态</span><span id="hpLabel">100%</span></div><div class="bar"><i id="hp"></i></div><div class="status-heading small"><span>能量</span><span id="energyLabel">100 / 100</span></div><div class="bar energy"><i id="energy"></i></div><div class="levelrow"><span id="level">幼年水母 · Lv.1</span><span id="foodCount">0 / 6</span></div><div class="bar xp"><i id="xp"></i></div></aside>
-<aside id="quest" class="glass"><div class="eyebrow">THE JOURNEY</div><h3 id="questTitle">在微光中成长</h3><p id="questText">收集 6 个浮游生物，完成第一次进化。</p><div class="quest-bottom"><span>海洋之心</span><span id="pearls">◇ ◇ ◇</span></div></aside>
-<div id="danger" class="danger hidden">捕食者正在靠近 · 快躲进海草！</div><div id="toast" role="status"></div>
-<section id="intro" class="intro"><div class="eyebrow">A LITTLE LIGHT IN A VAST OCEAN</div><h1>向深蓝，<br>轻轻游去。</h1><p>你是一只小水母，海洋却很大。<br>追随微光，学会生存，找到属于你的海洋之心。</p><button class="primary" id="start">开始远行 <span>↗</span></button><div class="intro-meta"><span><i></i> 3D 海底生存</span><span>戴上耳机，潜入海洋</span></div></section>
-<div id="species" class="species"><span class="line"></span><div>月光水母<small>AURELIA · 你的海底旅伴</small></div></div>
-<div id="bottom"><div class="timebox"><span class="eyebrow">本次远行</span><strong id="time">00:00</strong><small id="score">微光 0000</small></div><div class="abilities"><button id="dash" class="ability"><kbd>SPACE</kbd><span>喷射冲刺<small id="dashInfo">消耗 24 能量</small></span><b>↗</b></button><button id="cloak" class="ability"><kbd>Q</kbd><span>透明伪装<small id="cloakInfo">持续 4 秒</small></span><b>◌</b></button><button id="pulse" class="ability"><kbd>E</kbd><span>电光脉冲<small id="pulseInfo">驱散捕食者</small></span><b>ϟ</b></button></div><div class="mapbox"><canvas id="map" width="140" height="140" aria-label="海底雷达"></canvas><span>N · 海域雷达</span></div></div>
-<div class="keyboard-hint" id="hint"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 游动</span><span><kbd>R</kbd> 上浮 <kbd>F</kbd> 下潜</span><span>拖动视角 · 滚轮缩放</span></div>
-<div id="touch"><div class="dpad"><button data-key="w">↑</button><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div><div><button data-key="r">上浮</button><button data-key="f">下潜</button></div></div>
-<div id="modal" class="modal hidden"><div class="modal-card glass"><div class="eyebrow" id="modalEyebrow">TAKE A BREATH</div><h2 id="modalTitle">海洋会等你</h2><div id="modalBody"></div><div id="modalActions"></div></div></div>
-<div id="error" class="modal hidden"><div class="modal-card glass"><h2>海洋暂时无法载入</h2><p>请使用支持 WebGL 的现代浏览器，并开启硬件加速。</p><button onclick="location.reload()" class="primary">重新载入</button></div></div>
-<script type="module" src="game.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#031b27"><meta name="description" content="化身一只发光的小水母，在三维海底收集光点、躲避捕食者、进化技能，完成深海远航。">
+<title>浮光 LUMEN · 深海漫游</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23051f2c'/%3E%3Cpath d='M12 34a20 20 0 0140 0Z M20 34v12q0 8 6 8 M32 34v20 M44 34v12q0 8-6 8' fill='%239bffee' stroke='%239bffee' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="ocean" aria-label="三维海底游戏场景"></canvas><div class="vignette"></div><div id="damage-flash"></div>
+<header class="topbar">
+  <a class="wordmark" href="./" aria-label="浮光 LUMEN 首页"><span class="brand-symbol">◡</span><span>LUMEN<span class="brand-cn">浮 光</span></span></a>
+  <div class="location"><span class="tiny-line"></span><span id="biome-label">浅海花园</span><span class="coordinates" id="depth-label">DEPTH  24 M</span></div>
+  <div class="top-actions"><button id="help-btn" class="icon-btn" aria-label="查看操作指南" title="操作指南">?</button><button id="sound-btn" class="icon-btn" aria-label="开启声音" title="海底声音">♫<span id="sound-cross">／</span></button><button id="quality-btn" class="icon-btn quality" aria-label="切换画质" title="切换画质">HD</button><button id="pause-btn" class="icon-btn hidden" aria-label="暂停游戏" title="暂停 Esc">Ⅱ</button></div>
+</header>
+<main>
+<section id="menu" class="menu">
+<div class="eyebrow"><span></span> AN UNDERWATER ODYSSEY</div>
+<h1>微小的你，<br>也有一片<span>海。</span></h1>
+<p class="intro">做一只自由发光的小水母。<br>潜入幽蓝，躲过危险，带着微光游向远方。</p>
+<div class="mode-switch" role="group" aria-label="游戏模式"><button class="selected" data-mode="survival">生存远航 <span>180 秒挑战</span></button><button data-mode="explore">自在漫游 <span>无伤害探索</span></button></div>
+<button id="start-btn" class="start-btn"><span class="play-icon">▷</span> 开始潜游 <kbd>ENTER</kbd></button>
+<div class="menu-hint"><span class="key-set">W A S D</span> 自由移动 <i></i> <span class="key-set">SPACE</span> 生物电击</div>
+<div class="personal-best" id="personal-best"></div>
+</section>
+<div id="specimen" class="specimen"><span class="specimen-line"></span><div><span class="specimen-kicker">01 / THE LITTLE EXPLORER</span><p>月光水母 <em>Aurelia</em></p><span>柔软、透明，仍然勇敢。</span></div></div>
+<div id="menu-footer" class="menu-footer"><span><b>01</b> 浅海花园 <i>—</i> 旅途从一束微光开始</span><span>戴上耳机，潜入这片海 <span class="wave-symbol">≋</span></span></div>
+<section id="hud" class="hud hidden" aria-label="游戏状态">
+<div class="vitals glass"><div class="vital-head"><span id="level-label">月光水母 · LV.1</span><span id="hp-label">100 / 100</span></div><div class="meter health"><div id="hp-bar"></div></div><div class="energy-row"><span>能量</span><div class="meter energy"><div id="energy-bar"></div></div><span id="energy-label">100</span></div><div class="xp-row"><div class="meter xp"><div id="xp-bar"></div></div><span id="xp-label">0 / 8 光点</span></div></div>
+<div class="journey glass"><div class="journey-top"><span id="journey-title">生存远航</span><strong id="timer">03:00</strong></div><div class="journey-task"><span class="diamond">◇</span><div><b id="quest-title">收集 8 个光点</b><span id="quest-detail">寻找身边的金色浮游生物</span></div><span id="quest-progress">0 / 8</span></div></div>
+<div class="world-info"><span id="threat-label">水流平缓</span><span id="hidden-label" class="hidden">海草隐匿中</span><span id="score-label">0 光点</span></div>
+<div class="radar glass"><div class="radar-title">海域声呐 <span>N</span></div><canvas id="minimap" width="180" height="180" aria-label="食物、捕食者与信标雷达"></canvas><div class="radar-legend"><span class="mint-dot">你</span><span class="orange-dot">危险</span><span class="gold-dot">信标</span></div></div>
+<div id="direction-hint" class="direction-hint"></div>
+<div class="skillbar"><button id="dash-btn" class="skill"><kbd>SHIFT</kbd><span class="skill-icon">ϟ</span><span>脉冲冲刺</span><small id="dash-status">按住加速</small></button><button id="pulse-btn" class="skill"><kbd>SPACE</kbd><span class="skill-icon">◎</span><span>生物电击</span><small id="pulse-status">准备就绪</small></button><button id="hide-btn" class="skill"><kbd>C</kbd><span class="skill-icon">♧</span><span>海草隐匿</span><small id="hide-status">靠近海草</small></button></div>
+<div class="desktop-controls"><span><kbd>WASD</kbd> 移动</span><span><kbd>Q</kbd> 下潜 <kbd>E</kbd> 上浮</span><span><kbd>ESC</kbd> 暂停</span></div>
+<div id="joystick" class="joystick"><div id="joystick-knob"></div></div><div class="touch-depth"><button id="up-btn" aria-label="上浮">上浮</button><button id="down-btn" aria-label="下潜">下潜</button></div>
+</section>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="modal-backdrop" class="modal-backdrop hidden">
+<section id="help-panel" class="panel hidden" role="dialog" aria-modal="true" aria-labelledby="help-title"><span class="eyebrow">FIELD GUIDE / 海底生存手册</span><h2 id="help-title">让你的微光，游得更远。</h2><div class="guide-grid"><div><b>漂游与闪避</b><p><kbd>WASD</kbd> 或方向键移动<br><kbd>Q</kbd> 下潜 · <kbd>E</kbd> 上浮<br><kbd>Shift</kbd> 按住冲刺，消耗能量</p></div><div><b>保护自己</b><p><kbd>Space</kbd> 电击附近的捕食者<br><kbd>C</kbd> 在海草中隐匿<br>隐匿时慢游，冲刺或电击会暴露</p></div><div><b>收集与进化</b><p>金色光点带来经验与少量治疗。<br>升级后从三种进化中选择一种。<br>蓝色水泡补充能量，粉色水泡疗伤。</p></div><div><b>远航目标</b><p>生存 180 秒即可完成远航。<br>额外点亮三个金色信标获得高分。<br>触屏可使用摇杆、技能与潜浮按钮。</p></div></div><div class="guide-note">鲨鱼持续追踪 · 海鳗蓄力突进 · 狮子鱼守卫领地<br>藏进发光海草，或用深度差甩开它们。接近信标后停留 3 秒点亮。</div><button id="close-help" class="primary">知道了</button></section>
+<section id="pause-panel" class="panel compact hidden" role="dialog" aria-modal="true" aria-labelledby="pause-title"><span class="eyebrow">TAKE A BREATH</span><h2 id="pause-title">海洋在等你。</h2><p>旅途已暂停，慢慢来。</p><button id="resume-btn" class="primary">继续潜游</button><button id="restart-btn" class="secondary">重新开始</button><button id="menu-btn" class="text-btn">返回海面</button></section>
+<section id="upgrade-panel" class="panel upgrade-panel hidden" role="dialog" aria-modal="true" aria-labelledby="upgrade-title"><span class="eyebrow">EVOLUTION / 生命的馈赠</span><h2 id="upgrade-title">微光正在变强。</h2><p>选择一种进化，继续你的旅程。</p><div id="upgrade-cards" class="upgrade-cards"></div></section>
+<section id="result-panel" class="panel result-panel hidden" role="dialog" aria-modal="true" aria-labelledby="result-title"><span class="eyebrow" id="result-eyebrow">JOURNEY COMPLETE</span><h2 id="result-title">你把微光，带到了远方。</h2><p id="result-copy"></p><div class="result-stats"><div><strong id="result-score">0</strong><span>远航积分</span></div><div><strong id="result-time">0:00</strong><span>生存时间</span></div><div><strong id="result-beacons">0 / 3</strong><span>点亮信标</span></div></div><div id="result-badges" class="result-badges"></div><button id="again-btn" class="primary">再潜游一次</button><button id="result-menu-btn" class="text-btn">返回海面</button></section>
+</div>
+<div id="loading"><span class="loader-ring"></span><p>正在潜入海底…</p></div>
+<div id="webgl-error" class="error-panel hidden"><h2>这片海需要 WebGL 2</h2><p>请使用支持硬件加速的现代浏览器，然后重新载入。</p><button onclick="location.reload()">重新载入</button></div>
+</main>
+<script type="module" src="./game.js"></script>
+</body></html>

@@ -1,16 +1,34 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="theme-color" content="#061a21"/><title>鲸落秘境 · WHALEFALL</title>  <script type="module" crossorigin src="/assets/index-DPEM8HKQ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DBN_pqJz.css">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#042b3a">
+<title>鲸落之境 · ABYSSAL</title><meta name="description" content="化身深海鲸鱼，循着远古回声探索三处遗迹，唤醒失落的海洋之心。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2306293c'/%3E%3Cpath d='M12 34Q24 20 35 34Q44 43 53 22Q53 51 30 48Q15 47 12 34' fill='%2384eee0'/%3E%3Ccircle cx='21' cy='34' r='2' fill='%2306293c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="world"></div><div class="vignette"></div><div class="grain"></div>
-<header><a class="brand" href="#" aria-label="鲸落秘境首页"><svg width="38" height="28" viewBox="0 0 48 32" fill="none"><path d="M4 12c7 0 8 10 21 10 7 0 11-5 11-10-4 1-5-1-6-5 7 1 9 1 13-5 2 10 0 23-16 25C13 29 4 23 4 12Z" fill="currentColor"/><circle cx="11" cy="17" r="1" fill="#08232a"/></svg><span>WHALEFALL<small>鲸 落 秘 境</small></span></a><nav><button data-panel="journal">探索日志 <span id="journalDot"></span></button><button data-panel="map">海域图鉴</button><button data-panel="help">航行指南</button></nav><div class="header-actions"><button id="soundBtn" class="icon-btn" title="开启海洋音效" aria-label="开启音效">♫</button><button id="pauseBtn" class="icon-btn" title="暂停 / 继续" aria-label="暂停">Ⅱ</button></div></header>
-<main id="landing"><div class="eyebrow"><span></span> AN UNDERWATER ODYSSEY</div><h1>深海之下，<br/>万物有回响。</h1><p class="intro">成为一头鲸，游向被时光遗忘的文明。<br/>追寻微光，唤醒沉睡的海洋记忆。</p><button id="startBtn" class="primary">潜入深海 <span>↗</span></button><div class="continue-row"><button id="continueBtn" hidden>继续上次的旅程 →</button><span id="loading">正在聆听海洋…</span></div><div class="intro-meta"><span>01 — 遗忘之庭</span><i></i><span>自由探索 · 3D 沉浸体验</span></div></main>
-<aside id="scene-note"><div class="tiny-label">THE FORGOTTEN SANCTUARY</div><h2>遗忘之庭</h2><p>最后一声鲸歌，仍在石柱间回荡。</p><div class="note-line"><span>海域深度</span><strong>1,280 <small>m</small></strong></div><div class="note-line"><span>遗迹年代</span><strong>未知</strong></div></aside>
-<div id="landing-bottom"><span><i class="live-dot"></i> 深海信号正常</span><div>戴上耳机，让海洋包围你 <span>⌁</span></div><span>24° 18′ N &nbsp; 142° 06′ E</span></div>
-<section id="hud" hidden><div class="status-panel"><div class="tiny-label">旅航者 · 蓝鲸</div><div class="meter-label"><span>生命共鸣</span><strong id="healthText">100</strong></div><div class="meter"><i id="healthBar"></i></div><div class="meter-label"><span>游动能量</span><strong id="energyText">100</strong></div><div class="meter energy"><i id="energyBar"></i></div><div class="depth"><span>DEPTH</span><b id="depth">1,280</b><small>m</small></div></div><div class="quest-panel"><div class="tiny-label">当前航程 <span id="chapter">01 / 03</span></div><h2 id="questTitle">寻找海洋的记忆</h2><p id="questDesc">收集散落在遗迹周围的 6 枚记忆碎片。</p><div class="quest-count"><span id="questProgress">◇ ◇ ◇ ◇ ◇ ◇</span><b id="questNumber">0 / 6</b></div><div id="guide">微光会指引你的方向</div></div><div id="target-marker"><span>◇</span><b id="targetText">记忆碎片</b><small id="targetDistance"></small></div><div class="minimap"><canvas id="mapCanvas" width="180" height="180"></canvas><span>遗忘之庭 <b>N ↑</b></span></div><div id="interact" hidden><kbd>E</kbd><span>唤醒祭坛</span></div><div class="abilities"><button id="sonarBtn"><kbd>Q</kbd><span class="ability-icon">◎</span><span>鲸歌声呐<small id="sonarTimer">已就绪</small></span></button><button id="dashBtn"><kbd>SHIFT</kbd><span class="ability-icon">↠</span><span>洋流冲刺<small id="dashTimer">消耗能量</small></span></button><button data-panel="map"><kbd>M</kbd><span class="ability-icon">⌘</span><span>海域地图<small>探索与定位</small></span></button></div><div class="movement-hint"><kbd>W A S D</kbd> 游动 <span>·</span> <kbd>空格</kbd> 上浮 <span>·</span> <kbd>C</kbd> 下潜 <span>·</span> 拖动鼠标环视</div></section>
-<div id="toast" role="status"></div><div id="scan-label">ECHOLOCATION ACTIVE <span>正在聆听深海</span></div>
-<div id="modal" class="modal" hidden><div class="modal-card"><button id="closeModal" class="close" aria-label="关闭">×</button><div id="modalContent"></div></div></div>
-<div id="mobile-controls" hidden><div class="dpad"><button data-key="KeyW">↑</button><button data-key="KeyA">←</button><button data-key="KeyS">↓</button><button data-key="KeyD">→</button></div><div class="vertical-controls"><button data-key="Space">上浮</button><button data-key="KeyC">下潜</button><button id="touchInteract">交互</button></div></div>
+<canvas id="ocean" aria-label="3D 深海探索游戏场景"></canvas><div class="vignette"></div><div class="grain"></div>
+<div id="loading" role="status"><div class="loading-orbit"></div><p>正在潜入深蓝…</p><small>唤醒一片沉睡的海洋</small></div>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">◒</span><div><strong>ABYSSAL<span>鲸落之境</span></strong><small>THE SILENT OCEAN</small></div></div>
+  <div class="compass"><div class="compass-ticks">┆　┆　┆　┆　┆　┆　┆　┆　┆</div><div><span>W</span><span>NW</span><b id="heading">N</b><span>NE</span><span>E</span></div><i></i></div>
+  <nav class="nav-buttons" aria-label="游戏菜单"><button data-panel="map" title="海图 M" aria-label="海图">⌖</button><button data-panel="journal" title="航海日志 J" aria-label="航海日志">▤</button><button id="sound-btn" title="音效" aria-label="开启音效">♫</button><button data-panel="pause" title="暂停 Esc" aria-label="暂停游戏">Ⅱ</button></nav>
+</header>
+<main id="hud" class="hidden">
+<section class="quest"><div class="eyebrow"><span class="tiny-line"></span> 当前航程</div><h2 id="quest-title">沉睡的回声</h2><p id="quest-desc">前往回声庭院，寻找古老鲸歌的源头。</p><div id="quest-steps"></div><button id="objective-map" class="text-button">查看海图 <kbd>M</kbd></button></section>
+<div class="region"><span id="region-number">01 / 04</span><h3 id="region-name">回声庭院</h3><p id="region-sub">THE ECHO GARDEN</p></div>
+<div class="depth-meter"><span>DEPTH</span><strong id="depth">1,200</strong><small>米 · 深海带</small><div class="depth-rule"></div></div>
+<div id="waypoint" class="waypoint"><span>◇</span><div id="waypoint-label">回声庭院</div><small id="waypoint-distance">88 m</small></div>
+<div id="interaction" class="interaction hidden"><kbd>F</kbd><span id="interaction-text">与遗迹共鸣</span></div>
+<div class="bottom-left"><div class="whale-status"><div class="whale-emblem">◒</div><div><div class="status-title"><strong>蓝鲸 · 远游者</strong><span id="oxygen-label">100%</span></div><div class="bar oxygen"><i id="oxygen-bar"></i></div><div class="energy-row"><span>气息</span><div class="bar energy"><i id="energy-bar"></i></div><span>体力</span></div></div></div><div class="inventory"><span><b class="crystal-icon">◆</b> <strong id="crystal-count">0</strong> 回声晶石</span><span>◈ <strong id="sigil-count">0 / 3</strong> 遗迹印记</span><button data-panel="upgrades">进化 <kbd>U</kbd></button></div></div>
+<div class="action-dock"><button id="sonar-btn"><span class="action-symbol">◎</span><span>回声声呐</span><kbd>E</kbd><i id="sonar-cooldown"></i></button><button id="boost-btn"><span class="action-symbol">≋</span><span>洋流冲刺</span><kbd>SHIFT</kbd></button><button data-panel="journal"><span class="action-symbol">▤</span><span>探索日志</span><kbd>J</kbd></button></div>
+<button id="minimap-btn" aria-label="打开完整海图"><canvas id="minimap" width="220" height="220"></canvas><span>海域图 <kbd>M</kbd></span></button>
+<div class="keyboard-guide"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 游动</span><span><kbd>SPACE</kbd> 上浮 <kbd>C</kbd> 下潜</span><span>拖动视角 · 滚轮缩放</span></div>
+</main>
+<section id="intro" class="intro hidden"><div class="intro-kicker"><span></span> AN OCEAN OF FORGOTTEN STORIES</div><h1>循着鲸歌<br>潜入<span>失落之境</span></h1><p>海洋记得一切。<br>成为深蓝中的远游者，唤醒沉睡千年的回声。</p><button id="start-btn" class="primary">开始深潜 <span>⤓</span></button><button id="continue-btn" class="secondary hidden">继续上次航程</button><div class="intro-detail"><span>自由探索</span><i></i><span>远古谜题</span><i></i><span>深海奇遇</span></div><div class="intro-chapter"><span>01</span><div>第一章 · 海洋的记忆<small>戴上耳机，聆听深海。</small></div></div></section>
+<div id="toast-container" aria-live="polite"></div>
+<div id="discovery-banner" class="hidden"><small>发现深海生命</small><h2></h2><p></p></div>
+<div id="modal-backdrop" class="modal-backdrop hidden"><section id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button id="close-modal" class="close" aria-label="关闭">×</button><div id="modal-content"></div></section></div>
+<div id="touch-controls" class="hidden"><div id="joystick" aria-label="游动摇杆"><i></i></div><div class="touch-buttons"><button data-touch="Space">↑</button><button data-touch="KeyC">↓</button><button id="touch-interact">共鸣</button><button id="touch-sonar">声呐</button></div></div>
+<script type="module" src="game.js"></script>
 </body></html>
