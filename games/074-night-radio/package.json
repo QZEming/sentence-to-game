@@ -1,0 +1,14 @@
+{
+  "name": "night-radio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/game.js && node --check dist/scene.js && node --check dist/audio.js",
+    "test": "node tests/game.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

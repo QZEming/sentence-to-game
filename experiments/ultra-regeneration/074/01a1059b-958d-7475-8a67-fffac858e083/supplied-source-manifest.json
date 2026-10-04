@@ -1,0 +1,372 @@
+{
+  "additional_directory_glob_exclusions": [
+    "**/*[Ss]ession*/**",
+    "**/*[Rr]untime*/**",
+    "**/*[Cc]ache*/**"
+  ],
+  "all_hashes_match": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_set_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-074-original-20261004T071431Z",
+  "candidate": "ultra-074",
+  "completed_at": "2026-10-04T07:18:29.473611Z",
+  "copy_status": "complete",
+  "excluded_directories": [
+    "archive",
+    "archives",
+    "node_modules",
+    ".git",
+    ".codex",
+    ".agents",
+    ".aws",
+    ".cache",
+    "cache",
+    "caches",
+    "runtime",
+    ".runtime",
+    "sessions",
+    ".sessions",
+    "session",
+    ".session",
+    ".playwright-cli",
+    "__pycache__",
+    ".vite",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".turbo",
+    ".parcel-cache",
+    ".rollup.cache",
+    ".webpack",
+    ".rpt2_cache",
+    ".npm",
+    ".pnpm-store",
+    ".yarn"
+  ],
+  "file_count": 16,
+  "files": [
+    {
+      "archive_relative_path": "night-radio/.gitignore",
+      "copied_sha256": "5825655fd066989d4dd92893fda98c5af26fec22a0fa16599344d6824fca2096",
+      "final_source_sha256": "5825655fd066989d4dd92893fda98c5af26fec22a0fa16599344d6824fca2096",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095558283104449,
+      "mtime_utc": "2026-10-04T06:32:38.283104Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/.gitignore",
+      "size_bytes": 40,
+      "source_sha256": "5825655fd066989d4dd92893fda98c5af26fec22a0fa16599344d6824fca2096",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/.openai/hosting.json",
+      "copied_sha256": "0f817b669bcd56df1f1c3fe06754f599fc72436a2e2c08c6e31489399d4ed1dc",
+      "final_source_sha256": "0f817b669bcd56df1f1c3fe06754f599fc72436a2e2c08c6e31489399d4ed1dc",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791095600889178728,
+      "mtime_utc": "2026-10-04T06:33:20.889179Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/.openai/hosting.json",
+      "size_bytes": 106,
+      "source_sha256": "0f817b669bcd56df1f1c3fe06754f599fc72436a2e2c08c6e31489399d4ed1dc",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/README.md",
+      "copied_sha256": "271a9a12d9a8aef6a5f8a1de8863ae8b46424d55c2189d736d7418e13eb3be68",
+      "final_source_sha256": "271a9a12d9a8aef6a5f8a1de8863ae8b46424d55c2189d736d7418e13eb3be68",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097352103932061,
+      "mtime_utc": "2026-10-04T07:02:32.103932Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/README.md",
+      "size_bytes": 2198,
+      "source_sha256": "271a9a12d9a8aef6a5f8a1de8863ae8b46424d55c2189d736d7418e13eb3be68",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/app.js",
+      "copied_sha256": "b215d549dd2986bdd128def12cf7c9feaba9b93064ce29c04d4668100cabd174",
+      "final_source_sha256": "b215d549dd2986bdd128def12cf7c9feaba9b93064ce29c04d4668100cabd174",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097521248513785,
+      "mtime_utc": "2026-10-04T07:05:21.248514Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/app.js",
+      "size_bytes": 24659,
+      "source_sha256": "b215d549dd2986bdd128def12cf7c9feaba9b93064ce29c04d4668100cabd174",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/audio.js",
+      "copied_sha256": "670e866033b47117215da666fdb6cfbb076e12d76d0e0ba34b5bdbf8d080cd34",
+      "final_source_sha256": "670e866033b47117215da666fdb6cfbb076e12d76d0e0ba34b5bdbf8d080cd34",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096167233415834,
+      "mtime_utc": "2026-10-04T06:42:47.233416Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/audio.js",
+      "size_bytes": 2502,
+      "source_sha256": "670e866033b47117215da666fdb6cfbb076e12d76d0e0ba34b5bdbf8d080cd34",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/game.js",
+      "copied_sha256": "1c703b90a64970e85696484dcecf7a2d5f9a9ede6247193cc40ca586845b6281",
+      "final_source_sha256": "1c703b90a64970e85696484dcecf7a2d5f9a9ede6247193cc40ca586845b6281",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097277661906367,
+      "mtime_utc": "2026-10-04T07:01:17.661906Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/game.js",
+      "size_bytes": 12843,
+      "source_sha256": "1c703b90a64970e85696484dcecf7a2d5f9a9ede6247193cc40ca586845b6281",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/index.html",
+      "copied_sha256": "e9cdf7699a2fc9c9cbb141ee796ac64cba004e6ae0291c837d1b47d29c196b66",
+      "final_source_sha256": "e9cdf7699a2fc9c9cbb141ee796ac64cba004e6ae0291c837d1b47d29c196b66",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096993193728470,
+      "mtime_utc": "2026-10-04T06:56:33.193728Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/index.html",
+      "size_bytes": 5161,
+      "source_sha256": "e9cdf7699a2fc9c9cbb141ee796ac64cba004e6ae0291c837d1b47d29c196b66",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/scene.js",
+      "copied_sha256": "a1f4619d6dd707249912a9b6bfed3c98fe6cbc59722d5cccc82c2801ebbdfc3a",
+      "final_source_sha256": "a1f4619d6dd707249912a9b6bfed3c98fe6cbc59722d5cccc82c2801ebbdfc3a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097277661500657,
+      "mtime_utc": "2026-10-04T07:01:17.661501Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/scene.js",
+      "size_bytes": 16641,
+      "source_sha256": "a1f4619d6dd707249912a9b6bfed3c98fe6cbc59722d5cccc82c2801ebbdfc3a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/style.css",
+      "copied_sha256": "9b0f8e8568ff2c9e1efb2c408acc9cb0a472dfec1bc2c3c44bf1f33ddcf4c75f",
+      "final_source_sha256": "9b0f8e8568ff2c9e1efb2c408acc9cb0a472dfec1bc2c3c44bf1f33ddcf4c75f",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097277681890159,
+      "mtime_utc": "2026-10-04T07:01:17.681890Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/style.css",
+      "size_bytes": 23783,
+      "source_sha256": "9b0f8e8568ff2c9e1efb2c408acc9cb0a472dfec1bc2c3c44bf1f33ddcf4c75f",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/vendor/THREE-LICENSE.txt",
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "final_source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096796134660645,
+      "mtime_utc": "2026-10-04T06:53:16.134661Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/vendor/THREE-LICENSE.txt",
+      "size_bytes": 1081,
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/vendor/three.core.js",
+      "copied_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "final_source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096796128249506,
+      "mtime_utc": "2026-10-04T06:53:16.128249Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/vendor/three.core.js",
+      "size_bytes": 1403455,
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/dist/vendor/three.module.js",
+      "copied_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "final_source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096796126308918,
+      "mtime_utc": "2026-10-04T06:53:16.126309Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/dist/vendor/three.module.js",
+      "size_bytes": 603113,
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/package-lock.json",
+      "copied_sha256": "f7dbc3be43ad4472a9cd279ca5e9b1ef75b75dd40a31cc190707b8cf32fbc139",
+      "final_source_sha256": "f7dbc3be43ad4472a9cd279ca5e9b1ef75b75dd40a31cc190707b8cf32fbc139",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791096189701087372,
+      "mtime_utc": "2026-10-04T06:43:09.701087Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/package-lock.json",
+      "size_bytes": 523,
+      "source_sha256": "f7dbc3be43ad4472a9cd279ca5e9b1ef75b75dd40a31cc190707b8cf32fbc139",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/package.json",
+      "copied_sha256": "27ed2b908e6e2a11b2d3b930187a6942ce66748ceb46d705b2d242bfa47c5f3d",
+      "final_source_sha256": "27ed2b908e6e2a11b2d3b930187a6942ce66748ceb46d705b2d242bfa47c5f3d",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097352086275399,
+      "mtime_utc": "2026-10-04T07:02:32.086275Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/package.json",
+      "size_bytes": 387,
+      "source_sha256": "27ed2b908e6e2a11b2d3b930187a6942ce66748ceb46d705b2d242bfa47c5f3d",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "night-radio/tests/game.test.mjs",
+      "copied_sha256": "af93d33911309ad473a2e88d05d4b396f5bba49867bfa795a6781afced35e2ed",
+      "final_source_sha256": "af93d33911309ad473a2e88d05d4b396f5bba49867bfa795a6781afced35e2ed",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097277706504545,
+      "mtime_utc": "2026-10-04T07:01:17.706505Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio/tests/game.test.mjs",
+      "size_bytes": 2318,
+      "source_sha256": "af93d33911309ad473a2e88d05d4b396f5bba49867bfa795a6781afced35e2ed",
+      "source_unchanged_after_copy": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/night-radio-deploy.tar.gz",
+      "copied_sha256": "0c78f1a476365633b33eb772882ae123703359b1f2e9e5316bdf055f2678afe9",
+      "final_source_sha256": "0c78f1a476365633b33eb772882ae123703359b1f2e9e5316bdf055f2678afe9",
+      "hashes_match": true,
+      "mode": 420,
+      "mtime_ns": 1791097540983297916,
+      "mtime_utc": "2026-10-04T07:05:40.983298Z",
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio-deploy.tar.gz",
+      "size_bytes": 432101,
+      "source_sha256": "0c78f1a476365633b33eb772882ae123703359b1f2e9e5316bdf055f2678afe9",
+      "source_unchanged_after_copy": true
+    }
+  ],
+  "generated_archive_readme": {
+    "counted_as_original_file": false,
+    "path": "README.md",
+    "sha256": "e13a1af5ee32f1cc677e7994537ccc226fa349dcb6240f3653a6fd8ad94e6e67"
+  },
+  "generated_parent_launch_record": {
+    "counted_as_original_file": false,
+    "path": "parent-launch-record.json",
+    "sha256": "39f43f4e6f696a6f54cf12687c2964f274e4e71b24e1f1cc529c389608e9fdfc"
+  },
+  "inventory_fixed_at": "2026-10-04T07:18:29.262523Z",
+  "limitations": [
+    "Only fixed inventory, original-byte copying and SHA256 checks; no source modification/run/build/test/browser/gameplay/process/load sampling/remote action or publisher diagnostic.",
+    "Original package not extracted or rebuilt; eligible .gitignore/.openai retained.",
+    "Forbidden runtime/session/node_modules/.git/.codex/.agents/.aws/.playwright-cli/cache and symbolic-link ancestors excluded, no unrelated directories read."
+  ],
+  "original_evidence_inventory": {
+    "documents": [
+      "night-radio/README.md"
+    ],
+    "preserved_qa_browser_driver_result_or_console_log_present": false,
+    "rule_checks": [
+      "night-radio/tests/game.test.mjs"
+    ],
+    "screenshots": []
+  },
+  "original_request": null,
+  "original_request_status": "Exact original sentence missing from available parent evidence; summary only, no fabrication.",
+  "original_request_summary": "原深夜电台互动叙事句",
+  "original_verification_scope": {
+    "browser_report": "README.md:34 reports one complete rescue/truth/evacuation browser workflow, reload, tuning, power allocation and390x844 layout.",
+    "coverage_method": "729 six-call choice vectors multiplied by three fixed broadcast strategies yield2187 simulated runs; not all broadcast strategies or2187 independently reachable stories. Rescue threshold case directly sets turn/phase/flags/signal/power fixtures. PASS is code print without preserved stdout.",
+    "limitations": [
+      "No browser driver/results/QA or input steps establish keyboard/locator or hook/state/acceleration methods.",
+      "One reported browser flow does not establish all four endings browser verification or physical mobile gameplay.",
+      "Console/audio capture methods and actual hearing/sound quality are not preserved; WebAudio/speechSynthesis source support does not prove output quality.",
+      "No native WebMCP test record.",
+      "Exact original sentence absent; parent launch attestation does not independently prove historical runtime parameters."
+    ],
+    "preview": {
+      "actual_alternate_port_recorded": false,
+      "command": "npm start -> python3 -m http.server 4173 --directory dist",
+      "explicit_bind_present": false,
+      "port": 4173
+    },
+    "provenance": "moonbloom_state static reading of original README/package/rule source; no independent execution.",
+    "rule_method": "game.test.mjs directly calls answerCall/choose/broadcast/next, with constrained choices falling back to choice2 (third option)."
+  },
+  "parent_launch_record_path": "parent-launch-record.json",
+  "parent_readonly_process_observation": {
+    "dedicated_preview_or_browser_present": false,
+    "documented_port": 4173,
+    "documented_port_listener_is_protected_user_service": true,
+    "documented_port_listener_pid": 2560,
+    "framework_contexts_preserved": true,
+    "framework_pcpu": 0,
+    "framework_state": "S",
+    "idle_framework_contexts": [
+      24236,
+      24237,
+      24238,
+      24239
+    ],
+    "observed_at": "2026-10-04T07:14:38Z",
+    "owned_listener_ports": [],
+    "protected_processes_still_present": {
+      "4173": 2560,
+      "4827": 2554,
+      "5173": 2547,
+      "user_chrome": 1036
+    },
+    "provenance": "Root read-only ps/lsof actual-command/cwd/descendant observation, not author gameplay testing or archive-agent process inspection.",
+    "signals_sent": false
+  },
+  "parent_reported_author_results": {
+    "complete_browser_flow_reported": true,
+    "provenance": "Parent/author report only, not independently executed validation.",
+    "simulated_runs": 2187
+  },
+  "parent_reported_sites_publication": {
+    "provenance": "Sites URL report only; not fetched, not formal user domain or GitHub delivery evidence.",
+    "url": "https://night-radio-wugang.zemingqiu045.chatgpt.site"
+  },
+  "parent_supplied_launch_parameters": {
+    "fork_turns": "none",
+    "model": "Astra",
+    "provenance": "Parent-side explicit launch attestation, not independently authenticated historical runtime metadata.",
+    "reasoning_effort": "ultra",
+    "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030"
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "source_file_set": [
+    ".gitignore",
+    ".openai/hosting.json",
+    "README.md",
+    "dist/app.js",
+    "dist/audio.js",
+    "dist/game.js",
+    "dist/index.html",
+    "dist/scene.js",
+    "dist/style.css",
+    "dist/vendor/THREE-LICENSE.txt",
+    "dist/vendor/three.core.js",
+    "dist/vendor/three.module.js",
+    "package-lock.json",
+    "package.json",
+    "tests/game.test.mjs"
+  ],
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio",
+  "stage": "original",
+  "thread_id": "01a1059b-958d-7475-8a67-fffac858e083",
+  "title": "Night Radio",
+  "total_bytes": 2530911,
+  "turn_id": "01a1059b-b7b1-75e9-aa76-e64a254dea48"
+}

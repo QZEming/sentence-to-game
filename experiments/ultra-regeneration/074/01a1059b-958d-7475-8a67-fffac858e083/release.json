@@ -1,0 +1,77 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "074-night-radio",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "074",
+  "generation_turn_id": "01a1059b-b7b1-75e9-aa76-e64a254dea48",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "b1ad202f89593dec103c9a1ba8ff3b681634cdaa",
+    "full_old_history_preserved": true,
+    "game_number": "074",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/b1ad202f89593dec103c9a1ba8ff3b681634cdaa",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 24659,
+      "path": "app.js",
+      "sha256": "b215d549dd2986bdd128def12cf7c9feaba9b93064ce29c04d4668100cabd174"
+    },
+    {
+      "bytes": 2502,
+      "path": "audio.js",
+      "sha256": "670e866033b47117215da666fdb6cfbb076e12d76d0e0ba34b5bdbf8d080cd34"
+    },
+    {
+      "bytes": 12843,
+      "path": "game.js",
+      "sha256": "1c703b90a64970e85696484dcecf7a2d5f9a9ede6247193cc40ca586845b6281"
+    },
+    {
+      "bytes": 5161,
+      "path": "index.html",
+      "sha256": "e9cdf7699a2fc9c9cbb141ee796ac64cba004e6ae0291c837d1b47d29c196b66"
+    },
+    {
+      "bytes": 16641,
+      "path": "scene.js",
+      "sha256": "a1f4619d6dd707249912a9b6bfed3c98fe6cbc59722d5cccc82c2801ebbdfc3a"
+    },
+    {
+      "bytes": 23783,
+      "path": "style.css",
+      "sha256": "9b0f8e8568ff2c9e1efb2c408acc9cb0a472dfec1bc2c3c44bf1f33ddcf4c75f"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "39c799809cfbd98eca6075f041b6d129e797c2956fbca85a5c1c34bcf59cbf63",
+  "thinking_requested": "ultra",
+  "thread_id": "01a1059b-958d-7475-8a67-fffac858e083",
+  "title": "夜航电台 — FM 89.7",
+  "url": "https://qzemi.cn/sentence-to-game/games/074-night-radio/"
+}

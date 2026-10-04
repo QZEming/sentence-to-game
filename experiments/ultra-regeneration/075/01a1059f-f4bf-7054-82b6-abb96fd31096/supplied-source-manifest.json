@@ -1,0 +1,330 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-075-original-20261004T071431Z",
+  "archive_kind": "original_byte_copy",
+  "bytes": {
+    "evidence": 113695,
+    "original_parent_tar": 292671,
+    "original_total": 1794262,
+    "source": 1387896
+  },
+  "counts": {
+    "evidence_files": 1,
+    "original_files": 12,
+    "original_parent_tar_files": 1,
+    "source_files": 10
+  },
+  "created_at_utc": "2026-10-04T07:19:02.382227Z",
+  "files": [
+    {
+      "archive_path": "source/.gitignore",
+      "bytes": 40,
+      "category": "source",
+      "copy_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791095979344258964,
+      "source_mtime_utc": "2026-10-04T06:39:39.344259Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/.gitignore",
+      "source_sha256": "29ec3221c43ac6586f9d5f9b5254cb2a175f3f6e0f184f1a0b063077790fe7be"
+    },
+    {
+      "archive_path": "source/.openai/hosting.json",
+      "bytes": 106,
+      "category": "source",
+      "copy_sha256": "cdc7855591ae4c9de1d351597bb860f9bfc8f64ac7eb268beca67f9a0619a4c5",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791096012627948797,
+      "source_mtime_utc": "2026-10-04T06:40:12.627949Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/.openai/hosting.json",
+      "source_sha256": "cdc7855591ae4c9de1d351597bb860f9bfc8f64ac7eb268beca67f9a0619a4c5"
+    },
+    {
+      "archive_path": "source/README.md",
+      "bytes": 1682,
+      "category": "source",
+      "copy_sha256": "f85df8199dc844ebc11bd4c32ae9d9103538917b07e1d236afd6851011ae3dd4",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097516744178604,
+      "source_mtime_utc": "2026-10-04T07:05:16.744179Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/README.md",
+      "source_sha256": "f85df8199dc844ebc11bd4c32ae9d9103538917b07e1d236afd6851011ae3dd4"
+    },
+    {
+      "archive_path": "source/dist/index.html",
+      "bytes": 6672,
+      "category": "source",
+      "copy_sha256": "e93361baaaf30991a91ea7af8fc460f186625685c9e9563101addcbf4de48103",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791095974497631220,
+      "source_mtime_utc": "2026-10-04T06:39:34.497631Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/index.html",
+      "source_sha256": "e93361baaaf30991a91ea7af8fc460f186625685c9e9563101addcbf4de48103"
+    },
+    {
+      "archive_path": "source/dist/main.js",
+      "bytes": 15776,
+      "category": "source",
+      "copy_sha256": "dbaff78f197e588ab74022686e09025b4d8a1f7d3de56f5e370aca574dffaf3f",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097272766078352,
+      "source_mtime_utc": "2026-10-04T07:01:12.766078Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/main.js",
+      "source_sha256": "dbaff78f197e588ab74022686e09025b4d8a1f7d3de56f5e370aca574dffaf3f"
+    },
+    {
+      "archive_path": "source/dist/simulation.js",
+      "bytes": 11798,
+      "category": "source",
+      "copy_sha256": "d0c025e13116bed410ce7557d02568fa492fb1846563db94c2d4cd8d1534f3a3",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097473835668805,
+      "source_mtime_utc": "2026-10-04T07:04:33.835669Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/simulation.js",
+      "source_sha256": "d0c025e13116bed410ce7557d02568fa492fb1846563db94c2d4cd8d1534f3a3"
+    },
+    {
+      "archive_path": "source/dist/style.css",
+      "bytes": 17049,
+      "category": "source",
+      "copy_sha256": "a3b40faec40fe5916fcaa58a2bb96e52a796ec3210632134ae6c9181645751bd",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791096215645356442,
+      "source_mtime_utc": "2026-10-04T06:43:35.645356Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/style.css",
+      "source_sha256": "a3b40faec40fe5916fcaa58a2bb96e52a796ec3210632134ae6c9181645751bd"
+    },
+    {
+      "archive_path": "source/dist/vendor/three.module.js",
+      "bytes": 1314681,
+      "category": "source",
+      "copy_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791095862300235916,
+      "source_mtime_utc": "2026-10-04T06:37:42.300236Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/vendor/three.module.js",
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "archive_path": "source/dist/world.js",
+      "bytes": 17110,
+      "category": "source",
+      "copy_sha256": "108e366d5d0b6f65757eb732e9e66c473df335d1db6f4b045adc2ded90f9c755",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097272765559393,
+      "source_mtime_utc": "2026-10-04T07:01:12.765559Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/dist/world.js",
+      "source_sha256": "108e366d5d0b6f65757eb732e9e66c473df335d1db6f4b045adc2ded90f9c755"
+    },
+    {
+      "archive_path": "source/tests/verify-completion.mjs",
+      "bytes": 2982,
+      "category": "source",
+      "copy_sha256": "e0cfdb7f75344f6c0bf1e41257825f31e347dc1db1cb91ac0d45c73d301f028b",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097516743162768,
+      "source_mtime_utc": "2026-10-04T07:05:16.743163Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow/tests/verify-completion.mjs",
+      "source_sha256": "e0cfdb7f75344f6c0bf1e41257825f31e347dc1db1cb91ac0d45c73d301f028b"
+    },
+    {
+      "archive_path": "original-parent/meadow-deploy.tar.gz",
+      "bytes": 292671,
+      "category": "original_parent_tar",
+      "copy_sha256": "a9140c38c94d6290b6e5c043da13841e92402a5710dd41da6892e7c00443c28b",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097585056380113,
+      "source_mtime_utc": "2026-10-04T07:06:25.056380Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow-deploy.tar.gz",
+      "source_sha256": "a9140c38c94d6290b6e5c043da13841e92402a5710dd41da6892e7c00443c28b"
+    },
+    {
+      "archive_path": "original-parent/meadow-preview.jpg",
+      "bytes": 113695,
+      "category": "evidence",
+      "copy_sha256": "b28d0333f38fc29055475459fb0e5f49010ec51433af9d5abd3d19d97e86e8d0",
+      "source_bytes_mtime_hash_unchanged": true,
+      "source_copy_sha256_match": true,
+      "source_mtime_ns": 1791097360281984444,
+      "source_mtime_utc": "2026-10-04T07:02:40.281984Z",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow-preview.jpg",
+      "source_sha256": "b28d0333f38fc29055475459fb0e5f49010ec51433af9d5abd3d19d97e86e8d0"
+    }
+  ],
+  "game_number": "075",
+  "generation_provenance": {
+    "canonical_model_name": "gpt-6-astra",
+    "created_at_utc": "2026-10-04T07:19:02.778220Z",
+    "effort": "ultra",
+    "effort_independently_authenticated": false,
+    "exact_prompt": null,
+    "exact_prompt_status": "missing_not_provided_by_parent",
+    "fork": "none",
+    "game_number": "075",
+    "model": "Astra",
+    "model_authenticated_by_read_thread": false,
+    "parent_parameter_statement": "source parentthread01a0f026-402f-7359-a55b-4cef85b25030显式Astra ultra fork none，是父launch-attestation非独立历史runtime证明。",
+    "parent_prompt_summary_verbatim": "原牧羊犬群体行为策略句",
+    "provenance": "parent_launch_attestation",
+    "schema_version": 1,
+    "scope": "Parent supplied launch parameters and prompt summary only; not independently authenticated historical runtime or generation-turn metadata.",
+    "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+    "thread_id": "01a1059f-f4bf-7054-82b6-abb96fd31096",
+    "title": "牧野 · Meadowbound",
+    "turn_id": "01a105a0-188b-7212-829f-25f083c6ee54"
+  },
+  "integrity": {
+    "all_original_bytes_mtime_hash_unchanged": true,
+    "all_source_copy_sha256_match": true,
+    "eligible_source_file_set_unchanged": true,
+    "final_verified_at_utc": "2026-10-04T07:19:02.788074Z",
+    "fixed_parent_file_set_unchanged": true,
+    "original_parent_tar_sha256": "a9140c38c94d6290b6e5c043da13841e92402a5710dd41da6892e7c00443c28b"
+  },
+  "parent_launch_record": "parent-launch-record.json",
+  "parent_process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "documented_port": 4173,
+    "observed_at_utc": "2026-10-04T07:14:38Z",
+    "owned_listener_found": false,
+    "port_4173_owner": {
+      "kind": "original user Node; not a 075 preview",
+      "pid": 2560
+    },
+    "preserved_idle_framework_contexts": [
+      {
+        "cpu_percent": 0,
+        "pid": 31110,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 31111,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 31113,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0,
+        "pid": 31116,
+        "state": "S"
+      }
+    ],
+    "preserved_services": {
+      "chrome_pid": 1036,
+      "listeners": [
+        {
+          "pid": 2547,
+          "port": 5173
+        },
+        {
+          "pid": 2554,
+          "port": 4827
+        },
+        {
+          "pid": 2560,
+          "port": 4173
+        }
+      ]
+    },
+    "scope_note": "Process observation only, not browser/game validation. No resource sampling by archivist.",
+    "signals_sent": false,
+    "source": "parent_read_only_ps_lsof_actualcmd_cwd_descendants_not_independently_repeated"
+  },
+  "schema_version": 1,
+  "selection": {
+    "eligible_source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow",
+    "excluded_names": [
+      ".DS_Store",
+      ".agents",
+      ".aws",
+      ".cache",
+      ".codex",
+      ".git",
+      ".npm",
+      ".playwright-cli",
+      ".vite",
+      "__pycache__",
+      "archive",
+      "archives",
+      "cache",
+      "caches",
+      "node_modules",
+      "runtime",
+      "session",
+      "sessions"
+    ],
+    "fixed_parent_files": {
+      "meadow-deploy.tar.gz": 292671,
+      "meadow-preview.jpg": 113695
+    },
+    "fixed_source_paths": [
+      ".gitignore",
+      ".openai/hosting.json",
+      "README.md",
+      "dist/index.html",
+      "dist/main.js",
+      "dist/simulation.js",
+      "dist/style.css",
+      "dist/vendor/three.module.js",
+      "dist/world.js",
+      "tests/verify-completion.mjs"
+    ],
+    "symlinks_and_symlink_ancestors_excluded": true,
+    "tar_extracted_or_repacked": false
+  },
+  "sites": {
+    "accessed_for_archive": false,
+    "source": "parent_supplied",
+    "url": "https://meadowbound-moss-pasture.zemingqiu045.chatgpt.site"
+  },
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-44/meadow",
+  "title": "牧野 · Meadowbound",
+  "validation_evidence": {
+    "author_records": [
+      {
+        "claim": "Three levels all sheep corralled in 141.58, 264.23, 254.60 simulated seconds; three stars each. Pause/resources/collision/batch corralling/no duplicate events, desktop/390px layout, WebMCP valid/invalid input claimed.",
+        "evidence": "README.md:28"
+      }
+    ],
+    "check_method": {
+      "details": "Normal Simulation(level).start; strategy reads sheep positions, computes navigation targets, advances step(1/60,{target/x/z}), calls bark/calm. No direct dog/sheep coordinate mutation or won assignment observed. sim.collide(goal,.48) adjusts the computed goal, not the dog.",
+      "evidence": "tests/verify-completion.mjs:6-18"
+    },
+    "check_script": "source/tests/verify-completion.mjs",
+    "limits": [
+      "Rule API and synchronous simulation, not real browser keyboard or pointer completion of three levels.",
+      "No original stdout pass log or saved browser driver found in eligible source.",
+      "Other boundary checks are README author statements; their separate execution methods are not preserved.",
+      "Mobile 390px layout does not establish physical handset touch gameplay or full mobile completion.",
+      "Audio listening and console error capture scope are not recorded.",
+      "WebMCP valid/invalid input is an author claim; native supported context versus mock invocation method is unknown.",
+      "Original preview JPG was copied without opening; an image does not establish an action sequence."
+    ],
+    "preview": {
+      "actual_075_listener_confirmed": false,
+      "command": "python3 -m http.server 4173 --directory dist",
+      "documented_port": 4173,
+      "evidence": "README.md:7"
+    },
+    "readme": "source/README.md",
+    "review_method": "static_only; no test/build/game/browser/process execution",
+    "screenshot": {
+      "bytes": 113695,
+      "opened": false,
+      "path": "original-parent/meadow-preview.jpg"
+    }
+  }
+}

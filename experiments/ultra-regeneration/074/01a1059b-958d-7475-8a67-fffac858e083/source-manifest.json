@@ -1,0 +1,93 @@
+{
+  "files": [
+    {
+      "bytes": 40,
+      "path": ".gitignore",
+      "sha256": "5825655fd066989d4dd92893fda98c5af26fec22a0fa16599344d6824fca2096"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "0f817b669bcd56df1f1c3fe06754f599fc72436a2e2c08c6e31489399d4ed1dc"
+    },
+    {
+      "bytes": 2198,
+      "path": "README.md",
+      "sha256": "271a9a12d9a8aef6a5f8a1de8863ae8b46424d55c2189d736d7418e13eb3be68"
+    },
+    {
+      "bytes": 24659,
+      "path": "dist/app.js",
+      "sha256": "b215d549dd2986bdd128def12cf7c9feaba9b93064ce29c04d4668100cabd174"
+    },
+    {
+      "bytes": 2502,
+      "path": "dist/audio.js",
+      "sha256": "670e866033b47117215da666fdb6cfbb076e12d76d0e0ba34b5bdbf8d080cd34"
+    },
+    {
+      "bytes": 12843,
+      "path": "dist/game.js",
+      "sha256": "1c703b90a64970e85696484dcecf7a2d5f9a9ede6247193cc40ca586845b6281"
+    },
+    {
+      "bytes": 5161,
+      "path": "dist/index.html",
+      "sha256": "e9cdf7699a2fc9c9cbb141ee796ac64cba004e6ae0291c837d1b47d29c196b66"
+    },
+    {
+      "bytes": 16641,
+      "path": "dist/scene.js",
+      "sha256": "a1f4619d6dd707249912a9b6bfed3c98fe6cbc59722d5cccc82c2801ebbdfc3a"
+    },
+    {
+      "bytes": 23783,
+      "path": "dist/style.css",
+      "sha256": "9b0f8e8568ff2c9e1efb2c408acc9cb0a472dfec1bc2c3c44bf1f33ddcf4c75f"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 1403455,
+      "path": "dist/vendor/three.core.js",
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "bytes": 603113,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "bytes": 432101,
+      "path": "original-delivery/night-radio-deploy.tar.gz",
+      "sha256": "0c78f1a476365633b33eb772882ae123703359b1f2e9e5316bdf055f2678afe9"
+    },
+    {
+      "bytes": 523,
+      "path": "package-lock.json",
+      "sha256": "f7dbc3be43ad4472a9cd279ca5e9b1ef75b75dd40a31cc190707b8cf32fbc139"
+    },
+    {
+      "bytes": 387,
+      "path": "package.json",
+      "sha256": "27ed2b908e6e2a11b2d3b930187a6942ce66748ceb46d705b2d242bfa47c5f3d"
+    },
+    {
+      "bytes": 2318,
+      "path": "tests/game.test.mjs",
+      "sha256": "af93d33911309ad473a2e88d05d4b396f5bba49867bfa795a6781afced35e2ed"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-43/night-radio",
+  "source_tree_sha256": "39c799809cfbd98eca6075f041b6d129e797c2956fbca85a5c1c34bcf59cbf63",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-074-original-20261004T071431Z",
+  "thread_id": "01a1059b-958d-7475-8a67-fffac858e083",
+  "turn_id": "01a1059b-b7b1-75e9-aa76-e64a254dea48"
+}

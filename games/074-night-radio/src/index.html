@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101714"><meta name="description" content="一间电台，一座小镇，一个由你改变的雨夜。3D 互动叙事游戏。"><title>夜航电台 — FM 89.7</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23131c19'/%3E%3Cpath d='M40 12a21 21 0 1 0 12 32A22 22 0 0 1 40 12' fill='%23e5aa60'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="scene" aria-label="可交互的三维深夜电台直播间"></div><div class="vignette"></div><div class="grain"></div>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon" data-icon="moon"></span><div><h1>夜航电台<span>NIGHTFALL RADIO</span></h1></div><div class="station-mark">FM <strong>89.7</strong></div></div>
+  <div class="night-clock"><span class="live-dot"></span><span id="clock">00:07</span><span class="clock-divider"></span><div><span id="chapter-label">第一夜 · 雾中的声音</span><small>1997 年 10 月 24 日 · 雾港</small></div></div>
+  <div class="top-actions"><button class="icon-button" id="sound-button" aria-label="开启声音" title="开启声音" data-icon="volume-off"></button><button class="icon-button" id="help-button" aria-label="玩法帮助" title="玩法帮助" data-icon="help"></button><button class="icon-button" id="settings-button" aria-label="设置" title="设置" data-icon="settings"></button></div>
+</header>
+<aside class="side-nav"><span class="nav-caption">控制室</span><button class="nav-button active" data-view="studio"><span data-icon="radio"></span><span>直播间</span><kbd>1</kbd></button><button class="nav-button" data-view="tuner"><span data-icon="signal"></span><span>频率扫描</span><kbd>2</kbd></button><button class="nav-button" data-view="map"><span data-icon="map"></span><span>小镇地图</span><kbd>3</kbd></button><button class="nav-button" data-view="journal"><span data-icon="book"></span><span>节目日志</span><kbd>4</kbd></button><div class="nav-bottom"><span data-icon="cloud"></span><div>小雨转暴雨<small>14°C · 东北风</small></div></div></aside>
+<div class="scene-title"><div class="eyebrow"><i></i> YOU ARE LISTENING TO</div><p>总有一个声音，<br>为你留在深夜。</p><span>雾港的故事，正在你的频率里发生。</span></div>
+<div class="studio-meta"><span class="pill"><i></i> ON AIR</span><span>直播间 A</span><span class="meta-line"></span><span id="listeners">128 人正在收听</span></div>
+<div class="room-caption"><span data-icon="mouse"></span><span>拖动探索直播间 · 点击桌上设备互动</span></div>
+<div id="object-tooltip" class="object-tooltip" hidden></div>
+<aside class="call-panel" id="call-panel"></aside>
+<section class="broadcast-panel" id="broadcast-panel">
+ <div class="broadcast-header"><div><span class="eyebrow">NOW BROADCASTING</span><h2>让这座小镇，听见你。</h2></div><span class="broadcast-indicator"><span class="equalizer"><i></i><i></i><i></i><i></i><i></i></span><span id="broadcast-status">等待你的声音</span></span></div>
+ <div class="programs" id="programs"></div>
+ <div class="broadcast-bottom"><p><span data-icon="info"></span><span id="broadcast-hint">每通来电后可播出一期节目，改变小镇的走向。</span></p><button class="primary-button" id="broadcast-button"><span data-icon="mic"></span><span>开始广播</span><kbd>SPACE</kbd></button></div>
+</section>
+<footer class="statusbar"><div class="resources"><div class="resource" title="信任影响人们是否愿意听从广播"><span data-icon="heart"></span><span>小镇信任</span><div class="meter"><i id="trust-bar"></i></div><b id="trust-value">62</b></div><div class="resource" title="信号决定最后一场广播能传多远"><span data-icon="signal"></span><span>信号强度</span><div class="meter"><i id="signal-bar"></i></div><b id="signal-value">78</b></div><div class="resource" title="电力决定广播和救援能否成功，备用电路可恢复供电"><span data-icon="battery"></span><span>备用电力</span><div class="meter"><i id="power-bar"></i></div><b id="power-value">86</b></div></div><div class="save-status"><span data-icon="save"></span><span id="save-label">进度自动保存</span><span class="footer-fm">89.7 FM</span></div></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<div class="modal-backdrop" id="modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-heading"><div><span class="eyebrow" id="modal-eyebrow">NIGHTFALL RADIO</span><h2 id="modal-title"></h2></div><button class="icon-button" id="close-modal" data-icon="close" aria-label="关闭"></button></div><div id="modal-content"></div></section></div>
+<div id="loading"><span class="loading-moon">☾</span><strong>夜航电台</strong><span>正在接通雾港的夜晚…</span></div>
+<script type="module" src="app.js"></script>
+</body></html>

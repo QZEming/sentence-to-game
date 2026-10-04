@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**73 / 100**。
+当前进度：**75 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -87,6 +87,8 @@
 | 071 | [群岛使者 · Envoy of the Tides](games/071-archipelago/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/071-archipelago/) | [源码](games/071-archipelago/src/) |
 | 072 | [深海静默 · ABYSS COMMAND](games/072-abyss-command/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/072-abyss-command/) | [源码](games/072-abyss-command/src/) |
 | 073 | [观相 PARALLAX · 视错觉剧场](games/073-parallax-theatre/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/073-parallax-theatre/) | [源码](games/073-parallax-theatre/src/) |
+| 074 | [夜航电台 — FM 89.7](games/074-night-radio/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/074-night-radio/) | [源码](games/074-night-radio/src/) |
+| 075 | [牧野 Meadowbound · 把每一只羊带回家](games/075-meadowbound/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/075-meadowbound/) | [源码](games/075-meadowbound/src/) |
 
 ## 生成记录
 
