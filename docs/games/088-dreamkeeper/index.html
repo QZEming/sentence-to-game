@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080f20">
+  <title>梦境守护者 · DREAMKEEPER</title>
+  <meta name="description" content="在静谧的三维夜空中记住星座，连接星辰，守护即将消散的梦。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23080f20'/%3E%3Cpath d='M20 4l4 12 12 4-12 4-4 12-4-12-12-4 12-4z' fill='%23e7cd93'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<svg class="svg-defs" aria-hidden="true"><defs>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/><path d="m20 2 .5 1.5L22 4l-1.5.5L20 6l-.5-1.5L18 4l1.5-.5Z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A9 9 0 0 1 9.5 3.5a9 9 0 1 0 11 11Z"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.2 9a3 3 0 1 1 4.4 2.6c-1.4.6-1.6 1-1.6 2.4m0 3v.1"/></symbol>
+<symbol id="i-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="11" ry="5" transform="rotate(-35 12 12)"/><path d="M5 4a11 11 0 0 1 14 16"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 3v7h7"/></symbol>
+<symbol id="i-undo" viewBox="0 0 24 24"><path d="m9 5-6 6 6 6M3 11h11a7 7 0 0 1 7 7"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14m8-14v14"/></symbol>
+<symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v16M3 3c5-1 9 2 9 2s4-3 9-2v16c-5-1-9 2-9 2s-4-3-9-2Z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+</defs></svg>
+<div class="page-ambient"></div>
+<header class="topbar">
+  <a class="brand" href="./" aria-label="梦境守护者首页"><span class="brand-mark"><svg><use href="#i-spark"/></svg></span><span><b>梦境守护者</b><small>DREAMKEEPER</small></span></a>
+  <nav aria-label="主导航"><button class="nav-item active" id="nav-play">观星台</button><button class="nav-item" id="nav-collection">星座图鉴 <span id="collection-count">00</span></button><button class="nav-item" id="nav-guide">守护者指南</button></nav>
+  <div class="header-actions"><button class="audio-button" id="audio-toggle" aria-label="开启环境音乐" aria-pressed="false"><svg><use href="#i-volume"/></svg><span>静谧模式</span><i></i></button><span class="header-divider"></span><button class="icon-button" id="help-button" aria-label="玩法说明"><svg><use href="#i-help"/></svg></button></div>
+</header>
+<main>
+  <section class="page-heading"><div><div class="eyebrow"><span></span> NIGHTFALL OBSERVATORY</div><h1>每一颗星，都记得你的梦<span>。</span></h1><p>凝望，铭记，再次点亮。让迷失的星座找到归途。</p></div><div class="night-tag"><svg><use href="#i-moon"/></svg><div><span>今夜，星空为你而亮</span><small>一场关于记忆的温柔冒险</small></div></div></section>
+  <div class="workspace">
+    <section class="play-column" aria-label="星座记忆游戏">
+      <div class="play-topline"><div class="mode-tabs" role="group" aria-label="游戏模式"><button class="selected" data-mode="journey"><svg><use href="#i-spark"/></svg>梦境之旅</button><button data-mode="zen">自由观星</button><button data-mode="endless">无尽星河</button></div><span class="dimension-tag"><i></i> 3D 空间记忆</span></div>
+      <div id="sky-stage" class="sky-stage">
+        <div class="sky-background"></div><canvas id="sky" aria-label="三维星空，拖动旋转，点击星星连接星座" tabindex="0"></canvas>
+        <div class="stage-top"><div class="chapter-chip"><span class="tiny-star">✦</span><span id="chapter-title">第一章 · 初醒之梦</span></div><div class="stage-top-right"><span id="phase-label"><i></i> 等待入梦</span><button class="stage-icon" id="pause-button" aria-label="暂停游戏" disabled><svg><use href="#i-pause"/></svg></button><button class="stage-icon" id="fullscreen-button" aria-label="全屏星空"><svg><use href="#i-expand"/></svg></button></div></div>
+        <div class="sky-coordinate coordinate-left">α 18h 36m<br>δ +38° 47′</div><div class="sky-coordinate coordinate-right">N<br><span>│</span></div>
+        <div class="constellation-caption" id="constellation-caption"><span>01 / 08</span><h2>天琴座</h2><p>LYRA</p></div>
+        <div class="phase-message" id="phase-message" hidden><span id="phase-eyebrow">记住星光的形状</span><strong id="phase-main">8.0</strong><p id="phase-tip">让目光沿着光芒，记住每一次相连</p></div>
+        <div class="start-panel" id="start-panel"><div class="start-panel-copy"><span class="gold-label">你的第一场梦，即将开始</span><p>星座会短暂出现。记住它，然后亲手重现。</p></div><button class="primary-button" id="start-button"><svg><use href="#i-spark"/></svg>开始观星 <kbd>Enter</kbd></button></div>
+        <div class="recall-bar" id="recall-bar" hidden><span id="connection-progress">已连接 0 / 4</span><button class="subtle-button" id="undo-button"><svg><use href="#i-undo"/></svg>撤销</button><button class="primary-button small" id="submit-button"><svg><use href="#i-check"/></svg>重现星座</button></div>
+        <div class="stage-footer"><span><svg><use href="#i-orbit"/></svg>拖动旋转星空 <i>·</i> 滚轮缩放</span><button id="reset-view"><svg><use href="#i-reset"/></svg>重置视角 <kbd>R</kbd></button></div>
+        <div class="screen-flash" id="screen-flash"></div>
+      </div>
+      <div class="below-stage"><div><span class="mini-dot"></span><span id="bottom-instruction">准备好了吗？为梦境点亮第一颗星。</span></div><span><kbd>H</kbd> 星光回溯 <kbd>Esc</kbd> 暂停</span></div>
+      <div class="tips-strip"><div class="tip-icon"><svg><use href="#i-moon"/></svg></div><p><b>给守护者的小提示</b><span id="rotating-tip">不必记住整片夜空，先找到最特别的那颗星。</span></p><div class="tip-dots"><i class="active"></i><i></i><i></i></div></div>
+    </section>
+    <aside class="sidebar">
+      <section class="journey-card panel"><div class="panel-heading"><h2>今夜的旅程</h2><span class="gold-pill" id="mode-badge">故事模式</span></div><div class="level-line"><div><strong id="level-number">01</strong><span id="level-total">/ 08</span></div><span class="level-caption" id="level-name">初醒之梦</span></div><div class="level-progress" id="level-progress" aria-label="关卡进度"></div><div class="journey-stats"><div><span>守护积分</span><strong id="score-value">0<span> pts</span></strong></div><div><span>连续点亮</span><strong id="combo-value">0<span> 次</span></strong></div></div><div class="life-row"><span>梦境之心</span><div id="lives" aria-label="3 颗梦境之心"></div></div></section>
+      <section class="target-card panel"><div class="panel-heading"><h2>本轮星座</h2><svg class="muted-icon"><use href="#i-orbit"/></svg></div><div class="target-preview" id="target-preview"></div><div class="target-name"><h3 id="target-name">天琴座</h3><span id="difficulty-stars">✦ ✦ <i>✦</i></span></div><div class="target-meta"><span id="star-count">5 颗星辰</span><span>·</span><span id="difficulty-name">入门</span><span class="target-latin" id="target-latin">LYRA</span></div><div class="observation-time"><svg><use href="#i-clock"/></svg><span id="timer-label">记忆时间</span><strong id="time-value">8 <small>秒</small></strong></div></section>
+      <section class="powers-card panel"><div class="panel-heading"><h2>守护之力</h2><span class="secondary-label">每场梦境补充</span></div><button class="power-button" id="hint-button" disabled><span class="power-icon"><svg><use href="#i-eye"/></svg></span><span><b>星光回溯</b><small>让星座再闪耀 2 秒</small></span><kbd>H</kbd><span class="power-count" id="hint-count">× 2</span></button><button class="power-button" id="freeze-button" disabled><span class="power-icon"><svg><use href="#i-clock"/></svg></span><span><b>凝结时光</b><small>为回忆多留 10 秒</small></span><kbd>T</kbd><span class="power-count" id="freeze-count">× 1</span></button></section>
+    </aside>
+  </div>
+  <footer class="page-footer"><span><svg><use href="#i-spark"/></svg> KEEP THE STARS. KEEP THE DREAMS.</span><span>戴上耳机，让世界安静一会儿 <svg><use href="#i-volume"/></svg></span></footer>
+</main>
+<dialog id="game-dialog"><button class="dialog-close icon-button" id="dialog-close" aria-label="关闭"><svg><use href="#i-close"/></svg></button><div id="dialog-content"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="./game.js"></script>
+</body></html>

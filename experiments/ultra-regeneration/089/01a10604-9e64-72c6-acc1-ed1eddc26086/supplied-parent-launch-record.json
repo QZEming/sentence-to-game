@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "archive_number": "089",
+  "record_kind": "Generated parent launch attestation; not an original source artifact",
+  "parent_source_thread_uuid": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_uuid": "01a10604-9e64-72c6-acc1-ed1eddc26086",
+  "generation_turn_uuid": "01a10604-be8d-70f8-b56d-bd7058e9b1c5",
+  "raw_model": "Astra",
+  "canonical_model_label": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "exact_prompt": "实现一个边境检查员核对旅行证件与货物并处理不断变化的通关规则的 3D 检查判断游戏，尽你所能丰富游戏玩法。",
+  "attestation_scope": "Explicit parent-provided launch parameters only. Canonical label distinguishes the model family from the raw launch string. This record does not independently prove historical actual runtime.",
+  "source_project": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate",
+  "recorded_at_utc": "2026-10-04T09:01:09.795803Z",
+  "archive_original_summary": {
+    "original_count": 15,
+    "original_bytes": "1855853",
+    "source_original_count": 14,
+    "parent_original_package_count": 1,
+    "generated_records_not_counted_as_originals": true
+  },
+  "archive_supplement_note": "The two original published dist/vendor runtime assets were added after parent clarification; no existing original was recopied and original tar was not unpacked or repacked.",
+  "parent_read_only_process_observation": {
+    "status": "completed_parent_read_only_observation",
+    "observer": "root agent",
+    "provenance": "Parent-provided one-time read-only process snapshot; archive agent did not inspect processes or send signals.",
+    "observed_at_utc": "2026-10-04T09:04:02.837320+00:00",
+    "ps_exit_code": 0,
+    "cwd_lsof_exit_code": 0,
+    "exact_source_or_parent_cwd_and_argv_matching_roots": [],
+    "bounded_descendants": [],
+    "source_preview_port": 4258,
+    "listen_probe": {
+      "tool": "lsof",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "",
+      "scope": "TCP 4258 LISTEN",
+      "interpretation": "No matching listener observed in this one-time probe."
+    },
+    "signals_sent": [],
+    "agent_did_not_inspect_or_terminate_processes": true,
+    "protected_existing_processes_observed": [
+      {
+        "role": "Chrome",
+        "pid": "1036",
+        "state": "S",
+        "cpu_percent": "0.0",
+        "action_taken": "none"
+      },
+      {
+        "port": 5173,
+        "pid": "2547",
+        "state": "S",
+        "cpu_percent": "0.0",
+        "action_taken": "none"
+      },
+      {
+        "port": 4827,
+        "pid": "2554",
+        "state": "S",
+        "cpu_percent": "0.0",
+        "action_taken": "none"
+      },
+      {
+        "port": 4173,
+        "pid": "2560",
+        "state": "S",
+        "cpu_percent": "0.0",
+        "action_taken": "none"
+      }
+    ]
+  }
+}

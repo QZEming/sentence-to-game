@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "854726a484337295a18a6503571d8b37c97a32bd83ea0e70f9d16751b2ed2a61"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "9910a5d84fbb6b24e4eefe0cad377a3625dd085e5b5d2cb90bfffdc7eabec5c4"
+    },
+    {
+      "bytes": 1990,
+      "path": "README.md",
+      "sha256": "7fbc79a70b5ac38b99e05f3b1be944dca3daf364abfd743cd78e0cf80870a027"
+    },
+    {
+      "bytes": 7776,
+      "path": "dist/data.js",
+      "sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de"
+    },
+    {
+      "bytes": 30387,
+      "path": "dist/game.js",
+      "sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e"
+    },
+    {
+      "bytes": 806,
+      "path": "dist/index.html",
+      "sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b"
+    },
+    {
+      "bytes": 14808,
+      "path": "dist/scene.js",
+      "sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0"
+    },
+    {
+      "bytes": 31287,
+      "path": "dist/style.css",
+      "sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "dist/vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "bytes": 298407,
+      "path": "original-delivery/northgate-deploy.tar.gz",
+      "sha256": "f35911e6ea32a4f964f42eae312fe374257d95ded90919862a1cce0b4ac16b1b"
+    },
+    {
+      "bytes": 38336,
+      "path": "output/playwright/campaign-complete.jpg",
+      "sha256": "239d5f42f31feb3178aac441d02474142b7940043e0f791c9a8604989543892d"
+    },
+    {
+      "bytes": 103882,
+      "path": "output/playwright/game-desktop.jpg",
+      "sha256": "a1d3b2f2feb44e36064432f059a854d993983c9e10cb223e9ffa85f52f97a24d"
+    },
+    {
+      "bytes": 9714,
+      "path": "tests/flow-test.mjs",
+      "sha256": "f156dc669ded95b7d0425461000c153c8dd159bec0d5dec964a5df2ac189ee8f"
+    },
+    {
+      "bytes": 2543,
+      "path": "tests/rules.test.mjs",
+      "sha256": "a8d67b56590dad585ba31b4ce0a6157914a6cd060ecb9e309a216725e19571bd"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate",
+  "source_tree_sha256": "9f8551608d40e6e27da6d4239cf91aef1f3079bc0f63c5a3e8fc5a341e489c08",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-089-original-20261004T090109720669Z",
+  "thread_id": "01a10604-9e64-72c6-acc1-ed1eddc26086",
+  "turn_id": "01a10604-be8d-70f8-b56d-bd7058e9b1c5"
+}

@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "089-northgate",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "089",
+  "generation_turn_id": "01a10604-be8d-70f8-b56d-bd7058e9b1c5",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "0b33f20e5c3fc4a4081d93b11b5c076105d3e627",
+    "full_old_history_preserved": true,
+    "game_number": "089",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/0b33f20e5c3fc4a4081d93b11b5c076105d3e627",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 7776,
+      "path": "data.js",
+      "sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de"
+    },
+    {
+      "bytes": 30387,
+      "path": "game.js",
+      "sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e"
+    },
+    {
+      "bytes": 806,
+      "path": "index.html",
+      "sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b"
+    },
+    {
+      "bytes": 14808,
+      "path": "scene.js",
+      "sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0"
+    },
+    {
+      "bytes": 31287,
+      "path": "style.css",
+      "sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 1314681,
+      "path": "vendor/three.module.js",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "9f8551608d40e6e27da6d4239cf91aef1f3079bc0f63c5a3e8fc5a341e489c08",
+  "thinking_requested": "ultra",
+  "thread_id": "01a10604-9e64-72c6-acc1-ed1eddc26086",
+  "title": "北境哨所 · NORTHGATE",
+  "url": "https://qzemi.cn/sentence-to-game/games/089-northgate/"
+}

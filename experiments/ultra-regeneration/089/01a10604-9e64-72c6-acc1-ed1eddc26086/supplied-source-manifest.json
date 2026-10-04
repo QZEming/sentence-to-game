@@ -1,0 +1,924 @@
+{
+  "archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-089-original-20261004T090109720669Z",
+  "archive_number": "089",
+  "completed_at_utc": "2026-10-04T09:04:00.009748Z",
+  "files": [
+    {
+      "archive_relative_path": "northgate-deploy.tar.gz",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545939068",
+        "mode": "420",
+        "mtime_ns": "1791103856304415116",
+        "size_bytes": "298407"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944310",
+          "mode": "420",
+          "mtime_ns": "1791103856304415116",
+          "size_bytes": "298407"
+        },
+        "final_verification_sha256": "f35911e6ea32a4f964f42eae312fe374257d95ded90919862a1cce0b4ac16b1b",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944310",
+          "mode": "420",
+          "mtime_ns": "1791103856304415116",
+          "size_bytes": "298407"
+        },
+        "sha256": "f35911e6ea32a4f964f42eae312fe374257d95ded90919862a1cce0b4ac16b1b",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545939068",
+        "mode": "420",
+        "mtime_ns": "1791103856304415116",
+        "sha256": "f35911e6ea32a4f964f42eae312fe374257d95ded90919862a1cce0b4ac16b1b",
+        "size_bytes": "298407"
+      },
+      "group": "parent_original_package",
+      "sha256": "f35911e6ea32a4f964f42eae312fe374257d95ded90919862a1cce0b4ac16b1b",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate-deploy.tar.gz"
+    },
+    {
+      "archive_relative_path": "northgate/.gitignore",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545933761",
+        "mode": "420",
+        "mtime_ns": "1791103643097146718",
+        "size_bytes": "49"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944312",
+          "mode": "420",
+          "mtime_ns": "1791103643097146718",
+          "size_bytes": "49"
+        },
+        "final_verification_sha256": "854726a484337295a18a6503571d8b37c97a32bd83ea0e70f9d16751b2ed2a61",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944312",
+          "mode": "420",
+          "mtime_ns": "1791103643097146718",
+          "size_bytes": "49"
+        },
+        "sha256": "854726a484337295a18a6503571d8b37c97a32bd83ea0e70f9d16751b2ed2a61",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545933761",
+        "mode": "420",
+        "mtime_ns": "1791103643097146718",
+        "sha256": "854726a484337295a18a6503571d8b37c97a32bd83ea0e70f9d16751b2ed2a61",
+        "size_bytes": "49"
+      },
+      "group": "source",
+      "sha256": "854726a484337295a18a6503571d8b37c97a32bd83ea0e70f9d16751b2ed2a61",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/.gitignore"
+    },
+    {
+      "archive_relative_path": "northgate/.openai/hosting.json",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545927368",
+        "mode": "420",
+        "mtime_ns": "1791102719476773044",
+        "size_bytes": "106"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944314",
+          "mode": "420",
+          "mtime_ns": "1791102719476773044",
+          "size_bytes": "106"
+        },
+        "final_verification_sha256": "9910a5d84fbb6b24e4eefe0cad377a3625dd085e5b5d2cb90bfffdc7eabec5c4",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944314",
+          "mode": "420",
+          "mtime_ns": "1791102719476773044",
+          "size_bytes": "106"
+        },
+        "sha256": "9910a5d84fbb6b24e4eefe0cad377a3625dd085e5b5d2cb90bfffdc7eabec5c4",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545927368",
+        "mode": "420",
+        "mtime_ns": "1791102719476773044",
+        "sha256": "9910a5d84fbb6b24e4eefe0cad377a3625dd085e5b5d2cb90bfffdc7eabec5c4",
+        "size_bytes": "106"
+      },
+      "group": "source",
+      "sha256": "9910a5d84fbb6b24e4eefe0cad377a3625dd085e5b5d2cb90bfffdc7eabec5c4",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/.openai/hosting.json"
+    },
+    {
+      "archive_relative_path": "northgate/README.md",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545933418",
+        "mode": "420",
+        "mtime_ns": "1791103759264105481",
+        "size_bytes": "1990"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944315",
+          "mode": "420",
+          "mtime_ns": "1791103759264105481",
+          "size_bytes": "1990"
+        },
+        "final_verification_sha256": "7fbc79a70b5ac38b99e05f3b1be944dca3daf364abfd743cd78e0cf80870a027",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944315",
+          "mode": "420",
+          "mtime_ns": "1791103759264105481",
+          "size_bytes": "1990"
+        },
+        "sha256": "7fbc79a70b5ac38b99e05f3b1be944dca3daf364abfd743cd78e0cf80870a027",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545933418",
+        "mode": "420",
+        "mtime_ns": "1791103759264105481",
+        "sha256": "7fbc79a70b5ac38b99e05f3b1be944dca3daf364abfd743cd78e0cf80870a027",
+        "size_bytes": "1990"
+      },
+      "group": "source",
+      "sha256": "7fbc79a70b5ac38b99e05f3b1be944dca3daf364abfd743cd78e0cf80870a027",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/README.md"
+    },
+    {
+      "archive_relative_path": "northgate/dist/data.js",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545925226",
+        "mode": "420",
+        "mtime_ns": "1791103373206603339",
+        "size_bytes": "7776"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944317",
+          "mode": "420",
+          "mtime_ns": "1791103373206603339",
+          "size_bytes": "7776"
+        },
+        "final_verification_sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944317",
+          "mode": "420",
+          "mtime_ns": "1791103373206603339",
+          "size_bytes": "7776"
+        },
+        "sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545925226",
+        "mode": "420",
+        "mtime_ns": "1791103373206603339",
+        "sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de",
+        "size_bytes": "7776"
+      },
+      "group": "source",
+      "sha256": "ad59b7a6c65b4058ca107fdcd4db5c163fc8eb2e5b257ff75a3118251e8e53de",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/data.js"
+    },
+    {
+      "archive_relative_path": "northgate/dist/game.js",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545929324",
+        "mode": "420",
+        "mtime_ns": "1791103485758704149",
+        "size_bytes": "30387"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944318",
+          "mode": "420",
+          "mtime_ns": "1791103485758704149",
+          "size_bytes": "30387"
+        },
+        "final_verification_sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944318",
+          "mode": "420",
+          "mtime_ns": "1791103485758704149",
+          "size_bytes": "30387"
+        },
+        "sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545929324",
+        "mode": "420",
+        "mtime_ns": "1791103485758704149",
+        "sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e",
+        "size_bytes": "30387"
+      },
+      "group": "source",
+      "sha256": "0393702f2ef668d993571e0b5da7e9d9a86f9f6eb5b467913137f3929a54c04e",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/game.js"
+    },
+    {
+      "archive_relative_path": "northgate/dist/index.html",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545924887",
+        "mode": "420",
+        "mtime_ns": "1791102439406179974",
+        "size_bytes": "806"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944319",
+          "mode": "420",
+          "mtime_ns": "1791102439406179974",
+          "size_bytes": "806"
+        },
+        "final_verification_sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944319",
+          "mode": "420",
+          "mtime_ns": "1791102439406179974",
+          "size_bytes": "806"
+        },
+        "sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545924887",
+        "mode": "420",
+        "mtime_ns": "1791102439406179974",
+        "sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b",
+        "size_bytes": "806"
+      },
+      "group": "source",
+      "sha256": "ec1dcd382927364f696bd785f0e0a1a2d8d26503ec7a78e9a8fd6ae706946e4b",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/index.html"
+    },
+    {
+      "archive_relative_path": "northgate/dist/scene.js",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545927371",
+        "mode": "420",
+        "mtime_ns": "1791103641373399754",
+        "size_bytes": "14808"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944320",
+          "mode": "420",
+          "mtime_ns": "1791103641373399754",
+          "size_bytes": "14808"
+        },
+        "final_verification_sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944320",
+          "mode": "420",
+          "mtime_ns": "1791103641373399754",
+          "size_bytes": "14808"
+        },
+        "sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545927371",
+        "mode": "420",
+        "mtime_ns": "1791103641373399754",
+        "sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0",
+        "size_bytes": "14808"
+      },
+      "group": "source",
+      "sha256": "9120a318d5ffadf41e2a52782968eeb29e8406cd351c74ea2bfc76d0afe844e0",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/scene.js"
+    },
+    {
+      "archive_relative_path": "northgate/dist/style.css",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545929780",
+        "mode": "420",
+        "mtime_ns": "1791103487429693752",
+        "size_bytes": "31287"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944321",
+          "mode": "420",
+          "mtime_ns": "1791103487429693752",
+          "size_bytes": "31287"
+        },
+        "final_verification_sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944321",
+          "mode": "420",
+          "mtime_ns": "1791103487429693752",
+          "size_bytes": "31287"
+        },
+        "sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545929780",
+        "mode": "420",
+        "mtime_ns": "1791103487429693752",
+        "sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f",
+        "size_bytes": "31287"
+      },
+      "group": "source",
+      "sha256": "04611d31f8531decc2622431e86270cbdfa6723ae8aea46fca9cb4a9c82f407f",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/style.css"
+    },
+    {
+      "added_by_supplement": true,
+      "archive_relative_path": "northgate/dist/vendor/THREE-LICENSE.txt",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545933437",
+        "mode": "420",
+        "mtime_ns": "1791103497982983237",
+        "size_bytes": "1081"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545946389",
+          "mode": "420",
+          "mtime_ns": "1791103497982983237",
+          "size_bytes": "1081"
+        },
+        "final_verification_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545946389",
+          "mode": "420",
+          "mtime_ns": "1791103497982983237",
+          "size_bytes": "1081"
+        },
+        "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545933437",
+        "mode": "420",
+        "mtime_ns": "1791103497982983237",
+        "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+        "size_bytes": "1081"
+      },
+      "group": "source",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/vendor/THREE-LICENSE.txt"
+    },
+    {
+      "added_by_supplement": true,
+      "archive_relative_path": "northgate/dist/vendor/three.module.js",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545925036",
+        "mode": "420",
+        "mtime_ns": "1791102460608520357",
+        "size_bytes": "1314681"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545946390",
+          "mode": "420",
+          "mtime_ns": "1791102460608520357",
+          "size_bytes": "1314681"
+        },
+        "final_verification_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545946390",
+          "mode": "420",
+          "mtime_ns": "1791102460608520357",
+          "size_bytes": "1314681"
+        },
+        "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545925036",
+        "mode": "420",
+        "mtime_ns": "1791102460608520357",
+        "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+        "size_bytes": "1314681"
+      },
+      "group": "source",
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/dist/vendor/three.module.js"
+    },
+    {
+      "archive_relative_path": "northgate/output/playwright/campaign-complete.jpg",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545939148",
+        "mode": "420",
+        "mtime_ns": "1791103915315536432",
+        "size_bytes": "38336"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944324",
+          "mode": "420",
+          "mtime_ns": "1791103915315536432",
+          "size_bytes": "38336"
+        },
+        "final_verification_sha256": "239d5f42f31feb3178aac441d02474142b7940043e0f791c9a8604989543892d",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944324",
+          "mode": "420",
+          "mtime_ns": "1791103915315536432",
+          "size_bytes": "38336"
+        },
+        "sha256": "239d5f42f31feb3178aac441d02474142b7940043e0f791c9a8604989543892d",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545939148",
+        "mode": "420",
+        "mtime_ns": "1791103915315536432",
+        "sha256": "239d5f42f31feb3178aac441d02474142b7940043e0f791c9a8604989543892d",
+        "size_bytes": "38336"
+      },
+      "group": "source",
+      "sha256": "239d5f42f31feb3178aac441d02474142b7940043e0f791c9a8604989543892d",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/output/playwright/campaign-complete.jpg"
+    },
+    {
+      "archive_relative_path": "northgate/output/playwright/game-desktop.jpg",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545933699",
+        "mode": "420",
+        "mtime_ns": "1791103591731774359",
+        "size_bytes": "103882"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944325",
+          "mode": "420",
+          "mtime_ns": "1791103591731774359",
+          "size_bytes": "103882"
+        },
+        "final_verification_sha256": "a1d3b2f2feb44e36064432f059a854d993983c9e10cb223e9ffa85f52f97a24d",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944325",
+          "mode": "420",
+          "mtime_ns": "1791103591731774359",
+          "size_bytes": "103882"
+        },
+        "sha256": "a1d3b2f2feb44e36064432f059a854d993983c9e10cb223e9ffa85f52f97a24d",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545933699",
+        "mode": "420",
+        "mtime_ns": "1791103591731774359",
+        "sha256": "a1d3b2f2feb44e36064432f059a854d993983c9e10cb223e9ffa85f52f97a24d",
+        "size_bytes": "103882"
+      },
+      "group": "source",
+      "sha256": "a1d3b2f2feb44e36064432f059a854d993983c9e10cb223e9ffa85f52f97a24d",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/output/playwright/game-desktop.jpg"
+    },
+    {
+      "archive_relative_path": "northgate/tests/flow-test.mjs",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545935574",
+        "mode": "420",
+        "mtime_ns": "1791103783534638692",
+        "size_bytes": "9714"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944327",
+          "mode": "420",
+          "mtime_ns": "1791103783534638692",
+          "size_bytes": "9714"
+        },
+        "final_verification_sha256": "f156dc669ded95b7d0425461000c153c8dd159bec0d5dec964a5df2ac189ee8f",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944327",
+          "mode": "420",
+          "mtime_ns": "1791103783534638692",
+          "size_bytes": "9714"
+        },
+        "sha256": "f156dc669ded95b7d0425461000c153c8dd159bec0d5dec964a5df2ac189ee8f",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545935574",
+        "mode": "420",
+        "mtime_ns": "1791103783534638692",
+        "sha256": "f156dc669ded95b7d0425461000c153c8dd159bec0d5dec964a5df2ac189ee8f",
+        "size_bytes": "9714"
+      },
+      "group": "source",
+      "sha256": "f156dc669ded95b7d0425461000c153c8dd159bec0d5dec964a5df2ac189ee8f",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/tests/flow-test.mjs"
+    },
+    {
+      "archive_relative_path": "northgate/tests/rules.test.mjs",
+      "baseline": {
+        "device": "16777229",
+        "inode": "545933532",
+        "mode": "420",
+        "mtime_ns": "1791103540180359937",
+        "size_bytes": "2543"
+      },
+      "copy": {
+        "final_verification_metadata": {
+          "device": "16777229",
+          "inode": "545944328",
+          "mode": "420",
+          "mtime_ns": "1791103540180359937",
+          "size_bytes": "2543"
+        },
+        "final_verification_sha256": "a8d67b56590dad585ba31b4ce0a6157914a6cd060ecb9e309a216725e19571bd",
+        "metadata": {
+          "device": "16777229",
+          "inode": "545944328",
+          "mode": "420",
+          "mtime_ns": "1791103540180359937",
+          "size_bytes": "2543"
+        },
+        "sha256": "a8d67b56590dad585ba31b4ce0a6157914a6cd060ecb9e309a216725e19571bd",
+        "sha256_matches": true,
+        "size_and_mtime_match": true
+      },
+      "final_source": {
+        "baseline_matches": true,
+        "device": "16777229",
+        "inode": "545933532",
+        "mode": "420",
+        "mtime_ns": "1791103540180359937",
+        "sha256": "a8d67b56590dad585ba31b4ce0a6157914a6cd060ecb9e309a216725e19571bd",
+        "size_bytes": "2543"
+      },
+      "group": "source",
+      "sha256": "a8d67b56590dad585ba31b4ce0a6157914a6cd060ecb9e309a216725e19571bd",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate/tests/rules.test.mjs"
+    }
+  ],
+  "generated_record_files": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "generated_records_not_counted_as_originals": true,
+  "invariance": {
+    "all_copy_sha256_match": true,
+    "all_copy_sizes_and_mtime_ns_match": true,
+    "final_source_selected_external_and_parent_package_filesets_match": true,
+    "final_source_sha256_match": true,
+    "final_source_sizes_mtime_ns_device_inode_modes_match": true,
+    "full_eligible_source_scope_includes_published_dist_vendor": true
+  },
+  "method_scope": {
+    "acceleration": "Test timer callbacks bypass scan waits; production 650ms scan is a purchased game upgrade, not an observed production debug hook (dist/game.js:69,83,88).",
+    "audio": "AudioContext/oscillator implementation exists and exceptions are swallowed; game defaults to muted, and VM flow does not enable or validate audible output (dist/game.js:8,47,88).",
+    "browser_campaign": "README.md:38 claims all 30 travelers/five shifts/two upgrades/1005 points, but eligible original scripts do not record a real-browser keyboard/mouse full campaign. Two original screenshot files are preserved and have not been inspected.",
+    "errors": "README.md:38 claims no console script errors; no browser error log present; VM flow does not establish browser error coverage.",
+    "flow_tests": {
+      "author_claim": "353 checks",
+      "method": "353 statically expanded check() calls in a Node VM with stub DOM, scene, localStorage and timer; 32 separate assert.ok calls are not included in 353. Invokes internal game functions. Captures scan timer and immediately invokes callback, bypassing real waits. Completes 30 travelers sequentially and restores VM per traveler; no direct pre-completed campaign fixture observed.",
+      "references": [
+        "tests/flow-test.mjs:10-18",
+        "tests/flow-test.mjs:44-62",
+        "tests/flow-test.mjs:106-166"
+      ]
+    },
+    "limits": "tests/flow-test.mjs:169 explicitly excludes browser layout, WebGL and real storage availability. Hosting config identifies a static dist directory and project ID, not proof of publication.",
+    "mobile": "README.md:38 claims 390px no horizontal overflow; no physical mobile device evidence or browser driver present in eligible files.",
+    "review_mode": "Static reading only; original game, build, browser, and verification scripts were not executed; original screenshots were preserved without viewing.",
+    "rule_tests": {
+      "author_claim": "8 rule tests",
+      "method": "Direct createTraveler/verdictFor rule API assertions; traveler field modifications serve as boundary fixtures; not browser input.",
+      "references": [
+        "tests/rules.test.mjs:3",
+        "tests/rules.test.mjs:12-44"
+      ]
+    },
+    "webmcp": "Production conditionally registers read/inspect/decide with gates and error branches; VM document lacks modelContext and skips registration. Browser success/failure calls are README.md:38 claims only (dist/game.js:95-100; tests/flow-test.mjs:38-43)."
+  },
+  "original_bytes": "1855853",
+  "original_count": 15,
+  "parent_original_package_count": 1,
+  "preview": {
+    "hosting_project_id": "appgprj_6ac20e07cb74819188326568db472521",
+    "hosting_static_directory": "dist",
+    "package_json_present_in_source_root": false,
+    "port": 4258,
+    "preview_not_started": true,
+    "readme_command": "python3 -m http.server 4258 --directory dist",
+    "url": "http://localhost:4258"
+  },
+  "process_observation": {
+    "agent_did_not_inspect_or_terminate_processes": true,
+    "bounded_descendants": [],
+    "cwd_lsof_exit_code": 0,
+    "exact_source_or_parent_cwd_and_argv_matching_roots": [],
+    "listen_probe": {
+      "exit_code": 1,
+      "interpretation": "No matching listener observed in this one-time probe.",
+      "scope": "TCP 4258 LISTEN",
+      "stderr": "",
+      "stdout": "",
+      "tool": "lsof"
+    },
+    "observed_at_utc": "2026-10-04T09:04:02.837320+00:00",
+    "observer": "root agent",
+    "protected_existing_processes_observed": [
+      {
+        "action_taken": "none",
+        "cpu_percent": "0.0",
+        "pid": "1036",
+        "role": "Chrome",
+        "state": "S"
+      },
+      {
+        "action_taken": "none",
+        "cpu_percent": "0.0",
+        "pid": "2547",
+        "port": 5173,
+        "state": "S"
+      },
+      {
+        "action_taken": "none",
+        "cpu_percent": "0.0",
+        "pid": "2554",
+        "port": 4827,
+        "state": "S"
+      },
+      {
+        "action_taken": "none",
+        "cpu_percent": "0.0",
+        "pid": "2560",
+        "port": 4173,
+        "state": "S"
+      }
+    ],
+    "provenance": "Parent-provided one-time read-only process snapshot; archive agent did not inspect processes or send signals.",
+    "ps_exit_code": 0,
+    "signals_sent": [],
+    "source_preview_port": 4258,
+    "status": "completed_parent_read_only_observation"
+  },
+  "record_annotation_updated_at_utc": "2026-10-04T09:04:58.770704Z",
+  "schema_version": 1,
+  "selected_external_original_count": 0,
+  "selection": {
+    "dependency_scope_clarification": "Parent clarified that the dependency-content prohibition applies to installed dependencies/caches (such as node_modules), not original static dist/vendor assets shipped with the project. Both original Three.js runtime assets are included.",
+    "excluded_directory_names": [
+      ".agents",
+      ".aws",
+      ".cache",
+      ".codex",
+      ".git",
+      ".playwright-cli",
+      ".venv",
+      "__pycache__",
+      "bower_components",
+      "cache",
+      "node_modules",
+      "venv"
+    ],
+    "explicit_exclusions": [
+      ".git/"
+    ],
+    "external_evidence": "No task-exclusive external driver/results/images identified in the shallow source parent; no other projects searched.",
+    "included_published_runtime_assets": [
+      "northgate/dist/vendor/THREE-LICENSE.txt",
+      "northgate/dist/vendor/three.module.js"
+    ],
+    "parent_package_attribution": "Unique project northgate and directly matching northgate-deploy.tar.gz in task-58 shallow parent; preserved verbatim with copy2, never unpacked or repacked.",
+    "parent_shallow_listing": [
+      "northgate/",
+      "northgate-deploy.tar.gz"
+    ],
+    "preserved_special_regular_files": [
+      "northgate/.gitignore",
+      "northgate/.openai/hosting.json"
+    ],
+    "source_scope": "Eligible regular original project files only; symlinks and symlink ancestors excluded. Source screenshots included once in their original source paths."
+  },
+  "source_original_bytes": "1557446",
+  "source_original_count": 14,
+  "source_project": "/Users/bytedance/Documents/Codex/2026-10-04/task-58/northgate",
+  "stability_check": {
+    "checks_and_copy_performed_in_one_python_process": true,
+    "filesets_match": true,
+    "first_and_second_metadata_match": true,
+    "initial_scope": "Original 12 eligible source files plus parent original tar; the published dist/vendor assets were initially excluded pending clarification.",
+    "interval_ns": "1011612791",
+    "interval_seconds": 1.011612791,
+    "required_interval_seconds": "1 <= interval <= 3"
+  },
+  "started_at_utc": "2026-10-04T09:01:08.657388Z",
+  "supplemental_update": {
+    "added_original_bytes": "1315762",
+    "added_original_count": 2,
+    "added_original_paths": [
+      "northgate/dist/vendor/THREE-LICENSE.txt",
+      "northgate/dist/vendor/three.module.js"
+    ],
+    "all_archive_copy_sha256_match": true,
+    "baseline_new_copy_all_copy_hashes_and_final_invariance_in_same_python_process": true,
+    "completed_at_utc": "2026-10-04T09:04:00.009765Z",
+    "existing_original_files_recopied": false,
+    "first_and_second_full_metadata_match": true,
+    "full_eligible_baseline_metadata": {
+      "northgate-deploy.tar.gz": {
+        "device": "16777229",
+        "inode": "545939068",
+        "mode": "420",
+        "mtime_ns": "1791103856304415116",
+        "size_bytes": "298407"
+      },
+      "northgate/.gitignore": {
+        "device": "16777229",
+        "inode": "545933761",
+        "mode": "420",
+        "mtime_ns": "1791103643097146718",
+        "size_bytes": "49"
+      },
+      "northgate/.openai/hosting.json": {
+        "device": "16777229",
+        "inode": "545927368",
+        "mode": "420",
+        "mtime_ns": "1791102719476773044",
+        "size_bytes": "106"
+      },
+      "northgate/README.md": {
+        "device": "16777229",
+        "inode": "545933418",
+        "mode": "420",
+        "mtime_ns": "1791103759264105481",
+        "size_bytes": "1990"
+      },
+      "northgate/dist/data.js": {
+        "device": "16777229",
+        "inode": "545925226",
+        "mode": "420",
+        "mtime_ns": "1791103373206603339",
+        "size_bytes": "7776"
+      },
+      "northgate/dist/game.js": {
+        "device": "16777229",
+        "inode": "545929324",
+        "mode": "420",
+        "mtime_ns": "1791103485758704149",
+        "size_bytes": "30387"
+      },
+      "northgate/dist/index.html": {
+        "device": "16777229",
+        "inode": "545924887",
+        "mode": "420",
+        "mtime_ns": "1791102439406179974",
+        "size_bytes": "806"
+      },
+      "northgate/dist/scene.js": {
+        "device": "16777229",
+        "inode": "545927371",
+        "mode": "420",
+        "mtime_ns": "1791103641373399754",
+        "size_bytes": "14808"
+      },
+      "northgate/dist/style.css": {
+        "device": "16777229",
+        "inode": "545929780",
+        "mode": "420",
+        "mtime_ns": "1791103487429693752",
+        "size_bytes": "31287"
+      },
+      "northgate/dist/vendor/THREE-LICENSE.txt": {
+        "device": "16777229",
+        "inode": "545933437",
+        "mode": "420",
+        "mtime_ns": "1791103497982983237",
+        "size_bytes": "1081"
+      },
+      "northgate/dist/vendor/three.module.js": {
+        "device": "16777229",
+        "inode": "545925036",
+        "mode": "420",
+        "mtime_ns": "1791102460608520357",
+        "size_bytes": "1314681"
+      },
+      "northgate/output/playwright/campaign-complete.jpg": {
+        "device": "16777229",
+        "inode": "545939148",
+        "mode": "420",
+        "mtime_ns": "1791103915315536432",
+        "size_bytes": "38336"
+      },
+      "northgate/output/playwright/game-desktop.jpg": {
+        "device": "16777229",
+        "inode": "545933699",
+        "mode": "420",
+        "mtime_ns": "1791103591731774359",
+        "size_bytes": "103882"
+      },
+      "northgate/tests/flow-test.mjs": {
+        "device": "16777229",
+        "inode": "545935574",
+        "mode": "420",
+        "mtime_ns": "1791103783534638692",
+        "size_bytes": "9714"
+      },
+      "northgate/tests/rules.test.mjs": {
+        "device": "16777229",
+        "inode": "545933532",
+        "mode": "420",
+        "mtime_ns": "1791103540180359937",
+        "size_bytes": "2543"
+      }
+    },
+    "full_eligible_fileset_unchanged": true,
+    "full_eligible_final_sizes_mtime_ns_device_inode_modes_and_sha256_match": true,
+    "prior_original_bytes": "540091",
+    "prior_original_count": 13,
+    "prior_original_source_metadata_and_sha256_unchanged": true,
+    "reason": "Parent clarified original published dist/vendor runtime assets are eligible originals, not prohibited installed dependency/cache content.",
+    "required_interval_seconds": "1 <= interval <= 3",
+    "stability_interval_ns": "1010327792",
+    "stability_interval_seconds": 1.010327792,
+    "started_at_utc": "2026-10-04T09:03:58.812566Z"
+  }
+}

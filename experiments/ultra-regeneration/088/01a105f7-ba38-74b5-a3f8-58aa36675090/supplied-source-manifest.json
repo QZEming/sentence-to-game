@@ -1,0 +1,415 @@
+{
+  "archive_created_utc": "2026-10-04T08:49:19.590488+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-088-original-20261004T084919Z",
+  "driver_file_count": 1,
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "exclusive_evidence_file_count": 5,
+  "files": [
+    {
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791103759595502061",
+        "dev": "16777229",
+        "ino": "545935527",
+        "mode": "0o644",
+        "mtime_ns": "1791101774955984962"
+      },
+      "copy_sha256": "207a19ebdb4f404baf3b753e2588660da73329699d2a1f4f4eb7a94898cb6304",
+      "metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791101774956159796",
+        "dev": "16777229",
+        "ino": "545918263",
+        "mode": "0o644",
+        "mtime_ns": "1791101774955984962"
+      },
+      "sha256": "207a19ebdb4f404baf3b753e2588660da73329699d2a1f4f4eb7a94898cb6304",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/.openai/hosting.json"
+    },
+    {
+      "archive_relative_path": "source/README.md",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "2219",
+        "ctime_ns": "1791103759600020654",
+        "dev": "16777229",
+        "ino": "545935528",
+        "mode": "0o644",
+        "mtime_ns": "1791102842900260601"
+      },
+      "copy_sha256": "9ba4dbb50e49fb25733cc7540c037f4a34ef41c5caf9b20d615a5f7f958a78eb",
+      "metadata": {
+        "bytes": "2219",
+        "ctime_ns": "1791102842900260601",
+        "dev": "16777229",
+        "ino": "545929174",
+        "mode": "0o644",
+        "mtime_ns": "1791102842900260601"
+      },
+      "sha256": "9ba4dbb50e49fb25733cc7540c037f4a34ef41c5caf9b20d615a5f7f958a78eb",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/README.md"
+    },
+    {
+      "archive_relative_path": "source/dist/game-core.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "3954",
+        "ctime_ns": "1791103759602903702",
+        "dev": "16777229",
+        "ino": "545935530",
+        "mode": "0o644",
+        "mtime_ns": "1791102438029347374"
+      },
+      "copy_sha256": "5a591fc3e0cfc34d1f27c918a65969a63628131e4ef0e0ffb8c24788cd9a7a37",
+      "metadata": {
+        "bytes": "3954",
+        "ctime_ns": "1791102438029347374",
+        "dev": "16777229",
+        "ino": "545924877",
+        "mode": "0o644",
+        "mtime_ns": "1791102438029347374"
+      },
+      "sha256": "5a591fc3e0cfc34d1f27c918a65969a63628131e4ef0e0ffb8c24788cd9a7a37",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/dist/game-core.js"
+    },
+    {
+      "archive_relative_path": "source/dist/game.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "28928",
+        "ctime_ns": "1791103759607144669",
+        "dev": "16777229",
+        "ino": "545935531",
+        "mode": "0o644",
+        "mtime_ns": "1791102798435087944"
+      },
+      "copy_sha256": "9b491871d0bb7b0c2772ca15c56898227054399a2ea864343a49494c9edf6528",
+      "metadata": {
+        "bytes": "28928",
+        "ctime_ns": "1791102798435087944",
+        "dev": "16777229",
+        "ino": "545924886",
+        "mode": "0o644",
+        "mtime_ns": "1791102798435087944"
+      },
+      "sha256": "9b491871d0bb7b0c2772ca15c56898227054399a2ea864343a49494c9edf6528",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/dist/game.js"
+    },
+    {
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "9786",
+        "ctime_ns": "1791103759634677603",
+        "dev": "16777229",
+        "ino": "545935533",
+        "mode": "0o644",
+        "mtime_ns": "1791101743807164553"
+      },
+      "copy_sha256": "2296be357af53d4a5dd87bdbf867f3ec34bbce80d9ad76ca9bdb1ead402835ed",
+      "metadata": {
+        "bytes": "9786",
+        "ctime_ns": "1791101743807164553",
+        "dev": "16777229",
+        "ino": "545918219",
+        "mode": "0o644",
+        "mtime_ns": "1791101743807164553"
+      },
+      "sha256": "2296be357af53d4a5dd87bdbf867f3ec34bbce80d9ad76ca9bdb1ead402835ed",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/dist/index.html"
+    },
+    {
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "25151",
+        "ctime_ns": "1791103759643392788",
+        "dev": "16777229",
+        "ino": "545935534",
+        "mode": "0o644",
+        "mtime_ns": "1791102799833229381"
+      },
+      "copy_sha256": "1c1c6a31cf4ce73869b30d087fd39d1dce07859b41c4f1063ec8a0eee7ea34bd",
+      "metadata": {
+        "bytes": "25151",
+        "ctime_ns": "1791102799833229381",
+        "dev": "16777229",
+        "ino": "545922527",
+        "mode": "0o644",
+        "mtime_ns": "1791102799833229381"
+      },
+      "sha256": "1c1c6a31cf4ce73869b30d087fd39d1dce07859b41c4f1063ec8a0eee7ea34bd",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/dist/style.css"
+    },
+    {
+      "archive_relative_path": "source/dist/assets/night-sky.jpg",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "239497",
+        "ctime_ns": "1791103759650230844",
+        "dev": "16777229",
+        "ino": "545935536",
+        "mode": "0o644",
+        "mtime_ns": "1791102087280443963"
+      },
+      "copy_sha256": "c83b1cec2109ceebfb588115da011198b7ff6146e74b1de75407ec356178930f",
+      "metadata": {
+        "bytes": "239497",
+        "ctime_ns": "1791102087291159569",
+        "dev": "16777229",
+        "ino": "545922532",
+        "mode": "0o644",
+        "mtime_ns": "1791102087280443963"
+      },
+      "sha256": "c83b1cec2109ceebfb588115da011198b7ff6146e74b1de75407ec356178930f",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper/dist/assets/night-sky.jpg"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/check-game.js",
+      "category": "existing_exclusive_validation_original",
+      "copy_metadata": {
+        "bytes": "4856",
+        "ctime_ns": "1791103759655134605",
+        "dev": "16777229",
+        "ino": "545935540",
+        "mode": "0o644",
+        "mtime_ns": "1791102800873339222"
+      },
+      "copy_sha256": "dd64ec052de8ee0f9322dc5c5fbcffc479e28cfd90ae35016502b302995d3352",
+      "metadata": {
+        "bytes": "4856",
+        "ctime_ns": "1791102800873339222",
+        "dev": "16777229",
+        "ino": "545929080",
+        "mode": "0o644",
+        "mtime_ns": "1791102800873339222"
+      },
+      "sha256": "dd64ec052de8ee0f9322dc5c5fbcffc479e28cfd90ae35016502b302995d3352",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/output/playwright/check-game.js"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/validation.json",
+      "category": "existing_exclusive_validation_original",
+      "copy_metadata": {
+        "bytes": "904",
+        "ctime_ns": "1791103759658047611",
+        "dev": "16777229",
+        "ino": "545935541",
+        "mode": "0o644",
+        "mtime_ns": "1791103078875271884"
+      },
+      "copy_sha256": "ef9b02889a2322b91d903f4893be36819cc5c0c5cb59fd0070b09c6475344a6e",
+      "metadata": {
+        "bytes": "904",
+        "ctime_ns": "1791103078875271884",
+        "dev": "16777229",
+        "ino": "545929691",
+        "mode": "0o644",
+        "mtime_ns": "1791103078875271884"
+      },
+      "sha256": "ef9b02889a2322b91d903f4893be36819cc5c0c5cb59fd0070b09c6475344a6e",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/output/playwright/validation.json"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/dreamkeeper-desktop.png",
+      "category": "existing_exclusive_validation_original",
+      "copy_metadata": {
+        "bytes": "842960",
+        "ctime_ns": "1791103759659933865",
+        "dev": "16777229",
+        "ino": "545935542",
+        "mode": "0o644",
+        "mtime_ns": "1791102834065623569"
+      },
+      "copy_sha256": "a7f7962295684da7b1464c1d37d1cb9b82dd0c6ca8207d5bc585cbaea1019408",
+      "metadata": {
+        "bytes": "842960",
+        "ctime_ns": "1791102834065623569",
+        "dev": "16777229",
+        "ino": "545927183",
+        "mode": "0o644",
+        "mtime_ns": "1791102834065623569"
+      },
+      "sha256": "a7f7962295684da7b1464c1d37d1cb9b82dd0c6ca8207d5bc585cbaea1019408",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/output/playwright/dreamkeeper-desktop.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/dreamkeeper-mobile.png",
+      "category": "existing_exclusive_validation_original",
+      "copy_metadata": {
+        "bytes": "270634",
+        "ctime_ns": "1791103759665807461",
+        "dev": "16777229",
+        "ino": "545935543",
+        "mode": "0o644",
+        "mtime_ns": "1791102833852572740"
+      },
+      "copy_sha256": "02a15483ded65395347454a7df0c0b12c5ad494b18614f283beb6d074ff0049a",
+      "metadata": {
+        "bytes": "270634",
+        "ctime_ns": "1791102833852572740",
+        "dev": "16777229",
+        "ino": "545927308",
+        "mode": "0o644",
+        "mtime_ns": "1791102833852572740"
+      },
+      "sha256": "02a15483ded65395347454a7df0c0b12c5ad494b18614f283beb6d074ff0049a",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/output/playwright/dreamkeeper-mobile.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/dreamkeeper-win.png",
+      "category": "existing_exclusive_validation_original",
+      "copy_metadata": {
+        "bytes": "238181",
+        "ctime_ns": "1791103759670827180",
+        "dev": "16777229",
+        "ino": "545935544",
+        "mode": "0o644",
+        "mtime_ns": "1791102821080635277"
+      },
+      "copy_sha256": "0f8d22739a1a9de9c6bb5c85b0109bb982431ad845a68e3f8ccbe3e6c090e8ab",
+      "metadata": {
+        "bytes": "238181",
+        "ctime_ns": "1791102821080635277",
+        "dev": "16777229",
+        "ino": "545929131",
+        "mode": "0o644",
+        "mtime_ns": "1791102821080635277"
+      },
+      "sha256": "0f8d22739a1a9de9c6bb5c85b0109bb982431ad845a68e3f8ccbe3e6c090e8ab",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/output/playwright/dreamkeeper-win.png"
+    },
+    {
+      "archive_relative_path": "original-packages/dreamkeeper-site.tar.gz",
+      "category": "original_deployment_package",
+      "copy_metadata": {
+        "bytes": "263326",
+        "ctime_ns": "1791103759676224192",
+        "dev": "16777229",
+        "ino": "545935546",
+        "mode": "0o644",
+        "mtime_ns": "1791102988632451648"
+      },
+      "copy_sha256": "9d71749b493425cf5ac7ccc6bcb9ee7c8939b3532cbad7cc4af48bc87d2b2986",
+      "metadata": {
+        "bytes": "263326",
+        "ctime_ns": "1791102988632451648",
+        "dev": "16777229",
+        "ino": "545929507",
+        "mode": "0o644",
+        "mtime_ns": "1791102988632451648"
+      },
+      "sha256": "9d71749b493425cf5ac7ccc6bcb9ee7c8939b3532cbad7cc4af48bc87d2b2986",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper-site.tar.gz"
+    }
+  ],
+  "fixed_original_bytes": "1930502",
+  "fixed_original_file_count": 13,
+  "game_number": "088",
+  "local_preview": {
+    "command": "python3 -m http.server 5287 --bind 127.0.0.1 --directory dist",
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper",
+    "port": 5287,
+    "started_during_archive": false,
+    "url": "http://127.0.0.1:5287"
+  },
+  "original_package_file_count": 1,
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-57",
+  "process_observation": {
+    "descendants_observed": [],
+    "note": "Point-in-time root observation; copy verification did not require process shutdown.",
+    "observed_at_utc": "2026-10-04T08:44:46.211277Z",
+    "port_5287": {
+      "listening": false,
+      "lsof_exit_code": 1,
+      "stderr": "",
+      "stdout": ""
+    },
+    "preserved_original_processes": [
+      {
+        "cpu": "0",
+        "name": "Chrome",
+        "pid": 1036,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2547,
+        "port": 5173,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2554,
+        "port": 4827,
+        "state": "S"
+      },
+      {
+        "cpu": "0",
+        "pid": 2560,
+        "port": 4173,
+        "state": "S"
+      }
+    ],
+    "provenance": "Root-supplied ps/lsof metadata; archive agent did not repeat checks",
+    "ps_lsof_status": "normal",
+    "roots_observed": [],
+    "scope": "Exact task-57/dreamkeeper source and parent cwd, argv and game name matches",
+    "signals": [],
+    "status": "checked_by_root_no_task_owned_process_observed",
+    "task_owned_preview_browser_observed": false
+  },
+  "schema_version": 1,
+  "screenshot_file_count": 3,
+  "source_file_count": 7,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper",
+  "title": "梦境守护者 · Dreamkeeper",
+  "validation_limits": {
+    "browser_driver": "Button click and page.mouse.click; page.evaluate temporarily wraps Canvas drawing methods to capture five observed target-edge screen coordinates. This is a drawing hook, not direct game state mutation or a game API call.",
+    "browser_tests_build_game_or_remote_execution": false,
+    "confirmed_driver_scope": "One first-round Lyra success, collection 01 and switch to level 02; not eight-level clean-initial completion.",
+    "console_audio_native_webmcp": "No capture or functional assertions for console, audio or native WebMCP; source optional tools do not prove runtime verification.",
+    "errors": "pageerror listener is registered after the first reload; driver explicitly asserts collected errors length zero at end. Initial reload and console errors are outside this capture.",
+    "free_mode_scope": "Infinite recall time and three hearts after submission; no assertion of another completed round.",
+    "generated_round_check_limit": "The preserved driver does not contain the 24 generated graph or syntax checks. These record fields are not 24 browser completions.",
+    "method": "Read-only inspection of source README/core/game/config and exclusive driver/results metadata and code; no execution and no image viewing.",
+    "mobile_scope": "390x844 viewport, horizontal overflow false and screenshot only; no touch/tap or physical-device input.",
+    "original_package": "Only shallow metadata inspected before copying; original archive copied and hashed intact without tar-entry reading, extraction or repacking.",
+    "persistence_scope": "Collection 01 survives reload; other save fields are not independently covered.",
+    "renderer": "Canvas 2D perspective projection of 3D coordinates, with orbit/vertical view and zoom.",
+    "screenshots_opened": false,
+    "skill_pause_scope": "Pause compares displayed text after 600ms; extension increases displayed time by at least 9 and disables button; hint counter becomes x1.",
+    "source_unchanged": true,
+    "state_fixture_time_acceleration": "No direct game state mutation, state fixture, clock replacement or acceleration found in driver; storage is not cleared before reload, so initial profile is not controlled.",
+    "unattributed_generated_images": "Parent generated_images not entered or copied; only source night-sky.jpg retained.",
+    "validation_record": "validation.json reports browserFlow passed and runtimeErrors 0, syntax passed and generatedRoundChecks 24. Driver only console.logs and does not write validation.json; same-run provenance is unknown."
+  },
+  "validation_record_file_count": 1,
+  "verification": {
+    "all_copy_hashes_match": true,
+    "copy2_used": true,
+    "final_copy_metadata_hashes_and_file_set_verified": true,
+    "final_source_evidence_package_bytes_mtime_hashes_and_file_sets_unchanged": true,
+    "metadata_snapshots_interval_seconds": 1,
+    "metadata_stable": true
+  }
+}

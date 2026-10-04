@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "game_number": "088",
+  "record_kind": "parent_launch_attestation",
+  "provenance": "Explicit parent task message; parameters are parent attestation, not independent runtime proof",
+  "independently_verified": false,
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105f7-ba38-74b5-a3f8-58aa36675090",
+  "generation_turn_id": "01a105f7-dd32-77a6-b29d-494c369ad0d6",
+  "model": "Astra",
+  "raw_model": "Astra",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "reasoning_effort": "ultra",
+  "fork": "none",
+  "fork_turns": "none",
+  "explicit_parent_parameters": true,
+  "exact_prompt": "实现一个梦境守护者记住短暂出现的星座并在夜空中重现它们的 3D 空间记忆游戏，尽你所能丰富游戏玩法。",
+  "complete_parent_prompt": "实现一个梦境守护者记住短暂出现的星座并在夜空中重现它们的 3D 空间记忆游戏，尽你所能丰富游戏玩法。"
+}

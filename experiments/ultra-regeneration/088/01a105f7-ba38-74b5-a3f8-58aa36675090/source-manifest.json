@@ -1,0 +1,78 @@
+{
+  "files": [
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "207a19ebdb4f404baf3b753e2588660da73329699d2a1f4f4eb7a94898cb6304"
+    },
+    {
+      "bytes": 2219,
+      "path": "README.md",
+      "sha256": "9ba4dbb50e49fb25733cc7540c037f4a34ef41c5caf9b20d615a5f7f958a78eb"
+    },
+    {
+      "bytes": 239497,
+      "path": "dist/assets/night-sky.jpg",
+      "sha256": "c83b1cec2109ceebfb588115da011198b7ff6146e74b1de75407ec356178930f"
+    },
+    {
+      "bytes": 3954,
+      "path": "dist/game-core.js",
+      "sha256": "5a591fc3e0cfc34d1f27c918a65969a63628131e4ef0e0ffb8c24788cd9a7a37"
+    },
+    {
+      "bytes": 28928,
+      "path": "dist/game.js",
+      "sha256": "9b491871d0bb7b0c2772ca15c56898227054399a2ea864343a49494c9edf6528"
+    },
+    {
+      "bytes": 9786,
+      "path": "dist/index.html",
+      "sha256": "2296be357af53d4a5dd87bdbf867f3ec34bbce80d9ad76ca9bdb1ead402835ed"
+    },
+    {
+      "bytes": 25151,
+      "path": "dist/style.css",
+      "sha256": "1c1c6a31cf4ce73869b30d087fd39d1dce07859b41c4f1063ec8a0eee7ea34bd"
+    },
+    {
+      "bytes": 4856,
+      "path": "original-delivery/check-game.js",
+      "sha256": "dd64ec052de8ee0f9322dc5c5fbcffc479e28cfd90ae35016502b302995d3352"
+    },
+    {
+      "bytes": 842960,
+      "path": "original-delivery/dreamkeeper-desktop.png",
+      "sha256": "a7f7962295684da7b1464c1d37d1cb9b82dd0c6ca8207d5bc585cbaea1019408"
+    },
+    {
+      "bytes": 270634,
+      "path": "original-delivery/dreamkeeper-mobile.png",
+      "sha256": "02a15483ded65395347454a7df0c0b12c5ad494b18614f283beb6d074ff0049a"
+    },
+    {
+      "bytes": 263326,
+      "path": "original-delivery/dreamkeeper-site.tar.gz",
+      "sha256": "9d71749b493425cf5ac7ccc6bcb9ee7c8939b3532cbad7cc4af48bc87d2b2986"
+    },
+    {
+      "bytes": 238181,
+      "path": "original-delivery/dreamkeeper-win.png",
+      "sha256": "0f8d22739a1a9de9c6bb5c85b0109bb982431ad845a68e3f8ccbe3e6c090e8ab"
+    },
+    {
+      "bytes": 904,
+      "path": "original-delivery/validation.json",
+      "sha256": "ef9b02889a2322b91d903f4893be36819cc5c0c5cb59fd0070b09c6475344a6e"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-57/dreamkeeper",
+  "source_tree_sha256": "72062dc7c22b93f80f95cdf76ae64a2e2ea9a45a8d03726d3f80bf5d125d4f7e",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-088-original-20261004T084919Z",
+  "thread_id": "01a105f7-ba38-74b5-a3f8-58aa36675090",
+  "turn_id": "01a105f7-dd32-77a6-b29d-494c369ad0d6"
+}
