@@ -1,9 +1,13 @@
-# ONEIRA · 梦境旅人 — 旧版，待 Ultra 重生成
+# ONEIRA · 梦境旅人
 
-体验地址：https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/
+[开始体验](https://qzemi.cn/sentence-to-game/games/056-dream-changing-rooms/)
 
-历史 effort 未知，本版不标为 Ultra。历史模型、线程、轮次及完整任务导出尚无证据。原源码私有副本及原始交付包保留；提示词来源为已批准候选登记，未独立认证原任务输入。
+旋转房间、连接光路，帮助梦境旅人找回记忆碎片并寻找出口。
 
-发布者没有修改玩法，只复制已有 dist 并记录机械路径适配。原稿档案：/Users/bytedance/Documents/Codex/2026-10-02/task/sentence-to-game-batch/archive/050-unpublished-before-ultra。来源记录：experiments/legacy-coverage/056/。
+- 点击房间选择，使用 Q / E 或按钮旋转。
+- 双击房间或点击「前往房间」，沿连通的路径行走并拾取碎片。
+- 第二章可切换相位，第三章可交换相邻房间。
+- 使用 Z 撤销、H 查看提示；游戏内提供完整指南。
+- 拖动调整视角，滚轮缩放。
 
-作者测试为作者证据，发布者匿名域名短测另存记录，不据此声称完整通关。
+按自己的节奏探索，没有倒计时或失败惩罚。
