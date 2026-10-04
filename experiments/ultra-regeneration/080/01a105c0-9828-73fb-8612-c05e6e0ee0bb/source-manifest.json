@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "400ffb630f73d5939bdd96a1f15322875ca91e773539f621dce1976ee544b9b0"
+    },
+    {
+      "bytes": 2558,
+      "path": "README.md",
+      "sha256": "321e0ef64f32e77ba449780e05368fe76a1c633b90902e41eb29c9e1939fc63f"
+    },
+    {
+      "bytes": 37448,
+      "path": "dist/game.js",
+      "sha256": "05999b06ff7a6f5878e8c77a2dc47065e6d8f211753fc61fd4d87e8f6aea1fba"
+    },
+    {
+      "bytes": 8794,
+      "path": "dist/index.html",
+      "sha256": "0aa44bfa40243c293f58f0b6399b284fac631f2153b9230532306264f8514c08"
+    },
+    {
+      "bytes": 14777,
+      "path": "dist/simulation.js",
+      "sha256": "cfec645e9096a71e4e17c57749c1db9d60944c9ce57a0d7d3a3123487e0da814"
+    },
+    {
+      "bytes": 24060,
+      "path": "dist/style.css",
+      "sha256": "7a67226abe1e72e172e31bf4c37a973733ca92315d8780f32062942935bd9da4"
+    },
+    {
+      "bytes": 1081,
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "dist/vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "dist/vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "bytes": 209675,
+      "path": "original-delivery/immune-command-site.tar.gz",
+      "sha256": "9b7e2d2293a50c6684000aed50c3c14dacbe34da2c4117bc6adad7d09b4471b3"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command",
+  "source_tree_sha256": "c4e15d633cd5f46cf655d1cafc6f61b0a63b6c0cb1fa11fd0c750a91e7768369",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-080-original-20261004T075231Z",
+  "thread_id": "01a105c0-9828-73fb-8612-c05e6e0ee0bb",
+  "turn_id": "01a105c0-b7b0-7283-869c-6367140be3dd"
+}

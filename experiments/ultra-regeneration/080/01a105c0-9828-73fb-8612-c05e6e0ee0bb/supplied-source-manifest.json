@@ -1,0 +1,391 @@
+{
+  "all_copy2_bytes_mtime_match": true,
+  "all_hashes_match": true,
+  "all_original_metadata_unchanged": true,
+  "all_source_bytes_mtime_sha256_unchanged": true,
+  "all_source_file_sets_unchanged": true,
+  "archive_root": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-080-original-20261004T075231Z",
+  "candidate": "ultra-080",
+  "completed_at_utc": "2026-10-04T07:52:31.231140Z",
+  "copy_status": "completed",
+  "created_at_utc": "2026-10-04T07:52:29.985753Z",
+  "excluded_source_paths": [
+    ".git"
+  ],
+  "file_count": 11,
+  "game_title": "免疫指挥官 · MICROFRONT",
+  "generated_files_excluded_from_original_count": [
+    "source-manifest.json",
+    "README.md",
+    "parent-launch-record.json"
+  ],
+  "launch_record": "parent-launch-record.json",
+  "original_files": [
+    {
+      "archive_relative_path": "immune-command/.gitignore",
+      "copied_metadata": {
+        "bytes": 49,
+        "ctime_ns": "1791100351116670198",
+        "device": "16777229",
+        "inode": "545905488",
+        "mode": 33188,
+        "mtime_ns": "1791098015413897852",
+        "mtime_utc": "2026-10-04T07:13:35.413897852Z"
+      },
+      "copied_sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 49,
+        "ctime_ns": "1791098015413897852",
+        "device": "16777229",
+        "inode": "545886111",
+        "mode": 33188,
+        "mtime_ns": "1791098015413897852",
+        "mtime_utc": "2026-10-04T07:13:35.413897852Z",
+        "sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/.gitignore",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/.openai/hosting.json",
+      "copied_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791100351119132537",
+        "device": "16777229",
+        "inode": "545905490",
+        "mode": 33188,
+        "mtime_ns": "1791098050598439109",
+        "mtime_utc": "2026-10-04T07:14:10.598439109Z"
+      },
+      "copied_sha256": "400ffb630f73d5939bdd96a1f15322875ca91e773539f621dce1976ee544b9b0",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 106,
+        "ctime_ns": "1791098050598667693",
+        "device": "16777229",
+        "inode": "545887796",
+        "mode": 33188,
+        "mtime_ns": "1791098050598439109",
+        "mtime_utc": "2026-10-04T07:14:10.598439109Z",
+        "sha256": "400ffb630f73d5939bdd96a1f15322875ca91e773539f621dce1976ee544b9b0"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/.openai/hosting.json",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/README.md",
+      "copied_metadata": {
+        "bytes": 2558,
+        "ctime_ns": "1791100351120410206",
+        "device": "16777229",
+        "inode": "545905491",
+        "mode": 33188,
+        "mtime_ns": "1791099600587051405",
+        "mtime_utc": "2026-10-04T07:40:00.587051405Z"
+      },
+      "copied_sha256": "321e0ef64f32e77ba449780e05368fe76a1c633b90902e41eb29c9e1939fc63f",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 2558,
+        "ctime_ns": "1791099600587051405",
+        "device": "16777229",
+        "inode": "545903581",
+        "mode": 33188,
+        "mtime_ns": "1791099600587051405",
+        "mtime_utc": "2026-10-04T07:40:00.587051405Z",
+        "sha256": "321e0ef64f32e77ba449780e05368fe76a1c633b90902e41eb29c9e1939fc63f"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/README.md",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/game.js",
+      "copied_metadata": {
+        "bytes": 37448,
+        "ctime_ns": "1791100351121814793",
+        "device": "16777229",
+        "inode": "545905493",
+        "mode": 33188,
+        "mtime_ns": "1791099363045210951",
+        "mtime_utc": "2026-10-04T07:36:03.045210951Z"
+      },
+      "copied_sha256": "05999b06ff7a6f5878e8c77a2dc47065e6d8f211753fc61fd4d87e8f6aea1fba",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 37448,
+        "ctime_ns": "1791099363045210951",
+        "device": "16777229",
+        "inode": "545900898",
+        "mode": 33188,
+        "mtime_ns": "1791099363045210951",
+        "mtime_utc": "2026-10-04T07:36:03.045210951Z",
+        "sha256": "05999b06ff7a6f5878e8c77a2dc47065e6d8f211753fc61fd4d87e8f6aea1fba"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/game.js",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/index.html",
+      "copied_metadata": {
+        "bytes": 8794,
+        "ctime_ns": "1791100351135017279",
+        "device": "16777229",
+        "inode": "545905494",
+        "mode": 33188,
+        "mtime_ns": "1791099195432327491",
+        "mtime_utc": "2026-10-04T07:33:15.432327491Z"
+      },
+      "copied_sha256": "0aa44bfa40243c293f58f0b6399b284fac631f2153b9230532306264f8514c08",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 8794,
+        "ctime_ns": "1791099195432327491",
+        "device": "16777229",
+        "inode": "545893400",
+        "mode": 33188,
+        "mtime_ns": "1791099195432327491",
+        "mtime_utc": "2026-10-04T07:33:15.432327491Z",
+        "sha256": "0aa44bfa40243c293f58f0b6399b284fac631f2153b9230532306264f8514c08"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/index.html",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/simulation.js",
+      "copied_metadata": {
+        "bytes": 14777,
+        "ctime_ns": "1791100351147466181",
+        "device": "16777229",
+        "inode": "545905495",
+        "mode": 33188,
+        "mtime_ns": "1791099195431126530",
+        "mtime_utc": "2026-10-04T07:33:15.431126530Z"
+      },
+      "copied_sha256": "cfec645e9096a71e4e17c57749c1db9d60944c9ce57a0d7d3a3123487e0da814",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 14777,
+        "ctime_ns": "1791099195431126530",
+        "device": "16777229",
+        "inode": "545895367",
+        "mode": 33188,
+        "mtime_ns": "1791099195431126530",
+        "mtime_utc": "2026-10-04T07:33:15.431126530Z",
+        "sha256": "cfec645e9096a71e4e17c57749c1db9d60944c9ce57a0d7d3a3123487e0da814"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/simulation.js",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/style.css",
+      "copied_metadata": {
+        "bytes": 24060,
+        "ctime_ns": "1791100351153477444",
+        "device": "16777229",
+        "inode": "545905496",
+        "mode": 33188,
+        "mtime_ns": "1791099363066169203",
+        "mtime_utc": "2026-10-04T07:36:03.066169203Z"
+      },
+      "copied_sha256": "7a67226abe1e72e172e31bf4c37a973733ca92315d8780f32062942935bd9da4",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 24060,
+        "ctime_ns": "1791099363066169203",
+        "device": "16777229",
+        "inode": "545893402",
+        "mode": 33188,
+        "mtime_ns": "1791099363066169203",
+        "mtime_utc": "2026-10-04T07:36:03.066169203Z",
+        "sha256": "7a67226abe1e72e172e31bf4c37a973733ca92315d8780f32062942935bd9da4"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/style.css",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/vendor/THREE-LICENSE.txt",
+      "copied_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791100351160151374",
+        "device": "16777229",
+        "inode": "545905498",
+        "mode": 33188,
+        "mtime_ns": "1791098055782147363",
+        "mtime_utc": "2026-10-04T07:14:15.782147363Z"
+      },
+      "copied_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 1081,
+        "ctime_ns": "1791098055782147363",
+        "device": "16777229",
+        "inode": "545887810",
+        "mode": 33188,
+        "mtime_ns": "1791098055782147363",
+        "mtime_utc": "2026-10-04T07:14:15.782147363Z",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/vendor/THREE-LICENSE.txt",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/vendor/three.core.min.js",
+      "copied_metadata": {
+        "bytes": 381124,
+        "ctime_ns": "1791100351162730130",
+        "device": "16777229",
+        "inode": "545905499",
+        "mode": 33188,
+        "mtime_ns": "1791098054583257350",
+        "mtime_utc": "2026-10-04T07:14:14.583257350Z"
+      },
+      "copied_sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 381124,
+        "ctime_ns": "1791098054583257350",
+        "device": "16777229",
+        "inode": "545887797",
+        "mode": 33188,
+        "mtime_ns": "1791098054583257350",
+        "mtime_utc": "2026-10-04T07:14:14.583257350Z",
+        "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/vendor/three.core.min.js",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "immune-command/dist/vendor/three.module.min.js",
+      "copied_metadata": {
+        "bytes": 338908,
+        "ctime_ns": "1791100351180132375",
+        "device": "16777229",
+        "inode": "545905500",
+        "mode": 33188,
+        "mtime_ns": "1791098050210380241",
+        "mtime_utc": "2026-10-04T07:14:10.210380241Z"
+      },
+      "copied_sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 338908,
+        "ctime_ns": "1791098050210380241",
+        "device": "16777229",
+        "inode": "545887791",
+        "mode": 33188,
+        "mtime_ns": "1791098050210380241",
+        "mtime_utc": "2026-10-04T07:14:10.210380241Z",
+        "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command/dist/vendor/three.module.min.js",
+      "sha256_match": true
+    },
+    {
+      "archive_relative_path": "root-artifacts/immune-command-site.tar.gz",
+      "copied_metadata": {
+        "bytes": 209675,
+        "ctime_ns": "1791100351217612039",
+        "device": "16777229",
+        "inode": "545905502",
+        "mode": 33188,
+        "mtime_ns": "1791099706686140883",
+        "mtime_utc": "2026-10-04T07:41:46.686140883Z"
+      },
+      "copied_sha256": "9b7e2d2293a50c6684000aed50c3c14dacbe34da2c4117bc6adad7d09b4471b3",
+      "copy2_bytes_mtime_match": true,
+      "original_metadata": {
+        "bytes": 209675,
+        "ctime_ns": "1791099706686140883",
+        "device": "16777229",
+        "inode": "545903953",
+        "mode": 33188,
+        "mtime_ns": "1791099706686140883",
+        "mtime_utc": "2026-10-04T07:41:46.686140883Z",
+        "sha256": "9b7e2d2293a50c6684000aed50c3c14dacbe34da2c4117bc6adad7d09b4471b3"
+      },
+      "original_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command-site.tar.gz",
+      "sha256_match": true
+    }
+  ],
+  "original_package_bytes": 209675,
+  "original_package_count": 1,
+  "original_package_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command-site.tar.gz",
+  "original_package_sha256": "9b7e2d2293a50c6684000aed50c3c14dacbe34da2c4117bc6adad7d09b4471b3",
+  "process_observation": {
+    "dedicated_browser_or_server_observed": false,
+    "documented_8080_listener_check": {
+      "evidence_source": "Root agent read-only lsof observation, not rechecked by archive worker.",
+      "listener_present": false,
+      "lsof_exit_code": 1,
+      "observed_at_utc": "2026-10-04T07:49:54.506843Z",
+      "process_action": "None",
+      "stderr": "",
+      "stdout": ""
+    },
+    "evidence_source": "Root agent supplied read-only process metadata observation; archive worker did not re-probe.",
+    "idle_tool_contexts": [
+      {
+        "cpu_percent": 0.0,
+        "pid": 28326,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 28327,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 28328,
+        "state": "S"
+      },
+      {
+        "cpu_percent": 0.0,
+        "pid": 28329,
+        "state": "S"
+      }
+    ],
+    "observed_at_utc": "2026-10-04T07:46:21.201553Z",
+    "process_actions": "No process signals, shutdown, settings changes or new resource samples.",
+    "protected_original_processes": [
+      1036,
+      2547,
+      2554,
+      2560
+    ],
+    "protected_services": [
+      "5173",
+      "4827",
+      "4173"
+    ],
+    "tool_context_action": "Preserved sandbox/CUA kernel/trusted-worker contexts; no signals."
+  },
+  "schema_version": 1,
+  "source_file_count": 10,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-49/immune-command",
+  "source_total_bytes": 808905,
+  "static_evidence": {
+    "author_browser_claim": "3D render, recruitment, troop selection, right-click movement, wave start, automatic combat, node capture/income, research, abilities/cooldowns, pause/resume; author README claim only, no retained original driver/result.",
+    "author_mobile_claim": "390 x 844 portrait layout check; no original driver/result, real device evidence or full mobile campaign.",
+    "author_readme_references": [
+      "README.md:38",
+      "README.md:39",
+      "README.md:40",
+      "README.md:41",
+      "README.md:42"
+    ],
+    "author_simulation_claim": "10 fixed random seeds on normal difficulty completed all 8 waves with recruitment/research strategy; no-input baseline failed wave 4; author README claim, not browser whole-game completion.",
+    "browser_speed_implementation": "UI toggles 1x/2x (dist/game.js:68); requestAnimationFrame computes realDt capped 0.05 and calls game.tick(realDt*speed) when unpaused (line92). Implementation evidence only, not author test method.",
+    "console_pageerror_audio_boundary": "No retained console/pageerror/audio collection method, counts, or logs. Zero errors and audio validation coverage not independently established.",
+    "documented_preview_command": "python3 -m http.server 8080 --directory dist",
+    "documented_preview_port": 8080,
+    "inspection_mode": "Static original evidence only; no tests, browser, build or game executed.",
+    "preview_bind": "No explicit bind in README command.",
+    "simulation_api_boundary": "Game constructor accepts a random function (dist/simulation.js:16); recruit/upgrade/startWave/command/tick API exist; tick(dt) caps each step at 0.1 (line40). No retained test driver/result means actual direct API/state changes and acceleration method for ten simulations are unknown.",
+    "source_inventory_limits": "No package.json, tests, output, screenshots, browser input driver or independent execution result/log retained in source or shallow parent inventory.",
+    "webmcp_boundary": "Optional document.modelContext registration exists (dist/game.js:102); README:42 explicitly says end-to-end WebMCP unverified."
+  },
+  "total_bytes": 1018580,
+  "verification_method": "Fixed allowed 10-file inventory plus one original package; two exact metadata snapshots one second apart before copy; baseline SHA256, copy2, copied SHA256 and final original metadata/file set/SHA256 verification in this single Python process. Large metadata integers remain decimal strings. Original package copied byte-for-byte, never unpacked or repacked."
+}

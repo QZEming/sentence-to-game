@@ -1,0 +1,67 @@
+{
+  "browser_verification": "pending_separate_publisher_report",
+  "deployment": "original_static_dist_byte_exact",
+  "exact_original_prompt_missing": false,
+  "fork_turns_requested": "none",
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_dir": "080-immune-command",
+  "game_logic_edits_by_publisher": false,
+  "game_number": "080",
+  "generation_turn_id": "01a105c0-b7b0-7283-869c-6367140be3dd",
+  "model_requested": "gpt-6-astra",
+  "old_version": {
+    "base_commit": "33bdf1911c4d67b768b070aa756c4dfe209409b0",
+    "full_old_history_preserved": true,
+    "game_number": "080",
+    "new_collection_entry": true,
+    "old_experiment_files_unchanged": {},
+    "preserved_version_prefix": "versions/pre-ultra/33bdf1911c4d67b768b070aa756c4dfe209409b0",
+    "source_and_published_blobs": {}
+  },
+  "parameter_evidence": "parent explicitly attests actual create request parameters; original supplied manifest also retained",
+  "path_adaptations": [],
+  "published_files": [
+    {
+      "bytes": 37448,
+      "path": "game.js",
+      "sha256": "05999b06ff7a6f5878e8c77a2dc47065e6d8f211753fc61fd4d87e8f6aea1fba"
+    },
+    {
+      "bytes": 8794,
+      "path": "index.html",
+      "sha256": "0aa44bfa40243c293f58f0b6399b284fac631f2153b9230532306264f8514c08"
+    },
+    {
+      "bytes": 14777,
+      "path": "simulation.js",
+      "sha256": "cfec645e9096a71e4e17c57749c1db9d60944c9ce57a0d7d3a3123487e0da814"
+    },
+    {
+      "bytes": 24060,
+      "path": "style.css",
+      "sha256": "7a67226abe1e72e172e31bf4c37a973733ca92315d8780f32062942935bd9da4"
+    },
+    {
+      "bytes": 1081,
+      "path": "vendor/THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "bytes": 381124,
+      "path": "vendor/three.core.min.js",
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "bytes": 338908,
+      "path": "vendor/three.module.min.js",
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    }
+  ],
+  "schema_version": 1,
+  "server_execution_parameters_independently_authenticated": false,
+  "source_tree_sha256": "c4e15d633cd5f46cf655d1cafc6f61b0a63b6c0cb1fa11fd0c750a91e7768369",
+  "thinking_requested": "ultra",
+  "thread_id": "01a105c0-9828-73fb-8612-c05e6e0ee0bb",
+  "title": "免疫指挥官 · MICROFRONT",
+  "url": "https://qzemi.cn/sentence-to-game/games/080-immune-command/"
+}

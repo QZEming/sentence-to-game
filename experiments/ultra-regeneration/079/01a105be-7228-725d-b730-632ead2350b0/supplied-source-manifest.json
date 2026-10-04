@@ -1,0 +1,568 @@
+{
+  "archive_created_utc": "2026-10-04T07:55:00.219865+00:00",
+  "archive_path": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-079-original-20261004T075500Z",
+  "exclusions": [
+    ".DS_Store",
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".next",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".sites-runtime",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "coverage",
+    "node_modules",
+    "venv"
+  ],
+  "files": [
+    {
+      "archive_relative_path": "source/.gitignore",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "49",
+        "ctime_ns": "1791100500222832435",
+        "dev": "16777229",
+        "ino": "545907500",
+        "mode": "0o644",
+        "mtime_ns": "1791097876843429854"
+      },
+      "copy_sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312",
+      "metadata": {
+        "bytes": "49",
+        "ctime_ns": "1791097876843429854",
+        "dev": "16777229",
+        "ino": "545883004",
+        "mode": "0o644",
+        "mtime_ns": "1791097876843429854"
+      },
+      "sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/.gitignore"
+    },
+    {
+      "archive_relative_path": "source/.openai/hosting.json",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791100500226400526",
+        "dev": "16777229",
+        "ino": "545907502",
+        "mode": "0o644",
+        "mtime_ns": "1791097949530443809"
+      },
+      "copy_sha256": "67cba746f0ce979ba244270b5e34f6e8c786ae3bfacadb04dff6ca22839003c8",
+      "metadata": {
+        "bytes": "106",
+        "ctime_ns": "1791097949530679059",
+        "dev": "16777229",
+        "ino": "545884351",
+        "mode": "0o644",
+        "mtime_ns": "1791097949530443809"
+      },
+      "sha256": "67cba746f0ce979ba244270b5e34f6e8c786ae3bfacadb04dff6ca22839003c8",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/.openai/hosting.json"
+    },
+    {
+      "archive_relative_path": "source/README.md",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "2148",
+        "ctime_ns": "1791100500227775571",
+        "dev": "16777229",
+        "ino": "545907503",
+        "mode": "0o644",
+        "mtime_ns": "1791099521604514120"
+      },
+      "copy_sha256": "ac530df00ade606a286f87793517b23b9a71a82f17e574cbb213ff096681066d",
+      "metadata": {
+        "bytes": "2148",
+        "ctime_ns": "1791099521604514120",
+        "dev": "16777229",
+        "ino": "545903414",
+        "mode": "0o644",
+        "mtime_ns": "1791099521604514120"
+      },
+      "sha256": "ac530df00ade606a286f87793517b23b9a71a82f17e574cbb213ff096681066d",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/README.md"
+    },
+    {
+      "archive_relative_path": "source/dist/app.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "47838",
+        "ctime_ns": "1791100500229197949",
+        "dev": "16777229",
+        "ino": "545907505",
+        "mode": "0o644",
+        "mtime_ns": "1791099730339148614"
+      },
+      "copy_sha256": "323103bbcda3724df4d5a03c23a9f1a6c6fa0e789d8d8c1809b970a3ba9fe002",
+      "metadata": {
+        "bytes": "47838",
+        "ctime_ns": "1791099730339148614",
+        "dev": "16777229",
+        "ino": "545899045",
+        "mode": "0o644",
+        "mtime_ns": "1791099730339148614"
+      },
+      "sha256": "323103bbcda3724df4d5a03c23a9f1a6c6fa0e789d8d8c1809b970a3ba9fe002",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/dist/app.js"
+    },
+    {
+      "archive_relative_path": "source/dist/index.html",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "7953",
+        "ctime_ns": "1791100500254010710",
+        "dev": "16777229",
+        "ino": "545907506",
+        "mode": "0o644",
+        "mtime_ns": "1791098355645909104"
+      },
+      "copy_sha256": "7086f7a6027f09e6733e65b686d0576613571a0c16584610646913016efc87fd",
+      "metadata": {
+        "bytes": "7953",
+        "ctime_ns": "1791098355645909104",
+        "dev": "16777229",
+        "ino": "545891652",
+        "mode": "0o644",
+        "mtime_ns": "1791098355645909104"
+      },
+      "sha256": "7086f7a6027f09e6733e65b686d0576613571a0c16584610646913016efc87fd",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/dist/index.html"
+    },
+    {
+      "archive_relative_path": "source/dist/style.css",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "25470",
+        "ctime_ns": "1791100500256744966",
+        "dev": "16777229",
+        "ino": "545907507",
+        "mode": "0o644",
+        "mtime_ns": "1791098355655160291"
+      },
+      "copy_sha256": "f6e1840f30384ff71482c3ebf155767fdd346400beb0bcdb685e94f101ac8df2",
+      "metadata": {
+        "bytes": "25470",
+        "ctime_ns": "1791098355655160291",
+        "dev": "16777229",
+        "ino": "545891654",
+        "mode": "0o644",
+        "mtime_ns": "1791098355655160291"
+      },
+      "sha256": "f6e1840f30384ff71482c3ebf155767fdd346400beb0bcdb685e94f101ac8df2",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/dist/style.css"
+    },
+    {
+      "archive_relative_path": "source/dist/assets/daisy-fabric.png",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "3319633",
+        "ctime_ns": "1791100500267840281",
+        "dev": "16777229",
+        "ino": "545907509",
+        "mode": "0o644",
+        "mtime_ns": "1791098374793253193"
+      },
+      "copy_sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511",
+      "metadata": {
+        "bytes": "3319633",
+        "ctime_ns": "1791098374793447443",
+        "dev": "16777229",
+        "ino": "545891678",
+        "mode": "0o644",
+        "mtime_ns": "1791098374793253193"
+      },
+      "sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/dist/assets/daisy-fabric.png"
+    },
+    {
+      "archive_relative_path": "source/dist/assets/three.module.min.js",
+      "category": "source_original",
+      "copy_metadata": {
+        "bytes": "691648",
+        "ctime_ns": "1791100500273121542",
+        "dev": "16777229",
+        "ino": "545907510",
+        "mode": "0o644",
+        "mtime_ns": "1791097912344576746"
+      },
+      "copy_sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7",
+      "metadata": {
+        "bytes": "691648",
+        "ctime_ns": "1791097912344576746",
+        "dev": "16777229",
+        "ino": "545883061",
+        "mode": "0o644",
+        "mtime_ns": "1791097912344576746"
+      },
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored/dist/assets/three.module.min.js"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/cutting.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "269783",
+        "ctime_ns": "1791100500296756509",
+        "dev": "16777229",
+        "ino": "545907514",
+        "mode": "0o644",
+        "mtime_ns": "1791099279067335355"
+      },
+      "copy_sha256": "8b5c08023c644a5de1e0d0a6d9847668a7ab4e49f20e73bd130ea488107afc79",
+      "metadata": {
+        "bytes": "269783",
+        "ctime_ns": "1791099279067335355",
+        "dev": "16777229",
+        "ino": "545902738",
+        "mode": "0o644",
+        "mtime_ns": "1791099279067335355"
+      },
+      "sha256": "8b5c08023c644a5de1e0d0a6d9847668a7ab4e49f20e73bd130ea488107afc79",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/cutting.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/desktop.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "442346",
+        "ctime_ns": "1791100500301454228",
+        "dev": "16777229",
+        "ino": "545907515",
+        "mode": "0o644",
+        "mtime_ns": "1791099159998879452"
+      },
+      "copy_sha256": "767a62d179a22434999e79398e83532ac5b0ec4bbb04c8e9d0a8c451d5a236de",
+      "metadata": {
+        "bytes": "442346",
+        "ctime_ns": "1791099159998879452",
+        "dev": "16777229",
+        "ino": "545900904",
+        "mode": "0o644",
+        "mtime_ns": "1791099159998879452"
+      },
+      "sha256": "767a62d179a22434999e79398e83532ac5b0ec4bbb04c8e9d0a8c451d5a236de",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/desktop.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/final-desktop.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "464378",
+        "ctime_ns": "1791100500305160152",
+        "dev": "16777229",
+        "ino": "545907516",
+        "mode": "0o644",
+        "mtime_ns": "1791099522206890821"
+      },
+      "copy_sha256": "11ee48aa339ca15cd91d5a795686843e2cf3815674dbee5f0a98c7467bfa99f8",
+      "metadata": {
+        "bytes": "464378",
+        "ctime_ns": "1791099522206890821",
+        "dev": "16777229",
+        "ino": "545903418",
+        "mode": "0o644",
+        "mtime_ns": "1791099522206890821"
+      },
+      "sha256": "11ee48aa339ca15cd91d5a795686843e2cf3815674dbee5f0a98c7467bfa99f8",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/final-desktop.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/four-arms.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "467971",
+        "ctime_ns": "1791100500310419622",
+        "dev": "16777229",
+        "ino": "545907517",
+        "mode": "0o644",
+        "mtime_ns": "1791099400542205677"
+      },
+      "copy_sha256": "b1c3b62a55a66cac6b90d7de6c6744cb810c8efa276f300c95f1f41795e6bb30",
+      "metadata": {
+        "bytes": "467971",
+        "ctime_ns": "1791099400542205677",
+        "dev": "16777229",
+        "ino": "545903042",
+        "mode": "0o644",
+        "mtime_ns": "1791099400542205677"
+      },
+      "sha256": "b1c3b62a55a66cac6b90d7de6c6744cb810c8efa276f300c95f1f41795e6bb30",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/four-arms.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/long-neck-final.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "465209",
+        "ctime_ns": "1791100500314383047",
+        "dev": "16777229",
+        "ino": "545907518",
+        "mode": "0o644",
+        "mtime_ns": "1791099761701585395"
+      },
+      "copy_sha256": "2f35f3f21e9489fb157198c27eeb6e08907a70923750386d3ea6ff17d8b4d68a",
+      "metadata": {
+        "bytes": "465209",
+        "ctime_ns": "1791099761701585395",
+        "dev": "16777229",
+        "ino": "545904064",
+        "mode": "0o644",
+        "mtime_ns": "1791099761701585395"
+      },
+      "sha256": "2f35f3f21e9489fb157198c27eeb6e08907a70923750386d3ea6ff17d8b4d68a",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/long-neck-final.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/long-neck.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "480573",
+        "ctime_ns": "1791100500318356847",
+        "dev": "16777229",
+        "ino": "545907519",
+        "mode": "0o644",
+        "mtime_ns": "1791099658341684211"
+      },
+      "copy_sha256": "0ebccc5e83bbca78880b081461e1e7cabea04c93adceb0c04bdf085f78affd48",
+      "metadata": {
+        "bytes": "480573",
+        "ctime_ns": "1791099658341684211",
+        "dev": "16777229",
+        "ino": "545903767",
+        "mode": "0o644",
+        "mtime_ns": "1791099658341684211"
+      },
+      "sha256": "0ebccc5e83bbca78880b081461e1e7cabea04c93adceb0c04bdf085f78affd48",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/long-neck.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/mobile.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "234189",
+        "ctime_ns": "1791100500322814232",
+        "dev": "16777229",
+        "ino": "545907520",
+        "mode": "0o644",
+        "mtime_ns": "1791099400723001104"
+      },
+      "copy_sha256": "c2e534e6c78ac055d5a8546a335785d9c9f851561729df0c15712edcabd29823",
+      "metadata": {
+        "bytes": "234189",
+        "ctime_ns": "1791099400723001104",
+        "dev": "16777229",
+        "ino": "545903043",
+        "mode": "0o644",
+        "mtime_ns": "1791099400723001104"
+      },
+      "sha256": "c2e534e6c78ac055d5a8546a335785d9c9f851561729df0c15712edcabd29823",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/mobile.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/result.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "266103",
+        "ctime_ns": "1791100500327394283",
+        "dev": "16777229",
+        "ino": "545907521",
+        "mode": "0o644",
+        "mtime_ns": "1791099334020563900"
+      },
+      "copy_sha256": "bb127eb8104998bc922f4c65dc3bb683324f1bab1f56df8e305a28adb5d3cef2",
+      "metadata": {
+        "bytes": "266103",
+        "ctime_ns": "1791099334020563900",
+        "dev": "16777229",
+        "ino": "545902790",
+        "mode": "0o644",
+        "mtime_ns": "1791099334020563900"
+      },
+      "sha256": "bb127eb8104998bc922f4c65dc3bb683324f1bab1f56df8e305a28adb5d3cef2",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/result.png"
+    },
+    {
+      "archive_relative_path": "evidence/output/playwright/sewing.png",
+      "category": "existing_screenshot",
+      "copy_metadata": {
+        "bytes": "259447",
+        "ctime_ns": "1791100500330873249",
+        "dev": "16777229",
+        "ino": "545907523",
+        "mode": "0o644",
+        "mtime_ns": "1791099331690195643"
+      },
+      "copy_sha256": "e21abfaa9f45028e442fa830c6db4bab26a68e8ce45b69790ba61687de121f30",
+      "metadata": {
+        "bytes": "259447",
+        "ctime_ns": "1791099331690195643",
+        "dev": "16777229",
+        "ino": "545902788",
+        "mode": "0o644",
+        "mtime_ns": "1791099331690195643"
+      },
+      "sha256": "e21abfaa9f45028e442fa830c6db4bab26a68e8ce45b69790ba61687de121f30",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/output/playwright/sewing.png"
+    },
+    {
+      "archive_relative_path": "evidence/generated_images/exec-89aa2fef-e1fe-411f-bcdf-a7fab4e535ac.png",
+      "category": "original_generated_image_duplicate_of_source_asset",
+      "copy_metadata": {
+        "bytes": "3319633",
+        "ctime_ns": "1791100500337658097",
+        "dev": "16777229",
+        "ino": "545907525",
+        "mode": "0o644",
+        "mtime_ns": "1791097902674327725"
+      },
+      "copy_sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511",
+      "metadata": {
+        "bytes": "3319633",
+        "ctime_ns": "1791097902674327725",
+        "dev": "16777229",
+        "ino": "545883041",
+        "mode": "0o644",
+        "mtime_ns": "1791097902674327725"
+      },
+      "sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/generated_images/exec-89aa2fef-e1fe-411f-bcdf-a7fab4e535ac.png"
+    },
+    {
+      "archive_relative_path": "original-packages/oddly-tailored-deploy.tar.gz",
+      "category": "original_deployment_package",
+      "copy_metadata": {
+        "bytes": "3501183",
+        "ctime_ns": "1791100500345953406",
+        "dev": "16777229",
+        "ino": "545907527",
+        "mode": "0o644",
+        "mtime_ns": "1791099772424958451"
+      },
+      "copy_sha256": "87becf55d07afa60cbe27e8ec58c613b4f416c6644e63ec617685e93b637c3a4",
+      "metadata": {
+        "bytes": "3501183",
+        "ctime_ns": "1791099772424958451",
+        "dev": "16777229",
+        "ino": "545904088",
+        "mode": "0o644",
+        "mtime_ns": "1791099772424958451"
+      },
+      "sha256": "87becf55d07afa60cbe27e8ec58c613b4f416c6644e63ec617685e93b637c3a4",
+      "source_path": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored-deploy.tar.gz"
+    }
+  ],
+  "fixed_original_bytes": "14265660",
+  "fixed_original_file_count": 19,
+  "game_number": "079",
+  "generated_original_file_count": 1,
+  "local_preview": {
+    "command": "python3 -m http.server 4318 --bind 127.0.0.1 --directory dist",
+    "cwd": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored",
+    "port": 4318,
+    "started_during_archive": false,
+    "url": "http://127.0.0.1:4318"
+  },
+  "original_package_file_count": 1,
+  "parent_source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-48",
+  "process_observation": {
+    "dedicated_preview_or_browser_found": false,
+    "method": "read-only ps command/cwd/descendant and lsof port check",
+    "observed_at_utc": "2026-10-04T07:54:19.301355Z",
+    "preview_listener_found": false,
+    "preview_port": 4318,
+    "protected_original_pids_preserved": [
+      1036,
+      2547,
+      2554,
+      2560
+    ],
+    "protected_original_ports_preserved": [
+      5173,
+      4827,
+      4173
+    ],
+    "related_descendants": [],
+    "related_roots": [],
+    "signals_sent": []
+  },
+  "schema_version": 1,
+  "screenshot_file_count": 9,
+  "source_file_count": 8,
+  "source_root": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored",
+  "title": "异想裁缝铺 · Oddly Tailored",
+  "validation_limits": {
+    "all_six_customers_validated": false,
+    "author_reported_validation": "README reports desktop 1440x1050 and mobile viewport 390x844; one order via UI with 14 cutting clicks, 8 stitches, three-star delivery, coins, unlock-next, refresh persistence, ruler purchase and measure-all",
+    "console_pageerror_logs_in_allowed_output": "none found; absence of errors and coverage not established",
+    "driver_or_results_files_in_allowed_output": "none found",
+    "forbidden_directories_read": false,
+    "generated_image_duplicate": "The one explicitly identified generated image has the same SHA-256 as source dist/assets/daisy-fabric.png and is retained as an original duplicate",
+    "images_opened": false,
+    "method": "Read-only static review of source README/app/CSS/index/config, original package metadata and hashes, and exclusive output file metadata; no execution or image viewing",
+    "mobile_evidence": "browser viewport claim only; no physical-device evidence",
+    "no_new_execution": true,
+    "original_package_preserved": "Copied byte for byte; not extracted or repacked",
+    "process_observation": {
+      "checks": "ps/lsof returned normally; exact task-48/oddly-tailored source and parent cwd, argv and game name matches showed no roots or descendants",
+      "dedicated_preview_browser_observed": false,
+      "note": "Process observation is a point-in-time root record; original processes were all retained. Copy verification did not require process shutdown.",
+      "observed_at_utc": "2026-10-04T07:54:19.301355Z",
+      "port_4318": {
+        "listening": false,
+        "lsof_exit_code": 1,
+        "stderr": "",
+        "stdout": ""
+      },
+      "preserved_original_processes": [
+        {
+          "cpu": "0",
+          "name": "Chrome",
+          "pid": 1036,
+          "state": "S"
+        },
+        {
+          "cpu": "0",
+          "pid": 2547,
+          "port": 5173,
+          "state": "S"
+        },
+        {
+          "cpu": "0",
+          "pid": 2554,
+          "port": 4827,
+          "state": "S"
+        },
+        {
+          "cpu": "0",
+          "pid": 2560,
+          "port": 4173,
+          "state": "S"
+        }
+      ],
+      "provenance": "Root-supplied ps/lsof observation; archive agent did not independently run process tools",
+      "signals_sent": false,
+      "status": "checked_by_root_no_dedicated_process_observed"
+    },
+    "runtime_input_method_independently_verified": false,
+    "screenshot_count": 9,
+    "source_code_helpers": "Visible assist-completion paths assign craftsmanship 65; their use during reported validation is not independently established",
+    "source_modified": false,
+    "state_hook_api_or_time_acceleration_used_in_tests": "unknown; no readable driver/results",
+    "webmcp": "Optional read/configure tools present in source; README says native document.modelContext unavailable, so not natively validated"
+  },
+  "verification": {
+    "all_copy_hashes_match": true,
+    "archive_original_file_set_verified": true,
+    "copy2_used": true,
+    "final_source_evidence_package_metadata_hashes_and_file_sets_unchanged": true,
+    "metadata_stable": true,
+    "two_metadata_snapshots_interval_seconds": 1
+  }
+}

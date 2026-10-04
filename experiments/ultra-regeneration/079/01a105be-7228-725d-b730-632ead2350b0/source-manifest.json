@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "bytes": 49,
+      "path": ".gitignore",
+      "sha256": "99fede4bdff2c4249ee92a3644aee39bbe16825a93f3cff997793c6448318312"
+    },
+    {
+      "bytes": 106,
+      "path": ".openai/hosting.json",
+      "sha256": "67cba746f0ce979ba244270b5e34f6e8c786ae3bfacadb04dff6ca22839003c8"
+    },
+    {
+      "bytes": 2148,
+      "path": "README.md",
+      "sha256": "ac530df00ade606a286f87793517b23b9a71a82f17e574cbb213ff096681066d"
+    },
+    {
+      "bytes": 47838,
+      "path": "dist/app.js",
+      "sha256": "323103bbcda3724df4d5a03c23a9f1a6c6fa0e789d8d8c1809b970a3ba9fe002"
+    },
+    {
+      "bytes": 3319633,
+      "path": "dist/assets/daisy-fabric.png",
+      "sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511"
+    },
+    {
+      "bytes": 691648,
+      "path": "dist/assets/three.module.min.js",
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "bytes": 7953,
+      "path": "dist/index.html",
+      "sha256": "7086f7a6027f09e6733e65b686d0576613571a0c16584610646913016efc87fd"
+    },
+    {
+      "bytes": 25470,
+      "path": "dist/style.css",
+      "sha256": "f6e1840f30384ff71482c3ebf155767fdd346400beb0bcdb685e94f101ac8df2"
+    },
+    {
+      "bytes": 269783,
+      "path": "original-delivery/cutting.png",
+      "sha256": "8b5c08023c644a5de1e0d0a6d9847668a7ab4e49f20e73bd130ea488107afc79"
+    },
+    {
+      "bytes": 442346,
+      "path": "original-delivery/desktop.png",
+      "sha256": "767a62d179a22434999e79398e83532ac5b0ec4bbb04c8e9d0a8c451d5a236de"
+    },
+    {
+      "bytes": 3319633,
+      "path": "original-delivery/exec-89aa2fef-e1fe-411f-bcdf-a7fab4e535ac.png",
+      "sha256": "38a3d8eb1689c45d15545f689457257d33b38d34328015b2673831dbbb602511"
+    },
+    {
+      "bytes": 464378,
+      "path": "original-delivery/final-desktop.png",
+      "sha256": "11ee48aa339ca15cd91d5a795686843e2cf3815674dbee5f0a98c7467bfa99f8"
+    },
+    {
+      "bytes": 467971,
+      "path": "original-delivery/four-arms.png",
+      "sha256": "b1c3b62a55a66cac6b90d7de6c6744cb810c8efa276f300c95f1f41795e6bb30"
+    },
+    {
+      "bytes": 465209,
+      "path": "original-delivery/long-neck-final.png",
+      "sha256": "2f35f3f21e9489fb157198c27eeb6e08907a70923750386d3ea6ff17d8b4d68a"
+    },
+    {
+      "bytes": 480573,
+      "path": "original-delivery/long-neck.png",
+      "sha256": "0ebccc5e83bbca78880b081461e1e7cabea04c93adceb0c04bdf085f78affd48"
+    },
+    {
+      "bytes": 234189,
+      "path": "original-delivery/mobile.png",
+      "sha256": "c2e534e6c78ac055d5a8546a335785d9c9f851561729df0c15712edcabd29823"
+    },
+    {
+      "bytes": 3501183,
+      "path": "original-delivery/oddly-tailored-deploy.tar.gz",
+      "sha256": "87becf55d07afa60cbe27e8ec58c613b4f416c6644e63ec617685e93b637c3a4"
+    },
+    {
+      "bytes": 266103,
+      "path": "original-delivery/result.png",
+      "sha256": "bb127eb8104998bc922f4c65dc3bb683324f1bab1f56df8e305a28adb5d3cef2"
+    },
+    {
+      "bytes": 259447,
+      "path": "original-delivery/sewing.png",
+      "sha256": "e21abfaa9f45028e442fa830c6db4bab26a68e8ce45b69790ba61687de121f30"
+    }
+  ],
+  "full_task_export_status": "pending_supported_parent_export",
+  "game_logic_edits_by_publisher": false,
+  "original_source_bytes_verified_unchanged": true,
+  "schema_version": 1,
+  "source_directory": "/Users/bytedance/Documents/Codex/2026-10-04/task-48/oddly-tailored",
+  "source_tree_sha256": "7c052302c690806f133f67366847f0fea8b1b64a15de80ffc03b50c71e8edba4",
+  "supplied_archive_directory": "/Users/bytedance/Documents/Codex/2026-10-02/task-32/archive/ultra-079-original-20261004T075500Z",
+  "thread_id": "01a105be-7228-725d-b730-632ead2350b0",
+  "turn_id": "01a105be-bb6a-7027-95f9-104102558e00"
+}

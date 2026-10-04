@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "candidate": "ultra-080",
+  "game_title": "免疫指挥官 · MICROFRONT",
+  "source_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "author_thread_id": "01a105c0-9828-73fb-8612-c05e6e0ee0bb",
+  "author_turn_id": "01a105c0-b7b0-7283-869c-6367140be3dd",
+  "exact_prompt": "实现一个免疫细胞指挥官调配不同细胞抵御入侵病原体的 3D 即时战略游戏，尽你所能丰富游戏玩法。",
+  "parent_supplied_launch_parameters": {
+    "model": "Astra",
+    "reasoning_effort": "ultra",
+    "fork_turns": "none"
+  },
+  "parameter_evidence": "Parent attestation only; historical service-side model and effort not independently authenticated.",
+  "private_sites_url": "https://immune-command-microfront.zemingqiu045.chatgpt.site",
+  "sites_evidence_boundary": "Parent supplied private Sites URL only; not accessed; not formal publication proof."
+}

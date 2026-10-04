@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "game_number": "079",
+  "record_kind": "parent_launch_attestation",
+  "attestation_source": "Parent task message; not independently verified runtime parameters",
+  "source_parent_thread_id": "01a0f026-402f-7359-a55b-4cef85b25030",
+  "generation_thread_id": "01a105be-7228-725d-b730-632ead2350b0",
+  "generation_turn_id": "01a105be-bb6a-7027-95f9-104102558e00",
+  "model": "Astra",
+  "reasoning_effort": "ultra",
+  "fork_turns": "none",
+  "explicit_parent_parameters": true,
+  "complete_parent_prompt": "实现一个裁缝为体型奇异的客人裁剪拼接合身服装的 3D 服装设计游戏，尽你所能丰富游戏玩法。",
+  "canonical_model_name": "gpt-6-astra",
+  "effort": "ultra",
+  "fork": "none",
+  "exact_prompt": "实现一个裁缝为体型奇异的客人裁剪拼接合身服装的 3D 服装设计游戏，尽你所能丰富游戏玩法。",
+  "exact_prompt_status": "parent_supplied_complete",
+  "independent_historical_runtime_verified": false
+}

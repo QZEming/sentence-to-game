@@ -6,7 +6,7 @@
 
 仓库保留原始提示词、源码和体验地址，可以直接试玩，也可以阅读代码、继续改造。
 
-当前进度：**78 / 100**。
+当前进度：**80 / 100**。
 
 **[体验游戏合集 →](https://qzemi.cn/sentence-to-game/)**
 
@@ -92,6 +92,8 @@
 | 076 | [重启乐园 · Park Revival](games/076-park-revive/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/076-park-revive/) | [源码](games/076-park-revive/src/) |
 | 077 | [异星潜伏 · XENOVOID](games/077-xenovoid/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/077-xenovoid/) | [源码](games/077-xenovoid/src/) |
 | 078 | [山岚邮航 · Skybound Courier](games/078-sky-courier/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/078-sky-courier/) | [源码](games/078-sky-courier/src/) |
+| 079 | [异想裁缝铺 · Oddly Tailored](games/079-oddly-tailored/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/079-oddly-tailored/) | [源码](games/079-oddly-tailored/src/) |
+| 080 | [免疫指挥官 · MICROFRONT](games/080-immune-command/README.md) | [开始体验](https://qzemi.cn/sentence-to-game/games/080-immune-command/) | [源码](games/080-immune-command/src/) |
 
 ## 生成记录
 
